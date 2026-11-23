@@ -10,6 +10,8 @@ sidebar:
 
 Minion là trợ thủ tự sản xuất tài nguyên. Bạn đặt minion trên đảo rồi lấy sản phẩm trong giao diện. Có các nhóm khai khoáng, nông nghiệp, lấy gỗ, đánh cá và chiến đấu. Sản phẩm, tốc độ và sức chứa phụ thuộc loại cùng bậc. Bậc là cấp nâng cấp, thường hiện bằng số La Mã như I, II.
 
+Muốn biết từng loại minion cho ra gì và nhanh chậm thế nào, xem [Danh sách minion](/sky-dungeon/minions/list/).
+
 Khối và sinh vật quanh minion chỉ mô phỏng. Minion không khai thác khối thật. Sản lượng tính theo thời gian đã trôi qua, kể cả khi bạn ngoại tuyến, khu vực không tải hoặc server tắt rồi mở lại. Kho đầy sẽ giới hạn sản lượng.
 
 ## Bắt đầu từng bước

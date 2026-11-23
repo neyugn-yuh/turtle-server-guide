@@ -1,0 +1,280 @@
+---
+/**
+ * List of the minions of one server, built from src/data/servers/<server>/minions.json
+ * (written by scripts/sync-minions.mjs from the server's config). One row per minion; opening a row shows what it
+ * produces and how its speed, storage and area grow with the tier. A search box and group buttons filter the rows.
+ */
+interface Props {
+	server: string;
+}
+
+const { server } = Astro.props;
+const files = import.meta.glob('../data/servers/*/minions.json', { eager: true, import: 'default' }) as Record<string, any>;
+const data = files[`../data/servers/${server}/minions.json`];
+if (!data) throw new Error(`MinionList: no minions.json for server "${server}", run npm run sync:minions`);
+
+const categories = [
+	{ id: 'mining', label: 'Khai khoáng' },
+	{ id: 'farming', label: 'Nông nghiệp' },
+	{ id: 'foraging', label: 'Lấy gỗ' },
+	{ id: 'fishing', label: 'Câu cá' },
+	{ id: 'combat', label: 'Chiến đấu' },
+];
+
+const ROMAN: [number, string][] = [[10, 'X'], [9, 'IX'], [5, 'V'], [4, 'IV'], [1, 'I']];
+const roman = (n: number) => {
+	let out = '';
+	for (const [value, symbol] of ROMAN) while (n >= value) { out += symbol; n -= value; }
+	return out;
+};
+const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 2 });
+const percent = (chance: number) => `${num(Math.round(chance * 10000) / 100)}%`;
+const range = (from: number, to: number) => (from === to ? `Bậc ${roman(from)}` : `Bậc ${roman(from)}–${roman(to)}`);
+
+const minions: any[] = data.minions;
+const groups = categories
+	.map((category) => ({ ...category, items: minions.filter((m) => m.category === category.id) }))
+	.filter((group) => group.items.length > 0);
+---
+
+<div class="ml not-content">
+	<div class="ml-tools" hidden>
+		<label class="ml-search">
+			<span class="ml-sr">Tìm minion hoặc sản phẩm</span>
+			<input type="search" placeholder="Tìm minion hoặc sản phẩm…" autocomplete="off" />
+		</label>
+		<div class="ml-cats" role="group" aria-label="Nhóm minion">
+			<button type="button" class="ml-cat" data-cat="" aria-pressed="true">Tất cả ({minions.length})</button>
+			{groups.map((group) => <button type="button" class="ml-cat" data-cat={group.id} aria-pressed="false">{group.label} ({group.items.length})</button>)}
+		</div>
+		<p class="ml-count" aria-live="polite"></p>
+	</div>
+
+	{
+		groups.map((group) => (
+			<section class="ml-group" data-group={group.id}>
+				<h3>{group.label}</h3>
+				{group.items.map((minion: any) => {
+					const first = minion.products[0];
+					const last = minion.tiers[minion.tiers.length - 1];
+					const search = [minion.name, ...minion.products.flatMap((g: any) => g.products.map((p: any) => p.name))].join(' ').toLowerCase();
+					return (
+						<details class="ml-item" data-cat={group.id} data-search={search}>
+							<summary>
+								<span class="ml-name">{minion.name}</span>
+								<span class="ml-products">{first.products.map((p: any) => p.name).join(', ')}</span>
+								<span class="ml-tiers">{range(minion.tiers[0].tier, last.tier)}</span>
+							</summary>
+							<div class="ml-body">
+								<h4>Sản phẩm</h4>
+								<table>
+									<thead>
+										<tr>{minion.products.length > 1 && <th>Bậc</th>}<th>Sản phẩm</th><th>Tỉ lệ</th><th>Số lượng mỗi chu kỳ</th></tr>
+									</thead>
+									<tbody>
+										{minion.products.map((g: any) =>
+											g.products.map((p: any, i: number) => (
+												<tr>
+													{minion.products.length > 1 && (i === 0 ? <td rowspan={g.products.length}>{range(g.from, g.to)}</td> : null)}
+													<td>{p.name}</td>
+													<td>{percent(p.chance)}</td>
+													<td>{p.amount}</td>
+												</tr>
+											)),
+										)}
+									</tbody>
+								</table>
+								<h4>Theo từng bậc</h4>
+								<table>
+									<thead>
+										<tr><th>Bậc</th><th>Giữa hai hành động</th><th>Một chu kỳ</th><th>Kho</th><th>Vùng làm việc</th></tr>
+									</thead>
+									<tbody>
+										{minion.tiers.map((t: any) => (
+											<tr>
+												<td>{roman(t.tier)}</td>
+												<td>{num(t.speed)} giây</td>
+												<td>{num(t.speed * 2)} giây</td>
+												<td>{t.storage} ô</td>
+												<td>{t.area} × {t.area}</td>
+											</tr>
+										))}
+									</tbody>
+								</table>
+							</div>
+						</details>
+					);
+				})}
+			</section>
+		))
+	}
+
+	<p class="ml-note">Tốc độ là giá trị gốc của bậc, chưa tính nhiên liệu và vật phẩm hỗ trợ. Một chu kỳ gồm hai hành động (đặt rồi phá). Tỉ lệ và số lượng áp dụng cho mỗi chu kỳ.</p>
+</div>
+
+<script>
+	const root = document.querySelector<HTMLElement>('.ml');
+	if (root) {
+		const tools = root.querySelector<HTMLElement>('.ml-tools')!;
+		const input = tools.querySelector<HTMLInputElement>('input')!;
+		const buttons = Array.from(tools.querySelectorAll<HTMLButtonElement>('.ml-cat'));
+		const count = tools.querySelector<HTMLElement>('.ml-count')!;
+		const items = Array.from(root.querySelectorAll<HTMLElement>('.ml-item'));
+		const groups = Array.from(root.querySelectorAll<HTMLElement>('.ml-group'));
+		let category = '';
+
+		const apply = () => {
+			const query = input.value.trim().toLowerCase();
+			let shown = 0;
+			for (const item of items) {
+				const match = (!category || item.dataset.cat === category) && (!query || (item.dataset.search ?? '').includes(query));
+				item.hidden = !match;
+				if (match) shown++;
+			}
+			for (const group of groups) group.hidden = !group.querySelector('.ml-item:not([hidden])');
+			count.textContent = `Hiển thị ${shown} / ${items.length} minion`;
+		};
+
+		tools.hidden = false;
+		input.addEventListener('input', apply);
+		for (const button of buttons) {
+			button.addEventListener('click', () => {
+				category = button.dataset.cat ?? '';
+				for (const other of buttons) other.setAttribute('aria-pressed', String(other === button));
+				apply();
+			});
+		}
+		apply();
+	}
+</script>
+
+<style>
+	.ml {
+		margin: 1.5rem 0;
+	}
+	.ml-tools {
+		display: grid;
+		gap: 0.75rem;
+		margin-bottom: 1rem;
+	}
+	.ml-sr {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip-path: inset(50%);
+	}
+	.ml-search input {
+		width: 100%;
+		max-width: 24rem;
+		padding: 0.5rem 0.75rem;
+		border: 1px solid var(--sl-color-gray-5);
+		border-radius: 0.375rem;
+		background: var(--sl-color-bg);
+		color: var(--sl-color-white);
+		font: inherit;
+	}
+	.ml-cats {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+	.ml-cat {
+		padding: 0.3rem 0.75rem;
+		border: 1px solid var(--sl-color-gray-5);
+		border-radius: 999px;
+		background: transparent;
+		color: var(--sl-color-gray-2);
+		font: inherit;
+		font-size: var(--sl-text-sm);
+		cursor: pointer;
+	}
+	.ml-cat[aria-pressed='true'] {
+		border-color: var(--sl-color-accent);
+		background: var(--sl-color-accent-low);
+		color: var(--sl-color-white);
+	}
+	.ml-count {
+		margin: 0;
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-sm);
+	}
+	.ml-group h3 {
+		margin: 1.75rem 0 0.5rem;
+		font-size: var(--sl-text-xl);
+	}
+	.ml-item {
+		border: 1px solid var(--sl-color-hairline);
+		border-radius: 0.375rem;
+		margin-bottom: 0.375rem;
+	}
+	.ml-item[hidden],
+	.ml-group[hidden] {
+		display: none;
+	}
+	.ml-item summary {
+		display: grid;
+		grid-template-columns: minmax(9rem, 1.1fr) 2fr auto;
+		gap: 0.75rem;
+		align-items: baseline;
+		padding: 0.5rem 0.75rem;
+		cursor: pointer;
+	}
+	.ml-item[open] summary {
+		border-bottom: 1px solid var(--sl-color-hairline);
+	}
+	.ml-name {
+		font-weight: 600;
+		color: var(--sl-color-white);
+	}
+	.ml-products {
+		overflow: hidden;
+		color: var(--sl-color-gray-2);
+		font-size: var(--sl-text-sm);
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.ml-tiers {
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-sm);
+		white-space: nowrap;
+	}
+	.ml-body {
+		padding: 0.25rem 0.75rem 0.75rem;
+		overflow-x: auto;
+	}
+	.ml-body h4 {
+		margin: 0.75rem 0 0.375rem;
+		font-size: var(--sl-text-base);
+	}
+	.ml-body table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: var(--sl-text-sm);
+	}
+	.ml-body th,
+	.ml-body td {
+		padding: 0.3rem 0.5rem;
+		border-bottom: 1px solid var(--sl-color-hairline);
+		text-align: left;
+		white-space: nowrap;
+	}
+	.ml-body th {
+		color: var(--sl-color-gray-2);
+		font-weight: 600;
+	}
+	.ml-note {
+		margin-top: 1.25rem;
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-sm);
+	}
+	@media (max-width: 40rem) {
+		.ml-item summary {
+			grid-template-columns: 1fr auto;
+		}
+		.ml-products {
+			grid-column: 1 / -1;
+			grid-row: 2;
+		}
+	}
+</style>

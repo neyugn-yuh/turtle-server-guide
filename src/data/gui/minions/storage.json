@@ -1,8 +1,5 @@
 {
-  "title": {
-    "vi": "Minion Storage (3 slots)",
-    "en": "Minion Storage (3 slots)"
-  },
+  "title": "Minion Storage (3 slots)",
   "rows": 1,
   "filler": true,
   "inventory": true,
@@ -10,44 +7,23 @@
     "0": {
       "item": "COBBLESTONE",
       "n": 1,
-      "label": {
-        "vi": "S?n ph?m trong kho ph?",
-        "en": "Attached storage products"
-      },
-      "short": "",
+      "label": "Sản phẩm trong kho phụ",
       "role": "button",
-      "desc": {
-        "vi": "Bấm một ô sản phẩm để lấy cả chồng vào túi; phần không vừa vẫn nằm trong kho. Không thể gửi đồ vào đây.",
-        "en": "Click a product slot to collect its entire stack; anything that does not fit remains stored. You cannot deposit items here."
-      }
+      "desc": "Bấm một ô sản phẩm để lấy cả chồng vào túi; phần không vừa vẫn nằm trong kho. Không thể gửi đồ vào đây."
     },
     "1": {
       "item": "AIR",
       "n": 1,
-      "label": {
-        "vi": "S?n ph?m trong kho ph?",
-        "en": "Attached storage products"
-      },
-      "short": "",
+      "label": "Sản phẩm trong kho phụ",
       "role": "button",
-      "desc": {
-        "vi": "Bấm một ô sản phẩm để lấy cả chồng vào túi; phần không vừa vẫn nằm trong kho. Không thể gửi đồ vào đây.",
-        "en": "Click a product slot to collect its entire stack; anything that does not fit remains stored. You cannot deposit items here."
-      }
+      "desc": "Bấm một ô sản phẩm để lấy cả chồng vào túi; phần không vừa vẫn nằm trong kho. Không thể gửi đồ vào đây."
     },
     "2": {
       "item": "AIR",
       "n": 1,
-      "label": {
-        "vi": "S?n ph?m trong kho ph?",
-        "en": "Attached storage products"
-      },
-      "short": "",
+      "label": "Sản phẩm trong kho phụ",
       "role": "button",
-      "desc": {
-        "vi": "Bấm một ô sản phẩm để lấy cả chồng vào túi; phần không vừa vẫn nằm trong kho. Không thể gửi đồ vào đây.",
-        "en": "Click a product slot to collect its entire stack; anything that does not fit remains stored. You cannot deposit items here."
-      }
+      "desc": "Bấm một ô sản phẩm để lấy cả chồng vào túi; phần không vừa vẫn nằm trong kho. Không thể gửi đồ vào đây."
     }
   }
 }

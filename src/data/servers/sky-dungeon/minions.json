@@ -1,0 +1,5687 @@
+{
+	"minions": [
+		{
+			"id": "coal",
+			"name": "Coal Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 15,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 15,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 13,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 13,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 10.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 10.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 9.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 9.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 8.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 8.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 7.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 6.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Coal",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "miner",
+			"name": "Cobblestone Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 14,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 14,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 12,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 12,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 10,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 10,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 9,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 9,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 8,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 8,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 7,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 6,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 3,
+					"products": [
+						{
+							"name": "Cobblestone",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				},
+				{
+					"from": 4,
+					"to": 6,
+					"products": [
+						{
+							"name": "Cobblestone",
+							"chance": 1,
+							"amount": "1"
+						},
+						{
+							"name": "Coal",
+							"chance": 0.1,
+							"amount": "1"
+						},
+						{
+							"name": "Raw Iron",
+							"chance": 0.05,
+							"amount": "1"
+						}
+					]
+				},
+				{
+					"from": 7,
+					"to": 9,
+					"products": [
+						{
+							"name": "Cobblestone",
+							"chance": 1,
+							"amount": "1"
+						},
+						{
+							"name": "Coal",
+							"chance": 0.15,
+							"amount": "1-2"
+						},
+						{
+							"name": "Raw Iron",
+							"chance": 0.1,
+							"amount": "1"
+						},
+						{
+							"name": "Raw Gold",
+							"chance": 0.05,
+							"amount": "1"
+						},
+						{
+							"name": "Redstone",
+							"chance": 0.05,
+							"amount": "1-3"
+						}
+					]
+				},
+				{
+					"from": 10,
+					"to": 12,
+					"products": [
+						{
+							"name": "Cobblestone",
+							"chance": 1,
+							"amount": "1"
+						},
+						{
+							"name": "Coal",
+							"chance": 0.2,
+							"amount": "1-2"
+						},
+						{
+							"name": "Raw Iron",
+							"chance": 0.15,
+							"amount": "1"
+						},
+						{
+							"name": "Raw Gold",
+							"chance": 0.08,
+							"amount": "1"
+						},
+						{
+							"name": "Redstone",
+							"chance": 0.08,
+							"amount": "1-3"
+						},
+						{
+							"name": "Diamond",
+							"chance": 0.01,
+							"amount": "1"
+						},
+						{
+							"name": "Emerald",
+							"chance": 0.005,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "diamond",
+			"name": "Diamond Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 29,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 29,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 25,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 25,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 20.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 20.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 18.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 16.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 14.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 12.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Diamond",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "emerald",
+			"name": "Emerald Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 28,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 28,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 24,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 24,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 20,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 20,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 18,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 18,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 16,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 16,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 14,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 12,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Emerald",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "end_stone",
+			"name": "End Stone Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "End Stone",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "glowstone",
+			"name": "Glowstone Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 25,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 25,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 21.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 21.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 14.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 14.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 12.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 10.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Glowstone Dust",
+							"chance": 1,
+							"amount": "2-4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "gold",
+			"name": "Gold Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 22,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 22,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 19,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 19,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 15.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 15.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 14,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 14,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 12.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 12.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 11,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 9.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Raw Gold",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "gravel",
+			"name": "Gravel Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "Gravel",
+							"chance": 1,
+							"amount": "1"
+						},
+						{
+							"name": "Flint",
+							"chance": 0.1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "hard_stone",
+			"name": "Hard Stone Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 14,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 14,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 12,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 12,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 10,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 10,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 9,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 9,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 8,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 8,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 7,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 6,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Hard Stone",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ice",
+			"name": "Ice Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 14,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 14,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 12,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 12,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 10,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 10,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 9,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 9,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 8,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 8,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 7,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 6,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Ice",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "iron",
+			"name": "Iron Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 17,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 17,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 14.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 14.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 12,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 12,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 11,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 11,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 9.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 9.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 8.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 7.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Raw Iron",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "lapis",
+			"name": "Lapis Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 29,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 29,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 25,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 25,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 20.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 20.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 18.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 16.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 14.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 12.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Lapis Lazuli",
+							"chance": 1,
+							"amount": "4-8"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "mithril",
+			"name": "Mithril Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 45,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 45,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 38.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 38.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 32,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 32,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 29,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 29,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 25.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 25.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 22.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 19.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Mithril",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "mycelium",
+			"name": "Mycelium Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 11,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Mycelium",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "obsidian",
+			"name": "Obsidian Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 45,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 45,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 38.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 38.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 32,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 32,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 29,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 29,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 25.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 25.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 22.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 19.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Obsidian",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "quartz",
+			"name": "Quartz Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 22.5,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 19.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 19.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 16,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 16,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 14.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 14.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 13,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 11,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 9.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Nether Quartz",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "red_sand",
+			"name": "Red Sand Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 11,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Red Sand",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "redstone",
+			"name": "Redstone Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 29,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 29,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 25,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 25,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 20.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 20.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 18.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 16.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 14.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 12.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Redstone",
+							"chance": 1,
+							"amount": "4-5"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "sand",
+			"name": "Sand Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "Sand",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "snow",
+			"name": "Snow Minion",
+			"category": "mining",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 13,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 13,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 11,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 11,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 9.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 9.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 8.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 8.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 7.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 7.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 6.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 5.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Snowball",
+							"chance": 1,
+							"amount": "4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "cactus",
+			"name": "Cactus Minion",
+			"category": "farming",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 27,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 27,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 23,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 23,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 19.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 19.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 17.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 17.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 11.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Cactus",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "carrot",
+			"name": "Carrot Minion",
+			"category": "farming",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 20,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 20,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 17,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 17,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 14.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 14.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 13,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 13,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 11.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 11.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 10,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 8.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Carrot",
+							"chance": 1,
+							"amount": "1-3"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "chicken",
+			"name": "Chicken Minion",
+			"category": "farming",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 11,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Raw Chicken",
+							"chance": 1,
+							"amount": "1"
+						},
+						{
+							"name": "Feather",
+							"chance": 0.5,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "cocoa",
+			"name": "Cocoa Beans Minion",
+			"category": "farming",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 27,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 27,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 23,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 23,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 19.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 19.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 17.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 17.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 11.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Cocoa Beans",
+							"chance": 1,
+							"amount": "2-3"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "cow",
+			"name": "Cow Minion",
+			"category": "farming",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 11,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Raw Beef",
+							"chance": 1,
+							"amount": "1"
+						},
+						{
+							"name": "Leather",
+							"chance": 0.5,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "melon",
+			"name": "Melon Minion",
+			"category": "farming",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 24,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 24,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 20.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 20.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 17,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 17,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 15.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 15.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 13.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 13.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 12,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 10.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Melon",
+							"chance": 1,
+							"amount": "5"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "mushroom",
+			"name": "Mushroom Minion",
+			"category": "farming",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 30,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 30,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 25.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 25.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 21.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 21.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 19.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 19.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 17,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 17,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Red Mushroom",
+							"chance": 0.5,
+							"amount": "1"
+						},
+						{
+							"name": "Brown Mushroom",
+							"chance": 0.5,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "nether_wart",
+			"name": "Nether Wart Minion",
+			"category": "farming",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 50,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 50,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 43,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 43,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 35.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 35.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 32,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 32,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 28.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 28.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 25,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 21.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Nether Wart",
+							"chance": 1,
+							"amount": "2-4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "pig",
+			"name": "Pig Minion",
+			"category": "farming",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 11,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Raw Porkchop",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "potato",
+			"name": "Potato Minion",
+			"category": "farming",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 20,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 20,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 17,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 17,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 14.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 14.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 13,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 13,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 11.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 11.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 10,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 8.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Potato",
+							"chance": 1,
+							"amount": "1-3"
+						},
+						{
+							"name": "Poisonous Potato",
+							"chance": 0.02,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "pumpkin",
+			"name": "Pumpkin Minion",
+			"category": "farming",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 32,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 32,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 27.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 27.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 23,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 23,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 20.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 20.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 18.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 18.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 16,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 13.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Pumpkin",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "rabbit",
+			"name": "Rabbit Minion",
+			"category": "farming",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 11,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Raw Rabbit",
+							"chance": 1,
+							"amount": "1"
+						},
+						{
+							"name": "Rabbit Hide",
+							"chance": 0.5,
+							"amount": "1"
+						},
+						{
+							"name": "Rabbit's Foot",
+							"chance": 0.1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "sheep",
+			"name": "Sheep Minion",
+			"category": "farming",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 24,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 24,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 20.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 20.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 17,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 17,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 15.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 15.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 13.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 13.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 12,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 10.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Wool",
+							"chance": 1,
+							"amount": "1"
+						},
+						{
+							"name": "Raw Mutton",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "sugar_cane",
+			"name": "Sugar Cane Minion",
+			"category": "farming",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 22,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 22,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 19,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 19,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 15.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 15.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 14,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 14,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 12.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 12.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 11,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 9.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Sugar Cane",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "sunflower",
+			"name": "Sunflower Minion",
+			"category": "farming",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 22,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 22,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 19,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 19,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 15.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 15.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 14,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 14,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 12.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 12.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 11,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 9.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Sunflower",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "farmer",
+			"name": "Wheat Minion",
+			"category": "farming",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 15,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 15,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 13,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 13,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 10.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 10.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 9.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 9.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 8.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 8.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 7.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 6.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Wheat",
+							"chance": 1,
+							"amount": "1"
+						},
+						{
+							"name": "Seeds",
+							"chance": 0.5,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "acacia",
+			"name": "Acacia Minion",
+			"category": "foraging",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 48,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 48,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 41,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 41,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 34.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 34.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 31,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 31,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 27.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 27.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 24,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "Acacia Log",
+							"chance": 1,
+							"amount": "4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "birch",
+			"name": "Birch Minion",
+			"category": "foraging",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 48,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 48,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 41,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 41,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 34.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 34.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 31,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 31,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 27.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 27.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 24,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "Birch Log",
+							"chance": 1,
+							"amount": "4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "dark_oak",
+			"name": "Dark Oak Minion",
+			"category": "foraging",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 48,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 48,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 41,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 41,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 34.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 34.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 31,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 31,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 27.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 27.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 24,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "Dark Oak Log",
+							"chance": 1,
+							"amount": "4"
+						},
+						{
+							"name": "Apple",
+							"chance": 0.05,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "flower",
+			"name": "Flower Minion",
+			"category": "foraging",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 30,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 30,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 25.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 25.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 21.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 21.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 19.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 19.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 17,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 17,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Dandelion",
+							"chance": 0.09,
+							"amount": "1"
+						},
+						{
+							"name": "Poppy",
+							"chance": 0.09,
+							"amount": "1"
+						},
+						{
+							"name": "Blue Orchid",
+							"chance": 0.09,
+							"amount": "1"
+						},
+						{
+							"name": "Allium",
+							"chance": 0.09,
+							"amount": "1"
+						},
+						{
+							"name": "Azure Bluet",
+							"chance": 0.09,
+							"amount": "1"
+						},
+						{
+							"name": "Red Tulip",
+							"chance": 0.09,
+							"amount": "1"
+						},
+						{
+							"name": "Orange Tulip",
+							"chance": 0.09,
+							"amount": "1"
+						},
+						{
+							"name": "White Tulip",
+							"chance": 0.09,
+							"amount": "1"
+						},
+						{
+							"name": "Pink Tulip",
+							"chance": 0.09,
+							"amount": "1"
+						},
+						{
+							"name": "Oxeye Daisy",
+							"chance": 0.09,
+							"amount": "1"
+						},
+						{
+							"name": "Cornflower",
+							"chance": 0.09,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "jungle",
+			"name": "Jungle Minion",
+			"category": "foraging",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 48,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 48,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 41,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 41,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 34.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 34.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 31,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 31,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 27.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 27.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 24,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "Jungle Log",
+							"chance": 1,
+							"amount": "4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "lumber",
+			"name": "Oak Minion",
+			"category": "foraging",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 48,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 48,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 41,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 41,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 34.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 34.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 31,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 31,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 27.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 27.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 24,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "Oak Log",
+							"chance": 1,
+							"amount": "4"
+						},
+						{
+							"name": "Apple",
+							"chance": 0.05,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "spruce",
+			"name": "Spruce Minion",
+			"category": "foraging",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 48,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 48,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 41,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 41,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 34.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 34.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 31,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 31,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 27.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 27.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 24,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "Spruce Log",
+							"chance": 1,
+							"amount": "4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "clay",
+			"name": "Clay Minion",
+			"category": "fishing",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 32,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 32,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 27.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 27.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 23,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 23,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 20.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 20.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 18.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 18.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 16,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 13.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Clay",
+							"chance": 1,
+							"amount": "4"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "fisher",
+			"name": "Fishing Minion",
+			"category": "fishing",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 78,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 78,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 67,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 67,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 55.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 55.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 50,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 50,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 44.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 44.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 39,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 33.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Raw Cod",
+							"chance": 0.7,
+							"amount": "1"
+						},
+						{
+							"name": "Raw Salmon",
+							"chance": 0.25,
+							"amount": "1"
+						},
+						{
+							"name": "Pufferfish",
+							"chance": 0.1,
+							"amount": "1"
+						},
+						{
+							"name": "Tropical Fish",
+							"chance": 0.03,
+							"amount": "1"
+						},
+						{
+							"name": "Prismarine Shard",
+							"chance": 0.05,
+							"amount": "1"
+						},
+						{
+							"name": "Prismarine Crystals",
+							"chance": 0.05,
+							"amount": "1"
+						},
+						{
+							"name": "Sponge",
+							"chance": 0.005,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "blaze",
+			"name": "Blaze Minion",
+			"category": "combat",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 33,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 33,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 28.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 28.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 23.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 23.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 21,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 21,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 19,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 19,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 16.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 14,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Blaze Rod",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "cave_spider",
+			"name": "Cave Spider Minion",
+			"category": "combat",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "String",
+							"chance": 1,
+							"amount": "1"
+						},
+						{
+							"name": "Spider Eye",
+							"chance": 0.5,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "creeper",
+			"name": "Creeper Minion",
+			"category": "combat",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 27,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 27,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 23,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 23,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 19.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 19.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 17.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 17.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "Gunpowder",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "enderman",
+			"name": "Enderman Minion",
+			"category": "combat",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 32,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 32,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 27.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 27.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 23,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 23,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 20.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 20.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 18.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 18.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 16,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "Ender Pearl",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "ghast",
+			"name": "Ghast Minion",
+			"category": "combat",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 50,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 50,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 43,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 43,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 35.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 35.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 32,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 32,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 28.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 28.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 25,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 21.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Ghast Tear",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "inferno",
+			"name": "Inferno Minion",
+			"category": "combat",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 33,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 33,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 28.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 28.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 23.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 23.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 21,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 21,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 19,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 19,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 16.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "Crude Gabagool",
+							"chance": 1,
+							"amount": "1"
+						},
+						{
+							"name": "Blaze Rod",
+							"chance": 0.2,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "magma_cube",
+			"name": "Magma Cube Minion",
+			"category": "combat",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 32,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 32,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 27.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 27.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 23,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 23,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 20.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 20.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 18.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 18.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 16,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 13.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Magma Cream",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "revenant",
+			"name": "Revenant Minion",
+			"category": "combat",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 29,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 29,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 25,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 25,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 20.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 20.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 18.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 16.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 14.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 12.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Rotten Flesh",
+							"chance": 1,
+							"amount": "1-3"
+						},
+						{
+							"name": "Diamond",
+							"chance": 0.05,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "skeleton",
+			"name": "Skeleton Minion",
+			"category": "combat",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "Bone",
+							"chance": 1,
+							"amount": "1"
+						},
+						{
+							"name": "Arrow",
+							"chance": 0.5,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "slime",
+			"name": "Slime Minion",
+			"category": "combat",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "Slimeball",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "spider",
+			"name": "Spider Minion",
+			"category": "combat",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "String",
+							"chance": 1,
+							"amount": "1"
+						},
+						{
+							"name": "Spider Eye",
+							"chance": 0.5,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "tarantula",
+			"name": "Tarantula Minion",
+			"category": "combat",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 29,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 29,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 25,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 25,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 20.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 20.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 18.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 16.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 14.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "String",
+							"chance": 1,
+							"amount": "1-3"
+						},
+						{
+							"name": "Spider Eye",
+							"chance": 0.5,
+							"amount": "1"
+						},
+						{
+							"name": "Iron Ingot",
+							"chance": 0.05,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "vampire",
+			"name": "Vampire Minion",
+			"category": "combat",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 45,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 45,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 38.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 38.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 32,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 32,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 29,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 29,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 25.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 25.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 22.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "Hemovibe",
+							"chance": 1,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "voidling",
+			"name": "Voidling Minion",
+			"category": "combat",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 45,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 45,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 38.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 38.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 32,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 32,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 29,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 29,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 25.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 25.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 22.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "Obsidian",
+							"chance": 1,
+							"amount": "1"
+						},
+						{
+							"name": "Nether Quartz",
+							"chance": 0.5,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "slayer",
+			"name": "Zombie Minion",
+			"category": "combat",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 11,
+					"products": [
+						{
+							"name": "Rotten Flesh",
+							"chance": 1,
+							"amount": "1"
+						},
+						{
+							"name": "Carrot",
+							"chance": 0.02,
+							"amount": "1"
+						},
+						{
+							"name": "Potato",
+							"chance": 0.02,
+							"amount": "1"
+						},
+						{
+							"name": "Iron Ingot",
+							"chance": 0.01,
+							"amount": "1"
+						}
+					]
+				}
+			]
+		}
+	]
+}

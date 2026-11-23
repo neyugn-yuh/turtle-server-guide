@@ -8,11 +8,10 @@ import { guiMenus } from './src/plugins/gui-menus.mjs';
 import { guides } from './src/data/guides.mjs';
 import { servers } from './src/data/servers.mjs';
 
-// One sidebar group per server (src/data/servers.mjs). Inside it: the server's start page, then one group per system. The pages of a system are discovered from `src/content/docs/<server>/<system>/`
-// (Vietnamese) and `src/content/docs/en/<server>/<system>/` (English).
+// One sidebar group per server (src/data/servers.mjs). Inside it: the server's start page, then one group per system.
+// The pages of a system are discovered from `src/content/docs/<server>/<system>/`.
 const serverGroups = servers.map((server) => ({
-	label: server.title.vi,
-	translations: { en: server.title.en },
+	label: server.title,
 	collapsed: true,
 	items: [
 		{ slug: server.slug },
@@ -20,8 +19,7 @@ const serverGroups = servers.map((server) => ({
 			const guide = guides.find((g) => g.slug === slug);
 			if (!guide) throw new Error(`Server "${server.slug}" lists unknown system "${slug}"`);
 			return {
-				label: guide.title.vi,
-				translations: { en: guide.title.en },
+				label: guide.title,
 				collapsed: true,
 				items: [{ autogenerate: { directory: `${server.slug}/${slug}` } }],
 			};
@@ -31,7 +29,7 @@ const serverGroups = servers.map((server) => ({
 
 // https://astro.build/config
 export default defineConfig({
-	// Turns `![..](/gui/<lang>/<system>-<menu>.svg)` into an interactive menu (see src/plugins/gui-menus.mjs).
+	// Turns `![..](/gui/<system>/<menu>)` into an interactive menu (see src/plugins/gui-menus.mjs).
 	markdown: { processor: satteri({ mdastPlugins: [guiMenus] }) },
 	// Public address, used for the sitemap and absolute URLs.
 	// Override with SITE_URL when the site moves to a custom domain.
@@ -44,11 +42,9 @@ export default defineConfig({
 				dark: './src/assets/logo-dark.svg',
 			},
 			favicon: '/favicon.svg',
+			// The guide is Vietnamese only.
 			defaultLocale: 'root',
-			locales: {
-				root: { label: 'Tiếng Việt', lang: 'vi' },
-				en: { label: 'English', lang: 'en' },
-			},
+			locales: { root: { label: 'Tiếng Việt', lang: 'vi' } },
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/MineTurtleVN' }],
 			plugins: [starlightLinksValidator()],
 			// Opens the detail box when a reader hovers, taps or focuses a slot of a menu.
@@ -89,12 +85,10 @@ export default defineConfig({
 			sidebar: [
 				{
 					label: 'Bắt đầu',
-					translations: { en: 'Getting started' },
 					items: [{ autogenerate: { directory: 'getting-started' } }],
 				},
 				{
 					label: 'Máy chủ',
-					translations: { en: 'Servers' },
 					items: serverGroups,
 				},
 			],

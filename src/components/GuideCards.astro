@@ -1,7 +1,7 @@
 ---
 /**
  * Cards for the systems of one server: the list comes from src/data/servers.mjs, the names from src/data/guides.mjs.
- * Each card opens the system's Overview page in the current language.
+ * Each card opens the system's Overview page.
  */
 import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 import { guides } from '../data/guides.mjs';
@@ -15,9 +15,6 @@ const { server } = Astro.props;
 const entry = servers.find((s) => s.slug === server);
 if (!entry) throw new Error(`GuideCards: unknown server "${server}"`);
 
-const locale = Astro.locals.starlightRoute.locale; // undefined for the root (Vietnamese) locale
-const lang = locale ?? 'vi';
-const prefix = locale ? `${locale}/` : '';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const list = entry.guides.map((slug) => {
 	const guide = guides.find((g) => g.slug === slug);
@@ -27,13 +24,5 @@ const list = entry.guides.map((slug) => {
 ---
 
 <CardGrid>
-	{
-		list.map((guide) => (
-			<LinkCard
-				title={guide.title[lang] ?? guide.title.vi}
-				description={guide.description[lang] ?? guide.description.vi}
-				href={`${base}/${prefix}${server}/${guide.slug}/overview/`}
-			/>
-		))
-	}
+	{list.map((guide) => <LinkCard title={guide.title} description={guide.description} href={`${base}/${server}/${guide.slug}/overview/`} />)}
 </CardGrid>

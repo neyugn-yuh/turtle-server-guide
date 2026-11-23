@@ -1,8 +1,5 @@
 {
-  "title": {
-    "vi": "Cobblestone Minion I",
-    "en": "Cobblestone Minion I"
-  },
+  "title": "Cobblestone Minion I",
   "rows": 6,
   "filler": true,
   "inventory": true,
@@ -10,324 +7,163 @@
     "4": {
       "item": "PLAYER_HEAD",
       "n": 1,
-      "label": {
-        "vi": "Cobblestone Minion I",
-        "en": "Cobblestone Minion I"
-      },
-      "short": "",
+      "label": "Cobblestone Minion I",
       "role": "display",
-      "desc": {
-        "vi": "Di chuột xem bậc, tốc độ thực tế, sức chứa, sản phẩm và thống kê; không có thao tác bấm.",
-        "en": "Hover for tier, actual speed, capacity, products and statistics; clicking has no action."
-      }
+      "desc": "Di chuột xem bậc, tốc độ thực tế, sức chứa, sản phẩm và thống kê; không có thao tác bấm."
     },
     "19": {
       "item": "ORANGE_STAINED_GLASS_PANE",
       "n": 4,
-      "label": {
-        "vi": "Fuel",
-        "en": "Fuel"
-      },
-      "short": "",
+      "label": "Fuel",
       "role": "input",
-      "desc": {
-        "vi": "Cầm nhiên liệu trên con trỏ rồi bấm trái để thêm cả chồng, bấm phải để thêm một món; con trỏ trống chỉ tháo được nhiên liệu vĩnh viễn.",
-        "en": "With fuel on your cursor, left-click to add the whole stack or right-click to add one item; an empty cursor can only remove permanent fuel."
-      }
+      "desc": "Cầm nhiên liệu trên con trỏ rồi bấm trái để thêm cả chồng, bấm phải để thêm một món; con trỏ trống chỉ tháo được nhiên liệu vĩnh viễn."
     },
     "21": {
       "item": "COBBLESTONE",
       "n": 2,
-      "label": {
-        "vi": "Cobblestone",
-        "en": "Cobblestone"
-      },
-      "short": "",
+      "label": "Cobblestone",
       "role": "button",
-      "desc": {
-        "vi": "Bấm chồng `Cobblestone` để lấy vào túi; không phải ô gửi đồ.",
-        "en": "Click the `Cobblestone` stack to collect it into your inventory; this is not a deposit slot."
-      }
+      "desc": "Bấm chồng `Cobblestone` để lấy vào túi; không phải ô gửi đồ."
     },
     "22": {
       "item": "WHITE_STAINED_GLASS_PANE",
       "n": 3,
-      "label": {
-        "vi": "Locked storage slot",
-        "en": "Locked storage slot"
-      },
-      "short": "",
+      "label": "Locked storage slot",
       "role": "display",
-      "desc": {
-        "vi": "Ô khóa, cần tăng bậc để mở thêm.",
-        "en": "Locked slots; increase the tier to unlock more."
-      }
+      "desc": "Ô khóa, cần tăng bậc để mở thêm."
     },
     "23": {
       "item": "WHITE_STAINED_GLASS_PANE",
       "n": 3,
-      "label": {
-        "vi": "Locked storage slot",
-        "en": "Locked storage slot"
-      },
-      "short": "",
+      "label": "Locked storage slot",
       "role": "display",
-      "desc": {
-        "vi": "Ô khóa, cần tăng bậc để mở thêm.",
-        "en": "Locked slots; increase the tier to unlock more."
-      }
+      "desc": "Ô khóa, cần tăng bậc để mở thêm."
     },
     "24": {
       "item": "WHITE_STAINED_GLASS_PANE",
       "n": 3,
-      "label": {
-        "vi": "Locked storage slot",
-        "en": "Locked storage slot"
-      },
-      "short": "",
+      "label": "Locked storage slot",
       "role": "display",
-      "desc": {
-        "vi": "Ô khóa, cần tăng bậc để mở thêm.",
-        "en": "Locked slots; increase the tier to unlock more."
-      }
+      "desc": "Ô khóa, cần tăng bậc để mở thêm."
     },
     "25": {
       "item": "WHITE_STAINED_GLASS_PANE",
       "n": 3,
-      "label": {
-        "vi": "Locked storage slot",
-        "en": "Locked storage slot"
-      },
-      "short": "",
+      "label": "Locked storage slot",
       "role": "display",
-      "desc": {
-        "vi": "Ô khóa, cần tăng bậc để mở thêm.",
-        "en": "Locked slots; increase the tier to unlock more."
-      }
+      "desc": "Ô khóa, cần tăng bậc để mở thêm."
     },
     "28": {
       "item": "YELLOW_STAINED_GLASS_PANE",
       "n": 5,
-      "label": {
-        "vi": "Upgrade slot",
-        "en": "Upgrade slot"
-      },
-      "short": "",
+      "label": "Upgrade slot",
       "role": "input",
-      "desc": {
-        "vi": "Đặt vật phẩm hỗ trợ hợp lệ; bấm với con trỏ trống để tháo.",
-        "en": "Install a valid support item; click with an empty cursor to remove it."
-      }
+      "desc": "Đặt vật phẩm hỗ trợ hợp lệ; bấm với con trỏ trống để tháo."
     },
     "30": {
       "item": "WHITE_STAINED_GLASS_PANE",
       "n": 3,
-      "label": {
-        "vi": "Locked storage slot",
-        "en": "Locked storage slot"
-      },
-      "short": "",
+      "label": "Locked storage slot",
       "role": "display",
-      "desc": {
-        "vi": "Ô khóa, cần tăng bậc để mở thêm.",
-        "en": "Locked slots; increase the tier to unlock more."
-      }
+      "desc": "Ô khóa, cần tăng bậc để mở thêm."
     },
     "31": {
       "item": "WHITE_STAINED_GLASS_PANE",
       "n": 3,
-      "label": {
-        "vi": "Locked storage slot",
-        "en": "Locked storage slot"
-      },
-      "short": "",
+      "label": "Locked storage slot",
       "role": "display",
-      "desc": {
-        "vi": "Ô khóa, cần tăng bậc để mở thêm.",
-        "en": "Locked slots; increase the tier to unlock more."
-      }
+      "desc": "Ô khóa, cần tăng bậc để mở thêm."
     },
     "32": {
       "item": "WHITE_STAINED_GLASS_PANE",
       "n": 3,
-      "label": {
-        "vi": "Locked storage slot",
-        "en": "Locked storage slot"
-      },
-      "short": "",
+      "label": "Locked storage slot",
       "role": "display",
-      "desc": {
-        "vi": "Ô khóa, cần tăng bậc để mở thêm.",
-        "en": "Locked slots; increase the tier to unlock more."
-      }
+      "desc": "Ô khóa, cần tăng bậc để mở thêm."
     },
     "33": {
       "item": "WHITE_STAINED_GLASS_PANE",
       "n": 3,
-      "label": {
-        "vi": "Locked storage slot",
-        "en": "Locked storage slot"
-      },
-      "short": "",
+      "label": "Locked storage slot",
       "role": "display",
-      "desc": {
-        "vi": "Ô khóa, cần tăng bậc để mở thêm.",
-        "en": "Locked slots; increase the tier to unlock more."
-      }
+      "desc": "Ô khóa, cần tăng bậc để mở thêm."
     },
     "34": {
       "item": "WHITE_STAINED_GLASS_PANE",
       "n": 3,
-      "label": {
-        "vi": "Locked storage slot",
-        "en": "Locked storage slot"
-      },
-      "short": "",
+      "label": "Locked storage slot",
       "role": "display",
-      "desc": {
-        "vi": "Ô khóa, cần tăng bậc để mở thêm.",
-        "en": "Locked slots; increase the tier to unlock more."
-      }
+      "desc": "Ô khóa, cần tăng bậc để mở thêm."
     },
     "37": {
       "item": "YELLOW_STAINED_GLASS_PANE",
       "n": 5,
-      "label": {
-        "vi": "Upgrade slot",
-        "en": "Upgrade slot"
-      },
-      "short": "",
+      "label": "Upgrade slot",
       "role": "input",
-      "desc": {
-        "vi": "Đặt vật phẩm hỗ trợ hợp lệ; bấm với con trỏ trống để tháo.",
-        "en": "Install a valid support item; click with an empty cursor to remove it."
-      }
+      "desc": "Đặt vật phẩm hỗ trợ hợp lệ; bấm với con trỏ trống để tháo."
     },
     "39": {
       "item": "WHITE_STAINED_GLASS_PANE",
       "n": 3,
-      "label": {
-        "vi": "Locked storage slot",
-        "en": "Locked storage slot"
-      },
-      "short": "",
+      "label": "Locked storage slot",
       "role": "display",
-      "desc": {
-        "vi": "Ô khóa, cần tăng bậc để mở thêm.",
-        "en": "Locked slots; increase the tier to unlock more."
-      }
+      "desc": "Ô khóa, cần tăng bậc để mở thêm."
     },
     "40": {
       "item": "WHITE_STAINED_GLASS_PANE",
       "n": 3,
-      "label": {
-        "vi": "Locked storage slot",
-        "en": "Locked storage slot"
-      },
-      "short": "",
+      "label": "Locked storage slot",
       "role": "display",
-      "desc": {
-        "vi": "Ô khóa, cần tăng bậc để mở thêm.",
-        "en": "Locked slots; increase the tier to unlock more."
-      }
+      "desc": "Ô khóa, cần tăng bậc để mở thêm."
     },
     "41": {
       "item": "WHITE_STAINED_GLASS_PANE",
       "n": 3,
-      "label": {
-        "vi": "Locked storage slot",
-        "en": "Locked storage slot"
-      },
-      "short": "",
+      "label": "Locked storage slot",
       "role": "display",
-      "desc": {
-        "vi": "Ô khóa, cần tăng bậc để mở thêm.",
-        "en": "Locked slots; increase the tier to unlock more."
-      }
+      "desc": "Ô khóa, cần tăng bậc để mở thêm."
     },
     "42": {
       "item": "WHITE_STAINED_GLASS_PANE",
       "n": 3,
-      "label": {
-        "vi": "Locked storage slot",
-        "en": "Locked storage slot"
-      },
-      "short": "",
+      "label": "Locked storage slot",
       "role": "display",
-      "desc": {
-        "vi": "Ô khóa, cần tăng bậc để mở thêm.",
-        "en": "Locked slots; increase the tier to unlock more."
-      }
+      "desc": "Ô khóa, cần tăng bậc để mở thêm."
     },
     "43": {
       "item": "WHITE_STAINED_GLASS_PANE",
       "n": 3,
-      "label": {
-        "vi": "Locked storage slot",
-        "en": "Locked storage slot"
-      },
-      "short": "",
+      "label": "Locked storage slot",
       "role": "display",
-      "desc": {
-        "vi": "Ô khóa, cần tăng bậc để mở thêm.",
-        "en": "Locked slots; increase the tier to unlock more."
-      }
+      "desc": "Ô khóa, cần tăng bậc để mở thêm."
     },
     "46": {
       "item": "BROWN_STAINED_GLASS_PANE",
       "n": 6,
-      "label": {
-        "vi": "Automated Shipping",
-        "en": "Automated Shipping"
-      },
-      "short": "",
+      "label": "Automated Shipping",
       "role": "input",
-      "desc": {
-        "vi": "Đặt hopper chuyên dụng; con trỏ trống bấm trái thu tiền, bấm phải tháo hopper và thử thu tiền.",
-        "en": "Install a special hopper; with an empty cursor, left-click to collect coins or right-click to remove the hopper and attempt coin collection."
-      }
+      "desc": "Đặt hopper chuyên dụng; con trỏ trống bấm trái thu tiền, bấm phải tháo hopper và thử thu tiền."
     },
     "48": {
       "item": "CHEST",
       "n": 7,
-      "label": {
-        "vi": "Collect all",
-        "en": "Collect all"
-      },
-      "short": "",
+      "label": "Collect all",
       "role": "button",
-      "desc": {
-        "vi": "Lấy sản phẩm từ cả kho chính lẫn kho phụ; đồ không vừa túi vẫn ở kho.",
-        "en": "Collect products from both main and attached storage; anything that does not fit stays stored."
-      }
+      "desc": "Lấy sản phẩm từ cả kho chính lẫn kho phụ; đồ không vừa túi vẫn ở kho."
     },
     "50": {
       "item": "GOLD_INGOT",
       "n": 8,
-      "label": {
-        "vi": "Upgrade minion",
-        "en": "Upgrade minion"
-      },
-      "short": "",
+      "label": "Upgrade minion",
       "role": "button",
-      "desc": {
-        "vi": "Yêu cầu nâng lên bậc kế tiếp; mở menu nâng cấp khi server đã cung cấp chi phí.",
-        "en": "Request the next tier; opens the upgrade menu when your server has provided costs."
-      }
+      "desc": "Yêu cầu nâng lên bậc kế tiếp; mở menu nâng cấp khi server đã cung cấp chi phí."
     },
     "53": {
       "item": "BEDROCK",
       "n": 9,
-      "label": {
-        "vi": "Pickup minion",
-        "en": "Pickup minion"
-      },
-      "short": "",
+      "label": "Pickup minion",
       "role": "button",
-      "desc": {
-        "vi": "Thu hồi ngay, không có hộp xác nhận; đồ trả lại không vừa túi rơi xuống đất.",
-        "en": "Pick it up immediately without a confirmation dialog; returned items that do not fit drop on the ground."
-      }
+      "desc": "Thu hồi ngay, không có hộp xác nhận; đồ trả lại không vừa túi rơi xuống đất."
     }
   }
 }

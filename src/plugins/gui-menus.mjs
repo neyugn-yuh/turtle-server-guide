@@ -3,9 +3,9 @@
  *
  * A Markdown page writes the picture like this, with an optional italic caption right under it:
  *
- *     ![Short description](/gui/vi/<system>-<menu>.svg)
+ *     ![Mô tả ngắn](/gui/<system>/<menu>)
  *
- *     *Figure: what the picture shows.*
+ *     *Hình: hình này cho thấy gì.*
  *
  * At build time this plugin finds that line, loads src/data/gui/<system>/<menu>.json and replaces the line (and the
  * caption) with a <figure> of 9-column slots. public/gui-viewer.js opens a detail box when a reader hovers, taps or
@@ -14,7 +14,7 @@
  * The menu is schematic on purpose: slot positions, titles and button names come from the game, the textures do not
  * (Mojang's item textures are not redistributed), so an item is a colored block chosen from its material name.
  *
- * The build fails on a spec it cannot draw faithfully (a slot outside the menu, a missing translation), so a wrong
+ * The build fails on a spec it cannot draw faithfully (a slot outside the menu, a missing label), so a wrong
  * slot number breaks the build instead of shipping a misleading picture. Specs are read when a page is built: restart
  * `npm run dev` after editing one.
  */
@@ -24,7 +24,6 @@ import { fileURLToPath } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..', '..');
 const SPEC_DIR = join(ROOT, 'src/data/gui');
-const LANGS = ['vi', 'en'];
 const COLS = 9;
 
 // ---------- colors ----------
@@ -99,30 +98,32 @@ function wrap(label, max = 8) {
 	return out;
 }
 
-const own = (def, lang) => (typeof def.short === 'object' ? def.short?.[lang] : def.short);
-
 /**
  * The text drawn inside a tile: the spec's `short` if it has one. Without one, the label itself, but only when EVERY
  * slot of the menu that has a description can show its label (so a picture is either fully labelled or not at all,
  * never a mix). The full label is always in the detail box.
  */
-function labelsFit(spec, lang) {
+function labelsFit(spec) {
 	const named = allDefs(spec).filter((d) => d.desc && d.role !== 'input');
-	return named.length > 0 && named.every((d) => own(d, lang) || d.label[lang].length <= 12);
+	return named.length > 0 && named.every((d) => d.short || d.label.length <= 12);
 }
 
-function shortOf(def, lang, auto) {
-	const text = own(def, lang);
-	if (text) return text;
-	if (auto && def.desc && def.role !== 'input') return def.label[lang];
+function shortOf(def, auto) {
+	if (def.short) return def.short;
+	if (auto && def.desc && def.role !== 'input') return def.label;
 	return '';
 }
 
 const allDefs = (spec) => [...Object.values(spec.slots), ...(spec.inventory && spec.inventory !== true ? Object.values(spec.inventory) : [])];
 
-const T = {
-	vi: { hint: 'Rê chuột vào một ô (trên điện thoại: chạm) để xem chi tiết.', inventory: 'Túi đồ của bạn', slot: 'Ô', slots: 'Ô', inv: 'Túi đồ', hotbar: 'Thanh phím tắt', kind: { button: 'Nút bấm', input: 'Ô đặt đồ', display: 'Chỉ để xem' } },
-	en: { hint: 'Hover over a slot (on a phone: tap) to see details.', inventory: 'Your inventory', slot: 'Slot', slots: 'Slots', inv: 'Inventory', hotbar: 'Hotbar', kind: { button: 'Button', input: 'Item slot', display: 'Display only' } },
+const t = {
+	hint: 'Rê chuột vào một ô (trên điện thoại: chạm) để xem chi tiết.',
+	inventory: 'Túi đồ của bạn',
+	slot: 'Ô',
+	slots: 'Ô',
+	inv: 'Túi đồ',
+	hotbar: 'Thanh phím tắt',
+	kind: { button: 'Nút bấm', input: 'Ô đặt đồ', display: 'Chỉ để xem' },
 };
 
 // ---------- validation ----------
@@ -130,12 +131,12 @@ function validate(spec, file) {
 	const errors = [];
 	const fail = (m) => errors.push(`${file}: ${m}`);
 	if (!Number.isInteger(spec.rows) || spec.rows < 1 || spec.rows > 6) fail('rows must be an integer from 1 to 6');
-	for (const lang of LANGS) if (!spec.title?.[lang]) fail(`title.${lang} is missing`);
+	if (!spec.title) fail('title is missing');
 	const size = (spec.rows ?? 0) * COLS;
 	const check = (where, def) => {
 		if (!def.item) fail(`${where} has no item`);
-		for (const lang of LANGS) if (!def.label?.[lang]) fail(`${where} has no label.${lang}`);
-		if (def.desc) for (const lang of LANGS) if (!def.desc[lang]) fail(`${where} has a desc without ${lang}`);
+		if (!def.label) fail(`${where} has no label`);
+		if (def.desc !== undefined && typeof def.desc !== 'string') fail(`${where}: desc must be a string`);
 		if (def.role && !['button', 'display', 'input'].includes(def.role)) fail(`${where}: role must be button, display or input`);
 	};
 	for (const [slot, def] of Object.entries(spec.slots ?? {})) {
@@ -156,7 +157,7 @@ function validate(spec, file) {
 		if (def.n === undefined) continue;
 		if (!Number.isInteger(def.n) || def.n < 1) fail(`n must be a positive integer (got ${def.n})`);
 		const known = groups.get(def.n);
-		if (known && LANGS.some((lang) => known.label?.[lang] !== def.label?.[lang] || known.desc?.[lang] !== def.desc?.[lang])) fail(`the number ${def.n} is used for different slots`);
+		if (known && (known.label !== def.label || known.desc !== def.desc)) fail(`the number ${def.n} is used for different slots`);
 		groups.set(def.n, def);
 	}
 	if (errors.length) throw new Error(errors.join('\n'));
@@ -176,7 +177,7 @@ function ranges(list) {
 	return parts.join(', ');
 }
 
-function slotHtml(def, { lang, auto, group, where, filler, row, col, kind }) {
+function slotHtml(def, { auto, group, where, filler, row, col }) {
 	if (!def) {
 		if (!filler) return '<span class="gui-slot"></span>';
 		const item = filler === true ? 'BLACK_STAINED_GLASS_PANE' : filler;
@@ -186,29 +187,25 @@ function slotHtml(def, { lang, auto, group, where, filler, row, col, kind }) {
 	const dark = luminance(color) < 0.45;
 	const role = def.role ?? 'button';
 	const pane = isPane(def.item);
-	const text = shortOf(def, lang, auto);
+	const text = shortOf(def, auto);
 	const lines = text ? wrap(text, 8) : [];
 	const label = lines.length ? `<span class="gui-text" style="--fg:${dark ? '#ffffff' : '#1b1b1b'}">${lines.map(esc).join('<br>')}</span>` : '';
 	const tile = role === 'input'
 		? `<span class="gui-tile gui-drop">${def.item !== 'AIR' ? `<span class="gui-ghost" style="--c:${color}"></span>` : ''}</span>`
 		: `<span class="gui-tile${pane ? ' gui-pane' : ''}${dark ? ' gui-dark' : ''}" style="--c:${color}"></span>`;
 	if (!def.desc) return `<span class="gui-slot">${tile}${label}</span>`;
-	const t = T[lang];
 	const place = where ?? (group ? `${group.length > 1 ? t.slots : t.slot} ${ranges(group)}` : '');
-	const tip = `<span class="gui-src" hidden><strong class="gui-name">${esc(def.label[lang])}</strong><em class="gui-kind gui-kind-${role}">${t.kind[role]}</em><span class="gui-desc">${richText(def.desc[lang])}</span>${place ? `<span class="gui-where">${esc(place)}</span>` : ''}</span>`;
-	const aria = `${def.label[lang]}. ${def.desc[lang].replace(/`/g, '')}`;
+	const tip = `<span class="gui-src" hidden><strong class="gui-name">${esc(def.label)}</strong><em class="gui-kind gui-kind-${role}">${t.kind[role]}</em><span class="gui-desc">${richText(def.desc)}</span>${place ? `<span class="gui-where">${esc(place)}</span>` : ''}</span>`;
+	const aria = `${def.label}. ${def.desc.replace(/`/g, '')}`;
 	const g = def.n !== undefined ? ` data-g="${def.n}"` : '';
 	return `<button type="button" class="gui-slot gui-hit" data-r="${row}" data-c="${col}"${g} aria-label="${esc(aria)}">${tile}${label}${tip}</button>`;
 }
 
-function render(spec, lang, alt, caption) {
-	const auto = labelsFit(spec, lang);
-	const t = T[lang];
+function render(spec, alt, caption) {
+	const auto = labelsFit(spec);
 	// where each group sits, for the footer of the detail box
 	const groups = new Map();
 	for (const [slot, def] of Object.entries(spec.slots)) if (def.n !== undefined) groups.set(def.n, [...(groups.get(def.n) ?? []), Number(slot)]);
-	const invGroups = new Map();
-	if (spec.inventory && spec.inventory !== true) for (const def of Object.values(spec.inventory)) if (def.n !== undefined && !groups.has(def.n)) invGroups.set(def.n, true);
 
 	const cells = [];
 	for (let r = 0; r < spec.rows; r++) {
@@ -216,7 +213,7 @@ function render(spec, lang, alt, caption) {
 			const slot = r * COLS + c;
 			const def = spec.slots[String(slot)];
 			const group = def?.n !== undefined ? groups.get(def.n) : [slot];
-			cells.push(slotHtml(def, { lang, auto, group, where: def?.range ? `${t.slots} ${def.range}` : undefined, filler: spec.filler, row: r, col: c }));
+			cells.push(slotHtml(def, { auto, group, where: def?.range ? `${t.slots} ${def.range}` : undefined, filler: spec.filler, row: r, col: c }));
 		}
 	}
 
@@ -228,7 +225,7 @@ function render(spec, lang, alt, caption) {
 			for (let i = 0; i < count; i++) {
 				const def = items[String(from + i)];
 				const r = rowBase + Math.floor(i / COLS);
-				out.push(slotHtml(def, { lang, auto, group: null, where: from + i < 27 ? t.inv : t.hotbar, row: r, col: i % COLS }));
+				out.push(slotHtml(def, { auto, group: null, where: from + i < 27 ? t.inv : t.hotbar, row: r, col: i % COLS }));
 			}
 			return out.join('');
 		};
@@ -237,31 +234,31 @@ function render(spec, lang, alt, caption) {
 
 	const total = spec.rows + (spec.inventory ? 4 : 0);
 	const cap = caption ? `<figcaption>${esc(caption)}</figcaption>` : '';
-	return `<figure class="gui not-content" role="group" aria-label="${esc(alt || spec.title[lang])}"><div class="gui-panel" data-rows="${total}"><p class="gui-title">${esc(spec.title[lang])}</p><div class="gui-grid">${cells.join('')}</div>${inventory}</div><p class="gui-hint">${t.hint}</p>${cap}</figure>`;
+	return `<figure class="gui not-content" role="group" aria-label="${esc(alt || spec.title)}"><div class="gui-panel" data-rows="${total}"><p class="gui-title">${esc(spec.title)}</p><div class="gui-grid">${cells.join('')}</div>${inventory}</div><p class="gui-hint">${t.hint}</p>${cap}</figure>`;
 }
 
 // ---------- specs ----------
-const specFiles = new Map(); // name ("system-menu") -> absolute path
+const specFiles = new Map(); // "system/menu" -> absolute path
 (function walk(dir) {
 	let entries = [];
 	try { entries = readdirSync(dir); } catch { return; }
 	for (const entry of entries) {
 		const p = join(dir, entry);
 		if (statSync(p).isDirectory()) walk(p);
-		else if (entry.endsWith('.json')) specFiles.set(p.slice(SPEC_DIR.length + 1).replace(/\\/g, '/').replace(/\.json$/, '').replace(/\//g, '-'), p);
+		else if (entry.endsWith('.json')) specFiles.set(p.slice(SPEC_DIR.length + 1).replace(/\\/g, '/').replace(/\.json$/, ''), p);
 	}
 })(SPEC_DIR);
 
 function loadSpec(name) {
 	const file = specFiles.get(name);
-	if (!file) throw new Error(`remark-gui: no spec for "${name}" (expected src/data/gui/<system>/<menu>.json)`);
+	if (!file) throw new Error(`remark-gui: no spec for "${name}" (expected src/data/gui/${name}.json)`);
 	const spec = JSON.parse(readFileSync(file, 'utf8'));
 	validate(spec, name);
 	return spec;
 }
 
 // ---------- the plugin ----------
-const IMAGE = /^\/gui\/(vi|en)\/([a-z0-9-]+)\.svg$/;
+const IMAGE = /^\/gui\/([a-z0-9-]+\/[a-z0-9-]+)$/;
 
 /**
  * A Sätteri mdast plugin (Astro 7's Markdown processor): swaps the paragraph that holds only a menu image, and the
@@ -274,7 +271,7 @@ export const guiMenus = {
 		const image = node.children.length === 1 && node.children[0].type === 'image' ? node.children[0] : null;
 		const m = image ? IMAGE.exec(image.url) : null;
 		if (!m) return;
-		const [, lang, name] = m;
+		const [, name] = m;
 		let caption = '';
 		const parent = ctx.parent(node);
 		const index = ctx.indexOf(node);
@@ -284,7 +281,7 @@ export const guiMenus = {
 			ctx.removeNode(next);
 		}
 		try {
-			return { type: 'html', value: render(loadSpec(name), lang, image.alt, caption) };
+			return { type: 'html', value: render(loadSpec(name), image.alt, caption) };
 		} catch (error) {
 			throw new Error(`${ctx.fileURL ? fileURLToPath(ctx.fileURL) : 'page'}: ${error.message}`);
 		}

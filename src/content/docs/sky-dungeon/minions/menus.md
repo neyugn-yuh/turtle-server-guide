@@ -14,7 +14,7 @@ Rê chuột vào một ô trong hình (trên điện thoại thì chạm) để 
 
 Bấm phải vào minion của bạn. Hình minh họa `Cobblestone Minion I` đã có sản phẩm, chưa lắp nhiên liệu, vật phẩm hỗ trợ hay hopper.
 
-![Menu Cobblestone Minion I](/gui/vi/minions-minion.svg)
+![Menu Cobblestone Minion I](/gui/minions/minion)
 
 *Hình: Minion bậc I với một ô kho mở và các ô hỗ trợ còn trống.*
 
@@ -26,7 +26,7 @@ Bạn cũng có thể bấm vật phẩm hợp lệ trong túi khi menu đang m�
 
 Đặt vật phẩm Minion Storage cạnh minion, rồi bấm phải vào khối kho đã gắn để mở. Hình dùng Small Storage mặc định thêm 3 ô, có một chồng sản phẩm minh họa.
 
-![Menu Minion Storage](/gui/vi/minions-storage.svg)
+![Menu Minion Storage](/gui/minions/storage)
 
 *Hình: Kho phụ 3 ô với các ô còn lại được chặn bằng kính đen.*
 
@@ -36,7 +36,7 @@ Số ô phụ mặc định có thể là 3, 9, 15, 21 hoặc 27 tùy vật ph�
 
 Bấm `Upgrade minion` ở menu minion. Menu chỉ mở nếu còn bậc kế tiếp và server cung cấp chi phí hoặc cho nâng miễn phí. Mặc định chưa có chi phí và không cho nâng miễn phí: bạn nhận thông báo thay vì thấy menu.
 
-![Bố cục Upgrade Minion](/gui/vi/minions-upgrade.svg)
+![Bố cục Upgrade Minion](/gui/minions/upgrade)
 
 *Hình: Bố cục mặc định cho bậc 1 lên 2, bỏ trống phần nguyên liệu vì chưa có yêu cầu mặc định.*
 

@@ -1,25 +1,14 @@
 ---
 /**
  * Home-page cards, one per server, built from src/data/servers.mjs.
- * Each card opens the server's start page in the current language.
+ * Each card opens the server's start page.
  */
 import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 import { servers } from '../data/servers.mjs';
 
-const locale = Astro.locals.starlightRoute.locale; // undefined for the root (Vietnamese) locale
-const lang = locale ?? 'vi';
-const prefix = locale ? `${locale}/` : '';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <CardGrid>
-	{
-		servers.map((server) => (
-			<LinkCard
-				title={server.title[lang] ?? server.title.vi}
-				description={server.description[lang] ?? server.description.vi}
-				href={`${base}/${prefix}${server.slug}/`}
-			/>
-		))
-	}
+	{servers.map((server) => <LinkCard title={server.title} description={server.description} href={`${base}/${server.slug}/`} />)}
 </CardGrid>

@@ -1,17 +1,20 @@
 # Turtle Server Guide
 
-Player guide for the Turtle Minecraft servers (GitHub org MineTurtleVN), built with [Astro Starlight](https://starlight.astro.build/) on the same Emerald Base design as the Turtle Plugins Wiki. The wiki is written for the people who **configure** the plugins; this site is for the people who **play**: how each system works, an interactive picture of every menu, the commands a player can use and answers to common questions. Vietnamese is the default language (served at `/`), English is at `/en/`.
+Player guide for the Turtle Minecraft servers (GitHub org MineTurtleVN), built with [Astro Starlight](https://starlight.astro.build/) on the same Emerald Base design as the Turtle Plugins Wiki. The wiki is written for the people who **configure** the plugins; this site is for the people who **play**: how each system works, an interactive picture of every menu, lists taken from the server config, the commands a player can use and answers to common questions.
+
+**The site is Vietnamese only** (no English pages, no language picker).
 
 **The guide is split by server.** Every server has its own section (`/<server>/...`), its own list of systems and its own copy of the pages, because the plugins and the numbers differ from server to server. Players never see plugin names: page titles, the sidebar, URLs and text use the names players know (Minion, not the plugin).
 
 ## Commands
 
-| Command           | Action                                                     |
-| :---------------- | :--------------------------------------------------------- |
-| `npm install`     | Install dependencies                                       |
-| `npm run dev`     | Start the dev server at `localhost:4321`                   |
-| `npm run build`   | Build to `./dist/` (also checks links and every menu spec) |
-| `npm run deploy`  | Build and deploy to Cloudflare Pages                       |
+| Command                 | Action                                                              |
+| :---------------------- | :------------------------------------------------------------------ |
+| `npm install`           | Install dependencies                                                |
+| `npm run dev`           | Start the dev server at `localhost:4321`                            |
+| `npm run build`         | Build to `./dist/` (also checks links and every menu spec)          |
+| `npm run sync:minions`  | Rewrite the minion data from a server config (see "Sync with the server config") |
+| `npm run deploy`        | Build and deploy to Cloudflare Pages                                |
 
 Menu specs are read when a page is built: restart `npm run dev` after editing a spec.
 
@@ -20,19 +23,47 @@ Menu specs are read when a page is built: restart `npm run dev` after editing a 
 ```
 src/data/servers.mjs                   the servers and which systems each one has (drives the sidebar and the home cards)
 src/data/guides.mjs                    catalog of the systems: player-facing name and one-line description
-src/content/docs/getting-started/      pages that apply to every server (Vietnamese, served at /)
+src/data/servers/<server>/*.json       data generated from the server config (minions.json), do not edit by hand
+src/content/docs/getting-started/      pages that apply to every server
 src/content/docs/<server>/index.mdx    start page of a server (cards of its systems)
-src/content/docs/<server>/<system>/    one folder per system: overview, menus, commands, tips
-src/content/docs/en/...                English pages, same paths
+src/content/docs/<server>/<system>/    one folder per system: overview, menus, commands, tips (+ list pages)
 src/data/gui/<system>/<menu>.json      one spec per menu picture
 src/plugins/gui-menus.mjs              Markdown plugin: turns a menu image into the interactive menu
 public/gui-viewer.js                   opens the detail box on hover, tap or focus
 src/styles/gui.css                     look of the menu and of the detail box
-src/components/                        GuideCards (systems of one server), ServerCards (home page)
-src/styles/custom.css                  Emerald Base mapped to Starlight tokens
+src/components/                        GuideCards, ServerCards, MinionList
+scripts/sync-minions.mjs               reads minion configs and writes src/data/servers/<server>/minions.json
+.github/workflows/sync-and-deploy.yml  syncs with the server and deploys on a schedule
 ```
 
-Every page must exist in both languages; the build fails on broken links.
+The build fails on broken links.
+
+## Sync with the server config
+
+Anything that comes from the server config (today: the minion list) is **generated**, never typed, so a change in the config reaches the site without anyone editing pages:
+
+```
+server config (plugins/TurtleMinions/minions/*.yml)
+   └─ scripts/sync-minions.mjs ──► src/data/servers/<server>/minions.json ──► MinionList.astro ──► page
+```
+
+- The script copies only public facts (name, group, tiers, products). It never copies other fields, so a secret in a config file cannot reach the site.
+- The output has no timestamp: when nothing changed the file stays identical, so no commit and no noise.
+- `node scripts/sync-minions.mjs --dir <plugin folder>` reads a folder on disk (it expects `<folder>/minions/*.yml`). `--ptero` reads the live server over the Pterodactyl client API. `--check` fails when the file is out of date.
+
+### Automatic sync
+
+`.github/workflows/sync-and-deploy.yml` runs every 3 hours, on demand (Actions → Run workflow) and on every push to `main`: it syncs, commits `minions.json` if it changed, builds and deploys. A step is skipped when its secrets are missing. To switch it on:
+
+1. **Panel: a read-only account.** A client API key can do everything its owner can, so do not use your own. In the panel open the server → Users → add a user with only the permissions `file.read` and `file.read-content`. Log in as that user → Account → API credentials → create a key.
+2. **GitHub secrets** (Settings → Secrets and variables → Actions):
+   - `PTERO_URL` panel address, `PTERO_KEY` the key from step 1, `PTERO_SERVER` the short server identifier, optional `PTERO_PLUGIN_DIR` (default `/plugins/TurtleMinions`).
+   - `CLOUDFLARE_API_TOKEN` (permission: Cloudflare Pages edit) and `CLOUDFLARE_ACCOUNT_ID`, so the workflow can deploy.
+3. Run the workflow once by hand and read its log.
+
+Until then `minions.json` holds the **plugin defaults** (read from the TurtleMinions repo), not the live server config.
+
+To sync another kind of config (fuels, storages, ...), write a second script with the same shape (whitelist, no timestamp, stable output), add its page component and add a step to the workflow.
 
 ## Interactive menus
 
@@ -43,18 +74,18 @@ The picture is a **schematic**, not a screenshot: slot positions, titles and but
 Reference a menu from `menus.md` with an image line, optionally followed by an italic caption. The plugin swaps both for the interactive menu:
 
 ```md
-![Short description](/gui/vi/<system>-<menu>.svg)
+![Mô tả ngắn](/gui/<system>/<menu>)
 
-*Figure: what the picture shows.*
+*Hình: hình này cho thấy gì.*
 ```
 
-The language in the path (`vi` or `en`) picks the text. The path is only a key (no file exists there): `<system>-<menu>` is `src/data/gui/<system>/<menu>.json`.
+The path is only a key (no image file exists): `/gui/<system>/<menu>` is `src/data/gui/<system>/<menu>.json`.
 
 A spec (`src/data/gui/<system>/<menu>.json`):
 
 ```json
 {
-  "title": { "vi": "Ba lô", "en": "Backpack" },
+  "title": "Ba lô",
   "rows": 6,
   "filler": true,
   "inventory": true,
@@ -62,12 +93,9 @@ A spec (`src/data/gui/<system>/<menu>.json`):
     "13": {
       "item": "EMERALD",
       "n": 1,
-      "label": { "vi": "Bán tất cả", "en": "Sell all" },
-      "short": { "vi": "Bán hết", "en": "Sell all" },
-      "desc": {
-        "vi": "Bán mọi thứ trong ba lô theo giá hiện tại.",
-        "en": "Sells everything in the backpack at the current prices."
-      },
+      "label": "Bán tất cả",
+      "short": "Bán hết",
+      "desc": "Bán mọi thứ trong ba lô theo giá hiện tại.",
       "role": "button"
     }
   }
@@ -76,33 +104,34 @@ A spec (`src/data/gui/<system>/<menu>.json`):
 
 - `rows` 1 to 6; slot numbers run 0 to `rows*9-1`, left to right, top to bottom.
 - `item` is a Bukkit Material name (`AIR` for an empty slot the player puts items into).
-- `label` is the name in the box; `desc` is the text in the box (`` `code` `` is the only Markdown allowed). Both need `vi` and `en`. A slot without `desc` is decoration: no box.
+- `label` is the name in the box; `desc` is the text in the box (`` `code` `` is the only Markdown allowed). A slot without `desc` is decoration: no box.
 - `role`: `button` (default), `display` (to look at), `input` (the player puts items in, dashed outline).
 - `short` is the text inside the slot. Without it the label is used when every described slot of the menu has a label of at most 12 characters; otherwise the picture shows no text in slots.
 - `n` groups slots that mean the same thing (they must have the same `label` and `desc`); the group lights up together and the box lists all its slot numbers. Optional `range` overrides that list when a group stands for a dynamic list (for example `"0–44"`).
 - `filler` draws the empty slots as black glass panes, `inventory` draws the player's inventory below. `inventory` can also be an object keyed 0-35 (0-26 main, 27-35 hotbar) with slot definitions like `slots`.
 
-The build fails on a slot outside the menu, a missing translation, a desc without both languages or a group whose slots disagree.
+The build fails on a slot outside the menu, a missing label or a group whose slots disagree.
 
 ## Adding a server
 
 1. Add an entry to `src/data/servers.mjs` (`slug`, `title`, `description`, `guides`: slugs from `guides.mjs`).
-2. Create `src/content/docs/<server>/index.mdx` and `src/content/docs/en/<server>/index.mdx` (copy an existing one and change `<GuideCards server="..." />`).
-3. Put the pages of each system in `src/content/docs/<server>/<system>/` and `src/content/docs/en/<server>/<system>/`. Copy them from another server when the system is the same, then change what differs there (prices, layouts, availability).
-4. `npm run build`.
+2. Create `src/content/docs/<server>/index.mdx` (copy an existing one and change `<GuideCards server="..." />`).
+3. Put the pages of each system in `src/content/docs/<server>/<system>/`. Copy them from another server when the system is the same, then change what differs there (prices, layouts, availability).
+4. If the server has generated lists, run the sync for it: `node scripts/sync-minions.mjs --server <slug> --dir <plugin folder>`, and add `<MinionList server="<slug>" />` to its list page. The workflow syncs the first server of `servers.mjs`; give the script a `--server` argument there for more.
+5. `npm run build`.
 
 ## Adding a system
 
 1. Add an entry to `src/data/guides.mjs` (player-facing `title` and `description`, never the plugin name).
 2. List its slug in the `guides` of every server that has it.
-3. Create `overview.md` (order 1), `menus.md` (2), `commands.md` (3), `tips.md` (4) in both languages under each server folder.
+3. Create `overview.md` (order 1), `menus.md` (2), `commands.md` (3), `tips.md` (4) under each server folder.
 4. Write one spec per menu in `src/data/gui/<system>/` and reference it from `menus.md`.
 5. `npm run build`.
 
 ## Content rules
 
-- Write for players: "bạn", short steps, examples. No config keys, file names, permission nodes or admin commands (those belong in the wiki).
+- Write in Vietnamese, for players: "bạn", short steps, examples. No config keys, file names, permission nodes or admin commands (those belong in the wiki).
 - Never write a plugin name (`Turtle...`) in a title, description, heading, URL or text. Use what players call the system.
-- Facts come from the plugin's source. Where the source cannot answer a question, leave a visible `:::caution[Chưa rõ]` aside instead of guessing.
-- Numbers that the server can change are described as "usually" or "by default".
+- Facts come from the plugin's source or config. Where neither can answer a question, leave a visible `:::caution[Chưa rõ]` aside instead of guessing.
+- Numbers that the server can change are described as "thường" or "mặc định".
 - No credentials, tokens, webhook URLs, hostnames or IPs, no anti-cheat detection thresholds, no roadmap or internal notes.
