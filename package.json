@@ -3,15 +3,15 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "node scripts/build-gui.mjs && astro dev",
-    "start": "node scripts/build-gui.mjs && astro dev",
-    "build": "node scripts/build-gui.mjs && astro build",
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
     "preview": "astro preview",
     "deploy": "npm run build && wrangler pages deploy --branch main",
-    "astro": "astro",
-    "gui": "node scripts/build-gui.mjs"
+    "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/markdown-satteri": "^0.4.10",
     "@astrojs/starlight": "^0.43.1",
     "@fontsource/fira-code": "^5.3.0",
     "@fontsource/inter": "^5.3.0",

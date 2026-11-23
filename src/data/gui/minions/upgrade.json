@@ -1,0 +1,39 @@
+{
+  "title": {
+    "vi": "Upgrade Minion (1 -> 2)",
+    "en": "Upgrade Minion (1 -> 2)"
+  },
+  "rows": 3,
+  "filler": true,
+  "inventory": true,
+  "slots": {
+    "16": {
+      "item": "EMERALD_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "Upgrade minion",
+        "en": "Upgrade minion"
+      },
+      "short": "",
+      "role": "button",
+      "desc": {
+        "vi": "Bấm để kiểm tra, tiêu thụ đủ nguyên liệu và tăng một bậc; thành công thì menu đóng.",
+        "en": "Click to check and consume the required materials and increase the tier by one; the menu closes on success."
+      }
+    },
+    "22": {
+      "item": "BARRIER",
+      "n": 2,
+      "label": {
+        "vi": "Back",
+        "en": "Back"
+      },
+      "short": "",
+      "role": "button",
+      "desc": {
+        "vi": "Quay về menu minion.",
+        "en": "Return to the minion menu."
+      }
+    }
+  }
+}

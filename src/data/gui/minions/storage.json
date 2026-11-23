@@ -1,0 +1,53 @@
+{
+  "title": {
+    "vi": "Minion Storage (3 slots)",
+    "en": "Minion Storage (3 slots)"
+  },
+  "rows": 1,
+  "filler": true,
+  "inventory": true,
+  "slots": {
+    "0": {
+      "item": "COBBLESTONE",
+      "n": 1,
+      "label": {
+        "vi": "S?n ph?m trong kho ph?",
+        "en": "Attached storage products"
+      },
+      "short": "",
+      "role": "button",
+      "desc": {
+        "vi": "Bấm một ô sản phẩm để lấy cả chồng vào túi; phần không vừa vẫn nằm trong kho. Không thể gửi đồ vào đây.",
+        "en": "Click a product slot to collect its entire stack; anything that does not fit remains stored. You cannot deposit items here."
+      }
+    },
+    "1": {
+      "item": "AIR",
+      "n": 1,
+      "label": {
+        "vi": "S?n ph?m trong kho ph?",
+        "en": "Attached storage products"
+      },
+      "short": "",
+      "role": "button",
+      "desc": {
+        "vi": "Bấm một ô sản phẩm để lấy cả chồng vào túi; phần không vừa vẫn nằm trong kho. Không thể gửi đồ vào đây.",
+        "en": "Click a product slot to collect its entire stack; anything that does not fit remains stored. You cannot deposit items here."
+      }
+    },
+    "2": {
+      "item": "AIR",
+      "n": 1,
+      "label": {
+        "vi": "S?n ph?m trong kho ph?",
+        "en": "Attached storage products"
+      },
+      "short": "",
+      "role": "button",
+      "desc": {
+        "vi": "Bấm một ô sản phẩm để lấy cả chồng vào túi; phần không vừa vẫn nằm trong kho. Không thể gửi đồ vào đây.",
+        "en": "Click a product slot to collect its entire stack; anything that does not fit remains stored. You cannot deposit items here."
+      }
+    }
+  }
+}

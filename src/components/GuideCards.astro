@@ -1,24 +1,38 @@
 ---
 /**
- * Landing-page cards, one per in-game system, built from the registry in src/data/guides.mjs.
- * Each card opens the guide's Overview page in the current language.
+ * Cards for the systems of one server: the list comes from src/data/servers.mjs, the names from src/data/guides.mjs.
+ * Each card opens the system's Overview page in the current language.
  */
 import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 import { guides } from '../data/guides.mjs';
+import { servers } from '../data/servers.mjs';
+
+interface Props {
+	server: string;
+}
+
+const { server } = Astro.props;
+const entry = servers.find((s) => s.slug === server);
+if (!entry) throw new Error(`GuideCards: unknown server "${server}"`);
 
 const locale = Astro.locals.starlightRoute.locale; // undefined for the root (Vietnamese) locale
 const lang = locale ?? 'vi';
 const prefix = locale ? `${locale}/` : '';
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const list = entry.guides.map((slug) => {
+	const guide = guides.find((g) => g.slug === slug);
+	if (!guide) throw new Error(`GuideCards: server "${server}" lists unknown system "${slug}"`);
+	return guide;
+});
 ---
 
 <CardGrid>
 	{
-		guides.map((guide) => (
+		list.map((guide) => (
 			<LinkCard
 				title={guide.title[lang] ?? guide.title.vi}
 				description={guide.description[lang] ?? guide.description.vi}
-				href={`${base}/${prefix}guides/${guide.slug}/overview/`}
+				href={`${base}/${prefix}${server}/${guide.slug}/overview/`}
 			/>
 		))
 	}
