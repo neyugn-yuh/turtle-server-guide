@@ -1,0 +1,114 @@
+{
+  "title": {
+    "vi": "Đồ rơi từ mob",
+    "en": "Đồ rơi từ mob"
+  },
+  "rows": 6,
+  "filler": true,
+  "inventory": false,
+  "slots": {
+    "0": {
+      "item": "ROTTEN_FLESH",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": true
+    },
+    "1": {
+      "item": "BONE",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "2": {
+      "item": "STRING",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "3": {
+      "item": "GUNPOWDER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "4": {
+      "item": "SPIDER_EYE",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "5": {
+      "item": "ENDER_PEARL",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "6": {
+      "item": "BLAZE_ROD",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "45": {
+      "item": "ARROW",
+      "n": 2,
+      "label": {
+        "vi": "Quay lại",
+        "en": "Quay lại"
+      },
+      "short": {
+        "vi": "Quay lại",
+        "en": "Back"
+      },
+      "role": "button"
+    },
+    "49": {
+      "item": "GOLD_INGOT",
+      "n": 3,
+      "label": {
+        "vi": "Bán cả danh mục",
+        "en": "Bán cả danh mục"
+      },
+      "short": {
+        "vi": "Bán mục",
+        "en": "Sell all"
+      },
+      "role": "button"
+    }
+  }
+}

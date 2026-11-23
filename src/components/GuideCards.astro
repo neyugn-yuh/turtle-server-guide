@@ -1,0 +1,25 @@
+---
+/**
+ * Landing-page cards, one per in-game system, built from the registry in src/data/guides.mjs.
+ * Each card opens the guide's Overview page in the current language.
+ */
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
+import { guides } from '../data/guides.mjs';
+
+const locale = Astro.locals.starlightRoute.locale; // undefined for the root (Vietnamese) locale
+const lang = locale ?? 'vi';
+const prefix = locale ? `${locale}/` : '';
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<CardGrid>
+	{
+		guides.map((guide) => (
+			<LinkCard
+				title={guide.title[lang] ?? guide.title.vi}
+				description={guide.description[lang] ?? guide.description.vi}
+				href={`${base}/${prefix}guides/${guide.slug}/overview/`}
+			/>
+		))
+	}
+</CardGrid>

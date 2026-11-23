@@ -1,0 +1,312 @@
+{
+  "title": {
+    "vi": "Khoáng sản",
+    "en": "Khoáng sản"
+  },
+  "rows": 6,
+  "filler": true,
+  "inventory": false,
+  "slots": {
+    "0": {
+      "item": "COBBLESTONE",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": true
+    },
+    "1": {
+      "item": "COAL",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "2": {
+      "item": "RAW_IRON",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "3": {
+      "item": "RAW_COPPER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "4": {
+      "item": "RAW_GOLD",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "5": {
+      "item": "REDSTONE",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "6": {
+      "item": "LAPIS_LAZULI",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "7": {
+      "item": "DIAMOND",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "8": {
+      "item": "EMERALD",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "9": {
+      "item": "BARRIER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "10": {
+      "item": "BARRIER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "11": {
+      "item": "BARRIER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "12": {
+      "item": "BARRIER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "13": {
+      "item": "BARRIER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "14": {
+      "item": "BARRIER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "15": {
+      "item": "BARRIER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "16": {
+      "item": "BARRIER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "17": {
+      "item": "BARRIER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "18": {
+      "item": "BARRIER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "19": {
+      "item": "BARRIER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "20": {
+      "item": "BARRIER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "21": {
+      "item": "BARRIER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "22": {
+      "item": "BARRIER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "23": {
+      "item": "BARRIER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "24": {
+      "item": "BARRIER",
+      "n": 1,
+      "label": {
+        "vi": "Vật phẩm trong danh mục",
+        "en": "Category items"
+      },
+      "short": "",
+      "role": "button",
+      "badge": false
+    },
+    "45": {
+      "item": "ARROW",
+      "n": 2,
+      "label": {
+        "vi": "Quay lại",
+        "en": "Quay lại"
+      },
+      "short": {
+        "vi": "Quay lại",
+        "en": "Back"
+      },
+      "role": "button"
+    },
+    "49": {
+      "item": "GOLD_INGOT",
+      "n": 3,
+      "label": {
+        "vi": "Bán cả danh mục",
+        "en": "Bán cả danh mục"
+      },
+      "short": {
+        "vi": "Bán mục",
+        "en": "Sell all"
+      },
+      "role": "button"
+    }
+  }
+}

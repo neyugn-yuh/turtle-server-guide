@@ -1,0 +1,549 @@
+{
+  "title": {
+    "vi": "Land của tôi",
+    "en": "My lands"
+  },
+  "rows": 6,
+  "slots": {
+    "10": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "11": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "12": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "13": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "14": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "15": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "16": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "19": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "20": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "21": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "22": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "23": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "24": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "25": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "28": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "29": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "30": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "31": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "32": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "33": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "34": {
+      "item": "GRASS_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "{land}",
+        "en": "{land}"
+      },
+      "short": {
+        "vi": "Land",
+        "en": "Land"
+      },
+      "role": "button",
+      "badge": false
+    },
+    "45": {
+      "item": "ARROW",
+      "n": 2,
+      "label": {
+        "vi": "« Trang trước ({page}/{pages})",
+        "en": "« Previous page ({page}/{pages})"
+      },
+      "short": {
+        "vi": "Trước",
+        "en": "Previous"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "53": {
+      "item": "ARROW",
+      "n": 3,
+      "label": {
+        "vi": "Trang sau » ({page}/{pages})",
+        "en": "Next page » ({page}/{pages})"
+      },
+      "short": {
+        "vi": "Sau",
+        "en": "Next"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "0": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "1": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "2": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "3": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "4": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "5": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "6": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "7": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "8": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "9": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "17": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "18": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "26": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "27": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "35": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "36": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "44": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "46": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "47": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "48": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "49": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "50": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "51": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "52": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    }
+  },
+  "filler": false,
+  "inventory": false
+}

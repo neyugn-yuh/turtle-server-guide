@@ -1,0 +1,389 @@
+{
+  "title": {
+    "vi": "Crystal Filtering",
+    "en": "Crystal Filtering"
+  },
+  "rows": 4,
+  "filler": false,
+  "inventory": false,
+  "slots": {
+    "0": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "1": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "2": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "3": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "4": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "5": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "6": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "7": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "8": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "9": {
+      "item": "DIAMOND",
+      "n": 1,
+      "badge": true,
+      "label": {
+        "vi": "Fortune",
+        "en": "Fortune"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "17": {
+      "item": "EXPERIENCE_BOTTLE",
+      "n": 9,
+      "badge": true,
+      "label": {
+        "vi": "Momentum",
+        "en": "Momentum"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "18": {
+      "item": "HOPPER",
+      "n": 10,
+      "badge": true,
+      "label": {
+        "vi": "Essence Magnet",
+        "en": "Essence Magnet"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "26": {
+      "item": "RAVAGER_SPAWN_EGG",
+      "n": 18,
+      "badge": true,
+      "label": {
+        "vi": "Ravager Dash",
+        "en": "Ravager Dash"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "27": {
+      "item": "ARROW",
+      "n": 19,
+      "badge": true,
+      "label": {
+        "vi": "Back",
+        "en": "Back"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "28": {
+      "item": "NETHER_STAR",
+      "n": 20,
+      "badge": true,
+      "label": {
+        "vi": "Amplify",
+        "en": "Amplify"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "29": {
+      "item": "BLAZE_SPAWN_EGG",
+      "n": 21,
+      "badge": true,
+      "label": {
+        "vi": "Molten Aether",
+        "en": "Molten Aether"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "30": {
+      "item": "END_PORTAL_FRAME",
+      "n": 22,
+      "badge": true,
+      "label": {
+        "vi": "UFO",
+        "en": "UFO"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "31": {
+      "item": "SUNFLOWER",
+      "n": 23,
+      "badge": true,
+      "label": {
+        "vi": "Clear Filtering",
+        "en": "Clear Filtering"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "32": {
+      "item": "WITHER_ROSE",
+      "n": 24,
+      "badge": true,
+      "label": {
+        "vi": "Blight",
+        "en": "Blight"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "33": {
+      "item": "BONE_MEAL",
+      "n": 25,
+      "badge": true,
+      "label": {
+        "vi": "Regrowth",
+        "en": "Regrowth"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "34": {
+      "item": "LIME_DYE",
+      "n": 26,
+      "badge": true,
+      "label": {
+        "vi": "Snake",
+        "en": "Snake"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "35": {
+      "item": "CREEPER_SPAWN_EGG",
+      "n": 27,
+      "badge": true,
+      "label": {
+        "vi": "Flash Mob",
+        "en": "Flash Mob"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "10": {
+      "item": "GOLD_INGOT",
+      "n": 2,
+      "badge": true,
+      "label": {
+        "vi": "Essence Greed",
+        "en": "Essence Greed"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "11": {
+      "item": "TRIPWIRE_HOOK",
+      "n": 3,
+      "badge": true,
+      "label": {
+        "vi": "Key Finder",
+        "en": "Key Finder"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "12": {
+      "item": "TNT",
+      "n": 4,
+      "badge": true,
+      "label": {
+        "vi": "TNT Blast",
+        "en": "TNT Blast"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "13": {
+      "item": "BEACON",
+      "n": 5,
+      "badge": true,
+      "label": {
+        "vi": "Laser",
+        "en": "Laser"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "14": {
+      "item": "SNOWBALL",
+      "n": 6,
+      "badge": true,
+      "label": {
+        "vi": "Avalanche",
+        "en": "Avalanche"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "15": {
+      "item": "IRON_AXE",
+      "n": 7,
+      "badge": true,
+      "label": {
+        "vi": "Thor",
+        "en": "Thor"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "16": {
+      "item": "SUGAR",
+      "n": 8,
+      "badge": true,
+      "label": {
+        "vi": "Flash",
+        "en": "Flash"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "19": {
+      "item": "VILLAGER_SPAWN_EGG",
+      "n": 11,
+      "badge": true,
+      "label": {
+        "vi": "Farmer Fred",
+        "en": "Farmer Fred"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "20": {
+      "item": "ENCHANTED_BOOK",
+      "n": 12,
+      "badge": true,
+      "label": {
+        "vi": "Magic",
+        "en": "Magic"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "21": {
+      "item": "CLOCK",
+      "n": 13,
+      "badge": true,
+      "label": {
+        "vi": "Second Hand",
+        "en": "Second Hand"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "22": {
+      "item": "WARDEN_SPAWN_EGG",
+      "n": 14,
+      "badge": true,
+      "label": {
+        "vi": "Warden",
+        "en": "Warden"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "23": {
+      "item": "PAPER",
+      "n": 15,
+      "badge": true,
+      "label": {
+        "vi": "Credit Finder",
+        "en": "Credit Finder"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "24": {
+      "item": "PANDA_SPAWN_EGG",
+      "n": 16,
+      "badge": true,
+      "label": {
+        "vi": "Panda",
+        "en": "Panda"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "25": {
+      "item": "TNT",
+      "n": 17,
+      "badge": true,
+      "label": {
+        "vi": "Nuker",
+        "en": "Nuker"
+      },
+      "short": "",
+      "role": "button"
+    }
+  }
+}

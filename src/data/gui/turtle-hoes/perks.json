@@ -1,0 +1,321 @@
+{
+  "title": {
+    "vi": "Hoe Perks",
+    "en": "Hoe Perks"
+  },
+  "rows": 4,
+  "filler": false,
+  "inventory": false,
+  "slots": {
+    "0": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "1": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "2": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "3": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "4": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "5": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "6": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "7": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "8": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "9": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "17": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "18": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "26": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "27": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "28": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "29": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "30": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "31": {
+      "item": "ARROW",
+      "n": 6,
+      "badge": true,
+      "label": {
+        "vi": "Back",
+        "en": "Back"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "32": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "33": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "34": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "35": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "10": {
+      "item": "NETHER_STAR",
+      "n": 1,
+      "badge": true,
+      "label": {
+        "vi": "Boost",
+        "en": "Boost"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "12": {
+      "item": "ENCHANTING_TABLE",
+      "n": 2,
+      "badge": true,
+      "label": {
+        "vi": "Enhancement",
+        "en": "Enhancement"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "14": {
+      "item": "BLAZE_POWDER",
+      "n": 3,
+      "badge": true,
+      "label": {
+        "vi": "Ability",
+        "en": "Ability"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "19": {
+      "item": "LIME_STAINED_GLASS_PANE",
+      "n": 4,
+      "badge": true,
+      "label": {
+        "vi": "Empty crystal slot",
+        "en": "Empty crystal slot"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "20": {
+      "item": "LIME_STAINED_GLASS_PANE",
+      "n": 4,
+      "badge": false,
+      "label": {
+        "vi": "Empty crystal slot",
+        "en": "Empty crystal slot"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "21": {
+      "item": "LIME_STAINED_GLASS_PANE",
+      "n": 4,
+      "badge": false,
+      "label": {
+        "vi": "Empty crystal slot",
+        "en": "Empty crystal slot"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "22": {
+      "item": "BARRIER",
+      "n": 5,
+      "badge": true,
+      "label": {
+        "vi": "Locked crystal slot",
+        "en": "Locked crystal slot"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "23": {
+      "item": "BARRIER",
+      "n": 5,
+      "badge": false,
+      "label": {
+        "vi": "Locked crystal slot",
+        "en": "Locked crystal slot"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "24": {
+      "item": "BARRIER",
+      "n": 5,
+      "badge": false,
+      "label": {
+        "vi": "Locked crystal slot",
+        "en": "Locked crystal slot"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "25": {
+      "item": "BARRIER",
+      "n": 5,
+      "badge": false,
+      "label": {
+        "vi": "Locked crystal slot",
+        "en": "Locked crystal slot"
+      },
+      "short": "",
+      "role": "display"
+    }
+  }
+}

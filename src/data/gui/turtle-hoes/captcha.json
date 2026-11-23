@@ -1,0 +1,110 @@
+{
+  "title": {
+    "vi": "Captcha - click diamond",
+    "en": "Captcha - click diamond"
+  },
+  "rows": 3,
+  "filler": false,
+  "inventory": false,
+  "slots": {
+    "1": {
+      "item": "DIAMOND",
+      "n": 1,
+      "badge": true,
+      "label": {
+        "vi": "diamond",
+        "en": "diamond"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "3": {
+      "item": "EMERALD",
+      "n": 2,
+      "badge": true,
+      "label": {
+        "vi": "emerald",
+        "en": "emerald"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "5": {
+      "item": "GOLD_INGOT",
+      "n": 3,
+      "badge": true,
+      "label": {
+        "vi": "gold ingot",
+        "en": "gold ingot"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "7": {
+      "item": "IRON_INGOT",
+      "n": 4,
+      "badge": true,
+      "label": {
+        "vi": "iron ingot",
+        "en": "iron ingot"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "11": {
+      "item": "COAL",
+      "n": 5,
+      "badge": true,
+      "label": {
+        "vi": "coal",
+        "en": "coal"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "13": {
+      "item": "REDSTONE",
+      "n": 6,
+      "badge": true,
+      "label": {
+        "vi": "redstone",
+        "en": "redstone"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "15": {
+      "item": "LAPIS_LAZULI",
+      "n": 7,
+      "badge": true,
+      "label": {
+        "vi": "lapis lazuli",
+        "en": "lapis lazuli"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "19": {
+      "item": "QUARTZ",
+      "n": 8,
+      "badge": true,
+      "label": {
+        "vi": "quartz",
+        "en": "quartz"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "23": {
+      "item": "APPLE",
+      "n": 9,
+      "badge": true,
+      "label": {
+        "vi": "apple",
+        "en": "apple"
+      },
+      "short": "",
+      "role": "button"
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "title": {
+    "vi": "Đổi tên pet",
+    "en": "Đổi tên pet"
+  },
+  "rows": 1,
+  "filler": false,
+  "inventory": false,
+  "slots": {
+    "0": {
+      "item": "PAPER",
+      "n": 1,
+      "label": {
+        "vi": "Lua Nho",
+        "en": "Lua Nho"
+      },
+      "short": {
+        "vi": "Tên cũ",
+        "en": "Old name"
+      },
+      "role": "display"
+    },
+    "1": {
+      "item": "BARRIER",
+      "n": 2,
+      "label": {
+        "vi": "Đặt lại tên gốc",
+        "en": "Đặt lại tên gốc"
+      },
+      "short": {
+        "vi": "Tên gốc",
+        "en": "Reset"
+      },
+      "role": "button"
+    },
+    "2": {
+      "item": "NAME_TAG",
+      "n": 3,
+      "label": {
+        "vi": "{tên mới}",
+        "en": "{new name}"
+      },
+      "short": {
+        "vi": "Tên mới",
+        "en": "New name"
+      },
+      "role": "button"
+    }
+  }
+}

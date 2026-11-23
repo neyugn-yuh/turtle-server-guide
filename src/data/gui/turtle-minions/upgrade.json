@@ -1,0 +1,31 @@
+{
+  "title": {
+    "vi": "Upgrade Minion (1 -> 2)",
+    "en": "Upgrade Minion (1 -> 2)"
+  },
+  "rows": 3,
+  "filler": true,
+  "inventory": true,
+  "slots": {
+    "16": {
+      "item": "EMERALD_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "Upgrade minion",
+        "en": "Upgrade minion"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "22": {
+      "item": "BARRIER",
+      "n": 2,
+      "label": {
+        "vi": "Back",
+        "en": "Back"
+      },
+      "short": "",
+      "role": "button"
+    }
+  }
+}

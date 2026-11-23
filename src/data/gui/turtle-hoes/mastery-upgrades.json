@@ -1,0 +1,259 @@
+{
+  "title": {
+    "vi": "Upgrade Mastery",
+    "en": "Upgrade Mastery"
+  },
+  "rows": 3,
+  "filler": false,
+  "inventory": false,
+  "slots": {
+    "0": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "1": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "2": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "3": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "4": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "5": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "6": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "7": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "8": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "9": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "17": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "18": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "19": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "20": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "21": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "22": {
+      "item": "ARROW",
+      "n": 7,
+      "badge": true,
+      "label": {
+        "vi": "Back",
+        "en": "Back"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "23": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "24": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "25": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "26": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "11": {
+      "item": "GOLD_INGOT",
+      "n": 1,
+      "badge": true,
+      "label": {
+        "vi": "MONEY BOOST UPGRADE",
+        "en": "MONEY BOOST UPGRADE"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "12": {
+      "item": "AMETHYST_SHARD",
+      "n": 2,
+      "badge": true,
+      "label": {
+        "vi": "ESSENCE BOOST UPGRADE",
+        "en": "ESSENCE BOOST UPGRADE"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "13": {
+      "item": "WHEAT",
+      "n": 3,
+      "badge": true,
+      "label": {
+        "vi": "CROPS BOOST UPGRADE",
+        "en": "CROPS BOOST UPGRADE"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "14": {
+      "item": "EXPERIENCE_BOTTLE",
+      "n": 4,
+      "badge": true,
+      "label": {
+        "vi": "HOE XP UPGRADE",
+        "en": "HOE XP UPGRADE"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "15": {
+      "item": "NETHER_STAR",
+      "n": 5,
+      "badge": true,
+      "label": {
+        "vi": "ENCHANT LUCK UPGRADE",
+        "en": "ENCHANT LUCK UPGRADE"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "16": {
+      "item": "ENCHANTED_GOLDEN_APPLE",
+      "n": 6,
+      "badge": true,
+      "label": {
+        "vi": "PRESTIGE LUCK UPGRADE",
+        "en": "PRESTIGE LUCK UPGRADE"
+      },
+      "short": "",
+      "role": "button"
+    }
+  }
+}

@@ -1,0 +1,208 @@
+{
+  "title": {
+    "vi": "Lò ấp · {player}",
+    "en": "Lò ấp · {player}"
+  },
+  "rows": 3,
+  "filler": false,
+  "inventory": false,
+  "slots": {
+    "10": {
+      "item": "SNIFFER_EGG",
+      "n": 1,
+      "label": {
+        "vi": "Trứng Lửa",
+        "en": "Trứng Lửa"
+      },
+      "short": {
+        "vi": "Trứng Lửa",
+        "en": "Trứng Lửa"
+      },
+      "role": "button"
+    },
+    "22": {
+      "item": "ARROW",
+      "n": 2,
+      "label": {
+        "vi": "Quay lại",
+        "en": "Quay lại"
+      },
+      "short": {
+        "vi": "Quay lại",
+        "en": "Back"
+      },
+      "role": "button"
+    },
+    "0": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "1": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "2": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "3": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "4": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "5": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "6": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "7": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "8": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "9": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "17": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "18": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "19": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "20": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "21": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "23": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "24": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "25": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "26": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    }
+  }
+}

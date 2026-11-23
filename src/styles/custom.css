@@ -1,0 +1,401 @@
+/*
+ * Emerald Base (DESIGN.md) mapped onto Starlight.
+ *
+ * Layout of this file
+ *   1. Design tokens (--tw-*): dark is the primary theme, light is derived below it.
+ *   2. Mapping of the tokens to Starlight custom properties (--sl-*).
+ *   3. Typography.
+ *   4. Component refinements (sidebar, header, cards, buttons, code, tables).
+ *
+ * Contrast notes (WCAG AA = 4.5:1 for normal text). Ratios were computed, not eyeballed:
+ *   - DESIGN.md's secondary text #707070 is only 3.8:1 on #121212 and 3.6:1 on #171717, so it is NOT used for
+ *     readable text. It stays as --sl-color-gray-4 (decorative strokes, disabled UI). Readable muted text uses
+ *     --tw-text-muted (#909090 = 5.6:1 on #171717).
+ *   - #3ECF8E on white is 2.0:1, so light mode uses the darker green #0A7445 (>= 5.3:1 on white, the sidebar tint
+ *     and the code background) for links, active nav and headings-level accents.
+ *   - Primary buttons keep DESIGN.md's #3ECF8E fill with #121212 text (9.4:1) in both themes.
+ */
+
+/* ---------- 1. Tokens: dark (default) ---------- */
+:root {
+	--tw-green: #3ecf8e; /* Primary */
+	--tw-green-hover: #30b97a; /* Primary hover */
+	--tw-bg: #121212; /* Background, level 0 */
+	--tw-neutral: #171717; /* Sidebar, nav, level 1 */
+	--tw-surface: #1c1c1c; /* Cards, code, level 2 */
+	--tw-surface-3: #222222; /* Hover rows, popovers, level 3 */
+	--tw-border: #2e2e2e;
+	--tw-text: #ededed;
+	--tw-text-secondary: #707070; /* DESIGN.md secondary: decorative only, see contrast notes */
+	--tw-text-muted: #909090; /* readable secondary text */
+	--tw-text-nav: #b0b0b0; /* inactive navigation */
+	--tw-warning: #f5c542;
+	--tw-error: #f56565;
+
+	--tw-accent-text: #3ecf8e; /* links, active nav */
+	--tw-accent-text-hover: #30b97a;
+	--tw-accent-wash: #1b2923; /* 10% green over --tw-neutral: active sidebar item */
+	--tw-btn-bg: #3ecf8e;
+	--tw-btn-bg-hover: #30b97a;
+	--tw-btn-text: #121212;
+	--tw-btn-border: #3ecf8e;
+	--tw-code-bg: #1c1c1c;
+	--tw-glow: 0 0 30px rgba(62, 207, 142, 0.1);
+}
+
+/* ---------- 1b. Tokens: light (derived) ---------- */
+:root[data-theme='light'] {
+	--tw-green: #0a7445;
+	--tw-green-hover: #075e37;
+	--tw-bg: #ffffff;
+	--tw-neutral: #f7f7f7;
+	--tw-surface: #f5f5f5;
+	--tw-surface-3: #ebebeb;
+	--tw-border: #e0e0e0;
+	--tw-text: #171717;
+	--tw-text-secondary: #8a8a8a;
+	--tw-text-muted: #5c5c5c;
+	--tw-text-nav: #404040;
+	--tw-warning: #c99a00;
+	--tw-error: #d64545;
+
+	--tw-accent-text: #0a7445;
+	--tw-accent-text-hover: #075e37;
+	--tw-accent-wash: #e2f5eb;
+	--tw-btn-bg: #3ecf8e;
+	--tw-btn-bg-hover: #30b97a;
+	--tw-btn-text: #121212;
+	--tw-btn-border: #1e8f5f; /* 4.1:1 against white, so the button edge stays visible */
+	--tw-code-bg: #f5f5f5;
+	--tw-glow: none;
+}
+
+/* ---------- 2. Mapping to Starlight: dark ---------- */
+:root {
+	--sl-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+	--sl-font-mono: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+
+	--sl-color-white: var(--tw-text);
+	--sl-color-gray-1: var(--tw-text);
+	--sl-color-gray-2: var(--tw-text-nav);
+	--sl-color-gray-3: var(--tw-text-muted);
+	--sl-color-gray-4: var(--tw-text-secondary);
+	--sl-color-gray-5: var(--tw-border);
+	--sl-color-gray-6: var(--tw-neutral);
+	--sl-color-gray-7: var(--tw-surface-3);
+	--sl-color-black: var(--tw-bg);
+
+	--sl-color-text: var(--tw-text);
+	--sl-color-text-accent: var(--tw-accent-text);
+	--sl-color-text-invert: #121212;
+	--sl-color-bg: var(--tw-bg);
+	--sl-color-bg-nav: var(--tw-neutral);
+	--sl-color-bg-sidebar: var(--tw-neutral);
+	--sl-color-bg-inline-code: var(--tw-surface);
+	--sl-color-bg-accent: var(--tw-green);
+	--sl-color-hairline: var(--tw-border);
+	--sl-color-hairline-light: var(--tw-border);
+	--sl-color-hairline-shade: var(--tw-border);
+	--sl-color-backdrop-overlay: rgba(18, 18, 18, 0.6);
+
+	--sl-color-accent-low: #172921;
+	--sl-color-accent: var(--tw-green);
+	--sl-color-accent-high: var(--tw-green);
+
+	/* Semantic colors. Notes and tips stay neutral: green is reserved for actions and active navigation,
+	   never for decoration, and never for errors. */
+	--sl-color-blue-low: var(--tw-surface);
+	--sl-color-blue: #707070;
+	--sl-color-blue-high: var(--tw-text);
+	--sl-color-purple-low: var(--tw-surface);
+	--sl-color-purple: #707070;
+	--sl-color-purple-high: var(--tw-text);
+	--sl-color-orange-low: #2d2718; /* warning */
+	--sl-color-orange: #f5c542;
+	--sl-color-orange-high: #f5c542;
+	--sl-color-red-low: #2d1c1c; /* error */
+	--sl-color-red: #f56565;
+	--sl-color-red-high: #f56565;
+	--sl-color-green-low: #172921; /* success */
+	--sl-color-green: #3ecf8e;
+	--sl-color-green-high: #3ecf8e;
+
+	--sl-shadow-sm: none;
+	--sl-shadow-md: none;
+	--sl-shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.5);
+
+	/* Layout and type scale (DESIGN.md): 240px sidebar, 14px body at 1.6, 13px code and navigation. */
+	--sl-sidebar-width: 15rem;
+	--sl-line-height: 1.6;
+	--sl-text-body: 0.875rem;
+	--sl-text-code: 0.8125rem;
+	--sl-text-code-sm: 0.8125rem;
+	--sl-text-h1: 2rem; /* 32px */
+	--sl-text-h2: 1.5rem; /* 24px */
+	--sl-text-h3: 1.25rem; /* 20px */
+	--sl-text-h4: 1rem; /* 16px */
+	--sl-text-h5: 0.875rem; /* 14px */
+}
+
+/* ---------- 2b. Mapping to Starlight: light ---------- */
+:root[data-theme='light'] {
+	--sl-color-white: var(--tw-text);
+	--sl-color-gray-1: var(--tw-text);
+	--sl-color-gray-2: var(--tw-text-nav);
+	--sl-color-gray-3: var(--tw-text-muted);
+	--sl-color-gray-4: var(--tw-text-secondary);
+	--sl-color-gray-5: #dcdcdc;
+	--sl-color-gray-6: var(--tw-neutral);
+	--sl-color-gray-7: #fafafa;
+	--sl-color-black: var(--tw-bg);
+
+	--sl-color-text: var(--tw-text);
+	--sl-color-text-accent: var(--tw-accent-text);
+	--sl-color-text-invert: #ffffff;
+	--sl-color-bg: var(--tw-bg);
+	--sl-color-bg-nav: var(--tw-neutral);
+	--sl-color-bg-sidebar: var(--tw-neutral);
+	--sl-color-bg-inline-code: #ececec;
+	--sl-color-bg-accent: var(--tw-green);
+	--sl-color-hairline: var(--tw-border);
+	--sl-color-hairline-light: var(--tw-border);
+	--sl-color-hairline-shade: var(--tw-border);
+	--sl-color-backdrop-overlay: rgba(23, 23, 23, 0.45);
+
+	--sl-color-accent-low: #e2f5eb;
+	--sl-color-accent: var(--tw-green);
+	--sl-color-accent-high: #075e37;
+
+	--sl-color-blue-low: #f2f2f2;
+	--sl-color-blue: #8a8a8a;
+	--sl-color-blue-high: #404040;
+	--sl-color-purple-low: #f2f2f2;
+	--sl-color-purple: #8a8a8a;
+	--sl-color-purple-high: #404040;
+	--sl-color-orange-low: #fff4d1;
+	--sl-color-orange: #c99a00;
+	--sl-color-orange-high: #6b4e00;
+	--sl-color-red-low: #fde8e8;
+	--sl-color-red: #d64545;
+	--sl-color-red-high: #a12a2a;
+	--sl-color-green-low: #e2f5eb;
+	--sl-color-green: #0a7445;
+	--sl-color-green-high: #0a5c38;
+
+	--sl-shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.16);
+}
+
+/* ---------- 3. Typography ---------- */
+.sl-markdown-content {
+	font-size: var(--sl-text-body);
+}
+
+h1[data-page-title],
+.sl-markdown-content :is(h1, h2, h3, h4, h5, h6) {
+	font-weight: 600;
+	letter-spacing: -0.02em;
+}
+
+/* Code: Fira Code 13px/400 with ligatures, 1.7 line height in blocks. */
+code,
+pre,
+kbd,
+samp {
+	font-family: var(--__sl-font-mono);
+	font-weight: 400;
+	font-variant-ligatures: contextual;
+	font-feature-settings: 'calt' 1, 'liga' 1;
+}
+
+.sl-markdown-content code:not(:where(.not-content *)) {
+	border-radius: 3px;
+	padding: 0.125rem 0.25rem; /* 4px horizontal */
+}
+
+.sl-markdown-content a:not(:where(.not-content *)) {
+	text-underline-offset: 0.2em;
+}
+.sl-markdown-content a:hover:not(:where(.not-content *)) {
+	color: var(--tw-accent-text-hover);
+	text-decoration: underline;
+}
+
+/* ---------- 4. Components ---------- */
+
+/* Header and search */
+.header {
+	border-bottom-color: var(--tw-border);
+}
+site-search button[data-open-modal] {
+	background: var(--tw-surface);
+	border: 1px solid var(--tw-border);
+	border-radius: 4px;
+	min-height: 2rem;
+}
+site-search button[data-open-modal]:hover {
+	border-color: var(--tw-green);
+}
+site-search dialog {
+	background: var(--tw-surface);
+	border: 1px solid var(--tw-border);
+	box-shadow: var(--sl-shadow-lg);
+}
+@media (min-width: 50rem) {
+	site-search dialog {
+		max-width: 32.5rem; /* 520px command palette */
+		border-radius: 8px;
+	}
+}
+
+/* Sidebar: 13px/500 items, 34px tall, 6px radius, hover surface, active = green text on a 10% wash. */
+.sidebar-content {
+	gap: 0.5rem;
+}
+.sidebar-content a {
+	font-size: 0.8125rem;
+	font-weight: 500;
+	padding-block: 0.5rem;
+	border-radius: 6px;
+}
+.sidebar-content a:hover,
+.sidebar-content a:focus-visible {
+	background: var(--tw-surface);
+	color: var(--sl-color-white);
+}
+.sidebar-content a[aria-current='page'],
+.sidebar-content a[aria-current='page']:hover,
+.sidebar-content a[aria-current='page']:focus {
+	background: var(--tw-accent-wash);
+	color: var(--tw-accent-text);
+	font-weight: 500;
+}
+/* Top-level group labels: overline style. Plugin groups below them: plain 13px labels. */
+.sidebar-content .top-level > li > details > summary .large {
+	font-size: 0.6875rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: var(--tw-text-muted);
+}
+.sidebar-content ul ul summary .large {
+	font-size: 0.8125rem;
+	font-weight: 500;
+	color: var(--tw-text-nav);
+}
+.sidebar-content ul ul summary:hover .large {
+	color: var(--sl-color-white);
+}
+
+/* Right-hand table of contents */
+starlight-toc a[aria-current='true'],
+mobile-starlight-toc a[aria-current='true'] {
+	color: var(--tw-accent-text);
+}
+
+/* Buttons: 4px radius, 13px/500. Primary keeps the brand fill in both themes. */
+.sl-link-button {
+	border-radius: 4px;
+	font-size: 0.8125rem;
+	font-weight: 500;
+	padding: 0.5rem 0.875rem;
+	min-height: 2.375rem;
+}
+@media (min-width: 50rem) {
+	.sl-link-button {
+		font-size: 0.875rem;
+		min-height: 2.75rem;
+		padding: 0.625rem 1.125rem;
+	}
+}
+.sl-link-button.primary {
+	background: var(--tw-btn-bg);
+	border-color: var(--tw-btn-border);
+	color: var(--tw-btn-text);
+}
+.sl-link-button.primary:hover {
+	background: var(--tw-btn-bg-hover);
+	border-color: var(--tw-btn-bg-hover);
+	color: var(--tw-btn-text);
+	box-shadow: var(--tw-glow);
+}
+.sl-link-button.secondary {
+	background: transparent;
+	border-color: var(--tw-border);
+	color: var(--sl-color-white);
+}
+.sl-link-button.secondary:hover {
+	border-color: var(--tw-green);
+}
+
+/* Landing hero: 48px title, soft green glow */
+.hero h1 {
+	font-size: clamp(2rem, 5vw, 3rem);
+	letter-spacing: -0.02em;
+}
+.hero > img,
+.hero > .hero-html {
+	filter: drop-shadow(var(--tw-glow));
+}
+
+/* Cards and link cards: surface fill, 1px border, 4px radius, no shadow */
+.sl-link-card,
+.starlight-aside {
+	box-shadow: none;
+}
+.sl-link-card {
+	background: var(--tw-surface);
+	border-color: var(--tw-border);
+	border-radius: 4px;
+}
+.sl-link-card:hover {
+	background: var(--sl-color-gray-7);
+	border-color: var(--tw-green);
+}
+.sl-link-card .title {
+	font-size: 1rem;
+	letter-spacing: -0.01em;
+}
+.card {
+	background: var(--tw-surface);
+	border-color: var(--tw-border);
+	border-radius: 4px;
+}
+
+/* Asides keep the 4px rule: a thin left bar, not a rounded blob */
+.starlight-aside {
+	border-radius: 4px;
+}
+
+/* Code blocks: no shadow, 4px radius (set through Expressive Code), 1px border */
+.expressive-code .frame {
+	box-shadow: none;
+}
+
+/* Tables: 13px rows, 40px height, 1px row borders, small uppercase header on the neutral surface */
+.sl-markdown-content table:not(:where(.not-content *)) {
+	font-size: 0.8125rem;
+	border: 1px solid var(--tw-border);
+	border-radius: 6px;
+}
+.sl-markdown-content :is(th, td):not(:where(.not-content *)) {
+	padding: 0.5rem 0.75rem;
+	border-bottom: 1px solid var(--tw-border);
+	vertical-align: top;
+}
+.sl-markdown-content tr:last-child td:not(:where(.not-content *)) {
+	border-bottom: 0;
+}
+.sl-markdown-content thead th:not(:where(.not-content *)) {
+	background: var(--tw-neutral);
+	color: var(--tw-text-muted);
+	font-size: 0.6875rem;
+	font-weight: 600;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+}
+.sl-markdown-content tbody tr:hover td:not(:where(.not-content *)) {
+	background: var(--tw-surface-3);
+}
+:root[data-theme='light'] .sl-markdown-content tbody tr:hover td:not(:where(.not-content *)) {
+	background: var(--tw-neutral);
+}

@@ -1,0 +1,554 @@
+{
+  "title": {
+    "vi": "Harvester Hoe",
+    "en": "Harvester Hoe"
+  },
+  "rows": 6,
+  "filler": false,
+  "inventory": false,
+  "slots": {
+    "0": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "1": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "2": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "3": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "4": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "5": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "6": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "7": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "8": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "9": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "17": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "18": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "26": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "27": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "35": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "36": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "44": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "45": {
+      "item": "END_CRYSTAL",
+      "n": 28,
+      "badge": true,
+      "label": {
+        "vi": "Crystals",
+        "en": "Crystals"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "46": {
+      "item": "ENCHANTED_BOOK",
+      "n": 29,
+      "badge": true,
+      "label": {
+        "vi": "Enchant Mastery",
+        "en": "Enchant Mastery"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "47": {
+      "item": "GOLD_INGOT",
+      "n": 30,
+      "badge": true,
+      "label": {
+        "vi": "AutoSell Enchant",
+        "en": "AutoSell Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "48": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "49": {
+      "item": "WOODEN_HOE",
+      "n": 31,
+      "badge": true,
+      "label": {
+        "vi": "Upgrade Tool",
+        "en": "Upgrade Tool"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "50": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "51": {
+      "item": "BLACK_STAINED_GLASS_PANE",
+      "label": {
+        "vi": " ",
+        "en": " "
+      },
+      "short": "",
+      "role": "display"
+    },
+    "52": {
+      "item": "TOTEM_OF_UNDYING",
+      "n": 32,
+      "badge": true,
+      "label": {
+        "vi": "Abilities",
+        "en": "Abilities"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "53": {
+      "item": "NETHER_STAR",
+      "n": 33,
+      "badge": true,
+      "label": {
+        "vi": "Perks",
+        "en": "Perks"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "10": {
+      "item": "DIAMOND",
+      "n": 1,
+      "badge": true,
+      "label": {
+        "vi": "Fortune Enchant",
+        "en": "Fortune Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "11": {
+      "item": "GOLD_INGOT",
+      "n": 2,
+      "badge": true,
+      "label": {
+        "vi": "Essence Greed Enchant",
+        "en": "Essence Greed Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "12": {
+      "item": "TRIPWIRE_HOOK",
+      "n": 3,
+      "badge": true,
+      "label": {
+        "vi": "Key Finder Enchant",
+        "en": "Key Finder Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "13": {
+      "item": "TNT",
+      "n": 4,
+      "badge": true,
+      "label": {
+        "vi": "TNT Blast Enchant",
+        "en": "TNT Blast Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "14": {
+      "item": "BEACON",
+      "n": 5,
+      "badge": true,
+      "label": {
+        "vi": "Laser Enchant",
+        "en": "Laser Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "15": {
+      "item": "SNOWBALL",
+      "n": 6,
+      "badge": true,
+      "label": {
+        "vi": "Avalanche Enchant",
+        "en": "Avalanche Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "16": {
+      "item": "IRON_AXE",
+      "n": 7,
+      "badge": true,
+      "label": {
+        "vi": "Thor Enchant",
+        "en": "Thor Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "19": {
+      "item": "SUGAR",
+      "n": 8,
+      "badge": true,
+      "label": {
+        "vi": "Flash Enchant",
+        "en": "Flash Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "20": {
+      "item": "EXPERIENCE_BOTTLE",
+      "n": 9,
+      "badge": true,
+      "label": {
+        "vi": "Momentum Enchant",
+        "en": "Momentum Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "21": {
+      "item": "HOPPER",
+      "n": 10,
+      "badge": true,
+      "label": {
+        "vi": "Essence Magnet Enchant",
+        "en": "Essence Magnet Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "22": {
+      "item": "VILLAGER_SPAWN_EGG",
+      "n": 11,
+      "badge": true,
+      "label": {
+        "vi": "Farmer Fred Enchant",
+        "en": "Farmer Fred Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "23": {
+      "item": "ENCHANTED_BOOK",
+      "n": 12,
+      "badge": true,
+      "label": {
+        "vi": "Magic Enchant",
+        "en": "Magic Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "24": {
+      "item": "CLOCK",
+      "n": 13,
+      "badge": true,
+      "label": {
+        "vi": "Second Hand Enchant",
+        "en": "Second Hand Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "25": {
+      "item": "WARDEN_SPAWN_EGG",
+      "n": 14,
+      "badge": true,
+      "label": {
+        "vi": "Warden Enchant",
+        "en": "Warden Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "28": {
+      "item": "PAPER",
+      "n": 15,
+      "badge": true,
+      "label": {
+        "vi": "Credit Finder Enchant",
+        "en": "Credit Finder Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "29": {
+      "item": "PANDA_SPAWN_EGG",
+      "n": 16,
+      "badge": true,
+      "label": {
+        "vi": "Panda Enchant",
+        "en": "Panda Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "30": {
+      "item": "TNT",
+      "n": 17,
+      "badge": true,
+      "label": {
+        "vi": "Nuker Enchant",
+        "en": "Nuker Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "31": {
+      "item": "RAVAGER_SPAWN_EGG",
+      "n": 18,
+      "badge": true,
+      "label": {
+        "vi": "Ravager Dash Enchant",
+        "en": "Ravager Dash Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "32": {
+      "item": "REDSTONE",
+      "n": 19,
+      "badge": true,
+      "label": {
+        "vi": "Frenzy Enchant",
+        "en": "Frenzy Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "33": {
+      "item": "NETHER_STAR",
+      "n": 20,
+      "badge": true,
+      "label": {
+        "vi": "Amplify Enchant",
+        "en": "Amplify Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "34": {
+      "item": "BLAZE_SPAWN_EGG",
+      "n": 21,
+      "badge": true,
+      "label": {
+        "vi": "Molten Aether Enchant",
+        "en": "Molten Aether Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "37": {
+      "item": "END_PORTAL_FRAME",
+      "n": 22,
+      "badge": true,
+      "label": {
+        "vi": "UFO Enchant",
+        "en": "UFO Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "38": {
+      "item": "SLIME_SPAWN_EGG",
+      "n": 23,
+      "badge": true,
+      "label": {
+        "vi": "Slime Monster Enchant",
+        "en": "Slime Monster Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "39": {
+      "item": "WITHER_ROSE",
+      "n": 24,
+      "badge": true,
+      "label": {
+        "vi": "Blight Enchant",
+        "en": "Blight Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "40": {
+      "item": "BONE_MEAL",
+      "n": 25,
+      "badge": true,
+      "label": {
+        "vi": "Regrowth Enchant",
+        "en": "Regrowth Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "41": {
+      "item": "LIME_DYE",
+      "n": 26,
+      "badge": true,
+      "label": {
+        "vi": "Snake Enchant",
+        "en": "Snake Enchant"
+      },
+      "short": "",
+      "role": "button"
+    },
+    "42": {
+      "item": "CREEPER_SPAWN_EGG",
+      "n": 27,
+      "badge": true,
+      "label": {
+        "vi": "Flash Mob Enchant",
+        "en": "Flash Mob Enchant"
+      },
+      "short": "",
+      "role": "button"
+    }
+  }
+}

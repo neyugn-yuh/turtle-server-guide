@@ -1,0 +1,6 @@
+{
+	// Static site on Cloudflare Pages. Deploy with `npm run deploy`.
+	"name": "turtle-server-guide",
+	"compatibility_date": "2026-10-19",
+	"pages_build_output_dir": "./dist"
+}

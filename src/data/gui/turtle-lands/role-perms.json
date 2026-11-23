@@ -1,0 +1,512 @@
+{
+  "title": {
+    "vi": "Quyền của Quản lý",
+    "en": "Permissions of Manager"
+  },
+  "rows": 6,
+  "slots": {
+    "4": {
+      "item": "GOLDEN_HELMET",
+      "n": 1,
+      "label": {
+        "vi": "Quản lý",
+        "en": "Manager"
+      },
+      "short": {
+        "vi": "Quản lý",
+        "en": "Manager"
+      },
+      "role": "display",
+      "badge": true
+    },
+    "10": {
+      "item": "LIME_CONCRETE",
+      "n": 2,
+      "label": {
+        "vi": "Xây",
+        "en": "Build"
+      },
+      "short": {
+        "vi": "Xây",
+        "en": "Build"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "11": {
+      "item": "LIME_CONCRETE",
+      "n": 3,
+      "label": {
+        "vi": "Phá",
+        "en": "Break"
+      },
+      "short": {
+        "vi": "Phá",
+        "en": "Break"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "12": {
+      "item": "LIME_CONCRETE",
+      "n": 4,
+      "label": {
+        "vi": "Rương và thùng chứa",
+        "en": "Containers"
+      },
+      "short": {
+        "vi": "Rương",
+        "en": "Chests"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "13": {
+      "item": "LIME_CONCRETE",
+      "n": 5,
+      "label": {
+        "vi": "Cửa",
+        "en": "Doors"
+      },
+      "short": {
+        "vi": "Cửa",
+        "en": "Doors"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "14": {
+      "item": "LIME_CONCRETE",
+      "n": 6,
+      "label": {
+        "vi": "Redstone",
+        "en": "Redstone"
+      },
+      "short": {
+        "vi": "Redstone",
+        "en": "Redstone"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "15": {
+      "item": "LIME_CONCRETE",
+      "n": 7,
+      "label": {
+        "vi": "Tương tác sinh vật",
+        "en": "Entity interaction"
+      },
+      "short": {
+        "vi": "Sinh vật",
+        "en": "Entities"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "16": {
+      "item": "LIME_CONCRETE",
+      "n": 8,
+      "label": {
+        "vi": "Đánh động vật",
+        "en": "Attack animals"
+      },
+      "short": {
+        "vi": "Đánh động vật",
+        "en": "Attack animals"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "19": {
+      "item": "LIME_CONCRETE",
+      "n": 9,
+      "label": {
+        "vi": "Phương tiện",
+        "en": "Vehicles"
+      },
+      "short": {
+        "vi": "Phương tiện",
+        "en": "Vehicles"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "20": {
+      "item": "LIME_CONCRETE",
+      "n": 10,
+      "label": {
+        "vi": "Dịch chuyển",
+        "en": "Teleport"
+      },
+      "short": {
+        "vi": "Dịch chuyển",
+        "en": "Teleport"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "21": {
+      "item": "LIME_CONCRETE",
+      "n": 11,
+      "label": {
+        "vi": "Mời",
+        "en": "Invite"
+      },
+      "short": {
+        "vi": "Mời",
+        "en": "Invite"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "22": {
+      "item": "LIME_CONCRETE",
+      "n": 12,
+      "label": {
+        "vi": "Đuổi và cấm",
+        "en": "Kick and ban"
+      },
+      "short": {
+        "vi": "Đuổi và cấm",
+        "en": "Kick and ban"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "23": {
+      "item": "LIME_CONCRETE",
+      "n": 13,
+      "label": {
+        "vi": "Chiếm đất",
+        "en": "Claim land"
+      },
+      "short": {
+        "vi": "Chiếm đất",
+        "en": "Claim land"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "24": {
+      "item": "RED_CONCRETE",
+      "n": 14,
+      "label": {
+        "vi": "Bỏ chiếm",
+        "en": "Unclaim"
+      },
+      "short": {
+        "vi": "Bỏ chiếm",
+        "en": "Unclaim"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "25": {
+      "item": "LIME_CONCRETE",
+      "n": 15,
+      "label": {
+        "vi": "Đặt điểm hồi sinh",
+        "en": "Set spawn"
+      },
+      "short": {
+        "vi": "Đặt điểm hồi sinh",
+        "en": "Set spawn"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "28": {
+      "item": "LIME_CONCRETE",
+      "n": 16,
+      "label": {
+        "vi": "Đổi cờ",
+        "en": "Manage flags"
+      },
+      "short": {
+        "vi": "Đổi cờ",
+        "en": "Manage flags"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "29": {
+      "item": "RED_CONCRETE",
+      "n": 17,
+      "label": {
+        "vi": "Chỉnh vai trò",
+        "en": "Manage roles"
+      },
+      "short": {
+        "vi": "Chỉnh vai trò",
+        "en": "Manage roles"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "30": {
+      "item": "LIME_CONCRETE",
+      "n": 18,
+      "label": {
+        "vi": "Nạp ngân hàng",
+        "en": "Bank deposit"
+      },
+      "short": {
+        "vi": "Nạp ngân hàng",
+        "en": "Bank deposit"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "31": {
+      "item": "LIME_CONCRETE",
+      "n": 19,
+      "label": {
+        "vi": "Rút ngân hàng",
+        "en": "Bank withdraw"
+      },
+      "short": {
+        "vi": "Rút ngân hàng",
+        "en": "Bank withdraw"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "48": {
+      "item": "BARRIER",
+      "n": 20,
+      "label": {
+        "vi": "Khôi phục mặc định",
+        "en": "Reset to defaults"
+      },
+      "short": {
+        "vi": "Mặc định",
+        "en": "Reset"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "49": {
+      "item": "ARROW",
+      "n": 21,
+      "label": {
+        "vi": "« Quay lại",
+        "en": "« Back"
+      },
+      "short": {
+        "vi": "Quay lại",
+        "en": "Back"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "0": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "1": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "2": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "3": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "5": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "6": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "7": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "8": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "9": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "17": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "18": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "26": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "27": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "35": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "36": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "44": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "45": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "46": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "47": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "50": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "51": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "52": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "53": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    }
+  },
+  "filler": false,
+  "inventory": false
+}

@@ -1,0 +1,63 @@
+{
+  "title": {
+    "vi": "Backpack Upgrades",
+    "en": "Backpack Upgrades"
+  },
+  "rows": 3,
+  "filler": true,
+  "inventory": false,
+  "slots": {
+    "11": {
+      "item": "CHEST",
+      "n": 1,
+      "label": {
+        "vi": "Sức chứa",
+        "en": "Sức chứa"
+      },
+      "short": {
+        "vi": "Sức chứa",
+        "en": "Capacity"
+      },
+      "role": "button"
+    },
+    "13": {
+      "item": "GOLD_INGOT",
+      "n": 2,
+      "label": {
+        "vi": "Hệ số bán",
+        "en": "Hệ số bán"
+      },
+      "short": {
+        "vi": "Hệ số bán",
+        "en": "Sell boost"
+      },
+      "role": "button"
+    },
+    "15": {
+      "item": "ENDER_CHEST",
+      "n": 3,
+      "label": {
+        "vi": "Giữ đồ",
+        "en": "Giữ đồ"
+      },
+      "short": {
+        "vi": "Giữ đồ",
+        "en": "Keeper"
+      },
+      "role": "button"
+    },
+    "22": {
+      "item": "ARROW",
+      "n": 4,
+      "label": {
+        "vi": "Quay lại",
+        "en": "Quay lại"
+      },
+      "short": {
+        "vi": "Quay lại",
+        "en": "Back"
+      },
+      "role": "button"
+    }
+  }
+}

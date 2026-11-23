@@ -1,0 +1,409 @@
+{
+  "title": {
+    "vi": "Ngân hàng và thuế",
+    "en": "Bank and taxes"
+  },
+  "rows": 6,
+  "slots": {
+    "4": {
+      "item": "GOLD_BLOCK",
+      "n": 1,
+      "label": {
+        "vi": "Ngân hàng {land}",
+        "en": "Bank {land}"
+      },
+      "short": {
+        "vi": "Ngân hàng",
+        "en": "Bank"
+      },
+      "role": "display",
+      "badge": true
+    },
+    "10": {
+      "item": "GOLD_NUGGET",
+      "n": 2,
+      "label": {
+        "vi": "Nạp 1,000",
+        "en": "Deposit 1,000"
+      },
+      "short": {
+        "vi": "Nạp 1k",
+        "en": "Deposit 1k"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "11": {
+      "item": "GOLD_NUGGET",
+      "n": 3,
+      "label": {
+        "vi": "Nạp 10,000",
+        "en": "Deposit 10,000"
+      },
+      "short": {
+        "vi": "Nạp 10k",
+        "en": "Deposit 10k"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "12": {
+      "item": "GOLD_NUGGET",
+      "n": 4,
+      "label": {
+        "vi": "Nạp 100,000",
+        "en": "Deposit 100,000"
+      },
+      "short": {
+        "vi": "Nạp 100k",
+        "en": "Deposit 100k"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "13": {
+      "item": "GOLD_NUGGET",
+      "n": 5,
+      "label": {
+        "vi": "Nạp 1,000,000",
+        "en": "Deposit 1,000,000"
+      },
+      "short": {
+        "vi": "Nạp 1m",
+        "en": "Deposit 1m"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "19": {
+      "item": "IRON_NUGGET",
+      "n": 6,
+      "label": {
+        "vi": "Rút 1,000",
+        "en": "Withdraw 1,000"
+      },
+      "short": {
+        "vi": "Rút 1k",
+        "en": "Withdraw 1k"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "20": {
+      "item": "IRON_NUGGET",
+      "n": 7,
+      "label": {
+        "vi": "Rút 10,000",
+        "en": "Withdraw 10,000"
+      },
+      "short": {
+        "vi": "Rút 10k",
+        "en": "Withdraw 10k"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "21": {
+      "item": "IRON_NUGGET",
+      "n": 8,
+      "label": {
+        "vi": "Rút 100,000",
+        "en": "Withdraw 100,000"
+      },
+      "short": {
+        "vi": "Rút 100k",
+        "en": "Withdraw 100k"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "22": {
+      "item": "IRON_NUGGET",
+      "n": 9,
+      "label": {
+        "vi": "Rút 1,000,000",
+        "en": "Withdraw 1,000,000"
+      },
+      "short": {
+        "vi": "Rút 1m",
+        "en": "Withdraw 1m"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "14": {
+      "item": "WRITABLE_BOOK",
+      "n": 10,
+      "label": {
+        "vi": "Nạp số khác",
+        "en": "Custom deposit"
+      },
+      "short": {
+        "vi": "Nạp khác",
+        "en": "Custom in"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "23": {
+      "item": "WRITABLE_BOOK",
+      "n": 11,
+      "label": {
+        "vi": "Rút số khác",
+        "en": "Custom withdraw"
+      },
+      "short": {
+        "vi": "Rút khác",
+        "en": "Custom out"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "31": {
+      "item": "BOOK",
+      "n": 12,
+      "label": {
+        "vi": "10 giao dịch gần nhất",
+        "en": "10 latest transactions"
+      },
+      "short": {
+        "vi": "Lịch sử",
+        "en": "History"
+      },
+      "role": "display",
+      "badge": true
+    },
+    "49": {
+      "item": "ARROW",
+      "n": 13,
+      "label": {
+        "vi": "« Quay lại",
+        "en": "« Back"
+      },
+      "short": {
+        "vi": "Quay lại",
+        "en": "Back"
+      },
+      "role": "button",
+      "badge": true
+    },
+    "0": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "1": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "2": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "3": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "5": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "6": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "7": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "8": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "9": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "17": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "18": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "26": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "27": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "35": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "36": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "44": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "45": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "46": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "47": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "48": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "50": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "51": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "52": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    },
+    "53": {
+      "item": "GRAY_STAINED_GLASS_PANE",
+      "label": {
+        "vi": "Trang trí",
+        "en": "Decoration"
+      },
+      "short": "",
+      "role": "display"
+    }
+  },
+  "filler": false,
+  "inventory": false
+}
