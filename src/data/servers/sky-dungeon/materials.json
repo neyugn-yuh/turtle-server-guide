@@ -7,7 +7,7 @@
 			"category": "dungeon",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴅᴜɴɢᴇᴏɴ",
 					"ingredients": [
 						{
 							"name": "Cobblestone",
@@ -41,7 +41,7 @@
 			"category": "nong-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ɴôɴɢ ѕảɴ",
 					"ingredients": [
 						{
 							"name": "Potato",
@@ -75,7 +75,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
 					"ingredients": [
 						{
 							"name": "Cobblestone",
@@ -109,7 +109,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
 					"ingredients": [
 						{
 							"name": "Coal",
@@ -143,7 +143,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
 					"ingredients": [
 						{
 							"name": "Raw Copper",
@@ -177,7 +177,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
 					"ingredients": [
 						{
 							"name": "Raw Iron",
@@ -211,7 +211,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
 					"ingredients": [
 						{
 							"name": "Raw Gold",
@@ -245,7 +245,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
 					"ingredients": [
 						{
 							"name": "Redstone",
@@ -279,7 +279,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
 					"ingredients": [
 						{
 							"name": "Lapis Lazuli",
@@ -313,7 +313,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
 					"ingredients": [
 						{
 							"name": "Diamond",
@@ -347,7 +347,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
 					"ingredients": [
 						{
 							"name": "Emerald",
