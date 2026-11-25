@@ -37,25 +37,25 @@
 				{
 					"level": 2,
 					"dropBonus": 10,
-					"spawnSpeed": 10,
+					"spawnSpeed": 25,
 					"cost": 100
 				},
 				{
 					"level": 3,
 					"dropBonus": 25,
-					"spawnSpeed": 20,
+					"spawnSpeed": 50,
 					"cost": 500
 				},
 				{
 					"level": 4,
 					"dropBonus": 50,
-					"spawnSpeed": 35,
+					"spawnSpeed": 75,
 					"cost": 2000
 				},
 				{
 					"level": 5,
 					"dropBonus": 100,
-					"spawnSpeed": 50,
+					"spawnSpeed": 100,
 					"cost": 10000
 				}
 			],
@@ -98,25 +98,25 @@
 				{
 					"level": 2,
 					"dropBonus": 10,
-					"spawnSpeed": 10,
+					"spawnSpeed": 25,
 					"cost": 100
 				},
 				{
 					"level": 3,
 					"dropBonus": 25,
-					"spawnSpeed": 20,
+					"spawnSpeed": 50,
 					"cost": 500
 				},
 				{
 					"level": 4,
 					"dropBonus": 50,
-					"spawnSpeed": 35,
+					"spawnSpeed": 75,
 					"cost": 2000
 				},
 				{
 					"level": 5,
 					"dropBonus": 100,
-					"spawnSpeed": 50,
+					"spawnSpeed": 100,
 					"cost": 10000
 				}
 			],
@@ -159,25 +159,25 @@
 				{
 					"level": 2,
 					"dropBonus": 10,
-					"spawnSpeed": 10,
+					"spawnSpeed": 25,
 					"cost": 100
 				},
 				{
 					"level": 3,
 					"dropBonus": 25,
-					"spawnSpeed": 20,
+					"spawnSpeed": 50,
 					"cost": 500
 				},
 				{
 					"level": 4,
 					"dropBonus": 50,
-					"spawnSpeed": 35,
+					"spawnSpeed": 75,
 					"cost": 2000
 				},
 				{
 					"level": 5,
 					"dropBonus": 100,
-					"spawnSpeed": 50,
+					"spawnSpeed": 100,
 					"cost": 10000
 				}
 			],
@@ -220,25 +220,25 @@
 				{
 					"level": 2,
 					"dropBonus": 10,
-					"spawnSpeed": 10,
+					"spawnSpeed": 25,
 					"cost": 100
 				},
 				{
 					"level": 3,
 					"dropBonus": 25,
-					"spawnSpeed": 20,
+					"spawnSpeed": 50,
 					"cost": 500
 				},
 				{
 					"level": 4,
 					"dropBonus": 50,
-					"spawnSpeed": 35,
+					"spawnSpeed": 75,
 					"cost": 2000
 				},
 				{
 					"level": 5,
 					"dropBonus": 100,
-					"spawnSpeed": 50,
+					"spawnSpeed": 100,
 					"cost": 10000
 				}
 			],
@@ -274,25 +274,25 @@
 				{
 					"level": 2,
 					"dropBonus": 10,
-					"spawnSpeed": 10,
+					"spawnSpeed": 25,
 					"cost": 100
 				},
 				{
 					"level": 3,
 					"dropBonus": 25,
-					"spawnSpeed": 20,
+					"spawnSpeed": 50,
 					"cost": 500
 				},
 				{
 					"level": 4,
 					"dropBonus": 50,
-					"spawnSpeed": 35,
+					"spawnSpeed": 75,
 					"cost": 2000
 				},
 				{
 					"level": 5,
 					"dropBonus": 100,
-					"spawnSpeed": 50,
+					"spawnSpeed": 100,
 					"cost": 10000
 				}
 			],
@@ -335,25 +335,25 @@
 				{
 					"level": 2,
 					"dropBonus": 10,
-					"spawnSpeed": 10,
+					"spawnSpeed": 25,
 					"cost": 100
 				},
 				{
 					"level": 3,
 					"dropBonus": 25,
-					"spawnSpeed": 20,
+					"spawnSpeed": 50,
 					"cost": 500
 				},
 				{
 					"level": 4,
 					"dropBonus": 50,
-					"spawnSpeed": 35,
+					"spawnSpeed": 75,
 					"cost": 2000
 				},
 				{
 					"level": 5,
 					"dropBonus": 100,
-					"spawnSpeed": 50,
+					"spawnSpeed": 100,
 					"cost": 10000
 				}
 			],
@@ -396,25 +396,25 @@
 				{
 					"level": 2,
 					"dropBonus": 10,
-					"spawnSpeed": 10,
+					"spawnSpeed": 25,
 					"cost": 100
 				},
 				{
 					"level": 3,
 					"dropBonus": 25,
-					"spawnSpeed": 20,
+					"spawnSpeed": 50,
 					"cost": 500
 				},
 				{
 					"level": 4,
 					"dropBonus": 50,
-					"spawnSpeed": 35,
+					"spawnSpeed": 75,
 					"cost": 2000
 				},
 				{
 					"level": 5,
 					"dropBonus": 100,
-					"spawnSpeed": 50,
+					"spawnSpeed": 100,
 					"cost": 10000
 				}
 			],
@@ -450,25 +450,25 @@
 				{
 					"level": 2,
 					"dropBonus": 10,
-					"spawnSpeed": 10,
+					"spawnSpeed": 25,
 					"cost": 100
 				},
 				{
 					"level": 3,
 					"dropBonus": 25,
-					"spawnSpeed": 20,
+					"spawnSpeed": 50,
 					"cost": 500
 				},
 				{
 					"level": 4,
 					"dropBonus": 50,
-					"spawnSpeed": 35,
+					"spawnSpeed": 75,
 					"cost": 2000
 				},
 				{
 					"level": 5,
 					"dropBonus": 100,
-					"spawnSpeed": 50,
+					"spawnSpeed": 100,
 					"cost": 10000
 				}
 			],
@@ -504,25 +504,25 @@
 				{
 					"level": 2,
 					"dropBonus": 10,
-					"spawnSpeed": 10,
+					"spawnSpeed": 25,
 					"cost": 100
 				},
 				{
 					"level": 3,
 					"dropBonus": 25,
-					"spawnSpeed": 20,
+					"spawnSpeed": 50,
 					"cost": 500
 				},
 				{
 					"level": 4,
 					"dropBonus": 50,
-					"spawnSpeed": 35,
+					"spawnSpeed": 75,
 					"cost": 2000
 				},
 				{
 					"level": 5,
 					"dropBonus": 100,
-					"spawnSpeed": 50,
+					"spawnSpeed": 100,
 					"cost": 10000
 				}
 			],
@@ -558,25 +558,25 @@
 				{
 					"level": 2,
 					"dropBonus": 10,
-					"spawnSpeed": 10,
+					"spawnSpeed": 25,
 					"cost": 100
 				},
 				{
 					"level": 3,
 					"dropBonus": 25,
-					"spawnSpeed": 20,
+					"spawnSpeed": 50,
 					"cost": 500
 				},
 				{
 					"level": 4,
 					"dropBonus": 50,
-					"spawnSpeed": 35,
+					"spawnSpeed": 75,
 					"cost": 2000
 				},
 				{
 					"level": 5,
 					"dropBonus": 100,
-					"spawnSpeed": 50,
+					"spawnSpeed": 100,
 					"cost": 10000
 				}
 			],
@@ -626,25 +626,25 @@
 				{
 					"level": 2,
 					"dropBonus": 10,
-					"spawnSpeed": 10,
+					"spawnSpeed": 25,
 					"cost": 100
 				},
 				{
 					"level": 3,
 					"dropBonus": 25,
-					"spawnSpeed": 20,
+					"spawnSpeed": 50,
 					"cost": 500
 				},
 				{
 					"level": 4,
 					"dropBonus": 50,
-					"spawnSpeed": 35,
+					"spawnSpeed": 75,
 					"cost": 2000
 				},
 				{
 					"level": 5,
 					"dropBonus": 100,
-					"spawnSpeed": 50,
+					"spawnSpeed": 100,
 					"cost": 10000
 				}
 			],

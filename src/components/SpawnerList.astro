@@ -89,7 +89,7 @@ const mobs: any[] = data.mobs;
 				{mob.xp.bySize && <p class="sl-empty">Exp của slime bằng cỡ của nó (1, 2 hoặc 4).</p>}
 
 				<h4>Nâng cấp spawner</h4>
-					{hasUpgrades(mob) && <p class="sl-empty">Tốc độ tính cho 1 spawner: mỗi chu kỳ ({num(minSeconds)}–{num(maxSeconds)} giây, trung bình {num(avgSeconds)} giây) spawner sinh tối đa {speedBase.spawnCount} lượt, mỗi lượt ra 1 mob nhân với (1 + tốc độ sinh thêm). Chỉ sinh khi có người chơi đứng gần; đặt N spawner thì nhân N.</p>}
+					{hasUpgrades(mob) && <p class="sl-empty">Tốc độ tính cho 1 spawner: mỗi chu kỳ ({minSeconds === maxSeconds ? `đúng ${num(minSeconds)} giây` : `${num(minSeconds)}–${num(maxSeconds)} giây, trung bình ${num(avgSeconds)} giây`}) spawner sinh tối đa {speedBase.spawnCount} lượt, mỗi lượt ra 1 mob nhân với (1 + tốc độ sinh thêm). Chỉ sinh khi có người chơi đứng gần; đặt N spawner thì nhân N.</p>}
 				{
 					hasUpgrades(mob) ? (
 						<div class="sl-scroll">
