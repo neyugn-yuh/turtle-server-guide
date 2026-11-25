@@ -1,0 +1,8089 @@
+{
+	"grades": [
+		{
+			"id": "TANBINH",
+			"name": "Tân Binh",
+			"material": "Da"
+		},
+		{
+			"id": "CHIENBINH",
+			"name": "Chiến Binh",
+			"material": "Xích"
+		},
+		{
+			"id": "KYSI",
+			"name": "Kỵ Sĩ",
+			"material": "Đồng"
+		},
+		{
+			"id": "LANHCHUA",
+			"name": "Lãnh Chúa",
+			"material": "Sắt"
+		},
+		{
+			"id": "QUANVUONG",
+			"name": "Quân Vương",
+			"material": "Vàng"
+		},
+		{
+			"id": "DEVUONG",
+			"name": "Đế Vương",
+			"material": "Kim Cương"
+		}
+	],
+	"tiers": [
+		{
+			"n": 1,
+			"name": "Hành Lang Khởi Nguyên",
+			"forgeLevel": 0,
+			"crate": {
+				"currency": "d1",
+				"price": 1000,
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			}
+		},
+		{
+			"n": 2,
+			"name": "Ổ Nhện & Hang Dơi",
+			"forgeLevel": 1,
+			"crate": {
+				"currency": "d2",
+				"price": 1000,
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			}
+		},
+		{
+			"n": 3,
+			"name": "Tổ Kiến Sát Thủ",
+			"forgeLevel": 2,
+			"crate": {
+				"currency": "d3",
+				"price": 1000,
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			}
+		},
+		{
+			"n": 4,
+			"name": "Rừng Rễ Đại Thụ",
+			"forgeLevel": 3,
+			"crate": {
+				"currency": "d4",
+				"price": 1000,
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			}
+		},
+		{
+			"n": 5,
+			"name": "Đấu Trường Chuồng Thú",
+			"forgeLevel": 4,
+			"crate": {
+				"currency": "d5",
+				"price": 1000,
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			}
+		},
+		{
+			"n": 6,
+			"name": "Đầm Lầy Độc Khí",
+			"forgeLevel": 5,
+			"crate": {
+				"currency": "d6",
+				"price": 1000,
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			}
+		},
+		{
+			"n": 7,
+			"name": "Động Sương Mù Trắng",
+			"forgeLevel": 6,
+			"crate": {
+				"currency": "d7",
+				"price": 1000,
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			}
+		},
+		{
+			"n": 8,
+			"name": "Hẻm Núi Wyvern",
+			"forgeLevel": 7,
+			"crate": {
+				"currency": "d8",
+				"price": 1000,
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			}
+		},
+		{
+			"n": 9,
+			"name": "Rừng Pha Lê Cộng Hưởng",
+			"forgeLevel": 8,
+			"crate": {
+				"currency": "d9",
+				"price": 1000,
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			}
+		},
+		{
+			"n": 10,
+			"name": "Tiền Đồn Goliath",
+			"forgeLevel": 9,
+			"crate": {
+				"currency": "d10",
+				"price": 1000,
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			}
+		},
+		{
+			"n": 11,
+			"name": "Thị Trấn Ngầm Rivira",
+			"forgeLevel": 10,
+			"crate": {
+				"currency": "d11",
+				"price": 1000,
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			}
+		},
+		{
+			"n": 12,
+			"name": "Đại Thác Nước",
+			"forgeLevel": 11,
+			"crate": {
+				"currency": "d12",
+				"price": 1000,
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			}
+		},
+		{
+			"n": 13,
+			"name": "Thành Cổ Udaeus",
+			"forgeLevel": 12,
+			"crate": {
+				"currency": "d13",
+				"price": 1000,
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			}
+		},
+		{
+			"n": 14,
+			"name": "Đấu Trường Sinh Tử",
+			"forgeLevel": 13,
+			"crate": {
+				"currency": "d14",
+				"price": 1000,
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			}
+		},
+		{
+			"n": 15,
+			"name": "Vực Thẳm & Thánh Điện Balor",
+			"forgeLevel": 14,
+			"crate": {
+				"currency": "d15",
+				"price": 1000,
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			}
+		}
+	],
+	"upgrade": {
+		"weaponPercent": 3,
+		"armorPercent": 3,
+		"piecesPerGrade": 5
+	},
+	"kinds": {
+		"sword": {
+			"stats": [
+				{
+					"key": "attack-damage",
+					"label": "Sát thương",
+					"unit": ""
+				},
+				{
+					"key": "attack-speed",
+					"label": "Tốc độ đánh",
+					"unit": ""
+				},
+				{
+					"key": "critical-strike-chance",
+					"label": "Tỉ lệ chí mạng",
+					"unit": "%"
+				},
+				{
+					"key": "critical-strike-power",
+					"label": "Sát thương chí mạng",
+					"unit": "%"
+				},
+				{
+					"key": "lifesteal",
+					"label": "Hút máu",
+					"unit": "%"
+				},
+				{
+					"key": "pve-damage",
+					"label": "Sát thương lên quái (PvE)",
+					"unit": "%"
+				}
+			],
+			"tiers": [
+				{
+					"tier": 1,
+					"name": "Trường Kiếm Khai Phá",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_sword",
+							"stats": {
+								"attack-damage": 10,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 3,
+								"pve-damage": 5
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_sword",
+							"stats": {
+								"attack-damage": 11.5,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 5.3,
+								"critical-strike-power": 4.8,
+								"lifesteal": 0.7,
+								"pve-damage": 8.4
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_sword",
+							"stats": {
+								"attack-damage": 13,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 7.6,
+								"critical-strike-power": 9.5,
+								"lifesteal": 1.4,
+								"pve-damage": 11.8
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_sword",
+							"stats": {
+								"attack-damage": 15,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 10.7,
+								"critical-strike-power": 15.9,
+								"lifesteal": 2.3,
+								"pve-damage": 16.4
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_sword",
+							"stats": {
+								"attack-damage": 17.5,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 14.6,
+								"critical-strike-power": 23.9,
+								"lifesteal": 3.4,
+								"pve-damage": 22
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_sword",
+							"stats": {
+								"attack-damage": 21,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 20,
+								"critical-strike-power": 35,
+								"lifesteal": 5,
+								"pve-damage": 30
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Sói Vồ",
+								"text": "Lao tới 6 block, chém quanh điểm đáp.",
+								"details": [
+									"Sát thương: 140%",
+									"Hồi chiêu: 8s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 2,
+					"name": "Kiếm Nanh Độc",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_sword",
+							"stats": {
+								"attack-damage": 11,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 4,
+								"pve-damage": 6
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_sword",
+							"stats": {
+								"attack-damage": 12.6,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 6.3,
+								"critical-strike-power": 4.9,
+								"lifesteal": 0.7,
+								"pve-damage": 9.5
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_sword",
+							"stats": {
+								"attack-damage": 14.3,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 8.6,
+								"critical-strike-power": 9.8,
+								"lifesteal": 1.4,
+								"pve-damage": 13.1
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_sword",
+							"stats": {
+								"attack-damage": 16.5,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 11.7,
+								"critical-strike-power": 16.4,
+								"lifesteal": 2.3,
+								"pve-damage": 17.8
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_sword",
+							"stats": {
+								"attack-damage": 19.2,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 15.6,
+								"critical-strike-power": 24.5,
+								"lifesteal": 3.4,
+								"pve-damage": 23.7
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_sword",
+							"stats": {
+								"attack-damage": 23,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 21,
+								"critical-strike-power": 36,
+								"lifesteal": 5,
+								"pve-damage": 32
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Chém Độc",
+								"text": "Trảm ngang quanh người 4 block, gây độc 3s lên mọi mục tiêu trúng.",
+								"details": [
+									"Sát thương: 100%",
+									"Hồi chiêu: 8s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 3,
+					"name": "Kiếm Càng Đỏ",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_sword",
+							"stats": {
+								"attack-damage": 12.5,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 5,
+								"critical-strike-power": 5,
+								"pve-damage": 8
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_sword",
+							"stats": {
+								"attack-damage": 14.3,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 7.3,
+								"critical-strike-power": 9.5,
+								"lifesteal": 0.7,
+								"pve-damage": 11.5
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_sword",
+							"stats": {
+								"attack-damage": 16.2,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 9.6,
+								"critical-strike-power": 14,
+								"lifesteal": 1.5,
+								"pve-damage": 15.1
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_sword",
+							"stats": {
+								"attack-damage": 18.6,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 12.7,
+								"critical-strike-power": 20,
+								"lifesteal": 2.5,
+								"pve-damage": 19.8
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_sword",
+							"stats": {
+								"attack-damage": 21.7,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 16.6,
+								"critical-strike-power": 27.5,
+								"lifesteal": 3.7,
+								"pve-damage": 25.7
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_sword",
+							"stats": {
+								"attack-damage": 26,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 22,
+								"critical-strike-power": 38,
+								"lifesteal": 5.5,
+								"pve-damage": 34
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Xung Kích",
+								"text": "Lướt xuyên bầy địch 8 block, chém mọi mục tiêu ở điểm đáp.",
+								"details": [
+									"Sát thương: 150%",
+									"Hồi chiêu: 9s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 4,
+					"name": "Trường Kiếm Rừng Già",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_sword",
+							"stats": {
+								"attack-damage": 14,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 6,
+								"critical-strike-power": 5,
+								"lifesteal": 1,
+								"pve-damage": 10
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_sword",
+							"stats": {
+								"attack-damage": 16.2,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 8.5,
+								"critical-strike-power": 9.8,
+								"lifesteal": 1.7,
+								"pve-damage": 13.5
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_sword",
+							"stats": {
+								"attack-damage": 18.4,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 10.9,
+								"critical-strike-power": 14.5,
+								"lifesteal": 2.4,
+								"pve-damage": 17.1
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_sword",
+							"stats": {
+								"attack-damage": 21.3,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 14.2,
+								"critical-strike-power": 20.9,
+								"lifesteal": 3.3,
+								"pve-damage": 21.8
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_sword",
+							"stats": {
+								"attack-damage": 24.9,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 18.3,
+								"critical-strike-power": 28.9,
+								"lifesteal": 4.4,
+								"pve-damage": 27.7
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_sword",
+							"stats": {
+								"attack-damage": 30,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 24,
+								"critical-strike-power": 40,
+								"lifesteal": 6,
+								"pve-damage": 36
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Ảnh Trảm",
+								"text": "Dịch chuyển 5 block về phía trước, để lại bóng tối và chém quanh điểm đến.",
+								"details": [
+									"Sát thương: 130%",
+									"Hồi chiêu: 9s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 5,
+					"name": "Đại Kiếm Asterius",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_sword",
+							"stats": {
+								"attack-damage": 18,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 8,
+								"critical-strike-power": 10,
+								"lifesteal": 1.5,
+								"pve-damage": 12
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_sword",
+							"stats": {
+								"attack-damage": 20.7,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 10.5,
+								"critical-strike-power": 14.4,
+								"lifesteal": 2.2,
+								"pve-damage": 15.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_sword",
+							"stats": {
+								"attack-damage": 23.5,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 12.9,
+								"critical-strike-power": 18.7,
+								"lifesteal": 2.9,
+								"pve-damage": 19.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_sword",
+							"stats": {
+								"attack-damage": 27.1,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 16.2,
+								"critical-strike-power": 24.5,
+								"lifesteal": 3.8,
+								"pve-damage": 24.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_sword",
+							"stats": {
+								"attack-damage": 31.6,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 20.3,
+								"critical-strike-power": 31.8,
+								"lifesteal": 4.9,
+								"pve-damage": 31.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_sword",
+							"stats": {
+								"attack-damage": 38,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 26,
+								"critical-strike-power": 42,
+								"lifesteal": 6.5,
+								"pve-damage": 40
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Cuồng Ngưu Xung",
+								"text": "Húc thẳng 6 block, nổ tại điểm đáp và hất văng mọi mục tiêu.",
+								"details": [
+									"Sát thương: 130%",
+									"Hồi chiêu: 10s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 6,
+					"name": "Kiếm Độc Chướng",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_sword",
+							"stats": {
+								"attack-damage": 20,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 9,
+								"critical-strike-power": 10,
+								"lifesteal": 2,
+								"pve-damage": 14
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_sword",
+							"stats": {
+								"attack-damage": 23,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 11.5,
+								"critical-strike-power": 14.5,
+								"lifesteal": 2.7,
+								"pve-damage": 17.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_sword",
+							"stats": {
+								"attack-damage": 26,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 13.9,
+								"critical-strike-power": 19,
+								"lifesteal": 3.4,
+								"pve-damage": 21.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_sword",
+							"stats": {
+								"attack-damage": 30,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 17.2,
+								"critical-strike-power": 25,
+								"lifesteal": 4.3,
+								"pve-damage": 26.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_sword",
+							"stats": {
+								"attack-damage": 35,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 21.3,
+								"critical-strike-power": 32.5,
+								"lifesteal": 5.4,
+								"pve-damage": 33.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_sword",
+							"stats": {
+								"attack-damage": 42,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 27,
+								"critical-strike-power": 43,
+								"lifesteal": 7,
+								"pve-damage": 42
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Vũ Điệp Tán",
+								"text": "Phóng 3 đường kiếm khí nối tiếp về phía trước, mỗi đường 70%.",
+								"details": [
+									"Sát thương: 70% ×3",
+									"Hồi chiêu: 9s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 7,
+					"name": "Kiếm Lửa Địa Ngục",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_sword",
+							"stats": {
+								"attack-damage": 22,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 10,
+								"critical-strike-power": 12,
+								"lifesteal": 2,
+								"pve-damage": 16
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_sword",
+							"stats": {
+								"attack-damage": 25.3,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 12.5,
+								"critical-strike-power": 16.5,
+								"lifesteal": 2.7,
+								"pve-damage": 19.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_sword",
+							"stats": {
+								"attack-damage": 28.5,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 14.9,
+								"critical-strike-power": 21,
+								"lifesteal": 3.5,
+								"pve-damage": 23.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_sword",
+							"stats": {
+								"attack-damage": 32.9,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 18.2,
+								"critical-strike-power": 27,
+								"lifesteal": 4.5,
+								"pve-damage": 28.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_sword",
+							"stats": {
+								"attack-damage": 38.4,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 22.3,
+								"critical-strike-power": 34.5,
+								"lifesteal": 5.8,
+								"pve-damage": 35.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_sword",
+							"stats": {
+								"attack-damage": 46,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 28,
+								"critical-strike-power": 45,
+								"lifesteal": 7.5,
+								"pve-damage": 44
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Địa Ngục Hỏa",
+								"text": "Bùng nổ lửa địa ngục bán kính 4 block, thiêu đốt mục tiêu trong 4s.",
+								"details": [
+									"Sát thương: 150%",
+									"Hồi chiêu: 10s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 8,
+					"name": "Thánh Kiếm Đồ Long",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_sword",
+							"stats": {
+								"attack-damage": 24,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 11,
+								"critical-strike-power": 14,
+								"lifesteal": 2.5,
+								"pve-damage": 18
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_sword",
+							"stats": {
+								"attack-damage": 27.5,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 13.6,
+								"critical-strike-power": 18.4,
+								"lifesteal": 3.2,
+								"pve-damage": 21.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_sword",
+							"stats": {
+								"attack-damage": 31.1,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 16.2,
+								"critical-strike-power": 22.7,
+								"lifesteal": 4,
+								"pve-damage": 25.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_sword",
+							"stats": {
+								"attack-damage": 35.8,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 19.6,
+								"critical-strike-power": 28.5,
+								"lifesteal": 5,
+								"pve-damage": 30.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_sword",
+							"stats": {
+								"attack-damage": 41.7,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 24,
+								"critical-strike-power": 35.8,
+								"lifesteal": 6.2,
+								"pve-damage": 37.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_sword",
+							"stats": {
+								"attack-damage": 50,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 30,
+								"critical-strike-power": 46,
+								"lifesteal": 8,
+								"pve-damage": 46
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Long Quyển",
+								"text": "Tạo lốc xoáy chém lan 360 độ, 3 nhịp liên tiếp, mỗi nhịp 80%.",
+								"details": [
+									"Sát thương: 80% ×3",
+									"Hồi chiêu: 10s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 9,
+					"name": "Kiếm Pha Lê Tím",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_sword",
+							"stats": {
+								"attack-damage": 26,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 12,
+								"critical-strike-power": 16,
+								"lifesteal": 3,
+								"pve-damage": 20
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_sword",
+							"stats": {
+								"attack-damage": 30,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 14.6,
+								"critical-strike-power": 20.4,
+								"lifesteal": 3.7,
+								"pve-damage": 23.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_sword",
+							"stats": {
+								"attack-damage": 33.9,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 17.2,
+								"critical-strike-power": 24.7,
+								"lifesteal": 4.5,
+								"pve-damage": 27.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_sword",
+							"stats": {
+								"attack-damage": 39.2,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 20.6,
+								"critical-strike-power": 30.5,
+								"lifesteal": 5.5,
+								"pve-damage": 32.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_sword",
+							"stats": {
+								"attack-damage": 45.8,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 25,
+								"critical-strike-power": 37.8,
+								"lifesteal": 6.8,
+								"pve-damage": 39.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_sword",
+							"stats": {
+								"attack-damage": 55,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 31,
+								"critical-strike-power": 48,
+								"lifesteal": 8.5,
+								"pve-damage": 48
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Phá Tinh Thể",
+								"text": "Đập vỡ pha lê quanh người, sát thương gấp đôi lên Trụ Pha Lê và quái.",
+								"details": [
+									"Sát thương: 200%",
+									"Hồi chiêu: 8s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 10,
+					"name": "Đại Kiếm Goliath",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_sword",
+							"stats": {
+								"attack-damage": 32,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 14,
+								"critical-strike-power": 18,
+								"lifesteal": 3.5,
+								"pve-damage": 24
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_sword",
+							"stats": {
+								"attack-damage": 36.9,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 16.6,
+								"critical-strike-power": 22.4,
+								"lifesteal": 4.2,
+								"pve-damage": 27.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_sword",
+							"stats": {
+								"attack-damage": 41.8,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 19.2,
+								"critical-strike-power": 26.7,
+								"lifesteal": 5,
+								"pve-damage": 31.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_sword",
+							"stats": {
+								"attack-damage": 48.4,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 22.6,
+								"critical-strike-power": 32.5,
+								"lifesteal": 6,
+								"pve-damage": 36.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_sword",
+							"stats": {
+								"attack-damage": 56.5,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 27,
+								"critical-strike-power": 39.8,
+								"lifesteal": 7.2,
+								"pve-damage": 43.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_sword",
+							"stats": {
+								"attack-damage": 68,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 33,
+								"critical-strike-power": 50,
+								"lifesteal": 9,
+								"pve-damage": 52
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Dung Nham Liệt Địa",
+								"text": "Chém nứt đất thành 3 nhịp về phía trước, gây cháy 3s và làm chậm 3s.",
+								"details": [
+									"Sát thương: 60% ×3",
+									"Hồi chiêu: 11s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 11,
+					"name": "Kiếm Huyết Thệ",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_sword",
+							"stats": {
+								"attack-damage": 35,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 15,
+								"critical-strike-power": 20,
+								"lifesteal": 4,
+								"pve-damage": 26
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_sword",
+							"stats": {
+								"attack-damage": 40.3,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 17.6,
+								"critical-strike-power": 24.2,
+								"lifesteal": 4.7,
+								"pve-damage": 29.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_sword",
+							"stats": {
+								"attack-damage": 45.6,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 20.2,
+								"critical-strike-power": 28.5,
+								"lifesteal": 5.5,
+								"pve-damage": 33.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_sword",
+							"stats": {
+								"attack-damage": 52.7,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 23.6,
+								"critical-strike-power": 34.1,
+								"lifesteal": 6.5,
+								"pve-damage": 38.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_sword",
+							"stats": {
+								"attack-damage": 61.6,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 28,
+								"critical-strike-power": 41.1,
+								"lifesteal": 7.8,
+								"pve-damage": 45.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_sword",
+							"stats": {
+								"attack-damage": 74,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 34,
+								"critical-strike-power": 51,
+								"lifesteal": 9.5,
+								"pve-damage": 54
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Săn Mồi Tầng Sâu",
+								"text": "Chém quanh người; nếu trúng mục tiêu, tăng 20% tốc chạy trong 4s.",
+								"details": [
+									"Sát thương: 140%",
+									"Hồi chiêu: 12s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 12,
+					"name": "Kiếm Thủy Triều",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_sword",
+							"stats": {
+								"attack-damage": 38,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 16,
+								"critical-strike-power": 22,
+								"lifesteal": 4,
+								"pve-damage": 28
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_sword",
+							"stats": {
+								"attack-damage": 43.7,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 18.6,
+								"critical-strike-power": 26.1,
+								"lifesteal": 4.8,
+								"pve-damage": 31.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_sword",
+							"stats": {
+								"attack-damage": 49.5,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 21.2,
+								"critical-strike-power": 30.2,
+								"lifesteal": 5.6,
+								"pve-damage": 35.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_sword",
+							"stats": {
+								"attack-damage": 57.1,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 24.6,
+								"critical-strike-power": 35.6,
+								"lifesteal": 6.7,
+								"pve-damage": 40.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_sword",
+							"stats": {
+								"attack-damage": 66.6,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 29,
+								"critical-strike-power": 42.5,
+								"lifesteal": 8.1,
+								"pve-damage": 47.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_sword",
+							"stats": {
+								"attack-damage": 80,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 35,
+								"critical-strike-power": 52,
+								"lifesteal": 10,
+								"pve-damage": 56
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Thủy Triều Trảm",
+								"text": "Phóng 3 đợt sóng nước về phía trước, mỗi đợt 70% và đẩy lùi kẻ địch.",
+								"details": [
+									"Sát thương: 70% ×3",
+									"Hồi chiêu: 10s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 13,
+					"name": "Hắc Kiếm Udaeus",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_sword",
+							"stats": {
+								"attack-damage": 41,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 17,
+								"critical-strike-power": 24,
+								"lifesteal": 4.5,
+								"pve-damage": 30
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_sword",
+							"stats": {
+								"attack-damage": 47.1,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 19.6,
+								"critical-strike-power": 28,
+								"lifesteal": 5.3,
+								"pve-damage": 33.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_sword",
+							"stats": {
+								"attack-damage": 53.3,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 22.2,
+								"critical-strike-power": 31.9,
+								"lifesteal": 6.1,
+								"pve-damage": 37.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_sword",
+							"stats": {
+								"attack-damage": 61.5,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 25.6,
+								"critical-strike-power": 37.2,
+								"lifesteal": 7.2,
+								"pve-damage": 42.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_sword",
+							"stats": {
+								"attack-damage": 71.7,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 30,
+								"critical-strike-power": 43.8,
+								"lifesteal": 8.6,
+								"pve-damage": 49.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_sword",
+							"stats": {
+								"attack-damage": 86,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 36,
+								"critical-strike-power": 53,
+								"lifesteal": 10.5,
+								"pve-damage": 58
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Kiếm Mộ Xương",
+								"text": "Gọi hàng 6 nanh xương mọc lên phía trước, mỗi mục tiêu chịu 1 đòn và bị chậm 2s.",
+								"details": [
+									"Sát thương: 160%",
+									"Hồi chiêu: 11s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 14,
+					"name": "Trường Kiếm Huyết Đấu",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_sword",
+							"stats": {
+								"attack-damage": 45,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 18,
+								"critical-strike-power": 26,
+								"lifesteal": 5,
+								"pve-damage": 32
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_sword",
+							"stats": {
+								"attack-damage": 51.8,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 20.6,
+								"critical-strike-power": 29.8,
+								"lifesteal": 5.8,
+								"pve-damage": 35.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_sword",
+							"stats": {
+								"attack-damage": 58.6,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 23.2,
+								"critical-strike-power": 33.6,
+								"lifesteal": 6.6,
+								"pve-damage": 39.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_sword",
+							"stats": {
+								"attack-damage": 67.7,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 26.6,
+								"critical-strike-power": 38.7,
+								"lifesteal": 7.7,
+								"pve-damage": 44.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_sword",
+							"stats": {
+								"attack-damage": 79.1,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 31,
+								"critical-strike-power": 45.1,
+								"lifesteal": 9.1,
+								"pve-damage": 51.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_sword",
+							"stats": {
+								"attack-damage": 95,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 37,
+								"critical-strike-power": 54,
+								"lifesteal": 11,
+								"pve-damage": 60
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Huyết Chiến",
+								"text": "Chém quanh người 4 block. Càng ít máu càng đau, tối đa +40%.",
+								"details": [
+									"Sát thương: 140% (+40%)",
+									"Hồi chiêu: 12s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 15,
+					"name": "Kiếm Hủy Diệt Juggernaut",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_sword",
+							"stats": {
+								"attack-damage": 52,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 20,
+								"critical-strike-power": 30,
+								"lifesteal": 5.5,
+								"pve-damage": 35
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_sword",
+							"stats": {
+								"attack-damage": 59.9,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 22.5,
+								"critical-strike-power": 33.4,
+								"lifesteal": 6.4,
+								"pve-damage": 39.1
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_sword",
+							"stats": {
+								"attack-damage": 67.8,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 24.9,
+								"critical-strike-power": 36.8,
+								"lifesteal": 7.3,
+								"pve-damage": 43.2
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_sword",
+							"stats": {
+								"attack-damage": 78.4,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 28.2,
+								"critical-strike-power": 41.4,
+								"lifesteal": 8.5,
+								"pve-damage": 48.6
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_sword",
+							"stats": {
+								"attack-damage": 91.5,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 32.3,
+								"critical-strike-power": 47,
+								"lifesteal": 9.9,
+								"pve-damage": 55.5
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_sword",
+							"stats": {
+								"attack-damage": 110,
+								"attack-speed": 1.6,
+								"critical-strike-chance": 38,
+								"critical-strike-power": 55,
+								"lifesteal": 12,
+								"pve-damage": 65
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Hư Không Trảm",
+								"text": "Lướt chém diện rộng 4.5 block, hút 15% sát thương gây ra thành máu.",
+								"details": [
+									"Sát thương: 160%",
+									"Hồi chiêu: 8s"
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		"bow": {
+			"stats": [
+				{
+					"key": "attack-damage",
+					"label": "Sát thương",
+					"unit": ""
+				},
+				{
+					"key": "projectile-damage",
+					"label": "Sát thương đạn",
+					"unit": "%"
+				},
+				{
+					"key": "arrow-velocity",
+					"label": "Tốc độ tên",
+					"unit": ""
+				},
+				{
+					"key": "critical-strike-chance",
+					"label": "Tỉ lệ chí mạng",
+					"unit": "%"
+				},
+				{
+					"key": "critical-strike-power",
+					"label": "Sát thương chí mạng",
+					"unit": "%"
+				},
+				{
+					"key": "pve-damage",
+					"label": "Sát thương lên quái (PvE)",
+					"unit": "%"
+				}
+			],
+			"tiers": [
+				{
+					"tier": 1,
+					"name": "Cung Săn Tân Thủ",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 9,
+								"projectile-damage": 35,
+								"arrow-velocity": 1.1,
+								"critical-strike-chance": 3,
+								"critical-strike-power": 10,
+								"pve-damage": 5
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 10.3,
+								"projectile-damage": 38,
+								"arrow-velocity": 1.12,
+								"critical-strike-chance": 5.3,
+								"critical-strike-power": 14.8,
+								"pve-damage": 8.4
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 11.7,
+								"projectile-damage": 41,
+								"arrow-velocity": 1.14,
+								"critical-strike-chance": 7.6,
+								"critical-strike-power": 19.5,
+								"pve-damage": 11.8
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 13.5,
+								"projectile-damage": 44,
+								"arrow-velocity": 1.17,
+								"critical-strike-chance": 10.7,
+								"critical-strike-power": 25.9,
+								"pve-damage": 16.4
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 15.8,
+								"projectile-damage": 47,
+								"arrow-velocity": 1.2,
+								"critical-strike-chance": 14.6,
+								"critical-strike-power": 33.9,
+								"pve-damage": 22
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 18.9,
+								"projectile-damage": 50,
+								"arrow-velocity": 1.25,
+								"critical-strike-chance": 20,
+								"critical-strike-power": 45,
+								"pve-damage": 30
+							},
+							"upgradeMax": 15,
+							"ability": null
+						}
+					]
+				},
+				{
+					"tier": 2,
+					"name": "Nỏ Tơ Nhện",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 9.9,
+								"projectile-damage": 35,
+								"arrow-velocity": 1.1,
+								"critical-strike-chance": 4,
+								"critical-strike-power": 10,
+								"pve-damage": 6
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 11.3,
+								"projectile-damage": 38,
+								"arrow-velocity": 1.12,
+								"critical-strike-chance": 6.3,
+								"critical-strike-power": 14.9,
+								"pve-damage": 9.5
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 12.9,
+								"projectile-damage": 41,
+								"arrow-velocity": 1.14,
+								"critical-strike-chance": 8.6,
+								"critical-strike-power": 19.8,
+								"pve-damage": 13.1
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 14.8,
+								"projectile-damage": 44,
+								"arrow-velocity": 1.17,
+								"critical-strike-chance": 11.7,
+								"critical-strike-power": 26.4,
+								"pve-damage": 17.8
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 17.3,
+								"projectile-damage": 47,
+								"arrow-velocity": 1.2,
+								"critical-strike-chance": 15.6,
+								"critical-strike-power": 34.5,
+								"pve-damage": 23.7
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 20.7,
+								"projectile-damage": 50,
+								"arrow-velocity": 1.25,
+								"critical-strike-chance": 21,
+								"critical-strike-power": 46,
+								"pve-damage": 32
+							},
+							"upgradeMax": 15,
+							"ability": null
+						}
+					]
+				},
+				{
+					"tier": 3,
+					"name": "Cung Gai Nhọn",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 11.2,
+								"projectile-damage": 35,
+								"arrow-velocity": 1.15,
+								"critical-strike-chance": 5,
+								"critical-strike-power": 15,
+								"pve-damage": 8
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 12.9,
+								"projectile-damage": 38,
+								"arrow-velocity": 1.17,
+								"critical-strike-chance": 7.3,
+								"critical-strike-power": 19.5,
+								"pve-damage": 11.5
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 14.6,
+								"projectile-damage": 41,
+								"arrow-velocity": 1.19,
+								"critical-strike-chance": 9.6,
+								"critical-strike-power": 24,
+								"pve-damage": 15.1
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 16.7,
+								"projectile-damage": 44,
+								"arrow-velocity": 1.22,
+								"critical-strike-chance": 12.7,
+								"critical-strike-power": 30,
+								"pve-damage": 19.8
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 19.5,
+								"projectile-damage": 47,
+								"arrow-velocity": 1.25,
+								"critical-strike-chance": 16.6,
+								"critical-strike-power": 37.5,
+								"pve-damage": 25.7
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 23.4,
+								"projectile-damage": 50,
+								"arrow-velocity": 1.3,
+								"critical-strike-chance": 22,
+								"critical-strike-power": 48,
+								"pve-damage": 34
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Shift + Chuột Trái",
+								"name": "Bắn Liên Hoàn",
+								"text": "Bắn liên tiếp 2 mũi tên thẳng, mỗi mũi 90% sát thương.",
+								"details": [
+									"Sát thương: 90% ×2",
+									"Hồi chiêu: 8s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 4,
+					"name": "Cung Gỗ Linh Mộc",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 12.6,
+								"projectile-damage": 35,
+								"arrow-velocity": 1.15,
+								"critical-strike-chance": 6,
+								"critical-strike-power": 15,
+								"pve-damage": 10
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 14.6,
+								"projectile-damage": 38,
+								"arrow-velocity": 1.18,
+								"critical-strike-chance": 8.5,
+								"critical-strike-power": 19.8,
+								"pve-damage": 13.5
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 16.6,
+								"projectile-damage": 41,
+								"arrow-velocity": 1.2,
+								"critical-strike-chance": 10.9,
+								"critical-strike-power": 24.5,
+								"pve-damage": 17.1
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 19.2,
+								"projectile-damage": 44,
+								"arrow-velocity": 1.24,
+								"critical-strike-chance": 14.2,
+								"critical-strike-power": 30.9,
+								"pve-damage": 21.8
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 22.4,
+								"projectile-damage": 47,
+								"arrow-velocity": 1.29,
+								"critical-strike-chance": 18.3,
+								"critical-strike-power": 38.9,
+								"pve-damage": 27.7
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 27,
+								"projectile-damage": 50,
+								"arrow-velocity": 1.35,
+								"critical-strike-chance": 24,
+								"critical-strike-power": 50,
+								"pve-damage": 36
+							},
+							"upgradeMax": 15,
+							"ability": null
+						}
+					]
+				},
+				{
+					"tier": 5,
+					"name": "Đại Cung Sừng Đỏ",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 16.2,
+								"projectile-damage": 35,
+								"arrow-velocity": 1.2,
+								"critical-strike-chance": 8,
+								"critical-strike-power": 20,
+								"pve-damage": 12
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 18.6,
+								"projectile-damage": 38,
+								"arrow-velocity": 1.23,
+								"critical-strike-chance": 10.5,
+								"critical-strike-power": 24.4,
+								"pve-damage": 15.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 21.2,
+								"projectile-damage": 41,
+								"arrow-velocity": 1.25,
+								"critical-strike-chance": 12.9,
+								"critical-strike-power": 28.7,
+								"pve-damage": 19.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 24.4,
+								"projectile-damage": 44,
+								"arrow-velocity": 1.29,
+								"critical-strike-chance": 16.2,
+								"critical-strike-power": 34.5,
+								"pve-damage": 24.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 28.4,
+								"projectile-damage": 47,
+								"arrow-velocity": 1.34,
+								"critical-strike-chance": 20.3,
+								"critical-strike-power": 41.8,
+								"pve-damage": 31.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 34.2,
+								"projectile-damage": 50,
+								"arrow-velocity": 1.4,
+								"critical-strike-chance": 26,
+								"critical-strike-power": 52,
+								"pve-damage": 40
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Khi Tên Trúng",
+								"name": "Tên Xuyên Phá",
+								"text": "Mũi tên trúng đích đẩy lùi mạnh mục tiêu ra xa.",
+								"details": []
+							}
+						}
+					]
+				},
+				{
+					"tier": 6,
+					"name": "Cung Bướm Đêm",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 18,
+								"projectile-damage": 35,
+								"arrow-velocity": 1.25,
+								"critical-strike-chance": 9,
+								"critical-strike-power": 20,
+								"pve-damage": 14
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 20.7,
+								"projectile-damage": 38,
+								"arrow-velocity": 1.28,
+								"critical-strike-chance": 11.5,
+								"critical-strike-power": 24.5,
+								"pve-damage": 17.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 23.4,
+								"projectile-damage": 41,
+								"arrow-velocity": 1.3,
+								"critical-strike-chance": 13.9,
+								"critical-strike-power": 29,
+								"pve-damage": 21.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 27,
+								"projectile-damage": 44,
+								"arrow-velocity": 1.34,
+								"critical-strike-chance": 17.2,
+								"critical-strike-power": 35,
+								"pve-damage": 26.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 31.5,
+								"projectile-damage": 47,
+								"arrow-velocity": 1.39,
+								"critical-strike-chance": 21.3,
+								"critical-strike-power": 42.5,
+								"pve-damage": 33.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 37.8,
+								"projectile-damage": 50,
+								"arrow-velocity": 1.45,
+								"critical-strike-chance": 27,
+								"critical-strike-power": 53,
+								"pve-damage": 42
+							},
+							"upgradeMax": 15,
+							"ability": null
+						}
+					]
+				},
+				{
+					"tier": 7,
+					"name": "Cung Xuyên Sương",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 19.8,
+								"projectile-damage": 35,
+								"arrow-velocity": 1.3,
+								"critical-strike-chance": 10,
+								"critical-strike-power": 22,
+								"pve-damage": 16
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 22.8,
+								"projectile-damage": 38,
+								"arrow-velocity": 1.33,
+								"critical-strike-chance": 12.5,
+								"critical-strike-power": 26.5,
+								"pve-damage": 19.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 25.7,
+								"projectile-damage": 41,
+								"arrow-velocity": 1.35,
+								"critical-strike-chance": 14.9,
+								"critical-strike-power": 31,
+								"pve-damage": 23.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 29.6,
+								"projectile-damage": 44,
+								"arrow-velocity": 1.39,
+								"critical-strike-chance": 18.2,
+								"critical-strike-power": 37,
+								"pve-damage": 28.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 34.6,
+								"projectile-damage": 47,
+								"arrow-velocity": 1.44,
+								"critical-strike-chance": 22.3,
+								"critical-strike-power": 44.5,
+								"pve-damage": 35.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 41.4,
+								"projectile-damage": 50,
+								"arrow-velocity": 1.5,
+								"critical-strike-chance": 28,
+								"critical-strike-power": 55,
+								"pve-damage": 44
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Khi Tên Trúng",
+								"name": "Tên Hỏa Thiêu",
+								"text": "Mũi tên trúng đích đốt cháy mục tiêu trong 4s.",
+								"details": []
+							}
+						}
+					]
+				},
+				{
+					"tier": 8,
+					"name": "Cung Cánh Wyvern",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 21.6,
+								"projectile-damage": 35,
+								"arrow-velocity": 1.35,
+								"critical-strike-chance": 11,
+								"critical-strike-power": 24,
+								"pve-damage": 18
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 24.8,
+								"projectile-damage": 38,
+								"arrow-velocity": 1.38,
+								"critical-strike-chance": 13.6,
+								"critical-strike-power": 28.4,
+								"pve-damage": 21.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 28,
+								"projectile-damage": 41,
+								"arrow-velocity": 1.4,
+								"critical-strike-chance": 16.2,
+								"critical-strike-power": 32.7,
+								"pve-damage": 25.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 32.2,
+								"projectile-damage": 44,
+								"arrow-velocity": 1.44,
+								"critical-strike-chance": 19.6,
+								"critical-strike-power": 38.5,
+								"pve-damage": 30.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 37.5,
+								"projectile-damage": 47,
+								"arrow-velocity": 1.49,
+								"critical-strike-chance": 24,
+								"critical-strike-power": 45.8,
+								"pve-damage": 37.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 45,
+								"projectile-damage": 50,
+								"arrow-velocity": 1.55,
+								"critical-strike-chance": 30,
+								"critical-strike-power": 56,
+								"pve-damage": 46
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Khi Bắn Cung",
+								"name": "Mưa Tên Rồng",
+								"text": "Mỗi lần bắn, tung thêm chùm 3 mũi tên hình quạt, mỗi mũi 70%.",
+								"details": [
+									"Sát thương: 70% ×3",
+									"Hồi chiêu: 9s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 9,
+					"name": "Cung Ánh Sao",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 23.4,
+								"projectile-damage": 35,
+								"arrow-velocity": 1.4,
+								"critical-strike-chance": 12,
+								"critical-strike-power": 26,
+								"pve-damage": 20
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 27,
+								"projectile-damage": 38,
+								"arrow-velocity": 1.43,
+								"critical-strike-chance": 14.6,
+								"critical-strike-power": 30.4,
+								"pve-damage": 23.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 30.5,
+								"projectile-damage": 41,
+								"arrow-velocity": 1.45,
+								"critical-strike-chance": 17.2,
+								"critical-strike-power": 34.7,
+								"pve-damage": 27.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 35.3,
+								"projectile-damage": 44,
+								"arrow-velocity": 1.49,
+								"critical-strike-chance": 20.6,
+								"critical-strike-power": 40.5,
+								"pve-damage": 32.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 41.2,
+								"projectile-damage": 47,
+								"arrow-velocity": 1.54,
+								"critical-strike-chance": 25,
+								"critical-strike-power": 47.8,
+								"pve-damage": 39.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 49.5,
+								"projectile-damage": 50,
+								"arrow-velocity": 1.6,
+								"critical-strike-chance": 31,
+								"critical-strike-power": 58,
+								"pve-damage": 48
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Khi Tên Trúng",
+								"name": "Xuyên Tâm Nổ",
+								"text": "Mũi tên phát nổ nhẹ khi chạm đích, gây 80% sát thương lan bán kính 3 block.",
+								"details": [
+									"Sát thương: 80% lan",
+									"Hồi chiêu: 2s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 10,
+					"name": "Cung Lửa Cổ Đại",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 28.8,
+								"projectile-damage": 35,
+								"arrow-velocity": 1.45,
+								"critical-strike-chance": 14,
+								"critical-strike-power": 28,
+								"pve-damage": 24
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 33.2,
+								"projectile-damage": 38,
+								"arrow-velocity": 1.48,
+								"critical-strike-chance": 16.6,
+								"critical-strike-power": 32.4,
+								"pve-damage": 27.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 37.6,
+								"projectile-damage": 41,
+								"arrow-velocity": 1.52,
+								"critical-strike-chance": 19.2,
+								"critical-strike-power": 36.7,
+								"pve-damage": 31.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 43.6,
+								"projectile-damage": 44,
+								"arrow-velocity": 1.56,
+								"critical-strike-chance": 22.6,
+								"critical-strike-power": 42.5,
+								"pve-damage": 36.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 50.9,
+								"projectile-damage": 47,
+								"arrow-velocity": 1.62,
+								"critical-strike-chance": 27,
+								"critical-strike-power": 49.8,
+								"pve-damage": 43.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 61.2,
+								"projectile-damage": 50,
+								"arrow-velocity": 1.7,
+								"critical-strike-chance": 33,
+								"critical-strike-power": 60,
+								"pve-damage": 52
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Khi Tên Trúng",
+								"name": "Tên Viêm Chậm",
+								"text": "Mũi tên trúng đích đốt cháy 3s và làm chậm II mục tiêu trong 2s.",
+								"details": []
+							}
+						}
+					]
+				},
+				{
+					"tier": 11,
+					"name": "Cung Bóng Tối Rivira",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 31.5,
+								"projectile-damage": 35,
+								"arrow-velocity": 1.5,
+								"critical-strike-chance": 15,
+								"critical-strike-power": 30,
+								"pve-damage": 26
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 36.3,
+								"projectile-damage": 38,
+								"arrow-velocity": 1.53,
+								"critical-strike-chance": 17.6,
+								"critical-strike-power": 34.2,
+								"pve-damage": 29.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 41,
+								"projectile-damage": 41,
+								"arrow-velocity": 1.57,
+								"critical-strike-chance": 20.2,
+								"critical-strike-power": 38.5,
+								"pve-damage": 33.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 47.4,
+								"projectile-damage": 44,
+								"arrow-velocity": 1.61,
+								"critical-strike-chance": 23.6,
+								"critical-strike-power": 44.1,
+								"pve-damage": 38.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 55.4,
+								"projectile-damage": 47,
+								"arrow-velocity": 1.67,
+								"critical-strike-chance": 28,
+								"critical-strike-power": 51.1,
+								"pve-damage": 45.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 66.6,
+								"projectile-damage": 50,
+								"arrow-velocity": 1.75,
+								"critical-strike-chance": 34,
+								"critical-strike-power": 61,
+								"pve-damage": 54
+							},
+							"upgradeMax": 15,
+							"ability": null
+						}
+					]
+				},
+				{
+					"tier": 12,
+					"name": "Cung Tiếng Hát Siren",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 34.2,
+								"projectile-damage": 35,
+								"arrow-velocity": 1.55,
+								"critical-strike-chance": 16,
+								"critical-strike-power": 32,
+								"pve-damage": 28
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 39.3,
+								"projectile-damage": 38,
+								"arrow-velocity": 1.58,
+								"critical-strike-chance": 18.6,
+								"critical-strike-power": 36.1,
+								"pve-damage": 31.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 44.6,
+								"projectile-damage": 41,
+								"arrow-velocity": 1.62,
+								"critical-strike-chance": 21.2,
+								"critical-strike-power": 40.2,
+								"pve-damage": 35.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 51.4,
+								"projectile-damage": 44,
+								"arrow-velocity": 1.66,
+								"critical-strike-chance": 24.6,
+								"critical-strike-power": 45.6,
+								"pve-damage": 40.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 59.9,
+								"projectile-damage": 47,
+								"arrow-velocity": 1.72,
+								"critical-strike-chance": 29,
+								"critical-strike-power": 52.5,
+								"pve-damage": 47.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 72,
+								"projectile-damage": 50,
+								"arrow-velocity": 1.8,
+								"critical-strike-chance": 35,
+								"critical-strike-power": 62,
+								"pve-damage": 56
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Khi Bắn Cung",
+								"name": "Bắn Lùi Thoát Thân",
+								"text": "Mỗi lần bắn, nhảy giật lùi khoảng 5 block để thoát thân.",
+								"details": [
+									"Hồi chiêu: 10s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 13,
+					"name": "Cung Tử Thần",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 36.9,
+								"projectile-damage": 35,
+								"arrow-velocity": 1.6,
+								"critical-strike-chance": 17,
+								"critical-strike-power": 34,
+								"pve-damage": 30
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 42.4,
+								"projectile-damage": 38,
+								"arrow-velocity": 1.63,
+								"critical-strike-chance": 19.6,
+								"critical-strike-power": 38,
+								"pve-damage": 33.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 48,
+								"projectile-damage": 41,
+								"arrow-velocity": 1.67,
+								"critical-strike-chance": 22.2,
+								"critical-strike-power": 41.9,
+								"pve-damage": 37.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 55.4,
+								"projectile-damage": 44,
+								"arrow-velocity": 1.71,
+								"critical-strike-chance": 25.6,
+								"critical-strike-power": 47.2,
+								"pve-damage": 42.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 64.5,
+								"projectile-damage": 47,
+								"arrow-velocity": 1.77,
+								"critical-strike-chance": 30,
+								"critical-strike-power": 53.8,
+								"pve-damage": 49.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 77.4,
+								"projectile-damage": 50,
+								"arrow-velocity": 1.85,
+								"critical-strike-chance": 36,
+								"critical-strike-power": 63,
+								"pve-damage": 58
+							},
+							"upgradeMax": 15,
+							"ability": null
+						}
+					]
+				},
+				{
+					"tier": 14,
+					"name": "Cung Mưa Tên",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 40.5,
+								"projectile-damage": 35,
+								"arrow-velocity": 1.65,
+								"critical-strike-chance": 18,
+								"critical-strike-power": 36,
+								"pve-damage": 32
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 46.6,
+								"projectile-damage": 38,
+								"arrow-velocity": 1.68,
+								"critical-strike-chance": 20.6,
+								"critical-strike-power": 39.8,
+								"pve-damage": 35.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 52.7,
+								"projectile-damage": 41,
+								"arrow-velocity": 1.72,
+								"critical-strike-chance": 23.2,
+								"critical-strike-power": 43.6,
+								"pve-damage": 39.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 60.9,
+								"projectile-damage": 44,
+								"arrow-velocity": 1.76,
+								"critical-strike-chance": 26.6,
+								"critical-strike-power": 48.7,
+								"pve-damage": 44.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 71.2,
+								"projectile-damage": 47,
+								"arrow-velocity": 1.82,
+								"critical-strike-chance": 31,
+								"critical-strike-power": 55.1,
+								"pve-damage": 51.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 85.5,
+								"projectile-damage": 50,
+								"arrow-velocity": 1.9,
+								"critical-strike-chance": 37,
+								"critical-strike-power": 64,
+								"pve-damage": 60
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Shift + Chuột Trái",
+								"name": "Bão Tên",
+								"text": "Trút mưa tên xuống vùng bán kính 5 block phía trước trong 3s, 6 nhịp mỗi nhịp 35%.",
+								"details": [
+									"Sát thương: 35% ×6",
+									"Hồi chiêu: 12s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 15,
+					"name": "Cung Tận Thế Vực Thẳm",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 46.8,
+								"projectile-damage": 35,
+								"arrow-velocity": 1.75,
+								"critical-strike-chance": 20,
+								"critical-strike-power": 40,
+								"pve-damage": 35
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 53.9,
+								"projectile-damage": 38,
+								"arrow-velocity": 1.78,
+								"critical-strike-chance": 22.5,
+								"critical-strike-power": 43.4,
+								"pve-damage": 39.1
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 61,
+								"projectile-damage": 41,
+								"arrow-velocity": 1.82,
+								"critical-strike-chance": 24.9,
+								"critical-strike-power": 46.8,
+								"pve-damage": 43.2
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 70.6,
+								"projectile-damage": 44,
+								"arrow-velocity": 1.86,
+								"critical-strike-chance": 28.2,
+								"critical-strike-power": 51.4,
+								"pve-damage": 48.6
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 82.4,
+								"projectile-damage": 47,
+								"arrow-velocity": 1.92,
+								"critical-strike-chance": 32.3,
+								"critical-strike-power": 57,
+								"pve-damage": 55.5
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "bow",
+							"stats": {
+								"attack-damage": 99,
+								"projectile-damage": 50,
+								"arrow-velocity": 2,
+								"critical-strike-chance": 38,
+								"critical-strike-power": 65,
+								"pve-damage": 65
+							},
+							"upgradeMax": 15,
+							"ability": null
+						}
+					]
+				}
+			]
+		},
+		"axe": {
+			"stats": [
+				{
+					"key": "attack-damage",
+					"label": "Sát thương",
+					"unit": ""
+				},
+				{
+					"key": "attack-speed",
+					"label": "Tốc độ đánh",
+					"unit": ""
+				},
+				{
+					"key": "magic-damage",
+					"label": "Sát thương phép",
+					"unit": "%"
+				},
+				{
+					"key": "skill-damage",
+					"label": "Sát thương kỹ năng",
+					"unit": "%"
+				},
+				{
+					"key": "blunt-rating",
+					"label": "Xuyên giáp",
+					"unit": "%"
+				},
+				{
+					"key": "critical-strike-chance",
+					"label": "Tỉ lệ chí mạng",
+					"unit": "%"
+				},
+				{
+					"key": "critical-strike-power",
+					"label": "Sát thương chí mạng",
+					"unit": "%"
+				},
+				{
+					"key": "pve-damage",
+					"label": "Sát thương lên quái (PvE)",
+					"unit": "%"
+				}
+			],
+			"tiers": [
+				{
+					"tier": 1,
+					"name": "Rìu Phá Đá",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_axe",
+							"stats": {
+								"attack-damage": 14.5,
+								"attack-speed": 1,
+								"magic-damage": 3,
+								"critical-strike-chance": 1.8,
+								"pve-damage": 5
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_axe",
+							"stats": {
+								"attack-damage": 16.7,
+								"attack-speed": 1,
+								"magic-damage": 3.5,
+								"skill-damage": 1.4,
+								"blunt-rating": 1.4,
+								"critical-strike-chance": 3.2,
+								"critical-strike-power": 4.8,
+								"pve-damage": 8.4
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_axe",
+							"stats": {
+								"attack-damage": 18.8,
+								"attack-speed": 1,
+								"magic-damage": 4.1,
+								"skill-damage": 2.7,
+								"blunt-rating": 2.7,
+								"critical-strike-chance": 4.6,
+								"critical-strike-power": 9.5,
+								"pve-damage": 11.8
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_axe",
+							"stats": {
+								"attack-damage": 21.8,
+								"attack-speed": 1,
+								"magic-damage": 4.8,
+								"skill-damage": 4.5,
+								"blunt-rating": 4.5,
+								"critical-strike-chance": 6.4,
+								"critical-strike-power": 15.9,
+								"pve-damage": 16.4
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_axe",
+							"stats": {
+								"attack-damage": 25.4,
+								"attack-speed": 1,
+								"magic-damage": 5.7,
+								"skill-damage": 6.8,
+								"blunt-rating": 6.8,
+								"critical-strike-chance": 8.8,
+								"critical-strike-power": 23.9,
+								"pve-damage": 22
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_axe",
+							"stats": {
+								"attack-damage": 30.4,
+								"attack-speed": 1,
+								"magic-damage": 7,
+								"skill-damage": 10,
+								"blunt-rating": 10,
+								"critical-strike-chance": 12,
+								"critical-strike-power": 35,
+								"pve-damage": 30
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Đập Đất",
+								"text": "Nện rìu xuống đất, nội lực nổ bán kính 3 block.",
+								"details": [
+									"Sát thương: 150%",
+									"Hồi chiêu: 9s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 2,
+					"name": "Rìu Chém Tơ",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_axe",
+							"stats": {
+								"attack-damage": 15.9,
+								"attack-speed": 1,
+								"magic-damage": 4,
+								"skill-damage": 2,
+								"critical-strike-chance": 2.4,
+								"pve-damage": 6
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_axe",
+							"stats": {
+								"attack-damage": 18.3,
+								"attack-speed": 1,
+								"magic-damage": 4.7,
+								"skill-damage": 3.4,
+								"blunt-rating": 1.6,
+								"critical-strike-chance": 3.8,
+								"critical-strike-power": 4.9,
+								"pve-damage": 9.5
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_axe",
+							"stats": {
+								"attack-damage": 20.7,
+								"attack-speed": 1,
+								"magic-damage": 5.4,
+								"skill-damage": 4.7,
+								"blunt-rating": 3.3,
+								"critical-strike-chance": 5.2,
+								"critical-strike-power": 9.8,
+								"pve-damage": 13.1
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_axe",
+							"stats": {
+								"attack-damage": 23.9,
+								"attack-speed": 1,
+								"magic-damage": 6.3,
+								"skill-damage": 6.5,
+								"blunt-rating": 5.5,
+								"critical-strike-chance": 7,
+								"critical-strike-power": 16.4,
+								"pve-damage": 17.8
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_axe",
+							"stats": {
+								"attack-damage": 27.8,
+								"attack-speed": 1,
+								"magic-damage": 7.4,
+								"skill-damage": 8.8,
+								"blunt-rating": 8.2,
+								"critical-strike-chance": 9.4,
+								"critical-strike-power": 24.5,
+								"pve-damage": 23.7
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_axe",
+							"stats": {
+								"attack-damage": 33.4,
+								"attack-speed": 1,
+								"magic-damage": 9,
+								"skill-damage": 12,
+								"blunt-rating": 12,
+								"critical-strike-chance": 12.6,
+								"critical-strike-power": 36,
+								"pve-damage": 32
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Sóng Âm Dơi",
+								"text": "Phát sóng âm bán kính 4 block, làm chậm mục tiêu 3s.",
+								"details": [
+									"Sát thương: 100%",
+									"Hồi chiêu: 9s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 3,
+					"name": "Rìu Chiến Hộ Vệ",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_axe",
+							"stats": {
+								"attack-damage": 18.1,
+								"attack-speed": 1,
+								"magic-damage": 5,
+								"skill-damage": 4,
+								"blunt-rating": 5,
+								"critical-strike-chance": 3,
+								"critical-strike-power": 5,
+								"pve-damage": 8
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_axe",
+							"stats": {
+								"attack-damage": 20.7,
+								"attack-speed": 1,
+								"magic-damage": 5.8,
+								"skill-damage": 5.4,
+								"blunt-rating": 6.2,
+								"critical-strike-chance": 4.4,
+								"critical-strike-power": 9.5,
+								"pve-damage": 11.5
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_axe",
+							"stats": {
+								"attack-damage": 23.5,
+								"attack-speed": 1,
+								"magic-damage": 6.6,
+								"skill-damage": 6.7,
+								"blunt-rating": 7.5,
+								"critical-strike-chance": 5.8,
+								"critical-strike-power": 14,
+								"pve-damage": 15.1
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_axe",
+							"stats": {
+								"attack-damage": 27,
+								"attack-speed": 1,
+								"magic-damage": 7.7,
+								"skill-damage": 8.5,
+								"blunt-rating": 9.1,
+								"critical-strike-chance": 7.6,
+								"critical-strike-power": 20,
+								"pve-damage": 19.8
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_axe",
+							"stats": {
+								"attack-damage": 31.5,
+								"attack-speed": 1,
+								"magic-damage": 9.1,
+								"skill-damage": 10.8,
+								"blunt-rating": 11.1,
+								"critical-strike-chance": 10,
+								"critical-strike-power": 27.5,
+								"pve-damage": 25.7
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_axe",
+							"stats": {
+								"attack-damage": 37.7,
+								"attack-speed": 1,
+								"magic-damage": 11,
+								"skill-damage": 14,
+								"blunt-rating": 14,
+								"critical-strike-chance": 13.2,
+								"critical-strike-power": 38,
+								"pve-damage": 34
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Phá Giáp Kiến",
+								"text": "Bổ mạnh vào mục tiêu đang ngắm, gây sát thương nội lực xuyên giáp.",
+								"details": [
+									"Sát thương: 180%",
+									"Hồi chiêu: 8s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 4,
+					"name": "Rìu Đốn Cổ Thụ",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_axe",
+							"stats": {
+								"attack-damage": 20.3,
+								"attack-speed": 1,
+								"magic-damage": 6,
+								"skill-damage": 5,
+								"blunt-rating": 6,
+								"critical-strike-chance": 3.6,
+								"critical-strike-power": 5,
+								"pve-damage": 10
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_axe",
+							"stats": {
+								"attack-damage": 23.5,
+								"attack-speed": 1,
+								"magic-damage": 7,
+								"skill-damage": 6.5,
+								"blunt-rating": 7.4,
+								"critical-strike-chance": 5.1,
+								"critical-strike-power": 9.8,
+								"pve-damage": 13.5
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_axe",
+							"stats": {
+								"attack-damage": 26.7,
+								"attack-speed": 1,
+								"magic-damage": 7.9,
+								"skill-damage": 8,
+								"blunt-rating": 8.7,
+								"critical-strike-chance": 6.5,
+								"critical-strike-power": 14.5,
+								"pve-damage": 17.1
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_axe",
+							"stats": {
+								"attack-damage": 30.9,
+								"attack-speed": 1,
+								"magic-damage": 9.2,
+								"skill-damage": 10,
+								"blunt-rating": 10.5,
+								"critical-strike-chance": 8.5,
+								"critical-strike-power": 20.9,
+								"pve-damage": 21.8
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_axe",
+							"stats": {
+								"attack-damage": 36.1,
+								"attack-speed": 1,
+								"magic-damage": 10.8,
+								"skill-damage": 12.5,
+								"blunt-rating": 12.8,
+								"critical-strike-chance": 11,
+								"critical-strike-power": 28.9,
+								"pve-damage": 27.7
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_axe",
+							"stats": {
+								"attack-damage": 43.5,
+								"attack-speed": 1,
+								"magic-damage": 13,
+								"skill-damage": 16,
+								"blunt-rating": 16,
+								"critical-strike-chance": 14.4,
+								"critical-strike-power": 40,
+								"pve-damage": 36
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Rễ Cây Trói Buộc",
+								"text": "Rễ cây trồi lên bán kính 4 block, trói chân mục tiêu 2s.",
+								"details": [
+									"Sát thương: 100%",
+									"Hồi chiêu: 11s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 5,
+					"name": "Chiến Phủ Cuồng Ngưu",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_axe",
+							"stats": {
+								"attack-damage": 26.1,
+								"attack-speed": 1,
+								"magic-damage": 9,
+								"skill-damage": 8,
+								"blunt-rating": 8,
+								"critical-strike-chance": 4.8,
+								"critical-strike-power": 10,
+								"pve-damage": 12
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_axe",
+							"stats": {
+								"attack-damage": 30,
+								"attack-speed": 1,
+								"magic-damage": 10.4,
+								"skill-damage": 9.6,
+								"blunt-rating": 9.4,
+								"critical-strike-chance": 6.3,
+								"critical-strike-power": 14.4,
+								"pve-damage": 15.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_axe",
+							"stats": {
+								"attack-damage": 34.1,
+								"attack-speed": 1,
+								"magic-damage": 11.7,
+								"skill-damage": 11.3,
+								"blunt-rating": 10.7,
+								"critical-strike-chance": 7.7,
+								"critical-strike-power": 18.7,
+								"pve-damage": 19.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_axe",
+							"stats": {
+								"attack-damage": 39.3,
+								"attack-speed": 1,
+								"magic-damage": 13.5,
+								"skill-damage": 13.5,
+								"blunt-rating": 12.5,
+								"critical-strike-chance": 9.7,
+								"critical-strike-power": 24.5,
+								"pve-damage": 24.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_axe",
+							"stats": {
+								"attack-damage": 45.8,
+								"attack-speed": 1,
+								"magic-damage": 15.8,
+								"skill-damage": 16.2,
+								"blunt-rating": 14.8,
+								"critical-strike-chance": 12.2,
+								"critical-strike-power": 31.8,
+								"pve-damage": 31.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_axe",
+							"stats": {
+								"attack-damage": 55.1,
+								"attack-speed": 1,
+								"magic-damage": 19,
+								"skill-damage": 20,
+								"blunt-rating": 18,
+								"critical-strike-chance": 15.6,
+								"critical-strike-power": 42,
+								"pve-damage": 40
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Địa Chấn Minotaur",
+								"text": "Đập rìu gây địa chấn bán kính 5 block, hất tung toàn bộ mục tiêu.",
+								"details": [
+									"Sát thương: 150%",
+									"Hồi chiêu: 12s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 6,
+					"name": "Rìu Phủ Sương Độc",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_axe",
+							"stats": {
+								"attack-damage": 29,
+								"attack-speed": 1,
+								"magic-damage": 10,
+								"skill-damage": 10,
+								"blunt-rating": 10,
+								"critical-strike-chance": 5.4,
+								"critical-strike-power": 10,
+								"pve-damage": 14
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_axe",
+							"stats": {
+								"attack-damage": 33.4,
+								"attack-speed": 1,
+								"magic-damage": 11.6,
+								"skill-damage": 11.6,
+								"blunt-rating": 11.4,
+								"critical-strike-chance": 6.9,
+								"critical-strike-power": 14.5,
+								"pve-damage": 17.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_axe",
+							"stats": {
+								"attack-damage": 37.7,
+								"attack-speed": 1,
+								"magic-damage": 13.3,
+								"skill-damage": 13.3,
+								"blunt-rating": 12.7,
+								"critical-strike-chance": 8.3,
+								"critical-strike-power": 19,
+								"pve-damage": 21.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_axe",
+							"stats": {
+								"attack-damage": 43.5,
+								"attack-speed": 1,
+								"magic-damage": 15.5,
+								"skill-damage": 15.5,
+								"blunt-rating": 14.5,
+								"critical-strike-chance": 10.3,
+								"critical-strike-power": 25,
+								"pve-damage": 26.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_axe",
+							"stats": {
+								"attack-damage": 50.8,
+								"attack-speed": 1,
+								"magic-damage": 18.2,
+								"skill-damage": 18.2,
+								"blunt-rating": 16.8,
+								"critical-strike-chance": 12.8,
+								"critical-strike-power": 32.5,
+								"pve-damage": 33.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_axe",
+							"stats": {
+								"attack-damage": 60.9,
+								"attack-speed": 1,
+								"magic-damage": 22,
+								"skill-damage": 22,
+								"blunt-rating": 20,
+								"critical-strike-chance": 16.2,
+								"critical-strike-power": 43,
+								"pve-damage": 42
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Bạo Phá Độc",
+								"text": "Nổ vũng độc bán kính 4 block tại chỗ, trừ máu nội lực mỗi giây trong 4s.",
+								"details": [
+									"Sát thương: 25% ×4",
+									"Hồi chiêu: 10s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 7,
+					"name": "Đại Phủ Luyện Ngục",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_axe",
+							"stats": {
+								"attack-damage": 31.9,
+								"attack-speed": 1,
+								"magic-damage": 12,
+								"skill-damage": 12,
+								"blunt-rating": 12,
+								"critical-strike-chance": 6,
+								"critical-strike-power": 12,
+								"pve-damage": 16
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_axe",
+							"stats": {
+								"attack-damage": 36.7,
+								"attack-speed": 1,
+								"magic-damage": 13.8,
+								"skill-damage": 13.6,
+								"blunt-rating": 13.4,
+								"critical-strike-chance": 7.5,
+								"critical-strike-power": 16.5,
+								"pve-damage": 19.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_axe",
+							"stats": {
+								"attack-damage": 41.3,
+								"attack-speed": 1,
+								"magic-damage": 15.5,
+								"skill-damage": 15.3,
+								"blunt-rating": 14.7,
+								"critical-strike-chance": 8.9,
+								"critical-strike-power": 21,
+								"pve-damage": 23.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_axe",
+							"stats": {
+								"attack-damage": 47.7,
+								"attack-speed": 1,
+								"magic-damage": 17.9,
+								"skill-damage": 17.5,
+								"blunt-rating": 16.5,
+								"critical-strike-chance": 10.9,
+								"critical-strike-power": 27,
+								"pve-damage": 28.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_axe",
+							"stats": {
+								"attack-damage": 55.7,
+								"attack-speed": 1,
+								"magic-damage": 20.9,
+								"skill-damage": 20.2,
+								"blunt-rating": 18.8,
+								"critical-strike-chance": 13.4,
+								"critical-strike-power": 34.5,
+								"pve-damage": 35.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_axe",
+							"stats": {
+								"attack-damage": 66.7,
+								"attack-speed": 1,
+								"magic-damage": 25,
+								"skill-damage": 24,
+								"blunt-rating": 22,
+								"critical-strike-chance": 16.8,
+								"critical-strike-power": 45,
+								"pve-damage": 44
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Xé Màn Sương",
+								"text": "Xóa hiệu ứng mù của bản thân rồi bổ 3 tia lửa liên tiếp về phía trước.",
+								"details": [
+									"Sát thương: 100% ×3",
+									"Hồi chiêu: 10s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 8,
+					"name": "Chiến Phủ Hơi Thở Rồng",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_axe",
+							"stats": {
+								"attack-damage": 34.8,
+								"attack-speed": 1,
+								"magic-damage": 14,
+								"skill-damage": 14,
+								"blunt-rating": 14,
+								"critical-strike-chance": 6.6,
+								"critical-strike-power": 14,
+								"pve-damage": 18
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_axe",
+							"stats": {
+								"attack-damage": 39.9,
+								"attack-speed": 1,
+								"magic-damage": 16,
+								"skill-damage": 15.6,
+								"blunt-rating": 15.4,
+								"critical-strike-chance": 8.2,
+								"critical-strike-power": 18.4,
+								"pve-damage": 21.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_axe",
+							"stats": {
+								"attack-damage": 45.1,
+								"attack-speed": 1,
+								"magic-damage": 18.1,
+								"skill-damage": 17.3,
+								"blunt-rating": 16.7,
+								"critical-strike-chance": 9.7,
+								"critical-strike-power": 22.7,
+								"pve-damage": 25.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_axe",
+							"stats": {
+								"attack-damage": 51.9,
+								"attack-speed": 1,
+								"magic-damage": 20.8,
+								"skill-damage": 19.5,
+								"blunt-rating": 18.5,
+								"critical-strike-chance": 11.8,
+								"critical-strike-power": 28.5,
+								"pve-damage": 30.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_axe",
+							"stats": {
+								"attack-damage": 60.5,
+								"attack-speed": 1,
+								"magic-damage": 24.2,
+								"skill-damage": 22.2,
+								"blunt-rating": 20.8,
+								"critical-strike-chance": 14.4,
+								"critical-strike-power": 35.8,
+								"pve-damage": 37.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_axe",
+							"stats": {
+								"attack-damage": 72.5,
+								"attack-speed": 1,
+								"magic-damage": 29,
+								"skill-damage": 26,
+								"blunt-rating": 24,
+								"critical-strike-chance": 18,
+								"critical-strike-power": 46,
+								"pve-damage": 46
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Long Viêm Trụ",
+								"text": "Gọi cột lửa nội lực tại vị trí phía trước, báo hiệu 0.6s rồi nổ bán kính 3.5 block.",
+								"details": [
+									"Sát thương: 170%",
+									"Hồi chiêu: 11s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 9,
+					"name": "Rìu Phá Tinh Thể",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_axe",
+							"stats": {
+								"attack-damage": 37.7,
+								"attack-speed": 1,
+								"magic-damage": 16,
+								"skill-damage": 16,
+								"blunt-rating": 15,
+								"critical-strike-chance": 7.2,
+								"critical-strike-power": 16,
+								"pve-damage": 20
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_axe",
+							"stats": {
+								"attack-damage": 43.5,
+								"attack-speed": 1,
+								"magic-damage": 18.5,
+								"skill-damage": 17.6,
+								"blunt-rating": 16.5,
+								"critical-strike-chance": 8.8,
+								"critical-strike-power": 20.4,
+								"pve-damage": 23.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_axe",
+							"stats": {
+								"attack-damage": 49.2,
+								"attack-speed": 1,
+								"magic-damage": 20.9,
+								"skill-damage": 19.3,
+								"blunt-rating": 18,
+								"critical-strike-chance": 10.3,
+								"critical-strike-power": 24.7,
+								"pve-damage": 27.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_axe",
+							"stats": {
+								"attack-damage": 56.8,
+								"attack-speed": 1,
+								"magic-damage": 24.2,
+								"skill-damage": 21.5,
+								"blunt-rating": 20,
+								"critical-strike-chance": 12.4,
+								"critical-strike-power": 30.5,
+								"pve-damage": 32.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_axe",
+							"stats": {
+								"attack-damage": 66.4,
+								"attack-speed": 1,
+								"magic-damage": 28.3,
+								"skill-damage": 24.2,
+								"blunt-rating": 22.5,
+								"critical-strike-chance": 15,
+								"critical-strike-power": 37.8,
+								"pve-damage": 39.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_axe",
+							"stats": {
+								"attack-damage": 79.8,
+								"attack-speed": 1,
+								"magic-damage": 34,
+								"skill-damage": 28,
+								"blunt-rating": 26,
+								"critical-strike-chance": 18.6,
+								"critical-strike-power": 48,
+								"pve-damage": 48
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Cộng Hưởng Nổ",
+								"text": "Tạo xung kích phá giáp bán kính 6 block, lan ra từ chỗ đứng.",
+								"details": [
+									"Sát thương: 170%",
+									"Hồi chiêu: 11s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 10,
+					"name": "Rìu Lõi Dung Nham",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_axe",
+							"stats": {
+								"attack-damage": 46.4,
+								"attack-speed": 1,
+								"magic-damage": 20,
+								"skill-damage": 18,
+								"blunt-rating": 18,
+								"critical-strike-chance": 8.4,
+								"critical-strike-power": 18,
+								"pve-damage": 24
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_axe",
+							"stats": {
+								"attack-damage": 53.5,
+								"attack-speed": 1,
+								"magic-damage": 23,
+								"skill-damage": 19.9,
+								"blunt-rating": 19.4,
+								"critical-strike-chance": 10,
+								"critical-strike-power": 22.4,
+								"pve-damage": 27.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_axe",
+							"stats": {
+								"attack-damage": 60.6,
+								"attack-speed": 1,
+								"magic-damage": 26,
+								"skill-damage": 21.8,
+								"blunt-rating": 20.7,
+								"critical-strike-chance": 11.5,
+								"critical-strike-power": 26.7,
+								"pve-damage": 31.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_axe",
+							"stats": {
+								"attack-damage": 70.2,
+								"attack-speed": 1,
+								"magic-damage": 30,
+								"skill-damage": 24.4,
+								"blunt-rating": 22.5,
+								"critical-strike-chance": 13.6,
+								"critical-strike-power": 32.5,
+								"pve-damage": 36.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_axe",
+							"stats": {
+								"attack-damage": 81.9,
+								"attack-speed": 1,
+								"magic-damage": 35,
+								"skill-damage": 27.5,
+								"blunt-rating": 24.8,
+								"critical-strike-chance": 16.2,
+								"critical-strike-power": 39.8,
+								"pve-damage": 43.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_axe",
+							"stats": {
+								"attack-damage": 98.6,
+								"attack-speed": 1,
+								"magic-damage": 42,
+								"skill-damage": 32,
+								"blunt-rating": 28,
+								"critical-strike-chance": 19.8,
+								"critical-strike-power": 50,
+								"pve-damage": 52
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Goliath Gầm Thét",
+								"text": "Gầm thét tạo sóng xung kích bán kính 5 block, đẩy văng kẻ địch ra xa.",
+								"details": [
+									"Sát thương: 160%",
+									"Hồi chiêu: 12s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 11,
+					"name": "Rìu Kẻ Săn Đêm",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_axe",
+							"stats": {
+								"attack-damage": 50.8,
+								"attack-speed": 1,
+								"magic-damage": 23,
+								"skill-damage": 20,
+								"blunt-rating": 20,
+								"critical-strike-chance": 9,
+								"critical-strike-power": 20,
+								"pve-damage": 26
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_axe",
+							"stats": {
+								"attack-damage": 58.4,
+								"attack-speed": 1,
+								"magic-damage": 26.4,
+								"skill-damage": 21.9,
+								"blunt-rating": 21.4,
+								"critical-strike-chance": 10.6,
+								"critical-strike-power": 24.2,
+								"pve-damage": 29.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_axe",
+							"stats": {
+								"attack-damage": 66.1,
+								"attack-speed": 1,
+								"magic-damage": 29.8,
+								"skill-damage": 23.8,
+								"blunt-rating": 22.7,
+								"critical-strike-chance": 12.1,
+								"critical-strike-power": 28.5,
+								"pve-damage": 33.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_axe",
+							"stats": {
+								"attack-damage": 76.4,
+								"attack-speed": 1,
+								"magic-damage": 34.4,
+								"skill-damage": 26.4,
+								"blunt-rating": 24.5,
+								"critical-strike-chance": 14.2,
+								"critical-strike-power": 34.1,
+								"pve-damage": 38.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_axe",
+							"stats": {
+								"attack-damage": 89.3,
+								"attack-speed": 1,
+								"magic-damage": 40,
+								"skill-damage": 29.5,
+								"blunt-rating": 26.8,
+								"critical-strike-chance": 16.8,
+								"critical-strike-power": 41.1,
+								"pve-damage": 45.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_axe",
+							"stats": {
+								"attack-damage": 107.3,
+								"attack-speed": 1,
+								"magic-damage": 48,
+								"skill-damage": 34,
+								"blunt-rating": 30,
+								"critical-strike-chance": 20.4,
+								"critical-strike-power": 51,
+								"pve-damage": 54
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Bổ Xẻ",
+								"text": "Triệu hồi chiến phủ khổng lồ bổ xuống dải 10×4 block phía trước, gây chảy máu 3s.",
+								"details": [
+									"Sát thương: 200% + chảy máu",
+									"Hồi chiêu: 12s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 12,
+					"name": "Chiến Phủ Sóng Thần",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_axe",
+							"stats": {
+								"attack-damage": 55.1,
+								"attack-speed": 1,
+								"magic-damage": 26,
+								"skill-damage": 22,
+								"blunt-rating": 22,
+								"critical-strike-chance": 9.6,
+								"critical-strike-power": 22,
+								"pve-damage": 28
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_axe",
+							"stats": {
+								"attack-damage": 63.4,
+								"attack-speed": 1,
+								"magic-damage": 29.8,
+								"skill-damage": 23.9,
+								"blunt-rating": 23.4,
+								"critical-strike-chance": 11.2,
+								"critical-strike-power": 26.1,
+								"pve-damage": 31.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_axe",
+							"stats": {
+								"attack-damage": 71.8,
+								"attack-speed": 1,
+								"magic-damage": 33.6,
+								"skill-damage": 25.8,
+								"blunt-rating": 24.7,
+								"critical-strike-chance": 12.7,
+								"critical-strike-power": 30.2,
+								"pve-damage": 35.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_axe",
+							"stats": {
+								"attack-damage": 82.8,
+								"attack-speed": 1,
+								"magic-damage": 38.7,
+								"skill-damage": 28.4,
+								"blunt-rating": 26.5,
+								"critical-strike-chance": 14.8,
+								"critical-strike-power": 35.6,
+								"pve-damage": 40.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_axe",
+							"stats": {
+								"attack-damage": 96.6,
+								"attack-speed": 1,
+								"magic-damage": 45.1,
+								"skill-damage": 31.5,
+								"blunt-rating": 28.8,
+								"critical-strike-chance": 17.4,
+								"critical-strike-power": 42.5,
+								"pve-damage": 47.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_axe",
+							"stats": {
+								"attack-damage": 116,
+								"attack-speed": 1,
+								"magic-damage": 54,
+								"skill-damage": 36,
+								"blunt-rating": 32,
+								"critical-strike-chance": 21,
+								"critical-strike-power": 52,
+								"pve-damage": 56
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Xoáy Nước Hút",
+								"text": "Kéo mọi địch trong 6 block lại gần rồi bổ xuống gây sát thương.",
+								"details": [
+									"Sát thương: 150%",
+									"Hồi chiêu: 13s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 13,
+					"name": "Đại Phủ Xương Khô",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_axe",
+							"stats": {
+								"attack-damage": 59.4,
+								"attack-speed": 1,
+								"magic-damage": 29,
+								"skill-damage": 24,
+								"blunt-rating": 24,
+								"critical-strike-chance": 10.2,
+								"critical-strike-power": 24,
+								"pve-damage": 30
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_axe",
+							"stats": {
+								"attack-damage": 68.3,
+								"attack-speed": 1,
+								"magic-damage": 33.4,
+								"skill-damage": 25.9,
+								"blunt-rating": 25.4,
+								"critical-strike-chance": 11.8,
+								"critical-strike-power": 28,
+								"pve-damage": 33.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_axe",
+							"stats": {
+								"attack-damage": 77.3,
+								"attack-speed": 1,
+								"magic-damage": 37.7,
+								"skill-damage": 27.8,
+								"blunt-rating": 26.7,
+								"critical-strike-chance": 13.3,
+								"critical-strike-power": 31.9,
+								"pve-damage": 37.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_axe",
+							"stats": {
+								"attack-damage": 89.2,
+								"attack-speed": 1,
+								"magic-damage": 43.5,
+								"skill-damage": 30.4,
+								"blunt-rating": 28.5,
+								"critical-strike-chance": 15.4,
+								"critical-strike-power": 37.2,
+								"pve-damage": 42.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_axe",
+							"stats": {
+								"attack-damage": 104,
+								"attack-speed": 1,
+								"magic-damage": 50.8,
+								"skill-damage": 33.5,
+								"blunt-rating": 30.8,
+								"critical-strike-chance": 18,
+								"critical-strike-power": 43.8,
+								"pve-damage": 49.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_axe",
+							"stats": {
+								"attack-damage": 124.7,
+								"attack-speed": 1,
+								"magic-damage": 61,
+								"skill-damage": 38,
+								"blunt-rating": 34,
+								"critical-strike-chance": 21.6,
+								"critical-strike-power": 53,
+								"pve-damage": 58
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Trọng Kích Hắc Cốt",
+								"text": "Nện rìu xuống đất bán kính 4 block, gây 200% sát thương nội lực xuyên giáp.",
+								"details": [
+									"Sát thương: 200%",
+									"Hồi chiêu: 11s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 14,
+					"name": "Rìu Đao Phủ Đấu Trường",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_axe",
+							"stats": {
+								"attack-damage": 65.2,
+								"attack-speed": 1,
+								"magic-damage": 33,
+								"skill-damage": 26,
+								"blunt-rating": 26,
+								"critical-strike-chance": 10.8,
+								"critical-strike-power": 26,
+								"pve-damage": 32
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_axe",
+							"stats": {
+								"attack-damage": 75.1,
+								"attack-speed": 1,
+								"magic-damage": 37.9,
+								"skill-damage": 28.2,
+								"blunt-rating": 27.4,
+								"critical-strike-chance": 12.4,
+								"critical-strike-power": 29.8,
+								"pve-damage": 35.8
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_axe",
+							"stats": {
+								"attack-damage": 85,
+								"attack-speed": 1,
+								"magic-damage": 42.8,
+								"skill-damage": 30.4,
+								"blunt-rating": 28.7,
+								"critical-strike-chance": 13.9,
+								"critical-strike-power": 33.6,
+								"pve-damage": 39.6
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_axe",
+							"stats": {
+								"attack-damage": 98.2,
+								"attack-speed": 1,
+								"magic-damage": 49.4,
+								"skill-damage": 33.3,
+								"blunt-rating": 30.5,
+								"critical-strike-chance": 16,
+								"critical-strike-power": 38.7,
+								"pve-damage": 44.7
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_axe",
+							"stats": {
+								"attack-damage": 114.7,
+								"attack-speed": 1,
+								"magic-damage": 57.5,
+								"skill-damage": 36.9,
+								"blunt-rating": 32.8,
+								"critical-strike-chance": 18.6,
+								"critical-strike-power": 45.1,
+								"pve-damage": 51.1
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_axe",
+							"stats": {
+								"attack-damage": 137.8,
+								"attack-speed": 1,
+								"magic-damage": 69,
+								"skill-damage": 42,
+								"blunt-rating": 36,
+								"critical-strike-chance": 22.2,
+								"critical-strike-power": 54,
+								"pve-damage": 60
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Phá Vây Đấu Trường",
+								"text": "Xoay rìu 2 vòng quanh người 3.5 block, mỗi vòng 90% và hất tung kẻ áp sát.",
+								"details": [
+									"Sát thương: 90% ×2",
+									"Hồi chiêu: 12s"
+								]
+							}
+						}
+					]
+				},
+				{
+					"tier": 15,
+					"name": "Chiến Phủ Ma Nhãn Balor",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "wooden_axe",
+							"stats": {
+								"attack-damage": 75.4,
+								"attack-speed": 1,
+								"magic-damage": 38,
+								"skill-damage": 30,
+								"blunt-rating": 28,
+								"critical-strike-chance": 12,
+								"critical-strike-power": 30,
+								"pve-damage": 35
+							},
+							"upgradeMax": 5,
+							"ability": null
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "stone_axe",
+							"stats": {
+								"attack-damage": 86.9,
+								"attack-speed": 1,
+								"magic-damage": 43.7,
+								"skill-damage": 32,
+								"blunt-rating": 29.6,
+								"critical-strike-chance": 13.5,
+								"critical-strike-power": 33.4,
+								"pve-damage": 39.1
+							},
+							"upgradeMax": 8,
+							"ability": null
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_axe",
+							"stats": {
+								"attack-damage": 98.3,
+								"attack-speed": 1,
+								"magic-damage": 49.5,
+								"skill-damage": 34.1,
+								"blunt-rating": 31.3,
+								"critical-strike-chance": 14.9,
+								"critical-strike-power": 36.8,
+								"pve-damage": 43.2
+							},
+							"upgradeMax": 10,
+							"ability": null
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_axe",
+							"stats": {
+								"attack-damage": 113.7,
+								"attack-speed": 1,
+								"magic-damage": 57.1,
+								"skill-damage": 36.8,
+								"blunt-rating": 33.5,
+								"critical-strike-chance": 16.9,
+								"critical-strike-power": 41.4,
+								"pve-damage": 48.6
+							},
+							"upgradeMax": 12,
+							"ability": null
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_axe",
+							"stats": {
+								"attack-damage": 132.7,
+								"attack-speed": 1,
+								"magic-damage": 66.6,
+								"skill-damage": 40.2,
+								"blunt-rating": 36.2,
+								"critical-strike-chance": 19.4,
+								"critical-strike-power": 47,
+								"pve-damage": 55.5
+							},
+							"upgradeMax": 15,
+							"ability": null
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_axe",
+							"stats": {
+								"attack-damage": 159.5,
+								"attack-speed": 1,
+								"magic-damage": 80,
+								"skill-damage": 45,
+								"blunt-rating": 40,
+								"critical-strike-chance": 22.8,
+								"critical-strike-power": 55,
+								"pve-damage": 65
+							},
+							"upgradeMax": 15,
+							"ability": {
+								"trigger": "Chuột Phải",
+								"name": "Hư Không Nghiền Nát",
+								"text": "Bổ tia sét đen xuyên thẳng 10 block, mỗi mục tiêu trên đường tia chịu 100%.",
+								"details": [
+									"Sát thương: 100% mỗi mục tiêu",
+									"Hồi chiêu: 10s"
+								]
+							}
+						}
+					]
+				}
+			]
+		},
+		"armor": {
+			"pieces": [
+				{
+					"key": "mu",
+					"label": "Mũ"
+				},
+				{
+					"key": "ao",
+					"label": "Áo"
+				},
+				{
+					"key": "quan",
+					"label": "Quần"
+				},
+				{
+					"key": "giay",
+					"label": "Giày"
+				}
+			],
+			"tiers": [
+				{
+					"tier": 1,
+					"names": {
+						"mu": "Mũ Sắt Khai Phá",
+						"ao": "Áo Giáp Khai Phá",
+						"quan": "Quần Giáp Khai Phá",
+						"giay": "Ủng Da Khai Phá"
+					},
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "leather_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 22.9,
+									"defense": 2.9
+								},
+								"ao": {
+									"health": 40,
+									"defense": 5.1
+								},
+								"quan": {
+									"health": 28.6,
+									"defense": 3.6
+								},
+								"giay": {
+									"health": 22.9,
+									"defense": 2.9
+								}
+							},
+							"setBonus": 2,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "chainmail_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 26.3,
+									"defense": 3.4
+								},
+								"ao": {
+									"health": 46,
+									"defense": 5.9
+								},
+								"quan": {
+									"health": 32.9,
+									"defense": 4.2
+								},
+								"giay": {
+									"health": 26.3,
+									"defense": 3.4
+								}
+							},
+							"setBonus": 3,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 29.7,
+									"defense": 3.8
+								},
+								"ao": {
+									"health": 52,
+									"defense": 6.6
+								},
+								"quan": {
+									"health": 37.1,
+									"defense": 4.7
+								},
+								"giay": {
+									"health": 29.7,
+									"defense": 3.8
+								}
+							},
+							"setBonus": 4,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 34.3,
+									"defense": 4.4
+								},
+								"ao": {
+									"health": 60,
+									"defense": 7.7
+								},
+								"quan": {
+									"health": 42.9,
+									"defense": 5.5
+								},
+								"giay": {
+									"health": 34.3,
+									"defense": 4.4
+								}
+							},
+							"setBonus": 6,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 40,
+									"defense": 5.1
+								},
+								"ao": {
+									"health": 70,
+									"defense": 8.9
+								},
+								"quan": {
+									"health": 50,
+									"defense": 6.4
+								},
+								"giay": {
+									"health": 40,
+									"defense": 5.1
+								}
+							},
+							"setBonus": 8,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 48,
+									"defense": 6.1
+								},
+								"ao": {
+									"health": 84,
+									"defense": 10.7
+								},
+								"quan": {
+									"health": 60,
+									"defense": 7.7
+								},
+								"giay": {
+									"health": 48,
+									"defense": 6.1
+								}
+							},
+							"setBonus": 10,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 2,
+					"names": {
+						"mu": "Mũ Trùm Bóng Đêm",
+						"ao": "Giáp Lưới Hang Sâu",
+						"quan": "Quần Giáp Bóng Đêm",
+						"giay": "Ủng Rình Rập"
+					},
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "leather_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 31.4,
+									"defense": 3.9
+								},
+								"ao": {
+									"health": 54.3,
+									"defense": 6.7
+								},
+								"quan": {
+									"health": 40,
+									"defense": 5
+								},
+								"giay": {
+									"health": 31.4,
+									"defense": 3.9
+								}
+							},
+							"setBonus": 2,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "chainmail_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 36.1,
+									"defense": 4.5
+								},
+								"ao": {
+									"health": 62.4,
+									"defense": 7.7
+								},
+								"quan": {
+									"health": 46,
+									"defense": 5.7
+								},
+								"giay": {
+									"health": 36.1,
+									"defense": 4.5
+								}
+							},
+							"setBonus": 3,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 40.9,
+									"defense": 5.1
+								},
+								"ao": {
+									"health": 70.6,
+									"defense": 8.7
+								},
+								"quan": {
+									"health": 52,
+									"defense": 6.4
+								},
+								"giay": {
+									"health": 40.9,
+									"defense": 5.1
+								}
+							},
+							"setBonus": 4,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 47.1,
+									"defense": 5.8
+								},
+								"ao": {
+									"health": 81.4,
+									"defense": 10.1
+								},
+								"quan": {
+									"health": 60,
+									"defense": 7.4
+								},
+								"giay": {
+									"health": 47.1,
+									"defense": 5.8
+								}
+							},
+							"setBonus": 6,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 55,
+									"defense": 6.8
+								},
+								"ao": {
+									"health": 95,
+									"defense": 11.8
+								},
+								"quan": {
+									"health": 70,
+									"defense": 8.7
+								},
+								"giay": {
+									"health": 55,
+									"defense": 6.8
+								}
+							},
+							"setBonus": 8,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 66,
+									"defense": 8.2
+								},
+								"ao": {
+									"health": 114,
+									"defense": 14.1
+								},
+								"quan": {
+									"health": 84,
+									"defense": 10.4
+								},
+								"giay": {
+									"health": 66,
+									"defense": 8.2
+								}
+							},
+							"setBonus": 10,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 3,
+					"names": {
+						"mu": "Mũ Giáp Vỏ Đỏ",
+						"ao": "Giáp Tấm Vệ Binh",
+						"quan": "Quần Giáp Vỏ Đỏ",
+						"giay": "Ủng Sắt Vệ Binh"
+					},
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "leather_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 42.9,
+									"defense": 5.2
+								},
+								"ao": {
+									"health": 74.3,
+									"defense": 9
+								},
+								"quan": {
+									"health": 54.3,
+									"defense": 6.6
+								},
+								"giay": {
+									"health": 42.9,
+									"defense": 5.2
+								}
+							},
+							"setBonus": 2,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "chainmail_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 49.3,
+									"defense": 6
+								},
+								"ao": {
+									"health": 85.4,
+									"defense": 10.4
+								},
+								"quan": {
+									"health": 62.4,
+									"defense": 7.6
+								},
+								"giay": {
+									"health": 49.3,
+									"defense": 6
+								}
+							},
+							"setBonus": 3,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 55.7,
+									"defense": 6.8
+								},
+								"ao": {
+									"health": 96.6,
+									"defense": 11.7
+								},
+								"quan": {
+									"health": 70.6,
+									"defense": 8.6
+								},
+								"giay": {
+									"health": 55.7,
+									"defense": 6.8
+								}
+							},
+							"setBonus": 4,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 64.3,
+									"defense": 7.8
+								},
+								"ao": {
+									"health": 111.4,
+									"defense": 13.5
+								},
+								"quan": {
+									"health": 81.4,
+									"defense": 9.9
+								},
+								"giay": {
+									"health": 64.3,
+									"defense": 7.8
+								}
+							},
+							"setBonus": 6,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 75,
+									"defense": 9.1
+								},
+								"ao": {
+									"health": 130,
+									"defense": 15.8
+								},
+								"quan": {
+									"health": 95,
+									"defense": 11.5
+								},
+								"giay": {
+									"health": 75,
+									"defense": 9.1
+								}
+							},
+							"setBonus": 8,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 90,
+									"defense": 10.9
+								},
+								"ao": {
+									"health": 156,
+									"defense": 18.9
+								},
+								"quan": {
+									"health": 114,
+									"defense": 13.8
+								},
+								"giay": {
+									"health": 90,
+									"defense": 10.9
+								}
+							},
+							"setBonus": 10,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 4,
+					"names": {
+						"mu": "Vương Miện Cổ Thụ",
+						"ao": "Giáp Vỏ Linh Mộc",
+						"quan": "Quần Giáp Rừng Sâu",
+						"giay": "Ủng Thợ Săn Rừng"
+					},
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "leather_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 54.3,
+									"defense": 6.5
+								},
+								"ao": {
+									"health": 94.3,
+									"defense": 11.3
+								},
+								"quan": {
+									"health": 68.6,
+									"defense": 8.2
+								},
+								"giay": {
+									"health": 54.3,
+									"defense": 6.5
+								}
+							},
+							"setBonus": 2,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "chainmail_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 62.4,
+									"defense": 7.5
+								},
+								"ao": {
+									"health": 108.4,
+									"defense": 13
+								},
+								"quan": {
+									"health": 78.9,
+									"defense": 9.5
+								},
+								"giay": {
+									"health": 62.4,
+									"defense": 7.5
+								}
+							},
+							"setBonus": 3,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 70.6,
+									"defense": 8.5
+								},
+								"ao": {
+									"health": 122.6,
+									"defense": 14.7
+								},
+								"quan": {
+									"health": 89.1,
+									"defense": 10.7
+								},
+								"giay": {
+									"health": 70.6,
+									"defense": 8.5
+								}
+							},
+							"setBonus": 4,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 81.4,
+									"defense": 9.8
+								},
+								"ao": {
+									"health": 141.4,
+									"defense": 17
+								},
+								"quan": {
+									"health": 102.9,
+									"defense": 12.3
+								},
+								"giay": {
+									"health": 81.4,
+									"defense": 9.8
+								}
+							},
+							"setBonus": 6,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 95,
+									"defense": 11.4
+								},
+								"ao": {
+									"health": 165,
+									"defense": 19.8
+								},
+								"quan": {
+									"health": 120,
+									"defense": 14.4
+								},
+								"giay": {
+									"health": 95,
+									"defense": 11.4
+								}
+							},
+							"setBonus": 8,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 114,
+									"defense": 13.7
+								},
+								"ao": {
+									"health": 198,
+									"defense": 23.7
+								},
+								"quan": {
+									"health": 144,
+									"defense": 17.3
+								},
+								"giay": {
+									"health": 114,
+									"defense": 13.7
+								}
+							},
+							"setBonus": 10,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 5,
+					"names": {
+						"mu": "Mũ Sừng Cuồng Ngưu",
+						"ao": "Trọng Giáp Đấu Sĩ",
+						"quan": "Quần Giáp Bất Khuất",
+						"giay": "Ủng Giẫm Đất"
+					},
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "leather_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 74.3,
+									"defense": 8.8
+								},
+								"ao": {
+									"health": 131.4,
+									"defense": 15.6
+								},
+								"quan": {
+									"health": 91.4,
+									"defense": 10.8
+								},
+								"giay": {
+									"health": 74.3,
+									"defense": 8.8
+								}
+							},
+							"setBonus": 2,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "chainmail_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 85.4,
+									"defense": 10.1
+								},
+								"ao": {
+									"health": 151.1,
+									"defense": 17.9
+								},
+								"quan": {
+									"health": 105.1,
+									"defense": 12.4
+								},
+								"giay": {
+									"health": 85.4,
+									"defense": 10.1
+								}
+							},
+							"setBonus": 3,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 96.6,
+									"defense": 11.4
+								},
+								"ao": {
+									"health": 170.9,
+									"defense": 20.2
+								},
+								"quan": {
+									"health": 118.9,
+									"defense": 14.1
+								},
+								"giay": {
+									"health": 96.6,
+									"defense": 11.4
+								}
+							},
+							"setBonus": 4,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 111.4,
+									"defense": 13.2
+								},
+								"ao": {
+									"health": 197.1,
+									"defense": 23.3
+								},
+								"quan": {
+									"health": 137.1,
+									"defense": 16.2
+								},
+								"giay": {
+									"health": 111.4,
+									"defense": 13.2
+								}
+							},
+							"setBonus": 6,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 130,
+									"defense": 15.4
+								},
+								"ao": {
+									"health": 230,
+									"defense": 27.2
+								},
+								"quan": {
+									"health": 160,
+									"defense": 18.9
+								},
+								"giay": {
+									"health": 130,
+									"defense": 15.4
+								}
+							},
+							"setBonus": 8,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 156,
+									"defense": 18.5
+								},
+								"ao": {
+									"health": 276,
+									"defense": 32.7
+								},
+								"quan": {
+									"health": 192,
+									"defense": 22.7
+								},
+								"giay": {
+									"health": 156,
+									"defense": 18.5
+								}
+							},
+							"setBonus": 10,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 6,
+					"names": {
+						"mu": "Mặt Nạ Lọc Độc",
+						"ao": "Giáp Da Đầm Lầy",
+						"quan": "Quần Giáp Đầm Lầy",
+						"giay": "Ủng Lội Bùn"
+					},
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "leather_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 88.6,
+									"defense": 10.4
+								},
+								"ao": {
+									"health": 154.3,
+									"defense": 18.2
+								},
+								"quan": {
+									"health": 111.4,
+									"defense": 13.1
+								},
+								"giay": {
+									"health": 88.6,
+									"defense": 10.4
+								}
+							},
+							"setBonus": 2,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "chainmail_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 101.9,
+									"defense": 12
+								},
+								"ao": {
+									"health": 177.4,
+									"defense": 20.9
+								},
+								"quan": {
+									"health": 128.1,
+									"defense": 15.1
+								},
+								"giay": {
+									"health": 101.9,
+									"defense": 12
+								}
+							},
+							"setBonus": 3,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 115.1,
+									"defense": 13.6
+								},
+								"ao": {
+									"health": 200.6,
+									"defense": 23.6
+								},
+								"quan": {
+									"health": 144.9,
+									"defense": 17.1
+								},
+								"giay": {
+									"health": 115.1,
+									"defense": 13.6
+								}
+							},
+							"setBonus": 4,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 132.9,
+									"defense": 15.6
+								},
+								"ao": {
+									"health": 231.4,
+									"defense": 27.2
+								},
+								"quan": {
+									"health": 167.1,
+									"defense": 19.7
+								},
+								"giay": {
+									"health": 132.9,
+									"defense": 15.6
+								}
+							},
+							"setBonus": 6,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 155,
+									"defense": 18.2
+								},
+								"ao": {
+									"health": 270,
+									"defense": 31.8
+								},
+								"quan": {
+									"health": 195,
+									"defense": 23
+								},
+								"giay": {
+									"health": 155,
+									"defense": 18.2
+								}
+							},
+							"setBonus": 8,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 186,
+									"defense": 21.9
+								},
+								"ao": {
+									"health": 324,
+									"defense": 38.1
+								},
+								"quan": {
+									"health": 234,
+									"defense": 27.5
+								},
+								"giay": {
+									"health": 186,
+									"defense": 21.9
+								}
+							},
+							"setBonus": 10,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 7,
+					"names": {
+						"mu": "Mũ Kỵ Sĩ Sương Mù",
+						"ao": "Giáp Tấm Tro Tàn",
+						"quan": "Quần Giáp Kỵ Sĩ",
+						"giay": "Ủng Kỵ Sĩ Đêm"
+					},
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "leather_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 105.7,
+									"defense": 12.4
+								},
+								"ao": {
+									"health": 185.7,
+									"defense": 21.8
+								},
+								"quan": {
+									"health": 131.4,
+									"defense": 15.4
+								},
+								"giay": {
+									"health": 105.7,
+									"defense": 12.4
+								}
+							},
+							"setBonus": 2,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "chainmail_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 121.6,
+									"defense": 14.2
+								},
+								"ao": {
+									"health": 213.6,
+									"defense": 25
+								},
+								"quan": {
+									"health": 151.1,
+									"defense": 17.7
+								},
+								"giay": {
+									"health": 121.6,
+									"defense": 14.2
+								}
+							},
+							"setBonus": 3,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 137.4,
+									"defense": 16.1
+								},
+								"ao": {
+									"health": 241.4,
+									"defense": 28.3
+								},
+								"quan": {
+									"health": 170.9,
+									"defense": 20
+								},
+								"giay": {
+									"health": 137.4,
+									"defense": 16.1
+								}
+							},
+							"setBonus": 4,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 158.6,
+									"defense": 18.6
+								},
+								"ao": {
+									"health": 278.6,
+									"defense": 32.6
+								},
+								"quan": {
+									"health": 197.1,
+									"defense": 23.1
+								},
+								"giay": {
+									"health": 158.6,
+									"defense": 18.6
+								}
+							},
+							"setBonus": 6,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 185,
+									"defense": 21.7
+								},
+								"ao": {
+									"health": 325,
+									"defense": 38.1
+								},
+								"quan": {
+									"health": 230,
+									"defense": 26.9
+								},
+								"giay": {
+									"health": 185,
+									"defense": 21.7
+								}
+							},
+							"setBonus": 8,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 222,
+									"defense": 26
+								},
+								"ao": {
+									"health": 390,
+									"defense": 45.7
+								},
+								"quan": {
+									"health": 276,
+									"defense": 32.3
+								},
+								"giay": {
+									"health": 222,
+									"defense": 26
+								}
+							},
+							"setBonus": 10,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 8,
+					"names": {
+						"mu": "Mũ Giáp Vảy Rồng",
+						"ao": "Trọng Giáp Đồ Long",
+						"quan": "Quần Giáp Vảy Rồng",
+						"giay": "Ủng Kỵ Sĩ Rồng"
+					},
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "leather_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 125.7,
+									"defense": 14.7
+								},
+								"ao": {
+									"health": 220,
+									"defense": 25.7
+								},
+								"quan": {
+									"health": 157.1,
+									"defense": 18.3
+								},
+								"giay": {
+									"health": 125.7,
+									"defense": 14.7
+								}
+							},
+							"setBonus": 2,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "chainmail_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 144.6,
+									"defense": 16.9
+								},
+								"ao": {
+									"health": 253,
+									"defense": 29.5
+								},
+								"quan": {
+									"health": 180.7,
+									"defense": 21.1
+								},
+								"giay": {
+									"health": 144.6,
+									"defense": 16.9
+								}
+							},
+							"setBonus": 3,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 163.4,
+									"defense": 19.1
+								},
+								"ao": {
+									"health": 286,
+									"defense": 33.4
+								},
+								"quan": {
+									"health": 204.3,
+									"defense": 23.8
+								},
+								"giay": {
+									"health": 163.4,
+									"defense": 19.1
+								}
+							},
+							"setBonus": 4,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 188.6,
+									"defense": 22
+								},
+								"ao": {
+									"health": 330,
+									"defense": 38.5
+								},
+								"quan": {
+									"health": 235.7,
+									"defense": 27.5
+								},
+								"giay": {
+									"health": 188.6,
+									"defense": 22
+								}
+							},
+							"setBonus": 6,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 220,
+									"defense": 25.7
+								},
+								"ao": {
+									"health": 385,
+									"defense": 44.9
+								},
+								"quan": {
+									"health": 275,
+									"defense": 32.1
+								},
+								"giay": {
+									"health": 220,
+									"defense": 25.7
+								}
+							},
+							"setBonus": 8,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 264,
+									"defense": 30.8
+								},
+								"ao": {
+									"health": 462,
+									"defense": 53.9
+								},
+								"quan": {
+									"health": 330,
+									"defense": 38.5
+								},
+								"giay": {
+									"health": 264,
+									"defense": 30.8
+								}
+							},
+							"setBonus": 10,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 9,
+					"names": {
+						"mu": "Vương Miện Pha Lê",
+						"ao": "Giáp Tinh Thể Thánh",
+						"quan": "Quần Giáp Pha Lê",
+						"giay": "Ủng Bước Tinh Tú"
+					},
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "leather_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 148.6,
+									"defense": 17.3
+								},
+								"ao": {
+									"health": 260,
+									"defense": 30.2
+								},
+								"quan": {
+									"health": 185.7,
+									"defense": 21.6
+								},
+								"giay": {
+									"health": 148.6,
+									"defense": 17.3
+								}
+							},
+							"setBonus": 2,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "chainmail_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 170.9,
+									"defense": 19.9
+								},
+								"ao": {
+									"health": 299,
+									"defense": 34.8
+								},
+								"quan": {
+									"health": 213.6,
+									"defense": 24.8
+								},
+								"giay": {
+									"health": 170.9,
+									"defense": 19.9
+								}
+							},
+							"setBonus": 3,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 193.1,
+									"defense": 22.5
+								},
+								"ao": {
+									"health": 338,
+									"defense": 39.3
+								},
+								"quan": {
+									"health": 241.4,
+									"defense": 28.1
+								},
+								"giay": {
+									"health": 193.1,
+									"defense": 22.5
+								}
+							},
+							"setBonus": 4,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 222.9,
+									"defense": 25.9
+								},
+								"ao": {
+									"health": 390,
+									"defense": 45.4
+								},
+								"quan": {
+									"health": 278.6,
+									"defense": 32.4
+								},
+								"giay": {
+									"health": 222.9,
+									"defense": 25.9
+								}
+							},
+							"setBonus": 6,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 260,
+									"defense": 30.2
+								},
+								"ao": {
+									"health": 455,
+									"defense": 52.9
+								},
+								"quan": {
+									"health": 325,
+									"defense": 37.8
+								},
+								"giay": {
+									"health": 260,
+									"defense": 30.2
+								}
+							},
+							"setBonus": 8,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 312,
+									"defense": 36.3
+								},
+								"ao": {
+									"health": 546,
+									"defense": 63.5
+								},
+								"quan": {
+									"health": 390,
+									"defense": 45.4
+								},
+								"giay": {
+									"health": 312,
+									"defense": 36.3
+								}
+							},
+							"setBonus": 10,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 10,
+					"names": {
+						"mu": "Mũ Sắt Khổng Lồ",
+						"ao": "Trọng Giáp Dung Nham",
+						"quan": "Quần Giáp Nham Thạch",
+						"giay": "Ủng Đạp Lửa"
+					},
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "leather_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 177.1,
+									"defense": 20.5
+								},
+								"ao": {
+									"health": 311.4,
+									"defense": 36.1
+								},
+								"quan": {
+									"health": 220,
+									"defense": 25.5
+								},
+								"giay": {
+									"health": 177.1,
+									"defense": 20.5
+								}
+							},
+							"setBonus": 2,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "chainmail_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 203.7,
+									"defense": 23.6
+								},
+								"ao": {
+									"health": 358.1,
+									"defense": 41.5
+								},
+								"quan": {
+									"health": 253,
+									"defense": 29.3
+								},
+								"giay": {
+									"health": 203.7,
+									"defense": 23.6
+								}
+							},
+							"setBonus": 3,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 230.3,
+									"defense": 26.7
+								},
+								"ao": {
+									"health": 404.9,
+									"defense": 47
+								},
+								"quan": {
+									"health": 286,
+									"defense": 33.2
+								},
+								"giay": {
+									"health": 230.3,
+									"defense": 26.7
+								}
+							},
+							"setBonus": 4,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 265.7,
+									"defense": 30.8
+								},
+								"ao": {
+									"health": 467.1,
+									"defense": 54.2
+								},
+								"quan": {
+									"health": 330,
+									"defense": 38.3
+								},
+								"giay": {
+									"health": 265.7,
+									"defense": 30.8
+								}
+							},
+							"setBonus": 6,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 310,
+									"defense": 36
+								},
+								"ao": {
+									"health": 545,
+									"defense": 63.2
+								},
+								"quan": {
+									"health": 385,
+									"defense": 44.7
+								},
+								"giay": {
+									"health": 310,
+									"defense": 36
+								}
+							},
+							"setBonus": 8,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 372,
+									"defense": 43.2
+								},
+								"ao": {
+									"health": 654,
+									"defense": 75.9
+								},
+								"quan": {
+									"health": 462,
+									"defense": 53.6
+								},
+								"giay": {
+									"health": 372,
+									"defense": 43.2
+								}
+							},
+							"setBonus": 10,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 11,
+					"names": {
+						"mu": "Mũ Trùm Ám Sát",
+						"ao": "Giáp Nhẹ Rivira",
+						"quan": "Quần Giáp Bóng Đêm",
+						"giay": "Ủng Vô Thanh"
+					},
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "leather_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 202.9,
+									"defense": 23.5
+								},
+								"ao": {
+									"health": 354.3,
+									"defense": 41
+								},
+								"quan": {
+									"health": 254.3,
+									"defense": 29.4
+								},
+								"giay": {
+									"health": 202.9,
+									"defense": 23.5
+								}
+							},
+							"setBonus": 2,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "chainmail_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 233.3,
+									"defense": 27
+								},
+								"ao": {
+									"health": 407.4,
+									"defense": 47.2
+								},
+								"quan": {
+									"health": 292.4,
+									"defense": 33.9
+								},
+								"giay": {
+									"health": 233.3,
+									"defense": 27
+								}
+							},
+							"setBonus": 3,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 263.7,
+									"defense": 30.5
+								},
+								"ao": {
+									"health": 460.6,
+									"defense": 53.3
+								},
+								"quan": {
+									"health": 330.6,
+									"defense": 38.3
+								},
+								"giay": {
+									"health": 263.7,
+									"defense": 30.5
+								}
+							},
+							"setBonus": 4,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 304.3,
+									"defense": 35.2
+								},
+								"ao": {
+									"health": 531.4,
+									"defense": 61.5
+								},
+								"quan": {
+									"health": 381.4,
+									"defense": 44.2
+								},
+								"giay": {
+									"health": 304.3,
+									"defense": 35.2
+								}
+							},
+							"setBonus": 6,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 355,
+									"defense": 41.1
+								},
+								"ao": {
+									"health": 620,
+									"defense": 71.8
+								},
+								"quan": {
+									"health": 445,
+									"defense": 51.5
+								},
+								"giay": {
+									"health": 355,
+									"defense": 41.1
+								}
+							},
+							"setBonus": 8,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 426,
+									"defense": 49.3
+								},
+								"ao": {
+									"health": 744,
+									"defense": 86.1
+								},
+								"quan": {
+									"health": 534,
+									"defense": 61.8
+								},
+								"giay": {
+									"health": 426,
+									"defense": 49.3
+								}
+							},
+							"setBonus": 10,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 12,
+					"names": {
+						"mu": "Vương Miện Biển Sâu",
+						"ao": "Giáp Vảy Thủy Thần",
+						"quan": "Quần Giáp Thâm Hải",
+						"giay": "Ủng Lướt Sóng"
+					},
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "leather_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 231.4,
+									"defense": 26.8
+								},
+								"ao": {
+									"health": 405.7,
+									"defense": 46.9
+								},
+								"quan": {
+									"health": 288.6,
+									"defense": 33.4
+								},
+								"giay": {
+									"health": 231.4,
+									"defense": 26.8
+								}
+							},
+							"setBonus": 2,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "chainmail_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 266.1,
+									"defense": 30.8
+								},
+								"ao": {
+									"health": 466.6,
+									"defense": 53.9
+								},
+								"quan": {
+									"health": 331.9,
+									"defense": 38.4
+								},
+								"giay": {
+									"health": 266.1,
+									"defense": 30.8
+								}
+							},
+							"setBonus": 3,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 300.9,
+									"defense": 34.8
+								},
+								"ao": {
+									"health": 527.4,
+									"defense": 61
+								},
+								"quan": {
+									"health": 375.1,
+									"defense": 43.4
+								},
+								"giay": {
+									"health": 300.9,
+									"defense": 34.8
+								}
+							},
+							"setBonus": 4,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 347.1,
+									"defense": 40.1
+								},
+								"ao": {
+									"health": 608.6,
+									"defense": 70.4
+								},
+								"quan": {
+									"health": 432.9,
+									"defense": 50
+								},
+								"giay": {
+									"health": 347.1,
+									"defense": 40.1
+								}
+							},
+							"setBonus": 6,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 405,
+									"defense": 46.8
+								},
+								"ao": {
+									"health": 710,
+									"defense": 82.1
+								},
+								"quan": {
+									"health": 505,
+									"defense": 58.4
+								},
+								"giay": {
+									"health": 405,
+									"defense": 46.8
+								}
+							},
+							"setBonus": 8,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 486,
+									"defense": 56.2
+								},
+								"ao": {
+									"health": 852,
+									"defense": 98.5
+								},
+								"quan": {
+									"health": 606,
+									"defense": 70.1
+								},
+								"giay": {
+									"health": 486,
+									"defense": 56.2
+								}
+							},
+							"setBonus": 10,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 13,
+					"names": {
+						"mu": "Vương Miện Hắc Vương",
+						"ao": "Trọng Giáp Bất Tử",
+						"quan": "Quần Giáp Hắc Vương",
+						"giay": "Ủng Xích Cổ"
+					},
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "leather_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 262.9,
+									"defense": 30.3
+								},
+								"ao": {
+									"health": 460,
+									"defense": 53.1
+								},
+								"quan": {
+									"health": 328.6,
+									"defense": 37.9
+								},
+								"giay": {
+									"health": 262.9,
+									"defense": 30.3
+								}
+							},
+							"setBonus": 2,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "chainmail_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 302.3,
+									"defense": 34.9
+								},
+								"ao": {
+									"health": 529,
+									"defense": 61.1
+								},
+								"quan": {
+									"health": 377.9,
+									"defense": 43.6
+								},
+								"giay": {
+									"health": 302.3,
+									"defense": 34.9
+								}
+							},
+							"setBonus": 3,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 341.7,
+									"defense": 39.4
+								},
+								"ao": {
+									"health": 598,
+									"defense": 69
+								},
+								"quan": {
+									"health": 427.1,
+									"defense": 49.3
+								},
+								"giay": {
+									"health": 341.7,
+									"defense": 39.4
+								}
+							},
+							"setBonus": 4,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 394.3,
+									"defense": 45.5
+								},
+								"ao": {
+									"health": 690,
+									"defense": 79.7
+								},
+								"quan": {
+									"health": 492.9,
+									"defense": 56.9
+								},
+								"giay": {
+									"health": 394.3,
+									"defense": 45.5
+								}
+							},
+							"setBonus": 6,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 460,
+									"defense": 53.1
+								},
+								"ao": {
+									"health": 805,
+									"defense": 92.9
+								},
+								"quan": {
+									"health": 575,
+									"defense": 66.4
+								},
+								"giay": {
+									"health": 460,
+									"defense": 53.1
+								}
+							},
+							"setBonus": 8,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 552,
+									"defense": 63.7
+								},
+								"ao": {
+									"health": 966,
+									"defense": 111.5
+								},
+								"quan": {
+									"health": 690,
+									"defense": 79.7
+								},
+								"giay": {
+									"health": 552,
+									"defense": 63.7
+								}
+							},
+							"setBonus": 10,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 14,
+					"names": {
+						"mu": "Mũ Chiến Thần Đấu Sĩ",
+						"ao": "Trọng Giáp Huyết Đàn",
+						"quan": "Quần Giáp Giác Đấu",
+						"giay": "Ủng Chiến Trường"
+					},
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "leather_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 297.1,
+									"defense": 34.3
+								},
+								"ao": {
+									"health": 520,
+									"defense": 60
+								},
+								"quan": {
+									"health": 371.4,
+									"defense": 42.8
+								},
+								"giay": {
+									"health": 297.1,
+									"defense": 34.3
+								}
+							},
+							"setBonus": 2,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "chainmail_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 341.7,
+									"defense": 39.4
+								},
+								"ao": {
+									"health": 598,
+									"defense": 69
+								},
+								"quan": {
+									"health": 427.1,
+									"defense": 49.3
+								},
+								"giay": {
+									"health": 341.7,
+									"defense": 39.4
+								}
+							},
+							"setBonus": 3,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 386.3,
+									"defense": 44.5
+								},
+								"ao": {
+									"health": 676,
+									"defense": 78
+								},
+								"quan": {
+									"health": 482.9,
+									"defense": 55.7
+								},
+								"giay": {
+									"health": 386.3,
+									"defense": 44.5
+								}
+							},
+							"setBonus": 4,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 445.7,
+									"defense": 51.4
+								},
+								"ao": {
+									"health": 780,
+									"defense": 89.9
+								},
+								"quan": {
+									"health": 557.1,
+									"defense": 64.2
+								},
+								"giay": {
+									"health": 445.7,
+									"defense": 51.4
+								}
+							},
+							"setBonus": 6,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 520,
+									"defense": 60
+								},
+								"ao": {
+									"health": 910,
+									"defense": 104.9
+								},
+								"quan": {
+									"health": 650,
+									"defense": 75
+								},
+								"giay": {
+									"health": 520,
+									"defense": 60
+								}
+							},
+							"setBonus": 8,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 624,
+									"defense": 72
+								},
+								"ao": {
+									"health": 1092,
+									"defense": 125.9
+								},
+								"quan": {
+									"health": 780,
+									"defense": 89.9
+								},
+								"giay": {
+									"health": 624,
+									"defense": 72
+								}
+							},
+							"setBonus": 10,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 15,
+					"names": {
+						"mu": "Vương Miện Vực Thẳm",
+						"ao": "Trọng Giáp Ác Thần",
+						"quan": "Quần Giáp Hư Không",
+						"giay": "Ủng Hủy Diệt"
+					},
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"icon": "leather_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 342.9,
+									"defense": 39.5
+								},
+								"ao": {
+									"health": 600,
+									"defense": 69.1
+								},
+								"quan": {
+									"health": 428.6,
+									"defense": 49.4
+								},
+								"giay": {
+									"health": 342.9,
+									"defense": 39.5
+								}
+							},
+							"setBonus": 2,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"icon": "chainmail_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 394.3,
+									"defense": 45.4
+								},
+								"ao": {
+									"health": 690,
+									"defense": 79.5
+								},
+								"quan": {
+									"health": 492.9,
+									"defense": 56.8
+								},
+								"giay": {
+									"health": 394.3,
+									"defense": 45.4
+								}
+							},
+							"setBonus": 3,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"icon": "copper_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 445.7,
+									"defense": 51.3
+								},
+								"ao": {
+									"health": 780,
+									"defense": 89.8
+								},
+								"quan": {
+									"health": 557.1,
+									"defense": 64.2
+								},
+								"giay": {
+									"health": 445.7,
+									"defense": 51.3
+								}
+							},
+							"setBonus": 4,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"icon": "iron_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 514.3,
+									"defense": 59.2
+								},
+								"ao": {
+									"health": 900,
+									"defense": 103.7
+								},
+								"quan": {
+									"health": 642.9,
+									"defense": 74
+								},
+								"giay": {
+									"health": 514.3,
+									"defense": 59.2
+								}
+							},
+							"setBonus": 6,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"icon": "golden_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 600,
+									"defense": 69.1
+								},
+								"ao": {
+									"health": 1050,
+									"defense": 120.9
+								},
+								"quan": {
+									"health": 750,
+									"defense": 86.4
+								},
+								"giay": {
+									"health": 600,
+									"defense": 69.1
+								}
+							},
+							"setBonus": 8,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"icon": "diamond_chestplate",
+							"pieces": {
+								"mu": {
+									"health": 720,
+									"defense": 82.9
+								},
+								"ao": {
+									"health": 1260,
+									"defense": 145.1
+								},
+								"quan": {
+									"health": 900,
+									"defense": 103.7
+								},
+								"giay": {
+									"health": 720,
+									"defense": 82.9
+								}
+							},
+							"setBonus": 10,
+							"upgradeMax": 15
+						}
+					]
+				}
+			],
+			"shield": [
+				{
+					"tier": 1,
+					"name": "Khiên Gỗ Bọc Sắt",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"health": 34.3,
+							"defense": 4.4,
+							"blockRating": 10,
+							"blockPower": 5,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"health": 39.4,
+							"defense": 5,
+							"blockRating": 12,
+							"blockPower": 8,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"health": 44.6,
+							"defense": 5.7,
+							"blockRating": 14,
+							"blockPower": 11,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"health": 51.4,
+							"defense": 6.6,
+							"blockRating": 16,
+							"blockPower": 14,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"health": 60,
+							"defense": 7.7,
+							"blockRating": 18,
+							"blockPower": 17,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"health": 72,
+							"defense": 9.2,
+							"blockRating": 20,
+							"blockPower": 20,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 2,
+					"name": "Khiên Tròn Bóng Đêm",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"health": 45.7,
+							"defense": 5.7,
+							"blockRating": 10,
+							"blockPower": 5,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"health": 52.6,
+							"defense": 6.5,
+							"blockRating": 12,
+							"blockPower": 8,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"health": 59.4,
+							"defense": 7.4,
+							"blockRating": 14,
+							"blockPower": 11,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"health": 68.6,
+							"defense": 8.5,
+							"blockRating": 16,
+							"blockPower": 14,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"health": 80,
+							"defense": 9.9,
+							"blockRating": 18,
+							"blockPower": 17,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"health": 96,
+							"defense": 11.9,
+							"blockRating": 20,
+							"blockPower": 20,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 3,
+					"name": "Khiên Vỏ Kiến Chúa",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"health": 62.9,
+							"defense": 7.6,
+							"blockRating": 10,
+							"blockPower": 5,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"health": 72.3,
+							"defense": 8.8,
+							"blockRating": 12,
+							"blockPower": 8,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"health": 81.7,
+							"defense": 9.9,
+							"blockRating": 14,
+							"blockPower": 11,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"health": 94.3,
+							"defense": 11.4,
+							"blockRating": 16,
+							"blockPower": 14,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"health": 110,
+							"defense": 13.4,
+							"blockRating": 18,
+							"blockPower": 17,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"health": 132,
+							"defense": 16,
+							"blockRating": 20,
+							"blockPower": 20,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 4,
+					"name": "Khiên Rễ Cổ Thụ",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"health": 80,
+							"defense": 9.6,
+							"blockRating": 10,
+							"blockPower": 5,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"health": 92,
+							"defense": 11,
+							"blockRating": 12,
+							"blockPower": 8,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"health": 104,
+							"defense": 12.5,
+							"blockRating": 14,
+							"blockPower": 11,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"health": 120,
+							"defense": 14.4,
+							"blockRating": 16,
+							"blockPower": 14,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"health": 140,
+							"defense": 16.8,
+							"blockRating": 18,
+							"blockPower": 17,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"health": 168,
+							"defense": 20.1,
+							"blockRating": 20,
+							"blockPower": 20,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 5,
+					"name": "Đại Thuẫn Cuồng Ngưu",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"health": 114.3,
+							"defense": 13.5,
+							"blockRating": 10,
+							"blockPower": 5,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"health": 131.4,
+							"defense": 15.6,
+							"blockRating": 12,
+							"blockPower": 8,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"health": 148.6,
+							"defense": 17.6,
+							"blockRating": 14,
+							"blockPower": 11,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"health": 171.4,
+							"defense": 20.3,
+							"blockRating": 16,
+							"blockPower": 14,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"health": 200,
+							"defense": 23.7,
+							"blockRating": 18,
+							"blockPower": 17,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"health": 240,
+							"defense": 28.4,
+							"blockRating": 20,
+							"blockPower": 20,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 6,
+					"name": "Khiên Kháng Độc Đầm Lầy",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"health": 131.4,
+							"defense": 15.5,
+							"blockRating": 10,
+							"blockPower": 5,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"health": 151.1,
+							"defense": 17.8,
+							"blockRating": 12,
+							"blockPower": 8,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"health": 170.9,
+							"defense": 20.1,
+							"blockRating": 14,
+							"blockPower": 11,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"health": 197.1,
+							"defense": 23.2,
+							"blockRating": 16,
+							"blockPower": 14,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"health": 230,
+							"defense": 27.1,
+							"blockRating": 18,
+							"blockPower": 17,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"health": 276,
+							"defense": 32.5,
+							"blockRating": 20,
+							"blockPower": 20,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 7,
+					"name": "Khiên Kỵ Sĩ Sương Mù",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"health": 157.1,
+							"defense": 18.4,
+							"blockRating": 10,
+							"blockPower": 5,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"health": 180.7,
+							"defense": 21.2,
+							"blockRating": 12,
+							"blockPower": 8,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"health": 204.3,
+							"defense": 23.9,
+							"blockRating": 14,
+							"blockPower": 11,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"health": 235.7,
+							"defense": 27.6,
+							"blockRating": 16,
+							"blockPower": 14,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"health": 275,
+							"defense": 32.2,
+							"blockRating": 18,
+							"blockPower": 17,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"health": 330,
+							"defense": 38.7,
+							"blockRating": 20,
+							"blockPower": 20,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 8,
+					"name": "Khiên Vảy Wyvern",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"health": 188.6,
+							"defense": 22,
+							"blockRating": 10,
+							"blockPower": 5,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"health": 216.9,
+							"defense": 25.3,
+							"blockRating": 12,
+							"blockPower": 8,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"health": 245.1,
+							"defense": 28.6,
+							"blockRating": 14,
+							"blockPower": 11,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"health": 282.9,
+							"defense": 33,
+							"blockRating": 16,
+							"blockPower": 14,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"health": 330,
+							"defense": 38.5,
+							"blockRating": 18,
+							"blockPower": 17,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"health": 396,
+							"defense": 46.2,
+							"blockRating": 20,
+							"blockPower": 20,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 9,
+					"name": "Khiên Gương Pha Lê",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"health": 222.9,
+							"defense": 25.9,
+							"blockRating": 10,
+							"blockPower": 5,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"health": 256.3,
+							"defense": 29.8,
+							"blockRating": 12,
+							"blockPower": 8,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"health": 289.7,
+							"defense": 33.7,
+							"blockRating": 14,
+							"blockPower": 11,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"health": 334.3,
+							"defense": 38.9,
+							"blockRating": 16,
+							"blockPower": 14,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"health": 390,
+							"defense": 45.4,
+							"blockRating": 18,
+							"blockPower": 17,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"health": 468,
+							"defense": 54.4,
+							"blockRating": 20,
+							"blockPower": 20,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 10,
+					"name": "Thành Lũy Goliath",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"health": 271.4,
+							"defense": 31.5,
+							"blockRating": 10,
+							"blockPower": 5,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"health": 312.1,
+							"defense": 36.2,
+							"blockRating": 12,
+							"blockPower": 8,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"health": 352.9,
+							"defense": 40.9,
+							"blockRating": 14,
+							"blockPower": 11,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"health": 407.1,
+							"defense": 47.2,
+							"blockRating": 16,
+							"blockPower": 14,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"health": 475,
+							"defense": 55.1,
+							"blockRating": 18,
+							"blockPower": 17,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"health": 570,
+							"defense": 66.1,
+							"blockRating": 20,
+							"blockPower": 20,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 11,
+					"name": "Khiên Tay Sát Thủ",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"health": 300,
+							"defense": 34.7,
+							"blockRating": 10,
+							"blockPower": 5,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"health": 345,
+							"defense": 39.9,
+							"blockRating": 12,
+							"blockPower": 8,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"health": 390,
+							"defense": 45.2,
+							"blockRating": 14,
+							"blockPower": 11,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"health": 450,
+							"defense": 52.1,
+							"blockRating": 16,
+							"blockPower": 14,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"health": 525,
+							"defense": 60.8,
+							"blockRating": 18,
+							"blockPower": 17,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"health": 630,
+							"defense": 72.9,
+							"blockRating": 20,
+							"blockPower": 20,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 12,
+					"name": "Khiên Mai Rùa Biển Sâu",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"health": 342.9,
+							"defense": 39.6,
+							"blockRating": 10,
+							"blockPower": 5,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"health": 394.3,
+							"defense": 45.6,
+							"blockRating": 12,
+							"blockPower": 8,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"health": 445.7,
+							"defense": 51.5,
+							"blockRating": 14,
+							"blockPower": 11,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"health": 514.3,
+							"defense": 59.5,
+							"blockRating": 16,
+							"blockPower": 14,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"health": 600,
+							"defense": 69.4,
+							"blockRating": 18,
+							"blockPower": 17,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"health": 720,
+							"defense": 83.2,
+							"blockRating": 20,
+							"blockPower": 20,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 13,
+					"name": "Đại Thuẫn Hắc Vương",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"health": 394.3,
+							"defense": 45.5,
+							"blockRating": 10,
+							"blockPower": 5,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"health": 453.4,
+							"defense": 52.3,
+							"blockRating": 12,
+							"blockPower": 8,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"health": 512.6,
+							"defense": 59.2,
+							"blockRating": 14,
+							"blockPower": 11,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"health": 591.4,
+							"defense": 68.3,
+							"blockRating": 16,
+							"blockPower": 14,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"health": 690,
+							"defense": 79.7,
+							"blockRating": 18,
+							"blockPower": 17,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"health": 828,
+							"defense": 95.6,
+							"blockRating": 20,
+							"blockPower": 20,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 14,
+					"name": "Khiên Tròn Giác Đấu",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"health": 445.7,
+							"defense": 51.4,
+							"blockRating": 10,
+							"blockPower": 5,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"health": 512.6,
+							"defense": 59.1,
+							"blockRating": 12,
+							"blockPower": 8,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"health": 579.4,
+							"defense": 66.8,
+							"blockRating": 14,
+							"blockPower": 11,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"health": 668.6,
+							"defense": 77.1,
+							"blockRating": 16,
+							"blockPower": 14,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"health": 780,
+							"defense": 89.9,
+							"blockRating": 18,
+							"blockPower": 17,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"health": 936,
+							"defense": 107.9,
+							"blockRating": 20,
+							"blockPower": 20,
+							"upgradeMax": 15
+						}
+					]
+				},
+				{
+					"tier": 15,
+					"name": "Thần Thuẫn Vực Thẳm",
+					"grades": [
+						{
+							"grade": "TANBINH",
+							"health": 514.3,
+							"defense": 59.2,
+							"blockRating": 10,
+							"blockPower": 5,
+							"upgradeMax": 5
+						},
+						{
+							"grade": "CHIENBINH",
+							"health": 591.4,
+							"defense": 68.1,
+							"blockRating": 12,
+							"blockPower": 8,
+							"upgradeMax": 8
+						},
+						{
+							"grade": "KYSI",
+							"health": 668.6,
+							"defense": 77,
+							"blockRating": 14,
+							"blockPower": 11,
+							"upgradeMax": 10
+						},
+						{
+							"grade": "LANHCHUA",
+							"health": 771.4,
+							"defense": 88.8,
+							"blockRating": 16,
+							"blockPower": 14,
+							"upgradeMax": 12
+						},
+						{
+							"grade": "QUANVUONG",
+							"health": 900,
+							"defense": 103.7,
+							"blockRating": 18,
+							"blockPower": 17,
+							"upgradeMax": 15
+						},
+						{
+							"grade": "DEVUONG",
+							"health": 1080,
+							"defense": 124.4,
+							"blockRating": 20,
+							"blockPower": 20,
+							"upgradeMax": 15
+						}
+					]
+				}
+			]
+		}
+	}
+}

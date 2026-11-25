@@ -1,0 +1,230 @@
+---
+/**
+ * The equipment (trang bị) of one server, built from src/data/servers/<server>/equipment.json
+ * (written by scripts/sync-equipment.mjs from the server's config). One page per kind:
+ *   sword | bow | axe   a table of the six grades for every tier, and the skill of the top grade
+ *   armor               helmet, chestplate, leggings and boots together (health / defense of each), the set bonus, and the shield
+ * Every number comes from the data, none is typed here.
+ */
+interface Props {
+	server: string;
+	kind: 'sword' | 'bow' | 'axe' | 'armor';
+}
+
+const { server, kind } = Astro.props;
+const files = import.meta.glob('../data/servers/*/equipment.json', { eager: true, import: 'default' }) as Record<string, any>;
+const data = files[`../data/servers/${server}/equipment.json`];
+if (!data) throw new Error(`EquipmentList: no equipment.json for server "${server}", run node scripts/sync-equipment.mjs`);
+const group = data.kinds[kind];
+if (!group) throw new Error(`EquipmentList: no "${kind}" in equipment.json`);
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const iconUrl = (name: string) => `${base}/minions/${name}.png`;
+const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 3 });
+const gradeOf = (id: string) => data.grades.find((g: any) => g.id === id);
+const tierOf = (n: number) => data.tiers.find((t: any) => t.n === n);
+const COIN = (currency: string) => `Dungeon Coins tầng ${String(currency).replace(/^d/i, '')}`;
+
+const first = data.tiers[0];
+const gradeChances = data.grades.map((g: any) => ({ name: g.name, chance: first.crate.chances[g.id] }));
+const levelRise = kind === 'armor' ? data.upgrade.armorPercent : data.upgrade.weaponPercent;
+const tiers: any[] = group.tiers;
+---
+
+<div class="eq not-content">
+	<section class="eq-how">
+		<h3>Cách nhận và nâng cấp</h3>
+		<ul>
+			<li>
+				<strong>Nhận:</strong> mở <strong>Rương Tầng</strong> tương ứng bằng Dungeon Coins của tầng đó. Mỗi lượt mở ra một phẩm cấp với tỉ lệ:
+				{gradeChances.map((g: any, i: number) => <>{i > 0 && ', '}{g.name} {num(g.chance)}%</>)}.
+			</li>
+			<li>
+				<strong>Nâng phẩm cấp:</strong> trong <code>/ecraft</code>, thể loại của tầng, đổi {data.upgrade.piecesPerGrade} món cùng loại và cùng phẩm cấp thành 1 món phẩm cấp kế tiếp. Từ tầng 2 cần xưởng rèn đảo đủ cấp (ghi ở từng tầng).
+			</li>
+			<li>
+				<strong>Nâng cấp (+):</strong> mỗi cấp nâng cộng thêm {levelRise}% {kind === 'armor' ? 'máu và phòng thủ' : 'sát thương'}, cộng dồn. Cấp nâng tối đa tăng theo phẩm cấp (cột "Nâng cấp tối đa").
+			</li>
+		</ul>
+	</section>
+
+	{
+		tiers.map((entry: any) => {
+			const tier = tierOf(entry.tier);
+			return (
+				<section class="eq-tier">
+					<h3 id={`tang-${tier.n}`}>
+						Tầng {tier.n}: {tier.name}
+					</h3>
+					<p class="eq-meta">
+						Rương tầng {tier.n}: {num(tier.crate.price)} {COIN(tier.crate.currency)}.
+						{tier.forgeLevel > 0 ? ` Nâng phẩm cấp cần xưởng rèn cấp ${tier.forgeLevel}.` : ' Nâng phẩm cấp không cần xưởng rèn.'}
+					</p>
+
+					{kind !== 'armor' ? (
+						<>
+							<p class="eq-name">{entry.name}</p>
+							<div class="eq-scroll">
+								<table>
+									<thead>
+										<tr>
+											<th>Phẩm cấp</th>
+											{group.stats.filter((s: any) => entry.grades.some((g: any) => g.stats[s.key] !== undefined)).map((s: any) => <th>{s.label}</th>)}
+											<th>Nâng cấp tối đa</th>
+										</tr>
+									</thead>
+									<tbody>
+										{entry.grades.map((g: any) => (
+											<tr>
+												<td>
+													<img class="eq-icon" src={iconUrl(g.icon)} alt="" width="20" height="20" loading="lazy" onerror="this.hidden=true" />
+													{gradeOf(g.grade).name}
+												</td>
+												{group.stats.filter((s: any) => entry.grades.some((x: any) => x.stats[s.key] !== undefined)).map((s: any) => (
+													<td>{g.stats[s.key] === undefined ? '–' : `${num(g.stats[s.key])}${s.unit}`}</td>
+												))}
+												<td>+{g.upgradeMax}</td>
+											</tr>
+										))}
+									</tbody>
+								</table>
+							</div>
+							{entry.grades.filter((g: any) => g.ability).map((g: any) => (
+								<div class="eq-skill">
+									<strong>Kỹ năng ({gradeOf(g.grade).name}):</strong> {g.ability.name}
+									{g.ability.trigger && <span class="eq-trigger"> ({g.ability.trigger})</span>}
+									<p>{g.ability.text}</p>
+									{g.ability.details.length > 0 && <ul>{g.ability.details.map((d: string) => <li>{d}</li>)}</ul>}
+								</div>
+							))}
+						</>
+					) : (
+						<>
+							<p class="eq-name">
+								{group.pieces.map((p: any, i: number) => <>{i > 0 && ' · '}{p.label}: {entry.names[p.key]}</>)}
+							</p>
+							<p class="eq-note">Mỗi ô ghi <strong>máu / phòng thủ</strong> của món.</p>
+							<div class="eq-scroll">
+								<table>
+									<thead>
+										<tr>
+											<th>Phẩm cấp</th>
+											{group.pieces.map((p: any) => <th>{p.label}</th>)}
+											<th>Bộ 4 món</th>
+											<th>Nâng cấp tối đa</th>
+										</tr>
+									</thead>
+									<tbody>
+										{entry.grades.map((g: any) => (
+											<tr>
+												<td>
+													<img class="eq-icon" src={iconUrl(g.icon)} alt="" width="20" height="20" loading="lazy" onerror="this.hidden=true" />
+													{gradeOf(g.grade).name}
+												</td>
+												{group.pieces.map((p: any) => <td>{num(g.pieces[p.key].health)} / {num(g.pieces[p.key].defense)}</td>)}
+												<td>{g.setBonus === null ? '–' : `+${num(g.setBonus)}% kháng vật lý`}</td>
+												<td>+{g.upgradeMax}</td>
+											</tr>
+										))}
+									</tbody>
+								</table>
+							</div>
+
+							<p class="eq-name">Khiên: {group.shield.find((s: any) => s.tier === entry.tier).name}</p>
+							<p class="eq-note">Cột "Chặn" là tỉ lệ chặn / sức chặn.</p>
+							<div class="eq-scroll">
+								<table>
+									<thead>
+										<tr><th>Phẩm cấp</th><th>Máu</th><th>Phòng thủ</th><th>Chặn</th><th>Nâng cấp tối đa</th></tr>
+									</thead>
+									<tbody>
+										{group.shield.find((s: any) => s.tier === entry.tier).grades.map((g: any) => (
+											<tr>
+												<td>{gradeOf(g.grade).name}</td>
+												<td>{num(g.health)}</td>
+												<td>{num(g.defense)}</td>
+												<td>{num(g.blockRating)} / {num(g.blockPower)}</td>
+												<td>+{g.upgradeMax}</td>
+											</tr>
+										))}
+									</tbody>
+								</table>
+							</div>
+						</>
+					)}
+				</section>
+			);
+		})
+	}
+</div>
+
+<style>
+	.eq {
+		margin: 1.5rem 0;
+	}
+	.eq-how,
+	.eq-tier {
+		margin-bottom: 1.5rem;
+		padding: 0.25rem 1rem 0.75rem;
+		border: 1px solid var(--sl-color-hairline);
+		border-radius: 0.5rem;
+	}
+	.eq h3 {
+		margin: 0.75rem 0 0.25rem;
+		font-size: var(--sl-text-xl);
+	}
+	.eq-how ul {
+		margin: 0.25rem 0;
+		padding-left: 1.25rem;
+	}
+	.eq-meta,
+	.eq-note {
+		margin: 0.25rem 0;
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-sm);
+	}
+	.eq-name {
+		margin: 0.75rem 0 0.25rem;
+		font-weight: 600;
+	}
+	.eq-scroll {
+		overflow-x: auto;
+	}
+	.eq table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: var(--sl-text-sm);
+	}
+	.eq th,
+	.eq td {
+		padding: 0.35rem 0.6rem;
+		border-bottom: 1px solid var(--sl-color-hairline);
+		text-align: left;
+		white-space: nowrap;
+	}
+	.eq th {
+		color: var(--sl-color-gray-2);
+		font-weight: 600;
+	}
+	.eq-icon {
+		width: 1.25rem;
+		height: 1.25rem;
+		margin: 0 0.4rem 0 0;
+		vertical-align: middle;
+		image-rendering: pixelated;
+	}
+	.eq-skill {
+		margin-top: 0.75rem;
+		font-size: var(--sl-text-sm);
+	}
+	.eq-skill p {
+		margin: 0.25rem 0;
+	}
+	.eq-skill ul {
+		margin: 0.25rem 0;
+		padding-left: 1.25rem;
+	}
+	.eq-trigger {
+		color: var(--sl-color-gray-3);
+	}
+</style>

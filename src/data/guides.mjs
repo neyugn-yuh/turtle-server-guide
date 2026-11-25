@@ -33,5 +33,11 @@ export const guides = [
 		description: 'Danh sách spawner: mob nào rơi gì với tỉ lệ nào, và nâng cấp spawner cần gì.',
 		landing: 'list',
 	},
+	{
+		slug: 'equipment',
+		title: 'Trang bị',
+		description: 'Giáp, kiếm, cung và rìu theo từng tầng và phẩm cấp: chỉ số, kỹ năng, cách nhận và nâng cấp.',
+		landing: 'armor',
+	},
 	// <-- add new guides here
 ];

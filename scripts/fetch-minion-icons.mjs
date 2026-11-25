@@ -51,6 +51,12 @@ for (const server of readdirSync(serversDir)) {
 			for (const drop of mob.drops) if (drop.icon) materials.add(drop.icon);
 		}
 	}
+	// equipment: the picture of the item of each grade (sword, bow, axe, chestplate)
+	const equipmentFile = join(serversDir, server, 'equipment.json');
+	if (existsSync(equipmentFile)) {
+		const equipment = JSON.parse(readFileSync(equipmentFile, 'utf8'));
+		for (const kind of Object.values(equipment.kinds)) for (const tier of kind.tiers) for (const grade of tier.grades) if (grade.icon) materials.add(grade.icon);
+	}
 	// island upgrades: the picture of each upgrade and of the blocks a level asks for
 	const islandFile = join(serversDir, server, 'island-upgrades.json');
 	if (existsSync(islandFile)) {
@@ -76,6 +82,17 @@ for (const name of [...materials].sort()) {
 		console.log(`${name} <- ${path}`);
 		saved = true;
 		break;
+	}
+	// the texture set of 1.21.4 has no copper tools or armor: tint the iron one copper-orange
+	const copper = /^copper_(sword|axe|chestplate)$/.exec(name);
+	if (!saved && copper) {
+		const response = await fetch(`${BASE}/items/iron_${copper[1]}.png`);
+		if (response.ok) {
+			const { default: sharp } = await import('sharp');
+			writeFileSync(target, await sharp(Buffer.from(await response.arrayBuffer())).tint('#D07A52').png().toBuffer());
+			console.log(`${name} <- items/iron_${copper[1]} (tinted copper)`);
+			saved = true;
+		}
 	}
 	if (!saved) missing.push(name);
 }

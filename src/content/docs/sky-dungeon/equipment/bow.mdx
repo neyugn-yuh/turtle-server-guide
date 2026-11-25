@@ -1,0 +1,13 @@
+---
+title: "Trang bị: Cung"
+description: Chỉ số cung theo từng tầng và phẩm cấp, kèm kỹ năng của phẩm cấp cao nhất.
+sidebar:
+  label: Cung
+  order: 3
+---
+
+import EquipmentList from '../../../../components/EquipmentList.astro';
+
+Mỗi tầng có một loại cung riêng với sáu phẩm cấp từ Tân Binh đến Đế Vương. Một số cung phẩm cấp Đế Vương có thêm kỹ năng. Chỉ số lấy từ cấu hình máy chủ **Sky Dungeon**.
+
+<EquipmentList server="sky-dungeon" kind="bow" />
