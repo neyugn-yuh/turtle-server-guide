@@ -74,7 +74,7 @@
 					"level": 2,
 					"display": 3,
 					"value": 16,
-					"money": 300000,
+					"money": 400000,
 					"items": {},
 					"stats": {}
 				},
@@ -82,7 +82,7 @@
 					"level": 3,
 					"display": 4,
 					"value": 32,
-					"money": 500000,
+					"money": 1500000,
 					"items": {},
 					"stats": {}
 				},
@@ -90,7 +90,7 @@
 					"level": 4,
 					"display": 5,
 					"value": 48,
-					"money": 5000000,
+					"money": 4000000,
 					"items": {},
 					"stats": {}
 				},
