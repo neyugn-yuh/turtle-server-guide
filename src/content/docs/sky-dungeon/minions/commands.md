@@ -8,10 +8,11 @@ sidebar:
 
 ## Có lệnh dành cho người chơi không?
 
-Bản mặc định không có lệnh dành cho người chơi thông thường. Bạn điều khiển minion bằng vật phẩm và giao diện. Không cần nhập lệnh để mở menu, lấy sản phẩm hoặc thu hồi minion.
+Chỉ có một lệnh dành cho người chơi: `/shopminion` (hoặc `/minionshop`) mở cửa hàng minion. Còn lại bạn điều khiển minion bằng vật phẩm và giao diện, không cần nhập lệnh để mở menu, lấy sản phẩm hoặc thu hồi minion.
 
 | Việc bạn muốn làm | Thao tác thay cho lệnh | Ví dụ |
 | --- | --- | --- |
+| Mua minion bậc I | Gõ `/shopminion`, chọn nhóm rồi bấm chuột trái vào minion; giá ghi trong [Danh sách minion](/sky-dungeon/minions/list/) | Mua Cow Minion I bằng Tiền |
 | Đặt minion | Cầm vật phẩm minion, bấm phải lên khối trên đảo | Đặt Cobblestone Minion I trên mặt trên của khối |
 | Mở menu | Bấm phải vào minion | Xem kho và nhiên liệu |
 | Lấy sản phẩm | Bấm sản phẩm hoặc `Collect all` | Lấy toàn bộ đá cuội đang chứa |

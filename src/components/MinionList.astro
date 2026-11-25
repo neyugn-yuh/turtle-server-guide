@@ -73,6 +73,7 @@ const groups = categories
 								<span class="ml-tiers">{range(minion.tiers[0].tier, last.tier)}</span>
 							</summary>
 							<div class="ml-body">
+								{minion.price != null && <p class="ml-price">Mua bậc I tại cửa hàng minion (<code>/shopminion</code>): <strong>{num(minion.price)} Tiền</strong>.</p>}
 								<h4>Sản phẩm</h4>
 								<table>
 									<thead>
@@ -259,6 +260,9 @@ const groups = categories
 		font-size: var(--sl-text-sm);
 		text-overflow: ellipsis;
 		white-space: nowrap;
+	}
+	.ml-price {
+		margin: 0 0 0.75rem;
 	}
 	.ml-tiers {
 		color: var(--sl-color-gray-3);

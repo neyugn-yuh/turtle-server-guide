@@ -3,6 +3,9 @@
  * Reads the minion definitions of a server and writes the player-facing facts to
  * src/data/servers/<server>/minions.json, which the "Danh sách minion" page is built from.
  *
+ * Also read: DeluxeMenus/gui_menus/shop_minion_*.yml (price of a tier I minion in the minion shop, taken from the
+ * "eco take" of each item's left click). A minion that is not sold has price null.
+ *
  * Where the definitions come from (one source per run):
  *   --dir <folder>   a plugin data folder on disk: <folder>/minions/*.yml
  *   --ptero          the server itself, over the Pterodactyl client API (read only: it lists and reads files)
@@ -53,13 +56,18 @@ function fail(message) {
 }
 
 // ---------- sources ----------
-/** @returns {Promise<{id: string, text: string}[]>} one entry per minion file */
+const SHOP_FILE = /^shop_minion[a-z0-9_]*\.yml$/i;
+
+/** @returns {Promise<{files: {id: string, text: string}[], shops: string[]}>} one entry per minion file, plus the minion shop menus */
 async function fromDir(dir) {
 	const folder = join(resolve(dir), 'minions');
 	if (!existsSync(folder)) fail(`${folder} does not exist`);
-	return readdirSync(folder)
+	const files = readdirSync(folder)
 		.filter((name) => FILE_NAME.test(name))
 		.map((name) => ({ id: name.replace(/\.yml$/i, ''), text: readFileSync(join(folder, name), 'utf8') }));
+	const menus = join(resolve(dir), '..', 'DeluxeMenus', 'gui_menus');
+	const shops = existsSync(menus) ? readdirSync(menus).filter((name) => SHOP_FILE.test(name)).map((name) => readFileSync(join(menus, name), 'utf8')) : [];
+	return { files, shops };
 }
 
 async function fromPterodactyl() {
@@ -87,7 +95,14 @@ async function fromPterodactyl() {
 		const texts = await Promise.all(batch.map(async (name) => (await get(api('files/contents', { file: `${pluginDir}/minions/${name}` }), name)).text()));
 		batch.forEach((name, k) => files.push({ id: name.replace(/\.yml$/i, ''), text: texts[k] }));
 	}
-	return files;
+
+	// minion shop menus: DeluxeMenus sits next to the minion plugin folder (PTERO_PLUGIN_DIR is /plugins/TurtleMinions by default)
+	const menuDir = `${pluginDir.replace(/\/[^/]+$/, '')}/DeluxeMenus/gui_menus`;
+	const menuList = await fetch(api('files/list', { directory: menuDir }), { headers });
+	const menuNames = menuList.ok ? ((await menuList.json()).data ?? []).map((entry) => entry.attributes).filter((a) => a?.is_file && SHOP_FILE.test(a.name)).map((a) => a.name) : [];
+	const shops = [];
+	for (const name of menuNames) shops.push(await (await get(api('files/contents', { file: `${menuDir}/${name}` }), name)).text());
+	return { files, shops };
 }
 
 // ---------- reading one minion ----------
@@ -155,16 +170,44 @@ function readMinion({ id, text }) {
 	return { id, name: plain(data.name).replace(/\s*$/, '') || id, category: data.category, group, icon, tiers, products: groups };
 }
 
+/**
+ * Price of a tier I minion from the shop menus. An item that runs "turtleminions give %player_name% <id>" on left click must also run
+ * "eco take %player_name% <price>" there, and its money requirement must be the same price.
+ * @returns {Record<string, number>} minion id -> price
+ */
+function readShopPrices(texts) {
+	const prices = {};
+	for (const text of texts) {
+		const items = parse(text)?.items ?? {};
+		for (const [key, item] of Object.entries(items)) {
+			const commands = (item.left_click_commands ?? []).map(String);
+			const give = commands.map((c) => /turtleminions give %player_name% ([a-z0-9_]+)\s*$/i.exec(c)).find(Boolean);
+			if (!give) continue;
+			const take = commands.map((c) => /eco take %player_name% (\d+)\s*$/i.exec(c)).find(Boolean);
+			if (!take) throw new Error(`shop_minion ${key}: gives a minion without an "eco take"`);
+			const price = Number(take[1]);
+			const need = />=\s*(\d+)/.exec(String(item.left_click_requirement?.requirements?.has_money?.expression ?? ''));
+			if (!need || Number(need[1]) !== price) throw new Error(`shop_minion ${key}: the money requirement must be the same as the price ${price}`);
+			if (price <= 0) throw new Error(`shop_minion ${key}: price must be above 0`);
+			if (give[1] in prices) throw new Error(`shop_minion: ${give[1]} is sold twice`);
+			prices[give[1]] = price;
+		}
+	}
+	return prices;
+}
+
 // ---------- main ----------
 const dir = option('--dir');
 if (!dir && !flag('--ptero')) fail('give a source: --dir <plugin folder> or --ptero');
-const files = dir ? await fromDir(dir) : await fromPterodactyl();
+const { files, shops } = dir ? await fromDir(dir) : await fromPterodactyl();
+const prices = readShopPrices(shops);
+for (const id of Object.keys(prices)) if (!files.some((f) => f.id === id)) fail(`the minion shop sells ${id}, which has no minion file`);
 
 const minions = [];
 const problems = [];
 for (const file of files) {
 	try {
-		minions.push(readMinion(file));
+		minions.push({ ...readMinion(file), price: prices[file.id] ?? null });
 	} catch (error) {
 		problems.push(error.message);
 	}
