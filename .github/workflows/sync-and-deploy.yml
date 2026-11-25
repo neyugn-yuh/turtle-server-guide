@@ -70,6 +70,10 @@ jobs:
         if: env.PTERO_KEY != '' && env.PTERO_URL != '' && env.PTERO_SERVER != ''
         run: node scripts/sync-dungeon.mjs --ptero
 
+      - name: Read the island contribution from the server
+        if: env.PTERO_KEY != '' && env.PTERO_URL != '' && env.PTERO_SERVER != ''
+        run: node scripts/sync-island-top.mjs --ptero
+
       - name: Commit the changed data
         run: |
           if [ -n "$(git status --porcelain src/data/servers)" ]; then

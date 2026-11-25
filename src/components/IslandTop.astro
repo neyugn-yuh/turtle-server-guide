@@ -1,0 +1,133 @@
+---
+/**
+ * The island contribution race (đua top đảo) of one server, built from src/data/servers/<server>/island-top.json
+ * (written by scripts/sync-island-top.mjs from the server's config). One component, one table per `section`:
+ *   items    what an island hands to the turtle: points and daily limit of each item, grouped
+ *   hunting  island mobs killed on the island
+ *   bosses   Dungeon bosses
+ *   ranking  the monthly prizes shown in the ranking menu
+ * The tables are plain HTML so they take the style of the page.
+ */
+interface Props {
+	server: string;
+	section: 'items' | 'hunting' | 'bosses' | 'ranking';
+}
+
+const { server, section } = Astro.props;
+const files = import.meta.glob('../data/servers/*/island-top.json', { eager: true, import: 'default' }) as Record<string, any>;
+const data = files[`../data/servers/${server}/island-top.json`];
+if (!data) throw new Error(`IslandTop: no island-top.json for server "${server}", run node scripts/sync-island-top.mjs`);
+
+const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 2 });
+const limitText = (limit: number | null) => (limit === null ? 'Không giới hạn' : num(limit));
+const perDay = (points: number, limit: number | null) => (limit === null ? '—' : num(points * limit));
+
+const itemGroups = [
+	{ id: 'special', label: 'Vật phẩm cống hiến đặc biệt' },
+	{ id: 'block', label: 'Khối khoáng' },
+	{ id: 'spawner', label: 'Lồng spawner' },
+]
+	.map((group) => ({ ...group, rows: data.items.filter((item: any) => item.group === group.id) }))
+	.filter((group) => group.rows.length > 0);
+---
+
+{
+	section === 'items' &&
+		itemGroups.map((group) => (
+			<>
+				<h3>{group.label}</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>Vật phẩm</th>
+							<th>Điểm mỗi vật phẩm</th>
+							<th>Giới hạn mỗi ngày (cả đảo)</th>
+							<th>Điểm tối đa mỗi ngày</th>
+						</tr>
+					</thead>
+					<tbody>
+						{group.rows.map((item: any) => (
+							<tr>
+								<td>{item.name}</td>
+								<td>{num(item.points)}</td>
+								<td>{limitText(item.dailyLimit)}</td>
+								<td>{perDay(item.points, item.dailyLimit)}</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</>
+		))
+}
+
+{
+	section === 'hunting' && (
+		<table>
+			<thead>
+				<tr>
+					<th>Quái</th>
+					<th>Điểm mỗi con</th>
+					<th>Giới hạn mỗi ngày (cả đảo)</th>
+				</tr>
+			</thead>
+			<tbody>
+				{data.hunting.map((mob: any) => (
+					<tr>
+						<td>{mob.name}</td>
+						<td>{mob.points === 0 ? 'Chưa tính điểm' : num(mob.points)}</td>
+						<td>{limitText(mob.dailyLimit)}</td>
+					</tr>
+				))}
+			</tbody>
+		</table>
+	)
+}
+
+{
+	section === 'bosses' && (
+		<table>
+			<thead>
+				<tr>
+					<th>Boss</th>
+					<th>Tầng</th>
+					<th>Điểm mỗi lần hạ</th>
+					<th>Giới hạn mỗi ngày (cả đảo)</th>
+				</tr>
+			</thead>
+			<tbody>
+				{data.bosses.map((boss: any) => (
+					<tr>
+						<td>{boss.name}</td>
+						<td>{boss.group}</td>
+						<td>{boss.points === 0 ? 'Chưa tính điểm' : num(boss.points)}</td>
+						<td>{limitText(boss.dailyLimit)}</td>
+					</tr>
+				))}
+			</tbody>
+		</table>
+	)
+}
+
+{
+	section === 'ranking' && (
+		<>
+			<table>
+				<thead>
+					<tr>
+						<th>Hạng</th>
+						<th>Phần thưởng (Xu ⛁)</th>
+					</tr>
+				</thead>
+				<tbody>
+					{data.ranking.rewards.map((reward: number, i: number) => (
+						<tr>
+							<td>{i + 1}</td>
+							<td>{num(reward)}</td>
+						</tr>
+					))}
+				</tbody>
+			</table>
+			{data.ranking.closingNote && <p>{data.ranking.closingNote}</p>}
+		</>
+	)
+}

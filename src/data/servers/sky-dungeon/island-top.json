@@ -1,0 +1,294 @@
+{
+	"dailyLimitEnabled": true,
+	"items": [
+		{
+			"name": "Trứng Rồng Cống Hiến",
+			"group": "special",
+			"points": 10000000,
+			"dailyLimit": 1
+		},
+		{
+			"name": "Khung Cổng End Cống Hiến",
+			"group": "special",
+			"points": 1000000,
+			"dailyLimit": 10
+		},
+		{
+			"name": "Lồng Bọ Ender",
+			"group": "spawner",
+			"points": 150000,
+			"dailyLimit": 10
+		},
+		{
+			"name": "Lồng Lạc đà không bướu",
+			"group": "spawner",
+			"points": 150000,
+			"dailyLimit": 10
+		},
+		{
+			"name": "Lồng Người sắt",
+			"group": "spawner",
+			"points": 150000,
+			"dailyLimit": 10
+		},
+		{
+			"name": "Bọt Biển Cống Hiến",
+			"group": "special",
+			"points": 100000,
+			"dailyLimit": 100
+		},
+		{
+			"name": "Lồng Dân làng",
+			"group": "spawner",
+			"points": 100000,
+			"dailyLimit": 10
+		},
+		{
+			"name": "Lồng Ghast",
+			"group": "spawner",
+			"points": 100000,
+			"dailyLimit": 10
+		},
+		{
+			"name": "Lồng Kẻ triệu hồi",
+			"group": "spawner",
+			"points": 100000,
+			"dailyLimit": 10
+		},
+		{
+			"name": "Lồng Enderman",
+			"group": "spawner",
+			"points": 60000,
+			"dailyLimit": 10
+		},
+		{
+			"name": "Lồng Nhện",
+			"group": "spawner",
+			"points": 60000,
+			"dailyLimit": 10
+		},
+		{
+			"name": "Lồng Quỷ lửa",
+			"group": "spawner",
+			"points": 60000,
+			"dailyLimit": 10
+		},
+		{
+			"name": "Quặng Thạch Anh Cống Hiến",
+			"group": "special",
+			"points": 50000,
+			"dailyLimit": 1000
+		},
+		{
+			"name": "Lồng Bộ xương",
+			"group": "spawner",
+			"points": 30000,
+			"dailyLimit": 10
+		},
+		{
+			"name": "Lồng Creeper",
+			"group": "spawner",
+			"points": 30000,
+			"dailyLimit": 10
+		},
+		{
+			"name": "Lồng Xác sống",
+			"group": "spawner",
+			"points": 30000,
+			"dailyLimit": 10
+		},
+		{
+			"name": "Lồng Bò",
+			"group": "spawner",
+			"points": 10000,
+			"dailyLimit": 10
+		},
+		{
+			"name": "Lồng Gà",
+			"group": "spawner",
+			"points": 10000,
+			"dailyLimit": 10
+		},
+		{
+			"name": "Lồng Heo",
+			"group": "spawner",
+			"points": 10000,
+			"dailyLimit": 10
+		},
+		{
+			"name": "Khối Kim Cương",
+			"group": "block",
+			"points": 320,
+			"dailyLimit": 1000
+		},
+		{
+			"name": "Khối Lục Bảo",
+			"group": "block",
+			"points": 180,
+			"dailyLimit": 1000
+		},
+		{
+			"name": "Khối Vàng",
+			"group": "block",
+			"points": 100,
+			"dailyLimit": 10000
+		},
+		{
+			"name": "Khối Sắt",
+			"group": "block",
+			"points": 40,
+			"dailyLimit": 10000
+		}
+	],
+	"hunting": [
+		{
+			"name": "Ghast",
+			"group": "Quái đảo",
+			"points": 5,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Kẻ triệu hồi",
+			"group": "Quái đảo",
+			"points": 5,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Người sắt",
+			"group": "Quái đảo",
+			"points": 5,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Quỷ lửa",
+			"group": "Quái đảo",
+			"points": 5,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Enderman",
+			"group": "Quái đảo",
+			"points": 4,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Creeper",
+			"group": "Quái đảo",
+			"points": 3,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Bộ xương",
+			"group": "Quái đảo",
+			"points": 2,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Dân làng",
+			"group": "Quái đảo",
+			"points": 2,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Nhện",
+			"group": "Quái đảo",
+			"points": 2,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Xác sống",
+			"group": "Quái đảo",
+			"points": 2,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Bò",
+			"group": "Quái đảo",
+			"points": 1,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Bọ Ender",
+			"group": "Quái đảo",
+			"points": 1,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Gà",
+			"group": "Quái đảo",
+			"points": 1,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Heo",
+			"group": "Quái đảo",
+			"points": 1,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Lạc đà không bướu",
+			"group": "Quái đảo",
+			"points": 1,
+			"dailyLimit": 100000
+		}
+	],
+	"bosses": [
+		{
+			"name": "Ma Hải Tặc",
+			"group": "D1",
+			"points": 1000,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Nhện Yêu Tinh",
+			"group": "D2",
+			"points": 1500,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Phù Thủy Đen",
+			"group": "D3",
+			"points": 2000,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Jack",
+			"group": "D4",
+			"points": 3000,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Jackson",
+			"group": "D4",
+			"points": 3000,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Rồng Không Gian",
+			"group": "D5",
+			"points": 5000,
+			"dailyLimit": 100000
+		},
+		{
+			"name": "Rồng Hoàng Kim",
+			"group": "WorldBoss",
+			"points": 0,
+			"dailyLimit": null
+		}
+	],
+	"ranking": {
+		"closingNote": "Phần thưởng chốt vào 12h trưa ngày 1 hàng tháng.",
+		"rewards": [
+			600,
+			550,
+			500,
+			450,
+			400,
+			350,
+			300,
+			250,
+			200,
+			150
+		]
+	}
+}

@@ -45,5 +45,11 @@ export const guides = [
 		description: 'Các tầng hầm ngục: quái, tinh anh và boss, phần thưởng, và giá quay rương trang bị của từng tầng.',
 		landing: 'floors',
 	},
+	{
+		slug: 'island-top',
+		title: 'Đua top đảo',
+		description: 'Điểm cống hiến của đảo: vật phẩm nào được bao nhiêu điểm, săn quái, boss, hạn mức mỗi ngày và phần thưởng top.',
+		landing: 'tong-quan',
+	},
 	// <-- add new guides here
 ];

@@ -1,0 +1,40 @@
+---
+title: "Đua top đảo: Tổng quan"
+description: "Điểm cống hiến của đảo đến từ đâu, cách xếp hạng, phần thưởng top và hạn mức mỗi ngày."
+sidebar:
+  label: Tổng quan
+  order: 1
+---
+
+import IslandTop from '../../../../components/IslandTop.astro';
+
+Mỗi đảo có một **điểm cống hiến**. Đảo nào nhiều điểm nhất ở bảng xếp hạng sẽ đứng đầu mùa đua top. Điểm của cả đảo là tổng điểm mọi thành viên góp vào; điểm cá nhân của từng người vẫn được ghi riêng để biết ai đã góp bao nhiêu.
+
+## Điểm đến từ đâu?
+
+| Nguồn | Cách có điểm | Xem bảng điểm |
+| --- | --- | --- |
+| Cống hiến vật phẩm | Nộp vật phẩm cho beacon cống hiến của đảo (`/conghien`) | [Vật phẩm cống hiến](/sky-dungeon/island-top/vat-pham/) |
+| Săn quái tại đảo | Hạ quái trong thế giới đảo, gồm quái tự nhiên và quái từ spawner | [Săn quái và boss](/sky-dungeon/island-top/san-quai/) |
+| Boss Dungeon | Hạ boss tầng của hầm ngục | [Săn quái và boss](/sky-dungeon/island-top/san-quai/) |
+
+Điểm chỉ đến từ ba nguồn trên.
+
+## Giới hạn mỗi ngày
+
+- Mọi giới hạn ngày **dùng chung cho cả đảo**, không tính riêng từng người. Ví dụ một vật phẩm giới hạn 10 mỗi ngày thì tổng tất cả thành viên chỉ nộp được 10 vật phẩm đó trong ngày.
+- Giới hạn tính riêng từng loại vật phẩm, từng loại quái và từng boss, không gộp chung.
+- Ngày mới bắt đầu lúc 00:00 theo giờ máy chủ. Rời đảo không xóa lượt đảo đã dùng trong ngày.
+- Nộp vượt hạn mức còn lại thì cả lượt nộp bị từ chối và vật phẩm vẫn ở trong túi. Hãy bớt số lượng rồi nộp lại.
+- Quái săn thì điểm chỉ cộng cho phần còn lại của hạn mức: nếu hạn mức chỉ còn đủ cho vài con thì chỉ vài con đó được tính điểm.
+- Cột **Điểm tối đa mỗi ngày** trong bảng là điểm một đảo thu được nếu dùng hết hạn mức của loại đó, bằng điểm mỗi vật phẩm nhân giới hạn.
+
+## Xem bảng xếp hạng
+
+Gõ `/topdao` hoặc mở bảng xếp hạng trong menu `/conghien`. Bảng hiện 10 đảo đứng đầu: tên đảo, chủ đảo, điểm cống hiến và những người góp nhiều nhất. Bấm vào một đảo để xem nguồn điểm của đảo đó trong mùa.
+
+## Phần thưởng top
+
+Phần thưởng của 10 hạng đầu như bảng dưới.
+
+<IslandTop server="sky-dungeon" section="ranking" />
