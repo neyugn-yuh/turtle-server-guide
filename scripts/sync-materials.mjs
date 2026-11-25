@@ -238,6 +238,8 @@ for (const category of categories) {
 			cost: recipe.cost && typeof recipe.cost === 'object' ? { currency: String(recipe.cost.currency ?? ''), amount: Number(recipe.cost.amount ?? 0) } : null,
 		};
 		for (const ref of made) result.get(ref.id).recipes.push(row);
+		// the grade upgrade of equipment (tang<N>_doido) has one recipe per kind and step: the sword recipes stand for all of them
+		if (/^tang\d+_doido$/.test(category) && !file.startsWith('kiem_')) continue;
 		for (const ref of used) result.get(ref.id).uses.push(row);
 	}
 }

@@ -148,6 +148,13 @@
 					},
 					"items": [
 						{
+							"item": "Lõi Sói Silverback",
+							"min": 1,
+							"max": 1,
+							"chance": 100,
+							"reach": 50
+						},
+						{
 							"item": "Ma Thạch Phổ Thông",
 							"min": 1,
 							"max": 1,
@@ -333,6 +340,13 @@
 						"reach": 50
 					},
 					"items": [
+						{
+							"item": "Lõi Nhện Chúa Arachne",
+							"min": 1,
+							"max": 1,
+							"chance": 100,
+							"reach": 50
+						},
 						{
 							"item": "Ma Thạch Phổ Thông",
 							"min": 1,
@@ -557,6 +571,13 @@
 					},
 					"items": [
 						{
+							"item": "Lõi Kiến Chúa",
+							"min": 1,
+							"max": 1,
+							"chance": 100,
+							"reach": 50
+						},
+						{
 							"item": "Ma Thạch Phổ Thông",
 							"min": 1,
 							"max": 1,
@@ -711,6 +732,13 @@
 						"reach": 50
 					},
 					"items": [
+						{
+							"item": "Lõi Ám Ảnh Sát Thủ",
+							"min": 1,
+							"max": 1,
+							"chance": 100,
+							"reach": 50
+						},
 						{
 							"item": "Ma Thạch Phổ Thông",
 							"min": 1,
@@ -875,6 +903,13 @@
 						"reach": 50
 					},
 					"items": [
+						{
+							"item": "Lõi Minotaur Asterius",
+							"min": 1,
+							"max": 1,
+							"chance": 100,
+							"reach": 50
+						},
 						{
 							"item": "Ma Thạch Tinh Luyện",
 							"min": 1,
@@ -1045,6 +1080,13 @@
 					},
 					"items": [
 						{
+							"item": "Lõi Thủy Quái Hydra",
+							"min": 1,
+							"max": 1,
+							"chance": 100,
+							"reach": 50
+						},
+						{
 							"item": "Ma Thạch Tinh Luyện",
 							"min": 1,
 							"max": 1,
@@ -1209,6 +1251,13 @@
 					},
 					"items": [
 						{
+							"item": "Lõi Quỷ Khuyển Cerberus",
+							"min": 1,
+							"max": 1,
+							"chance": 100,
+							"reach": 50
+						},
+						{
 							"item": "Ma Thạch Tinh Luyện",
 							"min": 1,
 							"max": 1,
@@ -1357,6 +1406,13 @@
 					},
 					"items": [
 						{
+							"item": "Lõi Tiểu Long",
+							"min": 1,
+							"max": 1,
+							"chance": 100,
+							"reach": 50
+						},
+						{
 							"item": "Ma Thạch Tinh Luyện",
 							"min": 1,
 							"max": 1,
@@ -1500,6 +1556,13 @@
 						"reach": 50
 					},
 					"items": [
+						{
+							"item": "Lõi Đại Vương Tinh Thể",
+							"min": 1,
+							"max": 1,
+							"chance": 100,
+							"reach": 50
+						},
 						{
 							"item": "Ma Thạch Cao Cấp",
 							"min": 1,
@@ -1661,6 +1724,13 @@
 					},
 					"items": [
 						{
+							"item": "Lõi Goliath Cổng 10",
+							"min": 1,
+							"max": 1,
+							"chance": 100,
+							"reach": 50
+						},
+						{
 							"item": "Ma Thạch Cao Cấp",
 							"min": 1,
 							"max": 1,
@@ -1806,6 +1876,13 @@
 					},
 					"items": [
 						{
+							"item": "Lõi Goliath Đen",
+							"min": 1,
+							"max": 1,
+							"chance": 100,
+							"reach": 50
+						},
+						{
 							"item": "Ma Thạch Cao Cấp",
 							"min": 1,
 							"max": 1,
@@ -1950,6 +2027,13 @@
 					},
 					"items": [
 						{
+							"item": "Lõi Hải Xà Leviathan",
+							"min": 1,
+							"max": 1,
+							"chance": 100,
+							"reach": 50
+						},
+						{
 							"item": "Ma Thạch Hiếm",
 							"min": 1,
 							"max": 1,
@@ -2085,6 +2169,13 @@
 						"reach": 50
 					},
 					"items": [
+						{
+							"item": "Lõi Hắc Vương Udaeus",
+							"min": 1,
+							"max": 1,
+							"chance": 100,
+							"reach": 50
+						},
 						{
 							"item": "Ma Thạch Hiếm",
 							"min": 1,
@@ -2232,6 +2323,13 @@
 						"reach": 50
 					},
 					"items": [
+						{
+							"item": "Lõi Quản Ngục Tử Thần",
+							"min": 1,
+							"max": 1,
+							"chance": 100,
+							"reach": 50
+						},
 						{
 							"item": "Ma Thạch Hiếm",
 							"min": 1,
@@ -2420,6 +2518,13 @@
 						"reach": 50
 					},
 					"items": [
+						{
+							"item": "Lõi Ma Nhãn Balor",
+							"min": 1,
+							"max": 1,
+							"chance": 100,
+							"reach": 50
+						},
 						{
 							"item": "Ma Thạch Hiếm",
 							"min": 1,

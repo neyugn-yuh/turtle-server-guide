@@ -47,7 +47,88 @@
 					"QUANVUONG": 4.8,
 					"DEVUONG": 0.4
 				}
-			}
+			},
+			"upgrades": [
+				{
+					"from": "tanbinh",
+					"to": "chienbinh",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "chienbinh",
+					"to": "kysi",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "kysi",
+					"to": "lanhchua",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "lanhchua",
+					"to": "quanvuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 8
+						}
+					]
+				},
+				{
+					"from": "quanvuong",
+					"to": "devuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Sói Silverback",
+							"amount": 1
+						}
+					]
+				}
+			]
 		},
 		{
 			"n": 2,
@@ -64,7 +145,88 @@
 					"QUANVUONG": 4.8,
 					"DEVUONG": 0.4
 				}
-			}
+			},
+			"upgrades": [
+				{
+					"from": "tanbinh",
+					"to": "chienbinh",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "chienbinh",
+					"to": "kysi",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "kysi",
+					"to": "lanhchua",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "lanhchua",
+					"to": "quanvuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 8
+						}
+					]
+				},
+				{
+					"from": "quanvuong",
+					"to": "devuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Nhện Chúa Arachne",
+							"amount": 1
+						}
+					]
+				}
+			]
 		},
 		{
 			"n": 3,
@@ -81,7 +243,88 @@
 					"QUANVUONG": 4.8,
 					"DEVUONG": 0.4
 				}
-			}
+			},
+			"upgrades": [
+				{
+					"from": "tanbinh",
+					"to": "chienbinh",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Than Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "chienbinh",
+					"to": "kysi",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Than Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "kysi",
+					"to": "lanhchua",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Than Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "lanhchua",
+					"to": "quanvuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Than Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 8
+						}
+					]
+				},
+				{
+					"from": "quanvuong",
+					"to": "devuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Than Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Kiến Chúa",
+							"amount": 1
+						}
+					]
+				}
+			]
 		},
 		{
 			"n": 4,
@@ -98,7 +341,88 @@
 					"QUANVUONG": 4.8,
 					"DEVUONG": 0.4
 				}
-			}
+			},
+			"upgrades": [
+				{
+					"from": "tanbinh",
+					"to": "chienbinh",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Than Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "chienbinh",
+					"to": "kysi",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Than Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "kysi",
+					"to": "lanhchua",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Than Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "lanhchua",
+					"to": "quanvuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Than Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 8
+						}
+					]
+				},
+				{
+					"from": "quanvuong",
+					"to": "devuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Than Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Ám Ảnh Sát Thủ",
+							"amount": 1
+						}
+					]
+				}
+			]
 		},
 		{
 			"n": 5,
@@ -115,7 +439,88 @@
 					"QUANVUONG": 4.8,
 					"DEVUONG": 0.4
 				}
-			}
+			},
+			"upgrades": [
+				{
+					"from": "tanbinh",
+					"to": "chienbinh",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đồng Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "chienbinh",
+					"to": "kysi",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đồng Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "kysi",
+					"to": "lanhchua",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đồng Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "lanhchua",
+					"to": "quanvuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đồng Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 8
+						}
+					]
+				},
+				{
+					"from": "quanvuong",
+					"to": "devuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đồng Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Minotaur Asterius",
+							"amount": 1
+						}
+					]
+				}
+			]
 		},
 		{
 			"n": 6,
@@ -132,7 +537,88 @@
 					"QUANVUONG": 4.8,
 					"DEVUONG": 0.4
 				}
-			}
+			},
+			"upgrades": [
+				{
+					"from": "tanbinh",
+					"to": "chienbinh",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Sắt Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "chienbinh",
+					"to": "kysi",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Sắt Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "kysi",
+					"to": "lanhchua",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Sắt Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "lanhchua",
+					"to": "quanvuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Sắt Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 8
+						}
+					]
+				},
+				{
+					"from": "quanvuong",
+					"to": "devuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Sắt Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Thủy Quái Hydra",
+							"amount": 1
+						}
+					]
+				}
+			]
 		},
 		{
 			"n": 7,
@@ -149,7 +635,88 @@
 					"QUANVUONG": 4.8,
 					"DEVUONG": 0.4
 				}
-			}
+			},
+			"upgrades": [
+				{
+					"from": "tanbinh",
+					"to": "chienbinh",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Sắt Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "chienbinh",
+					"to": "kysi",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Sắt Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "kysi",
+					"to": "lanhchua",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Sắt Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "lanhchua",
+					"to": "quanvuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Sắt Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 8
+						}
+					]
+				},
+				{
+					"from": "quanvuong",
+					"to": "devuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Sắt Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Quỷ Khuyển Cerberus",
+							"amount": 1
+						}
+					]
+				}
+			]
 		},
 		{
 			"n": 8,
@@ -166,7 +733,88 @@
 					"QUANVUONG": 4.8,
 					"DEVUONG": 0.4
 				}
-			}
+			},
+			"upgrades": [
+				{
+					"from": "tanbinh",
+					"to": "chienbinh",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Vàng Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "chienbinh",
+					"to": "kysi",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Vàng Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "kysi",
+					"to": "lanhchua",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Vàng Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "lanhchua",
+					"to": "quanvuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Vàng Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 8
+						}
+					]
+				},
+				{
+					"from": "quanvuong",
+					"to": "devuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Vàng Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Tiểu Long",
+							"amount": 1
+						}
+					]
+				}
+			]
 		},
 		{
 			"n": 9,
@@ -183,7 +831,88 @@
 					"QUANVUONG": 4.8,
 					"DEVUONG": 0.4
 				}
-			}
+			},
+			"upgrades": [
+				{
+					"from": "tanbinh",
+					"to": "chienbinh",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Vàng Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "chienbinh",
+					"to": "kysi",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Vàng Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "kysi",
+					"to": "lanhchua",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Vàng Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "lanhchua",
+					"to": "quanvuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Vàng Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 8
+						}
+					]
+				},
+				{
+					"from": "quanvuong",
+					"to": "devuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Vàng Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Đại Vương Tinh Thể",
+							"amount": 1
+						}
+					]
+				}
+			]
 		},
 		{
 			"n": 10,
@@ -200,7 +929,88 @@
 					"QUANVUONG": 4.8,
 					"DEVUONG": 0.4
 				}
-			}
+			},
+			"upgrades": [
+				{
+					"from": "tanbinh",
+					"to": "chienbinh",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đá Đỏ Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "chienbinh",
+					"to": "kysi",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đá Đỏ Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "kysi",
+					"to": "lanhchua",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đá Đỏ Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "lanhchua",
+					"to": "quanvuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đá Đỏ Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 8
+						}
+					]
+				},
+				{
+					"from": "quanvuong",
+					"to": "devuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Đá Đỏ Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Goliath Cổng 10",
+							"amount": 1
+						}
+					]
+				}
+			]
 		},
 		{
 			"n": 11,
@@ -217,7 +1027,88 @@
 					"QUANVUONG": 4.8,
 					"DEVUONG": 0.4
 				}
-			}
+			},
+			"upgrades": [
+				{
+					"from": "tanbinh",
+					"to": "chienbinh",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "chienbinh",
+					"to": "kysi",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "kysi",
+					"to": "lanhchua",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "lanhchua",
+					"to": "quanvuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 8
+						}
+					]
+				},
+				{
+					"from": "quanvuong",
+					"to": "devuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Goliath Đen",
+							"amount": 1
+						}
+					]
+				}
+			]
 		},
 		{
 			"n": 12,
@@ -234,7 +1125,88 @@
 					"QUANVUONG": 4.8,
 					"DEVUONG": 0.4
 				}
-			}
+			},
+			"upgrades": [
+				{
+					"from": "tanbinh",
+					"to": "chienbinh",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "chienbinh",
+					"to": "kysi",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "kysi",
+					"to": "lanhchua",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "lanhchua",
+					"to": "quanvuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 8
+						}
+					]
+				},
+				{
+					"from": "quanvuong",
+					"to": "devuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Hải Xà Leviathan",
+							"amount": 1
+						}
+					]
+				}
+			]
 		},
 		{
 			"n": 13,
@@ -251,7 +1223,88 @@
 					"QUANVUONG": 4.8,
 					"DEVUONG": 0.4
 				}
-			}
+			},
+			"upgrades": [
+				{
+					"from": "tanbinh",
+					"to": "chienbinh",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "chienbinh",
+					"to": "kysi",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "kysi",
+					"to": "lanhchua",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "lanhchua",
+					"to": "quanvuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 8
+						}
+					]
+				},
+				{
+					"from": "quanvuong",
+					"to": "devuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Hắc Vương Udaeus",
+							"amount": 1
+						}
+					]
+				}
+			]
 		},
 		{
 			"n": 14,
@@ -268,7 +1321,88 @@
 					"QUANVUONG": 4.8,
 					"DEVUONG": 0.4
 				}
-			}
+			},
+			"upgrades": [
+				{
+					"from": "tanbinh",
+					"to": "chienbinh",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "chienbinh",
+					"to": "kysi",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "kysi",
+					"to": "lanhchua",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "lanhchua",
+					"to": "quanvuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 8
+						}
+					]
+				},
+				{
+					"from": "quanvuong",
+					"to": "devuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Quản Ngục Tử Thần",
+							"amount": 1
+						}
+					]
+				}
+			]
 		},
 		{
 			"n": 15,
@@ -285,7 +1419,88 @@
 					"QUANVUONG": 4.8,
 					"DEVUONG": 0.4
 				}
-			}
+			},
+			"upgrades": [
+				{
+					"from": "tanbinh",
+					"to": "chienbinh",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Lục Bảo Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "chienbinh",
+					"to": "kysi",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Lục Bảo Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "kysi",
+					"to": "lanhchua",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Lục Bảo Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"amount": 16
+						}
+					]
+				},
+				{
+					"from": "lanhchua",
+					"to": "quanvuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Lục Bảo Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 8
+						}
+					]
+				},
+				{
+					"from": "quanvuong",
+					"to": "devuong",
+					"pieces": 5,
+					"items": [
+						{
+							"name": "Lục Bảo Tinh Luyện",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Ma Nhãn Balor",
+							"amount": 1
+						}
+					]
+				}
+			]
 		}
 	],
 	"upgrade": {

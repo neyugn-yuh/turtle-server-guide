@@ -182,6 +182,42 @@ for (let n = 1; n <= TIERS; n++) {
 	tiers.push({ n, name: titleCase(unSmallCaps(title)), forgeLevel: Number(category['forge-level'] ?? 0), crate: { currency: String(crate.currency), price: Number(crate.price), chances } });
 }
 
+// what the grade upgrade of every tier asks for: the sword recipes stand for all kinds (the config keeps them the same)
+const UPGRADE_STEPS = [
+	['tanbinh', 'chienbinh'],
+	['chienbinh', 'kysi'],
+	['kysi', 'lanhchua'],
+	['lanhchua', 'quanvuong'],
+	['quanvuong', 'devuong'],
+];
+const itemNames = {};
+/** Player-facing name of an MMOItems item "TYPE:ID", read from MMOItems/item/<type>.yml. */
+async function mmoName(type, id) {
+	const key = `${type}:${id}`;
+	if (!(key in itemNames)) {
+		const file = await readYaml(`MMOItems/item/${type.toLowerCase()}.yml`);
+		const name = plain(file[id]?.base?.name);
+		if (!name) fail(`the upgrade recipes ask for ${key}, which has no name in MMOItems/item/${type.toLowerCase()}.yml`);
+		itemNames[key] = name;
+	}
+	return itemNames[key];
+}
+for (const tier of tiers) {
+	tier.upgrades = [];
+	for (const [from, to] of UPGRADE_STEPS) {
+		const recipe = await readYaml(`TurtleCraft/recipes/tang${tier.n}_doido/kiem_${from}_to_${to}.yml`);
+		const [piece, ...rest] = recipe.ingredients ?? [];
+		if (!piece) fail(`tang${tier.n}_doido kiem_${from}_to_${to} has no ingredients`);
+		const items = [];
+		for (const ingredient of rest) {
+			const m = /^mmoitems:([A-Z_]+):([A-Z0-9_]+)$/.exec(String(ingredient.item));
+			if (!m) fail(`tang${tier.n}_doido kiem_${from}_to_${to}: ingredient ${ingredient.item} is not an MMOItems item`);
+			items.push({ name: await mmoName(m[1], m[2]), amount: Number(ingredient.amount) });
+		}
+		tier.upgrades.push({ from, to, pieces: Number(piece.amount), items });
+	}
+}
+
 // pieces needed for the next grade (same in every tier: read the first)
 const recipe = await readYaml('TurtleCraft/recipes/tang1_doido/kiem_tanbinh_to_chienbinh.yml');
 const piecesPerGrade = Number(recipe.ingredients?.[0]?.amount);

@@ -40,7 +40,7 @@ const tiers: any[] = group.tiers;
 				{gradeChances.map((g: any, i: number) => <>{i > 0 && ', '}{g.name} {num(g.chance)}%</>)}.
 			</li>
 			<li>
-				<strong>Nâng phẩm cấp:</strong> trong <code>/ecraft</code>, thể loại của tầng, đổi {data.upgrade.piecesPerGrade} món cùng loại và cùng phẩm cấp thành 1 món phẩm cấp kế tiếp. Từ tầng 2 cần xưởng rèn đảo đủ cấp (ghi ở từng tầng).
+				<strong>Nâng phẩm cấp:</strong> trong <code>/ecraft</code>, thể loại của tầng, ghép {data.upgrade.piecesPerGrade} món cùng loại và cùng phẩm cấp với Ma Thạch và quặng để ra 1 món phẩm cấp kế tiếp; bước lên Đế Vương cần thêm Lõi boss của tầng. Nguyên liệu từng bước ghi ở từng tầng. Từ tầng 2 cần xưởng rèn đảo đủ cấp.
 			</li>
 			<li>
 				<strong>Nâng cấp (+):</strong> mỗi cấp nâng cộng thêm {levelRise}% {kind === 'armor' ? 'máu và phòng thủ' : 'sát thương'}, cộng dồn. Cấp nâng tối đa tăng theo phẩm cấp (cột "Nâng cấp tối đa").
@@ -60,6 +60,31 @@ const tiers: any[] = group.tiers;
 						Rương tầng {tier.n}: {num(tier.crate.price)} {COIN(tier.crate.currency)}.
 						{tier.forgeLevel > 0 ? ` Nâng phẩm cấp cần xưởng rèn cấp ${tier.forgeLevel}.` : ' Nâng phẩm cấp không cần xưởng rèn.'}
 					</p>
+
+					<details class="eq-upgrade">
+						<summary>Nguyên liệu nâng phẩm cấp tầng {tier.n}</summary>
+						<table>
+							<thead>
+								<tr>
+									<th>Bước</th>
+									<th>Nguyên liệu</th>
+								</tr>
+							</thead>
+							<tbody>
+								{tier.upgrades.map((step: any) => (
+									<tr>
+										<td>
+											{gradeOf(step.from.toUpperCase())?.name} → {gradeOf(step.to.toUpperCase())?.name}
+										</td>
+										<td>
+											{step.pieces} món {gradeOf(step.from.toUpperCase())?.name}
+											{step.items.map((item: any) => <>{' + '}{item.amount} {item.name}</>)}
+										</td>
+									</tr>
+								))}
+							</tbody>
+						</table>
+					</details>
 
 					{kind !== 'armor' ? (
 						<>
