@@ -67,10 +67,21 @@ const materials: any[] = data.materials;
 
 				<h4>Công dụng</h4>
 				{
-					material.uses.length === 0 ? (
+					material.uses.length === 0 && material.upgrades.length === 0 ? (
 						<p class="ml-empty">—</p>
 					) : (
 						<ul class="ml-recipes">
+							{material.upgrades.map((entry: any) => (
+								<li>
+									<span class="ml-where">Nâng cấp đảo</span>
+									<span class="ml-line">
+										{entry.upgrade}, nộp ở:
+										{entry.levels.map((l: any) => (
+											<span class="ml-chip">Cấp {l.level}: {num(l.amount)} × {material.name}</span>
+										))}
+									</span>
+								</li>
+							))}
 							{material.uses.map((recipe: any) => (
 								<li>
 									<span class="ml-where">{recipe.category}</span>

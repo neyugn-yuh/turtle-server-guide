@@ -6,12 +6,14 @@
  * Files read:
  *   MMOItems/item/material.yml        the materials: id, name, base block
  *   MMOItems/item/<type>.yml          only to find the name of the other items in a recipe (type in lower case)
+ *   SD-Island/island-upgrades.yml     the island upgrade levels that ask for a material (type MATERIAL)
  *   TurtleCraft/categories.yml        the title of each recipe category
  *   TurtleCraft/recipes/<category>/*  the recipes: which make a material and which use it
  *
  * For every material the output lists
  *   recipes  the recipes whose result is the material (how to craft it)
  *   uses     the recipes that need the material as an ingredient (what it is for)
+ *   upgrades the island upgrade levels that ask the player to hand the material in
  * A material with neither is written with empty lists and the page shows it as empty.
  *
  * Where the files come from (one source per run):
@@ -179,7 +181,28 @@ async function describe(entries) {
 	return out;
 }
 
-const result = new Map(materials.map((m) => [m.id, { ...m, recipes: [], uses: [] }]));
+const result = new Map(materials.map((m) => [m.id, { ...m, recipes: [], uses: [], upgrades: [] }]));
+
+// island upgrades: which level of which upgrade asks for the material, and how many
+const UPGRADE_TITLES = { 'border-size': 'Diện tích đảo', 'members-limit': 'Thành viên đảo', 'minion-slots': 'Slot đặt minion', ore: 'Máy tạo quặng', 'dungeon-stats': 'Chỉ số dungeon', forge: 'Xưởng rèn' };
+const upgradeText = await source.read('SD-Island/island-upgrades.yml');
+const upgradeCategories = upgradeText ? (parse(upgradeText)?.categories ?? {}) : {};
+for (const [id, title] of Object.entries(UPGRADE_TITLES)) {
+	const category = upgradeCategories[id];
+	if (!category) continue;
+	const offset = Number(category['display-offset'] ?? 0) || 0;
+	const byMaterial = new Map();
+	for (const level of Object.keys(category.levels ?? {}).map(Number).sort((a, b) => a - b)) {
+		for (const [key, amount] of Object.entries(category.levels[String(level)]?.items ?? {})) {
+			const ref = mmoRef(`mmoitems:${key}`);
+			if (!ref || ref.type !== 'MATERIAL' || !wanted.has(ref.id)) continue;
+			if (!byMaterial.has(ref.id)) byMaterial.set(ref.id, []);
+			byMaterial.get(ref.id).push({ level: level + offset, amount: Number(amount) });
+		}
+	}
+	for (const [materialId, levels] of byMaterial) result.get(materialId).upgrades.push({ upgrade: title, levels });
+}
+
 const categories = (await source.list('TurtleCraft/recipes')).sort();
 for (const category of categories) {
 	const files = (await source.list(`TurtleCraft/recipes/${category}`)).filter((name) => /\.ya?ml$/i.test(name)).sort();

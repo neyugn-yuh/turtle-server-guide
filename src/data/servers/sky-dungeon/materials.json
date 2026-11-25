@@ -5,7 +5,80 @@
 			"name": "Đá Nền",
 			"icon": "deepslate",
 			"recipes": [],
-			"uses": []
+			"uses": [],
+			"upgrades": [
+				{
+					"upgrade": "Diện tích đảo",
+					"levels": [
+						{
+							"level": 2,
+							"amount": 4
+						},
+						{
+							"level": 3,
+							"amount": 16
+						},
+						{
+							"level": 4,
+							"amount": 64
+						},
+						{
+							"level": 5,
+							"amount": 256
+						},
+						{
+							"level": 6,
+							"amount": 1024
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "KHOAI_TAY_SIEU_CAP",
+			"name": "Khoai Tây Siêu Cấp",
+			"icon": "potato",
+			"recipes": [],
+			"uses": [],
+			"upgrades": [
+				{
+					"upgrade": "Slot đặt minion",
+					"levels": [
+						{
+							"level": 1,
+							"amount": 4
+						},
+						{
+							"level": 2,
+							"amount": 8
+						},
+						{
+							"level": 3,
+							"amount": 16
+						},
+						{
+							"level": 4,
+							"amount": 32
+						},
+						{
+							"level": 5,
+							"amount": 64
+						},
+						{
+							"level": 6,
+							"amount": 128
+						},
+						{
+							"level": 7,
+							"amount": 256
+						},
+						{
+							"level": 8,
+							"amount": 512
+						}
+					]
+				}
+			]
 		}
 	]
 }
