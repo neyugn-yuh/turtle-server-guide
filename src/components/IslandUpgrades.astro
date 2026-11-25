@@ -9,9 +9,11 @@ import { upgradeIcons } from '../data/island-upgrade-icons.mjs';
 
 interface Props {
 	server: string;
+	/** true: only the overview table (what each upgrade raises, and its top level) instead of the full tables */
+	summary?: boolean;
 }
 
-const { server } = Astro.props;
+const { server, summary = false } = Astro.props;
 const files = import.meta.glob('../data/servers/*/island-upgrades.json', { eager: true, import: 'default' }) as Record<string, any>;
 const data = files[`../data/servers/${server}/island-upgrades.json`];
 if (!data) throw new Error(`IslandUpgrades: no island-upgrades.json for server "${server}", run node scripts/sync-island-upgrades.mjs`);
@@ -75,6 +77,20 @@ const sections = data.upgrades.map((upgrade: any) => {
 	return { ...copy, id: upgrade.id, levels: upgrade.levels, totalMoney, totalItems, hasItems: Object.keys(totalItems).length > 0, baseLabel: first === 0 ? 'Mặc định' : `Cấp ${first - 1} (mặc định)`, icon: upgradeIcons[upgrade.id] };
 });
 
+// One line per upgrade for the overview table: where it starts and where the last level takes it.
+const raises: Record<string, (first: any, last: any, base: number) => string> = {
+	'border-size': (_f, last, base) => `Vùng đất được xây dựng: từ ${num(base * 2)} × ${num(base * 2)} lên ${num(last.value * 2)} × ${num(last.value * 2)} block`,
+	'members-limit': (_f, last, base) => `Số thành viên tối đa: từ ${num(base)} lên ${num(last.value)}`,
+	'minion-slots': (_f, last, base) => `Số slot đặt minion tối thiểu: từ ${num(base)} lên ${num(last.value)}`,
+	ore: (_f, last) => `Tỉ lệ quặng sinh ra: lên máy quặng cấp ${num(last.value)}`,
+	'dungeon-stats': (_f, last) => `Khi ở trong dungeon: ${Object.entries(last.stats).map(([stat, value]) => `${statName(stat).toLowerCase()} +${value}`).join(', ')}`,
+	forge: (_f, last) => `Mở khóa công thức chế tạo của Tầng 2 đến Tầng ${last.value + 1}`,
+};
+const overview = data.upgrades.map((upgrade: any) => {
+	const last = upgrade.levels[upgrade.levels.length - 1];
+	return { id: upgrade.id, title: text[upgrade.id].title, what: raises[upgrade.id](upgrade.levels[0], last, upgrade.baseValue), max: last.display, upgrades: upgrade.levels.length };
+});
+
 const OREC = [
 	['STONE', 'Đá'],
 	['COAL_ORE', 'Than'],
@@ -91,7 +107,23 @@ const percent = (n: number) => (n === 0 ? '–' : `${num(n)}%`);
 
 <div class="iu not-content">
 	{
-		sections.map((section: any) => (
+		summary && (
+			<div class="iu-scroll">
+				<table>
+					<thead>
+						<tr><th>Loại</th><th>Tăng gì</th><th>Cấp tối đa</th><th>Số lần nâng cấp</th></tr>
+					</thead>
+					<tbody>
+						{overview.map((row: any) => (
+							<tr><td>{row.title}</td><td>{row.what}</td><td>{row.max}</td><td>{row.upgrades}</td></tr>
+						))}
+					</tbody>
+				</table>
+			</div>
+		)
+	}
+	{
+		!summary && sections.map((section: any) => (
 			<section class="iu-section">
 				<h3 id={section.id}>
 					{section.icon && <img class="iu-icon" src={iconUrl(section.icon)} alt="" width="28" height="28" loading="lazy" onerror="this.hidden=true" />}
@@ -180,7 +212,7 @@ const percent = (n: number) => (n === 0 ? '–' : `${num(n)}%`);
 			</section>
 		))
 	}
-	<p class="iu-note">Giá tính bằng Tiền. Quặng và khối phải nộp lấy từ túi của người bấm nâng cấp.</p>
+	{!summary && <p class="iu-note">Giá tính bằng Tiền. Quặng và khối phải nộp lấy từ túi của người bấm nâng cấp.</p>}
 </div>
 
 <style>
