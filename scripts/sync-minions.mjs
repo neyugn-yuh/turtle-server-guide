@@ -98,6 +98,15 @@ function number(value, where) {
 	return n;
 }
 
+/** Material name of a product (used to pick its picture). Not an error when absent: the page then shows no picture. */
+function iconOf(product, where) {
+	const type = product.item?.type;
+	if (type === undefined) return '';
+	const name = String(type).toLowerCase();
+	if (!/^[a-z0-9_]+$/.test(name)) throw new Error(`${where}.item.type is not a material name: ${type}`);
+	return name;
+}
+
 function readProducts(map, where) {
 	const entries = Object.entries(map ?? {});
 	if (!entries.length) throw new Error(`${where} has no products`);
@@ -105,6 +114,7 @@ function readProducts(map, where) {
 		name: plain(p.display) || String(p.item?.type ?? key).replace(/_/g, ' '),
 		chance: number(p.chance ?? 1, `${where}.${key}.chance`),
 		amount: String(p.amount ?? '1'),
+		icon: iconOf(p, `${where}.${key}`),
 	}));
 }
 
@@ -138,7 +148,8 @@ function readMinion({ id, text }) {
 	}
 	groups.push({ from, to: levels[levels.length - 1], products: current });
 
-	return { id, name: plain(data.name).replace(/\s*$/, '') || id, category: data.category, tiers, products: groups };
+	const icon = groups[0].products.find((p) => p.icon)?.icon ?? '';
+	return { id, name: plain(data.name).replace(/\s*$/, '') || id, category: data.category, icon, tiers, products: groups };
 }
 
 // ---------- main ----------

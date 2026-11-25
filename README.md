@@ -14,6 +14,7 @@ Player guide for the Turtle Minecraft servers (GitHub org MineTurtleVN), built w
 | `npm run dev`           | Start the dev server at `localhost:4321`                            |
 | `npm run build`         | Build to `./dist/` (also checks links and every menu spec)          |
 | `npm run sync:minions`  | Rewrite the minion data from a server config (see "Sync with the server config") |
+| `node scripts/fetch-minion-icons.mjs` | Download the Minecraft item pictures the minion list shows into `public/minions/` (run after a sync adds a product) |
 | `npm run deploy`        | Build and deploy to Cloudflare Pages                                |
 
 Menu specs are read when a page is built: restart `npm run dev` after editing a spec.
@@ -33,6 +34,8 @@ public/gui-viewer.js                   opens the detail box on hover, tap or foc
 src/styles/gui.css                     look of the menu and of the detail box
 src/components/                        GuideCards, ServerCards, MinionList
 scripts/sync-minions.mjs               reads minion configs and writes src/data/servers/<server>/minions.json
+scripts/fetch-minion-icons.mjs         downloads the item picture of every product into public/minions/<material>.png
+public/minions/                        Minecraft item textures (from PrismarineJS/minecraft-assets), shown in the minion list
 .github/workflows/sync-and-deploy.yml  syncs with the server and deploys on a schedule
 ```
 
@@ -69,7 +72,7 @@ To sync another kind of config (fuels, storages, ...), write a second script wit
 
 A menu is drawn from a spec and shown on the Menus page. Hovering a slot (tapping it on a phone, focusing it with the keyboard) opens a box in the style of the game's item tooltip: the slot name, what kind of slot it is (button, item slot, display only), what it does and where it is. Slots that mean the same thing (for example the locked storage slots) light up together.
 
-The picture is a **schematic**, not a screenshot: slot positions, titles and button names come from the game; the textures do not (Mojang's textures are not redistributed), an item is a colored block chosen from its material name.
+The picture is a **schematic**, not a screenshot: slot positions, titles and button names come from the game; the textures do not, an item is a colored block chosen from its material name. (The minion list is different: it shows real Minecraft item textures, see `public/minions/`.)
 
 Reference a menu from `menus.md` with an image line, optionally followed by an italic caption. The plugin swaps both for the interactive menu:
 
