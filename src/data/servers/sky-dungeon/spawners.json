@@ -1,6 +1,6 @@
 {
 	"spawnerMaxStack": 5000,
-	"currency": "money",
+	"currency": "mobcoins",
 	"mobs": [
 		{
 			"id": "ZOMBIE",
@@ -28,6 +28,30 @@
 					"dropBonus": 0,
 					"spawnSpeed": 0,
 					"cost": 0
+				},
+				{
+					"level": 2,
+					"dropBonus": 10,
+					"spawnSpeed": 10,
+					"cost": 100
+				},
+				{
+					"level": 3,
+					"dropBonus": 25,
+					"spawnSpeed": 20,
+					"cost": 500
+				},
+				{
+					"level": 4,
+					"dropBonus": 50,
+					"spawnSpeed": 35,
+					"cost": 2000
+				},
+				{
+					"level": 5,
+					"dropBonus": 100,
+					"spawnSpeed": 50,
+					"cost": 10000
 				}
 			],
 			"perks": []
@@ -65,6 +89,30 @@
 					"dropBonus": 0,
 					"spawnSpeed": 0,
 					"cost": 0
+				},
+				{
+					"level": 2,
+					"dropBonus": 10,
+					"spawnSpeed": 10,
+					"cost": 100
+				},
+				{
+					"level": 3,
+					"dropBonus": 25,
+					"spawnSpeed": 20,
+					"cost": 500
+				},
+				{
+					"level": 4,
+					"dropBonus": 50,
+					"spawnSpeed": 35,
+					"cost": 2000
+				},
+				{
+					"level": 5,
+					"dropBonus": 100,
+					"spawnSpeed": 50,
+					"cost": 10000
 				}
 			],
 			"perks": []
@@ -102,6 +150,30 @@
 					"dropBonus": 0,
 					"spawnSpeed": 0,
 					"cost": 0
+				},
+				{
+					"level": 2,
+					"dropBonus": 10,
+					"spawnSpeed": 10,
+					"cost": 100
+				},
+				{
+					"level": 3,
+					"dropBonus": 25,
+					"spawnSpeed": 20,
+					"cost": 500
+				},
+				{
+					"level": 4,
+					"dropBonus": 50,
+					"spawnSpeed": 35,
+					"cost": 2000
+				},
+				{
+					"level": 5,
+					"dropBonus": 100,
+					"spawnSpeed": 50,
+					"cost": 10000
 				}
 			],
 			"perks": []
@@ -139,6 +211,30 @@
 					"dropBonus": 0,
 					"spawnSpeed": 0,
 					"cost": 0
+				},
+				{
+					"level": 2,
+					"dropBonus": 10,
+					"spawnSpeed": 10,
+					"cost": 100
+				},
+				{
+					"level": 3,
+					"dropBonus": 25,
+					"spawnSpeed": 20,
+					"cost": 500
+				},
+				{
+					"level": 4,
+					"dropBonus": 50,
+					"spawnSpeed": 35,
+					"cost": 2000
+				},
+				{
+					"level": 5,
+					"dropBonus": 100,
+					"spawnSpeed": 50,
+					"cost": 10000
 				}
 			],
 			"perks": []
@@ -169,6 +265,30 @@
 					"dropBonus": 0,
 					"spawnSpeed": 0,
 					"cost": 0
+				},
+				{
+					"level": 2,
+					"dropBonus": 10,
+					"spawnSpeed": 10,
+					"cost": 100
+				},
+				{
+					"level": 3,
+					"dropBonus": 25,
+					"spawnSpeed": 20,
+					"cost": 500
+				},
+				{
+					"level": 4,
+					"dropBonus": 50,
+					"spawnSpeed": 35,
+					"cost": 2000
+				},
+				{
+					"level": 5,
+					"dropBonus": 100,
+					"spawnSpeed": 50,
+					"cost": 10000
 				}
 			],
 			"perks": []
@@ -206,6 +326,30 @@
 					"dropBonus": 0,
 					"spawnSpeed": 0,
 					"cost": 0
+				},
+				{
+					"level": 2,
+					"dropBonus": 10,
+					"spawnSpeed": 10,
+					"cost": 100
+				},
+				{
+					"level": 3,
+					"dropBonus": 25,
+					"spawnSpeed": 20,
+					"cost": 500
+				},
+				{
+					"level": 4,
+					"dropBonus": 50,
+					"spawnSpeed": 35,
+					"cost": 2000
+				},
+				{
+					"level": 5,
+					"dropBonus": 100,
+					"spawnSpeed": 50,
+					"cost": 10000
 				}
 			],
 			"perks": []
@@ -243,6 +387,30 @@
 					"dropBonus": 0,
 					"spawnSpeed": 0,
 					"cost": 0
+				},
+				{
+					"level": 2,
+					"dropBonus": 10,
+					"spawnSpeed": 10,
+					"cost": 100
+				},
+				{
+					"level": 3,
+					"dropBonus": 25,
+					"spawnSpeed": 20,
+					"cost": 500
+				},
+				{
+					"level": 4,
+					"dropBonus": 50,
+					"spawnSpeed": 35,
+					"cost": 2000
+				},
+				{
+					"level": 5,
+					"dropBonus": 100,
+					"spawnSpeed": 50,
+					"cost": 10000
 				}
 			],
 			"perks": []
@@ -273,6 +441,30 @@
 					"dropBonus": 0,
 					"spawnSpeed": 0,
 					"cost": 0
+				},
+				{
+					"level": 2,
+					"dropBonus": 10,
+					"spawnSpeed": 10,
+					"cost": 100
+				},
+				{
+					"level": 3,
+					"dropBonus": 25,
+					"spawnSpeed": 20,
+					"cost": 500
+				},
+				{
+					"level": 4,
+					"dropBonus": 50,
+					"spawnSpeed": 35,
+					"cost": 2000
+				},
+				{
+					"level": 5,
+					"dropBonus": 100,
+					"spawnSpeed": 50,
+					"cost": 10000
 				}
 			],
 			"perks": []
@@ -303,6 +495,30 @@
 					"dropBonus": 0,
 					"spawnSpeed": 0,
 					"cost": 0
+				},
+				{
+					"level": 2,
+					"dropBonus": 10,
+					"spawnSpeed": 10,
+					"cost": 100
+				},
+				{
+					"level": 3,
+					"dropBonus": 25,
+					"spawnSpeed": 20,
+					"cost": 500
+				},
+				{
+					"level": 4,
+					"dropBonus": 50,
+					"spawnSpeed": 35,
+					"cost": 2000
+				},
+				{
+					"level": 5,
+					"dropBonus": 100,
+					"spawnSpeed": 50,
+					"cost": 10000
 				}
 			],
 			"perks": []
@@ -333,6 +549,30 @@
 					"dropBonus": 0,
 					"spawnSpeed": 0,
 					"cost": 0
+				},
+				{
+					"level": 2,
+					"dropBonus": 10,
+					"spawnSpeed": 10,
+					"cost": 100
+				},
+				{
+					"level": 3,
+					"dropBonus": 25,
+					"spawnSpeed": 20,
+					"cost": 500
+				},
+				{
+					"level": 4,
+					"dropBonus": 50,
+					"spawnSpeed": 35,
+					"cost": 2000
+				},
+				{
+					"level": 5,
+					"dropBonus": 100,
+					"spawnSpeed": 50,
+					"cost": 10000
 				}
 			],
 			"perks": []
@@ -377,6 +617,30 @@
 					"dropBonus": 0,
 					"spawnSpeed": 0,
 					"cost": 0
+				},
+				{
+					"level": 2,
+					"dropBonus": 10,
+					"spawnSpeed": 10,
+					"cost": 100
+				},
+				{
+					"level": 3,
+					"dropBonus": 25,
+					"spawnSpeed": 20,
+					"cost": 500
+				},
+				{
+					"level": 4,
+					"dropBonus": 50,
+					"spawnSpeed": 35,
+					"cost": 2000
+				},
+				{
+					"level": 5,
+					"dropBonus": 100,
+					"spawnSpeed": 50,
+					"cost": 10000
 				}
 			],
 			"perks": []
