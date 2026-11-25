@@ -4,6 +4,7 @@
 			"id": "DA_NEN",
 			"name": "Đá Nền",
 			"icon": "deepslate",
+			"category": "dungeon",
 			"recipes": [],
 			"uses": [],
 			"upgrades": [
@@ -38,6 +39,7 @@
 			"id": "KHOAI_TAY_SIEU_CAP",
 			"name": "Khoai Tây Siêu Cấp",
 			"icon": "potato",
+			"category": "nong-san",
 			"recipes": [],
 			"uses": [],
 			"upgrades": [
@@ -84,6 +86,7 @@
 			"id": "DA_CUOI_TINH_LUYEN",
 			"name": "Đá Cuội Tinh Luyện",
 			"icon": "cobblestone",
+			"category": "khoang-san",
 			"recipes": [],
 			"uses": [],
 			"upgrades": [
@@ -102,6 +105,7 @@
 			"id": "THAN_TINH_LUYEN",
 			"name": "Than Tinh Luyện",
 			"icon": "coal",
+			"category": "khoang-san",
 			"recipes": [],
 			"uses": [],
 			"upgrades": [
@@ -120,6 +124,7 @@
 			"id": "DONG_TINH_LUYEN",
 			"name": "Đồng Tinh Luyện",
 			"icon": "copper_ingot",
+			"category": "khoang-san",
 			"recipes": [],
 			"uses": [],
 			"upgrades": [
@@ -138,6 +143,7 @@
 			"id": "SAT_TINH_LUYEN",
 			"name": "Sắt Tinh Luyện",
 			"icon": "iron_ingot",
+			"category": "khoang-san",
 			"recipes": [],
 			"uses": [],
 			"upgrades": [
@@ -156,6 +162,7 @@
 			"id": "VANG_TINH_LUYEN",
 			"name": "Vàng Tinh Luyện",
 			"icon": "gold_ingot",
+			"category": "khoang-san",
 			"recipes": [],
 			"uses": [],
 			"upgrades": [
@@ -174,6 +181,7 @@
 			"id": "DA_DO_TINH_LUYEN",
 			"name": "Đá Đỏ Tinh Luyện",
 			"icon": "redstone",
+			"category": "khoang-san",
 			"recipes": [],
 			"uses": [],
 			"upgrades": [
@@ -192,6 +200,7 @@
 			"id": "LUU_LY_TINH_LUYEN",
 			"name": "Lưu Ly Tinh Luyện",
 			"icon": "lapis_lazuli",
+			"category": "khoang-san",
 			"recipes": [],
 			"uses": [],
 			"upgrades": [
@@ -210,6 +219,7 @@
 			"id": "KIM_CUONG_TINH_LUYEN",
 			"name": "Kim Cương Tinh Luyện",
 			"icon": "diamond",
+			"category": "khoang-san",
 			"recipes": [],
 			"uses": [],
 			"upgrades": [
@@ -228,6 +238,7 @@
 			"id": "LUC_BAO_TINH_LUYEN",
 			"name": "Lục Bảo Tinh Luyện",
 			"icon": "emerald",
+			"category": "khoang-san",
 			"recipes": [],
 			"uses": [],
 			"upgrades": [

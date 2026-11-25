@@ -24,8 +24,8 @@ export const guides = [
 	{
 		slug: 'materials',
 		title: 'Nguyên liệu',
-		description: 'Danh sách nguyên liệu: chế tạo từ gì và dùng để làm gì.',
-		landing: 'list',
+		description: 'Nguyên liệu khoáng sản, nông sản và dungeon: chế tạo từ gì và dùng để làm gì.',
+		landing: 'khoang-san',
 	},
 	{
 		slug: 'spawners',

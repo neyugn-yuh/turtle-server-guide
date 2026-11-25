@@ -6,9 +6,11 @@
  */
 interface Props {
 	server: string;
+	/** only the materials of this group (id in src/data/material-categories.mjs); all when left out */
+	category?: string;
 }
 
-const { server } = Astro.props;
+const { server, category } = Astro.props;
 const files = import.meta.glob('../data/servers/*/materials.json', { eager: true, import: 'default' }) as Record<string, any>;
 const data = files[`../data/servers/${server}/materials.json`];
 if (!data) throw new Error(`MaterialList: no materials.json for server "${server}", run node scripts/sync-materials.mjs`);
@@ -19,7 +21,8 @@ const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 2 
 const CURRENCY: Record<string, string> = { money: 'Tiền' };
 const currency = (name: string) => CURRENCY[name.toLowerCase()] ?? name;
 
-const materials: any[] = data.materials;
+const materials: any[] = category ? data.materials.filter((m: any) => m.category === category) : data.materials;
+if (category && materials.length === 0) throw new Error(`MaterialList: no material in group "${category}"`);
 ---
 
 <div class="ml not-content">

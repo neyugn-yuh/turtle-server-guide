@@ -181,7 +181,19 @@ async function describe(entries) {
 	return out;
 }
 
-const result = new Map(materials.map((m) => [m.id, { ...m, recipes: [], uses: [], upgrades: [] }]));
+// group of each material (src/data/material-categories.mjs); every material must be in exactly one group
+const { materialCategories } = await import(pathToFileURL(join(ROOT, 'src/data/material-categories.mjs')).href);
+const categoryOf = new Map();
+for (const group of materialCategories) {
+	for (const id of group.ids) {
+		if (categoryOf.has(id)) fail(`${id} is in two groups of src/data/material-categories.mjs`);
+		categoryOf.set(id, group.id);
+	}
+}
+for (const m of materials) if (!categoryOf.has(m.id)) fail(`${m.id} is in no group: add it to src/data/material-categories.mjs`);
+for (const id of categoryOf.keys()) if (!wanted.has(id)) fail(`src/data/material-categories.mjs lists ${id}, which is not in MMOItems/item/material.yml`);
+
+const result = new Map(materials.map((m) => [m.id, { ...m, category: categoryOf.get(m.id), recipes: [], uses: [], upgrades: [] }]));
 
 // island upgrades: which level of which upgrade asks for the material, and how many
 const UPGRADE_TITLES = { 'border-size': 'Diện tích đảo', 'members-limit': 'Thành viên đảo', 'minion-slots': 'Slot đặt minion', ore: 'Máy tạo quặng', 'dungeon-stats': 'Chỉ số dungeon', forge: 'Xưởng rèn' };
