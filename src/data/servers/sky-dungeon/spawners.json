@@ -13,6 +13,7 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"price": 1170000,
 			"xp": {
 				"min": 5,
 				"max": 5,
@@ -97,6 +98,7 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"price": 1350000,
 			"xp": {
 				"min": 5,
 				"max": 5,
@@ -188,6 +190,7 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"price": 1620000,
 			"xp": {
 				"min": 5,
 				"max": 5,
@@ -279,6 +282,7 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"price": 756000,
 			"xp": {
 				"min": 1,
 				"max": 3,
@@ -370,6 +374,7 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"price": 540000,
 			"xp": {
 				"min": 1,
 				"max": 3,
@@ -454,6 +459,7 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"price": 650000,
 			"xp": {
 				"min": 1,
 				"max": 3,
@@ -545,6 +551,7 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"price": 400000,
 			"xp": {
 				"min": 1,
 				"max": 3,
@@ -636,6 +643,7 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"price": 1260000,
 			"xp": {
 				"min": 1,
 				"max": 4,
@@ -720,6 +728,7 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"price": 1530000,
 			"xp": {
 				"min": 5,
 				"max": 5,
@@ -804,6 +813,7 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"price": 1800000,
 			"xp": {
 				"min": 5,
 				"max": 5,
@@ -888,6 +898,7 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"price": 480000,
 			"xp": {
 				"min": 1,
 				"max": 3,

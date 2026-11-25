@@ -48,6 +48,7 @@ const FILES = {
 	upgrades: 'TurtleStacker/spawner-upgrades.yml',
 	perks: 'TurtleStacker/spawner-perks.yml',
 	config: 'TurtleStacker/config.yml',
+	menu: 'DeluxeMenus/gui_menus/shop_spawner.yml',
 };
 
 function fromDir(dir) {
@@ -119,6 +120,29 @@ function readXp(id, loot, where) {
 	return { min: Math.round(base[0] * multiplier), max: Math.round(base[1] * multiplier), bySize: XP_BY_SIZE.has(id) };
 }
 
+/**
+ * Buying prices from the spawner shop menu (DeluxeMenus/gui_menus/shop_spawner.yml). Each item's left click takes the price of 1 spawner
+ * ("eco take <player> <n>" then "turtlestacker give <player> <mob> 1"); the right click must take exactly 10 times that for 10.
+ * Returns { MOB: price }.
+ */
+function readPrices(menu) {
+	const prices = {};
+	for (const [key, item] of Object.entries(menu?.items ?? {})) {
+		const left = item?.left_click_commands ?? [];
+		const give = left.map((c) => String(c).match(/^\[console\]\s+turtlestacker give \S+ (\S+) 1$/i)).find(Boolean);
+		if (!give) continue;
+		const take = left.map((c) => String(c).match(/^\[console\]\s+eco take \S+ (\d+)$/i)).find(Boolean);
+		if (!take) throw new Error(`shop_spawner.yml ${key}: left click gives a spawner without an "eco take"`);
+		const mob = give[1].toUpperCase();
+		const price = Number(take[1]);
+		const right = (item.right_click_commands ?? []).map((c) => String(c).match(/^\[console\]\s+eco take \S+ (\d+)$/i)).find(Boolean);
+		if (!right || Number(right[1]) !== price * 10) throw new Error(`shop_spawner.yml ${key}: right click (x10) must take exactly 10 times ${price}`);
+		if (price <= 0) throw new Error(`shop_spawner.yml ${key}: price must be above 0`);
+		prices[mob] = price;
+	}
+	return prices;
+}
+
 function readTiers(levels, where) {
 	return Object.entries(levels ?? {})
 		.map(([level, tier]) => ({
@@ -130,7 +154,7 @@ function readTiers(levels, where) {
 		.sort((a, b) => a.level - b.level);
 }
 
-function readMob(id, data, upgrades, perks) {
+function readMob(id, data, upgrades, perks, price) {
 	const where = `entities.yml ${id}`;
 	if (!NAME.test(id)) throw new Error(`bad mob id ${id}`);
 	const loot = data?.loot ?? {};
@@ -149,6 +173,7 @@ function readMob(id, data, upgrades, perks) {
 		icon: SPAWNER_ICON,
 		maxStack: Number(data?.['max-stack'] ?? 100),
 		vanillaDrops: loot.vanilla !== false,
+		price: price ?? null,
 		xp: readXp(id, loot, where),
 		drops,
 		tiers,
@@ -196,7 +221,9 @@ try {
 	const upgrades = parse(files.upgrades) ?? {};
 	const perks = parse(files.perks) ?? {};
 	const config = parse(files.config) ?? {};
-	const mobs = Object.entries(entities.mobs ?? {}).map(([id, data]) => readMob(id, data, { levels: upgrades.levels, perMob: upgrades['per-mob'] }, perks));
+	const prices = readPrices(parse(files.menu) ?? {});
+	for (const mob of Object.keys(prices)) if (!(mob in (entities.mobs ?? {}))) throw new Error(`shop_spawner.yml sells ${mob}, which is not in TurtleStacker/entities.yml`);
+	const mobs = Object.entries(entities.mobs ?? {}).map(([id, data]) => readMob(id, data, { levels: upgrades.levels, perMob: upgrades['per-mob'] }, perks, prices[id]));
 	if (!mobs.length) throw new Error('entities.yml has no mobs');
 	output = JSON.stringify({ spawnerMaxStack: Number(config.spawner?.['max-stack'] ?? 0), currency: String(upgrades.currency ?? 'money'), spawnerBase: readSpawnerBase(leafText), mobs }, null, '\t') + '\n';
 } catch (error) {

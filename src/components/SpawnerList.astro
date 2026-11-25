@@ -48,7 +48,10 @@ const mobs: any[] = data.mobs;
 					Spawner {mob.name}
 					{mob.drops.length > 0 && !mob.vanillaDrops && <span class="sl-only">Mob này chỉ rơi đúng các vật phẩm trong bảng.</span>}
 				</h3>
-				<h4>Đồ rơi và kinh nghiệm khi giết</h4>
+				<p class="sl-buy">
+						Giá mua: {mob.price ? <><strong>{num(mob.price)}</strong> Tiền 💲 / spawner <span class="sl-buy-x10">(mua x10: {num(mob.price * 10)} Tiền 💲)</span></> : '—'}
+					</p>
+					<h4>Đồ rơi và kinh nghiệm khi giết</h4>
 				{
 					mob.drops.length === 0 ? (
 						mob.vanillaDrops ? (
@@ -154,6 +157,13 @@ const mobs: any[] = data.mobs;
 		margin: 1rem 0 0.25rem;
 		color: var(--sl-color-gray-2);
 		font-size: var(--sl-text-base);
+	}
+	.sl-buy {
+		margin: 0.5rem 0 0;
+	}
+	.sl-buy-x10 {
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-sm);
 	}
 	.sl-only {
 		margin-left: auto;

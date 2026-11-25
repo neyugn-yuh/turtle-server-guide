@@ -10,6 +10,10 @@ sidebar:
 
 Spawner sinh mob liên tục để bạn giết lấy đồ rơi. Mỗi loại mob có spawner riêng, và mỗi loại rơi những vật phẩm riêng với tỉ lệ riêng. Xem [Danh sách spawner](/sky-dungeon/spawners/list/) để biết spawner nào rơi gì, tỉ lệ bao nhiêu, và nâng cấp spawner cần gì.
 
+## Mua spawner
+
+Gõ `/shopspawner` để mở cửa hàng. Bấm **chuột trái** để mua 1 spawner, **chuột phải** để mua 10 (giá gấp 10 lần). Trả bằng **Tiền** 💲, túi cần còn ít nhất 1 ô trống. Giá từng loại ghi ở mục "Giá mua" trong [Danh sách spawner](/sky-dungeon/spawners/list/).
+
 ## Gộp spawner và gộp mob
 
 - Đặt các spawner **cùng loại** gần nhau thì chúng gộp thành một chồng, hiện số lượng phía trên. Muốn đặt riêng một spawner, giữ **Shift** khi đặt.
