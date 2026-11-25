@@ -18,7 +18,7 @@ const iconUrl = (name: string) => `${base}/minions/${name}.png`;
 // the face of the mob (scripts/fetch-mob-images.mjs); the shared spawner picture stands in when there is none
 const mobUrl = (id: string) => `${base}/mobs/${id.toLowerCase()}.png`;
 const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 2 });
-const CURRENCY: Record<string, string> = { money: 'Tiền', mobcoins: 'Mobcoins 💰' };
+const CURRENCY: Record<string, string> = { money: 'Tiền', mobcoins: 'Mobcoins' };
 const currency = CURRENCY[String(data.currency).toLowerCase()] ?? data.currency;
 const amount = (drop: any) => (drop.min === drop.max ? num(drop.min) : `${num(drop.min)}–${num(drop.max)}`);
 const xpText = (xp: any) => (xp.min === xp.max ? num(xp.min) : `${num(xp.min)}–${num(xp.max)}`);
@@ -80,7 +80,7 @@ const mobs: any[] = data.mobs;
 										<tr>
 											<td>
 												<img class="sl-icon-sm" src={iconUrl('gold_nugget')} alt="" width="20" height="20" loading="lazy" onerror="this.hidden=true" />
-												Mobcoins 💰
+												Mobcoins
 											</td>
 											<td>{num(mob.mobcoins.chance)}%</td>
 											<td>{amount(mob.mobcoins)}</td>
