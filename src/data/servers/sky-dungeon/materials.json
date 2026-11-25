@@ -79,6 +79,168 @@
 					]
 				}
 			]
+		},
+		{
+			"id": "DA_CUOI_TINH_LUYEN",
+			"name": "Đá Cuội Tinh Luyện",
+			"icon": "cobblestone",
+			"recipes": [],
+			"uses": [],
+			"upgrades": [
+				{
+					"upgrade": "Máy tạo quặng",
+					"levels": [
+						{
+							"level": 2,
+							"amount": 8
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "THAN_TINH_LUYEN",
+			"name": "Than Tinh Luyện",
+			"icon": "coal",
+			"recipes": [],
+			"uses": [],
+			"upgrades": [
+				{
+					"upgrade": "Máy tạo quặng",
+					"levels": [
+						{
+							"level": 3,
+							"amount": 8
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "DONG_TINH_LUYEN",
+			"name": "Đồng Tinh Luyện",
+			"icon": "copper_ingot",
+			"recipes": [],
+			"uses": [],
+			"upgrades": [
+				{
+					"upgrade": "Máy tạo quặng",
+					"levels": [
+						{
+							"level": 4,
+							"amount": 16
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "SAT_TINH_LUYEN",
+			"name": "Sắt Tinh Luyện",
+			"icon": "iron_ingot",
+			"recipes": [],
+			"uses": [],
+			"upgrades": [
+				{
+					"upgrade": "Máy tạo quặng",
+					"levels": [
+						{
+							"level": 5,
+							"amount": 16
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "VANG_TINH_LUYEN",
+			"name": "Vàng Tinh Luyện",
+			"icon": "gold_ingot",
+			"recipes": [],
+			"uses": [],
+			"upgrades": [
+				{
+					"upgrade": "Máy tạo quặng",
+					"levels": [
+						{
+							"level": 6,
+							"amount": 32
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "DA_DO_TINH_LUYEN",
+			"name": "Đá Đỏ Tinh Luyện",
+			"icon": "redstone",
+			"recipes": [],
+			"uses": [],
+			"upgrades": [
+				{
+					"upgrade": "Máy tạo quặng",
+					"levels": [
+						{
+							"level": 7,
+							"amount": 32
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "LUU_LY_TINH_LUYEN",
+			"name": "Lưu Ly Tinh Luyện",
+			"icon": "lapis_lazuli",
+			"recipes": [],
+			"uses": [],
+			"upgrades": [
+				{
+					"upgrade": "Máy tạo quặng",
+					"levels": [
+						{
+							"level": 8,
+							"amount": 48
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "KIM_CUONG_TINH_LUYEN",
+			"name": "Kim Cương Tinh Luyện",
+			"icon": "diamond",
+			"recipes": [],
+			"uses": [],
+			"upgrades": [
+				{
+					"upgrade": "Máy tạo quặng",
+					"levels": [
+						{
+							"level": 9,
+							"amount": 64
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "LUC_BAO_TINH_LUYEN",
+			"name": "Lục Bảo Tinh Luyện",
+			"icon": "emerald",
+			"recipes": [],
+			"uses": [],
+			"upgrades": [
+				{
+					"upgrade": "Máy tạo quặng",
+					"levels": [
+						{
+							"level": 10,
+							"amount": 64
+						}
+					]
+				}
+			]
 		}
 	]
 }

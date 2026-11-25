@@ -109,17 +109,18 @@ function readUpgrade(id, data) {
 			}
 			const slots = Object.values(items).reduce((sum, amount) => sum + Math.ceil(amount / 64), 0);
 			if (slots > 36) throw new Error(`${where} level ${level}: the items need ${slots} inventory slots, more than 36`);
-			return { level, display: level + offset, value: num(l.value, `${where} level ${level} value`), money: num(l.money ?? 0, `${where} level ${level} money`), items, stats };
+			const points = num(l.playerpoints ?? 0, `${where} level ${level} playerpoints`);
+			return { level, display: level + offset, value: num(l.value, `${where} level ${level} value`), money: num(l.money ?? 0, `${where} level ${level} money`), points, items, stats };
 		});
 	if (!levels.length) throw new Error(`${where} has no levels`);
 	return { id, baseValue: num(data['base-value'] ?? 0, `${where} base-value`), baseDisplay: offset, levels };
 }
 
-function readOre(text) {
+function readOre(text, levels) {
 	const generators = parse(text)?.generators;
 	if (!generators) throw new Error('ore-generators.yml has no generators');
 	const result = [];
-	const entries = [['default', 0], ...Array.from({ length: 12 }, (_, i) => [`level${i + 1}`, i + 1])];
+	const entries = [['default', 0], ...Array.from({ length: levels }, (_, i) => [`level${i + 1}`, i + 1])];
 	for (const [key, level] of entries) {
 		const random = generators[key]?.random;
 		if (!random) throw new Error(`ore-generators.yml has no generator "${key}"`);
@@ -144,7 +145,7 @@ try {
 	const source = parse(files.upgrades);
 	const upgrades = UPGRADES.map((id) => readUpgrade(id, source?.categories?.[id]));
 	const dungeonWorlds = (source['dungeon-worlds'] ?? []).map(String);
-	output = JSON.stringify({ upgrades, dungeonWorlds, ore: readOre(files.ore) }, null, '\t') + '\n';
+	output = JSON.stringify({ upgrades, dungeonWorlds, ore: readOre(files.ore, upgrades.find((u) => u.id === 'ore').levels.length) }, null, '\t') + '\n';
 } catch (error) {
 	fail(error.message);
 }

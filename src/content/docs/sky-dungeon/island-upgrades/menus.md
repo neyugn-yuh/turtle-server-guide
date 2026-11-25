@@ -26,7 +26,7 @@ Menu liệt kê mọi cấp của loại đó, theo hàng từ trái sang phải
 - **Biểu tượng của loại đó**: cấp kế tiếp, bấm được. Rê chuột để xem tiền và khối phải nộp.
 - **Thuốc nhuộm xám**: cấp chưa tới lượt, phải mua các cấp trước.
 
-Hình dưới là máy tạo quặng ở cấp 2, có 12 cấp.
+Hình dưới là máy tạo quặng ở cấp 2, có 10 cấp.
 
 ![Menu các cấp của máy tạo quặng](/gui/island-upgrades/levels)
 

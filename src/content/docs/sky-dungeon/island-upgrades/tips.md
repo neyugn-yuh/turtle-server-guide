@@ -10,7 +10,7 @@ sidebar:
 
 Gợi ý theo mục tiêu:
 
-- **Kiếm tiền sớm:** máy tạo quặng. Cấp 1 chỉ 10.000 tiền và các cấp đầu rất rẻ, nhưng đã bắt đầu có vàng.
+- **Kiếm tiền sớm:** máy tạo quặng. Các cấp đầu rẻ nhưng đã bắt đầu có vàng và quặng quý.
 - **Chơi cùng bạn bè:** thành viên đảo và diện tích đảo, hai loại này rẻ ở cấp đầu.
 - **Đi dungeon:** chỉ số dungeon, nhưng nên nâng cấp xưởng rèn để có đồ tốt trước.
 - **Làm nông, chăn nuôi, khai khoáng bằng minion:** slot đặt minion.

@@ -10,6 +10,7 @@
 					"display": 2,
 					"value": 50,
 					"money": 100000,
+					"points": 0,
 					"items": {
 						"MATERIAL:DA_NEN": 4
 					},
@@ -20,6 +21,7 @@
 					"display": 3,
 					"value": 75,
 					"money": 500000,
+					"points": 0,
 					"items": {
 						"MATERIAL:DA_NEN": 16
 					},
@@ -30,6 +32,7 @@
 					"display": 4,
 					"value": 100,
 					"money": 2500000,
+					"points": 0,
 					"items": {
 						"MATERIAL:DA_NEN": 64
 					},
@@ -40,6 +43,7 @@
 					"display": 5,
 					"value": 150,
 					"money": 10000000,
+					"points": 0,
 					"items": {
 						"MATERIAL:DA_NEN": 256
 					},
@@ -50,6 +54,7 @@
 					"display": 6,
 					"value": 200,
 					"money": 50000000,
+					"points": 0,
 					"items": {
 						"MATERIAL:DA_NEN": 1024
 					},
@@ -67,6 +72,7 @@
 					"display": 2,
 					"value": 8,
 					"money": 100000,
+					"points": 0,
 					"items": {},
 					"stats": {}
 				},
@@ -75,6 +81,7 @@
 					"display": 3,
 					"value": 16,
 					"money": 400000,
+					"points": 0,
 					"items": {},
 					"stats": {}
 				},
@@ -83,6 +90,7 @@
 					"display": 4,
 					"value": 32,
 					"money": 1500000,
+					"points": 0,
 					"items": {},
 					"stats": {}
 				},
@@ -91,6 +99,7 @@
 					"display": 5,
 					"value": 48,
 					"money": 4000000,
+					"points": 0,
 					"items": {},
 					"stats": {}
 				},
@@ -99,6 +108,7 @@
 					"display": 6,
 					"value": 64,
 					"money": 12000000,
+					"points": 0,
 					"items": {},
 					"stats": {}
 				}
@@ -114,6 +124,7 @@
 					"display": 1,
 					"value": 8,
 					"money": 1000000,
+					"points": 0,
 					"items": {
 						"MATERIAL:KHOAI_TAY_SIEU_CAP": 4
 					},
@@ -124,6 +135,7 @@
 					"display": 2,
 					"value": 12,
 					"money": 4000000,
+					"points": 0,
 					"items": {
 						"MATERIAL:KHOAI_TAY_SIEU_CAP": 8
 					},
@@ -134,6 +146,7 @@
 					"display": 3,
 					"value": 16,
 					"money": 10000000,
+					"points": 0,
 					"items": {
 						"MATERIAL:KHOAI_TAY_SIEU_CAP": 16
 					},
@@ -144,6 +157,7 @@
 					"display": 4,
 					"value": 20,
 					"money": 25000000,
+					"points": 0,
 					"items": {
 						"MATERIAL:KHOAI_TAY_SIEU_CAP": 32
 					},
@@ -154,6 +168,7 @@
 					"display": 5,
 					"value": 25,
 					"money": 50000000,
+					"points": 0,
 					"items": {
 						"MATERIAL:KHOAI_TAY_SIEU_CAP": 64
 					},
@@ -164,6 +179,7 @@
 					"display": 6,
 					"value": 30,
 					"money": 90000000,
+					"points": 0,
 					"items": {
 						"MATERIAL:KHOAI_TAY_SIEU_CAP": 128
 					},
@@ -174,6 +190,7 @@
 					"display": 7,
 					"value": 40,
 					"money": 130000000,
+					"points": 0,
 					"items": {
 						"MATERIAL:KHOAI_TAY_SIEU_CAP": 256
 					},
@@ -184,6 +201,7 @@
 					"display": 8,
 					"value": 50,
 					"money": 190000000,
+					"points": 0,
 					"items": {
 						"MATERIAL:KHOAI_TAY_SIEU_CAP": 512
 					},
@@ -200,7 +218,8 @@
 					"level": 1,
 					"display": 1,
 					"value": 1,
-					"money": 10000,
+					"money": 100000,
+					"points": 0,
 					"items": {},
 					"stats": {}
 				},
@@ -208,48 +227,65 @@
 					"level": 2,
 					"display": 2,
 					"value": 2,
-					"money": 250000,
-					"items": {},
+					"money": 400000,
+					"points": 0,
+					"items": {
+						"MATERIAL:DA_CUOI_TINH_LUYEN": 8
+					},
 					"stats": {}
 				},
 				{
 					"level": 3,
 					"display": 3,
 					"value": 3,
-					"money": 1000000,
-					"items": {},
+					"money": 1500000,
+					"points": 0,
+					"items": {
+						"MATERIAL:THAN_TINH_LUYEN": 8
+					},
 					"stats": {}
 				},
 				{
 					"level": 4,
 					"display": 4,
 					"value": 4,
-					"money": 2500000,
-					"items": {},
+					"money": 4000000,
+					"points": 0,
+					"items": {
+						"MATERIAL:DONG_TINH_LUYEN": 16
+					},
 					"stats": {}
 				},
 				{
 					"level": 5,
 					"display": 5,
 					"value": 5,
-					"money": 5000000,
-					"items": {},
+					"money": 9000000,
+					"points": 0,
+					"items": {
+						"MATERIAL:SAT_TINH_LUYEN": 16
+					},
 					"stats": {}
 				},
 				{
 					"level": 6,
 					"display": 6,
 					"value": 6,
-					"money": 10000000,
-					"items": {},
+					"money": 20000000,
+					"points": 0,
+					"items": {
+						"MATERIAL:VANG_TINH_LUYEN": 32
+					},
 					"stats": {}
 				},
 				{
 					"level": 7,
 					"display": 7,
 					"value": 7,
-					"money": 20000000,
+					"money": 50000000,
+					"points": 0,
 					"items": {
+						"MATERIAL:DA_DO_TINH_LUYEN": 32,
 						"GOLD_BLOCK": 64,
 						"DIAMOND_BLOCK": 16
 					},
@@ -259,8 +295,10 @@
 					"level": 8,
 					"display": 8,
 					"value": 8,
-					"money": 35000000,
+					"money": 115000000,
+					"points": 0,
 					"items": {
+						"MATERIAL:LUU_LY_TINH_LUYEN": 48,
 						"DIAMOND_BLOCK": 64,
 						"EMERALD_BLOCK": 32
 					},
@@ -270,8 +308,10 @@
 					"level": 9,
 					"display": 9,
 					"value": 9,
-					"money": 60000000,
+					"money": 250000000,
+					"points": 0,
 					"items": {
+						"MATERIAL:KIM_CUONG_TINH_LUYEN": 64,
 						"DIAMOND_BLOCK": 128,
 						"EMERALD_BLOCK": 64
 					},
@@ -281,32 +321,12 @@
 					"level": 10,
 					"display": 10,
 					"value": 10,
-					"money": 100000000,
+					"money": 550000000,
+					"points": 50,
 					"items": {
+						"MATERIAL:LUC_BAO_TINH_LUYEN": 64,
 						"DIAMOND_BLOCK": 256,
 						"EMERALD_BLOCK": 128
-					},
-					"stats": {}
-				},
-				{
-					"level": 11,
-					"display": 11,
-					"value": 11,
-					"money": 160000000,
-					"items": {
-						"DIAMOND_BLOCK": 512,
-						"EMERALD_BLOCK": 384
-					},
-					"stats": {}
-				},
-				{
-					"level": 12,
-					"display": 12,
-					"value": 12,
-					"money": 250000000,
-					"items": {
-						"DIAMOND_BLOCK": 768,
-						"EMERALD_BLOCK": 768
 					},
 					"stats": {}
 				}
@@ -322,6 +342,7 @@
 					"display": 1,
 					"value": 1,
 					"money": 1000000,
+					"points": 0,
 					"items": {},
 					"stats": {
 						"MAX_HEALTH": "3%",
@@ -334,6 +355,7 @@
 					"display": 2,
 					"value": 2,
 					"money": 3000000,
+					"points": 0,
 					"items": {},
 					"stats": {
 						"MAX_HEALTH": "6%",
@@ -346,6 +368,7 @@
 					"display": 3,
 					"value": 3,
 					"money": 8000000,
+					"points": 0,
 					"items": {},
 					"stats": {
 						"MAX_HEALTH": "9%",
@@ -358,6 +381,7 @@
 					"display": 4,
 					"value": 4,
 					"money": 20000000,
+					"points": 0,
 					"items": {},
 					"stats": {
 						"MAX_HEALTH": "12%",
@@ -370,6 +394,7 @@
 					"display": 5,
 					"value": 5,
 					"money": 45000000,
+					"points": 0,
 					"items": {},
 					"stats": {
 						"MAX_HEALTH": "15%",
@@ -389,6 +414,7 @@
 					"display": 1,
 					"value": 1,
 					"money": 100000,
+					"points": 0,
 					"items": {},
 					"stats": {}
 				},
@@ -397,6 +423,7 @@
 					"display": 2,
 					"value": 2,
 					"money": 250000,
+					"points": 0,
 					"items": {},
 					"stats": {}
 				},
@@ -405,6 +432,7 @@
 					"display": 3,
 					"value": 3,
 					"money": 500000,
+					"points": 0,
 					"items": {},
 					"stats": {}
 				},
@@ -413,6 +441,7 @@
 					"display": 4,
 					"value": 4,
 					"money": 1000000,
+					"points": 0,
 					"items": {},
 					"stats": {}
 				},
@@ -421,6 +450,7 @@
 					"display": 5,
 					"value": 5,
 					"money": 2000000,
+					"points": 0,
 					"items": {},
 					"stats": {}
 				},
@@ -429,6 +459,7 @@
 					"display": 6,
 					"value": 6,
 					"money": 4000000,
+					"points": 0,
 					"items": {},
 					"stats": {}
 				},
@@ -437,6 +468,7 @@
 					"display": 7,
 					"value": 7,
 					"money": 8000000,
+					"points": 0,
 					"items": {},
 					"stats": {}
 				},
@@ -445,6 +477,7 @@
 					"display": 8,
 					"value": 8,
 					"money": 15000000,
+					"points": 0,
 					"items": {
 						"IRON_BLOCK": 64
 					},
@@ -455,6 +488,7 @@
 					"display": 9,
 					"value": 9,
 					"money": 30000000,
+					"points": 0,
 					"items": {
 						"GOLD_BLOCK": 64
 					},
@@ -465,6 +499,7 @@
 					"display": 10,
 					"value": 10,
 					"money": 50000000,
+					"points": 0,
 					"items": {
 						"GOLD_BLOCK": 128,
 						"DIAMOND_BLOCK": 16
@@ -476,6 +511,7 @@
 					"display": 11,
 					"value": 11,
 					"money": 80000000,
+					"points": 0,
 					"items": {
 						"DIAMOND_BLOCK": 64
 					},
@@ -486,6 +522,7 @@
 					"display": 12,
 					"value": 12,
 					"money": 120000000,
+					"points": 0,
 					"items": {
 						"DIAMOND_BLOCK": 128,
 						"EMERALD_BLOCK": 32
@@ -497,6 +534,7 @@
 					"display": 13,
 					"value": 13,
 					"money": 180000000,
+					"points": 0,
 					"items": {
 						"DIAMOND_BLOCK": 256,
 						"EMERALD_BLOCK": 128
@@ -508,6 +546,7 @@
 					"display": 14,
 					"value": 14,
 					"money": 250000000,
+					"points": 0,
 					"items": {
 						"DIAMOND_BLOCK": 512,
 						"EMERALD_BLOCK": 256
@@ -652,30 +691,6 @@
 			"DIAMOND_ORE": 26,
 			"EMERALD_ORE": 23,
 			"BLOCKS": 30.12
-		},
-		{
-			"level": 11,
-			"STONE": 1.04,
-			"COAL_ORE": 1.04,
-			"IRON_ORE": 3.12,
-			"REDSTONE_ORE": 3.12,
-			"LAPIS_ORE": 3.12,
-			"GOLD_ORE": 7.28,
-			"DIAMOND_ORE": 23,
-			"EMERALD_ORE": 22,
-			"BLOCKS": 36.28
-		},
-		{
-			"level": 12,
-			"STONE": 0.92,
-			"COAL_ORE": 0.92,
-			"IRON_ORE": 2.76,
-			"REDSTONE_ORE": 2.76,
-			"LAPIS_ORE": 2.76,
-			"GOLD_ORE": 6.44,
-			"DIAMOND_ORE": 20,
-			"EMERALD_ORE": 21,
-			"BLOCKS": 42.44
 		}
 	]
 }

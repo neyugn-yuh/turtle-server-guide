@@ -83,27 +83,6 @@
       "role": "display",
       "desc": "Phải nâng cấp lần lượt từng cấp, chưa thể mua cấp này.",
       "n": 2
-    },
-    "22": {
-      "item": "GRAY_DYE",
-      "label": "Cấp chưa tới lượt",
-      "role": "display",
-      "desc": "Phải nâng cấp lần lượt từng cấp, chưa thể mua cấp này.",
-      "n": 2
-    },
-    "23": {
-      "item": "GRAY_DYE",
-      "label": "Cấp chưa tới lượt",
-      "role": "display",
-      "desc": "Phải nâng cấp lần lượt từng cấp, chưa thể mua cấp này.",
-      "n": 2
-    },
-    "24": {
-      "item": "GRAY_DYE",
-      "label": "Cấp chưa tới lượt",
-      "role": "display",
-      "desc": "Phải nâng cấp lần lượt từng cấp, chưa thể mua cấp này.",
-      "n": 2
     }
   }
 }

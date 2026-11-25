@@ -84,7 +84,8 @@ const sections = data.upgrades.map((upgrade: any) => {
 	const totalItems: Record<string, number> = {};
 	for (const level of upgrade.levels) for (const [material, amount] of Object.entries(level.items) as [string, number][]) totalItems[material] = (totalItems[material] ?? 0) + amount;
 	const first = upgrade.levels[0].display;
-	return { ...copy, id: upgrade.id, levels: upgrade.levels, totalMoney, totalItems, hasItems: Object.keys(totalItems).length > 0, baseLabel: first === 0 ? 'Mặc định' : `Cấp ${first - 1} (mặc định)`, icon: upgradeIcons[upgrade.id] };
+	const totalPoints = upgrade.levels.reduce((sum: number, l: any) => sum + (l.points ?? 0), 0);
+	return { ...copy, id: upgrade.id, levels: upgrade.levels, totalMoney, totalPoints, hasPoints: totalPoints > 0, totalItems, hasItems: Object.keys(totalItems).length > 0, baseLabel: first === 0 ? 'Mặc định' : `Cấp ${first - 1} (mặc định)`, icon: upgradeIcons[upgrade.id] };
 });
 
 // One line per upgrade for the overview table: where it starts and where the last level takes it.
@@ -147,6 +148,7 @@ const percent = (n: number) => (n === 0 ? '–' : `${num(n)}%`);
 								<th>Cấp</th>
 								<th>Nhận được</th>
 								<th>Tiền</th>
+								{section.hasPoints && <th>Xu</th>}
 								{section.hasItems && <th>Vật phẩm phải nộp</th>}
 							</tr>
 						</thead>
@@ -155,6 +157,7 @@ const percent = (n: number) => (n === 0 ? '–' : `${num(n)}%`);
 								<td>{section.baseLabel}</td>
 								<td>{section.base}</td>
 								<td>–</td>
+								{section.hasPoints && <td>–</td>}
 								{section.hasItems && <td>–</td>}
 							</tr>
 							{section.levels.map((level: any) => (
@@ -162,6 +165,7 @@ const percent = (n: number) => (n === 0 ? '–' : `${num(n)}%`);
 									<td>{level.display}</td>
 									<td>{section.effect(level)}</td>
 									<td>{num(level.money)}</td>
+									{section.hasPoints && <td>{level.points > 0 ? `${num(level.points)} ⛁` : '–'}</td>}
 									{section.hasItems && (
 										<td>
 											{Object.keys(level.items).length === 0
@@ -181,6 +185,7 @@ const percent = (n: number) => (n === 0 ? '–' : `${num(n)}%`);
 							<tr>
 								<td colspan="2">Tổng để lên cấp tối đa</td>
 								<td>{num(section.totalMoney)}</td>
+								{section.hasPoints && <td>{num(section.totalPoints)} ⛁</td>}
 								{section.hasItems && (
 									<td>
 										{Object.entries(section.totalItems).map(([material, amount]: [string, any]) => (
@@ -222,7 +227,7 @@ const percent = (n: number) => (n === 0 ? '–' : `${num(n)}%`);
 			</section>
 		))
 	}
-	{!summary && <p class="iu-note">Giá tính bằng Tiền. Khối và nguyên liệu phải nộp lấy từ túi của người bấm nâng cấp.</p>}
+	{!summary && <p class="iu-note">Giá tính bằng Tiền, cột Xu (nếu có) là Xu nạp. Khối và nguyên liệu phải nộp lấy từ túi của người bấm nâng cấp.</p>}
 </div>
 
 <style>
