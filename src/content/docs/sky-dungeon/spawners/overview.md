@@ -32,6 +32,6 @@ Mob chỉ rơi đúng các vật phẩm ghi trong danh sách, theo tỉ lệ m�
 
 ## Nâng cấp spawner
 
-Mở menu spawner bằng cách **bấm phải** vào spawner, rồi nâng cấp. Cấp spawner tính theo **loại mob** của cả **đảo**: nâng cấp spawner Zombie thì mọi spawner Zombie trên đảo đều lên cấp. Mỗi cấp có thể thêm đồ rơi và tốc độ sinh mob, và tốn **Mobcoins** 💰. Mục nâng cấp ở từng spawner trong danh sách ghi rõ các cấp, nếu server đã mở.
+Mở menu spawner bằng cách **bấm phải** vào spawner, rồi nâng cấp. Cấp spawner tính theo **loại mob** của cả **đảo**: nâng cấp spawner Zombie thì mọi spawner Zombie trên đảo đều lên cấp, kể cả spawner bạn đặt thêm sau đó. Ví dụ đảo đã nâng Gà lên cấp 5 thì mọi spawner Gà trên đảo chạy như cấp 5. Mỗi cấp có thể thêm đồ rơi và tốc độ sinh mob, và tốn **Mobcoins** 💰. Mục nâng cấp ở từng spawner trong danh sách ghi rõ các cấp, nếu server đã mở.
 
 Phần nào ghi dấu **—** nghĩa là chưa có thông tin hoặc chưa được mở.
