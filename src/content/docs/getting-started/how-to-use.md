@@ -6,7 +6,7 @@ sidebar:
   order: 1
 ---
 
-Hướng dẫn chia theo **máy chủ**: mỗi máy chủ có danh sách hệ thống riêng, nên hãy chọn đúng máy chủ bạn đang chơi. Trong mỗi máy chủ, hướng dẫn chia theo hệ thống trong game. Mỗi hệ thống có bốn trang: **Tổng quan** (làm gì và bắt đầu thế nào), **Giao diện** (từng menu có hình), **Lệnh** và **Mẹo và hỏi đáp**.
+Hướng dẫn chia theo **máy chủ**: mỗi máy chủ có danh sách hệ thống riêng, nên hãy chọn đúng máy chủ bạn đang chơi. Trong mỗi máy chủ, hướng dẫn chia theo hệ thống trong game. Mỗi hệ thống có các trang như **Giao diện** (từng menu có hình), **Lệnh**, **Mẹo và hỏi đáp** và các trang danh sách số liệu.
 
 ## Đọc sơ đồ menu
 

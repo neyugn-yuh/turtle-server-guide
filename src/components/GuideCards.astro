@@ -1,7 +1,7 @@
 ---
 /**
  * Cards for the systems of one server: the list comes from src/data/servers.mjs, the names from src/data/guides.mjs.
- * Each card opens the system's Overview page.
+ * Each card opens the system's landing page (the `landing` of the system in guides.mjs).
  */
 import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 import { guides } from '../data/guides.mjs';
@@ -24,5 +24,5 @@ const list = entry.guides.map((slug) => {
 ---
 
 <CardGrid>
-	{list.map((guide) => <LinkCard title={guide.title} description={guide.description} href={`${base}/${server}/${guide.slug}/overview/`} />)}
+	{list.map((guide) => <LinkCard title={guide.title} description={guide.description} href={`${base}/${server}/${guide.slug}/${guide.landing}/`} />)}
 </CardGrid>

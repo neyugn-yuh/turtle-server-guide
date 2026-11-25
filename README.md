@@ -32,7 +32,7 @@ src/data/guides.mjs                    catalog of the systems: player-facing nam
 src/data/servers/<server>/*.json       data generated from the server config (minions.json), do not edit by hand
 src/content/docs/getting-started/      pages that apply to every server
 src/content/docs/<server>/index.mdx    start page of a server (cards of its systems)
-src/content/docs/<server>/<system>/    one folder per system: overview, menus, commands, tips (+ list pages)
+src/content/docs/<server>/<system>/    one folder per system: menus, commands, tips (+ list pages)
 src/data/gui/<system>/<menu>.json      one spec per menu picture
 src/plugins/gui-menus.mjs              Markdown plugin: turns a menu image into the interactive menu
 public/gui-viewer.js                   opens the detail box on hover, tap or focus
@@ -144,7 +144,7 @@ The build fails on a slot outside the menu, a missing label or a group whose slo
 
 1. Add an entry to `src/data/guides.mjs` (player-facing `title` and `description`, never the plugin name).
 2. List its slug in the `guides` of every server that has it.
-3. Create `overview.md` (order 1), `menus.md` (2), `commands.md` (3), `tips.md` (4) under each server folder.
+3. Create `menus.md` (order 2), `commands.md` (3), `tips.md` (4) under each server folder (no overview page), and set the system's `landing` in `guides.mjs` to its first page.
 4. Write one spec per menu in `src/data/gui/<system>/` and reference it from `menus.md`.
 5. `npm run build`.
 
