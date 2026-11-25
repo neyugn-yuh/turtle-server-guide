@@ -126,7 +126,11 @@ const wanted = new Set(materials.map((m) => m.id));
 
 // category titles
 const categoriesYaml = parse((await source.read('TurtleCraft/categories.yml')) ?? '')?.categories ?? {};
-const categoryTitle = (category) => plain(categoriesYaml[category]?.title) || category;
+// the titles are written in small caps (ᴀʙᴄ): turn them back into plain letters for the page
+const SMALL_CAPS = 'ᴀʙᴄᴅᴇꜰɢʜɪᴊᴋʟᴍɴᴏᴘǫʀѕᴛᴜᴠᴡхʏᴢ';
+const unSmallCaps = (text) => [...text].map((c) => { const i = SMALL_CAPS.indexOf(c); return i >= 0 ? 'abcdefghijklmnopqrstuvwxyz'[i] : c; }).join('');
+const capitalized = (text) => text.charAt(0).toUpperCase() + text.slice(1);
+const categoryTitle = (category) => capitalized(unSmallCaps(plain(categoriesYaml[category]?.title))) || category;
 
 // names of the items that appear in a recipe: MATERIAL from material.yml, other types from <type>.yml
 const typeFiles = new Map();

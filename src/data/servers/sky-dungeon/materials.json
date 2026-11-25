@@ -7,7 +7,7 @@
 			"category": "dungeon",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴅᴜɴɢᴇᴏɴ",
+					"category": "Nguyên liệu » dungeon",
 					"ingredients": [
 						{
 							"name": "Cobblestone",
@@ -41,7 +41,7 @@
 			"category": "nong-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ɴôɴɢ ѕảɴ",
+					"category": "Nguyên liệu » nông sản",
 					"ingredients": [
 						{
 							"name": "Potato",
@@ -75,7 +75,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
+					"category": "Nguyên liệu » khoáng sản",
 					"ingredients": [
 						{
 							"name": "Cobblestone",
@@ -96,7 +96,7 @@
 			],
 			"uses": [
 				{
-					"category": "ᴛầɴɢ 1 » ʜàɴʜ ʟᴀɴɢ ᴋʜởɪ ɴɢᴜʏêɴ",
+					"category": "Tầng 1 » hành lang khởi nguyên",
 					"ingredients": [
 						{
 							"name": "Trường Kiếm Khai Phá",
@@ -125,7 +125,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 1 » ʜàɴʜ ʟᴀɴɢ ᴋʜởɪ ɴɢᴜʏêɴ",
+					"category": "Tầng 1 » hành lang khởi nguyên",
 					"ingredients": [
 						{
 							"name": "Trường Kiếm Khai Phá",
@@ -154,7 +154,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 1 » ʜàɴʜ ʟᴀɴɢ ᴋʜởɪ ɴɢᴜʏêɴ",
+					"category": "Tầng 1 » hành lang khởi nguyên",
 					"ingredients": [
 						{
 							"name": "Trường Kiếm Khai Phá",
@@ -183,7 +183,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 1 » ʜàɴʜ ʟᴀɴɢ ᴋʜởɪ ɴɢᴜʏêɴ",
+					"category": "Tầng 1 » hành lang khởi nguyên",
 					"ingredients": [
 						{
 							"name": "Trường Kiếm Khai Phá",
@@ -217,7 +217,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 1 » ʜàɴʜ ʟᴀɴɢ ᴋʜởɪ ɴɢᴜʏêɴ",
+					"category": "Tầng 1 » hành lang khởi nguyên",
 					"ingredients": [
 						{
 							"name": "Trường Kiếm Khai Phá",
@@ -246,7 +246,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 2 » ổ ɴʜệɴ & ʜᴀɴɢ ᴅơɪ",
+					"category": "Tầng 2 » ổ nhện & hang dơi",
 					"ingredients": [
 						{
 							"name": "Kiếm Nanh Độc",
@@ -275,7 +275,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 2 » ổ ɴʜệɴ & ʜᴀɴɢ ᴅơɪ",
+					"category": "Tầng 2 » ổ nhện & hang dơi",
 					"ingredients": [
 						{
 							"name": "Kiếm Nanh Độc",
@@ -304,7 +304,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 2 » ổ ɴʜệɴ & ʜᴀɴɢ ᴅơɪ",
+					"category": "Tầng 2 » ổ nhện & hang dơi",
 					"ingredients": [
 						{
 							"name": "Kiếm Nanh Độc",
@@ -333,7 +333,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 2 » ổ ɴʜệɴ & ʜᴀɴɢ ᴅơɪ",
+					"category": "Tầng 2 » ổ nhện & hang dơi",
 					"ingredients": [
 						{
 							"name": "Kiếm Nanh Độc",
@@ -367,7 +367,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 2 » ổ ɴʜệɴ & ʜᴀɴɢ ᴅơɪ",
+					"category": "Tầng 2 » ổ nhện & hang dơi",
 					"ingredients": [
 						{
 							"name": "Kiếm Nanh Độc",
@@ -410,7 +410,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
+					"category": "Nguyên liệu » khoáng sản",
 					"ingredients": [
 						{
 							"name": "Coal",
@@ -431,7 +431,7 @@
 			],
 			"uses": [
 				{
-					"category": "ᴛầɴɢ 3 » ᴛổ ᴋɪếɴ ѕáᴛ ᴛʜủ",
+					"category": "Tầng 3 » tổ kiến sát thủ",
 					"ingredients": [
 						{
 							"name": "Kiếm Càng Đỏ",
@@ -460,7 +460,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 3 » ᴛổ ᴋɪếɴ ѕáᴛ ᴛʜủ",
+					"category": "Tầng 3 » tổ kiến sát thủ",
 					"ingredients": [
 						{
 							"name": "Kiếm Càng Đỏ",
@@ -489,7 +489,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 3 » ᴛổ ᴋɪếɴ ѕáᴛ ᴛʜủ",
+					"category": "Tầng 3 » tổ kiến sát thủ",
 					"ingredients": [
 						{
 							"name": "Kiếm Càng Đỏ",
@@ -518,7 +518,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 3 » ᴛổ ᴋɪếɴ ѕáᴛ ᴛʜủ",
+					"category": "Tầng 3 » tổ kiến sát thủ",
 					"ingredients": [
 						{
 							"name": "Kiếm Càng Đỏ",
@@ -552,7 +552,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 3 » ᴛổ ᴋɪếɴ ѕáᴛ ᴛʜủ",
+					"category": "Tầng 3 » tổ kiến sát thủ",
 					"ingredients": [
 						{
 							"name": "Kiếm Càng Đỏ",
@@ -581,7 +581,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 4 » ʀừɴɢ ʀễ đạɪ ᴛʜụ",
+					"category": "Tầng 4 » rừng rễ đại thụ",
 					"ingredients": [
 						{
 							"name": "Trường Kiếm Rừng Già",
@@ -610,7 +610,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 4 » ʀừɴɢ ʀễ đạɪ ᴛʜụ",
+					"category": "Tầng 4 » rừng rễ đại thụ",
 					"ingredients": [
 						{
 							"name": "Trường Kiếm Rừng Già",
@@ -639,7 +639,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 4 » ʀừɴɢ ʀễ đạɪ ᴛʜụ",
+					"category": "Tầng 4 » rừng rễ đại thụ",
 					"ingredients": [
 						{
 							"name": "Trường Kiếm Rừng Già",
@@ -668,7 +668,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 4 » ʀừɴɢ ʀễ đạɪ ᴛʜụ",
+					"category": "Tầng 4 » rừng rễ đại thụ",
 					"ingredients": [
 						{
 							"name": "Trường Kiếm Rừng Già",
@@ -702,7 +702,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 4 » ʀừɴɢ ʀễ đạɪ ᴛʜụ",
+					"category": "Tầng 4 » rừng rễ đại thụ",
 					"ingredients": [
 						{
 							"name": "Trường Kiếm Rừng Già",
@@ -745,7 +745,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
+					"category": "Nguyên liệu » khoáng sản",
 					"ingredients": [
 						{
 							"name": "Raw Copper",
@@ -766,7 +766,31 @@
 			],
 			"uses": [
 				{
-					"category": "ᴛầɴɢ 5 » đấᴜ ᴛʀườɴɢ ᴄʜᴜồɴɢ ᴛʜú",
+					"category": "Đá cường hóa",
+					"ingredients": [
+						{
+							"name": "Đồng Tinh Luyện",
+							"icon": "copper_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 9
+						}
+					],
+					"results": [
+						{
+							"name": "Đá Cường Hóa Sơ Cấp",
+							"icon": "raw_copper",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 5 » đấu trường chuồng thú",
 					"ingredients": [
 						{
 							"name": "Đại Kiếm Asterius",
@@ -795,7 +819,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 5 » đấᴜ ᴛʀườɴɢ ᴄʜᴜồɴɢ ᴛʜú",
+					"category": "Tầng 5 » đấu trường chuồng thú",
 					"ingredients": [
 						{
 							"name": "Đại Kiếm Asterius",
@@ -824,7 +848,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 5 » đấᴜ ᴛʀườɴɢ ᴄʜᴜồɴɢ ᴛʜú",
+					"category": "Tầng 5 » đấu trường chuồng thú",
 					"ingredients": [
 						{
 							"name": "Đại Kiếm Asterius",
@@ -853,7 +877,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 5 » đấᴜ ᴛʀườɴɢ ᴄʜᴜồɴɢ ᴛʜú",
+					"category": "Tầng 5 » đấu trường chuồng thú",
 					"ingredients": [
 						{
 							"name": "Đại Kiếm Asterius",
@@ -887,7 +911,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 5 » đấᴜ ᴛʀườɴɢ ᴄʜᴜồɴɢ ᴛʜú",
+					"category": "Tầng 5 » đấu trường chuồng thú",
 					"ingredients": [
 						{
 							"name": "Đại Kiếm Asterius",
@@ -930,7 +954,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
+					"category": "Nguyên liệu » khoáng sản",
 					"ingredients": [
 						{
 							"name": "Raw Iron",
@@ -951,7 +975,36 @@
 			],
 			"uses": [
 				{
-					"category": "ᴛầɴɢ 6 » đầᴍ ʟầʏ độᴄ ᴋʜí",
+					"category": "Đá cường hóa",
+					"ingredients": [
+						{
+							"name": "Sắt Tinh Luyện",
+							"icon": "iron_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 9
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 3
+						}
+					],
+					"results": [
+						{
+							"name": "Đá Cường Hóa Trung Cấp",
+							"icon": "raw_iron",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 6 » đầm lầy độc khí",
 					"ingredients": [
 						{
 							"name": "Kiếm Độc Chướng",
@@ -980,7 +1033,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 6 » đầᴍ ʟầʏ độᴄ ᴋʜí",
+					"category": "Tầng 6 » đầm lầy độc khí",
 					"ingredients": [
 						{
 							"name": "Kiếm Độc Chướng",
@@ -1009,7 +1062,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 6 » đầᴍ ʟầʏ độᴄ ᴋʜí",
+					"category": "Tầng 6 » đầm lầy độc khí",
 					"ingredients": [
 						{
 							"name": "Kiếm Độc Chướng",
@@ -1038,7 +1091,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 6 » đầᴍ ʟầʏ độᴄ ᴋʜí",
+					"category": "Tầng 6 » đầm lầy độc khí",
 					"ingredients": [
 						{
 							"name": "Kiếm Độc Chướng",
@@ -1072,7 +1125,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 6 » đầᴍ ʟầʏ độᴄ ᴋʜí",
+					"category": "Tầng 6 » đầm lầy độc khí",
 					"ingredients": [
 						{
 							"name": "Kiếm Độc Chướng",
@@ -1101,7 +1154,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 7 » độɴɢ ѕươɴɢ ᴍù ᴛʀắɴɢ",
+					"category": "Tầng 7 » động sương mù trắng",
 					"ingredients": [
 						{
 							"name": "Kiếm Lửa Địa Ngục",
@@ -1130,7 +1183,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 7 » độɴɢ ѕươɴɢ ᴍù ᴛʀắɴɢ",
+					"category": "Tầng 7 » động sương mù trắng",
 					"ingredients": [
 						{
 							"name": "Kiếm Lửa Địa Ngục",
@@ -1159,7 +1212,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 7 » độɴɢ ѕươɴɢ ᴍù ᴛʀắɴɢ",
+					"category": "Tầng 7 » động sương mù trắng",
 					"ingredients": [
 						{
 							"name": "Kiếm Lửa Địa Ngục",
@@ -1188,7 +1241,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 7 » độɴɢ ѕươɴɢ ᴍù ᴛʀắɴɢ",
+					"category": "Tầng 7 » động sương mù trắng",
 					"ingredients": [
 						{
 							"name": "Kiếm Lửa Địa Ngục",
@@ -1222,7 +1275,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 7 » độɴɢ ѕươɴɢ ᴍù ᴛʀắɴɢ",
+					"category": "Tầng 7 » động sương mù trắng",
 					"ingredients": [
 						{
 							"name": "Kiếm Lửa Địa Ngục",
@@ -1265,7 +1318,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
+					"category": "Nguyên liệu » khoáng sản",
 					"ingredients": [
 						{
 							"name": "Raw Gold",
@@ -1286,7 +1339,7 @@
 			],
 			"uses": [
 				{
-					"category": "ᴛầɴɢ 8 » ʜẻᴍ ɴúɪ ᴡʏᴠᴇʀɴ",
+					"category": "Tầng 8 » hẻm núi wyvern",
 					"ingredients": [
 						{
 							"name": "Thánh Kiếm Đồ Long",
@@ -1315,7 +1368,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 8 » ʜẻᴍ ɴúɪ ᴡʏᴠᴇʀɴ",
+					"category": "Tầng 8 » hẻm núi wyvern",
 					"ingredients": [
 						{
 							"name": "Thánh Kiếm Đồ Long",
@@ -1344,7 +1397,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 8 » ʜẻᴍ ɴúɪ ᴡʏᴠᴇʀɴ",
+					"category": "Tầng 8 » hẻm núi wyvern",
 					"ingredients": [
 						{
 							"name": "Thánh Kiếm Đồ Long",
@@ -1373,7 +1426,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 8 » ʜẻᴍ ɴúɪ ᴡʏᴠᴇʀɴ",
+					"category": "Tầng 8 » hẻm núi wyvern",
 					"ingredients": [
 						{
 							"name": "Thánh Kiếm Đồ Long",
@@ -1407,7 +1460,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 8 » ʜẻᴍ ɴúɪ ᴡʏᴠᴇʀɴ",
+					"category": "Tầng 8 » hẻm núi wyvern",
 					"ingredients": [
 						{
 							"name": "Thánh Kiếm Đồ Long",
@@ -1436,7 +1489,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 9 » ʀừɴɢ ᴘʜᴀ ʟê ᴄộɴɢ ʜưởɴɢ",
+					"category": "Tầng 9 » rừng pha lê cộng hưởng",
 					"ingredients": [
 						{
 							"name": "Kiếm Pha Lê Tím",
@@ -1465,7 +1518,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 9 » ʀừɴɢ ᴘʜᴀ ʟê ᴄộɴɢ ʜưởɴɢ",
+					"category": "Tầng 9 » rừng pha lê cộng hưởng",
 					"ingredients": [
 						{
 							"name": "Kiếm Pha Lê Tím",
@@ -1494,7 +1547,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 9 » ʀừɴɢ ᴘʜᴀ ʟê ᴄộɴɢ ʜưởɴɢ",
+					"category": "Tầng 9 » rừng pha lê cộng hưởng",
 					"ingredients": [
 						{
 							"name": "Kiếm Pha Lê Tím",
@@ -1523,7 +1576,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 9 » ʀừɴɢ ᴘʜᴀ ʟê ᴄộɴɢ ʜưởɴɢ",
+					"category": "Tầng 9 » rừng pha lê cộng hưởng",
 					"ingredients": [
 						{
 							"name": "Kiếm Pha Lê Tím",
@@ -1557,7 +1610,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 9 » ʀừɴɢ ᴘʜᴀ ʟê ᴄộɴɢ ʜưởɴɢ",
+					"category": "Tầng 9 » rừng pha lê cộng hưởng",
 					"ingredients": [
 						{
 							"name": "Kiếm Pha Lê Tím",
@@ -1600,7 +1653,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
+					"category": "Nguyên liệu » khoáng sản",
 					"ingredients": [
 						{
 							"name": "Redstone",
@@ -1621,7 +1674,7 @@
 			],
 			"uses": [
 				{
-					"category": "ᴛầɴɢ 10 » ᴛɪềɴ đồɴ ɢᴏʟɪᴀᴛʜ",
+					"category": "Tầng 10 » tiền đồn goliath",
 					"ingredients": [
 						{
 							"name": "Đại Kiếm Goliath",
@@ -1650,7 +1703,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 10 » ᴛɪềɴ đồɴ ɢᴏʟɪᴀᴛʜ",
+					"category": "Tầng 10 » tiền đồn goliath",
 					"ingredients": [
 						{
 							"name": "Đại Kiếm Goliath",
@@ -1679,7 +1732,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 10 » ᴛɪềɴ đồɴ ɢᴏʟɪᴀᴛʜ",
+					"category": "Tầng 10 » tiền đồn goliath",
 					"ingredients": [
 						{
 							"name": "Đại Kiếm Goliath",
@@ -1708,7 +1761,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 10 » ᴛɪềɴ đồɴ ɢᴏʟɪᴀᴛʜ",
+					"category": "Tầng 10 » tiền đồn goliath",
 					"ingredients": [
 						{
 							"name": "Đại Kiếm Goliath",
@@ -1742,7 +1795,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 10 » ᴛɪềɴ đồɴ ɢᴏʟɪᴀᴛʜ",
+					"category": "Tầng 10 » tiền đồn goliath",
 					"ingredients": [
 						{
 							"name": "Đại Kiếm Goliath",
@@ -1785,7 +1838,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
+					"category": "Nguyên liệu » khoáng sản",
 					"ingredients": [
 						{
 							"name": "Lapis Lazuli",
@@ -1806,7 +1859,7 @@
 			],
 			"uses": [
 				{
-					"category": "ᴛầɴɢ 11 » ᴛʜị ᴛʀấɴ ɴɢầᴍ ʀɪᴠɪʀᴀ",
+					"category": "Tầng 11 » thị trấn ngầm rivira",
 					"ingredients": [
 						{
 							"name": "Kiếm Huyết Thệ",
@@ -1835,7 +1888,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 11 » ᴛʜị ᴛʀấɴ ɴɢầᴍ ʀɪᴠɪʀᴀ",
+					"category": "Tầng 11 » thị trấn ngầm rivira",
 					"ingredients": [
 						{
 							"name": "Kiếm Huyết Thệ",
@@ -1864,7 +1917,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 11 » ᴛʜị ᴛʀấɴ ɴɢầᴍ ʀɪᴠɪʀᴀ",
+					"category": "Tầng 11 » thị trấn ngầm rivira",
 					"ingredients": [
 						{
 							"name": "Kiếm Huyết Thệ",
@@ -1893,7 +1946,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 11 » ᴛʜị ᴛʀấɴ ɴɢầᴍ ʀɪᴠɪʀᴀ",
+					"category": "Tầng 11 » thị trấn ngầm rivira",
 					"ingredients": [
 						{
 							"name": "Kiếm Huyết Thệ",
@@ -1927,7 +1980,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 11 » ᴛʜị ᴛʀấɴ ɴɢầᴍ ʀɪᴠɪʀᴀ",
+					"category": "Tầng 11 » thị trấn ngầm rivira",
 					"ingredients": [
 						{
 							"name": "Kiếm Huyết Thệ",
@@ -1956,7 +2009,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 12 » đạɪ ᴛʜáᴄ ɴướᴄ",
+					"category": "Tầng 12 » đại thác nước",
 					"ingredients": [
 						{
 							"name": "Kiếm Thủy Triều",
@@ -1985,7 +2038,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 12 » đạɪ ᴛʜáᴄ ɴướᴄ",
+					"category": "Tầng 12 » đại thác nước",
 					"ingredients": [
 						{
 							"name": "Kiếm Thủy Triều",
@@ -2014,7 +2067,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 12 » đạɪ ᴛʜáᴄ ɴướᴄ",
+					"category": "Tầng 12 » đại thác nước",
 					"ingredients": [
 						{
 							"name": "Kiếm Thủy Triều",
@@ -2043,7 +2096,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 12 » đạɪ ᴛʜáᴄ ɴướᴄ",
+					"category": "Tầng 12 » đại thác nước",
 					"ingredients": [
 						{
 							"name": "Kiếm Thủy Triều",
@@ -2077,7 +2130,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 12 » đạɪ ᴛʜáᴄ ɴướᴄ",
+					"category": "Tầng 12 » đại thác nước",
 					"ingredients": [
 						{
 							"name": "Kiếm Thủy Triều",
@@ -2120,7 +2173,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
+					"category": "Nguyên liệu » khoáng sản",
 					"ingredients": [
 						{
 							"name": "Diamond",
@@ -2141,7 +2194,41 @@
 			],
 			"uses": [
 				{
-					"category": "ᴛầɴɢ 13 » ᴛʜàɴʜ ᴄổ ᴜᴅᴀᴇᴜѕ",
+					"category": "Đá cường hóa",
+					"ingredients": [
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 6
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 3
+						},
+						{
+							"name": "Tinh Thể Dung Nham",
+							"icon": "magma_block",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Đá Cường Hóa Cao Cấp",
+							"icon": "netherite_scrap",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 13 » thành cổ udaeus",
 					"ingredients": [
 						{
 							"name": "Hắc Kiếm Udaeus",
@@ -2170,7 +2257,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 13 » ᴛʜàɴʜ ᴄổ ᴜᴅᴀᴇᴜѕ",
+					"category": "Tầng 13 » thành cổ udaeus",
 					"ingredients": [
 						{
 							"name": "Hắc Kiếm Udaeus",
@@ -2199,7 +2286,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 13 » ᴛʜàɴʜ ᴄổ ᴜᴅᴀᴇᴜѕ",
+					"category": "Tầng 13 » thành cổ udaeus",
 					"ingredients": [
 						{
 							"name": "Hắc Kiếm Udaeus",
@@ -2228,7 +2315,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 13 » ᴛʜàɴʜ ᴄổ ᴜᴅᴀᴇᴜѕ",
+					"category": "Tầng 13 » thành cổ udaeus",
 					"ingredients": [
 						{
 							"name": "Hắc Kiếm Udaeus",
@@ -2262,7 +2349,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 13 » ᴛʜàɴʜ ᴄổ ᴜᴅᴀᴇᴜѕ",
+					"category": "Tầng 13 » thành cổ udaeus",
 					"ingredients": [
 						{
 							"name": "Hắc Kiếm Udaeus",
@@ -2291,7 +2378,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 14 » đấᴜ ᴛʀườɴɢ ѕɪɴʜ ᴛử",
+					"category": "Tầng 14 » đấu trường sinh tử",
 					"ingredients": [
 						{
 							"name": "Trường Kiếm Huyết Đấu",
@@ -2320,7 +2407,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 14 » đấᴜ ᴛʀườɴɢ ѕɪɴʜ ᴛử",
+					"category": "Tầng 14 » đấu trường sinh tử",
 					"ingredients": [
 						{
 							"name": "Trường Kiếm Huyết Đấu",
@@ -2349,7 +2436,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 14 » đấᴜ ᴛʀườɴɢ ѕɪɴʜ ᴛử",
+					"category": "Tầng 14 » đấu trường sinh tử",
 					"ingredients": [
 						{
 							"name": "Trường Kiếm Huyết Đấu",
@@ -2378,7 +2465,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 14 » đấᴜ ᴛʀườɴɢ ѕɪɴʜ ᴛử",
+					"category": "Tầng 14 » đấu trường sinh tử",
 					"ingredients": [
 						{
 							"name": "Trường Kiếm Huyết Đấu",
@@ -2412,7 +2499,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 14 » đấᴜ ᴛʀườɴɢ ѕɪɴʜ ᴛử",
+					"category": "Tầng 14 » đấu trường sinh tử",
 					"ingredients": [
 						{
 							"name": "Trường Kiếm Huyết Đấu",
@@ -2455,7 +2542,7 @@
 			"category": "khoang-san",
 			"recipes": [
 				{
-					"category": "ɴɢᴜʏêɴ ʟɪệᴜ » ᴋʜᴏáɴɢ ѕảɴ",
+					"category": "Nguyên liệu » khoáng sản",
 					"ingredients": [
 						{
 							"name": "Emerald",
@@ -2476,7 +2563,7 @@
 			],
 			"uses": [
 				{
-					"category": "ᴛầɴɢ 15 » ᴠựᴄ ᴛʜẳᴍ & ᴛʜáɴʜ đɪệɴ ʙᴀʟᴏʀ",
+					"category": "Tầng 15 » vực thẳm & thánh điện balor",
 					"ingredients": [
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
@@ -2505,7 +2592,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 15 » ᴠựᴄ ᴛʜẳᴍ & ᴛʜáɴʜ đɪệɴ ʙᴀʟᴏʀ",
+					"category": "Tầng 15 » vực thẳm & thánh điện balor",
 					"ingredients": [
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
@@ -2534,7 +2621,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 15 » ᴠựᴄ ᴛʜẳᴍ & ᴛʜáɴʜ đɪệɴ ʙᴀʟᴏʀ",
+					"category": "Tầng 15 » vực thẳm & thánh điện balor",
 					"ingredients": [
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
@@ -2563,7 +2650,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 15 » ᴠựᴄ ᴛʜẳᴍ & ᴛʜáɴʜ đɪệɴ ʙᴀʟᴏʀ",
+					"category": "Tầng 15 » vực thẳm & thánh điện balor",
 					"ingredients": [
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
@@ -2597,7 +2684,7 @@
 					"cost": null
 				},
 				{
-					"category": "ᴛầɴɢ 15 » ᴠựᴄ ᴛʜẳᴍ & ᴛʜáɴʜ đɪệɴ ʙᴀʟᴏʀ",
+					"category": "Tầng 15 » vực thẳm & thánh điện balor",
 					"ingredients": [
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
