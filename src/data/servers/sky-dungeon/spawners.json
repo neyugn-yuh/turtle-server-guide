@@ -14,6 +14,11 @@
 			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"price": 1200000,
+			"mobcoins": {
+				"chance": 50,
+				"min": 5,
+				"max": 7
+			},
 			"xp": {
 				"min": 5,
 				"max": 5,
@@ -99,6 +104,11 @@
 			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"price": 1400000,
+			"mobcoins": {
+				"chance": 50,
+				"min": 6,
+				"max": 8
+			},
 			"xp": {
 				"min": 5,
 				"max": 5,
@@ -191,6 +201,11 @@
 			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"price": 1600000,
+			"mobcoins": {
+				"chance": 50,
+				"min": 7,
+				"max": 9
+			},
 			"xp": {
 				"min": 5,
 				"max": 5,
@@ -283,6 +298,11 @@
 			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"price": 800000,
+			"mobcoins": {
+				"chance": 50,
+				"min": 3,
+				"max": 5
+			},
 			"xp": {
 				"min": 1,
 				"max": 3,
@@ -375,6 +395,11 @@
 			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"price": 600000,
+			"mobcoins": {
+				"chance": 50,
+				"min": 2,
+				"max": 4
+			},
 			"xp": {
 				"min": 1,
 				"max": 3,
@@ -460,6 +485,11 @@
 			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"price": 700000,
+			"mobcoins": {
+				"chance": 50,
+				"min": 3,
+				"max": 4
+			},
 			"xp": {
 				"min": 1,
 				"max": 3,
@@ -552,6 +582,11 @@
 			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"price": 400000,
+			"mobcoins": {
+				"chance": 50,
+				"min": 1,
+				"max": 3
+			},
 			"xp": {
 				"min": 1,
 				"max": 3,
@@ -644,6 +679,11 @@
 			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"price": 1300000,
+			"mobcoins": {
+				"chance": 50,
+				"min": 6,
+				"max": 7
+			},
 			"xp": {
 				"min": 1,
 				"max": 4,
@@ -729,6 +769,11 @@
 			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"price": 1500000,
+			"mobcoins": {
+				"chance": 50,
+				"min": 7,
+				"max": 8
+			},
 			"xp": {
 				"min": 5,
 				"max": 5,
@@ -814,6 +859,11 @@
 			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"price": 1800000,
+			"mobcoins": {
+				"chance": 50,
+				"min": 8,
+				"max": 10
+			},
 			"xp": {
 				"min": 5,
 				"max": 5,
@@ -899,6 +949,11 @@
 			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"price": 500000,
+			"mobcoins": {
+				"chance": 50,
+				"min": 2,
+				"max": 3
+			},
 			"xp": {
 				"min": 1,
 				"max": 3,

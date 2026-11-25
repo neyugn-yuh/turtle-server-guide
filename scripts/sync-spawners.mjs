@@ -3,7 +3,8 @@
  * Reads the spawner setup of a server and writes the player-facing facts to
  * src/data/servers/<server>/spawners.json, which the "Danh sách spawner" page is built from.
  *
- * Files read (all of TurtleStacker):
+ * Also read: DeluxeMenus/gui_menus/shop_spawner.yml (buying price of each spawner) and TurtleMobCoins/mobs.yml (Mobcoins a mob drops).
+ * Files read (TurtleStacker):
  *   TurtleStacker/entities.yml          the mobs that stack: stack size and what each drops when killed
  *   TurtleStacker/spawner-upgrades.yml  the spawner levels (drop bonus, spawn speed, price), general and per mob
  *   TurtleStacker/spawner-perks.yml     the perks a spawner unlocks at a level
@@ -49,6 +50,7 @@ const FILES = {
 	perks: 'TurtleStacker/spawner-perks.yml',
 	config: 'TurtleStacker/config.yml',
 	menu: 'DeluxeMenus/gui_menus/shop_spawner.yml',
+	mobcoins: 'TurtleMobCoins/mobs.yml',
 };
 
 function fromDir(dir) {
@@ -143,6 +145,20 @@ function readPrices(menu) {
 	return prices;
 }
 
+/** The Mobcoins a mob drops (TurtleMobCoins/mobs.yml): its own entry, else the ALL entry, else none. Returns { chance (%), min, max } or null. */
+function readMobcoins(mobcoins, id) {
+	const entry = mobcoins?.[id] ?? mobcoins?.ALL;
+	if (!entry) return null;
+	const where = `TurtleMobCoins/mobs.yml ${mobcoins?.[id] ? id : 'ALL'}`;
+	// TurtleMobCoins writes a percentage as a plain number from 0 to 100 (50 is 50%), unlike TurtleStacker
+	const chance = Number(String(entry.chance ?? 100).trim().replace(/%$/, ''));
+	if (!Number.isFinite(chance) || chance < 0 || chance > 100) throw new Error(`${where}.chance must be a percentage from 0 to 100`);
+	const min = Number(entry.min ?? 0);
+	const max = Number(entry.max ?? min);
+	if (!Number.isFinite(min) || !Number.isFinite(max) || min < 0 || max < min) throw new Error(`${where} has a bad min/max`);
+	return chance > 0 && max > 0 ? { chance, min, max } : null;
+}
+
 function readTiers(levels, where) {
 	return Object.entries(levels ?? {})
 		.map(([level, tier]) => ({
@@ -154,7 +170,7 @@ function readTiers(levels, where) {
 		.sort((a, b) => a.level - b.level);
 }
 
-function readMob(id, data, upgrades, perks, price) {
+function readMob(id, data, upgrades, perks, price, mobcoins) {
 	const where = `entities.yml ${id}`;
 	if (!NAME.test(id)) throw new Error(`bad mob id ${id}`);
 	const loot = data?.loot ?? {};
@@ -174,6 +190,7 @@ function readMob(id, data, upgrades, perks, price) {
 		maxStack: Number(data?.['max-stack'] ?? 100),
 		vanillaDrops: loot.vanilla !== false,
 		price: price ?? null,
+		mobcoins,
 		xp: readXp(id, loot, where),
 		drops,
 		tiers,
@@ -221,9 +238,10 @@ try {
 	const upgrades = parse(files.upgrades) ?? {};
 	const perks = parse(files.perks) ?? {};
 	const config = parse(files.config) ?? {};
+	const mobcoinConfig = parse(files.mobcoins) ?? {};
 	const prices = readPrices(parse(files.menu) ?? {});
 	for (const mob of Object.keys(prices)) if (!(mob in (entities.mobs ?? {}))) throw new Error(`shop_spawner.yml sells ${mob}, which is not in TurtleStacker/entities.yml`);
-	const mobs = Object.entries(entities.mobs ?? {}).map(([id, data]) => readMob(id, data, { levels: upgrades.levels, perMob: upgrades['per-mob'] }, perks, prices[id]));
+	const mobs = Object.entries(entities.mobs ?? {}).map(([id, data]) => readMob(id, data, { levels: upgrades.levels, perMob: upgrades['per-mob'] }, perks, prices[id], readMobcoins(mobcoinConfig, id)));
 	if (!mobs.length) throw new Error('entities.yml has no mobs');
 	output = JSON.stringify({ spawnerMaxStack: Number(config.spawner?.['max-stack'] ?? 0), currency: String(upgrades.currency ?? 'money'), spawnerBase: readSpawnerBase(leafText), mobs }, null, '\t') + '\n';
 } catch (error) {
