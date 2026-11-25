@@ -8,13 +8,12 @@ import { guiMenus } from './src/plugins/gui-menus.mjs';
 import { guides } from './src/data/guides.mjs';
 import { servers } from './src/data/servers.mjs';
 
-// One sidebar group per server (src/data/servers.mjs). Inside it: the server's start page, then one group per system.
+// One sidebar group per server (src/data/servers.mjs). Inside it: one group per system (a server has no page of its own).
 // The pages of a system are discovered from `src/content/docs/<server>/<system>/`.
 const serverGroups = servers.map((server) => ({
 	label: server.title,
 	collapsed: true,
 	items: [
-		{ slug: server.slug },
 		...server.guides.map((slug) => {
 			const guide = guides.find((g) => g.slug === slug);
 			if (!guide) throw new Error(`Server "${server.slug}" lists unknown system "${slug}"`);
@@ -45,7 +44,6 @@ export default defineConfig({
 			// The guide is Vietnamese only.
 			defaultLocale: 'root',
 			locales: { root: { label: 'Tiếng Việt', lang: 'vi' } },
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/MineTurtleVN' }],
 			plugins: [starlightLinksValidator()],
 			// Opens the detail box when a reader hovers, taps or focuses a slot of a menu.
 			head: [{ tag: 'script', attrs: { src: '/gui-viewer.js', defer: true } }],

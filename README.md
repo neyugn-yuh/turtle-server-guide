@@ -31,13 +31,12 @@ src/data/servers.mjs                   the servers and which systems each one ha
 src/data/guides.mjs                    catalog of the systems: player-facing name and one-line description
 src/data/servers/<server>/*.json       data generated from the server config (minions.json), do not edit by hand
 src/content/docs/getting-started/      pages that apply to every server
-src/content/docs/<server>/index.mdx    start page of a server (cards of its systems)
 src/content/docs/<server>/<system>/    one folder per system: menus, commands, tips (+ list pages)
 src/data/gui/<system>/<menu>.json      one spec per menu picture
 src/plugins/gui-menus.mjs              Markdown plugin: turns a menu image into the interactive menu
 public/gui-viewer.js                   opens the detail box on hover, tap or focus
 src/styles/gui.css                     look of the menu and of the detail box
-src/components/                        GuideCards, ServerCards, MinionList, IslandUpgrades, MaterialList, SpawnerList
+src/components/                        ServerCards, MinionList, IslandUpgrades, MaterialList, SpawnerList
 scripts/sync-minions.mjs               reads minion configs and writes src/data/servers/<server>/minions.json
 scripts/fetch-mob-images.mjs            draws the face of each spawner mob into public/mobs/<mob>.png (a mob needs an entry in the script)
 scripts/sync-spawners.mjs              reads TurtleStacker entities, spawner upgrades and perks and writes src/data/servers/<server>/spawners.json
@@ -135,7 +134,7 @@ The build fails on a slot outside the menu, a missing label or a group whose slo
 ## Adding a server
 
 1. Add an entry to `src/data/servers.mjs` (`slug`, `title`, `description`, `guides`: slugs from `guides.mjs`).
-2. Create `src/content/docs/<server>/index.mdx` (copy an existing one and change `<GuideCards server="..." />`).
+2. A server has no start page of its own: its card on the home page opens the first page of its first system.
 3. Put the pages of each system in `src/content/docs/<server>/<system>/`. Copy them from another server when the system is the same, then change what differs there (prices, layouts, availability).
 4. If the server has generated lists, run the sync for it: `node scripts/sync-minions.mjs --server <slug> --dir <plugin folder>`, and add `<MinionList server="<slug>" />` to its list page. The workflow syncs the first server of `servers.mjs`; give the script a `--server` argument there for more.
 5. `npm run build`.
