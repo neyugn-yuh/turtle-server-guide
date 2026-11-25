@@ -1,0 +1,49 @@
+{
+  "title": "Nâng cấp đảo",
+  "rows": 6,
+  "filler": true,
+  "slots": {
+    "20": {
+      "item": "GRASS_BLOCK",
+      "label": "Diện tích đảo",
+      "role": "button",
+      "desc": "Mở rộng vùng đất bạn được xây dựng. Hiện cấp hiện tại, hiệu quả và giá cấp kế tiếp. Bấm để xem các cấp."
+    },
+    "22": {
+      "item": "PLAYER_HEAD",
+      "label": "Thành viên đảo",
+      "role": "button",
+      "desc": "Tăng số thành viên tối đa của đảo. Bấm để xem các cấp."
+    },
+    "24": {
+      "item": "ARMOR_STAND",
+      "label": "Slot đặt minion",
+      "role": "button",
+      "desc": "Bảo đảm số slot đặt minion tối thiểu của đảo. Bấm để xem các cấp."
+    },
+    "29": {
+      "item": "DIAMOND_ORE",
+      "label": "Máy tạo quặng",
+      "role": "button",
+      "desc": "Đổi tỉ lệ khối sinh ra khi nước gặp dung nham. Bấm để xem các cấp."
+    },
+    "31": {
+      "item": "IRON_SWORD",
+      "label": "Chỉ số dungeon",
+      "role": "button",
+      "desc": "Cộng máu, sát thương và phòng thủ cho thành viên khi ở trong dungeon. Bấm để xem các cấp."
+    },
+    "33": {
+      "item": "ANVIL",
+      "label": "Xưởng rèn",
+      "role": "button",
+      "desc": "Mở khóa công thức chế tạo của các tầng cao hơn. Bấm để xem các cấp."
+    },
+    "49": {
+      "item": "ARROW",
+      "label": "Quay lại",
+      "role": "button",
+      "desc": "Quay về menu trước."
+    }
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "title": "Máy tạo quặng",
+  "rows": 6,
+  "filler": true,
+  "slots": {
+    "4": {
+      "item": "DIAMOND_ORE",
+      "label": "Máy tạo quặng",
+      "role": "display",
+      "desc": "Cho biết cấp hiện tại và hiệu quả đang có."
+    },
+    "12": {
+      "item": "DIAMOND_ORE",
+      "label": "Cấp kế tiếp",
+      "role": "button",
+      "desc": "Cấp bạn có thể mua bây giờ. Ghi rõ tiền và khối phải nộp. Bấm chuột trái để sang bước xác nhận."
+    },
+    "49": {
+      "item": "ARROW",
+      "label": "Quay lại",
+      "role": "button",
+      "desc": "Quay về menu các loại nâng cấp."
+    },
+    "10": {
+      "item": "LIME_STAINED_GLASS_PANE",
+      "label": "Cấp đã mở khóa",
+      "role": "display",
+      "desc": "Bạn đã nâng cấp xong cấp này. Rê chuột vào để xem phần thưởng.",
+      "n": 1
+    },
+    "11": {
+      "item": "LIME_STAINED_GLASS_PANE",
+      "label": "Cấp đã mở khóa",
+      "role": "display",
+      "desc": "Bạn đã nâng cấp xong cấp này. Rê chuột vào để xem phần thưởng.",
+      "n": 1
+    },
+    "13": {
+      "item": "GRAY_DYE",
+      "label": "Cấp chưa tới lượt",
+      "role": "display",
+      "desc": "Phải nâng cấp lần lượt từng cấp, chưa thể mua cấp này.",
+      "n": 2
+    },
+    "14": {
+      "item": "GRAY_DYE",
+      "label": "Cấp chưa tới lượt",
+      "role": "display",
+      "desc": "Phải nâng cấp lần lượt từng cấp, chưa thể mua cấp này.",
+      "n": 2
+    },
+    "15": {
+      "item": "GRAY_DYE",
+      "label": "Cấp chưa tới lượt",
+      "role": "display",
+      "desc": "Phải nâng cấp lần lượt từng cấp, chưa thể mua cấp này.",
+      "n": 2
+    },
+    "16": {
+      "item": "GRAY_DYE",
+      "label": "Cấp chưa tới lượt",
+      "role": "display",
+      "desc": "Phải nâng cấp lần lượt từng cấp, chưa thể mua cấp này.",
+      "n": 2
+    },
+    "19": {
+      "item": "GRAY_DYE",
+      "label": "Cấp chưa tới lượt",
+      "role": "display",
+      "desc": "Phải nâng cấp lần lượt từng cấp, chưa thể mua cấp này.",
+      "n": 2
+    },
+    "20": {
+      "item": "GRAY_DYE",
+      "label": "Cấp chưa tới lượt",
+      "role": "display",
+      "desc": "Phải nâng cấp lần lượt từng cấp, chưa thể mua cấp này.",
+      "n": 2
+    },
+    "21": {
+      "item": "GRAY_DYE",
+      "label": "Cấp chưa tới lượt",
+      "role": "display",
+      "desc": "Phải nâng cấp lần lượt từng cấp, chưa thể mua cấp này.",
+      "n": 2
+    },
+    "22": {
+      "item": "GRAY_DYE",
+      "label": "Cấp chưa tới lượt",
+      "role": "display",
+      "desc": "Phải nâng cấp lần lượt từng cấp, chưa thể mua cấp này.",
+      "n": 2
+    },
+    "23": {
+      "item": "GRAY_DYE",
+      "label": "Cấp chưa tới lượt",
+      "role": "display",
+      "desc": "Phải nâng cấp lần lượt từng cấp, chưa thể mua cấp này.",
+      "n": 2
+    },
+    "24": {
+      "item": "GRAY_DYE",
+      "label": "Cấp chưa tới lượt",
+      "role": "display",
+      "desc": "Phải nâng cấp lần lượt từng cấp, chưa thể mua cấp này.",
+      "n": 2
+    }
+  }
+}

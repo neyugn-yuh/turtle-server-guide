@@ -1,0 +1,655 @@
+{
+	"upgrades": [
+		{
+			"id": "border-size",
+			"baseValue": 25,
+			"baseDisplay": 1,
+			"levels": [
+				{
+					"level": 1,
+					"display": 2,
+					"value": 50,
+					"money": 30000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 2,
+					"display": 3,
+					"value": 75,
+					"money": 80000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 3,
+					"display": 4,
+					"value": 125,
+					"money": 150000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 4,
+					"display": 5,
+					"value": 150,
+					"money": 1000000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 5,
+					"display": 6,
+					"value": 175,
+					"money": 3000000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 6,
+					"display": 7,
+					"value": 200,
+					"money": 8000000,
+					"items": {},
+					"stats": {}
+				}
+			]
+		},
+		{
+			"id": "members-limit",
+			"baseValue": 4,
+			"baseDisplay": 1,
+			"levels": [
+				{
+					"level": 1,
+					"display": 2,
+					"value": 8,
+					"money": 100000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 2,
+					"display": 3,
+					"value": 16,
+					"money": 300000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 3,
+					"display": 4,
+					"value": 32,
+					"money": 500000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 4,
+					"display": 5,
+					"value": 40,
+					"money": 2000000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 5,
+					"display": 6,
+					"value": 48,
+					"money": 5000000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 6,
+					"display": 7,
+					"value": 64,
+					"money": 12000000,
+					"items": {},
+					"stats": {}
+				}
+			]
+		},
+		{
+			"id": "minion-slots",
+			"baseValue": 5,
+			"baseDisplay": 0,
+			"levels": [
+				{
+					"level": 1,
+					"display": 1,
+					"value": 8,
+					"money": 500000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 2,
+					"display": 2,
+					"value": 12,
+					"money": 2000000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 3,
+					"display": 3,
+					"value": 16,
+					"money": 6000000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 4,
+					"display": 4,
+					"value": 20,
+					"money": 15000000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 5,
+					"display": 5,
+					"value": 24,
+					"money": 35000000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 6,
+					"display": 6,
+					"value": 30,
+					"money": 80000000,
+					"items": {},
+					"stats": {}
+				}
+			]
+		},
+		{
+			"id": "ore",
+			"baseValue": 0,
+			"baseDisplay": 0,
+			"levels": [
+				{
+					"level": 1,
+					"display": 1,
+					"value": 1,
+					"money": 10000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 2,
+					"display": 2,
+					"value": 2,
+					"money": 250000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 3,
+					"display": 3,
+					"value": 3,
+					"money": 1000000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 4,
+					"display": 4,
+					"value": 4,
+					"money": 2500000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 5,
+					"display": 5,
+					"value": 5,
+					"money": 5000000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 6,
+					"display": 6,
+					"value": 6,
+					"money": 10000000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 7,
+					"display": 7,
+					"value": 7,
+					"money": 20000000,
+					"items": {
+						"GOLD_BLOCK": 64,
+						"DIAMOND_BLOCK": 16
+					},
+					"stats": {}
+				},
+				{
+					"level": 8,
+					"display": 8,
+					"value": 8,
+					"money": 35000000,
+					"items": {
+						"DIAMOND_BLOCK": 64,
+						"EMERALD_BLOCK": 32
+					},
+					"stats": {}
+				},
+				{
+					"level": 9,
+					"display": 9,
+					"value": 9,
+					"money": 60000000,
+					"items": {
+						"DIAMOND_BLOCK": 128,
+						"EMERALD_BLOCK": 64
+					},
+					"stats": {}
+				},
+				{
+					"level": 10,
+					"display": 10,
+					"value": 10,
+					"money": 100000000,
+					"items": {
+						"DIAMOND_BLOCK": 256,
+						"EMERALD_BLOCK": 128
+					},
+					"stats": {}
+				},
+				{
+					"level": 11,
+					"display": 11,
+					"value": 11,
+					"money": 160000000,
+					"items": {
+						"DIAMOND_BLOCK": 512,
+						"EMERALD_BLOCK": 384
+					},
+					"stats": {}
+				},
+				{
+					"level": 12,
+					"display": 12,
+					"value": 12,
+					"money": 250000000,
+					"items": {
+						"DIAMOND_BLOCK": 768,
+						"EMERALD_BLOCK": 768
+					},
+					"stats": {}
+				}
+			]
+		},
+		{
+			"id": "dungeon-stats",
+			"baseValue": 0,
+			"baseDisplay": 0,
+			"levels": [
+				{
+					"level": 1,
+					"display": 1,
+					"value": 1,
+					"money": 1000000,
+					"items": {},
+					"stats": {
+						"MAX_HEALTH": "3%",
+						"ATTACK_DAMAGE": "3%",
+						"DEFENSE": "3%"
+					}
+				},
+				{
+					"level": 2,
+					"display": 2,
+					"value": 2,
+					"money": 3000000,
+					"items": {},
+					"stats": {
+						"MAX_HEALTH": "6%",
+						"ATTACK_DAMAGE": "6%",
+						"DEFENSE": "6%"
+					}
+				},
+				{
+					"level": 3,
+					"display": 3,
+					"value": 3,
+					"money": 8000000,
+					"items": {},
+					"stats": {
+						"MAX_HEALTH": "9%",
+						"ATTACK_DAMAGE": "9%",
+						"DEFENSE": "9%"
+					}
+				},
+				{
+					"level": 4,
+					"display": 4,
+					"value": 4,
+					"money": 20000000,
+					"items": {},
+					"stats": {
+						"MAX_HEALTH": "12%",
+						"ATTACK_DAMAGE": "12%",
+						"DEFENSE": "12%"
+					}
+				},
+				{
+					"level": 5,
+					"display": 5,
+					"value": 5,
+					"money": 45000000,
+					"items": {},
+					"stats": {
+						"MAX_HEALTH": "15%",
+						"ATTACK_DAMAGE": "15%",
+						"DEFENSE": "15%"
+					}
+				}
+			]
+		},
+		{
+			"id": "forge",
+			"baseValue": 0,
+			"baseDisplay": 0,
+			"levels": [
+				{
+					"level": 1,
+					"display": 1,
+					"value": 1,
+					"money": 100000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 2,
+					"display": 2,
+					"value": 2,
+					"money": 250000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 3,
+					"display": 3,
+					"value": 3,
+					"money": 500000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 4,
+					"display": 4,
+					"value": 4,
+					"money": 1000000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 5,
+					"display": 5,
+					"value": 5,
+					"money": 2000000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 6,
+					"display": 6,
+					"value": 6,
+					"money": 4000000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 7,
+					"display": 7,
+					"value": 7,
+					"money": 8000000,
+					"items": {},
+					"stats": {}
+				},
+				{
+					"level": 8,
+					"display": 8,
+					"value": 8,
+					"money": 15000000,
+					"items": {
+						"IRON_BLOCK": 64
+					},
+					"stats": {}
+				},
+				{
+					"level": 9,
+					"display": 9,
+					"value": 9,
+					"money": 30000000,
+					"items": {
+						"GOLD_BLOCK": 64
+					},
+					"stats": {}
+				},
+				{
+					"level": 10,
+					"display": 10,
+					"value": 10,
+					"money": 50000000,
+					"items": {
+						"GOLD_BLOCK": 128,
+						"DIAMOND_BLOCK": 16
+					},
+					"stats": {}
+				},
+				{
+					"level": 11,
+					"display": 11,
+					"value": 11,
+					"money": 80000000,
+					"items": {
+						"DIAMOND_BLOCK": 64
+					},
+					"stats": {}
+				},
+				{
+					"level": 12,
+					"display": 12,
+					"value": 12,
+					"money": 120000000,
+					"items": {
+						"DIAMOND_BLOCK": 128,
+						"EMERALD_BLOCK": 32
+					},
+					"stats": {}
+				},
+				{
+					"level": 13,
+					"display": 13,
+					"value": 13,
+					"money": 180000000,
+					"items": {
+						"DIAMOND_BLOCK": 256,
+						"EMERALD_BLOCK": 128
+					},
+					"stats": {}
+				},
+				{
+					"level": 14,
+					"display": 14,
+					"value": 14,
+					"money": 250000000,
+					"items": {
+						"DIAMOND_BLOCK": 512,
+						"EMERALD_BLOCK": 256
+					},
+					"stats": {}
+				}
+			]
+		}
+	],
+	"dungeonWorlds": [
+		"dungeon"
+	],
+	"ore": [
+		{
+			"level": 0,
+			"STONE": 60,
+			"COAL_ORE": 15,
+			"IRON_ORE": 15,
+			"REDSTONE_ORE": 5,
+			"LAPIS_ORE": 5,
+			"GOLD_ORE": 0,
+			"DIAMOND_ORE": 0,
+			"EMERALD_ORE": 0,
+			"BLOCKS": 0
+		},
+		{
+			"level": 1,
+			"STONE": 44,
+			"COAL_ORE": 20,
+			"IRON_ORE": 15,
+			"REDSTONE_ORE": 10,
+			"LAPIS_ORE": 8,
+			"GOLD_ORE": 2,
+			"DIAMOND_ORE": 0,
+			"EMERALD_ORE": 0,
+			"BLOCKS": 1
+		},
+		{
+			"level": 2,
+			"STONE": 34,
+			"COAL_ORE": 14,
+			"IRON_ORE": 14,
+			"REDSTONE_ORE": 14,
+			"LAPIS_ORE": 11,
+			"GOLD_ORE": 5,
+			"DIAMOND_ORE": 3,
+			"EMERALD_ORE": 0,
+			"BLOCKS": 5
+		},
+		{
+			"level": 3,
+			"STONE": 24,
+			"COAL_ORE": 9,
+			"IRON_ORE": 19,
+			"REDSTONE_ORE": 14,
+			"LAPIS_ORE": 14,
+			"GOLD_ORE": 7,
+			"DIAMOND_ORE": 5,
+			"EMERALD_ORE": 3,
+			"BLOCKS": 5
+		},
+		{
+			"level": 4,
+			"STONE": 13.07,
+			"COAL_ORE": 9.05,
+			"IRON_ORE": 19.1,
+			"REDSTONE_ORE": 14.07,
+			"LAPIS_ORE": 14.07,
+			"GOLD_ORE": 9.05,
+			"DIAMOND_ORE": 9.05,
+			"EMERALD_ORE": 5.03,
+			"BLOCKS": 7.54
+		},
+		{
+			"level": 5,
+			"STONE": 8.96,
+			"COAL_ORE": 3.98,
+			"IRON_ORE": 13.93,
+			"REDSTONE_ORE": 13.93,
+			"LAPIS_ORE": 13.93,
+			"GOLD_ORE": 13.93,
+			"DIAMOND_ORE": 13.93,
+			"EMERALD_ORE": 8.96,
+			"BLOCKS": 8.46
+		},
+		{
+			"level": 6,
+			"STONE": 4.02,
+			"COAL_ORE": 4.02,
+			"IRON_ORE": 9.05,
+			"REDSTONE_ORE": 9.05,
+			"LAPIS_ORE": 9.05,
+			"GOLD_ORE": 19.1,
+			"DIAMOND_ORE": 24.12,
+			"EMERALD_ORE": 14.07,
+			"BLOCKS": 7.54
+		},
+		{
+			"level": 7,
+			"STONE": 0.98,
+			"COAL_ORE": 1.95,
+			"IRON_ORE": 3.9,
+			"REDSTONE_ORE": 3.9,
+			"LAPIS_ORE": 3.9,
+			"GOLD_ORE": 18.54,
+			"DIAMOND_ORE": 33.17,
+			"EMERALD_ORE": 23.41,
+			"BLOCKS": 10.24
+		},
+		{
+			"level": 8,
+			"STONE": 1.4,
+			"COAL_ORE": 1.4,
+			"IRON_ORE": 4.2,
+			"REDSTONE_ORE": 4.2,
+			"LAPIS_ORE": 4.2,
+			"GOLD_ORE": 9.8,
+			"DIAMOND_ORE": 32,
+			"EMERALD_ORE": 25,
+			"BLOCKS": 17.8
+		},
+		{
+			"level": 9,
+			"STONE": 1.28,
+			"COAL_ORE": 1.28,
+			"IRON_ORE": 3.84,
+			"REDSTONE_ORE": 3.84,
+			"LAPIS_ORE": 3.84,
+			"GOLD_ORE": 8.96,
+			"DIAMOND_ORE": 29,
+			"EMERALD_ORE": 24,
+			"BLOCKS": 23.96
+		},
+		{
+			"level": 10,
+			"STONE": 1.16,
+			"COAL_ORE": 1.16,
+			"IRON_ORE": 3.48,
+			"REDSTONE_ORE": 3.48,
+			"LAPIS_ORE": 3.48,
+			"GOLD_ORE": 8.12,
+			"DIAMOND_ORE": 26,
+			"EMERALD_ORE": 23,
+			"BLOCKS": 30.12
+		},
+		{
+			"level": 11,
+			"STONE": 1.04,
+			"COAL_ORE": 1.04,
+			"IRON_ORE": 3.12,
+			"REDSTONE_ORE": 3.12,
+			"LAPIS_ORE": 3.12,
+			"GOLD_ORE": 7.28,
+			"DIAMOND_ORE": 23,
+			"EMERALD_ORE": 22,
+			"BLOCKS": 36.28
+		},
+		{
+			"level": 12,
+			"STONE": 0.92,
+			"COAL_ORE": 0.92,
+			"IRON_ORE": 2.76,
+			"REDSTONE_ORE": 2.76,
+			"LAPIS_ORE": 2.76,
+			"GOLD_ORE": 6.44,
+			"DIAMOND_ORE": 20,
+			"EMERALD_ORE": 21,
+			"BLOCKS": 42.44
+		}
+	]
+}

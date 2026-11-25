@@ -11,9 +11,10 @@
  */
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { join, dirname } from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
+const { upgradeIcons } = await import(pathToFileURL(join(ROOT, 'src/data/island-upgrade-icons.mjs')).href);
 const OUT = join(ROOT, 'public/minions');
 const args = process.argv.slice(2);
 const version = args.includes('--version') ? args[args.indexOf('--version') + 1] : '1.21.4';
@@ -31,6 +32,14 @@ for (const server of readdirSync(serversDir)) {
 	for (const minion of JSON.parse(readFileSync(file, 'utf8')).minions) {
 		if (minion.icon) materials.add(minion.icon);
 		for (const group of minion.products) for (const product of group.products) if (product.icon) materials.add(product.icon);
+	}
+	// island upgrades: the picture of each upgrade and of the blocks a level asks for
+	const islandFile = join(serversDir, server, 'island-upgrades.json');
+	if (existsSync(islandFile)) {
+		for (const upgrade of JSON.parse(readFileSync(islandFile, 'utf8')).upgrades) {
+			if (upgradeIcons[upgrade.id]) materials.add(upgradeIcons[upgrade.id]);
+			for (const level of upgrade.levels) for (const material of Object.keys(level.items)) materials.add(material.toLowerCase());
+		}
 	}
 }
 

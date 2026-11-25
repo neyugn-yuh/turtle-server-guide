@@ -1,8 +1,8 @@
 # Keeps the guide in step with the server's config.
 #
 # Every few hours (and on demand, and on every push to main) this job
-#   1. reads the minion definitions from the server over the Pterodactyl API (read only),
-#   2. commits src/data/servers/*/minions.json when something changed,
+#   1. reads the minion definitions and the island upgrades from the server over the Pterodactyl API (read only),
+#   2. commits src/data/servers/*/minions.json and island-upgrades.json when something changed,
 #   3. builds the site and deploys it to Cloudflare Pages.
 #
 # Repository secrets (Settings > Secrets and variables > Actions). A step is skipped when its secrets are missing,
@@ -49,6 +49,10 @@ jobs:
       - name: Read the minions from the server
         if: env.PTERO_KEY != '' && env.PTERO_URL != '' && env.PTERO_SERVER != ''
         run: node scripts/sync-minions.mjs --ptero
+
+      - name: Read the island upgrades from the server
+        if: env.PTERO_KEY != '' && env.PTERO_URL != '' && env.PTERO_SERVER != ''
+        run: node scripts/sync-island-upgrades.mjs --ptero
 
       - name: Commit the changed data
         run: |

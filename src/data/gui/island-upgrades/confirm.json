@@ -1,0 +1,25 @@
+{
+  "title": "Xác nhận nâng cấp",
+  "rows": 6,
+  "filler": true,
+  "slots": {
+    "13": {
+      "item": "DIAMOND_ORE",
+      "label": "Máy tạo quặng",
+      "role": "display",
+      "desc": "Liệt kê hiệu quả của cấp, tiền và khối phải nộp."
+    },
+    "22": {
+      "item": "LIME_DYE",
+      "label": "Nâng cấp ngay",
+      "role": "button",
+      "desc": "Trừ tiền và khối trong túi của bạn rồi nâng cấp. Bấm chuột trái để xác nhận."
+    },
+    "49": {
+      "item": "ARROW",
+      "label": "Quay lại",
+      "role": "button",
+      "desc": "Hủy và quay về danh sách cấp."
+    }
+  }
+}

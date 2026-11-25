@@ -13,5 +13,10 @@ export const guides = [
 		title: 'Minion',
 		description: 'Đặt minion trên đảo để tự sản xuất kể cả khi bạn offline, cho nhiên liệu, nâng cấp và lấy sản phẩm.',
 	},
+	{
+		slug: 'island-upgrades',
+		title: 'Nâng cấp đảo',
+		description: 'Sáu loại nâng cấp đảo: diện tích, thành viên, slot minion, máy tạo quặng, chỉ số dungeon và xưởng rèn.',
+	},
 	// <-- add new guides here
 ];

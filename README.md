@@ -14,6 +14,7 @@ Player guide for the Turtle Minecraft servers (GitHub org MineTurtleVN), built w
 | `npm run dev`           | Start the dev server at `localhost:4321`                            |
 | `npm run build`         | Build to `./dist/` (also checks links and every menu spec)          |
 | `npm run sync:minions`  | Rewrite the minion data from a server config (see "Sync with the server config") |
+| `node scripts/sync-island-upgrades.mjs` | Rewrite the island upgrade data from a server config (`--dir <plugins folder>` or `--ptero`) |
 | `node scripts/fetch-minion-icons.mjs` | Download the Minecraft item pictures the minion list shows into `public/minions/` (run after a sync adds a product) |
 | `npm run deploy`        | Build and deploy to Cloudflare Pages                                |
 
@@ -32,8 +33,9 @@ src/data/gui/<system>/<menu>.json      one spec per menu picture
 src/plugins/gui-menus.mjs              Markdown plugin: turns a menu image into the interactive menu
 public/gui-viewer.js                   opens the detail box on hover, tap or focus
 src/styles/gui.css                     look of the menu and of the detail box
-src/components/                        GuideCards, ServerCards, MinionList
+src/components/                        GuideCards, ServerCards, MinionList, IslandUpgrades
 scripts/sync-minions.mjs               reads minion configs and writes src/data/servers/<server>/minions.json
+scripts/sync-island-upgrades.mjs       reads the island upgrade and ore generator configs and writes src/data/servers/<server>/island-upgrades.json
 scripts/fetch-minion-icons.mjs         downloads the item picture of every product into public/minions/<material>.png
 public/minions/                        Minecraft item textures (from PrismarineJS/minecraft-assets), shown in the minion list
 .github/workflows/sync-and-deploy.yml  syncs with the server and deploys on a schedule
@@ -65,6 +67,8 @@ server config (plugins/TurtleMinions/minions/*.yml)
 3. Run the workflow once by hand and read its log.
 
 Until then `minions.json` holds the **plugin defaults** (read from the TurtleMinions repo), not the live server config.
+
+The island upgrades page (`Nâng cấp đảo > Chi tiết các loại`) is generated the same way by `scripts/sync-island-upgrades.mjs`: it reads `SD-Island/island-upgrades.yml` and `TurtleOreGen/ore-generators.yml` (`--dir <plugins folder>`, or `--ptero` with `PTERO_PLUGINS_ROOT`, default `/plugins`). The prose of each upgrade lives in `src/components/IslandUpgrades.astro`; the tables are data. The panel user needs `file.read` on those two folders too.
 
 To sync another kind of config (fuels, storages, ...), write a second script with the same shape (whitelist, no timestamp, stable output), add its page component and add a step to the workflow.
 
