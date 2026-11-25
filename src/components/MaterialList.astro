@@ -166,6 +166,9 @@ if (category && materials.length === 0) throw new Error(`MaterialList: no materi
 		color: var(--sl-color-gray-3);
 	}
 	.ml-modal {
+		position: fixed;
+		inset: 0;
+		margin: auto; /* the site reset zeroes the margin, which is what centers a native dialog */
 		width: min(44rem, calc(100vw - 2rem));
 		max-height: min(80vh, 40rem);
 		padding: 0;
