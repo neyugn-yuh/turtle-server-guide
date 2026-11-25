@@ -8,6 +8,11 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"xp": {
+				"min": 5,
+				"max": 5,
+				"bySize": false
+			},
 			"drops": [
 				{
 					"item": "Rotten Flesh",
@@ -54,6 +59,11 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"xp": {
+				"min": 5,
+				"max": 5,
+				"bySize": false
+			},
 			"drops": [
 				{
 					"item": "Bone",
@@ -86,6 +96,11 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"xp": {
+				"min": 5,
+				"max": 5,
+				"bySize": false
+			},
 			"drops": [
 				{
 					"item": "String",
@@ -118,6 +133,11 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"xp": {
+				"min": 1,
+				"max": 3,
+				"bySize": false
+			},
 			"drops": [
 				{
 					"item": "Leather",
@@ -150,6 +170,11 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"xp": {
+				"min": 1,
+				"max": 3,
+				"bySize": false
+			},
 			"drops": [
 				{
 					"item": "Raw Porkchop",
@@ -175,6 +200,11 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"xp": {
+				"min": 1,
+				"max": 3,
+				"bySize": false
+			},
 			"drops": [
 				{
 					"item": "White Wool",
@@ -207,6 +237,11 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"xp": {
+				"min": 1,
+				"max": 3,
+				"bySize": false
+			},
 			"drops": [
 				{
 					"item": "Feather",
@@ -239,6 +274,11 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"xp": {
+				"min": 1,
+				"max": 4,
+				"bySize": true
+			},
 			"drops": [
 				{
 					"item": "Slime Ball",
@@ -264,6 +304,11 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"xp": {
+				"min": 5,
+				"max": 5,
+				"bySize": false
+			},
 			"drops": [
 				{
 					"item": "Gunpowder",
@@ -289,6 +334,11 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"xp": {
+				"min": 5,
+				"max": 5,
+				"bySize": false
+			},
 			"drops": [
 				{
 					"item": "Glass Bottle",
@@ -356,6 +406,11 @@
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
+			"xp": {
+				"min": 1,
+				"max": 3,
+				"bySize": false
+			},
 			"drops": [
 				{
 					"item": "Rabbit Hide",

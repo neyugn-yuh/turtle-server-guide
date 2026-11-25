@@ -93,6 +93,32 @@ const ITEM_NAMES = { CHICKEN: 'Raw Chicken', BEEF: 'Raw Beef', PORKCHOP: 'Raw Po
 // every spawner looks the same in the game, so they share the picture of the spawner block
 const SPAWNER_ICON = 'spawner';
 
+// Experience a vanilla 1.21 mob gives for one kill by a player (the amount TurtleStacker starts from; it is not in any config file).
+// Adult mobs. Animals give 1-3. A slime gives its size (1, 2 or 4), so a spawner slime gives 1-4 (bySize).
+// The entity's loot.xp-multiplier (default 1.0) scales it, as TurtleStacker does when a mob dies.
+const VANILLA_XP = {
+	ZOMBIE: [5, 5],
+	SKELETON: [5, 5],
+	SPIDER: [5, 5],
+	CREEPER: [5, 5],
+	WITCH: [5, 5],
+	COW: [1, 3],
+	PIG: [1, 3],
+	SHEEP: [1, 3],
+	CHICKEN: [1, 3],
+	RABBIT: [1, 3],
+	SLIME: [1, 4],
+};
+const XP_BY_SIZE = new Set(['SLIME']);
+
+function readXp(id, loot, where) {
+	const base = VANILLA_XP[id];
+	if (!base) throw new Error(`${where}: no vanilla experience known for ${id}, add it to VANILLA_XP in sync-spawners.mjs`);
+	const multiplier = Number(loot['xp-multiplier'] ?? 1);
+	if (!Number.isFinite(multiplier) || multiplier < 0) throw new Error(`${where}.loot.xp-multiplier is not valid: ${loot['xp-multiplier']}`);
+	return { min: Math.round(base[0] * multiplier), max: Math.round(base[1] * multiplier), bySize: XP_BY_SIZE.has(id) };
+}
+
 function readTiers(levels, where) {
 	return Object.entries(levels ?? {})
 		.map(([level, tier]) => ({
@@ -123,6 +149,7 @@ function readMob(id, data, upgrades, perks) {
 		icon: SPAWNER_ICON,
 		maxStack: Number(data?.['max-stack'] ?? 100),
 		vanillaDrops: loot.vanilla !== false,
+		xp: readXp(id, loot, where),
 		drops,
 		tiers,
 		perks: mobPerks,

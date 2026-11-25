@@ -21,6 +21,7 @@ const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 2 
 const CURRENCY: Record<string, string> = { money: 'Tiền' };
 const currency = CURRENCY[String(data.currency).toLowerCase()] ?? data.currency;
 const amount = (drop: any) => (drop.min === drop.max ? num(drop.min) : `${num(drop.min)}–${num(drop.max)}`);
+const xpText = (xp: any) => (xp.min === xp.max ? num(xp.min) : `${num(xp.min)}–${num(xp.max)}`);
 // a level above 1, or a level 1 that gives a bonus, means upgrades are switched on for this mob
 const hasUpgrades = (mob: any) => mob.tiers.some((t: any) => t.level > 1 || t.dropBonus > 0 || t.spawnSpeed > 0);
 
@@ -42,7 +43,12 @@ const mobs: any[] = data.mobs;
 					{mob.maxStack >= 1000000 ? <>Một chồng mob <strong>không giới hạn</strong> số con (tối đa kỹ thuật {num(1000000)}).</> : <>Mỗi chồng mob tối đa <strong>{num(mob.maxStack)}</strong> con.</>}
 				</p>
 
-				<h4>Đồ rơi khi giết</h4>
+				<h4>Kinh nghiệm khi giết</h4>
+					<p class="sl-meta">
+						Mỗi con bị giết cho <strong>{xpText(mob.xp)}</strong> điểm kinh nghiệm (exp) như trong game thường.{mob.xp.bySize && ' Slime cho exp bằng cỡ của nó (1, 2 hoặc 4).'}
+					</p>
+
+					<h4>Đồ rơi khi giết</h4>
 				{
 					mob.drops.length === 0 ? (
 						mob.vanillaDrops ? (

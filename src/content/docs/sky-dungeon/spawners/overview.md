@@ -28,7 +28,7 @@ Spawner chỉ sinh mob khi có **người chơi đứng gần** (mặc định t
 
 ## Đồ rơi
 
-Mob chỉ rơi đúng các vật phẩm ghi trong danh sách, theo tỉ lệ mỗi lần giết. Enchant **Looting** không tăng đồ rơi của các vật phẩm này.
+Mob chỉ rơi đúng các vật phẩm ghi trong danh sách, theo tỉ lệ mỗi lần giết. Enchant **Looting** không tăng đồ rơi của các vật phẩm này. Mob vẫn cho **kinh nghiệm (exp)** như trong game thường, số exp mỗi con ghi ở từng spawner trong danh sách.
 
 ## Nâng cấp spawner
 
