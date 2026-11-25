@@ -6,7 +6,7 @@
 			"id": "ZOMBIE",
 			"name": "Zombie",
 			"icon": "spawner",
-			"maxStack": 1000,
+			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"drops": [
 				{
@@ -52,7 +52,7 @@
 			"id": "SKELETON",
 			"name": "Skeleton",
 			"icon": "spawner",
-			"maxStack": 1000,
+			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"drops": [
 				{
@@ -84,7 +84,7 @@
 			"id": "SPIDER",
 			"name": "Spider",
 			"icon": "spawner",
-			"maxStack": 1000,
+			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"drops": [
 				{
@@ -116,7 +116,7 @@
 			"id": "COW",
 			"name": "Cow",
 			"icon": "spawner",
-			"maxStack": 1000,
+			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"drops": [
 				{
@@ -148,7 +148,7 @@
 			"id": "PIG",
 			"name": "Pig",
 			"icon": "spawner",
-			"maxStack": 1000,
+			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"drops": [
 				{
@@ -173,7 +173,7 @@
 			"id": "SHEEP",
 			"name": "Sheep",
 			"icon": "spawner",
-			"maxStack": 1000,
+			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"drops": [
 				{
@@ -205,7 +205,7 @@
 			"id": "CHICKEN",
 			"name": "Chicken",
 			"icon": "spawner",
-			"maxStack": 1000,
+			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"drops": [
 				{
@@ -237,7 +237,7 @@
 			"id": "SLIME",
 			"name": "Slime",
 			"icon": "spawner",
-			"maxStack": 1000,
+			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"drops": [
 				{
@@ -262,7 +262,7 @@
 			"id": "CREEPER",
 			"name": "Creeper",
 			"icon": "spawner",
-			"maxStack": 1000,
+			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"drops": [
 				{
@@ -287,7 +287,7 @@
 			"id": "WITCH",
 			"name": "Witch",
 			"icon": "spawner",
-			"maxStack": 1000,
+			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"drops": [
 				{
@@ -354,7 +354,7 @@
 			"id": "RABBIT",
 			"name": "Rabbit",
 			"icon": "spawner",
-			"maxStack": 1000,
+			"maxStack": 1000000,
 			"vanillaDrops": false,
 			"drops": [
 				{

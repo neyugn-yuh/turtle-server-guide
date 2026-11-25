@@ -13,8 +13,12 @@ Spawner sinh mob liên tục để bạn giết lấy đồ rơi. Mỗi loại m
 ## Gộp spawner và gộp mob
 
 - Đặt các spawner **cùng loại** gần nhau thì chúng gộp thành một chồng, hiện số lượng phía trên. Muốn đặt riêng một spawner, giữ **Shift** khi đặt.
-- Mob do spawner sinh ra cũng gộp thành chồng, mỗi lần giết bạn hạ **một con** trong chồng. Số mob tối đa của một chồng tùy loại mob, ghi ở từng spawner trong danh sách.
+- Mob do spawner sinh ra cũng gộp thành chồng, mỗi lần giết bạn hạ **một con** trong chồng. Số mob tối đa của một chồng ghi ở từng spawner trong danh sách; hiện không giới hạn.
 - Mob từ spawner không gộp lẫn với mob nhân giống, trứng hay mob tự nhiên.
+
+## Khi nào spawner sinh mob
+
+Spawner chỉ sinh mob khi có **người chơi đứng gần** (mặc định trong khoảng 16 block). Không có ai ở gần thì spawner đứng yên, không tích thêm mob.
 
 ## Lấy spawner về
 

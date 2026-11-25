@@ -38,7 +38,9 @@ const mobs: any[] = data.mobs;
 					<img class="sl-icon" src={mobUrl(mob.id)} alt="" loading="lazy" data-fallback={iconUrl(mob.icon)} onerror="this.onerror=null;this.src=this.dataset.fallback" />
 					Spawner {mob.name}
 				</h3>
-				<p class="sl-meta">Mỗi chồng mob tối đa <strong>{num(mob.maxStack)}</strong> con.</p>
+				<p class="sl-meta">
+					{mob.maxStack >= 1000000 ? <>Một chồng mob <strong>không giới hạn</strong> số con (tối đa kỹ thuật {num(1000000)}).</> : <>Mỗi chồng mob tối đa <strong>{num(mob.maxStack)}</strong> con.</>}
+				</p>
 
 				<h4>Đồ rơi khi giết</h4>
 				{
