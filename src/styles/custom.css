@@ -75,6 +75,9 @@
 	--sl-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 	--sl-font-mono: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
 
+	/* Starlight default is 45rem; the data tables (dungeon floors, equipment, materials) have 8+ columns and need room. */
+	--sl-content-width: 72rem;
+
 	--sl-color-white: var(--tw-text);
 	--sl-color-gray-1: var(--tw-text);
 	--sl-color-gray-2: var(--tw-text-nav);

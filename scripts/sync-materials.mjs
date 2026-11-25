@@ -5,6 +5,8 @@
  *
  * Files read:
  *   MMOItems/item/material.yml        the materials: id, name, base block
+ *   MMOItems/item/dungeon_material.yml the dungeon items listed in src/data/material-categories.mjs (Ma Thạch, Lõi, Đá Cường Hóa...)
+ *   src/data/servers/<server>/dungeon.json (written by sync-dungeon.mjs) where each dungeon item drops
  *   MMOItems/item/<type>.yml          only to find the name of the other items in a recipe (type in lower case)
  *   SD-Island/island-upgrades.yml     the island upgrade levels that ask for a material (type MATERIAL)
  *   TurtleCraft/categories.yml        the title of each recipe category
@@ -14,6 +16,7 @@
  *   recipes  the recipes whose result is the material (how to craft it)
  *   uses     the recipes that need the material as an ingredient (what it is for)
  *   upgrades the island upgrade levels that ask the player to hand the material in
+ *   sources  the dungeon mobs that drop it, grouped by floor (dungeon items only)
  * A material with neither is written with empty lists and the page shows it as empty.
  *
  * Where the files come from (one source per run):
@@ -112,17 +115,44 @@ const plain = (text) => String(text ?? '').replace(/<[^<>]*>/g, '').replace(/&#[
 
 const source = flag('--ptero') ? panelSource() : option('--dir') ? diskSource(option('--dir')) : fail('give a source: --dir <plugins folder> or --ptero');
 
+// group of each material (src/data/material-categories.mjs); every material must be in exactly one group
+const { materialCategories } = await import(pathToFileURL(join(ROOT, 'src/data/material-categories.mjs')).href);
+const categoryOf = new Map();
+for (const group of materialCategories) {
+	for (const id of group.ids) {
+		if (categoryOf.has(id)) fail(`${id} is in two groups of src/data/material-categories.mjs`);
+		categoryOf.set(id, group.id);
+	}
+}
+
+function readMaterials(text, file, type, onlyListed) {
+	const yaml = parse(text) ?? {};
+	const out = [];
+	for (const [id, data] of Object.entries(yaml)) {
+		if (!ID.test(id)) fail(`bad material id "${id}"`);
+		if (onlyListed && !categoryOf.has(id.toUpperCase())) continue; // dungeon_material.yml also holds plain drops that are not materials of the guide
+		const base = data?.base ?? {};
+		const block = String(base.material ?? '').toLowerCase();
+		if (!/^[a-z0-9_]*$/.test(block)) fail(`${id}: bad base material "${base.material}"`);
+		out.push({ id: id.toUpperCase(), type, name: plain(base.name) || id, icon: block });
+	}
+	return out;
+}
+
 const materialText = await source.read('MMOItems/item/material.yml');
 if (materialText === null) fail('MMOItems/item/material.yml not found');
-const materialsYaml = parse(materialText) ?? {};
-const materials = Object.entries(materialsYaml).map(([id, data]) => {
-	if (!ID.test(id)) fail(`bad material id "${id}"`);
-	const base = data?.base ?? {};
-	const block = String(base.material ?? '').toLowerCase();
-	if (!/^[a-z0-9_]*$/.test(block)) fail(`${id}: bad base material "${base.material}"`);
-	return { id: id.toUpperCase(), name: plain(base.name) || id, icon: block };
-});
-const wanted = new Set(materials.map((m) => m.id));
+const dungeonMaterialText = await source.read('MMOItems/item/dungeon_material.yml');
+const materials = [
+	...readMaterials(materialText, 'material.yml', 'MATERIAL', false),
+	...(dungeonMaterialText ? readMaterials(dungeonMaterialText, 'dungeon_material.yml', 'DUNGEON_MATERIAL', true) : []),
+];
+const keyOf = (type, id) => `${type}:${id}`;
+const wanted = new Set(materials.map((m) => keyOf(m.type, m.id)));
+const seen = new Set();
+for (const m of materials) {
+	if (seen.has(m.id)) fail(`${m.id} exists in material.yml and dungeon_material.yml`);
+	seen.add(m.id);
+}
 
 // category titles
 const categoriesYaml = parse((await source.read('TurtleCraft/categories.yml')) ?? '')?.categories ?? {};
@@ -139,7 +169,7 @@ async function itemInfo(type, id) {
 	const T = type.toUpperCase();
 	const I = id.toUpperCase();
 	if (T === 'MATERIAL') {
-		const found = materials.find((m) => m.id === I);
+		const found = materials.find((m) => m.type === 'MATERIAL' && m.id === I);
 		return { name: found?.name ?? I, icon: found?.icon ?? '' };
 	}
 	if (!typeFiles.has(T)) {
@@ -185,19 +215,10 @@ async function describe(entries) {
 	return out;
 }
 
-// group of each material (src/data/material-categories.mjs); every material must be in exactly one group
-const { materialCategories } = await import(pathToFileURL(join(ROOT, 'src/data/material-categories.mjs')).href);
-const categoryOf = new Map();
-for (const group of materialCategories) {
-	for (const id of group.ids) {
-		if (categoryOf.has(id)) fail(`${id} is in two groups of src/data/material-categories.mjs`);
-		categoryOf.set(id, group.id);
-	}
-}
 for (const m of materials) if (!categoryOf.has(m.id)) fail(`${m.id} is in no group: add it to src/data/material-categories.mjs`);
-for (const id of categoryOf.keys()) if (!wanted.has(id)) fail(`src/data/material-categories.mjs lists ${id}, which is not in MMOItems/item/material.yml`);
+for (const id of categoryOf.keys()) if (!seen.has(id)) fail(`src/data/material-categories.mjs lists ${id}, which is not in MMOItems/item/material.yml or dungeon_material.yml`);
 
-const result = new Map(materials.map((m) => [m.id, { ...m, category: categoryOf.get(m.id), recipes: [], uses: [], upgrades: [] }]));
+const result = new Map(materials.map((m) => [keyOf(m.type, m.id), { id: m.id, name: m.name, icon: m.icon, category: categoryOf.get(m.id), recipes: [], uses: [], upgrades: [], sources: [] }]));
 
 // island upgrades: which upgrade asks for the material (shown as one short sentence, the amounts are on the island upgrade pages)
 const UPGRADE_TITLES = { 'border-size': 'Diện tích đảo', 'members-limit': 'Thành viên đảo', 'minion-slots': 'Slot đặt minion', ore: 'Máy tạo quặng', 'dungeon-stats': 'Chỉ số dungeon', forge: 'Xưởng rèn' };
@@ -218,7 +239,7 @@ for (const [id, title] of Object.entries(UPGRADE_TITLES)) {
 	for (const level of Object.values(category.levels ?? {})) {
 		for (const key of Object.keys(level?.items ?? {})) {
 			const ref = mmoRef(`mmoitems:${key}`);
-			if (ref && ref.type === 'MATERIAL' && wanted.has(ref.id)) asked.add(ref.id);
+			if (ref && ref.type === 'MATERIAL' && wanted.has(keyOf(ref.type, ref.id))) asked.add(keyOf(ref.type, ref.id));
 		}
 	}
 	for (const materialId of asked) result.get(materialId).upgrades.push({ upgrade: title, use: UPGRADE_USES[id] });
@@ -231,8 +252,8 @@ for (const category of categories) {
 		const text = await source.read(`TurtleCraft/recipes/${category}/${file}`);
 		const recipe = text ? parse(text) : null;
 		if (!recipe) continue;
-		const made = (recipe.results ?? []).map((r) => mmoRef(r?.item)).filter((r) => r?.type === 'MATERIAL' && wanted.has(r.id));
-		const used = (recipe.ingredients ?? []).map((r) => mmoRef(r?.item)).filter((r) => r?.type === 'MATERIAL' && wanted.has(r.id));
+		const made = (recipe.results ?? []).map((r) => mmoRef(r?.item)).filter((r) => r && wanted.has(keyOf(r.type, r.id)));
+		const used = (recipe.ingredients ?? []).map((r) => mmoRef(r?.item)).filter((r) => r && wanted.has(keyOf(r.type, r.id)));
 		if (!made.length && !used.length) continue;
 		const row = {
 			category: categoryTitle(category),
@@ -241,10 +262,30 @@ for (const category of categories) {
 			chance: Number(recipe.chance ?? 100),
 			cost: recipe.cost && typeof recipe.cost === 'object' ? { currency: String(recipe.cost.currency ?? ''), amount: Number(recipe.cost.amount ?? 0) } : null,
 		};
-		for (const ref of made) result.get(ref.id).recipes.push(row);
+		for (const ref of made) result.get(keyOf(ref.type, ref.id)).recipes.push(row);
 		// the grade upgrade of equipment (tang<N>_doido) has one recipe per kind and step: the sword recipes stand for all of them
 		if (/^tang\d+_doido$/.test(category) && !file.startsWith('kiem_')) continue;
-		for (const ref of used) result.get(ref.id).uses.push(row);
+		for (const ref of used) result.get(keyOf(ref.type, ref.id)).uses.push(row);
+	}
+}
+
+// where a dungeon item drops: read from dungeon.json (sync-dungeon.mjs), grouped by floor, chance and condition
+const dungeonFile = join(ROOT, 'src/data/servers', serverSlug, 'dungeon.json');
+if (existsSync(dungeonFile)) {
+	const tiers = JSON.parse(readFileSync(dungeonFile, 'utf8')).tiers ?? [];
+	const byName = new Map([...result.values()].map((m) => [m.name, m]));
+	for (const tier of tiers) {
+		const groups = new Map();
+		for (const mob of tier.mobs) {
+			for (const drop of mob.items ?? []) {
+				const material = byName.get(drop.item);
+				if (!material) continue;
+				const key = `${material.id}|${drop.chance}|${drop.min}|${drop.max}|${drop.when ?? ''}`;
+				if (!groups.has(key)) groups.set(key, { material, row: { floor: tier.n, mobs: [], min: drop.min, max: drop.max, chance: drop.chance, when: drop.when ?? '' } });
+				groups.get(key).row.mobs.push(mob.name);
+			}
+		}
+		for (const { material, row } of groups.values()) material.sources.push(row);
 	}
 }
 

@@ -32,7 +32,8 @@
 					"upgrade": "Diện tích đảo",
 					"use": "Dùng để nâng cấp diện tích đảo."
 				}
-			]
+			],
+			"sources": []
 		},
 		{
 			"id": "KHOAI_TAY_SIEU_CAP",
@@ -66,7 +67,8 @@
 					"upgrade": "Slot đặt minion",
 					"use": "Dùng để nâng cấp số lượng slot đặt minion trên đảo."
 				}
-			]
+			],
+			"sources": []
 		},
 		{
 			"id": "DA_CUOI_TINH_LUYEN",
@@ -401,7 +403,8 @@
 					"upgrade": "Máy tạo quặng",
 					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
-			]
+			],
+			"sources": []
 		},
 		{
 			"id": "THAN_TINH_LUYEN",
@@ -736,7 +739,8 @@
 					"upgrade": "Máy tạo quặng",
 					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
-			]
+			],
+			"sources": []
 		},
 		{
 			"id": "DONG_TINH_LUYEN",
@@ -945,7 +949,8 @@
 					"upgrade": "Máy tạo quặng",
 					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
-			]
+			],
+			"sources": []
 		},
 		{
 			"id": "SAT_TINH_LUYEN",
@@ -1309,7 +1314,8 @@
 					"upgrade": "Máy tạo quặng",
 					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
-			]
+			],
+			"sources": []
 		},
 		{
 			"id": "VANG_TINH_LUYEN",
@@ -1644,7 +1650,8 @@
 					"upgrade": "Máy tạo quặng",
 					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
-			]
+			],
+			"sources": []
 		},
 		{
 			"id": "DA_DO_TINH_LUYEN",
@@ -1829,7 +1836,8 @@
 					"upgrade": "Máy tạo quặng",
 					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
-			]
+			],
+			"sources": []
 		},
 		{
 			"id": "LUU_LY_TINH_LUYEN",
@@ -2164,7 +2172,8 @@
 					"upgrade": "Máy tạo quặng",
 					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
-			]
+			],
+			"sources": []
 		},
 		{
 			"id": "KIM_CUONG_TINH_LUYEN",
@@ -2533,7 +2542,8 @@
 					"upgrade": "Máy tạo quặng",
 					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
-			]
+			],
+			"sources": []
 		},
 		{
 			"id": "LUC_BAO_TINH_LUYEN",
@@ -2718,7 +2728,3868 @@
 					"upgrade": "Máy tạo quặng",
 					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
+			],
+			"sources": []
+		},
+		{
+			"id": "MA_THACH_PHO_THONG",
+			"name": "Ma Thạch Phổ Thông",
+			"icon": "amethyst_shard",
+			"category": "ma-thach",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Đá cường hóa",
+					"ingredients": [
+						{
+							"name": "Đồng Tinh Luyện",
+							"icon": "copper_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 9
+						}
+					],
+					"results": [
+						{
+							"name": "Đá Cường Hóa Sơ Cấp",
+							"icon": "raw_copper",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 10 » tiền đồn goliath",
+					"ingredients": [
+						{
+							"name": "Đại Kiếm Goliath",
+							"icon": "wooden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Đỏ Tinh Luyện",
+							"icon": "redstone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Đại Kiếm Goliath",
+							"icon": "stone_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 11 » thị trấn ngầm rivira",
+					"ingredients": [
+						{
+							"name": "Kiếm Huyết Thệ",
+							"icon": "wooden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Huyết Thệ",
+							"icon": "stone_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 12 » đại thác nước",
+					"ingredients": [
+						{
+							"name": "Kiếm Thủy Triều",
+							"icon": "wooden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Thủy Triều",
+							"icon": "stone_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 13 » thành cổ udaeus",
+					"ingredients": [
+						{
+							"name": "Hắc Kiếm Udaeus",
+							"icon": "wooden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Hắc Kiếm Udaeus",
+							"icon": "stone_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 14 » đấu trường sinh tử",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Huyết Đấu",
+							"icon": "wooden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Huyết Đấu",
+							"icon": "stone_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 15 » vực thẳm & thánh điện balor",
+					"ingredients": [
+						{
+							"name": "Kiếm Hủy Diệt Juggernaut",
+							"icon": "wooden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lục Bảo Tinh Luyện",
+							"icon": "emerald",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Hủy Diệt Juggernaut",
+							"icon": "stone_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 1 » hành lang khởi nguyên",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Khai Phá",
+							"icon": "wooden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"icon": "cobblestone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Khai Phá",
+							"icon": "stone_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 2 » ổ nhện & hang dơi",
+					"ingredients": [
+						{
+							"name": "Kiếm Nanh Độc",
+							"icon": "wooden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"icon": "cobblestone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Nanh Độc",
+							"icon": "stone_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 3 » tổ kiến sát thủ",
+					"ingredients": [
+						{
+							"name": "Kiếm Càng Đỏ",
+							"icon": "wooden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Than Tinh Luyện",
+							"icon": "coal",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Càng Đỏ",
+							"icon": "stone_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 4 » rừng rễ đại thụ",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Rừng Già",
+							"icon": "wooden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Than Tinh Luyện",
+							"icon": "coal",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Rừng Già",
+							"icon": "stone_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 5 » đấu trường chuồng thú",
+					"ingredients": [
+						{
+							"name": "Đại Kiếm Asterius",
+							"icon": "wooden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đồng Tinh Luyện",
+							"icon": "copper_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Đại Kiếm Asterius",
+							"icon": "stone_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 6 » đầm lầy độc khí",
+					"ingredients": [
+						{
+							"name": "Kiếm Độc Chướng",
+							"icon": "wooden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Sắt Tinh Luyện",
+							"icon": "iron_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Độc Chướng",
+							"icon": "stone_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 7 » động sương mù trắng",
+					"ingredients": [
+						{
+							"name": "Kiếm Lửa Địa Ngục",
+							"icon": "wooden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Sắt Tinh Luyện",
+							"icon": "iron_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Lửa Địa Ngục",
+							"icon": "stone_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 8 » hẻm núi wyvern",
+					"ingredients": [
+						{
+							"name": "Thánh Kiếm Đồ Long",
+							"icon": "wooden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Vàng Tinh Luyện",
+							"icon": "gold_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Thánh Kiếm Đồ Long",
+							"icon": "stone_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 9 » rừng pha lê cộng hưởng",
+					"ingredients": [
+						{
+							"name": "Kiếm Pha Lê Tím",
+							"icon": "wooden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Vàng Tinh Luyện",
+							"icon": "gold_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Pha Lê Tím",
+							"icon": "stone_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 1,
+					"mobs": [
+						"Goblin Đói Khát",
+						"Chó Sói Kobold",
+						"Hobgoblin Đao Phủ",
+						"Sói Đầu Đàn Silverback"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": ""
+				},
+				{
+					"floor": 2,
+					"mobs": [
+						"Nhện Hầm Ngục",
+						"Dơi Hút Máu (Fang Bat)",
+						"Nhện Độc Hắc Ám",
+						"Nhện Chúa Arachne Sơ Cấp"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": ""
+				},
+				{
+					"floor": 3,
+					"mobs": [
+						"Kiến Thợ (Worker Ant)",
+						"Kiến Lính Sát Thủ (Killer Ant)",
+						"Kiến Càng Thiết Giáp"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": ""
+				},
+				{
+					"floor": 3,
+					"mobs": [
+						"Kiến Chúa Đẻ Trứng"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "floor"
+				},
+				{
+					"floor": 4,
+					"mobs": [
+						"Thỏ Một Sừng (Needle Rabbit)",
+						"Thụ Nhân Cổ Đại (Treant)"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": ""
+				},
+				{
+					"floor": 4,
+					"mobs": [
+						"Ám Ảnh Sát Thủ"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "floor"
+				}
 			]
+		},
+		{
+			"id": "MA_THACH_TINH_LUYEN",
+			"name": "Ma Thạch Tinh Luyện",
+			"icon": "lapis_lazuli",
+			"category": "ma-thach",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Đá cường hóa",
+					"ingredients": [
+						{
+							"name": "Sắt Tinh Luyện",
+							"icon": "iron_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 9
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 3
+						}
+					],
+					"results": [
+						{
+							"name": "Đá Cường Hóa Trung Cấp",
+							"icon": "raw_iron",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 10 » tiền đồn goliath",
+					"ingredients": [
+						{
+							"name": "Đại Kiếm Goliath",
+							"icon": "stone_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Đỏ Tinh Luyện",
+							"icon": "redstone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Đại Kiếm Goliath",
+							"icon": "copper_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 11 » thị trấn ngầm rivira",
+					"ingredients": [
+						{
+							"name": "Kiếm Huyết Thệ",
+							"icon": "stone_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Huyết Thệ",
+							"icon": "copper_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 12 » đại thác nước",
+					"ingredients": [
+						{
+							"name": "Kiếm Thủy Triều",
+							"icon": "stone_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Thủy Triều",
+							"icon": "copper_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 13 » thành cổ udaeus",
+					"ingredients": [
+						{
+							"name": "Hắc Kiếm Udaeus",
+							"icon": "stone_sword",
+							"amount": 5
+						},
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Hắc Kiếm Udaeus",
+							"icon": "copper_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 14 » đấu trường sinh tử",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Huyết Đấu",
+							"icon": "stone_sword",
+							"amount": 5
+						},
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Huyết Đấu",
+							"icon": "copper_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 15 » vực thẳm & thánh điện balor",
+					"ingredients": [
+						{
+							"name": "Kiếm Hủy Diệt Juggernaut",
+							"icon": "stone_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lục Bảo Tinh Luyện",
+							"icon": "emerald",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Hủy Diệt Juggernaut",
+							"icon": "copper_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 1 » hành lang khởi nguyên",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Khai Phá",
+							"icon": "stone_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"icon": "cobblestone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Khai Phá",
+							"icon": "copper_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 2 » ổ nhện & hang dơi",
+					"ingredients": [
+						{
+							"name": "Kiếm Nanh Độc",
+							"icon": "stone_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"icon": "cobblestone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Nanh Độc",
+							"icon": "copper_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 3 » tổ kiến sát thủ",
+					"ingredients": [
+						{
+							"name": "Kiếm Càng Đỏ",
+							"icon": "stone_sword",
+							"amount": 5
+						},
+						{
+							"name": "Than Tinh Luyện",
+							"icon": "coal",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Càng Đỏ",
+							"icon": "copper_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 4 » rừng rễ đại thụ",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Rừng Già",
+							"icon": "stone_sword",
+							"amount": 5
+						},
+						{
+							"name": "Than Tinh Luyện",
+							"icon": "coal",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Rừng Già",
+							"icon": "copper_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 5 » đấu trường chuồng thú",
+					"ingredients": [
+						{
+							"name": "Đại Kiếm Asterius",
+							"icon": "stone_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đồng Tinh Luyện",
+							"icon": "copper_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Đại Kiếm Asterius",
+							"icon": "copper_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 6 » đầm lầy độc khí",
+					"ingredients": [
+						{
+							"name": "Kiếm Độc Chướng",
+							"icon": "stone_sword",
+							"amount": 5
+						},
+						{
+							"name": "Sắt Tinh Luyện",
+							"icon": "iron_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Độc Chướng",
+							"icon": "copper_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 7 » động sương mù trắng",
+					"ingredients": [
+						{
+							"name": "Kiếm Lửa Địa Ngục",
+							"icon": "stone_sword",
+							"amount": 5
+						},
+						{
+							"name": "Sắt Tinh Luyện",
+							"icon": "iron_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Lửa Địa Ngục",
+							"icon": "copper_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 8 » hẻm núi wyvern",
+					"ingredients": [
+						{
+							"name": "Thánh Kiếm Đồ Long",
+							"icon": "stone_sword",
+							"amount": 5
+						},
+						{
+							"name": "Vàng Tinh Luyện",
+							"icon": "gold_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Thánh Kiếm Đồ Long",
+							"icon": "copper_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 9 » rừng pha lê cộng hưởng",
+					"ingredients": [
+						{
+							"name": "Kiếm Pha Lê Tím",
+							"icon": "stone_sword",
+							"amount": 5
+						},
+						{
+							"name": "Vàng Tinh Luyện",
+							"icon": "gold_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Pha Lê Tím",
+							"icon": "copper_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 5,
+					"mobs": [
+						"Orc Khát Máu",
+						"Minotaur Tuần Tra"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": ""
+				},
+				{
+					"floor": 5,
+					"mobs": [
+						"Minotaur Đỏ (asterius Sơ Cấp)"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "floor"
+				},
+				{
+					"floor": 6,
+					"mobs": [
+						"Ếch Phóng Lao (Frog Shooter)",
+						"Bướm Độc Tím (Purple Moth)",
+						"Cóc Khổng Lồ Đầm Lầy"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": ""
+				},
+				{
+					"floor": 6,
+					"mobs": [
+						"Thủy Quái Hydra Đầm Lầy"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "floor"
+				},
+				{
+					"floor": 7,
+					"mobs": [
+						"Tiểu Quỷ Sương Mù (Mist Imp)",
+						"Kẻ Săn Mồi Trong Sương"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": ""
+				},
+				{
+					"floor": 7,
+					"mobs": [
+						"Quỷ Khuyển Ba Đầu Cerberus"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "floor"
+				},
+				{
+					"floor": 8,
+					"mobs": [
+						"Tượng Đá Gargoyle",
+						"Long Nhân Hộ Vệ",
+						"Tiểu Long (infant Dragon)"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": ""
+				}
+			]
+		},
+		{
+			"id": "MA_THACH_CAO_CAP",
+			"name": "Ma Thạch Cao Cấp",
+			"icon": "emerald",
+			"category": "ma-thach",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Đá cường hóa",
+					"ingredients": [
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 6
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 3
+						},
+						{
+							"name": "Tinh Thể Dung Nham",
+							"icon": "magma_block",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Đá Cường Hóa Cao Cấp",
+							"icon": "netherite_scrap",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Đá cường hóa",
+					"ingredients": [
+						{
+							"name": "Sắt Tinh Luyện",
+							"icon": "iron_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 9
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 3
+						}
+					],
+					"results": [
+						{
+							"name": "Đá Cường Hóa Trung Cấp",
+							"icon": "raw_iron",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 10 » tiền đồn goliath",
+					"ingredients": [
+						{
+							"name": "Đại Kiếm Goliath",
+							"icon": "copper_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Đỏ Tinh Luyện",
+							"icon": "redstone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Đại Kiếm Goliath",
+							"icon": "iron_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 11 » thị trấn ngầm rivira",
+					"ingredients": [
+						{
+							"name": "Kiếm Huyết Thệ",
+							"icon": "copper_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Huyết Thệ",
+							"icon": "iron_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 12 » đại thác nước",
+					"ingredients": [
+						{
+							"name": "Kiếm Thủy Triều",
+							"icon": "copper_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Thủy Triều",
+							"icon": "iron_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 13 » thành cổ udaeus",
+					"ingredients": [
+						{
+							"name": "Hắc Kiếm Udaeus",
+							"icon": "copper_sword",
+							"amount": 5
+						},
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Hắc Kiếm Udaeus",
+							"icon": "iron_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 14 » đấu trường sinh tử",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Huyết Đấu",
+							"icon": "copper_sword",
+							"amount": 5
+						},
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Huyết Đấu",
+							"icon": "iron_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 15 » vực thẳm & thánh điện balor",
+					"ingredients": [
+						{
+							"name": "Kiếm Hủy Diệt Juggernaut",
+							"icon": "copper_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lục Bảo Tinh Luyện",
+							"icon": "emerald",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Hủy Diệt Juggernaut",
+							"icon": "iron_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 1 » hành lang khởi nguyên",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Khai Phá",
+							"icon": "copper_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"icon": "cobblestone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Khai Phá",
+							"icon": "iron_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 2 » ổ nhện & hang dơi",
+					"ingredients": [
+						{
+							"name": "Kiếm Nanh Độc",
+							"icon": "copper_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"icon": "cobblestone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Nanh Độc",
+							"icon": "iron_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 3 » tổ kiến sát thủ",
+					"ingredients": [
+						{
+							"name": "Kiếm Càng Đỏ",
+							"icon": "copper_sword",
+							"amount": 5
+						},
+						{
+							"name": "Than Tinh Luyện",
+							"icon": "coal",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Càng Đỏ",
+							"icon": "iron_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 4 » rừng rễ đại thụ",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Rừng Già",
+							"icon": "copper_sword",
+							"amount": 5
+						},
+						{
+							"name": "Than Tinh Luyện",
+							"icon": "coal",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Rừng Già",
+							"icon": "iron_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 5 » đấu trường chuồng thú",
+					"ingredients": [
+						{
+							"name": "Đại Kiếm Asterius",
+							"icon": "copper_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đồng Tinh Luyện",
+							"icon": "copper_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Đại Kiếm Asterius",
+							"icon": "iron_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 6 » đầm lầy độc khí",
+					"ingredients": [
+						{
+							"name": "Kiếm Độc Chướng",
+							"icon": "copper_sword",
+							"amount": 5
+						},
+						{
+							"name": "Sắt Tinh Luyện",
+							"icon": "iron_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Độc Chướng",
+							"icon": "iron_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 7 » động sương mù trắng",
+					"ingredients": [
+						{
+							"name": "Kiếm Lửa Địa Ngục",
+							"icon": "copper_sword",
+							"amount": 5
+						},
+						{
+							"name": "Sắt Tinh Luyện",
+							"icon": "iron_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Lửa Địa Ngục",
+							"icon": "iron_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 8 » hẻm núi wyvern",
+					"ingredients": [
+						{
+							"name": "Thánh Kiếm Đồ Long",
+							"icon": "copper_sword",
+							"amount": 5
+						},
+						{
+							"name": "Vàng Tinh Luyện",
+							"icon": "gold_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Thánh Kiếm Đồ Long",
+							"icon": "iron_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 9 » rừng pha lê cộng hưởng",
+					"ingredients": [
+						{
+							"name": "Kiếm Pha Lê Tím",
+							"icon": "copper_sword",
+							"amount": 5
+						},
+						{
+							"name": "Vàng Tinh Luyện",
+							"icon": "gold_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 16
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Pha Lê Tím",
+							"icon": "iron_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 9,
+					"mobs": [
+						"Thỏ Sừng Tinh Anh (Almiraj)",
+						"Người Đá Tinh Thể (Crystal Golem)"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": ""
+				},
+				{
+					"floor": 9,
+					"mobs": [
+						"Đại Vương Tinh Thể"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "floor"
+				},
+				{
+					"floor": 10,
+					"mobs": [
+						"Kỳ Nhông Lửa (Salamander)",
+						"Khổng Lồ Dung Nham (Lava Troll)",
+						"Minotaur Thiết Giáp"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": ""
+				},
+				{
+					"floor": 10,
+					"mobs": [
+						"Goliath Khổng Lồ"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "floor"
+				},
+				{
+					"floor": 11,
+					"mobs": [
+						"Quái Vật Biến Dị (Moss Huge)",
+						"Biến Thể Goliath Đen"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": ""
+				}
+			]
+		},
+		{
+			"id": "MA_THACH_HIEM",
+			"name": "Ma Thạch Hiếm",
+			"icon": "gold_ingot",
+			"category": "ma-thach",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Đá cường hóa",
+					"ingredients": [
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 6
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 3
+						},
+						{
+							"name": "Tinh Thể Dung Nham",
+							"icon": "magma_block",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Đá Cường Hóa Cao Cấp",
+							"icon": "netherite_scrap",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 10 » tiền đồn goliath",
+					"ingredients": [
+						{
+							"name": "Đại Kiếm Goliath",
+							"icon": "iron_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Đỏ Tinh Luyện",
+							"icon": "redstone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 8
+						}
+					],
+					"results": [
+						{
+							"name": "Đại Kiếm Goliath",
+							"icon": "golden_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 10 » tiền đồn goliath",
+					"ingredients": [
+						{
+							"name": "Đại Kiếm Goliath",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Đỏ Tinh Luyện",
+							"icon": "redstone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Goliath Cổng 10",
+							"icon": "magma_cream",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Đại Kiếm Goliath",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 11 » thị trấn ngầm rivira",
+					"ingredients": [
+						{
+							"name": "Kiếm Huyết Thệ",
+							"icon": "iron_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 8
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Huyết Thệ",
+							"icon": "golden_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 11 » thị trấn ngầm rivira",
+					"ingredients": [
+						{
+							"name": "Kiếm Huyết Thệ",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Goliath Đen",
+							"icon": "crying_obsidian",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Huyết Thệ",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 12 » đại thác nước",
+					"ingredients": [
+						{
+							"name": "Kiếm Thủy Triều",
+							"icon": "iron_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 8
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Thủy Triều",
+							"icon": "golden_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 12 » đại thác nước",
+					"ingredients": [
+						{
+							"name": "Kiếm Thủy Triều",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Hải Xà Leviathan",
+							"icon": "nautilus_shell",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Thủy Triều",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 13 » thành cổ udaeus",
+					"ingredients": [
+						{
+							"name": "Hắc Kiếm Udaeus",
+							"icon": "iron_sword",
+							"amount": 5
+						},
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 8
+						}
+					],
+					"results": [
+						{
+							"name": "Hắc Kiếm Udaeus",
+							"icon": "golden_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 13 » thành cổ udaeus",
+					"ingredients": [
+						{
+							"name": "Hắc Kiếm Udaeus",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Hắc Vương Udaeus",
+							"icon": "wither_skeleton_skull",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Hắc Kiếm Udaeus",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 14 » đấu trường sinh tử",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Huyết Đấu",
+							"icon": "iron_sword",
+							"amount": 5
+						},
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 8
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Huyết Đấu",
+							"icon": "golden_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 14 » đấu trường sinh tử",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Huyết Đấu",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Quản Ngục Tử Thần",
+							"icon": "chain",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Huyết Đấu",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 15 » vực thẳm & thánh điện balor",
+					"ingredients": [
+						{
+							"name": "Kiếm Hủy Diệt Juggernaut",
+							"icon": "iron_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lục Bảo Tinh Luyện",
+							"icon": "emerald",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 8
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Hủy Diệt Juggernaut",
+							"icon": "golden_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 15 » vực thẳm & thánh điện balor",
+					"ingredients": [
+						{
+							"name": "Kiếm Hủy Diệt Juggernaut",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lục Bảo Tinh Luyện",
+							"icon": "emerald",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Ma Nhãn Balor",
+							"icon": "ender_eye",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Hủy Diệt Juggernaut",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 1 » hành lang khởi nguyên",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Khai Phá",
+							"icon": "iron_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"icon": "cobblestone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 8
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Khai Phá",
+							"icon": "golden_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 1 » hành lang khởi nguyên",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Khai Phá",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"icon": "cobblestone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Sói Silverback",
+							"icon": "bone",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Khai Phá",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 2 » ổ nhện & hang dơi",
+					"ingredients": [
+						{
+							"name": "Kiếm Nanh Độc",
+							"icon": "iron_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"icon": "cobblestone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 8
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Nanh Độc",
+							"icon": "golden_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 2 » ổ nhện & hang dơi",
+					"ingredients": [
+						{
+							"name": "Kiếm Nanh Độc",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"icon": "cobblestone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Nhện Chúa Arachne",
+							"icon": "spider_eye",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Nanh Độc",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 3 » tổ kiến sát thủ",
+					"ingredients": [
+						{
+							"name": "Kiếm Càng Đỏ",
+							"icon": "iron_sword",
+							"amount": 5
+						},
+						{
+							"name": "Than Tinh Luyện",
+							"icon": "coal",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 8
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Càng Đỏ",
+							"icon": "golden_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 3 » tổ kiến sát thủ",
+					"ingredients": [
+						{
+							"name": "Kiếm Càng Đỏ",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Than Tinh Luyện",
+							"icon": "coal",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Kiến Chúa",
+							"icon": "honeycomb",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Càng Đỏ",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 4 » rừng rễ đại thụ",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Rừng Già",
+							"icon": "iron_sword",
+							"amount": 5
+						},
+						{
+							"name": "Than Tinh Luyện",
+							"icon": "coal",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 8
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Rừng Già",
+							"icon": "golden_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 4 » rừng rễ đại thụ",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Rừng Già",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Than Tinh Luyện",
+							"icon": "coal",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Ám Ảnh Sát Thủ",
+							"icon": "phantom_membrane",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Rừng Già",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 5 » đấu trường chuồng thú",
+					"ingredients": [
+						{
+							"name": "Đại Kiếm Asterius",
+							"icon": "iron_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đồng Tinh Luyện",
+							"icon": "copper_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 8
+						}
+					],
+					"results": [
+						{
+							"name": "Đại Kiếm Asterius",
+							"icon": "golden_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 5 » đấu trường chuồng thú",
+					"ingredients": [
+						{
+							"name": "Đại Kiếm Asterius",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đồng Tinh Luyện",
+							"icon": "copper_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Minotaur Asterius",
+							"icon": "goat_horn",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Đại Kiếm Asterius",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 6 » đầm lầy độc khí",
+					"ingredients": [
+						{
+							"name": "Kiếm Độc Chướng",
+							"icon": "iron_sword",
+							"amount": 5
+						},
+						{
+							"name": "Sắt Tinh Luyện",
+							"icon": "iron_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 8
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Độc Chướng",
+							"icon": "golden_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 6 » đầm lầy độc khí",
+					"ingredients": [
+						{
+							"name": "Kiếm Độc Chướng",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Sắt Tinh Luyện",
+							"icon": "iron_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Thủy Quái Hydra",
+							"icon": "slime_ball",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Độc Chướng",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 7 » động sương mù trắng",
+					"ingredients": [
+						{
+							"name": "Kiếm Lửa Địa Ngục",
+							"icon": "iron_sword",
+							"amount": 5
+						},
+						{
+							"name": "Sắt Tinh Luyện",
+							"icon": "iron_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 8
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Lửa Địa Ngục",
+							"icon": "golden_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 7 » động sương mù trắng",
+					"ingredients": [
+						{
+							"name": "Kiếm Lửa Địa Ngục",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Sắt Tinh Luyện",
+							"icon": "iron_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Quỷ Khuyển Cerberus",
+							"icon": "blaze_powder",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Lửa Địa Ngục",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 8 » hẻm núi wyvern",
+					"ingredients": [
+						{
+							"name": "Thánh Kiếm Đồ Long",
+							"icon": "iron_sword",
+							"amount": 5
+						},
+						{
+							"name": "Vàng Tinh Luyện",
+							"icon": "gold_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 8
+						}
+					],
+					"results": [
+						{
+							"name": "Thánh Kiếm Đồ Long",
+							"icon": "golden_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 8 » hẻm núi wyvern",
+					"ingredients": [
+						{
+							"name": "Thánh Kiếm Đồ Long",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Vàng Tinh Luyện",
+							"icon": "gold_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Tiểu Long",
+							"icon": "dragon_head",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Thánh Kiếm Đồ Long",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 9 » rừng pha lê cộng hưởng",
+					"ingredients": [
+						{
+							"name": "Kiếm Pha Lê Tím",
+							"icon": "iron_sword",
+							"amount": 5
+						},
+						{
+							"name": "Vàng Tinh Luyện",
+							"icon": "gold_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 8
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Pha Lê Tím",
+							"icon": "golden_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				},
+				{
+					"category": "Tầng 9 » rừng pha lê cộng hưởng",
+					"ingredients": [
+						{
+							"name": "Kiếm Pha Lê Tím",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Vàng Tinh Luyện",
+							"icon": "gold_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Đại Vương Tinh Thể",
+							"icon": "amethyst_cluster",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Pha Lê Tím",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 12,
+					"mobs": [
+						"Chiến Mã Nước (Kelpie)",
+						"Cua Thiết Giáp Khổng Lồ"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": ""
+				},
+				{
+					"floor": 12,
+					"mobs": [
+						"Hải Xà Leviathan"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "floor"
+				},
+				{
+					"floor": 13,
+					"mobs": [
+						"Ác Quỷ Hầm Mỏ (Blood Demon)",
+						"Hắc Vương Udaeus"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": ""
+				},
+				{
+					"floor": 14,
+					"mobs": [
+						"Giác Đấu Sĩ Hư Không",
+						"Xà Nữ Lamia Nguyền Rủa",
+						"Kẻ Hành Quyết Đấu Trường"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": ""
+				},
+				{
+					"floor": 14,
+					"mobs": [
+						"Quản Ngục Tử Thần"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "floor"
+				},
+				{
+					"floor": 15,
+					"mobs": [
+						"Rồng Độc Peluda",
+						"Sâu Khổng Lồ Lambton",
+						"Kỵ Sĩ Hư Không Tối Thượng",
+						"Ma Nhãn Balor"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": ""
+				},
+				{
+					"floor": 15,
+					"mobs": [
+						"Sát Thủ Juggernaut"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "floor"
+				}
+			]
+		},
+		{
+			"id": "MA_THACH_CUC_SAC",
+			"name": "Ma Thạch Cực Sắc",
+			"icon": "firework_star",
+			"category": "ma-thach",
+			"recipes": [],
+			"uses": [],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 2,
+					"mobs": [
+						"Dơi Chúa Huyết Dực"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": ""
+				},
+				{
+					"floor": 3,
+					"mobs": [
+						"Kiến Chúa Đẻ Trứng"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "outbreak"
+				},
+				{
+					"floor": 4,
+					"mobs": [
+						"Ám Ảnh Sát Thủ"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "outbreak"
+				},
+				{
+					"floor": 5,
+					"mobs": [
+						"Minotaur Đỏ (asterius Sơ Cấp)"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "outbreak"
+				},
+				{
+					"floor": 6,
+					"mobs": [
+						"Thủy Quái Hydra Đầm Lầy"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "outbreak"
+				},
+				{
+					"floor": 7,
+					"mobs": [
+						"Quỷ Khuyển Ba Đầu Cerberus"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "outbreak"
+				},
+				{
+					"floor": 9,
+					"mobs": [
+						"Đại Vương Tinh Thể"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "outbreak"
+				},
+				{
+					"floor": 10,
+					"mobs": [
+						"Goliath Khổng Lồ"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "outbreak"
+				},
+				{
+					"floor": 12,
+					"mobs": [
+						"Hải Xà Leviathan"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "outbreak"
+				},
+				{
+					"floor": 14,
+					"mobs": [
+						"Quản Ngục Tử Thần"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "outbreak"
+				},
+				{
+					"floor": 15,
+					"mobs": [
+						"Sát Thủ Juggernaut"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 10,
+					"when": "outbreak"
+				}
+			]
+		},
+		{
+			"id": "MA_THACH_TOI_THUONG",
+			"name": "Ma Thạch Tối Thượng",
+			"icon": "echo_shard",
+			"category": "ma-thach",
+			"recipes": [],
+			"uses": [],
+			"upgrades": [],
+			"sources": []
+		},
+		{
+			"id": "LOI_BOSS_01_SILVERBACK",
+			"name": "Lõi Sói Silverback",
+			"icon": "bone",
+			"category": "dungeon",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Tầng 1 » hành lang khởi nguyên",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Khai Phá",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"icon": "cobblestone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Sói Silverback",
+							"icon": "bone",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Khai Phá",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 1,
+					"mobs": [
+						"Sói Đầu Đàn Silverback"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 100,
+					"when": ""
+				}
+			]
+		},
+		{
+			"id": "LOI_BOSS_02_ARACHNE",
+			"name": "Lõi Nhện Chúa Arachne",
+			"icon": "spider_eye",
+			"category": "dungeon",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Tầng 2 » ổ nhện & hang dơi",
+					"ingredients": [
+						{
+							"name": "Kiếm Nanh Độc",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"icon": "cobblestone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Nhện Chúa Arachne",
+							"icon": "spider_eye",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Nanh Độc",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 2,
+					"mobs": [
+						"Nhện Chúa Arachne Sơ Cấp"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 100,
+					"when": ""
+				}
+			]
+		},
+		{
+			"id": "LOI_BOSS_03_KIEN_CHUA",
+			"name": "Lõi Kiến Chúa",
+			"icon": "honeycomb",
+			"category": "dungeon",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Tầng 3 » tổ kiến sát thủ",
+					"ingredients": [
+						{
+							"name": "Kiếm Càng Đỏ",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Than Tinh Luyện",
+							"icon": "coal",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Kiến Chúa",
+							"icon": "honeycomb",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Càng Đỏ",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 3,
+					"mobs": [
+						"Kiến Chúa Đẻ Trứng"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 100,
+					"when": ""
+				}
+			]
+		},
+		{
+			"id": "LOI_BOSS_04_AM_ANH",
+			"name": "Lõi Ám Ảnh Sát Thủ",
+			"icon": "phantom_membrane",
+			"category": "dungeon",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Tầng 4 » rừng rễ đại thụ",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Rừng Già",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Than Tinh Luyện",
+							"icon": "coal",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Ám Ảnh Sát Thủ",
+							"icon": "phantom_membrane",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Rừng Già",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 4,
+					"mobs": [
+						"Ám Ảnh Sát Thủ"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 100,
+					"when": ""
+				}
+			]
+		},
+		{
+			"id": "LOI_BOSS_05_ASTERIUS",
+			"name": "Lõi Minotaur Asterius",
+			"icon": "goat_horn",
+			"category": "dungeon",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Tầng 5 » đấu trường chuồng thú",
+					"ingredients": [
+						{
+							"name": "Đại Kiếm Asterius",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đồng Tinh Luyện",
+							"icon": "copper_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Minotaur Asterius",
+							"icon": "goat_horn",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Đại Kiếm Asterius",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 5,
+					"mobs": [
+						"Minotaur Đỏ (asterius Sơ Cấp)"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 100,
+					"when": ""
+				}
+			]
+		},
+		{
+			"id": "LOI_BOSS_06_HYDRA",
+			"name": "Lõi Thủy Quái Hydra",
+			"icon": "slime_ball",
+			"category": "dungeon",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Tầng 6 » đầm lầy độc khí",
+					"ingredients": [
+						{
+							"name": "Kiếm Độc Chướng",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Sắt Tinh Luyện",
+							"icon": "iron_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Thủy Quái Hydra",
+							"icon": "slime_ball",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Độc Chướng",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 6,
+					"mobs": [
+						"Thủy Quái Hydra Đầm Lầy"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 100,
+					"when": ""
+				}
+			]
+		},
+		{
+			"id": "LOI_BOSS_07_CERBERUS",
+			"name": "Lõi Quỷ Khuyển Cerberus",
+			"icon": "blaze_powder",
+			"category": "dungeon",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Tầng 7 » động sương mù trắng",
+					"ingredients": [
+						{
+							"name": "Kiếm Lửa Địa Ngục",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Sắt Tinh Luyện",
+							"icon": "iron_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Quỷ Khuyển Cerberus",
+							"icon": "blaze_powder",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Lửa Địa Ngục",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 7,
+					"mobs": [
+						"Quỷ Khuyển Ba Đầu Cerberus"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 100,
+					"when": ""
+				}
+			]
+		},
+		{
+			"id": "LOI_BOSS_08_TIEU_LONG",
+			"name": "Lõi Tiểu Long",
+			"icon": "dragon_head",
+			"category": "dungeon",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Tầng 8 » hẻm núi wyvern",
+					"ingredients": [
+						{
+							"name": "Thánh Kiếm Đồ Long",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Vàng Tinh Luyện",
+							"icon": "gold_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Tiểu Long",
+							"icon": "dragon_head",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Thánh Kiếm Đồ Long",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 8,
+					"mobs": [
+						"Tiểu Long (infant Dragon)"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 100,
+					"when": ""
+				}
+			]
+		},
+		{
+			"id": "LOI_BOSS_09_TINH_THE",
+			"name": "Lõi Đại Vương Tinh Thể",
+			"icon": "amethyst_cluster",
+			"category": "dungeon",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Tầng 9 » rừng pha lê cộng hưởng",
+					"ingredients": [
+						{
+							"name": "Kiếm Pha Lê Tím",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Vàng Tinh Luyện",
+							"icon": "gold_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Đại Vương Tinh Thể",
+							"icon": "amethyst_cluster",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Pha Lê Tím",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 9,
+					"mobs": [
+						"Đại Vương Tinh Thể"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 100,
+					"when": ""
+				}
+			]
+		},
+		{
+			"id": "LOI_BOSS_10_GOLIATH",
+			"name": "Lõi Goliath Cổng 10",
+			"icon": "magma_cream",
+			"category": "dungeon",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Tầng 10 » tiền đồn goliath",
+					"ingredients": [
+						{
+							"name": "Đại Kiếm Goliath",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Đá Đỏ Tinh Luyện",
+							"icon": "redstone",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Goliath Cổng 10",
+							"icon": "magma_cream",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Đại Kiếm Goliath",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 10,
+					"mobs": [
+						"Goliath Khổng Lồ"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 100,
+					"when": ""
+				}
+			]
+		},
+		{
+			"id": "LOI_BOSS_11_GOLIATH_DEN",
+			"name": "Lõi Goliath Đen",
+			"icon": "crying_obsidian",
+			"category": "dungeon",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Tầng 11 » thị trấn ngầm rivira",
+					"ingredients": [
+						{
+							"name": "Kiếm Huyết Thệ",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Goliath Đen",
+							"icon": "crying_obsidian",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Huyết Thệ",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 11,
+					"mobs": [
+						"Biến Thể Goliath Đen"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 100,
+					"when": ""
+				}
+			]
+		},
+		{
+			"id": "LOI_BOSS_12_LEVIATHAN",
+			"name": "Lõi Hải Xà Leviathan",
+			"icon": "nautilus_shell",
+			"category": "dungeon",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Tầng 12 » đại thác nước",
+					"ingredients": [
+						{
+							"name": "Kiếm Thủy Triều",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Hải Xà Leviathan",
+							"icon": "nautilus_shell",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Thủy Triều",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 12,
+					"mobs": [
+						"Hải Xà Leviathan"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 100,
+					"when": ""
+				}
+			]
+		},
+		{
+			"id": "LOI_BOSS_13_UDAEUS",
+			"name": "Lõi Hắc Vương Udaeus",
+			"icon": "wither_skeleton_skull",
+			"category": "dungeon",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Tầng 13 » thành cổ udaeus",
+					"ingredients": [
+						{
+							"name": "Hắc Kiếm Udaeus",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Hắc Vương Udaeus",
+							"icon": "wither_skeleton_skull",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Hắc Kiếm Udaeus",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 13,
+					"mobs": [
+						"Hắc Vương Udaeus"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 100,
+					"when": ""
+				}
+			]
+		},
+		{
+			"id": "LOI_BOSS_14_QUAN_NGUC",
+			"name": "Lõi Quản Ngục Tử Thần",
+			"icon": "chain",
+			"category": "dungeon",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Tầng 14 » đấu trường sinh tử",
+					"ingredients": [
+						{
+							"name": "Trường Kiếm Huyết Đấu",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Quản Ngục Tử Thần",
+							"icon": "chain",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Trường Kiếm Huyết Đấu",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 14,
+					"mobs": [
+						"Quản Ngục Tử Thần"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 100,
+					"when": ""
+				}
+			]
+		},
+		{
+			"id": "LOI_BOSS_15_BALOR",
+			"name": "Lõi Ma Nhãn Balor",
+			"icon": "ender_eye",
+			"category": "dungeon",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Tầng 15 » vực thẳm & thánh điện balor",
+					"ingredients": [
+						{
+							"name": "Kiếm Hủy Diệt Juggernaut",
+							"icon": "golden_sword",
+							"amount": 5
+						},
+						{
+							"name": "Lục Bảo Tinh Luyện",
+							"icon": "emerald",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 24
+						},
+						{
+							"name": "Lõi Ma Nhãn Balor",
+							"icon": "ender_eye",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Kiếm Hủy Diệt Juggernaut",
+							"icon": "diamond_sword",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": [
+				{
+					"floor": 15,
+					"mobs": [
+						"Ma Nhãn Balor"
+					],
+					"min": 1,
+					"max": 1,
+					"chance": 100,
+					"when": ""
+				}
+			]
+		},
+		{
+			"id": "TINH_THE_DUNG_NHAM",
+			"name": "Tinh Thể Dung Nham",
+			"icon": "magma_block",
+			"category": "dungeon",
+			"recipes": [],
+			"uses": [
+				{
+					"category": "Đá cường hóa",
+					"ingredients": [
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 6
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 3
+						},
+						{
+							"name": "Tinh Thể Dung Nham",
+							"icon": "magma_block",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Đá Cường Hóa Cao Cấp",
+							"icon": "netherite_scrap",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"upgrades": [],
+			"sources": []
+		},
+		{
+			"id": "DA_CUONG_HOA_SO_CAP",
+			"name": "Đá Cường Hóa Sơ Cấp",
+			"icon": "raw_copper",
+			"category": "dungeon",
+			"recipes": [
+				{
+					"category": "Đá cường hóa",
+					"ingredients": [
+						{
+							"name": "Đồng Tinh Luyện",
+							"icon": "copper_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Phổ Thông",
+							"icon": "amethyst_shard",
+							"amount": 9
+						}
+					],
+					"results": [
+						{
+							"name": "Đá Cường Hóa Sơ Cấp",
+							"icon": "raw_copper",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"uses": [],
+			"upgrades": [],
+			"sources": []
+		},
+		{
+			"id": "DA_CUONG_HOA_TRUNG_CAP",
+			"name": "Đá Cường Hóa Trung Cấp",
+			"icon": "raw_iron",
+			"category": "dungeon",
+			"recipes": [
+				{
+					"category": "Đá cường hóa",
+					"ingredients": [
+						{
+							"name": "Sắt Tinh Luyện",
+							"icon": "iron_ingot",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 9
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 3
+						}
+					],
+					"results": [
+						{
+							"name": "Đá Cường Hóa Trung Cấp",
+							"icon": "raw_iron",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"uses": [],
+			"upgrades": [],
+			"sources": []
+		},
+		{
+			"id": "DA_CUONG_HOA_CAO_CAP",
+			"name": "Đá Cường Hóa Cao Cấp",
+			"icon": "netherite_scrap",
+			"category": "dungeon",
+			"recipes": [
+				{
+					"category": "Đá cường hóa",
+					"ingredients": [
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						},
+						{
+							"name": "Ma Thạch Cao Cấp",
+							"icon": "emerald",
+							"amount": 6
+						},
+						{
+							"name": "Ma Thạch Hiếm",
+							"icon": "gold_ingot",
+							"amount": 3
+						},
+						{
+							"name": "Tinh Thể Dung Nham",
+							"icon": "magma_block",
+							"amount": 1
+						}
+					],
+					"results": [
+						{
+							"name": "Đá Cường Hóa Cao Cấp",
+							"icon": "netherite_scrap",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
+			"uses": [],
+			"upgrades": [],
+			"sources": []
 		}
 	]
 }
