@@ -9,7 +9,7 @@
 					"level": 1,
 					"display": 2,
 					"value": 50,
-					"money": 30000,
+					"money": 100000,
 					"items": {},
 					"stats": {}
 				},
@@ -17,15 +17,15 @@
 					"level": 2,
 					"display": 3,
 					"value": 75,
-					"money": 80000,
+					"money": 500000,
 					"items": {},
 					"stats": {}
 				},
 				{
 					"level": 3,
 					"display": 4,
-					"value": 125,
-					"money": 150000,
+					"value": 100,
+					"money": 2500000,
 					"items": {},
 					"stats": {}
 				},
@@ -33,23 +33,15 @@
 					"level": 4,
 					"display": 5,
 					"value": 150,
-					"money": 1000000,
+					"money": 10000000,
 					"items": {},
 					"stats": {}
 				},
 				{
 					"level": 5,
 					"display": 6,
-					"value": 175,
-					"money": 3000000,
-					"items": {},
-					"stats": {}
-				},
-				{
-					"level": 6,
-					"display": 7,
 					"value": 200,
-					"money": 8000000,
+					"money": 50000000,
 					"items": {},
 					"stats": {}
 				}
