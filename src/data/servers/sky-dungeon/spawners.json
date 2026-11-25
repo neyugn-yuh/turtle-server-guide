@@ -8,220 +8,33 @@
 	},
 	"mobs": [
 		{
-			"id": "ZOMBIE",
-			"name": "Zombie",
+			"id": "CHICKEN",
+			"name": "Chicken",
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
-			"price": 1200000,
+			"price": 400000,
 			"mobcoins": {
 				"chance": 10,
-				"min": 5,
-				"max": 7
+				"min": 1,
+				"max": 3
 			},
 			"xp": {
-				"min": 5,
-				"max": 5,
+				"min": 1,
+				"max": 3,
 				"bySize": false
 			},
 			"drops": [
 				{
-					"item": "Rotten Flesh",
-					"icon": "rotten_flesh",
-					"chance": 60,
-					"min": 1,
-					"max": 2
-				}
-			],
-			"tiers": [
-				{
-					"level": 1,
-					"dropBonus": 0,
-					"spawnSpeed": 0,
-					"cost": 0
-				},
-				{
-					"level": 2,
-					"dropBonus": 10,
-					"spawnSpeed": 25,
-					"cost": 100
-				},
-				{
-					"level": 3,
-					"dropBonus": 20,
-					"spawnSpeed": 50,
-					"cost": 300
-				},
-				{
-					"level": 4,
-					"dropBonus": 35,
-					"spawnSpeed": 75,
-					"cost": 800
-				},
-				{
-					"level": 5,
-					"dropBonus": 50,
-					"spawnSpeed": 100,
-					"cost": 2000
-				},
-				{
-					"level": 6,
-					"dropBonus": 70,
-					"spawnSpeed": 125,
-					"cost": 5000
-				},
-				{
-					"level": 7,
-					"dropBonus": 90,
-					"spawnSpeed": 150,
-					"cost": 12000
-				},
-				{
-					"level": 8,
-					"dropBonus": 120,
-					"spawnSpeed": 175,
-					"cost": 30000
-				},
-				{
-					"level": 9,
-					"dropBonus": 150,
-					"spawnSpeed": 200,
-					"cost": 70000
-				},
-				{
-					"level": 10,
-					"dropBonus": 200,
-					"spawnSpeed": 225,
-					"cost": 150000
-				}
-			],
-			"perks": []
-		},
-		{
-			"id": "SKELETON",
-			"name": "Skeleton",
-			"icon": "spawner",
-			"maxStack": 1000000,
-			"vanillaDrops": false,
-			"price": 1400000,
-			"mobcoins": {
-				"chance": 10,
-				"min": 6,
-				"max": 8
-			},
-			"xp": {
-				"min": 5,
-				"max": 5,
-				"bySize": false
-			},
-			"drops": [
-				{
-					"item": "Bone",
-					"icon": "bone",
+					"item": "Feather",
+					"icon": "feather",
 					"chance": 60,
 					"min": 1,
 					"max": 2
 				},
 				{
-					"item": "Arrow",
-					"icon": "arrow",
-					"chance": 60,
-					"min": 1,
-					"max": 2
-				}
-			],
-			"tiers": [
-				{
-					"level": 1,
-					"dropBonus": 0,
-					"spawnSpeed": 0,
-					"cost": 0
-				},
-				{
-					"level": 2,
-					"dropBonus": 10,
-					"spawnSpeed": 25,
-					"cost": 100
-				},
-				{
-					"level": 3,
-					"dropBonus": 20,
-					"spawnSpeed": 50,
-					"cost": 300
-				},
-				{
-					"level": 4,
-					"dropBonus": 35,
-					"spawnSpeed": 75,
-					"cost": 800
-				},
-				{
-					"level": 5,
-					"dropBonus": 50,
-					"spawnSpeed": 100,
-					"cost": 2000
-				},
-				{
-					"level": 6,
-					"dropBonus": 70,
-					"spawnSpeed": 125,
-					"cost": 5000
-				},
-				{
-					"level": 7,
-					"dropBonus": 90,
-					"spawnSpeed": 150,
-					"cost": 12000
-				},
-				{
-					"level": 8,
-					"dropBonus": 120,
-					"spawnSpeed": 175,
-					"cost": 30000
-				},
-				{
-					"level": 9,
-					"dropBonus": 150,
-					"spawnSpeed": 200,
-					"cost": 70000
-				},
-				{
-					"level": 10,
-					"dropBonus": 200,
-					"spawnSpeed": 225,
-					"cost": 150000
-				}
-			],
-			"perks": []
-		},
-		{
-			"id": "SPIDER",
-			"name": "Spider",
-			"icon": "spawner",
-			"maxStack": 1000000,
-			"vanillaDrops": false,
-			"price": 1600000,
-			"mobcoins": {
-				"chance": 10,
-				"min": 7,
-				"max": 9
-			},
-			"xp": {
-				"min": 5,
-				"max": 5,
-				"bySize": false
-			},
-			"drops": [
-				{
-					"item": "String",
-					"icon": "string",
-					"chance": 60,
-					"min": 1,
-					"max": 2
-				},
-				{
-					"item": "Spider Eye",
-					"icon": "spider_eye",
+					"item": "Raw Chicken",
+					"icon": "chicken",
 					"chance": 60,
 					"min": 1,
 					"max": 1
@@ -292,16 +105,16 @@
 			"perks": []
 		},
 		{
-			"id": "COW",
-			"name": "Cow",
+			"id": "RABBIT",
+			"name": "Rabbit",
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
-			"price": 800000,
+			"price": 500000,
 			"mobcoins": {
 				"chance": 10,
-				"min": 3,
-				"max": 5
+				"min": 2,
+				"max": 3
 			},
 			"xp": {
 				"min": 1,
@@ -310,18 +123,25 @@
 			},
 			"drops": [
 				{
-					"item": "Leather",
-					"icon": "leather",
+					"item": "Rabbit Hide",
+					"icon": "rabbit_hide",
 					"chance": 60,
 					"min": 1,
-					"max": 2
+					"max": 1
 				},
 				{
-					"item": "Raw Beef",
-					"icon": "beef",
+					"item": "Rabbit",
+					"icon": "rabbit",
 					"chance": 60,
 					"min": 1,
-					"max": 3
+					"max": 1
+				},
+				{
+					"item": "Rabbit Foot",
+					"icon": "rabbit_foot",
+					"chance": 60,
+					"min": 1,
+					"max": 1
 				}
 			],
 			"tiers": [
@@ -576,16 +396,16 @@
 			"perks": []
 		},
 		{
-			"id": "CHICKEN",
-			"name": "Chicken",
+			"id": "COW",
+			"name": "Cow",
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
-			"price": 400000,
+			"price": 800000,
 			"mobcoins": {
 				"chance": 10,
-				"min": 1,
-				"max": 3
+				"min": 3,
+				"max": 5
 			},
 			"xp": {
 				"min": 1,
@@ -594,18 +414,108 @@
 			},
 			"drops": [
 				{
-					"item": "Feather",
-					"icon": "feather",
+					"item": "Leather",
+					"icon": "leather",
 					"chance": 60,
 					"min": 1,
 					"max": 2
 				},
 				{
-					"item": "Raw Chicken",
-					"icon": "chicken",
+					"item": "Raw Beef",
+					"icon": "beef",
 					"chance": 60,
 					"min": 1,
-					"max": 1
+					"max": 3
+				}
+			],
+			"tiers": [
+				{
+					"level": 1,
+					"dropBonus": 0,
+					"spawnSpeed": 0,
+					"cost": 0
+				},
+				{
+					"level": 2,
+					"dropBonus": 10,
+					"spawnSpeed": 25,
+					"cost": 100
+				},
+				{
+					"level": 3,
+					"dropBonus": 20,
+					"spawnSpeed": 50,
+					"cost": 300
+				},
+				{
+					"level": 4,
+					"dropBonus": 35,
+					"spawnSpeed": 75,
+					"cost": 800
+				},
+				{
+					"level": 5,
+					"dropBonus": 50,
+					"spawnSpeed": 100,
+					"cost": 2000
+				},
+				{
+					"level": 6,
+					"dropBonus": 70,
+					"spawnSpeed": 125,
+					"cost": 5000
+				},
+				{
+					"level": 7,
+					"dropBonus": 90,
+					"spawnSpeed": 150,
+					"cost": 12000
+				},
+				{
+					"level": 8,
+					"dropBonus": 120,
+					"spawnSpeed": 175,
+					"cost": 30000
+				},
+				{
+					"level": 9,
+					"dropBonus": 150,
+					"spawnSpeed": 200,
+					"cost": 70000
+				},
+				{
+					"level": 10,
+					"dropBonus": 200,
+					"spawnSpeed": 225,
+					"cost": 150000
+				}
+			],
+			"perks": []
+		},
+		{
+			"id": "ZOMBIE",
+			"name": "Zombie",
+			"icon": "spawner",
+			"maxStack": 1000000,
+			"vanillaDrops": false,
+			"price": 1200000,
+			"mobcoins": {
+				"chance": 10,
+				"min": 5,
+				"max": 7
+			},
+			"xp": {
+				"min": 5,
+				"max": 5,
+				"bySize": false
+			},
+			"drops": [
+				{
+					"item": "Rotten Flesh",
+					"icon": "rotten_flesh",
+					"chance": 60,
+					"min": 1,
+					"max": 2
 				}
 			],
 			"tiers": [
@@ -693,6 +603,103 @@
 				{
 					"item": "Slime Ball",
 					"icon": "slime_ball",
+					"chance": 60,
+					"min": 1,
+					"max": 2
+				}
+			],
+			"tiers": [
+				{
+					"level": 1,
+					"dropBonus": 0,
+					"spawnSpeed": 0,
+					"cost": 0
+				},
+				{
+					"level": 2,
+					"dropBonus": 10,
+					"spawnSpeed": 25,
+					"cost": 100
+				},
+				{
+					"level": 3,
+					"dropBonus": 20,
+					"spawnSpeed": 50,
+					"cost": 300
+				},
+				{
+					"level": 4,
+					"dropBonus": 35,
+					"spawnSpeed": 75,
+					"cost": 800
+				},
+				{
+					"level": 5,
+					"dropBonus": 50,
+					"spawnSpeed": 100,
+					"cost": 2000
+				},
+				{
+					"level": 6,
+					"dropBonus": 70,
+					"spawnSpeed": 125,
+					"cost": 5000
+				},
+				{
+					"level": 7,
+					"dropBonus": 90,
+					"spawnSpeed": 150,
+					"cost": 12000
+				},
+				{
+					"level": 8,
+					"dropBonus": 120,
+					"spawnSpeed": 175,
+					"cost": 30000
+				},
+				{
+					"level": 9,
+					"dropBonus": 150,
+					"spawnSpeed": 200,
+					"cost": 70000
+				},
+				{
+					"level": 10,
+					"dropBonus": 200,
+					"spawnSpeed": 225,
+					"cost": 150000
+				}
+			],
+			"perks": []
+		},
+		{
+			"id": "SKELETON",
+			"name": "Skeleton",
+			"icon": "spawner",
+			"maxStack": 1000000,
+			"vanillaDrops": false,
+			"price": 1400000,
+			"mobcoins": {
+				"chance": 10,
+				"min": 6,
+				"max": 8
+			},
+			"xp": {
+				"min": 5,
+				"max": 5,
+				"bySize": false
+			},
+			"drops": [
+				{
+					"item": "Bone",
+					"icon": "bone",
+					"chance": 60,
+					"min": 1,
+					"max": 2
+				},
+				{
+					"item": "Arrow",
+					"icon": "arrow",
 					"chance": 60,
 					"min": 1,
 					"max": 2
@@ -853,16 +860,16 @@
 			"perks": []
 		},
 		{
-			"id": "WITCH",
-			"name": "Witch",
+			"id": "SPIDER",
+			"name": "Spider",
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
-			"price": 1800000,
+			"price": 1600000,
 			"mobcoins": {
 				"chance": 10,
-				"min": 8,
-				"max": 10
+				"min": 7,
+				"max": 9
 			},
 			"xp": {
 				"min": 5,
@@ -871,11 +878,18 @@
 			},
 			"drops": [
 				{
-					"item": "Glowstone Dust",
-					"icon": "glowstone_dust",
+					"item": "String",
+					"icon": "string",
 					"chance": 60,
 					"min": 1,
 					"max": 2
+				},
+				{
+					"item": "Spider Eye",
+					"icon": "spider_eye",
+					"chance": 60,
+					"min": 1,
+					"max": 1
 				}
 			],
 			"tiers": [
@@ -943,43 +957,29 @@
 			"perks": []
 		},
 		{
-			"id": "RABBIT",
-			"name": "Rabbit",
+			"id": "WITCH",
+			"name": "Witch",
 			"icon": "spawner",
 			"maxStack": 1000000,
 			"vanillaDrops": false,
-			"price": 500000,
+			"price": 1800000,
 			"mobcoins": {
 				"chance": 10,
-				"min": 2,
-				"max": 3
+				"min": 8,
+				"max": 10
 			},
 			"xp": {
-				"min": 1,
-				"max": 3,
+				"min": 5,
+				"max": 5,
 				"bySize": false
 			},
 			"drops": [
 				{
-					"item": "Rabbit Hide",
-					"icon": "rabbit_hide",
+					"item": "Glowstone Dust",
+					"icon": "glowstone_dust",
 					"chance": 60,
 					"min": 1,
-					"max": 1
-				},
-				{
-					"item": "Rabbit",
-					"icon": "rabbit",
-					"chance": 60,
-					"min": 1,
-					"max": 1
-				},
-				{
-					"item": "Rabbit Foot",
-					"icon": "rabbit_foot",
-					"chance": 60,
-					"min": 1,
-					"max": 1
+					"max": 2
 				}
 			],
 			"tiers": [

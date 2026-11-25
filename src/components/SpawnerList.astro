@@ -78,7 +78,10 @@ const mobs: any[] = data.mobs;
 									))}
 									{mob.mobcoins && (
 										<tr>
-											<td>Mobcoins 💰</td>
+											<td>
+												<img class="sl-icon-sm" src={iconUrl('gold_nugget')} alt="" width="20" height="20" loading="lazy" onerror="this.hidden=true" />
+												Mobcoins 💰
+											</td>
 											<td>{num(mob.mobcoins.chance)}%</td>
 											<td>{amount(mob.mobcoins)}</td>
 										</tr>

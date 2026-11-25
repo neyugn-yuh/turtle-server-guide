@@ -243,6 +243,8 @@ try {
 	for (const mob of Object.keys(prices)) if (!(mob in (entities.mobs ?? {}))) throw new Error(`shop_spawner.yml sells ${mob}, which is not in TurtleStacker/entities.yml`);
 	const mobs = Object.entries(entities.mobs ?? {}).map(([id, data]) => readMob(id, data, { levels: upgrades.levels, perMob: upgrades['per-mob'] }, perks, prices[id], readMobcoins(mobcoinConfig, id)));
 	if (!mobs.length) throw new Error('entities.yml has no mobs');
+	// cheapest spawner first; a mob that is not sold goes last
+	mobs.sort((a, b) => (a.price ?? Infinity) - (b.price ?? Infinity) || a.id.localeCompare(b.id));
 	output = JSON.stringify({ spawnerMaxStack: Number(config.spawner?.['max-stack'] ?? 0), currency: String(upgrades.currency ?? 'money'), spawnerBase: readSpawnerBase(leafText), mobs }, null, '\t') + '\n';
 } catch (error) {
 	fail(error.message);
