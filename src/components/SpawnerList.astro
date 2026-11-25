@@ -15,6 +15,8 @@ if (!data) throw new Error(`SpawnerList: no spawners.json for server "${server}"
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const iconUrl = (name: string) => `${base}/minions/${name}.png`;
+// the face of the mob (scripts/fetch-mob-images.mjs); the shared spawner picture stands in when there is none
+const mobUrl = (id: string) => `${base}/mobs/${id.toLowerCase()}.png`;
 const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 2 });
 const CURRENCY: Record<string, string> = { money: 'Tiền' };
 const currency = CURRENCY[String(data.currency).toLowerCase()] ?? data.currency;
@@ -33,7 +35,7 @@ const mobs: any[] = data.mobs;
 		mobs.map((mob: any) => (
 			<section class="sl-item">
 				<h3 id={mob.id.toLowerCase()}>
-					<img class="sl-icon" src={iconUrl(mob.icon)} alt="" width="32" height="32" loading="lazy" onerror="this.hidden=true" />
+					<img class="sl-icon" src={mobUrl(mob.id)} alt="" loading="lazy" data-fallback={iconUrl(mob.icon)} onerror="this.onerror=null;this.src=this.dataset.fallback" />
 					Spawner {mob.name}
 				</h3>
 				<p class="sl-meta">Mỗi chồng mob tối đa <strong>{num(mob.maxStack)}</strong> con.</p>
@@ -135,8 +137,10 @@ const mobs: any[] = data.mobs;
 		font-size: var(--sl-text-base);
 	}
 	.sl-icon {
-		width: 2rem;
-		height: 2rem;
+		width: auto;
+		height: 2.5rem;
+		max-width: 2.5rem;
+		object-fit: contain;
 		margin: 0;
 		image-rendering: pixelated;
 	}
