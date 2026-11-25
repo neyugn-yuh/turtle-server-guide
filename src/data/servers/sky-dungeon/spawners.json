@@ -17,30 +17,9 @@
 				{
 					"item": "Rotten Flesh",
 					"icon": "rotten_flesh",
-					"chance": 67,
+					"chance": 60,
 					"min": 1,
 					"max": 2
-				},
-				{
-					"item": "Iron Ingot",
-					"icon": "iron_ingot",
-					"chance": 0.83,
-					"min": 1,
-					"max": 1
-				},
-				{
-					"item": "Carrot",
-					"icon": "carrot",
-					"chance": 0.83,
-					"min": 1,
-					"max": 1
-				},
-				{
-					"item": "Potato",
-					"icon": "potato",
-					"chance": 0.83,
-					"min": 1,
-					"max": 1
 				}
 			],
 			"tiers": [
@@ -68,14 +47,14 @@
 				{
 					"item": "Bone",
 					"icon": "bone",
-					"chance": 67,
+					"chance": 60,
 					"min": 1,
 					"max": 2
 				},
 				{
 					"item": "Arrow",
 					"icon": "arrow",
-					"chance": 67,
+					"chance": 60,
 					"min": 1,
 					"max": 2
 				}
@@ -105,14 +84,14 @@
 				{
 					"item": "String",
 					"icon": "string",
-					"chance": 67,
+					"chance": 60,
 					"min": 1,
 					"max": 2
 				},
 				{
 					"item": "Spider Eye",
 					"icon": "spider_eye",
-					"chance": 33,
+					"chance": 60,
 					"min": 1,
 					"max": 1
 				}
@@ -142,14 +121,14 @@
 				{
 					"item": "Leather",
 					"icon": "leather",
-					"chance": 67,
+					"chance": 60,
 					"min": 1,
 					"max": 2
 				},
 				{
 					"item": "Raw Beef",
 					"icon": "beef",
-					"chance": 100,
+					"chance": 60,
 					"min": 1,
 					"max": 3
 				}
@@ -179,7 +158,7 @@
 				{
 					"item": "Raw Porkchop",
 					"icon": "porkchop",
-					"chance": 100,
+					"chance": 60,
 					"min": 1,
 					"max": 3
 				}
@@ -209,14 +188,14 @@
 				{
 					"item": "White Wool",
 					"icon": "white_wool",
-					"chance": 100,
+					"chance": 60,
 					"min": 1,
 					"max": 1
 				},
 				{
 					"item": "Raw Mutton",
 					"icon": "mutton",
-					"chance": 100,
+					"chance": 60,
 					"min": 1,
 					"max": 2
 				}
@@ -246,14 +225,14 @@
 				{
 					"item": "Feather",
 					"icon": "feather",
-					"chance": 67,
+					"chance": 60,
 					"min": 1,
 					"max": 2
 				},
 				{
 					"item": "Raw Chicken",
 					"icon": "chicken",
-					"chance": 100,
+					"chance": 60,
 					"min": 1,
 					"max": 1
 				}
@@ -283,7 +262,7 @@
 				{
 					"item": "Slime Ball",
 					"icon": "slime_ball",
-					"chance": 67,
+					"chance": 60,
 					"min": 1,
 					"max": 2
 				}
@@ -313,7 +292,7 @@
 				{
 					"item": "Gunpowder",
 					"icon": "gunpowder",
-					"chance": 67,
+					"chance": 60,
 					"min": 1,
 					"max": 2
 				}
@@ -341,51 +320,9 @@
 			},
 			"drops": [
 				{
-					"item": "Glass Bottle",
-					"icon": "glass_bottle",
-					"chance": 25,
-					"min": 1,
-					"max": 2
-				},
-				{
 					"item": "Glowstone Dust",
 					"icon": "glowstone_dust",
-					"chance": 25,
-					"min": 1,
-					"max": 2
-				},
-				{
-					"item": "Gunpowder",
-					"icon": "gunpowder",
-					"chance": 25,
-					"min": 1,
-					"max": 2
-				},
-				{
-					"item": "Redstone",
-					"icon": "redstone",
-					"chance": 25,
-					"min": 1,
-					"max": 2
-				},
-				{
-					"item": "Spider Eye",
-					"icon": "spider_eye",
-					"chance": 25,
-					"min": 1,
-					"max": 2
-				},
-				{
-					"item": "Sugar",
-					"icon": "sugar",
-					"chance": 25,
-					"min": 1,
-					"max": 2
-				},
-				{
-					"item": "Stick",
-					"icon": "stick",
-					"chance": 25,
+					"chance": 60,
 					"min": 1,
 					"max": 2
 				}
@@ -415,21 +352,21 @@
 				{
 					"item": "Rabbit Hide",
 					"icon": "rabbit_hide",
-					"chance": 50,
+					"chance": 60,
 					"min": 1,
 					"max": 1
 				},
 				{
 					"item": "Rabbit",
 					"icon": "rabbit",
-					"chance": 50,
+					"chance": 60,
 					"min": 1,
 					"max": 1
 				},
 				{
 					"item": "Rabbit Foot",
 					"icon": "rabbit_foot",
-					"chance": 10,
+					"chance": 60,
 					"min": 1,
 					"max": 1
 				}
