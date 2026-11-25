@@ -8,6 +8,8 @@
  *   MythicMobs/skills/Dungeon/Tang<NN>.yml   the skills called on death (boss rewards are skills "..._Reward")
  *   MMOItems/item/<type>.yml                 the names of the items a mob drops (only those that exist are listed)
  *   TurtleCurrency/currencies.yml            checks the currency a drop command pays in
+ *   SD-Dungeon/floors/tang<NN>.yml           the outbreak (bùng nổ) of each tier: name, length, announcement, mobs, effects, lockdown, bombardment.
+ *                                            The points that start an outbreak are hidden from players on purpose and are never copied.
  *   TurtleCraft/categories.yml               the name of each tier
  *   SD-Crates/crates/tang<n>.yml             the equipment crate of each tier: price of a spin, the spin buttons, chance of each grade
  *
@@ -210,12 +212,12 @@ function classify(mob) {
 		else if (/CỔNG/i.test(tag ?? '')) kind = 'Boss cổng';
 		else if (/BOSS/i.test(tag ?? '')) kind = 'Boss tầng';
 		const pretty = name === name.toUpperCase() ? titleCase(name.toLowerCase()) : name;
-		return { group: 'boss', kind, name: pretty };
+		return { group: 'boss', kind, name: pretty, outbreak: kind === 'Boss bùng nổ' };
 	}
-	if (/^Tinh Anh$/i.test(tag ?? '')) return { group: 'elite', kind: 'Tinh anh', name };
-	if (/^Bùng Nổ$/i.test(tag ?? '')) return { group: 'normal', kind: 'Quái bùng nổ', name };
-	if (!tag) return { group: 'other', kind: 'Đặc biệt', name };
-	return { group: 'normal', kind: 'Quái thường', name };
+	if (/^Tinh Anh$/i.test(tag ?? '')) return { group: 'elite', kind: 'Tinh anh', name, outbreak: false };
+	if (/^Bùng Nổ$/i.test(tag ?? '')) return { group: 'normal', kind: 'Quái bùng nổ', name, outbreak: true };
+	if (!tag) return { group: 'other', kind: 'Đặc biệt', name, outbreak: false };
+	return { group: 'normal', kind: 'Quái thường', name, outbreak: false };
 }
 
 // ---------- main ----------
@@ -230,7 +232,7 @@ for (let n = 1; n <= TIERS; n++) {
 	const mobs = [];
 	for (const [id, mob] of Object.entries(mobsFile)) {
 		if (!/^Tang\d+_/.test(id)) continue;
-		const { group, kind, name } = classify(mob);
+		const { group, kind, name, outbreak } = classify(mob);
 		const drops = { coins: [], items: [], plainItems: [] };
 		for (const line of mob.Skills ?? []) {
 			if (!/~onDeath/.test(line)) continue;
@@ -247,6 +249,7 @@ for (let n = 1; n <= TIERS; n++) {
 			name,
 			kind,
 			group,
+			outbreak: Boolean(outbreak),
 			health: Number(mob.Health),
 			damage: mob.Damage === undefined ? null : Number(mob.Damage),
 			coins: rewardCoin,
@@ -254,6 +257,30 @@ for (let n = 1; n <= TIERS; n++) {
 		});
 	}
 	if (!mobs.length) fail(`MythicMobs/mobs/Dungeon/Tang${String(n).padStart(2, '0')}.yml has no mobs`);
+
+	const floor = await readYaml(`SD-Dungeon/floors/tang${String(n).padStart(2, '0')}.yml`);
+	const ob = floor.outbreak ?? {};
+	if (!ob.name) fail(`SD-Dungeon/floors/tang${String(n).padStart(2, '0')}.yml has no outbreak.name`);
+	const known = new Set(mobs.map((m) => m.id));
+	const spawns = Object.values(ob.spawns ?? {}).map((sp) => {
+		if (!known.has(sp.mob)) fail(`tang${n} outbreak spawns ${sp.mob}, which is not in MythicMobs/mobs/Dungeon`);
+		return { mob: String(sp.mob), amount: Number(sp.amount ?? 1), delaySeconds: Number(sp['delay-seconds'] ?? 0) };
+	});
+	const spawned = new Set(spawns.map((sp) => sp.mob));
+	const outbreak = {
+		name: String(ob.name),
+		durationSeconds: Number(ob['duration-seconds']),
+		announcement: plain(String(ob['start-message'] ?? '')).replace(/%name%/g, String(ob.name)),
+		spawns,
+		// mobs tagged as outbreak mobs that the outbreak does not spawn itself (a boss that arrives later, a summon...)
+		alsoMobs: mobs.filter((m) => m.outbreak && !spawned.has(m.id)).map((m) => m.id),
+		effects: (ob['player-effects'] ?? []).map((e) => String(e).split(':')[0].toUpperCase()),
+		weather: ob['player-weather'] ? String(ob['player-weather']).toUpperCase() : null,
+		night: ob['player-time'] !== undefined && Number(ob['player-time']) >= 13000 && Number(ob['player-time']) <= 23000,
+		lockdownSeconds: ob.lockdown ? Number(ob.lockdown.seconds) : 0,
+		bombard: ob.bombard ? { intervalSeconds: Number(ob.bombard['interval-seconds']), perSalvo: Number(ob.bombard['per-salvo']), radius: Number(ob.bombard.radius) } : null,
+	};
+	if (!Number.isFinite(outbreak.durationSeconds) || outbreak.durationSeconds <= 0) fail(`tang${n} outbreak has no duration-seconds`);
 
 	const crate = await readYaml(`SD-Crates/crates/tang${n}.yml`);
 	const price = Number(crate.price);
@@ -268,6 +295,7 @@ for (let n = 1; n <= TIERS; n++) {
 	tiers.push({
 		n,
 		name: titleCase(unSmallCaps(title)),
+		outbreak,
 		crate: { name: `Rương Tầng ${n}`, currency: String(crate.currency), price, options, chances },
 		mobs,
 	});

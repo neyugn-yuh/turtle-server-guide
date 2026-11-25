@@ -2,13 +2,14 @@
 /**
  * The dungeon (hầm ngục) of one server, built from src/data/servers/<server>/dungeon.json
  * (written by scripts/sync-dungeon.mjs from the server's config). Two views:
- *   floors   one card per tier: its mobs, elites and bosses, with health, damage and what they drop
+ *   floors   one card per tier: its mobs, elites and bosses, with health, damage and what they drop (outbreak mobs are on their own page)
+ *   outbreak one card per tier: its outbreak (bùng nổ): how long, what it does to the tier, which mobs and bosses come
  *   crates   what a spin of the equipment crate of each tier costs, and the chance of each grade
  * Every number comes from the data, none is typed here. A column with nothing to show on a page is left out.
  */
 interface Props {
 	server: string;
-	view: 'floors' | 'crates';
+	view: 'floors' | 'outbreak' | 'crates';
 }
 
 const { server, view } = Astro.props;
@@ -22,6 +23,9 @@ const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 3 
 const range = (min: number, max: number) => (min === max ? num(min) : `${num(min)}–${num(max)}`);
 const coin = (currency: string) => `Dungeon Coins tầng ${String(currency).replace(/^d/i, '')}`;
 const ORDER = ['normal', 'other', 'elite', 'boss'];
+const EFFECTS: Record<string, string> = { DARKNESS: 'Bóng tối: tầm nhìn giảm mạnh', POISON: 'Độc nhẹ cho mọi người chơi trong tầng' };
+const minutes = (seconds: number) => `${num(seconds / 60)} phút`;
+const byId = (tier: any, id: string) => tier.mobs.find((m: any) => m.id === id);
 const sorted = (mobs: any[]) => [...mobs].sort((a, b) => ORDER.indexOf(a.group) - ORDER.indexOf(b.group));
 const tiers: any[] = data.tiers;
 const spins: number[] = [...new Set<number>(tiers.flatMap((t: any) => t.crate.options.map((o: any) => o.spins)))].sort((a, b) => a - b);
@@ -32,7 +36,7 @@ const grades: any[] = equipment?.grades ?? [];
 	{
 		view === 'floors' &&
 			tiers.map((tier: any) => {
-				const mobs = sorted(tier.mobs);
+				const mobs = sorted(tier.mobs.filter((m: any) => !m.outbreak));
 				const hasItems = mobs.some((m: any) => m.items.length > 0);
 				return (
 					<section class="df-tier">
@@ -77,6 +81,71 @@ const grades: any[] = equipment?.grades ?? [];
 															))}
 												</td>
 											)}
+										</tr>
+									))}
+								</tbody>
+							</table>
+						</div>
+					</section>
+				);
+			})
+	}
+
+	{
+		view === 'outbreak' &&
+			tiers.map((tier: any) => {
+				const ob = tier.outbreak;
+				const rows = [
+					...ob.spawns.map((sp: any) => ({ mob: byId(tier, sp.mob), amount: sp.amount, delay: sp.delaySeconds })),
+					...ob.alsoMobs.map((id: string) => ({ mob: byId(tier, id), amount: null, delay: null })),
+				];
+				const effects = [
+					...ob.effects.map((e: string) => EFFECTS[e] ?? e),
+					...(ob.weather === 'DOWNFALL' ? ['Mưa trút xuống tầng'] : []),
+					...(ob.night ? ['Trời chuyển sang đêm'] : []),
+					...(ob.lockdownSeconds > 0 ? [`Không dùng được lệnh dịch chuyển (home, spawn, warp, tpa...) trong ${minutes(ob.lockdownSeconds)} đầu`] : []),
+					...(ob.bombard ? [`Pháo kích: mỗi ${num(ob.bombard.intervalSeconds)} giây rơi ${num(ob.bombard.perSalvo)} quả, nổ bán kính ${num(ob.bombard.radius)} block`] : []),
+				];
+				return (
+					<section class="df-tier">
+						<h3 id={`tang-${tier.n}`}>
+							Tầng {tier.n}: {ob.name}
+						</h3>
+						<p class="df-meta">
+							{tier.name}. Bùng nổ kéo dài <strong>{minutes(ob.durationSeconds)}</strong>, hết giờ thì quái của bùng nổ biến mất.
+						</p>
+						<p class="df-quote">{ob.announcement}</p>
+						{effects.length > 0 && (
+							<ul class="df-effects">
+								{effects.map((e: string) => <li>{e}</li>)}
+							</ul>
+						)}
+						<div class="df-scroll">
+							<table>
+								<thead>
+									<tr>
+										<th>Loại</th>
+										<th>Tên</th>
+										<th>Số lượng</th>
+										<th>Xuất hiện sau</th>
+										<th>Máu</th>
+										<th>Sát thương</th>
+										<th>{coin(`d${tier.n}`)}</th>
+									</tr>
+								</thead>
+								<tbody>
+									{rows.map((row: any) => (
+										<tr class={row.mob.group === 'boss' ? 'df-boss' : undefined}>
+											<td>{row.mob.kind}</td>
+											<td>{row.mob.name}</td>
+											<td>{row.amount === null ? 'Theo diễn biến' : num(row.amount)}</td>
+											<td>{row.delay === null ? '–' : row.delay === 0 ? 'Ngay' : `${num(row.delay)} giây`}</td>
+											<td>{num(row.mob.health)}</td>
+											<td>{row.mob.damage ? num(row.mob.damage) : '–'}</td>
+											<td>
+												{row.mob.coins ? range(row.mob.coins.min, row.mob.coins.max) : '–'}
+												{row.mob.coins && row.mob.coins.reach > 0 && <span class="df-note"> mỗi người trong {num(row.mob.coins.reach)} block</span>}
+											</td>
 										</tr>
 									))}
 								</tbody>
@@ -167,6 +236,17 @@ const grades: any[] = equipment?.grades ?? [];
 	.df th {
 		color: var(--sl-color-gray-2);
 		font-weight: 600;
+	}
+	.df-quote {
+		margin: 0.25rem 0 0.5rem;
+		padding-left: 0.75rem;
+		border-left: 3px solid var(--sl-color-hairline);
+		font-style: italic;
+	}
+	.df-effects {
+		margin: 0.25rem 0 0.5rem;
+		padding-left: 1.25rem;
+		font-size: var(--sl-text-sm);
 	}
 	.df-boss td {
 		font-weight: 600;
