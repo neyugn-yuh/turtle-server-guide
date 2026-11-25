@@ -10,7 +10,7 @@
     "sync:minions": "node scripts/sync-minions.mjs",
     "deploy": "npm run build && wrangler pages deploy --branch main",
     "astro": "astro",
-    "check:sync": "node scripts/sync-minions.mjs --dir ../../servers/AutoUpdateSkyDungeon/plugins/TurtleMinions --check && node scripts/sync-island-upgrades.mjs --dir ../../servers/AutoUpdateSkyDungeon/plugins --check && node scripts/sync-materials.mjs --dir ../../servers/AutoUpdateSkyDungeon/plugins --check && node scripts/sync-spawners.mjs --dir ../../servers/AutoUpdateSkyDungeon/plugins --check && node scripts/sync-equipment.mjs --dir ../../servers/AutoUpdateSkyDungeon/plugins --check"
+    "check:sync": "node scripts/sync-minions.mjs --dir ../../servers/AutoUpdateSkyDungeon/plugins/TurtleMinions --check && node scripts/sync-island-upgrades.mjs --dir ../../servers/AutoUpdateSkyDungeon/plugins --check && node scripts/sync-materials.mjs --dir ../../servers/AutoUpdateSkyDungeon/plugins --check && node scripts/sync-spawners.mjs --dir ../../servers/AutoUpdateSkyDungeon/plugins --check && node scripts/sync-equipment.mjs --dir ../../servers/AutoUpdateSkyDungeon/plugins --check && node scripts/sync-dungeon.mjs --dir ../../servers/AutoUpdateSkyDungeon/plugins --check"
   },
   "dependencies": {
     "@astrojs/markdown-satteri": "^0.4.10",

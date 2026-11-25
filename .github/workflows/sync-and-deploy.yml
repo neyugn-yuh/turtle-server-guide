@@ -66,6 +66,10 @@ jobs:
         if: env.PTERO_KEY != '' && env.PTERO_URL != '' && env.PTERO_SERVER != ''
         run: node scripts/sync-equipment.mjs --ptero
 
+      - name: Read the dungeon from the server
+        if: env.PTERO_KEY != '' && env.PTERO_URL != '' && env.PTERO_SERVER != ''
+        run: node scripts/sync-dungeon.mjs --ptero
+
       - name: Commit the changed data
         run: |
           if [ -n "$(git status --porcelain src/data/servers)" ]; then

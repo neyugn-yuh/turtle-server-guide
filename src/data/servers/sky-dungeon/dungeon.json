@@ -1,0 +1,1541 @@
+{
+	"tiers": [
+		{
+			"n": 1,
+			"name": "Hành Lang Khởi Nguyên",
+			"crate": {
+				"name": "Rương Tầng 1",
+				"currency": "d1",
+				"price": 1000,
+				"options": [
+					{
+						"spins": 1,
+						"cost": 1000
+					},
+					{
+						"spins": 3,
+						"cost": 3000
+					},
+					{
+						"spins": 10,
+						"cost": 10000
+					},
+					{
+						"spins": 30,
+						"cost": 30000
+					}
+				],
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			},
+			"mobs": [
+				{
+					"id": "Tang1_GoblinDoi",
+					"name": "Goblin Đói Khát",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 90,
+					"damage": 7,
+					"coins": {
+						"min": 1,
+						"max": 3,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang1_KoboldSoi",
+					"name": "Chó Sói Kobold",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 110,
+					"damage": 9,
+					"coins": {
+						"min": 2,
+						"max": 4,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang1_KoboldCon",
+					"name": "Kobold Con",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 50,
+					"damage": 5,
+					"coins": null,
+					"items": []
+				},
+				{
+					"id": "Tang1_Hobgoblin",
+					"name": "Hobgoblin Đao Phủ",
+					"kind": "Tinh anh",
+					"group": "elite",
+					"health": 310,
+					"damage": 12,
+					"coins": {
+						"min": 8,
+						"max": 12,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang1_Silverback",
+					"name": "Sói Đầu Đàn Silverback",
+					"kind": "Boss tầng",
+					"group": "boss",
+					"health": 5900,
+					"damage": 15,
+					"coins": {
+						"min": 50,
+						"max": 80,
+						"reach": 50
+					},
+					"items": []
+				},
+				{
+					"id": "Tang1_XacMaoHiem",
+					"name": "Xác Mạo Hiểm Giả",
+					"kind": "Đặc biệt",
+					"group": "other",
+					"health": 20,
+					"damage": null,
+					"coins": null,
+					"items": []
+				},
+				{
+					"id": "Tang1_GoblinTuiVang",
+					"name": "Goblin Đeo Túi Vàng",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 80,
+					"damage": 0,
+					"coins": {
+						"min": 10,
+						"max": 25,
+						"reach": 0
+					},
+					"items": []
+				}
+			]
+		},
+		{
+			"n": 2,
+			"name": "Ổ Nhện & Hang Dơi",
+			"crate": {
+				"name": "Rương Tầng 2",
+				"currency": "d2",
+				"price": 1000,
+				"options": [
+					{
+						"spins": 1,
+						"cost": 1000
+					},
+					{
+						"spins": 3,
+						"cost": 3000
+					},
+					{
+						"spins": 10,
+						"cost": 10000
+					},
+					{
+						"spins": 30,
+						"cost": 30000
+					}
+				],
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			},
+			"mobs": [
+				{
+					"id": "Tang2_NhenHamNguc",
+					"name": "Nhện Hầm Ngục",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 135,
+					"damage": 9,
+					"coins": {
+						"min": 2,
+						"max": 5,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang2_DoiHutMau",
+					"name": "Dơi Hút Máu (Fang Bat)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 105,
+					"damage": 10,
+					"coins": {
+						"min": 3,
+						"max": 6,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang2_NhenDocHacAm",
+					"name": "Nhện Độc Hắc Ám",
+					"kind": "Tinh anh",
+					"group": "elite",
+					"health": 420,
+					"damage": 15,
+					"coins": {
+						"min": 12,
+						"max": 18,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang2_NhenConDoc",
+					"name": "Nhện Con Độc",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 210,
+					"damage": 10,
+					"coins": null,
+					"items": []
+				},
+				{
+					"id": "Tang2_Arachne",
+					"name": "Nhện Chúa Arachne Sơ Cấp",
+					"kind": "Boss tầng",
+					"group": "boss",
+					"health": 7900,
+					"damage": 20,
+					"coins": {
+						"min": 80,
+						"max": 120,
+						"reach": 50
+					},
+					"items": []
+				},
+				{
+					"id": "Tang2_KenNhen",
+					"name": "Kén Nhện Khổng Lồ",
+					"kind": "Đặc biệt",
+					"group": "other",
+					"health": 90,
+					"damage": null,
+					"coins": null,
+					"items": []
+				},
+				{
+					"id": "Tang2_KenNhenTinhAnh",
+					"name": "Kén Nhện Tinh Anh",
+					"kind": "Tinh anh",
+					"group": "elite",
+					"health": 270,
+					"damage": null,
+					"coins": null,
+					"items": []
+				},
+				{
+					"id": "Tang2_DoiChua",
+					"name": "Dơi Chúa Huyết Dực",
+					"kind": "Boss bùng nổ",
+					"group": "boss",
+					"health": 6550,
+					"damage": 19,
+					"coins": {
+						"min": 60,
+						"max": 60,
+						"reach": 50
+					},
+					"items": []
+				},
+				{
+					"id": "Tang2_NhenDocThaTo",
+					"name": "Nhện Độc Thả Tơ",
+					"kind": "Quái bùng nổ",
+					"group": "normal",
+					"health": 420,
+					"damage": 13,
+					"coins": {
+						"min": 12,
+						"max": 18,
+						"reach": 0
+					},
+					"items": []
+				}
+			]
+		},
+		{
+			"n": 3,
+			"name": "Tổ Kiến Sát Thủ",
+			"crate": {
+				"name": "Rương Tầng 3",
+				"currency": "d3",
+				"price": 1000,
+				"options": [
+					{
+						"spins": 1,
+						"cost": 1000
+					},
+					{
+						"spins": 3,
+						"cost": 3000
+					},
+					{
+						"spins": 10,
+						"cost": 10000
+					},
+					{
+						"spins": 30,
+						"cost": 30000
+					}
+				],
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			},
+			"mobs": [
+				{
+					"id": "Tang3_KienTho",
+					"name": "Kiến Thợ (Worker Ant)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 140,
+					"damage": 11,
+					"coins": {
+						"min": 4,
+						"max": 7,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang3_KienLinh",
+					"name": "Kiến Lính Sát Thủ (Killer Ant)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 180,
+					"damage": 14,
+					"coins": {
+						"min": 10,
+						"max": 14,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang3_KienLinhCuongNo",
+					"name": "Kiến Lính Cuồng Nộ",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 220,
+					"damage": 17,
+					"coins": null,
+					"items": []
+				},
+				{
+					"id": "Tang3_KienCangGiap",
+					"name": "Kiến Càng Thiết Giáp",
+					"kind": "Tinh anh",
+					"group": "elite",
+					"health": 550,
+					"damage": 19,
+					"coins": {
+						"min": 20,
+						"max": 30,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang3_KienChua",
+					"name": "Kiến Chúa Đẻ Trứng",
+					"kind": "Boss bùng nổ",
+					"group": "boss",
+					"health": 11000,
+					"damage": 24,
+					"coins": {
+						"min": 150,
+						"max": 150,
+						"reach": 50
+					},
+					"items": []
+				}
+			]
+		},
+		{
+			"n": 4,
+			"name": "Rừng Rễ Đại Thụ",
+			"crate": {
+				"name": "Rương Tầng 4",
+				"currency": "d4",
+				"price": 1000,
+				"options": [
+					{
+						"spins": 1,
+						"cost": 1000
+					},
+					{
+						"spins": 3,
+						"cost": 3000
+					},
+					{
+						"spins": 10,
+						"cost": 10000
+					},
+					{
+						"spins": 30,
+						"cost": 30000
+					}
+				],
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			},
+			"mobs": [
+				{
+					"id": "Tang4_ThoMotSung",
+					"name": "Thỏ Một Sừng (Needle Rabbit)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 220,
+					"damage": 16,
+					"coins": {
+						"min": 6,
+						"max": 10,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang4_BongMaRung",
+					"name": "Bóng Ma Rừng Ngầm (War Shadow)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 270,
+					"damage": 18,
+					"coins": {
+						"min": 7,
+						"max": 12,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang4_ThuNhan",
+					"name": "Thụ Nhân Cổ Đại (Treant)",
+					"kind": "Tinh anh",
+					"group": "elite",
+					"health": 860,
+					"damage": 24,
+					"coins": {
+						"min": 30,
+						"max": 45,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang4_AmAnh",
+					"name": "Ám Ảnh Sát Thủ",
+					"kind": "Boss bùng nổ",
+					"group": "boss",
+					"health": 15500,
+					"damage": 31,
+					"coins": {
+						"min": 200,
+						"max": 200,
+						"reach": 50
+					},
+					"items": []
+				}
+			]
+		},
+		{
+			"n": 5,
+			"name": "Đấu Trường Chuồng Thú",
+			"crate": {
+				"name": "Rương Tầng 5",
+				"currency": "d5",
+				"price": 1000,
+				"options": [
+					{
+						"spins": 1,
+						"cost": 1000
+					},
+					{
+						"spins": 3,
+						"cost": 3000
+					},
+					{
+						"spins": 10,
+						"cost": 10000
+					},
+					{
+						"spins": 30,
+						"cost": 30000
+					}
+				],
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			},
+			"mobs": [
+				{
+					"id": "Tang5_OrcKhatMau",
+					"name": "Orc Khát Máu",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 270,
+					"damage": 20,
+					"coins": {
+						"min": 10,
+						"max": 15,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang5_MinotaurTuanTra",
+					"name": "Minotaur Tuần Tra",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 320,
+					"damage": 23,
+					"coins": {
+						"min": 12,
+						"max": 18,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang5_MinotaurGacCua",
+					"name": "Minotaur Gác Cửa",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 320,
+					"damage": 23,
+					"coins": null,
+					"items": []
+				},
+				{
+					"id": "Tang5_MinotaurCuongChien",
+					"name": "Minotaur Cuồng Chiến",
+					"kind": "Tinh anh",
+					"group": "elite",
+					"health": 1000,
+					"damage": 30,
+					"coins": {
+						"min": 50,
+						"max": 70,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang5_Asterius",
+					"name": "Minotaur Đỏ (asterius Sơ Cấp)",
+					"kind": "Boss cổng",
+					"group": "boss",
+					"health": 24500,
+					"damage": 40,
+					"coins": {
+						"min": 300,
+						"max": 450,
+						"reach": 50
+					},
+					"items": []
+				}
+			]
+		},
+		{
+			"n": 6,
+			"name": "Đầm Lầy Độc Khí",
+			"crate": {
+				"name": "Rương Tầng 6",
+				"currency": "d6",
+				"price": 1000,
+				"options": [
+					{
+						"spins": 1,
+						"cost": 1000
+					},
+					{
+						"spins": 3,
+						"cost": 3000
+					},
+					{
+						"spins": 10,
+						"cost": 10000
+					},
+					{
+						"spins": 30,
+						"cost": 30000
+					}
+				],
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			},
+			"mobs": [
+				{
+					"id": "Tang6_EchPhongLao",
+					"name": "Ếch Phóng Lao (Frog Shooter)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 370,
+					"damage": 25,
+					"coins": {
+						"min": 12,
+						"max": 18,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang6_BuomDocTim",
+					"name": "Bướm Độc Tím (Purple Moth)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 280,
+					"damage": 27,
+					"coins": {
+						"min": 15,
+						"max": 22,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang6_CocKhongLo",
+					"name": "Cóc Khổng Lồ Đầm Lầy",
+					"kind": "Tinh anh",
+					"group": "elite",
+					"health": 1450,
+					"damage": 38,
+					"coins": {
+						"min": 60,
+						"max": 90,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang6_RanDoc",
+					"name": "Rắn Độc Nhỏ",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 530,
+					"damage": 31,
+					"coins": null,
+					"items": []
+				},
+				{
+					"id": "Tang6_Hydra",
+					"name": "Thủy Quái Hydra Đầm Lầy",
+					"kind": "Boss bùng nổ",
+					"group": "boss",
+					"health": 33000,
+					"damage": 47,
+					"coins": {
+						"min": 400,
+						"max": 400,
+						"reach": 50
+					},
+					"items": []
+				}
+			]
+		},
+		{
+			"n": 7,
+			"name": "Động Sương Mù Trắng",
+			"crate": {
+				"name": "Rương Tầng 7",
+				"currency": "d7",
+				"price": 1000,
+				"options": [
+					{
+						"spins": 1,
+						"cost": 1000
+					},
+					{
+						"spins": 3,
+						"cost": 3000
+					},
+					{
+						"spins": 10,
+						"cost": 10000
+					},
+					{
+						"spins": 30,
+						"cost": 30000
+					}
+				],
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			},
+			"mobs": [
+				{
+					"id": "Tang7_TieuQuySuongMu",
+					"name": "Tiểu Quỷ Sương Mù (Mist Imp)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 400,
+					"damage": 31,
+					"coins": {
+						"min": 15,
+						"max": 24,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang7_Hellhound",
+					"name": "Chó Địa Ngục (Hellhound)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 440,
+					"damage": 34,
+					"coins": {
+						"min": 18,
+						"max": 28,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang7_HellhoundCon",
+					"name": "Hellhound Con",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 370,
+					"damage": 28,
+					"coins": null,
+					"items": []
+				},
+				{
+					"id": "Tang7_KeSanMoi",
+					"name": "Kẻ Săn Mồi Trong Sương",
+					"kind": "Tinh anh",
+					"group": "elite",
+					"health": 1700,
+					"damage": 47,
+					"coins": {
+						"min": 80,
+						"max": 110,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang7_Cerberus",
+					"name": "Quỷ Khuyển Ba Đầu Cerberus",
+					"kind": "Boss bùng nổ",
+					"group": "boss",
+					"health": 44500,
+					"damage": 57,
+					"coins": {
+						"min": 500,
+						"max": 500,
+						"reach": 50
+					},
+					"items": []
+				}
+			]
+		},
+		{
+			"n": 8,
+			"name": "Hẻm Núi Wyvern",
+			"crate": {
+				"name": "Rương Tầng 8",
+				"currency": "d8",
+				"price": 1000,
+				"options": [
+					{
+						"spins": 1,
+						"cost": 1000
+					},
+					{
+						"spins": 3,
+						"cost": 3000
+					},
+					{
+						"spins": 10,
+						"cost": 10000
+					},
+					{
+						"spins": 30,
+						"cost": 30000
+					}
+				],
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			},
+			"mobs": [
+				{
+					"id": "Tang8_Gargoyle",
+					"name": "Tượng Đá Gargoyle",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 500,
+					"damage": 37,
+					"coins": {
+						"min": 20,
+						"max": 30,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang8_Wyvern",
+					"name": "Phi Long Nhỏ (Wyvern)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 430,
+					"damage": 40,
+					"coins": {
+						"min": 22,
+						"max": 35,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang8_LongNhanHoVe",
+					"name": "Long Nhân Hộ Vệ",
+					"kind": "Tinh anh",
+					"group": "elite",
+					"health": 1900,
+					"damage": 54,
+					"coins": {
+						"min": 100,
+						"max": 140,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang8_InfantDragon",
+					"name": "Tiểu Long (infant Dragon)",
+					"kind": "Boss tầng",
+					"group": "boss",
+					"health": 59500,
+					"damage": 68,
+					"coins": {
+						"min": 600,
+						"max": 800,
+						"reach": 50
+					},
+					"items": []
+				}
+			]
+		},
+		{
+			"n": 9,
+			"name": "Rừng Pha Lê Cộng Hưởng",
+			"crate": {
+				"name": "Rương Tầng 9",
+				"currency": "d9",
+				"price": 1000,
+				"options": [
+					{
+						"spins": 1,
+						"cost": 1000
+					},
+					{
+						"spins": 3,
+						"cost": 3000
+					},
+					{
+						"spins": 10,
+						"cost": 10000
+					},
+					{
+						"spins": 30,
+						"cost": 30000
+					}
+				],
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			},
+			"mobs": [
+				{
+					"id": "Tang9_TruPhaLe",
+					"name": "Trụ Pha Lê Hộ Mệnh",
+					"kind": "Đặc biệt",
+					"group": "other",
+					"health": 260,
+					"damage": 0,
+					"coins": {
+						"min": 15,
+						"max": 15,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang9_Almiraj",
+					"name": "Thỏ Sừng Tinh Anh (Almiraj)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 420,
+					"damage": 54,
+					"coins": {
+						"min": 25,
+						"max": 38,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang9_CrystalGolem",
+					"name": "Người Đá Tinh Thể (Crystal Golem)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 530,
+					"damage": 45,
+					"coins": {
+						"min": 30,
+						"max": 45,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang9_DaiVuongTinhThe",
+					"name": "Đại Vương Tinh Thể",
+					"kind": "Boss bùng nổ",
+					"group": "boss",
+					"health": 79500,
+					"damage": 70,
+					"coins": {
+						"min": 800,
+						"max": 800,
+						"reach": 50
+					},
+					"items": []
+				}
+			]
+		},
+		{
+			"n": 10,
+			"name": "Tiền Đồn Goliath",
+			"crate": {
+				"name": "Rương Tầng 10",
+				"currency": "d10",
+				"price": 1000,
+				"options": [
+					{
+						"spins": 1,
+						"cost": 1000
+					},
+					{
+						"spins": 3,
+						"cost": 3000
+					},
+					{
+						"spins": 10,
+						"cost": 10000
+					},
+					{
+						"spins": 30,
+						"cost": 30000
+					}
+				],
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			},
+			"mobs": [
+				{
+					"id": "Tang10_KyNhongLua",
+					"name": "Kỳ Nhông Lửa (Salamander)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 620,
+					"damage": 51,
+					"coins": {
+						"min": 35,
+						"max": 50,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang10_KhongLoDungNham",
+					"name": "Khổng Lồ Dung Nham (Lava Troll)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 750,
+					"damage": 57,
+					"coins": {
+						"min": 40,
+						"max": 60,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang10_MinotaurThietGiap",
+					"name": "Minotaur Thiết Giáp",
+					"kind": "Tinh anh",
+					"group": "elite",
+					"health": 2600,
+					"damage": 71,
+					"coins": {
+						"min": 150,
+						"max": 220,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang10_Goliath",
+					"name": "Goliath Khổng Lồ",
+					"kind": "Boss cổng",
+					"group": "boss",
+					"health": 123000,
+					"damage": 91,
+					"coins": {
+						"min": 1200,
+						"max": 1800,
+						"reach": 50
+					},
+					"items": []
+				}
+			]
+		},
+		{
+			"n": 11,
+			"name": "Thị Trấn Ngầm Rivira",
+			"crate": {
+				"name": "Rương Tầng 11",
+				"currency": "d11",
+				"price": 1000,
+				"options": [
+					{
+						"spins": 1,
+						"cost": 1000
+					},
+					{
+						"spins": 3,
+						"cost": 3000
+					},
+					{
+						"spins": 10,
+						"cost": 10000
+					},
+					{
+						"spins": 30,
+						"cost": 30000
+					}
+				],
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			},
+			"mobs": [
+				{
+					"id": "Tang11_Lizardman",
+					"name": "Chiến Binh Thằn Lằn (Lizardman)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 720,
+					"damage": 59,
+					"coins": {
+						"min": 50,
+						"max": 75,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang11_Vouivre",
+					"name": "Dực Long Độc (Vouivre)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 820,
+					"damage": 65,
+					"coins": {
+						"min": 60,
+						"max": 90,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang11_MossHuge",
+					"name": "Quái Vật Biến Dị (Moss Huge)",
+					"kind": "Tinh anh",
+					"group": "elite",
+					"health": 3600,
+					"damage": 84,
+					"coins": {
+						"min": 300,
+						"max": 450,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang11_GoliathDen",
+					"name": "Biến Thể Goliath Đen",
+					"kind": "Boss tầng",
+					"group": "boss",
+					"health": 164000,
+					"damage": 106,
+					"coins": {
+						"min": 3000,
+						"max": 3000,
+						"reach": 50
+					},
+					"items": []
+				}
+			]
+		},
+		{
+			"n": 12,
+			"name": "Đại Thác Nước",
+			"crate": {
+				"name": "Rương Tầng 12",
+				"currency": "d12",
+				"price": 1000,
+				"options": [
+					{
+						"spins": 1,
+						"cost": 1000
+					},
+					{
+						"spins": 3,
+						"cost": 3000
+					},
+					{
+						"spins": 10,
+						"cost": 10000
+					},
+					{
+						"spins": 30,
+						"cost": 30000
+					}
+				],
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			},
+			"mobs": [
+				{
+					"id": "Tang12_Siren",
+					"name": "Nhân Ngư Hát Mồi (Siren)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 810,
+					"damage": 68,
+					"coins": {
+						"min": 65,
+						"max": 95,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang12_Kelpie",
+					"name": "Chiến Mã Nước (Kelpie)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 900,
+					"damage": 72,
+					"coins": {
+						"min": 75,
+						"max": 110,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang12_CuaThietGiap",
+					"name": "Cua Thiết Giáp Khổng Lồ",
+					"kind": "Tinh anh",
+					"group": "elite",
+					"health": 4300,
+					"damage": 92,
+					"coins": {
+						"min": 400,
+						"max": 600,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang12_Leviathan",
+					"name": "Hải Xà Leviathan",
+					"kind": "Boss bùng nổ",
+					"group": "boss",
+					"health": 218000,
+					"damage": 115,
+					"coins": {
+						"min": 3500,
+						"max": 3500,
+						"reach": 50
+					},
+					"items": []
+				}
+			]
+		},
+		{
+			"n": 13,
+			"name": "Thành Cổ Udaeus",
+			"crate": {
+				"name": "Rương Tầng 13",
+				"currency": "d13",
+				"price": 1000,
+				"options": [
+					{
+						"spins": 1,
+						"cost": 1000
+					},
+					{
+						"spins": 3,
+						"cost": 3000
+					},
+					{
+						"spins": 10,
+						"cost": 10000
+					},
+					{
+						"spins": 30,
+						"cost": 30000
+					}
+				],
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			},
+			"mobs": [
+				{
+					"id": "Tang13_Spartoi",
+					"name": "Chiến Binh Xương Cổ Đại (Spartoi)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 890,
+					"damage": 77,
+					"coins": {
+						"min": 80,
+						"max": 120,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang13_SpartoiCamTu",
+					"name": "Spartoi Cảm Tử",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 310,
+					"damage": 44,
+					"coins": null,
+					"items": []
+				},
+				{
+					"id": "Tang13_BloodDemon",
+					"name": "Ác Quỷ Hầm Mỏ (Blood Demon)",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 1000,
+					"damage": 82,
+					"coins": {
+						"min": 90,
+						"max": 135,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang13_Udaeus",
+					"name": "Hắc Vương Udaeus",
+					"kind": "Boss tầng",
+					"group": "boss",
+					"health": 287000,
+					"damage": 128,
+					"coins": {
+						"min": 5000,
+						"max": 5000,
+						"reach": 50
+					},
+					"items": []
+				}
+			]
+		},
+		{
+			"n": 14,
+			"name": "Đấu Trường Sinh Tử",
+			"crate": {
+				"name": "Rương Tầng 14",
+				"currency": "d14",
+				"price": 1000,
+				"options": [
+					{
+						"spins": 1,
+						"cost": 1000
+					},
+					{
+						"spins": 3,
+						"cost": 3000
+					},
+					{
+						"spins": 10,
+						"cost": 10000
+					},
+					{
+						"spins": 30,
+						"cost": 30000
+					}
+				],
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			},
+			"mobs": [
+				{
+					"id": "Tang14_GiacDauSi",
+					"name": "Giác Đấu Sĩ Hư Không",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 1150,
+					"damage": 92,
+					"coins": {
+						"min": 110,
+						"max": 160,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang14_XaNuLamia",
+					"name": "Xà Nữ Lamia Nguyền Rủa",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 1000,
+					"damage": 88,
+					"coins": {
+						"min": 120,
+						"max": 180,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang14_KeHanhQuyet",
+					"name": "Kẻ Hành Quyết Đấu Trường",
+					"kind": "Tinh anh",
+					"group": "elite",
+					"health": 5250,
+					"damage": 115,
+					"coins": {
+						"min": 600,
+						"max": 900,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang14_QuanNguc",
+					"name": "Quản Ngục Tử Thần",
+					"kind": "Boss bùng nổ",
+					"group": "boss",
+					"health": 386000,
+					"damage": 149,
+					"coins": {
+						"min": 6000,
+						"max": 6000,
+						"reach": 50
+					},
+					"items": []
+				}
+			]
+		},
+		{
+			"n": 15,
+			"name": "Vực Thẳm & Thánh Điện Balor",
+			"crate": {
+				"name": "Rương Tầng 15",
+				"currency": "d15",
+				"price": 1000,
+				"options": [
+					{
+						"spins": 1,
+						"cost": 1000
+					},
+					{
+						"spins": 3,
+						"cost": 3000
+					},
+					{
+						"spins": 10,
+						"cost": 10000
+					},
+					{
+						"spins": 30,
+						"cost": 30000
+					}
+				],
+				"chances": {
+					"TANBINH": 40,
+					"CHIENBINH": 28,
+					"KYSI": 18,
+					"LANHCHUA": 8.8,
+					"QUANVUONG": 4.8,
+					"DEVUONG": 0.4
+				}
+			},
+			"mobs": [
+				{
+					"id": "Tang15_RongDocPeluda",
+					"name": "Rồng Độc Peluda",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 1250,
+					"damage": 100,
+					"coins": {
+						"min": 150,
+						"max": 220,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang15_SauLambton",
+					"name": "Sâu Khổng Lồ Lambton",
+					"kind": "Quái thường",
+					"group": "normal",
+					"health": 1400,
+					"damage": 107,
+					"coins": {
+						"min": 180,
+						"max": 260,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang15_KySiHuKhong",
+					"name": "Kỵ Sĩ Hư Không Tối Thượng",
+					"kind": "Tinh anh",
+					"group": "elite",
+					"health": 6500,
+					"damage": 133,
+					"coins": {
+						"min": 1000,
+						"max": 1500,
+						"reach": 0
+					},
+					"items": []
+				},
+				{
+					"id": "Tang15_Juggernaut",
+					"name": "Sát Thủ Juggernaut",
+					"kind": "Boss đặc biệt",
+					"group": "boss",
+					"health": 403000,
+					"damage": 163,
+					"coins": {
+						"min": 10000,
+						"max": 10000,
+						"reach": 50
+					},
+					"items": []
+				},
+				{
+					"id": "Tang15_Balor",
+					"name": "Ma Nhãn Balor",
+					"kind": "Boss đặc biệt",
+					"group": "boss",
+					"health": 558000,
+					"damage": 185,
+					"coins": {
+						"min": 15000,
+						"max": 15000,
+						"reach": 50
+					},
+					"items": []
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,177 @@
+---
+/**
+ * The dungeon (hầm ngục) of one server, built from src/data/servers/<server>/dungeon.json
+ * (written by scripts/sync-dungeon.mjs from the server's config). Two views:
+ *   floors   one card per tier: its mobs, elites and bosses, with health, damage and what they drop
+ *   crates   what a spin of the equipment crate of each tier costs, and the chance of each grade
+ * Every number comes from the data, none is typed here. A column with nothing to show on a page is left out.
+ */
+interface Props {
+	server: string;
+	view: 'floors' | 'crates';
+}
+
+const { server, view } = Astro.props;
+const files = import.meta.glob('../data/servers/*/dungeon.json', { eager: true, import: 'default' }) as Record<string, any>;
+const data = files[`../data/servers/${server}/dungeon.json`];
+if (!data) throw new Error(`DungeonFloors: no dungeon.json for server "${server}", run node scripts/sync-dungeon.mjs`);
+const equipmentFiles = import.meta.glob('../data/servers/*/equipment.json', { eager: true, import: 'default' }) as Record<string, any>;
+const equipment = equipmentFiles[`../data/servers/${server}/equipment.json`];
+
+const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 3 });
+const range = (min: number, max: number) => (min === max ? num(min) : `${num(min)}–${num(max)}`);
+const coin = (currency: string) => `Dungeon Coins tầng ${String(currency).replace(/^d/i, '')}`;
+const ORDER = ['normal', 'other', 'elite', 'boss'];
+const sorted = (mobs: any[]) => [...mobs].sort((a, b) => ORDER.indexOf(a.group) - ORDER.indexOf(b.group));
+const tiers: any[] = data.tiers;
+const spins: number[] = [...new Set<number>(tiers.flatMap((t: any) => t.crate.options.map((o: any) => o.spins)))].sort((a, b) => a - b);
+const grades: any[] = equipment?.grades ?? [];
+---
+
+<div class="df not-content">
+	{
+		view === 'floors' &&
+			tiers.map((tier: any) => {
+				const mobs = sorted(tier.mobs);
+				const hasItems = mobs.some((m: any) => m.items.length > 0);
+				return (
+					<section class="df-tier">
+						<h3 id={`tang-${tier.n}`}>
+							Tầng {tier.n}: {tier.name}
+						</h3>
+						<p class="df-meta">
+							Quái ở đây rơi <strong>{coin(`d${tier.n}`)}</strong>, dùng để quay <a href={`../crates/#tang-${tier.n}`}>{tier.crate.name}</a> ({num(tier.crate.price)} mỗi lượt).
+						</p>
+						<div class="df-scroll">
+							<table>
+								<thead>
+									<tr>
+										<th>Loại</th>
+										<th>Tên</th>
+										<th>Máu</th>
+										<th>Sát thương</th>
+										<th>{coin(`d${tier.n}`)}</th>
+										{hasItems && <th>Vật phẩm rơi</th>}
+									</tr>
+								</thead>
+								<tbody>
+									{mobs.map((mob: any) => (
+										<tr class={mob.group === 'boss' ? 'df-boss' : undefined}>
+											<td>{mob.kind}</td>
+											<td>{mob.name}</td>
+											<td>{num(mob.health)}</td>
+											<td>{mob.damage ? num(mob.damage) : '–'}</td>
+											<td>
+												{mob.coins ? range(mob.coins.min, mob.coins.max) : '–'}
+												{mob.coins && mob.coins.reach > 0 && <span class="df-note"> mỗi người trong {num(mob.coins.reach)} block</span>}
+											</td>
+											{hasItems && (
+												<td>
+													{mob.items.length === 0
+														? '–'
+														: mob.items.map((item: any, i: number) => (
+																<>
+																	{i > 0 && ', '}
+																	{item.item} ×{range(item.min, item.max)} ({num(item.chance)}%)
+																</>
+															))}
+												</td>
+											)}
+										</tr>
+									))}
+								</tbody>
+							</table>
+						</div>
+					</section>
+				);
+			})
+	}
+
+	{
+		view === 'crates' && (
+			<>
+				<p class="df-meta">
+					Mỗi tầng có một rương trang bị riêng, quay bằng <strong>Dungeon Coins của đúng tầng đó</strong>. Quay nhiều lượt một lần thì tốn đúng số lượt nhân với giá một lượt, trừ khi ghi giảm giá.
+					Rương cho trang bị của tầng, xem chỉ số ở mục <a href="../../equipment/armor/">Trang bị</a>.
+				</p>
+				<div class="df-scroll">
+					<table>
+						<thead>
+							<tr>
+								<th>Tầng</th>
+								<th>Rương</th>
+								<th>Tiền tệ</th>
+								<th>1 lượt</th>
+								{spins.filter((s) => s > 1).map((s) => <th>{s} lượt</th>)}
+								{grades.map((g: any) => <th>{g.name}</th>)}
+							</tr>
+						</thead>
+						<tbody>
+							{tiers.map((tier: any) => (
+								<tr id={`tang-${tier.n}`}>
+									<td>{tier.n}</td>
+									<td>{tier.crate.name}</td>
+									<td>{coin(tier.crate.currency)}</td>
+									<td>{num(tier.crate.price)}</td>
+									{spins.filter((s) => s > 1).map((s) => {
+										const option = tier.crate.options.find((o: any) => o.spins === s);
+										return <td>{option ? num(option.cost) : '–'}</td>;
+									})}
+									{grades.map((g: any) => <td>{tier.crate.chances[g.id] === undefined ? '–' : `${num(tier.crate.chances[g.id])}%`}</td>)}
+								</tr>
+							))}
+						</tbody>
+					</table>
+				</div>
+				<p class="df-note">Các cột Tân Binh đến Đế Vương là tỉ lệ ra phẩm cấp đó ở mỗi lượt quay.</p>
+			</>
+		)
+	}
+</div>
+
+<style>
+	.df {
+		margin: 1.5rem 0;
+	}
+	.df-tier {
+		margin-bottom: 1.5rem;
+		padding: 0.25rem 1rem 0.75rem;
+		border: 1px solid var(--sl-color-hairline);
+		border-radius: 0.5rem;
+	}
+	.df h3 {
+		margin: 0.75rem 0 0.25rem;
+		font-size: var(--sl-text-xl);
+	}
+	.df-meta,
+	.df-note {
+		margin: 0.25rem 0 0.5rem;
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-sm);
+	}
+	.df-scroll {
+		overflow-x: auto;
+	}
+	.df table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: var(--sl-text-sm);
+	}
+	.df th,
+	.df td {
+		padding: 0.35rem 0.6rem;
+		border-bottom: 1px solid var(--sl-color-hairline);
+		text-align: left;
+		white-space: nowrap;
+	}
+	.df th {
+		color: var(--sl-color-gray-2);
+		font-weight: 600;
+	}
+	.df-boss td {
+		font-weight: 600;
+	}
+	.df-boss .df-note {
+		font-weight: 400;
+	}
+</style>

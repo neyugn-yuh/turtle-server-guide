@@ -39,5 +39,11 @@ export const guides = [
 		description: 'Giáp, kiếm, cung và rìu theo từng tầng và phẩm cấp: chỉ số, kỹ năng, cách nhận và nâng cấp.',
 		landing: 'armor',
 	},
+	{
+		slug: 'dungeon',
+		title: 'Hầm ngục',
+		description: 'Các tầng hầm ngục: quái, tinh anh và boss, phần thưởng, và giá quay rương trang bị của từng tầng.',
+		landing: 'floors',
+	},
 	// <-- add new guides here
 ];
