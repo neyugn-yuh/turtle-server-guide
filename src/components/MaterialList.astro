@@ -1,0 +1,187 @@
+---
+/**
+ * List of the materials (nguyên liệu) of one server, built from src/data/servers/<server>/materials.json
+ * (written by scripts/sync-materials.mjs from the server's config). One section per material: how to craft it and what it
+ * is used for. A material that has no recipe or no use yet shows an empty "—" for that part.
+ */
+interface Props {
+	server: string;
+}
+
+const { server } = Astro.props;
+const files = import.meta.glob('../data/servers/*/materials.json', { eager: true, import: 'default' }) as Record<string, any>;
+const data = files[`../data/servers/${server}/materials.json`];
+if (!data) throw new Error(`MaterialList: no materials.json for server "${server}", run node scripts/sync-materials.mjs`);
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const iconUrl = (name: string) => `${base}/minions/${name}.png`;
+const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 2 });
+const CURRENCY: Record<string, string> = { money: 'Tiền' };
+const currency = (name: string) => CURRENCY[name.toLowerCase()] ?? name;
+
+const materials: any[] = data.materials;
+---
+
+<div class="ml not-content">
+	{
+		materials.map((material: any) => (
+			<section class="ml-item">
+				<h3 id={material.id.toLowerCase()}>
+					{material.icon && <img class="ml-icon" src={iconUrl(material.icon)} alt="" width="32" height="32" loading="lazy" onerror="this.hidden=true" />}
+					{material.name}
+				</h3>
+
+				<h4>Công thức chế tạo</h4>
+				{
+					material.recipes.length === 0 ? (
+						<p class="ml-empty">—</p>
+					) : (
+						<ul class="ml-recipes">
+							{material.recipes.map((recipe: any) => (
+								<li>
+									<span class="ml-where">{recipe.category}</span>
+									<span class="ml-line">
+										{recipe.ingredients.map((item: any, i: number) => (
+											<>
+												{i > 0 && <span class="ml-plus">+</span>}
+												<span class="ml-chip">
+													{item.icon && <img class="ml-icon-sm" src={iconUrl(item.icon)} alt="" width="20" height="20" loading="lazy" onerror="this.hidden=true" />}
+													{num(item.amount)} × {item.name}
+												</span>
+											</>
+										))}
+										<span class="ml-arrow">→</span>
+										{recipe.results.map((item: any) => (
+											<span class="ml-chip ml-result">{num(item.amount)} × {item.name}</span>
+										))}
+									</span>
+									<span class="ml-meta">
+										{recipe.chance < 100 && <>Tỉ lệ thành công {num(recipe.chance)}%. </>}
+										{recipe.cost && recipe.cost.amount > 0 && <>Phí {num(recipe.cost.amount)} {currency(recipe.cost.currency)}.</>}
+									</span>
+								</li>
+							))}
+						</ul>
+					)
+				}
+
+				<h4>Công dụng</h4>
+				{
+					material.uses.length === 0 ? (
+						<p class="ml-empty">—</p>
+					) : (
+						<ul class="ml-recipes">
+							{material.uses.map((recipe: any) => (
+								<li>
+									<span class="ml-where">{recipe.category}</span>
+									<span class="ml-line">
+										Dùng để chế
+										{recipe.results.map((item: any) => (
+											<span class="ml-chip ml-result">{num(item.amount)} × {item.name}</span>
+										))}
+										, cần
+										{recipe.ingredients.map((item: any, i: number) => (
+											<>
+												{i > 0 && <span class="ml-plus">+</span>}
+												<span class="ml-chip">
+													{item.icon && <img class="ml-icon-sm" src={iconUrl(item.icon)} alt="" width="20" height="20" loading="lazy" onerror="this.hidden=true" />}
+													{num(item.amount)} × {item.name}
+												</span>
+											</>
+										))}
+									</span>
+								</li>
+							))}
+						</ul>
+					)
+				}
+			</section>
+		))
+	}
+</div>
+
+<style>
+	.ml {
+		margin: 1.5rem 0;
+	}
+	.ml-item {
+		margin-bottom: 2rem;
+		padding: 0.25rem 1rem 0.75rem;
+		border: 1px solid var(--sl-color-hairline);
+		border-radius: 0.5rem;
+	}
+	.ml-item h3 {
+		display: flex;
+		align-items: center;
+		gap: 0.6rem;
+		margin: 0.75rem 0 0.25rem;
+		font-size: var(--sl-text-xl);
+	}
+	.ml-item h4 {
+		margin: 1rem 0 0.25rem;
+		color: var(--sl-color-gray-2);
+		font-size: var(--sl-text-base);
+	}
+	.ml-icon {
+		width: 2rem;
+		height: 2rem;
+		margin: 0;
+		image-rendering: pixelated;
+	}
+	.ml-icon-sm {
+		width: 1.25rem;
+		height: 1.25rem;
+		margin: 0 0.35rem 0 0;
+		vertical-align: middle;
+		image-rendering: pixelated;
+	}
+	.ml-empty {
+		margin: 0;
+		color: var(--sl-color-gray-3);
+	}
+	.ml-recipes {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.ml-recipes li {
+		display: grid;
+		gap: 0.25rem;
+		padding: 0.5rem 0;
+		border-bottom: 1px solid var(--sl-color-hairline);
+	}
+	.ml-where {
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-sm);
+	}
+	.ml-line {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.4rem;
+	}
+	.ml-chip {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.15rem 0.5rem;
+		border: 1px solid var(--sl-color-gray-5);
+		border-radius: 0.375rem;
+		font-size: var(--sl-text-sm);
+		white-space: nowrap;
+	}
+	.ml-result {
+		border-color: var(--sl-color-accent);
+		background: var(--sl-color-accent-low);
+	}
+	.ml-plus,
+	.ml-arrow {
+		color: var(--sl-color-gray-3);
+	}
+	.ml-meta {
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-sm);
+	}
+	.ml-meta:empty {
+		display: none;
+	}
+</style>

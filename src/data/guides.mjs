@@ -18,5 +18,10 @@ export const guides = [
 		title: 'Nâng cấp đảo',
 		description: 'Sáu loại nâng cấp đảo: diện tích, thành viên, slot minion, máy tạo quặng, chỉ số dungeon và xưởng rèn.',
 	},
+	{
+		slug: 'materials',
+		title: 'Nguyên liệu',
+		description: 'Danh sách nguyên liệu: chế tạo từ gì và dùng để làm gì.',
+	},
 	// <-- add new guides here
 ];

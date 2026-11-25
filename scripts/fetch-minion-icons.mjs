@@ -33,6 +33,14 @@ for (const server of readdirSync(serversDir)) {
 		if (minion.icon) materials.add(minion.icon);
 		for (const group of minion.products) for (const product of group.products) if (product.icon) materials.add(product.icon);
 	}
+	// materials: the block of each material and the items of its recipes
+	const materialsFile = join(serversDir, server, 'materials.json');
+	if (existsSync(materialsFile)) {
+		for (const material of JSON.parse(readFileSync(materialsFile, 'utf8')).materials) {
+			if (material.icon) materials.add(material.icon);
+			for (const recipe of [...material.recipes, ...material.uses]) for (const item of [...recipe.ingredients, ...recipe.results]) if (item.icon) materials.add(item.icon);
+		}
+	}
 	// island upgrades: the picture of each upgrade and of the blocks a level asks for
 	const islandFile = join(serversDir, server, 'island-upgrades.json');
 	if (existsSync(islandFile)) {

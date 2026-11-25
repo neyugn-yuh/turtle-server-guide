@@ -1,0 +1,11 @@
+{
+	"materials": [
+		{
+			"id": "DA_NEN",
+			"name": "Đá Nền",
+			"icon": "deepslate",
+			"recipes": [],
+			"uses": []
+		}
+	]
+}
