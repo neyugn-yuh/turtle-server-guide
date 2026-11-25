@@ -156,6 +156,23 @@ function readMob(id, data, upgrades, perks) {
 	};
 }
 
+// How fast one spawner block runs before any upgrade. These are the vanilla spawner values (stored in the spawner block, not in a
+// plugin file): up to 4 spawn attempts per cycle, a cycle every 200-800 ticks (10-40 s, 25 s on average), only with a player within
+// 16 blocks. Leaf can override the delays (config/leaf-global.yml spawner-settings, off here); when that file sits next to the plugins
+// folder and has it switched on, its delays are used so the wiki cannot drift.
+function readSpawnerBase(pluginsDir) {
+	const base = { spawnCount: 4, minDelayTicks: 200, maxDelayTicks: 800 };
+	if (!pluginsDir) return base;
+	const leaf = join(resolve(pluginsDir), '..', 'config', 'leaf-global.yml');
+	if (!existsSync(leaf)) return base;
+	const custom = parse(readFileSync(leaf, 'utf8'))?.['spawner-settings'];
+	if (custom?.enabled === true) {
+		base.minDelayTicks = Number(custom['min-spawn-delay'] ?? base.minDelayTicks);
+		base.maxDelayTicks = Number(custom['max-spawn-delay'] ?? base.maxDelayTicks);
+	}
+	return base;
+}
+
 // ---------- main ----------
 const dir = option('--dir');
 if (!dir && !flag('--ptero')) fail('give a source: --dir <plugins folder> or --ptero');
@@ -169,7 +186,7 @@ try {
 	const config = parse(files.config) ?? {};
 	const mobs = Object.entries(entities.mobs ?? {}).map(([id, data]) => readMob(id, data, { levels: upgrades.levels, perMob: upgrades['per-mob'] }, perks));
 	if (!mobs.length) throw new Error('entities.yml has no mobs');
-	output = JSON.stringify({ spawnerMaxStack: Number(config.spawner?.['max-stack'] ?? 0), currency: String(upgrades.currency ?? 'money'), mobs }, null, '\t') + '\n';
+	output = JSON.stringify({ spawnerMaxStack: Number(config.spawner?.['max-stack'] ?? 0), currency: String(upgrades.currency ?? 'money'), spawnerBase: readSpawnerBase(dir), mobs }, null, '\t') + '\n';
 } catch (error) {
 	fail(error.message);
 }

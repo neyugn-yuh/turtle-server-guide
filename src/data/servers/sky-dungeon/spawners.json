@@ -1,6 +1,11 @@
 {
 	"spawnerMaxStack": 5000,
 	"currency": "mobcoins",
+	"spawnerBase": {
+		"spawnCount": 4,
+		"minDelayTicks": 200,
+		"maxDelayTicks": 800
+	},
 	"mobs": [
 		{
 			"id": "ZOMBIE",

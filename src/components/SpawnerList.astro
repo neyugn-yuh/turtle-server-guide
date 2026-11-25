@@ -25,6 +25,14 @@ const xpText = (xp: any) => (xp.min === xp.max ? num(xp.min) : `${num(xp.min)}�
 // a level above 1, or a level 1 that gives a bonus, means upgrades are switched on for this mob
 const hasUpgrades = (mob: any) => mob.tiers.some((t: any) => t.level > 1 || t.dropBonus > 0 || t.spawnSpeed > 0);
 
+// speed of one spawner block: spawnCount attempts per cycle, one cycle every minDelay..maxDelay ticks (20 ticks = 1 s)
+const speedBase = data.spawnerBase;
+const minSeconds = speedBase.minDelayTicks / 20;
+const maxSeconds = speedBase.maxDelayTicks / 20;
+const avgSeconds = (minSeconds + maxSeconds) / 2;
+const perCycle = (tier: any) => speedBase.spawnCount * (1 + tier.spawnSpeed / 100);
+const perMinute = (tier: any) => (perCycle(tier) * 60) / avgSeconds;
+
 const mobs: any[] = data.mobs;
 ---
 
@@ -38,6 +46,7 @@ const mobs: any[] = data.mobs;
 				<h3 id={mob.id.toLowerCase()}>
 					<img class="sl-icon" src={mobUrl(mob.id)} alt="" loading="lazy" data-fallback={iconUrl(mob.icon)} onerror="this.onerror=null;this.src=this.dataset.fallback" />
 					Spawner {mob.name}
+					{mob.drops.length > 0 && !mob.vanillaDrops && <span class="sl-only">Mob này chỉ rơi đúng các vật phẩm trong bảng.</span>}
 				</h3>
 				<h4>Đồ rơi và kinh nghiệm khi giết</h4>
 				{
@@ -77,15 +86,16 @@ const mobs: any[] = data.mobs;
 						</div>
 					)
 				}
-				{mob.drops.length > 0 && !mob.vanillaDrops && <p class="sl-empty">Mob này chỉ rơi đúng các vật phẩm trong bảng.{mob.xp.bySize && ' Exp của slime bằng cỡ của nó (1, 2 hoặc 4).'}</p>}
+				{mob.xp.bySize && <p class="sl-empty">Exp của slime bằng cỡ của nó (1, 2 hoặc 4).</p>}
 
 				<h4>Nâng cấp spawner</h4>
+					{hasUpgrades(mob) && <p class="sl-empty">Tốc độ tính cho 1 spawner: mỗi chu kỳ ({num(minSeconds)}–{num(maxSeconds)} giây, trung bình {num(avgSeconds)} giây) spawner sinh tối đa {speedBase.spawnCount} lượt, mỗi lượt ra 1 mob nhân với (1 + tốc độ sinh thêm). Chỉ sinh khi có người chơi đứng gần; đặt N spawner thì nhân N.</p>}
 				{
 					hasUpgrades(mob) ? (
 						<div class="sl-scroll">
 							<table>
 								<thead>
-									<tr><th>Cấp</th><th>Thêm đồ rơi</th><th>Thêm tốc độ sinh</th><th>Phí ({currency})</th></tr>
+									<tr><th>Cấp</th><th>Thêm đồ rơi</th><th>Thêm tốc độ sinh</th><th>Mob mỗi chu kỳ</th><th>Mob mỗi phút</th><th>Phí ({currency})</th></tr>
 								</thead>
 								<tbody>
 									{mob.tiers.map((tier: any) => (
@@ -93,6 +103,8 @@ const mobs: any[] = data.mobs;
 											<td>{tier.level}</td>
 											<td>{tier.dropBonus > 0 ? `+${num(tier.dropBonus)}%` : '–'}</td>
 											<td>{tier.spawnSpeed > 0 ? `+${num(tier.spawnSpeed)}%` : '–'}</td>
+											<td>{num(perCycle(tier))}</td>
+											<td>{num(perMinute(tier))}</td>
 											<td>{tier.cost > 0 ? num(tier.cost) : '–'}</td>
 										</tr>
 									))}
@@ -142,6 +154,13 @@ const mobs: any[] = data.mobs;
 		margin: 1rem 0 0.25rem;
 		color: var(--sl-color-gray-2);
 		font-size: var(--sl-text-base);
+	}
+	.sl-only {
+		margin-left: auto;
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-sm);
+		font-weight: 400;
+		text-align: right;
 	}
 	.sl-icon {
 		width: auto;

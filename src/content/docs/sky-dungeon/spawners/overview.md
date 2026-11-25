@@ -18,7 +18,7 @@ Spawner sinh mob liên tục để bạn giết lấy đồ rơi. Mỗi loại m
 
 ## Khi nào spawner sinh mob
 
-Spawner chỉ sinh mob khi có **người chơi đứng gần** (mặc định trong khoảng 16 block). Không có ai ở gần thì spawner đứng yên, không tích thêm mob.
+Spawner chỉ sinh mob khi có **người chơi đứng gần** (mặc định trong khoảng 16 block). Không có ai ở gần thì spawner đứng yên, không tích thêm mob. Tốc độ sinh của một spawner (số mob mỗi chu kỳ, mỗi phút, và mức tăng theo cấp) ghi trong bảng nâng cấp của từng spawner.
 
 ## Lấy spawner về
 
