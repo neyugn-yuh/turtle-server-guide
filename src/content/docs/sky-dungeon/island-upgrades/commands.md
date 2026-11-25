@@ -22,7 +22,7 @@ Mọi người chơi đều dùng được hai lệnh này. Bạn vẫn cần c�
 | Bạn cần có đảo để nâng cấp | Tạo đảo hoặc vào một đảo trước |
 | Vai trò của bạn chưa có quyền nâng cấp đảo | Nhờ chủ đảo bật quyền nâng cấp cho vai trò của bạn |
 | Bạn chưa đủ tiền nâng cấp | Kiếm đủ số tiền ghi ở cấp đó |
-| Chưa đủ khối (ví dụ Khối Kim Cương) | Để đủ khối thường trong ô túi chính. Khối có đổi tên hoặc có mô tả không được tính |
+| Chưa đủ vật phẩm (ví dụ Khối Kim Cương, Đá Nền) | Để đủ vật phẩm trong ô túi chính. Khối thường có đổi tên hoặc có mô tả không được tính; Đá Nền phải là đúng vật phẩm Đá Nền |
 | Đảo đang xử lý một nâng cấp | Chờ vài giây rồi thử lại |
 | Đảo hoặc cấp nâng cấp đã thay đổi | Mở lại menu, có thể ai đó vừa nâng cấp trước bạn |
 | Đảo có giao dịch cần quản trị viên đối soát | Đừng thử lại, báo quản trị viên |

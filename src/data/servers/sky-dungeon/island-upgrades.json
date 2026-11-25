@@ -10,7 +10,9 @@
 					"display": 2,
 					"value": 50,
 					"money": 100000,
-					"items": {},
+					"items": {
+						"MATERIAL:DA_NEN": 4
+					},
 					"stats": {}
 				},
 				{
@@ -18,7 +20,9 @@
 					"display": 3,
 					"value": 75,
 					"money": 500000,
-					"items": {},
+					"items": {
+						"MATERIAL:DA_NEN": 16
+					},
 					"stats": {}
 				},
 				{
@@ -26,7 +30,9 @@
 					"display": 4,
 					"value": 100,
 					"money": 2500000,
-					"items": {},
+					"items": {
+						"MATERIAL:DA_NEN": 64
+					},
 					"stats": {}
 				},
 				{
@@ -34,7 +40,9 @@
 					"display": 5,
 					"value": 150,
 					"money": 10000000,
-					"items": {},
+					"items": {
+						"MATERIAL:DA_NEN": 256
+					},
 					"stats": {}
 				},
 				{
@@ -42,7 +50,9 @@
 					"display": 6,
 					"value": 200,
 					"money": 50000000,
-					"items": {},
+					"items": {
+						"MATERIAL:DA_NEN": 1024
+					},
 					"stats": {}
 				}
 			]

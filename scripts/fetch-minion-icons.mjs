@@ -46,7 +46,7 @@ for (const server of readdirSync(serversDir)) {
 	if (existsSync(islandFile)) {
 		for (const upgrade of JSON.parse(readFileSync(islandFile, 'utf8')).upgrades) {
 			if (upgradeIcons[upgrade.id]) materials.add(upgradeIcons[upgrade.id]);
-			for (const level of upgrade.levels) for (const material of Object.keys(level.items)) materials.add(material.toLowerCase());
+			for (const level of upgrade.levels) for (const key of Object.keys(level.items)) if (!key.includes(':')) materials.add(key.toLowerCase()); // MATERIAL:X pictures come from materials.json
 		}
 	}
 }

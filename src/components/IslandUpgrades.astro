@@ -22,8 +22,18 @@ const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const iconUrl = (name: string) => `${base}/minions/${name}.png`;
 const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 2 });
 
-const BLOCKS: Record<string, string> = { IRON_BLOCK: 'Khối Sắt', GOLD_BLOCK: 'Khối Vàng', DIAMOND_BLOCK: 'Khối Kim Cương', EMERALD_BLOCK: 'Khối Lục Bảo' };
-const blockName = (material: string) => BLOCKS[material] ?? material.toLowerCase().replace(/_/g, ' ');
+const materialFiles = import.meta.glob('../data/servers/*/materials.json', { eager: true, import: 'default' }) as Record<string, any>;
+const materialData = materialFiles[`../data/servers/${server}/materials.json`]?.materials ?? [];
+const VANILLA: Record<string, string> = { IRON_BLOCK: 'Khối Sắt', GOLD_BLOCK: 'Khối Vàng', DIAMOND_BLOCK: 'Khối Kim Cương', EMERALD_BLOCK: 'Khối Lục Bảo' };
+// A required item is a vanilla block (IRON_BLOCK) or an MMOItems item TYPE:ID (MATERIAL:DA_NEN, named from materials.json).
+const itemInfo = (key: string): { name: string; icon: string } => {
+	if (key.includes(':')) {
+		const [type, id] = key.split(':');
+		const found = type === 'MATERIAL' ? materialData.find((m: any) => m.id === id) : undefined;
+		return { name: found?.name ?? id.toLowerCase().replace(/_/g, ' '), icon: found?.icon ?? '' };
+	}
+	return { name: VANILLA[key] ?? key.toLowerCase().replace(/_/g, ' '), icon: key.toLowerCase() };
+};
 const STATS: Record<string, string> = { MAX_HEALTH: 'Máu tối đa', ATTACK_DAMAGE: 'Sát thương', DEFENSE: 'Phòng thủ' };
 const statName = (stat: string) => STATS[stat] ?? stat.toLowerCase().replace(/_/g, ' ');
 
@@ -137,7 +147,7 @@ const percent = (n: number) => (n === 0 ? '–' : `${num(n)}%`);
 								<th>Cấp</th>
 								<th>Nhận được</th>
 								<th>Tiền</th>
-								{section.hasItems && <th>Khối phải nộp</th>}
+								{section.hasItems && <th>Vật phẩm phải nộp</th>}
 							</tr>
 						</thead>
 						<tbody>
@@ -158,8 +168,8 @@ const percent = (n: number) => (n === 0 ? '–' : `${num(n)}%`);
 												? '–'
 												: Object.entries(level.items).map(([material, amount]: [string, any]) => (
 														<span class="iu-item">
-															<img class="iu-icon-sm" src={iconUrl(material.toLowerCase())} alt="" width="18" height="18" loading="lazy" onerror="this.hidden=true" />
-															{num(amount)} {blockName(material)}
+															<img class="iu-icon-sm" src={iconUrl(itemInfo(material).icon)} alt="" width="18" height="18" loading="lazy" onerror="this.hidden=true" />
+															{num(amount)} {itemInfo(material).name}
 														</span>
 													))}
 										</td>
@@ -175,8 +185,8 @@ const percent = (n: number) => (n === 0 ? '–' : `${num(n)}%`);
 									<td>
 										{Object.entries(section.totalItems).map(([material, amount]: [string, any]) => (
 											<span class="iu-item">
-												<img class="iu-icon-sm" src={iconUrl(material.toLowerCase())} alt="" width="18" height="18" loading="lazy" onerror="this.hidden=true" />
-												{num(amount)} {blockName(material)}
+												<img class="iu-icon-sm" src={iconUrl(itemInfo(material).icon)} alt="" width="18" height="18" loading="lazy" onerror="this.hidden=true" />
+												{num(amount)} {itemInfo(material).name}
 											</span>
 										))}
 									</td>
@@ -212,7 +222,7 @@ const percent = (n: number) => (n === 0 ? '–' : `${num(n)}%`);
 			</section>
 		))
 	}
-	{!summary && <p class="iu-note">Giá tính bằng Tiền. Quặng và khối phải nộp lấy từ túi của người bấm nâng cấp.</p>}
+	{!summary && <p class="iu-note">Giá tính bằng Tiền. Khối và nguyên liệu phải nộp lấy từ túi của người bấm nâng cấp.</p>}
 </div>
 
 <style>

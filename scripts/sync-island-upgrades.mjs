@@ -30,6 +30,8 @@ const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const UPGRADES = ['border-size', 'members-limit', 'minion-slots', 'ore', 'dungeon-stats', 'forge'];
 const ORES = ['STONE', 'COAL_ORE', 'IRON_ORE', 'REDSTONE_ORE', 'LAPIS_ORE', 'GOLD_ORE', 'DIAMOND_ORE', 'EMERALD_ORE'];
 const NAME = /^[A-Z][A-Z0-9_]*$/;
+// an item a level asks for: a vanilla block (DIAMOND_BLOCK) or an MMOItems item TYPE:ID (MATERIAL:DA_NEN)
+const ITEM = /^[A-Z][A-Z0-9_]*(:[A-Z0-9_]+)?$/;
 
 const args = process.argv.slice(2);
 const flag = (name) => args.includes(name);
@@ -96,14 +98,17 @@ function readUpgrade(id, data) {
 			const l = data.levels[String(level)];
 			const items = {};
 			for (const [material, amount] of Object.entries(l.items ?? {})) {
-				if (!NAME.test(material)) throw new Error(`${where} level ${level}: bad item name ${material}`);
-				items[material] = num(amount, `${where} level ${level} ${material}`);
+				const key = material.toUpperCase();
+				if (!ITEM.test(key)) throw new Error(`${where} level ${level}: bad item name ${material}`);
+				items[key] = num(amount, `${where} level ${level} ${material}`);
 			}
 			const stats = {};
 			for (const [stat, amount] of Object.entries(l.stats ?? {})) {
 				if (!NAME.test(stat)) throw new Error(`${where} level ${level}: bad stat name ${stat}`);
 				stats[stat] = String(amount);
 			}
+			const slots = Object.values(items).reduce((sum, amount) => sum + Math.ceil(amount / 64), 0);
+			if (slots > 36) throw new Error(`${where} level ${level}: the items need ${slots} inventory slots, more than 36`);
 			return { level, display: level + offset, value: num(l.value, `${where} level ${level} value`), money: num(l.money ?? 0, `${where} level ${level} money`), items, stats };
 		});
 	if (!levels.length) throw new Error(`${where} has no levels`);
