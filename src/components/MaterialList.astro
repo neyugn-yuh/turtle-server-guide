@@ -68,12 +68,16 @@ if (category && materials.length === 0) throw new Error(`MaterialList: no materi
 					)
 				}
 
-				<h4>Công dụng</h4>
 				{
 					material.uses.length === 0 && material.upgrades.length === 0 ? (
-						<p class="ml-empty">—</p>
+						<>
+							<h4>Công dụng</h4>
+							<p class="ml-empty">—</p>
+						</>
 					) : (
-						<ul class="ml-recipes">
+						<details class="ml-uses" open={material.uses.length + material.upgrades.length <= 2}>
+							<summary>Công dụng <span class="ml-count">({material.uses.length + material.upgrades.length})</span></summary>
+							<ul class="ml-recipes">
 							{material.upgrades.map((entry: any) => (
 								<li>
 									<span class="ml-where">Nâng cấp đảo</span>
@@ -101,7 +105,8 @@ if (category && materials.length === 0) throw new Error(`MaterialList: no materi
 									</span>
 								</li>
 							))}
-						</ul>
+							</ul>
+						</details>
 					)
 				}
 			</section>
@@ -130,6 +135,22 @@ if (category && materials.length === 0) throw new Error(`MaterialList: no materi
 		margin: 1rem 0 0.25rem;
 		color: var(--sl-color-gray-2);
 		font-size: var(--sl-text-base);
+	}
+	.ml-uses {
+		margin-top: 1rem;
+	}
+	.ml-uses summary {
+		cursor: pointer;
+		color: var(--sl-color-gray-2);
+		font-size: var(--sl-text-base);
+		font-weight: 600;
+	}
+	.ml-count {
+		color: var(--sl-color-gray-3);
+		font-weight: 400;
+	}
+	.ml-uses[open] summary {
+		margin-bottom: 0.25rem;
 	}
 	.ml-icon {
 		width: 2rem;
