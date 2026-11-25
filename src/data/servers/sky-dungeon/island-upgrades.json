@@ -89,22 +89,14 @@
 				{
 					"level": 4,
 					"display": 5,
-					"value": 40,
-					"money": 2000000,
-					"items": {},
-					"stats": {}
-				},
-				{
-					"level": 5,
-					"display": 6,
 					"value": 48,
 					"money": 5000000,
 					"items": {},
 					"stats": {}
 				},
 				{
-					"level": 6,
-					"display": 7,
+					"level": 5,
+					"display": 6,
 					"value": 64,
 					"money": 12000000,
 					"items": {},
