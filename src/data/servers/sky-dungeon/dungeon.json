@@ -66,7 +66,15 @@
 						"max": 3,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Phổ Thông",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang1_KoboldSoi",
@@ -81,7 +89,15 @@
 						"max": 4,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Phổ Thông",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang1_KoboldCon",
@@ -107,7 +123,15 @@
 						"max": 12,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Phổ Thông",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang1_Silverback",
@@ -122,7 +146,15 @@
 						"max": 80,
 						"reach": 50
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Phổ Thông",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50
+						}
+					]
 				},
 				{
 					"id": "Tang1_XacMaoHiem",
@@ -220,7 +252,15 @@
 						"max": 5,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Phổ Thông",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang2_DoiHutMau",
@@ -235,7 +275,15 @@
 						"max": 6,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Phổ Thông",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang2_NhenDocHacAm",
@@ -250,7 +298,15 @@
 						"max": 18,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Phổ Thông",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang2_NhenConDoc",
@@ -276,7 +332,15 @@
 						"max": 120,
 						"reach": 50
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Phổ Thông",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50
+						}
+					]
 				},
 				{
 					"id": "Tang2_KenNhen",
@@ -313,7 +377,15 @@
 						"max": 60,
 						"reach": 50
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Phổ Thông",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50
+						}
+					]
 				},
 				{
 					"id": "Tang2_NhenDocThaTo",
@@ -403,7 +475,15 @@
 						"max": 7,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Phổ Thông",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang3_KienLinh",
@@ -418,7 +498,15 @@
 						"max": 14,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Phổ Thông",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang3_KienLinhCuongNo",
@@ -444,7 +532,15 @@
 						"max": 30,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Phổ Thông",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang3_KienChua",
@@ -459,7 +555,15 @@
 						"max": 150,
 						"reach": 50
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Phổ Thông",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50
+						}
+					]
 				}
 			]
 		},
@@ -536,7 +640,15 @@
 						"max": 10,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Phổ Thông",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang4_BongMaRung",
@@ -566,7 +678,15 @@
 						"max": 45,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Phổ Thông",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang4_AmAnh",
@@ -581,7 +701,15 @@
 						"max": 200,
 						"reach": 50
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Phổ Thông",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50
+						}
+					]
 				}
 			]
 		},
@@ -656,7 +784,15 @@
 						"max": 15,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Tinh Luyện",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang5_MinotaurTuanTra",
@@ -671,7 +807,15 @@
 						"max": 18,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Tinh Luyện",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang5_MinotaurGacCua",
@@ -712,7 +856,15 @@
 						"max": 450,
 						"reach": 50
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Tinh Luyện",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50
+						}
+					]
 				}
 			]
 		},
@@ -784,7 +936,15 @@
 						"max": 18,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Tinh Luyện",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang6_BuomDocTim",
@@ -799,7 +959,15 @@
 						"max": 22,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Tinh Luyện",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang6_CocKhongLo",
@@ -814,7 +982,15 @@
 						"max": 90,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Tinh Luyện",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang6_RanDoc",
@@ -840,7 +1016,15 @@
 						"max": 400,
 						"reach": 50
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Tinh Luyện",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50
+						}
+					]
 				}
 			]
 		},
@@ -915,7 +1099,15 @@
 						"max": 24,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Tinh Luyện",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang7_Hellhound",
@@ -956,7 +1148,15 @@
 						"max": 110,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Tinh Luyện",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang7_Cerberus",
@@ -971,7 +1171,15 @@
 						"max": 500,
 						"reach": 50
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Tinh Luyện",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50
+						}
+					]
 				}
 			]
 		},
@@ -1041,7 +1249,15 @@
 						"max": 30,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Tinh Luyện",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang8_Wyvern",
@@ -1071,7 +1287,15 @@
 						"max": 140,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Tinh Luyện",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang8_InfantDragon",
@@ -1086,7 +1310,15 @@
 						"max": 800,
 						"reach": 50
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Tinh Luyện",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50
+						}
+					]
 				}
 			]
 		},
@@ -1176,7 +1408,15 @@
 						"max": 38,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Cao Cấp",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang9_CrystalGolem",
@@ -1191,7 +1431,15 @@
 						"max": 45,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Cao Cấp",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang9_DaiVuongTinhThe",
@@ -1206,7 +1454,15 @@
 						"max": 800,
 						"reach": 50
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Cao Cấp",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50
+						}
+					]
 				}
 			]
 		},
@@ -1280,7 +1536,15 @@
 						"max": 50,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Cao Cấp",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang10_KhongLoDungNham",
@@ -1295,7 +1559,15 @@
 						"max": 60,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Cao Cấp",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang10_MinotaurThietGiap",
@@ -1310,7 +1582,15 @@
 						"max": 220,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Cao Cấp",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang10_Goliath",
@@ -1325,7 +1605,15 @@
 						"max": 1800,
 						"reach": 50
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Cao Cấp",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50
+						}
+					]
 				}
 			]
 		},
@@ -1430,7 +1718,15 @@
 						"max": 450,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Cao Cấp",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang11_GoliathDen",
@@ -1445,7 +1741,15 @@
 						"max": 3000,
 						"reach": 50
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Cao Cấp",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50
+						}
+					]
 				}
 			]
 		},
@@ -1535,7 +1839,15 @@
 						"max": 110,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Hiếm",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang12_CuaThietGiap",
@@ -1550,7 +1862,15 @@
 						"max": 600,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Hiếm",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang12_Leviathan",
@@ -1565,7 +1885,15 @@
 						"max": 3500,
 						"reach": 50
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Hiếm",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50
+						}
+					]
 				}
 			]
 		},
@@ -1661,7 +1989,15 @@
 						"max": 135,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Hiếm",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang13_Udaeus",
@@ -1676,7 +2012,15 @@
 						"max": 5000,
 						"reach": 50
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Hiếm",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50
+						}
+					]
 				}
 			]
 		},
@@ -1746,7 +2090,15 @@
 						"max": 160,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Hiếm",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang14_XaNuLamia",
@@ -1761,7 +2113,15 @@
 						"max": 180,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Hiếm",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang14_KeHanhQuyet",
@@ -1776,7 +2136,15 @@
 						"max": 900,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Hiếm",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang14_QuanNguc",
@@ -1791,7 +2159,15 @@
 						"max": 6000,
 						"reach": 50
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Hiếm",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50
+						}
+					]
 				}
 			]
 		},
@@ -1861,7 +2237,15 @@
 						"max": 220,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Hiếm",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang15_SauLambton",
@@ -1876,7 +2260,15 @@
 						"max": 260,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Hiếm",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang15_KySiHuKhong",
@@ -1891,7 +2283,15 @@
 						"max": 1500,
 						"reach": 0
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Hiếm",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 0
+						}
+					]
 				},
 				{
 					"id": "Tang15_Juggernaut",
@@ -1906,7 +2306,15 @@
 						"max": 10000,
 						"reach": 50
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Hiếm",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50
+						}
+					]
 				},
 				{
 					"id": "Tang15_Balor",
@@ -1921,7 +2329,15 @@
 						"max": 15000,
 						"reach": 50
 					},
-					"items": []
+					"items": [
+						{
+							"item": "Ma Thạch Hiếm",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50
+						}
+					]
 				}
 			]
 		}

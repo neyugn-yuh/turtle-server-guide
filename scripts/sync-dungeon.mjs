@@ -6,6 +6,7 @@
  * Files read:
  *   MythicMobs/mobs/Dungeon/Tang<NN>.yml     the mobs of a tier: name, health, damage and what they give when they die
  *   MythicMobs/skills/Dungeon/Tang<NN>.yml   the skills called on death (boss rewards are skills "..._Reward")
+ *   MythicMobs/skills/Dungeon/MaThach.yml     the Ma Thạch reward skills shared by the floor bosses
  *   MMOItems/item/<type>.yml                 the names of the items a mob drops (only those that exist are listed)
  *   TurtleCurrency/currencies.yml            checks the currency a drop command pays in
  *   SD-Dungeon/floors/tang<NN>.yml           the outbreak (bùng nổ) of each tier: name, length, announcement, mobs, effects, lockdown, bombardment.
@@ -126,6 +127,8 @@ const currencyIds = new Set(Object.keys(await readYaml('TurtleCurrency/currencie
 
 const skills = {};
 for (let n = 1; n <= TIERS; n++) Object.assign(skills, (await readYaml(`MythicMobs/skills/Dungeon/Tang${String(n).padStart(2, '0')}.yml`)) ?? {});
+// shared reward skills (Ma Thạch dropped by floor bosses), called from the boss death lines
+Object.assign(skills, (await readYaml('MythicMobs/skills/Dungeon/MaThach.yml')) ?? {});
 
 const itemFiles = new Map();
 async function itemName(type, id) {
