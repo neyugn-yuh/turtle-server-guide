@@ -1,8 +1,9 @@
 ---
 /**
  * List of the materials (nguyên liệu) of one server, built from src/data/servers/<server>/materials.json
- * (written by scripts/sync-materials.mjs from the server's config). One section per material: how to craft it and what it
- * is used for. A material that has no recipe or no use yet shows an empty "—" for that part.
+ * (written by scripts/sync-materials.mjs from the server's config). One card per material with a short summary
+ * (where it comes from, how many uses it has); the card links to the detail page of the material
+ * (src/pages/[server]/materials/item/[id].astro).
  */
 interface Props {
 	server: string;
@@ -18,272 +19,105 @@ if (!data) throw new Error(`MaterialList: no materials.json for server "${server
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const iconUrl = (name: string) => `${base}/minions/${name}.png`;
 const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 2 });
-const CURRENCY: Record<string, string> = { money: 'Tiền' };
-const currency = (name: string) => CURRENCY[name.toLowerCase()] ?? name;
 
 const materials: any[] = category ? data.materials.filter((m: any) => m.category === category) : data.materials;
 if (category && materials.length === 0) throw new Error(`MaterialList: no material in group "${category}"`);
+
+/** "tầng 1–4" / "tầng 2, 5": the floors a material drops on */
+function floorsText(sources: any[]) {
+	const floors = [...new Set(sources.map((s) => s.floor))].sort((a, b) => a - b);
+	if (floors.length === 1) return `tầng ${floors[0]}`;
+	const consecutive = floors.every((f, i) => i === 0 || f === floors[i - 1] + 1);
+	return consecutive ? `tầng ${floors[0]}–${floors[floors.length - 1]}` : `tầng ${floors.join(', ')}`;
+}
+
+function summary(material: any) {
+	const tags: string[] = [];
+	if (material.sources.length > 0) tags.push(`Rớt ${floorsText(material.sources)}`);
+	if (material.recipes.length > 0) tags.push('Chế tạo');
+	const uses = material.uses.length + material.upgrades.length;
+	if (uses > 0) tags.push(`${num(uses)} công dụng`);
+	const noWay = material.sources.length === 0 && material.recipes.length === 0 && material.category !== 'khoang-san' && material.category !== 'nong-san';
+	return { tags, noWay };
+}
 ---
 
 <div class="ml not-content">
 	{
-		materials.map((material: any) => (
-			<section class="ml-item">
-				<h3 id={material.id.toLowerCase()}>
+		materials.map((material: any) => {
+			const { tags, noWay } = summary(material);
+			return (
+				<a class="ml-card" id={material.id.toLowerCase()} href={`${base}/${server}/materials/item/${material.id.toLowerCase()}/`}>
 					{material.icon && <img class="ml-icon" src={iconUrl(material.icon)} alt="" width="32" height="32" loading="lazy" onerror="this.hidden=true" />}
-					{material.name}
-				</h3>
-
-				<h4>Công thức chế tạo</h4>
-				{
-					material.recipes.length === 0 ? (
-						<p class="ml-empty">{material.sources?.length === 0 && material.category !== 'khoang-san' && material.category !== 'nong-san' ? 'Chưa có cách nhận: hiện chưa có quái nào rớt và chưa có công thức chế tạo.' : '—'}</p>
-					) : (
-						<ul class="ml-recipes">
-							{material.recipes.map((recipe: any) => (
-								<li>
-									<span class="ml-where">{recipe.category}</span>
-									<span class="ml-line">
-										{recipe.ingredients.map((item: any, i: number) => (
-											<>
-												{i > 0 && <span class="ml-plus">+</span>}
-												<span class="ml-chip">
-													{item.icon && <img class="ml-icon-sm" src={iconUrl(item.icon)} alt="" width="20" height="20" loading="lazy" onerror="this.hidden=true" />}
-													{num(item.amount)} × {item.name}
-												</span>
-											</>
-										))}
-										<span class="ml-arrow">→</span>
-										{recipe.results.map((item: any) => (
-											<span class="ml-chip ml-result">{num(item.amount)} × {item.name}</span>
-										))}
-									</span>
-									<span class="ml-meta">
-										{recipe.chance < 100 && <>Tỉ lệ thành công {num(recipe.chance)}%. </>}
-										{recipe.cost && recipe.cost.amount > 0 && <>Phí {num(recipe.cost.amount)} {currency(recipe.cost.currency)}.</>}
-									</span>
-								</li>
-							))}
-						</ul>
-					)
-				}
-
-				{
-					material.uses.length === 0 && material.upgrades.length === 0 ? (
-						<>
-							<h4>Công dụng</h4>
-							<p class="ml-empty">—</p>
-						</>
-					) : (
-						<div class="ml-uses">
-							<button type="button" class="ml-uses-btn" data-ml-open={`ml-uses-${material.id.toLowerCase()}`}>
-								Xem công dụng <span class="ml-count">({material.uses.length + material.upgrades.length})</span>
-							</button>
-							<dialog class="ml-modal" id={`ml-uses-${material.id.toLowerCase()}`} aria-label={`Công dụng của ${material.name}`}>
-								<header class="ml-modal-head">
-									<strong>Công dụng: {material.name}</strong>
-									<button type="button" class="ml-modal-close" data-ml-close aria-label="Đóng">✕</button>
-								</header>
-								<div class="ml-modal-body">
-							<ul class="ml-recipes">
-							{material.upgrades.map((entry: any) => (
-								<li>
-									<span class="ml-where">Nâng cấp đảo</span>
-									<span class="ml-line">{entry.use}</span>
-								</li>
-							))}
-							{material.uses.map((recipe: any) => (
-								<li>
-									<span class="ml-where">{recipe.category}</span>
-									<span class="ml-line">
-										Dùng để chế
-										{recipe.results.map((item: any) => (
-											<span class="ml-chip ml-result">{num(item.amount)} × {item.name}</span>
-										))}
-										, cần
-										{recipe.ingredients.map((item: any, i: number) => (
-											<>
-												{i > 0 && <span class="ml-plus">+</span>}
-												<span class="ml-chip">
-													{item.icon && <img class="ml-icon-sm" src={iconUrl(item.icon)} alt="" width="20" height="20" loading="lazy" onerror="this.hidden=true" />}
-													{num(item.amount)} × {item.name}
-												</span>
-											</>
-										))}
-									</span>
-								</li>
-							))}
-							</ul>
-								</div>
-							</dialog>
-						</div>
-					)
-				}
-			</section>
-		))
+					<span class="ml-body">
+						<span class="ml-name">{material.name}</span>
+						<span class="ml-tags">
+							{tags.map((tag) => <span class="ml-tag">{tag}</span>)}
+							{noWay && <span class="ml-tag ml-warn">Chưa có cách nhận</span>}
+						</span>
+					</span>
+					<span class="ml-go" aria-hidden="true">›</span>
+				</a>
+			);
+		})
 	}
 </div>
 
 <style>
 	.ml {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+		gap: 0.75rem;
 		margin: 1.5rem 0;
 	}
-	.ml-item {
-		margin-bottom: 2rem;
-		padding: 0.25rem 1rem 0.75rem;
+	.ml-card {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		padding: 0.75rem 1rem;
 		border: 1px solid var(--sl-color-hairline);
 		border-radius: 0.5rem;
-	}
-	.ml-item h3 {
-		display: flex;
-		align-items: center;
-		gap: 0.6rem;
-		margin: 0.75rem 0 0.25rem;
-		font-size: var(--sl-text-xl);
-	}
-	.ml-item h4 {
-		margin: 1rem 0 0.25rem;
-		color: var(--sl-color-gray-2);
-		font-size: var(--sl-text-base);
-	}
-	.ml-uses {
-		margin-top: 1rem;
-	}
-	.ml-uses-btn {
-		padding: 0.35rem 0.85rem;
-		border: 1px solid var(--sl-color-gray-5);
-		border-radius: 0.375rem;
 		background: var(--sl-color-gray-6);
 		color: var(--sl-color-text);
-		font: inherit;
-		font-size: var(--sl-text-sm);
-		cursor: pointer;
+		text-decoration: none;
 	}
-	.ml-uses-btn:hover {
+	.ml-card:hover {
 		border-color: var(--sl-color-accent);
 	}
-	.ml-count {
-		color: var(--sl-color-gray-3);
-	}
-	.ml-modal {
-		position: fixed;
-		inset: 0;
-		margin: auto; /* the site reset zeroes the margin, which is what centers a native dialog */
-		width: min(44rem, calc(100vw - 2rem));
-		max-height: min(80vh, 40rem);
-		padding: 0;
-		border: 1px solid var(--sl-color-gray-5);
-		border-radius: 0.5rem;
-		background: var(--sl-color-bg);
-		color: var(--sl-color-text);
-	}
-	.ml-modal[open] {
-		display: flex;
-		flex-direction: column;
-	}
-	.ml-modal::backdrop {
-		background: rgba(0, 0, 0, 0.6);
-	}
-	.ml-modal-head {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 1rem;
-		padding: 0.75rem 1rem;
-		border-bottom: 1px solid var(--sl-color-hairline);
-	}
-	.ml-modal-close {
-		padding: 0.1rem 0.5rem;
-		border: 0;
-		background: none;
-		color: var(--sl-color-gray-3);
-		font-size: var(--sl-text-lg);
-		cursor: pointer;
-	}
-	.ml-modal-close:hover {
-		color: var(--sl-color-text);
-	}
-	.ml-modal-body {
-		overflow-y: auto;
-		padding: 0.25rem 1rem 0.75rem;
-	}
 	.ml-icon {
+		flex: none;
 		width: 2rem;
 		height: 2rem;
 		margin: 0;
 		image-rendering: pixelated;
 	}
-	.ml-icon-sm {
-		width: 1.25rem;
-		height: 1.25rem;
-		margin: 0 0.35rem 0 0;
-		vertical-align: middle;
-		image-rendering: pixelated;
-	}
-	.ml-empty {
-		margin: 0;
-		color: var(--sl-color-gray-3);
-	}
-	.ml-recipes {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-	}
-	.ml-recipes li {
+	.ml-body {
 		display: grid;
-		gap: 0.25rem;
-		padding: 0.5rem 0;
-		border-bottom: 1px solid var(--sl-color-hairline);
+		flex: 1;
+		gap: 0.3rem;
+		min-width: 0;
 	}
-	.ml-where {
-		color: var(--sl-color-gray-3);
-		font-size: var(--sl-text-sm);
+	.ml-name {
+		font-weight: 600;
 	}
-	.ml-line {
+	.ml-tags {
 		display: flex;
 		flex-wrap: wrap;
-		align-items: center;
-		gap: 0.4rem;
+		gap: 0.3rem;
 	}
-	.ml-chip {
-		display: inline-flex;
-		align-items: center;
-		padding: 0.15rem 0.5rem;
+	.ml-tag {
+		padding: 0.05rem 0.5rem;
 		border: 1px solid var(--sl-color-gray-5);
-		border-radius: 0.375rem;
-		font-size: var(--sl-text-sm);
-		white-space: nowrap;
+		border-radius: 999px;
+		color: var(--sl-color-gray-2);
+		font-size: var(--sl-text-xs);
 	}
-	.ml-result {
-		border-color: var(--sl-color-accent);
-		background: var(--sl-color-accent-low);
+	.ml-warn {
+		border-color: var(--sl-color-orange);
+		color: var(--sl-color-orange-high);
 	}
-	.ml-plus,
-	.ml-arrow {
+	.ml-go {
 		color: var(--sl-color-gray-3);
-	}
-	.ml-meta {
-		color: var(--sl-color-gray-3);
-		font-size: var(--sl-text-sm);
-	}
-	.ml-meta:empty {
-		display: none;
+		font-size: var(--sl-text-xl);
 	}
 </style>
-
-<script>
-	// Opens and closes the "Công dụng" windows: the button, the ✕, a click on the backdrop or Esc (native <dialog>).
-	document.addEventListener('click', (event) => {
-		const target = event.target as HTMLElement;
-		const opener = target.closest<HTMLElement>('[data-ml-open]');
-		if (opener) {
-			(document.getElementById(opener.dataset.mlOpen ?? '') as HTMLDialogElement | null)?.showModal();
-			return;
-		}
-		if (target.closest('[data-ml-close]')) {
-			target.closest('dialog')?.close();
-			return;
-		}
-		if (target instanceof HTMLDialogElement && target.classList.contains('ml-modal')) target.close();
-	});
-</script>

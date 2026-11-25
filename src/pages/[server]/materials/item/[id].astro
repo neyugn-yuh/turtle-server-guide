@@ -1,0 +1,39 @@
+---
+/**
+ * One page per material (/<server>/materials/item/<id>/): the page the material cards and every ingredient chip link to.
+ * Written from src/data/servers/<server>/materials.json, so it needs no file per material.
+ */
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import MaterialDetail from '../../../../components/MaterialDetail.astro';
+import { materialCategories } from '../../../../data/material-categories.mjs';
+
+export function getStaticPaths() {
+	const files = import.meta.glob('../../../../data/servers/*/materials.json', { eager: true, import: 'default' }) as Record<string, any>;
+	return Object.entries(files).flatMap(([path, data]) => {
+		const server = path.split('/').slice(-2)[0];
+		return data.materials.map((material: any) => ({ params: { server, id: material.id.toLowerCase() }, props: { material } }));
+	});
+}
+
+const { server, id } = Astro.params;
+const { material } = Astro.props;
+const group = materialCategories.find((g: any) => g.id === material.category);
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<StarlightPage frontmatter={{ title: material.name, description: `Cách nhận và công dụng của ${material.name}.` }}>
+	<p class="back">
+		<a href={`${base}/${server}/materials/${material.category}/`}>← Nguyên liệu: {group?.title ?? 'Danh sách'}</a>
+	</p>
+	<MaterialDetail server={server!} id={id!} />
+</StarlightPage>
+
+<style>
+	.back a {
+		color: var(--sl-color-text-accent);
+		text-decoration: none;
+	}
+	.back a:hover {
+		text-decoration: underline;
+	}
+</style>

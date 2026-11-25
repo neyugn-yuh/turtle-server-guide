@@ -16,6 +16,7 @@
  *   recipes  the recipes whose result is the material (how to craft it)
  *   uses     the recipes that need the material as an ingredient (what it is for)
  *   upgrades the island upgrade levels that ask the player to hand the material in
+ *   (every ingredient and result carries `link`: the id of its detail page when it is a material of the guide, otherwise empty)
  *   sources  the dungeon mobs that drop it, grouped by floor (dungeon items only)
  * A material with neither is written with empty lists and the page shows it as empty.
  *
@@ -210,7 +211,7 @@ async function describe(entries) {
 	for (const entry of entries ?? []) {
 		const ref = mmoRef(entry?.item);
 		const info = ref ? await itemInfo(ref.type, ref.id) : stackInfo(entry?.item);
-		out.push({ name: info.name, icon: info.icon, amount: Number(entry?.amount ?? 1) || 1 });
+		out.push({ name: info.name, icon: info.icon, amount: Number(entry?.amount ?? 1) || 1, link: ref && wanted.has(keyOf(ref.type, ref.id)) ? ref.id.toLowerCase() : '' });
 	}
 	return out;
 }

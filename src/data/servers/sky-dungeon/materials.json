@@ -12,14 +12,16 @@
 						{
 							"name": "Cobblestone",
 							"icon": "cobblestone",
-							"amount": 128
+							"amount": 128,
+							"link": ""
 						}
 					],
 					"results": [
 						{
 							"name": "Đá Nền",
 							"icon": "deepslate",
-							"amount": 1
+							"amount": 1,
+							"link": "da_nen"
 						}
 					],
 					"chance": 100,
@@ -47,14 +49,16 @@
 						{
 							"name": "Potato",
 							"icon": "potato",
-							"amount": 128
+							"amount": 128,
+							"link": ""
 						}
 					],
 					"results": [
 						{
 							"name": "Khoai Tây Siêu Cấp",
 							"icon": "potato",
-							"amount": 1
+							"amount": 1,
+							"link": "khoai_tay_sieu_cap"
 						}
 					],
 					"chance": 100,
@@ -82,14 +86,16 @@
 						{
 							"name": "Cobblestone",
 							"icon": "cobblestone",
-							"amount": 128
+							"amount": 128,
+							"link": ""
 						}
 					],
 					"results": [
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						}
 					],
 					"chance": 100,
@@ -103,24 +109,28 @@
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -132,24 +142,28 @@
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -161,24 +175,28 @@
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -190,29 +208,34 @@
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Sói Silverback",
 							"icon": "bone",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_01_silverback"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -224,24 +247,28 @@
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -253,24 +280,28 @@
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -282,24 +313,28 @@
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -311,24 +346,28 @@
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -340,29 +379,34 @@
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Nhện Chúa Arachne",
 							"icon": "spider_eye",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_02_arachne"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -374,24 +418,28 @@
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -418,14 +466,16 @@
 						{
 							"name": "Coal",
 							"icon": "coal",
-							"amount": 128
+							"amount": 128,
+							"link": ""
 						}
 					],
 					"results": [
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						}
 					],
 					"chance": 100,
@@ -439,24 +489,28 @@
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -468,24 +522,28 @@
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -497,24 +555,28 @@
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -526,29 +588,34 @@
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Kiến Chúa",
 							"icon": "honeycomb",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_03_kien_chua"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -560,24 +627,28 @@
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -589,24 +660,28 @@
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -618,24 +693,28 @@
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -647,24 +726,28 @@
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -676,29 +759,34 @@
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Ám Ảnh Sát Thủ",
 							"icon": "phantom_membrane",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_04_am_anh"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -710,24 +798,28 @@
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -754,14 +846,16 @@
 						{
 							"name": "Raw Copper",
 							"icon": "raw_copper",
-							"amount": 128
+							"amount": 128,
+							"link": ""
 						}
 					],
 					"results": [
 						{
 							"name": "Đồng Tinh Luyện",
 							"icon": "copper_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "dong_tinh_luyen"
 						}
 					],
 					"chance": 100,
@@ -775,19 +869,22 @@
 						{
 							"name": "Đồng Tinh Luyện",
 							"icon": "copper_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "dong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 9
+							"amount": 9,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Đá Cường Hóa Sơ Cấp",
 							"icon": "raw_copper",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuong_hoa_so_cap"
 						}
 					],
 					"chance": 100,
@@ -799,24 +896,28 @@
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đồng Tinh Luyện",
 							"icon": "copper_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "dong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -828,24 +929,28 @@
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đồng Tinh Luyện",
 							"icon": "copper_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "dong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -857,24 +962,28 @@
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đồng Tinh Luyện",
 							"icon": "copper_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "dong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -886,29 +995,34 @@
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đồng Tinh Luyện",
 							"icon": "copper_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "dong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Minotaur Asterius",
 							"icon": "goat_horn",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_05_asterius"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -920,24 +1034,28 @@
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đồng Tinh Luyện",
 							"icon": "copper_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "dong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -964,14 +1082,16 @@
 						{
 							"name": "Raw Iron",
 							"icon": "raw_iron",
-							"amount": 128
+							"amount": 128,
+							"link": ""
 						}
 					],
 					"results": [
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						}
 					],
 					"chance": 100,
@@ -985,24 +1105,28 @@
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 9
+							"amount": 9,
+							"link": "ma_thach_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 3
+							"amount": 3,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Đá Cường Hóa Trung Cấp",
 							"icon": "raw_iron",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuong_hoa_trung_cap"
 						}
 					],
 					"chance": 100,
@@ -1014,24 +1138,28 @@
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1043,24 +1171,28 @@
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1072,24 +1204,28 @@
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1101,29 +1237,34 @@
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Thủy Quái Hydra",
 							"icon": "slime_ball",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_06_hydra"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1135,24 +1276,28 @@
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1164,24 +1309,28 @@
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1193,24 +1342,28 @@
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1222,24 +1375,28 @@
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1251,29 +1408,34 @@
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Quỷ Khuyển Cerberus",
 							"icon": "blaze_powder",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_07_cerberus"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1285,24 +1447,28 @@
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1329,14 +1495,16 @@
 						{
 							"name": "Raw Gold",
 							"icon": "raw_gold",
-							"amount": 128
+							"amount": 128,
+							"link": ""
 						}
 					],
 					"results": [
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						}
 					],
 					"chance": 100,
@@ -1350,24 +1518,28 @@
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1379,24 +1551,28 @@
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1408,24 +1584,28 @@
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1437,29 +1617,34 @@
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Tiểu Long",
 							"icon": "dragon_head",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_08_tieu_long"
 						}
 					],
 					"results": [
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1471,24 +1656,28 @@
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1500,24 +1689,28 @@
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1529,24 +1722,28 @@
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1558,24 +1755,28 @@
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1587,29 +1788,34 @@
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Đại Vương Tinh Thể",
 							"icon": "amethyst_cluster",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_09_tinh_the"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1621,24 +1827,28 @@
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1665,14 +1875,16 @@
 						{
 							"name": "Redstone",
 							"icon": "redstone",
-							"amount": 128
+							"amount": 128,
+							"link": ""
 						}
 					],
 					"results": [
 						{
 							"name": "Đá Đỏ Tinh Luyện",
 							"icon": "redstone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_do_tinh_luyen"
 						}
 					],
 					"chance": 100,
@@ -1686,24 +1898,28 @@
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Đỏ Tinh Luyện",
 							"icon": "redstone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_do_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1715,24 +1931,28 @@
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Đỏ Tinh Luyện",
 							"icon": "redstone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_do_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1744,24 +1964,28 @@
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Đỏ Tinh Luyện",
 							"icon": "redstone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_do_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1773,29 +1997,34 @@
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Đỏ Tinh Luyện",
 							"icon": "redstone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_do_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Goliath Cổng 10",
 							"icon": "magma_cream",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_10_goliath"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1807,24 +2036,28 @@
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Đỏ Tinh Luyện",
 							"icon": "redstone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_do_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1851,14 +2084,16 @@
 						{
 							"name": "Lapis Lazuli",
 							"icon": "lapis_lazuli",
-							"amount": 128
+							"amount": 128,
+							"link": ""
 						}
 					],
 					"results": [
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						}
 					],
 					"chance": 100,
@@ -1872,24 +2107,28 @@
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1901,24 +2140,28 @@
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1930,24 +2173,28 @@
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1959,29 +2206,34 @@
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Goliath Đen",
 							"icon": "crying_obsidian",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_11_goliath_den"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -1993,24 +2245,28 @@
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2022,24 +2278,28 @@
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2051,24 +2311,28 @@
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2080,24 +2344,28 @@
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2109,29 +2377,34 @@
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Hải Xà Leviathan",
 							"icon": "nautilus_shell",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_12_leviathan"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2143,24 +2416,28 @@
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2187,14 +2464,16 @@
 						{
 							"name": "Diamond",
 							"icon": "diamond",
-							"amount": 128
+							"amount": 128,
+							"link": ""
 						}
 					],
 					"results": [
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						}
 					],
 					"chance": 100,
@@ -2208,29 +2487,34 @@
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 6
+							"amount": 6,
+							"link": "ma_thach_cao_cap"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 3
+							"amount": 3,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Tinh Thể Dung Nham",
 							"icon": "magma_block",
-							"amount": 1
+							"amount": 1,
+							"link": "tinh_the_dung_nham"
 						}
 					],
 					"results": [
 						{
 							"name": "Đá Cường Hóa Cao Cấp",
 							"icon": "netherite_scrap",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuong_hoa_cao_cap"
 						}
 					],
 					"chance": 100,
@@ -2242,24 +2526,28 @@
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2271,24 +2559,28 @@
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2300,24 +2592,28 @@
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2329,29 +2625,34 @@
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Hắc Vương Udaeus",
 							"icon": "wither_skeleton_skull",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_13_udaeus"
 						}
 					],
 					"results": [
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2363,24 +2664,28 @@
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2392,24 +2697,28 @@
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2421,24 +2730,28 @@
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2450,24 +2763,28 @@
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2479,29 +2796,34 @@
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Quản Ngục Tử Thần",
 							"icon": "chain",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_14_quan_nguc"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2513,24 +2835,28 @@
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2557,14 +2883,16 @@
 						{
 							"name": "Emerald",
 							"icon": "emerald",
-							"amount": 128
+							"amount": 128,
+							"link": ""
 						}
 					],
 					"results": [
 						{
 							"name": "Lục Bảo Tinh Luyện",
 							"icon": "emerald",
-							"amount": 1
+							"amount": 1,
+							"link": "luc_bao_tinh_luyen"
 						}
 					],
 					"chance": 100,
@@ -2578,24 +2906,28 @@
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lục Bảo Tinh Luyện",
 							"icon": "emerald",
-							"amount": 1
+							"amount": 1,
+							"link": "luc_bao_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2607,24 +2939,28 @@
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lục Bảo Tinh Luyện",
 							"icon": "emerald",
-							"amount": 1
+							"amount": 1,
+							"link": "luc_bao_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2636,24 +2972,28 @@
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lục Bảo Tinh Luyện",
 							"icon": "emerald",
-							"amount": 1
+							"amount": 1,
+							"link": "luc_bao_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2665,29 +3005,34 @@
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lục Bảo Tinh Luyện",
 							"icon": "emerald",
-							"amount": 1
+							"amount": 1,
+							"link": "luc_bao_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Ma Nhãn Balor",
 							"icon": "ender_eye",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_15_balor"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2699,24 +3044,28 @@
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lục Bảo Tinh Luyện",
 							"icon": "emerald",
-							"amount": 1
+							"amount": 1,
+							"link": "luc_bao_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2744,19 +3093,22 @@
 						{
 							"name": "Đồng Tinh Luyện",
 							"icon": "copper_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "dong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 9
+							"amount": 9,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Đá Cường Hóa Sơ Cấp",
 							"icon": "raw_copper",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuong_hoa_so_cap"
 						}
 					],
 					"chance": 100,
@@ -2768,24 +3120,28 @@
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Đỏ Tinh Luyện",
 							"icon": "redstone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_do_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2797,24 +3153,28 @@
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2826,24 +3186,28 @@
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2855,24 +3219,28 @@
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2884,24 +3252,28 @@
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2913,24 +3285,28 @@
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lục Bảo Tinh Luyện",
 							"icon": "emerald",
-							"amount": 1
+							"amount": 1,
+							"link": "luc_bao_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2942,24 +3318,28 @@
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -2971,24 +3351,28 @@
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3000,24 +3384,28 @@
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3029,24 +3417,28 @@
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3058,24 +3450,28 @@
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đồng Tinh Luyện",
 							"icon": "copper_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "dong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3087,24 +3483,28 @@
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3116,24 +3516,28 @@
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3145,24 +3549,28 @@
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3174,24 +3582,28 @@
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "wooden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "stone_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3284,24 +3696,28 @@
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 9
+							"amount": 9,
+							"link": "ma_thach_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 3
+							"amount": 3,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Đá Cường Hóa Trung Cấp",
 							"icon": "raw_iron",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuong_hoa_trung_cap"
 						}
 					],
 					"chance": 100,
@@ -3313,24 +3729,28 @@
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Đỏ Tinh Luyện",
 							"icon": "redstone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_do_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3342,24 +3762,28 @@
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3371,24 +3795,28 @@
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3400,24 +3828,28 @@
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3429,24 +3861,28 @@
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3458,24 +3894,28 @@
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lục Bảo Tinh Luyện",
 							"icon": "emerald",
-							"amount": 1
+							"amount": 1,
+							"link": "luc_bao_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3487,24 +3927,28 @@
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3516,24 +3960,28 @@
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3545,24 +3993,28 @@
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3574,24 +4026,28 @@
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3603,24 +4059,28 @@
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đồng Tinh Luyện",
 							"icon": "copper_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "dong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3632,24 +4092,28 @@
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3661,24 +4125,28 @@
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3690,24 +4158,28 @@
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3719,24 +4191,28 @@
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "stone_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_tinh_luyen"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "copper_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3836,29 +4312,34 @@
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 6
+							"amount": 6,
+							"link": "ma_thach_cao_cap"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 3
+							"amount": 3,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Tinh Thể Dung Nham",
 							"icon": "magma_block",
-							"amount": 1
+							"amount": 1,
+							"link": "tinh_the_dung_nham"
 						}
 					],
 					"results": [
 						{
 							"name": "Đá Cường Hóa Cao Cấp",
 							"icon": "netherite_scrap",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuong_hoa_cao_cap"
 						}
 					],
 					"chance": 100,
@@ -3870,24 +4351,28 @@
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 9
+							"amount": 9,
+							"link": "ma_thach_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 3
+							"amount": 3,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Đá Cường Hóa Trung Cấp",
 							"icon": "raw_iron",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuong_hoa_trung_cap"
 						}
 					],
 					"chance": 100,
@@ -3899,24 +4384,28 @@
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Đỏ Tinh Luyện",
 							"icon": "redstone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_do_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3928,24 +4417,28 @@
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3957,24 +4450,28 @@
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -3986,24 +4483,28 @@
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4015,24 +4516,28 @@
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4044,24 +4549,28 @@
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lục Bảo Tinh Luyện",
 							"icon": "emerald",
-							"amount": 1
+							"amount": 1,
+							"link": "luc_bao_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4073,24 +4582,28 @@
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4102,24 +4615,28 @@
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4131,24 +4648,28 @@
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4160,24 +4681,28 @@
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4189,24 +4714,28 @@
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đồng Tinh Luyện",
 							"icon": "copper_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "dong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4218,24 +4747,28 @@
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4247,24 +4780,28 @@
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4276,24 +4813,28 @@
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4305,24 +4846,28 @@
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "copper_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 16
+							"amount": 16,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "iron_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4400,29 +4945,34 @@
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 6
+							"amount": 6,
+							"link": "ma_thach_cao_cap"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 3
+							"amount": 3,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Tinh Thể Dung Nham",
 							"icon": "magma_block",
-							"amount": 1
+							"amount": 1,
+							"link": "tinh_the_dung_nham"
 						}
 					],
 					"results": [
 						{
 							"name": "Đá Cường Hóa Cao Cấp",
 							"icon": "netherite_scrap",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuong_hoa_cao_cap"
 						}
 					],
 					"chance": 100,
@@ -4434,24 +4984,28 @@
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Đỏ Tinh Luyện",
 							"icon": "redstone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_do_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4463,29 +5017,34 @@
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Đỏ Tinh Luyện",
 							"icon": "redstone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_do_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Goliath Cổng 10",
 							"icon": "magma_cream",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_10_goliath"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4497,24 +5056,28 @@
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4526,29 +5089,34 @@
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Goliath Đen",
 							"icon": "crying_obsidian",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_11_goliath_den"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4560,24 +5128,28 @@
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4589,29 +5161,34 @@
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Hải Xà Leviathan",
 							"icon": "nautilus_shell",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_12_leviathan"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4623,24 +5200,28 @@
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4652,29 +5233,34 @@
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Hắc Vương Udaeus",
 							"icon": "wither_skeleton_skull",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_13_udaeus"
 						}
 					],
 					"results": [
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4686,24 +5272,28 @@
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4715,29 +5305,34 @@
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Quản Ngục Tử Thần",
 							"icon": "chain",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_14_quan_nguc"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4749,24 +5344,28 @@
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lục Bảo Tinh Luyện",
 							"icon": "emerald",
-							"amount": 1
+							"amount": 1,
+							"link": "luc_bao_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4778,29 +5377,34 @@
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lục Bảo Tinh Luyện",
 							"icon": "emerald",
-							"amount": 1
+							"amount": 1,
+							"link": "luc_bao_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Ma Nhãn Balor",
 							"icon": "ender_eye",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_15_balor"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4812,24 +5416,28 @@
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4841,29 +5449,34 @@
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Sói Silverback",
 							"icon": "bone",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_01_silverback"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4875,24 +5488,28 @@
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4904,29 +5521,34 @@
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Nhện Chúa Arachne",
 							"icon": "spider_eye",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_02_arachne"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4938,24 +5560,28 @@
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -4967,29 +5593,34 @@
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Kiến Chúa",
 							"icon": "honeycomb",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_03_kien_chua"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5001,24 +5632,28 @@
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5030,29 +5665,34 @@
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Ám Ảnh Sát Thủ",
 							"icon": "phantom_membrane",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_04_am_anh"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5064,24 +5704,28 @@
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đồng Tinh Luyện",
 							"icon": "copper_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "dong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5093,29 +5737,34 @@
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đồng Tinh Luyện",
 							"icon": "copper_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "dong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Minotaur Asterius",
 							"icon": "goat_horn",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_05_asterius"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5127,24 +5776,28 @@
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5156,29 +5809,34 @@
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Thủy Quái Hydra",
 							"icon": "slime_ball",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_06_hydra"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5190,24 +5848,28 @@
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5219,29 +5881,34 @@
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Quỷ Khuyển Cerberus",
 							"icon": "blaze_powder",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_07_cerberus"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5253,24 +5920,28 @@
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5282,29 +5953,34 @@
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Tiểu Long",
 							"icon": "dragon_head",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_08_tieu_long"
 						}
 					],
 					"results": [
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5316,24 +5992,28 @@
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "iron_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 8
+							"amount": 8,
+							"link": "ma_thach_hiem"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "golden_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5345,29 +6025,34 @@
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Đại Vương Tinh Thể",
 							"icon": "amethyst_cluster",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_09_tinh_the"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5599,29 +6284,34 @@
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Sói Silverback",
 							"icon": "bone",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_01_silverback"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Khai Phá",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5655,29 +6345,34 @@
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Cuội Tinh Luyện",
 							"icon": "cobblestone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuoi_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Nhện Chúa Arachne",
 							"icon": "spider_eye",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_02_arachne"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Nanh Độc",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5711,29 +6406,34 @@
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Kiến Chúa",
 							"icon": "honeycomb",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_03_kien_chua"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Càng Đỏ",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5767,29 +6467,34 @@
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Than Tinh Luyện",
 							"icon": "coal",
-							"amount": 1
+							"amount": 1,
+							"link": "than_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Ám Ảnh Sát Thủ",
 							"icon": "phantom_membrane",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_04_am_anh"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Rừng Già",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5823,29 +6528,34 @@
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đồng Tinh Luyện",
 							"icon": "copper_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "dong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Minotaur Asterius",
 							"icon": "goat_horn",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_05_asterius"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Asterius",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5879,29 +6589,34 @@
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Thủy Quái Hydra",
 							"icon": "slime_ball",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_06_hydra"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Độc Chướng",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5935,29 +6650,34 @@
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Quỷ Khuyển Cerberus",
 							"icon": "blaze_powder",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_07_cerberus"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Lửa Địa Ngục",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -5991,29 +6711,34 @@
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Tiểu Long",
 							"icon": "dragon_head",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_08_tieu_long"
 						}
 					],
 					"results": [
 						{
 							"name": "Thánh Kiếm Đồ Long",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -6047,29 +6772,34 @@
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Vàng Tinh Luyện",
 							"icon": "gold_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "vang_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Đại Vương Tinh Thể",
 							"icon": "amethyst_cluster",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_09_tinh_the"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Pha Lê Tím",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -6103,29 +6833,34 @@
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Đá Đỏ Tinh Luyện",
 							"icon": "redstone",
-							"amount": 1
+							"amount": 1,
+							"link": "da_do_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Goliath Cổng 10",
 							"icon": "magma_cream",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_10_goliath"
 						}
 					],
 					"results": [
 						{
 							"name": "Đại Kiếm Goliath",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -6159,29 +6894,34 @@
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Goliath Đen",
 							"icon": "crying_obsidian",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_11_goliath_den"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Huyết Thệ",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -6215,29 +6955,34 @@
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lưu Ly Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 1
+							"amount": 1,
+							"link": "luu_ly_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Hải Xà Leviathan",
 							"icon": "nautilus_shell",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_12_leviathan"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Thủy Triều",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -6271,29 +7016,34 @@
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Hắc Vương Udaeus",
 							"icon": "wither_skeleton_skull",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_13_udaeus"
 						}
 					],
 					"results": [
 						{
 							"name": "Hắc Kiếm Udaeus",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -6327,29 +7077,34 @@
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Quản Ngục Tử Thần",
 							"icon": "chain",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_14_quan_nguc"
 						}
 					],
 					"results": [
 						{
 							"name": "Trường Kiếm Huyết Đấu",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -6383,29 +7138,34 @@
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "golden_sword",
-							"amount": 5
+							"amount": 5,
+							"link": ""
 						},
 						{
 							"name": "Lục Bảo Tinh Luyện",
 							"icon": "emerald",
-							"amount": 1
+							"amount": 1,
+							"link": "luc_bao_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 24
+							"amount": 24,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Lõi Ma Nhãn Balor",
 							"icon": "ender_eye",
-							"amount": 1
+							"amount": 1,
+							"link": "loi_boss_15_balor"
 						}
 					],
 					"results": [
 						{
 							"name": "Kiếm Hủy Diệt Juggernaut",
 							"icon": "diamond_sword",
-							"amount": 1
+							"amount": 1,
+							"link": ""
 						}
 					],
 					"chance": 100,
@@ -6439,29 +7199,34 @@
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 6
+							"amount": 6,
+							"link": "ma_thach_cao_cap"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 3
+							"amount": 3,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Tinh Thể Dung Nham",
 							"icon": "magma_block",
-							"amount": 1
+							"amount": 1,
+							"link": "tinh_the_dung_nham"
 						}
 					],
 					"results": [
 						{
 							"name": "Đá Cường Hóa Cao Cấp",
 							"icon": "netherite_scrap",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuong_hoa_cao_cap"
 						}
 					],
 					"chance": 100,
@@ -6483,19 +7248,22 @@
 						{
 							"name": "Đồng Tinh Luyện",
 							"icon": "copper_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "dong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Phổ Thông",
 							"icon": "amethyst_shard",
-							"amount": 9
+							"amount": 9,
+							"link": "ma_thach_pho_thong"
 						}
 					],
 					"results": [
 						{
 							"name": "Đá Cường Hóa Sơ Cấp",
 							"icon": "raw_copper",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuong_hoa_so_cap"
 						}
 					],
 					"chance": 100,
@@ -6518,24 +7286,28 @@
 						{
 							"name": "Sắt Tinh Luyện",
 							"icon": "iron_ingot",
-							"amount": 1
+							"amount": 1,
+							"link": "sat_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Tinh Luyện",
 							"icon": "lapis_lazuli",
-							"amount": 9
+							"amount": 9,
+							"link": "ma_thach_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 3
+							"amount": 3,
+							"link": "ma_thach_cao_cap"
 						}
 					],
 					"results": [
 						{
 							"name": "Đá Cường Hóa Trung Cấp",
 							"icon": "raw_iron",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuong_hoa_trung_cap"
 						}
 					],
 					"chance": 100,
@@ -6558,29 +7330,34 @@
 						{
 							"name": "Kim Cương Tinh Luyện",
 							"icon": "diamond",
-							"amount": 1
+							"amount": 1,
+							"link": "kim_cuong_tinh_luyen"
 						},
 						{
 							"name": "Ma Thạch Cao Cấp",
 							"icon": "emerald",
-							"amount": 6
+							"amount": 6,
+							"link": "ma_thach_cao_cap"
 						},
 						{
 							"name": "Ma Thạch Hiếm",
 							"icon": "gold_ingot",
-							"amount": 3
+							"amount": 3,
+							"link": "ma_thach_hiem"
 						},
 						{
 							"name": "Tinh Thể Dung Nham",
 							"icon": "magma_block",
-							"amount": 1
+							"amount": 1,
+							"link": "tinh_the_dung_nham"
 						}
 					],
 					"results": [
 						{
 							"name": "Đá Cường Hóa Cao Cấp",
 							"icon": "netherite_scrap",
-							"amount": 1
+							"amount": 1,
+							"link": "da_cuong_hoa_cao_cap"
 						}
 					],
 					"chance": 100,

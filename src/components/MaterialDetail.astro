@@ -1,0 +1,131 @@
+---
+/**
+ * Detail page body of one material, built from src/data/servers/<server>/materials.json (scripts/sync-materials.mjs):
+ * how to get it (dungeon drops and recipes) and what it is for (island upgrades and recipes that need it).
+ */
+import MaterialRecipes from './MaterialRecipes.astro';
+
+interface Props {
+	server: string;
+	/** id of the material, lower case */
+	id: string;
+}
+
+const { server, id } = Astro.props;
+const files = import.meta.glob('../data/servers/*/materials.json', { eager: true, import: 'default' }) as Record<string, any>;
+const data = files[`../data/servers/${server}/materials.json`];
+if (!data) throw new Error(`MaterialDetail: no materials.json for server "${server}", run node scripts/sync-materials.mjs`);
+const material = data.materials.find((m: any) => m.id.toLowerCase() === id);
+if (!material) throw new Error(`MaterialDetail: no material "${id}"`);
+
+const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 2 });
+const amountText = (s: any) => `${s.min === s.max ? num(s.min) : `${num(s.min)}–${num(s.max)}`} viên`;
+const whenText = (when: string) => (when === 'outbreak' ? 'khi có bùng nổ hầm ngục' : when === 'floor' ? 'khi không có bùng nổ' : '');
+const hasWay = material.sources.length > 0 || material.recipes.length > 0;
+const useCount = material.uses.length + material.upgrades.length;
+---
+
+<div class="md not-content">
+	<h2>Cách nhận</h2>
+	{!hasWay && <p class="md-empty">Chưa có cách nhận: hiện chưa có quái nào rớt và chưa có công thức chế tạo.</p>}
+
+	{
+		material.sources.length > 0 && (
+			<>
+				<h3>Rớt từ quái hầm ngục</h3>
+				<ul class="md-sources">
+					{material.sources.map((source: any) => (
+						<li>
+							<span class="md-floor">Tầng {source.floor}</span>
+							<span class="md-mobs">{source.mobs.join(', ')}</span>
+							<span class="md-drop">
+								{amountText(source)}, tỉ lệ {num(source.chance)}%{source.when && <> · {whenText(source.when)}</>}
+							</span>
+						</li>
+					))}
+				</ul>
+			</>
+		)
+	}
+
+	{
+		material.recipes.length > 0 && (
+			<>
+				<h3>Chế tạo</h3>
+				<MaterialRecipes server={server} recipes={material.recipes} current={id} />
+			</>
+		)
+	}
+
+	<h2>Công dụng</h2>
+	{useCount === 0 && <p class="md-empty">Chưa có công dụng.</p>}
+
+	{
+		material.upgrades.length > 0 && (
+			<>
+				<h3>Nâng cấp đảo</h3>
+				<ul class="md-upgrades">
+					{material.upgrades.map((entry: any) => (
+						<li>{entry.use}</li>
+					))}
+				</ul>
+			</>
+		)
+	}
+
+	{
+		material.uses.length > 0 && (
+			<>
+				<h3>Nguyên liệu của công thức</h3>
+				<MaterialRecipes server={server} recipes={material.uses} current={id} />
+			</>
+		)
+	}
+</div>
+
+<style>
+	.md h2 {
+		margin: 1.75rem 0 0.5rem;
+		font-size: var(--sl-text-xl);
+	}
+	.md h3 {
+		margin: 1rem 0 0.5rem;
+		color: var(--sl-color-gray-2);
+		font-size: var(--sl-text-base);
+	}
+	.md-empty {
+		margin: 0;
+		color: var(--sl-color-gray-3);
+	}
+	.md ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.md-sources li {
+		display: grid;
+		grid-template-columns: 5rem 1fr;
+		gap: 0.1rem 0.75rem;
+		margin-bottom: 0.5rem;
+		padding: 0.6rem 0.75rem;
+		border: 1px solid var(--sl-color-hairline);
+		border-radius: 0.5rem;
+		background: var(--sl-color-gray-6);
+	}
+	.md-floor {
+		grid-row: span 2;
+		color: var(--sl-color-accent-high);
+		font-weight: 600;
+	}
+	.md-drop {
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-sm);
+	}
+	.md-upgrades li {
+		margin-bottom: 0.5rem;
+		padding: 0.6rem 0.75rem;
+		border: 1px solid var(--sl-color-hairline);
+		border-radius: 0.5rem;
+		background: var(--sl-color-gray-6);
+	}
+</style>
