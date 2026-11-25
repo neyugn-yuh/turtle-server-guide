@@ -44,6 +44,7 @@ for (const server of readdirSync(serversDir)) {
 	// spawners: the picture of each mob and of the items it drops
 	const spawnersFile = join(serversDir, server, 'spawners.json');
 	if (existsSync(spawnersFile)) {
+		materials.add('experience_bottle'); // the experience row of each drop table
 		for (const mob of JSON.parse(readFileSync(spawnersFile, 'utf8')).mobs) {
 			if (mob.icon) materials.add(mob.icon);
 			for (const drop of mob.drops) if (drop.icon) materials.add(drop.icon);
