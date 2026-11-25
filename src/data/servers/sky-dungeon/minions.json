@@ -4,6 +4,7 @@
 			"id": "coal",
 			"name": "Coal Minion",
 			"category": "mining",
+			"group": "mining",
 			"icon": "coal",
 			"tiers": [
 				{
@@ -98,6 +99,7 @@
 			"id": "miner",
 			"name": "Cobblestone Minion",
 			"category": "mining",
+			"group": "mining",
 			"icon": "cobblestone",
 			"tiers": [
 				{
@@ -192,6 +194,7 @@
 			"id": "copper",
 			"name": "Copper Minion",
 			"category": "mining",
+			"group": "mining",
 			"icon": "raw_copper",
 			"tiers": [
 				{
@@ -286,6 +289,7 @@
 			"id": "diamond",
 			"name": "Diamond Minion",
 			"category": "mining",
+			"group": "mining",
 			"icon": "diamond",
 			"tiers": [
 				{
@@ -380,6 +384,7 @@
 			"id": "emerald",
 			"name": "Emerald Minion",
 			"category": "mining",
+			"group": "mining",
 			"icon": "emerald",
 			"tiers": [
 				{
@@ -474,6 +479,7 @@
 			"id": "gold",
 			"name": "Gold Minion",
 			"category": "mining",
+			"group": "mining",
 			"icon": "raw_gold",
 			"tiers": [
 				{
@@ -568,6 +574,7 @@
 			"id": "iron",
 			"name": "Iron Minion",
 			"category": "mining",
+			"group": "mining",
 			"icon": "raw_iron",
 			"tiers": [
 				{
@@ -662,6 +669,7 @@
 			"id": "lapis",
 			"name": "Lapis Minion",
 			"category": "mining",
+			"group": "mining",
 			"icon": "lapis_lazuli",
 			"tiers": [
 				{
@@ -756,6 +764,7 @@
 			"id": "redstone",
 			"name": "Redstone Minion",
 			"category": "mining",
+			"group": "mining",
 			"icon": "redstone",
 			"tiers": [
 				{
@@ -850,6 +859,7 @@
 			"id": "beetroot",
 			"name": "Beetroot Minion",
 			"category": "farming",
+			"group": "farming",
 			"icon": "beetroot",
 			"tiers": [
 				{
@@ -944,6 +954,7 @@
 			"id": "cactus",
 			"name": "Cactus Minion",
 			"category": "farming",
+			"group": "farming",
 			"icon": "cactus",
 			"tiers": [
 				{
@@ -1038,6 +1049,7 @@
 			"id": "carrot",
 			"name": "Carrot Minion",
 			"category": "farming",
+			"group": "farming",
 			"icon": "carrot",
 			"tiers": [
 				{
@@ -1129,197 +1141,10 @@
 			]
 		},
 		{
-			"id": "chicken",
-			"name": "Chicken Minion",
-			"category": "farming",
-			"icon": "chicken",
-			"tiers": [
-				{
-					"tier": 1,
-					"speed": 26,
-					"storage": 1,
-					"area": 5
-				},
-				{
-					"tier": 2,
-					"speed": 26,
-					"storage": 3,
-					"area": 5
-				},
-				{
-					"tier": 3,
-					"speed": 22.5,
-					"storage": 3,
-					"area": 5
-				},
-				{
-					"tier": 4,
-					"speed": 22.5,
-					"storage": 6,
-					"area": 5
-				},
-				{
-					"tier": 5,
-					"speed": 18.5,
-					"storage": 6,
-					"area": 5
-				},
-				{
-					"tier": 6,
-					"speed": 18.5,
-					"storage": 9,
-					"area": 5
-				},
-				{
-					"tier": 7,
-					"speed": 16.5,
-					"storage": 9,
-					"area": 5
-				},
-				{
-					"tier": 8,
-					"speed": 16.5,
-					"storage": 12,
-					"area": 5
-				},
-				{
-					"tier": 9,
-					"speed": 15,
-					"storage": 12,
-					"area": 5
-				},
-				{
-					"tier": 10,
-					"speed": 15,
-					"storage": 15,
-					"area": 5
-				},
-				{
-					"tier": 11,
-					"speed": 13,
-					"storage": 15,
-					"area": 5
-				},
-				{
-					"tier": 12,
-					"speed": 11,
-					"storage": 15,
-					"area": 5
-				}
-			],
-			"products": [
-				{
-					"from": 1,
-					"to": 12,
-					"products": [
-						{
-							"name": "Raw Chicken",
-							"chance": 1,
-							"amount": "1",
-							"icon": "chicken"
-						}
-					]
-				}
-			]
-		},
-		{
-			"id": "cow",
-			"name": "Cow Minion",
-			"category": "farming",
-			"icon": "beef",
-			"tiers": [
-				{
-					"tier": 1,
-					"speed": 26,
-					"storage": 1,
-					"area": 5
-				},
-				{
-					"tier": 2,
-					"speed": 26,
-					"storage": 3,
-					"area": 5
-				},
-				{
-					"tier": 3,
-					"speed": 22.5,
-					"storage": 3,
-					"area": 5
-				},
-				{
-					"tier": 4,
-					"speed": 22.5,
-					"storage": 6,
-					"area": 5
-				},
-				{
-					"tier": 5,
-					"speed": 18.5,
-					"storage": 6,
-					"area": 5
-				},
-				{
-					"tier": 6,
-					"speed": 18.5,
-					"storage": 9,
-					"area": 5
-				},
-				{
-					"tier": 7,
-					"speed": 16.5,
-					"storage": 9,
-					"area": 5
-				},
-				{
-					"tier": 8,
-					"speed": 16.5,
-					"storage": 12,
-					"area": 5
-				},
-				{
-					"tier": 9,
-					"speed": 15,
-					"storage": 12,
-					"area": 5
-				},
-				{
-					"tier": 10,
-					"speed": 15,
-					"storage": 15,
-					"area": 5
-				},
-				{
-					"tier": 11,
-					"speed": 13,
-					"storage": 15,
-					"area": 5
-				},
-				{
-					"tier": 12,
-					"speed": 11,
-					"storage": 15,
-					"area": 5
-				}
-			],
-			"products": [
-				{
-					"from": 1,
-					"to": 12,
-					"products": [
-						{
-							"name": "Raw Beef",
-							"chance": 1,
-							"amount": "1",
-							"icon": "beef"
-						}
-					]
-				}
-			]
-		},
-		{
 			"id": "melon",
 			"name": "Melon Minion",
 			"category": "farming",
+			"group": "farming",
 			"icon": "melon_slice",
 			"tiers": [
 				{
@@ -1411,103 +1236,10 @@
 			]
 		},
 		{
-			"id": "pig",
-			"name": "Pig Minion",
-			"category": "farming",
-			"icon": "porkchop",
-			"tiers": [
-				{
-					"tier": 1,
-					"speed": 26,
-					"storage": 1,
-					"area": 5
-				},
-				{
-					"tier": 2,
-					"speed": 26,
-					"storage": 3,
-					"area": 5
-				},
-				{
-					"tier": 3,
-					"speed": 22.5,
-					"storage": 3,
-					"area": 5
-				},
-				{
-					"tier": 4,
-					"speed": 22.5,
-					"storage": 6,
-					"area": 5
-				},
-				{
-					"tier": 5,
-					"speed": 18.5,
-					"storage": 6,
-					"area": 5
-				},
-				{
-					"tier": 6,
-					"speed": 18.5,
-					"storage": 9,
-					"area": 5
-				},
-				{
-					"tier": 7,
-					"speed": 16.5,
-					"storage": 9,
-					"area": 5
-				},
-				{
-					"tier": 8,
-					"speed": 16.5,
-					"storage": 12,
-					"area": 5
-				},
-				{
-					"tier": 9,
-					"speed": 15,
-					"storage": 12,
-					"area": 5
-				},
-				{
-					"tier": 10,
-					"speed": 15,
-					"storage": 15,
-					"area": 5
-				},
-				{
-					"tier": 11,
-					"speed": 13,
-					"storage": 15,
-					"area": 5
-				},
-				{
-					"tier": 12,
-					"speed": 11,
-					"storage": 15,
-					"area": 5
-				}
-			],
-			"products": [
-				{
-					"from": 1,
-					"to": 12,
-					"products": [
-						{
-							"name": "Raw Porkchop",
-							"chance": 1,
-							"amount": "1",
-							"icon": "porkchop"
-						}
-					]
-				}
-			]
-		},
-		{
 			"id": "potato",
 			"name": "Potato Minion",
 			"category": "farming",
+			"group": "farming",
 			"icon": "potato",
 			"tiers": [
 				{
@@ -1602,6 +1334,7 @@
 			"id": "pumpkin",
 			"name": "Pumpkin Minion",
 			"category": "farming",
+			"group": "farming",
 			"icon": "pumpkin",
 			"tiers": [
 				{
@@ -1693,197 +1426,10 @@
 			]
 		},
 		{
-			"id": "rabbit",
-			"name": "Rabbit Minion",
-			"category": "farming",
-			"icon": "rabbit",
-			"tiers": [
-				{
-					"tier": 1,
-					"speed": 26,
-					"storage": 1,
-					"area": 5
-				},
-				{
-					"tier": 2,
-					"speed": 26,
-					"storage": 3,
-					"area": 5
-				},
-				{
-					"tier": 3,
-					"speed": 22.5,
-					"storage": 3,
-					"area": 5
-				},
-				{
-					"tier": 4,
-					"speed": 22.5,
-					"storage": 6,
-					"area": 5
-				},
-				{
-					"tier": 5,
-					"speed": 18.5,
-					"storage": 6,
-					"area": 5
-				},
-				{
-					"tier": 6,
-					"speed": 18.5,
-					"storage": 9,
-					"area": 5
-				},
-				{
-					"tier": 7,
-					"speed": 16.5,
-					"storage": 9,
-					"area": 5
-				},
-				{
-					"tier": 8,
-					"speed": 16.5,
-					"storage": 12,
-					"area": 5
-				},
-				{
-					"tier": 9,
-					"speed": 15,
-					"storage": 12,
-					"area": 5
-				},
-				{
-					"tier": 10,
-					"speed": 15,
-					"storage": 15,
-					"area": 5
-				},
-				{
-					"tier": 11,
-					"speed": 13,
-					"storage": 15,
-					"area": 5
-				},
-				{
-					"tier": 12,
-					"speed": 11,
-					"storage": 15,
-					"area": 5
-				}
-			],
-			"products": [
-				{
-					"from": 1,
-					"to": 12,
-					"products": [
-						{
-							"name": "Raw Rabbit",
-							"chance": 1,
-							"amount": "1",
-							"icon": "rabbit"
-						}
-					]
-				}
-			]
-		},
-		{
-			"id": "sheep",
-			"name": "Sheep Minion",
-			"category": "farming",
-			"icon": "white_wool",
-			"tiers": [
-				{
-					"tier": 1,
-					"speed": 24,
-					"storage": 1,
-					"area": 5
-				},
-				{
-					"tier": 2,
-					"speed": 24,
-					"storage": 3,
-					"area": 5
-				},
-				{
-					"tier": 3,
-					"speed": 20.5,
-					"storage": 3,
-					"area": 5
-				},
-				{
-					"tier": 4,
-					"speed": 20.5,
-					"storage": 6,
-					"area": 5
-				},
-				{
-					"tier": 5,
-					"speed": 17,
-					"storage": 6,
-					"area": 5
-				},
-				{
-					"tier": 6,
-					"speed": 17,
-					"storage": 9,
-					"area": 5
-				},
-				{
-					"tier": 7,
-					"speed": 15.5,
-					"storage": 9,
-					"area": 5
-				},
-				{
-					"tier": 8,
-					"speed": 15.5,
-					"storage": 12,
-					"area": 5
-				},
-				{
-					"tier": 9,
-					"speed": 13.5,
-					"storage": 12,
-					"area": 5
-				},
-				{
-					"tier": 10,
-					"speed": 13.5,
-					"storage": 15,
-					"area": 5
-				},
-				{
-					"tier": 11,
-					"speed": 12,
-					"storage": 15,
-					"area": 5
-				},
-				{
-					"tier": 12,
-					"speed": 10.5,
-					"storage": 15,
-					"area": 5
-				}
-			],
-			"products": [
-				{
-					"from": 1,
-					"to": 12,
-					"products": [
-						{
-							"name": "Wool",
-							"chance": 1,
-							"amount": "1",
-							"icon": "white_wool"
-						}
-					]
-				}
-			]
-		},
-		{
 			"id": "sugar_cane",
 			"name": "Sugar Cane Minion",
 			"category": "farming",
+			"group": "farming",
 			"icon": "sugar_cane",
 			"tiers": [
 				{
@@ -1978,6 +1524,7 @@
 			"id": "farmer",
 			"name": "Wheat Minion",
 			"category": "farming",
+			"group": "farming",
 			"icon": "wheat",
 			"tiers": [
 				{
@@ -2069,9 +1616,485 @@
 			]
 		},
 		{
+			"id": "chicken",
+			"name": "Chicken Minion",
+			"category": "farming",
+			"group": "livestock",
+			"icon": "chicken",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 11,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Raw Chicken",
+							"chance": 1,
+							"amount": "1",
+							"icon": "chicken"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "cow",
+			"name": "Cow Minion",
+			"category": "farming",
+			"group": "livestock",
+			"icon": "beef",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 11,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Raw Beef",
+							"chance": 1,
+							"amount": "1",
+							"icon": "beef"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "pig",
+			"name": "Pig Minion",
+			"category": "farming",
+			"group": "livestock",
+			"icon": "porkchop",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 11,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Raw Porkchop",
+							"chance": 1,
+							"amount": "1",
+							"icon": "porkchop"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "rabbit",
+			"name": "Rabbit Minion",
+			"category": "farming",
+			"group": "livestock",
+			"icon": "rabbit",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 26,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 26,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 22.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 22.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 18.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 18.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 16.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 16.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 15,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 15,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 13,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 11,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Raw Rabbit",
+							"chance": 1,
+							"amount": "1",
+							"icon": "rabbit"
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "sheep",
+			"name": "Sheep Minion",
+			"category": "farming",
+			"group": "livestock",
+			"icon": "white_wool",
+			"tiers": [
+				{
+					"tier": 1,
+					"speed": 24,
+					"storage": 1,
+					"area": 5
+				},
+				{
+					"tier": 2,
+					"speed": 24,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 3,
+					"speed": 20.5,
+					"storage": 3,
+					"area": 5
+				},
+				{
+					"tier": 4,
+					"speed": 20.5,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 5,
+					"speed": 17,
+					"storage": 6,
+					"area": 5
+				},
+				{
+					"tier": 6,
+					"speed": 17,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 7,
+					"speed": 15.5,
+					"storage": 9,
+					"area": 5
+				},
+				{
+					"tier": 8,
+					"speed": 15.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 9,
+					"speed": 13.5,
+					"storage": 12,
+					"area": 5
+				},
+				{
+					"tier": 10,
+					"speed": 13.5,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 11,
+					"speed": 12,
+					"storage": 15,
+					"area": 5
+				},
+				{
+					"tier": 12,
+					"speed": 10.5,
+					"storage": 15,
+					"area": 5
+				}
+			],
+			"products": [
+				{
+					"from": 1,
+					"to": 12,
+					"products": [
+						{
+							"name": "Wool",
+							"chance": 1,
+							"amount": "1",
+							"icon": "white_wool"
+						}
+					]
+				}
+			]
+		},
+		{
 			"id": "acacia",
 			"name": "Acacia Minion",
 			"category": "foraging",
+			"group": "foraging",
 			"icon": "acacia_log",
 			"tiers": [
 				{
@@ -2160,6 +2183,7 @@
 			"id": "birch",
 			"name": "Birch Minion",
 			"category": "foraging",
+			"group": "foraging",
 			"icon": "birch_log",
 			"tiers": [
 				{
@@ -2248,6 +2272,7 @@
 			"id": "dark_oak",
 			"name": "Dark Oak Minion",
 			"category": "foraging",
+			"group": "foraging",
 			"icon": "dark_oak_log",
 			"tiers": [
 				{
@@ -2336,6 +2361,7 @@
 			"id": "jungle",
 			"name": "Jungle Minion",
 			"category": "foraging",
+			"group": "foraging",
 			"icon": "jungle_log",
 			"tiers": [
 				{
@@ -2424,6 +2450,7 @@
 			"id": "lumber",
 			"name": "Oak Minion",
 			"category": "foraging",
+			"group": "foraging",
 			"icon": "oak_log",
 			"tiers": [
 				{
@@ -2512,6 +2539,7 @@
 			"id": "spruce",
 			"name": "Spruce Minion",
 			"category": "foraging",
+			"group": "foraging",
 			"icon": "spruce_log",
 			"tiers": [
 				{
@@ -2600,6 +2628,7 @@
 			"id": "creeper",
 			"name": "Creeper Minion",
 			"category": "combat",
+			"group": "combat",
 			"icon": "gunpowder",
 			"tiers": [
 				{
@@ -2688,6 +2717,7 @@
 			"id": "skeleton",
 			"name": "Skeleton Minion",
 			"category": "combat",
+			"group": "combat",
 			"icon": "bone",
 			"tiers": [
 				{
@@ -2776,6 +2806,7 @@
 			"id": "slime",
 			"name": "Slime Minion",
 			"category": "combat",
+			"group": "combat",
 			"icon": "slime_ball",
 			"tiers": [
 				{
@@ -2864,6 +2895,7 @@
 			"id": "spider",
 			"name": "Spider Minion",
 			"category": "combat",
+			"group": "combat",
 			"icon": "string",
 			"tiers": [
 				{
@@ -2952,7 +2984,8 @@
 			"id": "witch",
 			"name": "Witch Minion",
 			"category": "combat",
-			"icon": "redstone",
+			"group": "combat",
+			"icon": "potion",
 			"tiers": [
 				{
 					"tier": 1,
@@ -3027,10 +3060,10 @@
 					"to": 11,
 					"products": [
 						{
-							"name": "Redstone",
+							"name": "Potion",
 							"chance": 1,
-							"amount": "1-2",
-							"icon": "redstone"
+							"amount": "1",
+							"icon": "potion"
 						}
 					]
 				}
@@ -3040,6 +3073,7 @@
 			"id": "slayer",
 			"name": "Zombie Minion",
 			"category": "combat",
+			"group": "combat",
 			"icon": "rotten_flesh",
 			"tiers": [
 				{

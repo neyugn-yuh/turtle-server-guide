@@ -26,6 +26,8 @@ import { parse } from 'yaml';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CATEGORY_ORDER = ['mining', 'farming', 'foraging', 'fishing', 'combat'];
+// Groups the page shows. 'livestock' is a farming minion that spawns animals (visual.entity) instead of growing crops.
+const GROUP_ORDER = ['mining', 'farming', 'livestock', 'foraging', 'fishing', 'combat'];
 const FILE_NAME = /^[a-z0-9_.-]+\.yml$/i;
 
 // ---------- arguments ----------
@@ -148,8 +150,9 @@ function readMinion({ id, text }) {
 	}
 	groups.push({ from, to: levels[levels.length - 1], products: current });
 
+	const group = data.category === 'farming' && data.visual?.entity ? 'livestock' : data.category;
 	const icon = groups[0].products.find((p) => p.icon)?.icon ?? '';
-	return { id, name: plain(data.name).replace(/\s*$/, '') || id, category: data.category, icon, tiers, products: groups };
+	return { id, name: plain(data.name).replace(/\s*$/, '') || id, category: data.category, group, icon, tiers, products: groups };
 }
 
 // ---------- main ----------
@@ -169,7 +172,7 @@ for (const file of files) {
 if (problems.length) fail(`cannot read ${problems.length} minion file(s):\n- ${problems.join('\n- ')}`);
 if (!minions.length) fail('no minions found');
 
-minions.sort((a, b) => CATEGORY_ORDER.indexOf(a.category) - CATEGORY_ORDER.indexOf(b.category) || a.name.localeCompare(b.name, 'en') || a.id.localeCompare(b.id));
+minions.sort((a, b) => GROUP_ORDER.indexOf(a.group) - GROUP_ORDER.indexOf(b.group) || a.name.localeCompare(b.name, 'en') || a.id.localeCompare(b.id));
 const output = JSON.stringify({ minions }, null, '\t') + '\n';
 
 const before = existsSync(OUT) ? readFileSync(OUT, 'utf8') : '';

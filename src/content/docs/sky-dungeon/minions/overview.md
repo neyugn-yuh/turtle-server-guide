@@ -8,7 +8,7 @@ sidebar:
 
 ## Minion giúp bạn làm gì?
 
-Minion là trợ thủ tự sản xuất tài nguyên. Bạn đặt minion trên đảo rồi lấy sản phẩm trong giao diện. Có các nhóm khai khoáng, nông nghiệp, lấy gỗ, đánh cá và chiến đấu. Sản phẩm, tốc độ và sức chứa phụ thuộc loại cùng bậc. Bậc là cấp nâng cấp, thường hiện bằng số La Mã như I, II.
+Minion là trợ thủ tự sản xuất tài nguyên. Bạn đặt minion trên đảo rồi lấy sản phẩm trong giao diện. Có các nhóm khai khoáng, nông sản, chăn nuôi, lấy gỗ và chiến đấu. Sản phẩm, tốc độ và sức chứa phụ thuộc loại cùng bậc. Bậc là cấp nâng cấp, thường hiện bằng số La Mã như I, II.
 
 Muốn biết từng loại minion cho ra gì và nhanh chậm thế nào, xem [Danh sách minion](/sky-dungeon/minions/list/).
 

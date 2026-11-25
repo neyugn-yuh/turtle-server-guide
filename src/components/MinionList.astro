@@ -18,7 +18,8 @@ if (!data) throw new Error(`MinionList: no minions.json for server "${server}", 
 
 const categories = [
 	{ id: 'mining', label: 'Khai khoáng' },
-	{ id: 'farming', label: 'Nông nghiệp' },
+	{ id: 'farming', label: 'Nông sản' },
+	{ id: 'livestock', label: 'Chăn nuôi (thịt)' },
 	{ id: 'foraging', label: 'Lấy gỗ' },
 	{ id: 'fishing', label: 'Câu cá' },
 	{ id: 'combat', label: 'Chiến đấu' },
@@ -36,7 +37,7 @@ const range = (from: number, to: number) => (from === to ? `Bậc ${roman(from)}
 
 const minions: any[] = data.minions;
 const groups = categories
-	.map((category) => ({ ...category, items: minions.filter((m) => m.category === category.id) }))
+	.map((category) => ({ ...category, items: minions.filter((m) => m.group === category.id) }))
 	.filter((group) => group.items.length > 0);
 ---
 
@@ -65,7 +66,7 @@ const groups = categories
 						<details class="ml-item" data-cat={group.id} data-search={search}>
 							<summary>
 								<span class="ml-name">
-									{minion.icon && <img class="ml-icon" src={iconUrl(minion.icon)} alt="" width="32" height="32" loading="lazy" />}
+									{minion.icon && <img class="ml-icon" src={iconUrl(minion.icon)} alt="" width="32" height="32" loading="lazy" onerror="this.hidden=true" />}
 									{minion.name}
 								</span>
 								<span class="ml-products">{first.products.map((p: any) => p.name).join(', ')}</span>
@@ -83,7 +84,7 @@ const groups = categories
 												<tr>
 													{minion.products.length > 1 && (i === 0 ? <td rowspan={g.products.length}>{range(g.from, g.to)}</td> : null)}
 													<td>
-														{p.icon && <img class="ml-icon ml-icon-sm" src={iconUrl(p.icon)} alt="" width="20" height="20" loading="lazy" />}
+														{p.icon && <img class="ml-icon ml-icon-sm" src={iconUrl(p.icon)} alt="" width="20" height="20" loading="lazy" onerror="this.hidden=true" />}
 														{p.name}
 													</td>
 													<td>{percent(p.chance)}</td>
