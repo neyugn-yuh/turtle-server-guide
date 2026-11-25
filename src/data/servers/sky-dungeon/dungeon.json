@@ -379,7 +379,7 @@
 					},
 					"items": [
 						{
-							"item": "Ma Thạch Phổ Thông",
+							"item": "Ma Thạch Cực Sắc",
 							"min": 1,
 							"max": 1,
 							"chance": 10,
@@ -561,7 +561,16 @@
 							"min": 1,
 							"max": 1,
 							"chance": 10,
-							"reach": 50
+							"reach": 50,
+							"when": "floor"
+						},
+						{
+							"item": "Ma Thạch Cực Sắc",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50,
+							"when": "outbreak"
 						}
 					]
 				}
@@ -707,7 +716,16 @@
 							"min": 1,
 							"max": 1,
 							"chance": 10,
-							"reach": 50
+							"reach": 50,
+							"when": "floor"
+						},
+						{
+							"item": "Ma Thạch Cực Sắc",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50,
+							"when": "outbreak"
 						}
 					]
 				}
@@ -862,7 +880,16 @@
 							"min": 1,
 							"max": 1,
 							"chance": 10,
-							"reach": 50
+							"reach": 50,
+							"when": "floor"
+						},
+						{
+							"item": "Ma Thạch Cực Sắc",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50,
+							"when": "outbreak"
 						}
 					]
 				}
@@ -1022,7 +1049,16 @@
 							"min": 1,
 							"max": 1,
 							"chance": 10,
-							"reach": 50
+							"reach": 50,
+							"when": "floor"
+						},
+						{
+							"item": "Ma Thạch Cực Sắc",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50,
+							"when": "outbreak"
 						}
 					]
 				}
@@ -1177,7 +1213,16 @@
 							"min": 1,
 							"max": 1,
 							"chance": 10,
-							"reach": 50
+							"reach": 50,
+							"when": "floor"
+						},
+						{
+							"item": "Ma Thạch Cực Sắc",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50,
+							"when": "outbreak"
 						}
 					]
 				}
@@ -1460,7 +1505,16 @@
 							"min": 1,
 							"max": 1,
 							"chance": 10,
-							"reach": 50
+							"reach": 50,
+							"when": "floor"
+						},
+						{
+							"item": "Ma Thạch Cực Sắc",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50,
+							"when": "outbreak"
 						}
 					]
 				}
@@ -1611,7 +1665,16 @@
 							"min": 1,
 							"max": 1,
 							"chance": 10,
-							"reach": 50
+							"reach": 50,
+							"when": "floor"
+						},
+						{
+							"item": "Ma Thạch Cực Sắc",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50,
+							"when": "outbreak"
 						}
 					]
 				}
@@ -1891,7 +1954,16 @@
 							"min": 1,
 							"max": 1,
 							"chance": 10,
-							"reach": 50
+							"reach": 50,
+							"when": "floor"
+						},
+						{
+							"item": "Ma Thạch Cực Sắc",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50,
+							"when": "outbreak"
 						}
 					]
 				}
@@ -2165,7 +2237,16 @@
 							"min": 1,
 							"max": 1,
 							"chance": 10,
-							"reach": 50
+							"reach": 50,
+							"when": "floor"
+						},
+						{
+							"item": "Ma Thạch Cực Sắc",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50,
+							"when": "outbreak"
 						}
 					]
 				}
@@ -2312,7 +2393,16 @@
 							"min": 1,
 							"max": 1,
 							"chance": 10,
-							"reach": 50
+							"reach": 50,
+							"when": "floor"
+						},
+						{
+							"item": "Ma Thạch Cực Sắc",
+							"min": 1,
+							"max": 1,
+							"chance": 10,
+							"reach": 50,
+							"when": "outbreak"
 						}
 					]
 				},

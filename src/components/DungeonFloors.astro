@@ -76,7 +76,7 @@ const grades: any[] = equipment?.grades ?? [];
 														: mob.items.map((item: any, i: number) => (
 																<>
 																	{i > 0 && ', '}
-																	{item.item} ×{range(item.min, item.max)} ({num(item.chance)}%)
+																	{item.item} ×{range(item.min, item.max)} ({num(item.chance)}%{item.when === 'outbreak' ? ', khi bùng nổ' : item.when === 'floor' ? ', ngoài bùng nổ' : ''})
 																</>
 															))}
 												</td>

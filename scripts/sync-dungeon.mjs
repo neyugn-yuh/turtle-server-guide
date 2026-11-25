@@ -149,18 +149,27 @@ function amountOf(text) {
 
 /** The chance of a skill line ("... ~onDeath 0.35" is 35%, no number is always). */
 function chanceOf(line) {
-	const m = /~onDeath\s+([0-9.]+)\s*$/.exec(line);
+	// "~onDeath 0.35" on a mob line, or a trailing "0.1" after the targeter on a line of a reward skill
+	const m = /~onDeath\s+([0-9.]+)\s*$/.exec(line) ?? /@\w+(?:\{[^}]*\})?\s+([0-9.]+)\s*$/.exec(line);
 	return m ? round(Number(m[1]) * 100) : 100;
 }
 
+/** "?hastag{t=dm_outbreak}" on a death line: the reward only comes from the outbreak copy of the boss; "?!hastag{...}" only from the normal one. */
+function whenOf(line, inherited) {
+	if (/\?!hastag\{t=dm_outbreak\}/.test(line)) return 'floor';
+	if (/\?hastag\{t=dm_outbreak\}/.test(line)) return 'outbreak';
+	return inherited;
+}
+
 /** Everything a death line pays: coins, items, plain items. `reach` is the radius when the reward goes to every player nearby. */
-async function dropsOf(line, mobId, depth = 0, reach = 0, inheritedChance = 100) {
+async function dropsOf(line, mobId, depth = 0, reach = 0, inheritedChance = 100, inheritedWhen = null) {
 	const out = { coins: [], items: [], plainItems: [] };
 	const chance = round((chanceOf(line) * inheritedChance) / 100);
+	const when = whenOf(line, inheritedWhen);
 	const skillCall = /skill\{s=([^;}]+)[;}][^@]*@(\w+)(?:\{r=(\d+)\})?/.exec(line);
 	const command = /command\{c="([^"]+)"\}/.exec(line);
 	if (command) {
-		await addCommand(out, command[1], chance, mobId, reach);
+		await addCommand(out, command[1], chance, mobId, reach, when);
 	} else if (skillCall && depth < 3) {
 		const name = skillCall[1].trim();
 		const body = skills[name];
@@ -170,7 +179,7 @@ async function dropsOf(line, mobId, depth = 0, reach = 0, inheritedChance = 100)
 		}
 		const radius = skillCall[3] ? Number(skillCall[3]) : reach;
 		for (const inner of body.Skills ?? []) {
-			const nested = await dropsOf(`${inner} ~onDeath ${chance / 100}`, mobId, depth + 1, radius, 100);
+			const nested = await dropsOf(inner, mobId, depth + 1, radius, chance, when);
 			out.coins.push(...nested.coins);
 			out.items.push(...nested.items);
 			out.plainItems.push(...nested.plainItems);
@@ -179,7 +188,7 @@ async function dropsOf(line, mobId, depth = 0, reach = 0, inheritedChance = 100)
 	return out;
 }
 
-async function addCommand(out, text, chance, mobId, reach) {
+async function addCommand(out, text, chance, mobId, reach, when = null) {
 	let m = /^eco give (\S+) (\S+) (\S+)$/.exec(text);
 	if (m) {
 		const amount = amountOf(m[2]);
@@ -194,7 +203,7 @@ async function addCommand(out, text, chance, mobId, reach) {
 	if (m) {
 		const name = await itemName(m[1], m[2]);
 		if (!name) return warn(`${mobId}: drops ${m[1]}:${m[2]}, which is not in MMOItems any more (left out)`);
-		return void out.items.push({ name, type: m[1].toUpperCase(), id: m[2].toUpperCase(), min: Number(m[4]), max: Number(m[5] ?? m[4]), chance, reach });
+		return void out.items.push({ name, type: m[1].toUpperCase(), id: m[2].toUpperCase(), min: Number(m[4]), max: Number(m[5] ?? m[4]), chance, reach, when });
 	}
 	m = /^give (\S+) ([a-z0-9_]+) (\S+)$/.exec(text);
 	if (m) {
@@ -256,7 +265,7 @@ for (let n = 1; n <= TIERS; n++) {
 			health: Number(mob.Health),
 			damage: mob.Damage === undefined ? null : Number(mob.Damage),
 			coins: rewardCoin,
-			items: [...drops.items.map(({ name: item, min, max, chance, reach }) => ({ item, min, max, chance, reach })), ...drops.plainItems.map(({ name: item, min, max, chance, reach }) => ({ item, min, max, chance, reach }))],
+			items: [...drops.items.map(({ name: item, min, max, chance, reach, when }) => ({ item, min, max, chance, reach, ...(when ? { when } : {}) })), ...drops.plainItems.map(({ name: item, min, max, chance, reach }) => ({ item, min, max, chance, reach }))],
 		});
 	}
 	if (!mobs.length) fail(`MythicMobs/mobs/Dungeon/Tang${String(n).padStart(2, '0')}.yml has no mobs`);
