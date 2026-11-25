@@ -5,33 +5,32 @@
 			"name": "Đá Nền",
 			"icon": "deepslate",
 			"category": "dungeon",
-			"recipes": [],
+			"recipes": [
+				{
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"ingredients": [
+						{
+							"name": "Cobblestone",
+							"icon": "cobblestone",
+							"amount": 128
+						}
+					],
+					"results": [
+						{
+							"name": "Đá Nền",
+							"icon": "deepslate",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
 			"uses": [],
 			"upgrades": [
 				{
 					"upgrade": "Diện tích đảo",
-					"levels": [
-						{
-							"level": 2,
-							"amount": 4
-						},
-						{
-							"level": 3,
-							"amount": 16
-						},
-						{
-							"level": 4,
-							"amount": 64
-						},
-						{
-							"level": 5,
-							"amount": 256
-						},
-						{
-							"level": 6,
-							"amount": 1024
-						}
-					]
+					"use": "Dùng để nâng cấp diện tích đảo."
 				}
 			]
 		},
@@ -40,45 +39,32 @@
 			"name": "Khoai Tây Siêu Cấp",
 			"icon": "potato",
 			"category": "nong-san",
-			"recipes": [],
+			"recipes": [
+				{
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"ingredients": [
+						{
+							"name": "Potato",
+							"icon": "potato",
+							"amount": 128
+						}
+					],
+					"results": [
+						{
+							"name": "Khoai Tây Siêu Cấp",
+							"icon": "potato",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
 			"uses": [],
 			"upgrades": [
 				{
 					"upgrade": "Slot đặt minion",
-					"levels": [
-						{
-							"level": 1,
-							"amount": 4
-						},
-						{
-							"level": 2,
-							"amount": 8
-						},
-						{
-							"level": 3,
-							"amount": 16
-						},
-						{
-							"level": 4,
-							"amount": 32
-						},
-						{
-							"level": 5,
-							"amount": 64
-						},
-						{
-							"level": 6,
-							"amount": 128
-						},
-						{
-							"level": 7,
-							"amount": 256
-						},
-						{
-							"level": 8,
-							"amount": 512
-						}
-					]
+					"use": "Dùng để nâng cấp số lượng slot đặt minion trên đảo."
 				}
 			]
 		},
@@ -87,17 +73,32 @@
 			"name": "Đá Cuội Tinh Luyện",
 			"icon": "cobblestone",
 			"category": "khoang-san",
-			"recipes": [],
+			"recipes": [
+				{
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"ingredients": [
+						{
+							"name": "Cobblestone",
+							"icon": "cobblestone",
+							"amount": 128
+						}
+					],
+					"results": [
+						{
+							"name": "Đá Cuội Tinh Luyện",
+							"icon": "cobblestone",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
 			"uses": [],
 			"upgrades": [
 				{
 					"upgrade": "Máy tạo quặng",
-					"levels": [
-						{
-							"level": 2,
-							"amount": 8
-						}
-					]
+					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
 			]
 		},
@@ -106,17 +107,32 @@
 			"name": "Than Tinh Luyện",
 			"icon": "coal",
 			"category": "khoang-san",
-			"recipes": [],
+			"recipes": [
+				{
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"ingredients": [
+						{
+							"name": "Coal",
+							"icon": "coal",
+							"amount": 128
+						}
+					],
+					"results": [
+						{
+							"name": "Than Tinh Luyện",
+							"icon": "coal",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
 			"uses": [],
 			"upgrades": [
 				{
 					"upgrade": "Máy tạo quặng",
-					"levels": [
-						{
-							"level": 3,
-							"amount": 8
-						}
-					]
+					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
 			]
 		},
@@ -125,17 +141,32 @@
 			"name": "Đồng Tinh Luyện",
 			"icon": "copper_ingot",
 			"category": "khoang-san",
-			"recipes": [],
+			"recipes": [
+				{
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"ingredients": [
+						{
+							"name": "Raw Copper",
+							"icon": "raw_copper",
+							"amount": 128
+						}
+					],
+					"results": [
+						{
+							"name": "Đồng Tinh Luyện",
+							"icon": "copper_ingot",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
 			"uses": [],
 			"upgrades": [
 				{
 					"upgrade": "Máy tạo quặng",
-					"levels": [
-						{
-							"level": 4,
-							"amount": 16
-						}
-					]
+					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
 			]
 		},
@@ -144,17 +175,32 @@
 			"name": "Sắt Tinh Luyện",
 			"icon": "iron_ingot",
 			"category": "khoang-san",
-			"recipes": [],
+			"recipes": [
+				{
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"ingredients": [
+						{
+							"name": "Raw Iron",
+							"icon": "raw_iron",
+							"amount": 128
+						}
+					],
+					"results": [
+						{
+							"name": "Sắt Tinh Luyện",
+							"icon": "iron_ingot",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
 			"uses": [],
 			"upgrades": [
 				{
 					"upgrade": "Máy tạo quặng",
-					"levels": [
-						{
-							"level": 5,
-							"amount": 16
-						}
-					]
+					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
 			]
 		},
@@ -163,17 +209,32 @@
 			"name": "Vàng Tinh Luyện",
 			"icon": "gold_ingot",
 			"category": "khoang-san",
-			"recipes": [],
+			"recipes": [
+				{
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"ingredients": [
+						{
+							"name": "Raw Gold",
+							"icon": "raw_gold",
+							"amount": 128
+						}
+					],
+					"results": [
+						{
+							"name": "Vàng Tinh Luyện",
+							"icon": "gold_ingot",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
 			"uses": [],
 			"upgrades": [
 				{
 					"upgrade": "Máy tạo quặng",
-					"levels": [
-						{
-							"level": 6,
-							"amount": 32
-						}
-					]
+					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
 			]
 		},
@@ -182,17 +243,32 @@
 			"name": "Đá Đỏ Tinh Luyện",
 			"icon": "redstone",
 			"category": "khoang-san",
-			"recipes": [],
+			"recipes": [
+				{
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"ingredients": [
+						{
+							"name": "Redstone",
+							"icon": "redstone",
+							"amount": 128
+						}
+					],
+					"results": [
+						{
+							"name": "Đá Đỏ Tinh Luyện",
+							"icon": "redstone",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
 			"uses": [],
 			"upgrades": [
 				{
 					"upgrade": "Máy tạo quặng",
-					"levels": [
-						{
-							"level": 7,
-							"amount": 32
-						}
-					]
+					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
 			]
 		},
@@ -201,17 +277,32 @@
 			"name": "Lưu Ly Tinh Luyện",
 			"icon": "lapis_lazuli",
 			"category": "khoang-san",
-			"recipes": [],
+			"recipes": [
+				{
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"ingredients": [
+						{
+							"name": "Lapis Lazuli",
+							"icon": "lapis_lazuli",
+							"amount": 128
+						}
+					],
+					"results": [
+						{
+							"name": "Lưu Ly Tinh Luyện",
+							"icon": "lapis_lazuli",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
 			"uses": [],
 			"upgrades": [
 				{
 					"upgrade": "Máy tạo quặng",
-					"levels": [
-						{
-							"level": 8,
-							"amount": 48
-						}
-					]
+					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
 			]
 		},
@@ -220,17 +311,32 @@
 			"name": "Kim Cương Tinh Luyện",
 			"icon": "diamond",
 			"category": "khoang-san",
-			"recipes": [],
+			"recipes": [
+				{
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"ingredients": [
+						{
+							"name": "Diamond",
+							"icon": "diamond",
+							"amount": 128
+						}
+					],
+					"results": [
+						{
+							"name": "Kim Cương Tinh Luyện",
+							"icon": "diamond",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
 			"uses": [],
 			"upgrades": [
 				{
 					"upgrade": "Máy tạo quặng",
-					"levels": [
-						{
-							"level": 9,
-							"amount": 64
-						}
-					]
+					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
 			]
 		},
@@ -239,17 +345,32 @@
 			"name": "Lục Bảo Tinh Luyện",
 			"icon": "emerald",
 			"category": "khoang-san",
-			"recipes": [],
+			"recipes": [
+				{
+					"category": "ɴɢᴜʏêɴ ʟɪệᴜ",
+					"ingredients": [
+						{
+							"name": "Emerald",
+							"icon": "emerald",
+							"amount": 128
+						}
+					],
+					"results": [
+						{
+							"name": "Lục Bảo Tinh Luyện",
+							"icon": "emerald",
+							"amount": 1
+						}
+					],
+					"chance": 100,
+					"cost": null
+				}
+			],
 			"uses": [],
 			"upgrades": [
 				{
 					"upgrade": "Máy tạo quặng",
-					"levels": [
-						{
-							"level": 10,
-							"amount": 64
-						}
-					]
+					"use": "Dùng để nâng cấp máy tạo quặng của đảo."
 				}
 			]
 		}

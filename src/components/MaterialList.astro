@@ -77,12 +77,7 @@ if (category && materials.length === 0) throw new Error(`MaterialList: no materi
 							{material.upgrades.map((entry: any) => (
 								<li>
 									<span class="ml-where">Nâng cấp đảo</span>
-									<span class="ml-line">
-										{entry.upgrade}, nộp ở:
-										{entry.levels.map((l: any) => (
-											<span class="ml-chip">Cấp {l.level}: {num(l.amount)} × {material.name}</span>
-										))}
-									</span>
+									<span class="ml-line">{entry.use}</span>
 								</li>
 							))}
 							{material.uses.map((recipe: any) => (

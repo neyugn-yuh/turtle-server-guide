@@ -195,24 +195,29 @@ for (const id of categoryOf.keys()) if (!wanted.has(id)) fail(`src/data/material
 
 const result = new Map(materials.map((m) => [m.id, { ...m, category: categoryOf.get(m.id), recipes: [], uses: [], upgrades: [] }]));
 
-// island upgrades: which level of which upgrade asks for the material, and how many
+// island upgrades: which upgrade asks for the material (shown as one short sentence, the amounts are on the island upgrade pages)
 const UPGRADE_TITLES = { 'border-size': 'Diện tích đảo', 'members-limit': 'Thành viên đảo', 'minion-slots': 'Slot đặt minion', ore: 'Máy tạo quặng', 'dungeon-stats': 'Chỉ số dungeon', forge: 'Xưởng rèn' };
+const UPGRADE_USES = {
+	'border-size': 'Dùng để nâng cấp diện tích đảo.',
+	'members-limit': 'Dùng để nâng cấp số thành viên đảo.',
+	'minion-slots': 'Dùng để nâng cấp số lượng slot đặt minion trên đảo.',
+	ore: 'Dùng để nâng cấp máy tạo quặng của đảo.',
+	'dungeon-stats': 'Dùng để nâng cấp chỉ số dungeon.',
+	forge: 'Dùng để nâng cấp xưởng rèn.',
+};
 const upgradeText = await source.read('SD-Island/island-upgrades.yml');
 const upgradeCategories = upgradeText ? (parse(upgradeText)?.categories ?? {}) : {};
 for (const [id, title] of Object.entries(UPGRADE_TITLES)) {
 	const category = upgradeCategories[id];
 	if (!category) continue;
-	const offset = Number(category['display-offset'] ?? 0) || 0;
-	const byMaterial = new Map();
-	for (const level of Object.keys(category.levels ?? {}).map(Number).sort((a, b) => a - b)) {
-		for (const [key, amount] of Object.entries(category.levels[String(level)]?.items ?? {})) {
+	const asked = new Set();
+	for (const level of Object.values(category.levels ?? {})) {
+		for (const key of Object.keys(level?.items ?? {})) {
 			const ref = mmoRef(`mmoitems:${key}`);
-			if (!ref || ref.type !== 'MATERIAL' || !wanted.has(ref.id)) continue;
-			if (!byMaterial.has(ref.id)) byMaterial.set(ref.id, []);
-			byMaterial.get(ref.id).push({ level: level + offset, amount: Number(amount) });
+			if (ref && ref.type === 'MATERIAL' && wanted.has(ref.id)) asked.add(ref.id);
 		}
 	}
-	for (const [materialId, levels] of byMaterial) result.get(materialId).upgrades.push({ upgrade: title, levels });
+	for (const materialId of asked) result.get(materialId).upgrades.push({ upgrade: title, use: UPGRADE_USES[id] });
 }
 
 const categories = (await source.list('TurtleCraft/recipes')).sort();
