@@ -1,0 +1,179 @@
+---
+/**
+ * List of the spawners (stackable mobs) of one server, built from src/data/servers/<server>/spawners.json
+ * (written by scripts/sync-spawners.mjs from the server's config). One section per mob: what it drops when killed,
+ * with the chance and the amount, and what upgrading its spawner needs. A part that is not configured shows an empty "—".
+ */
+interface Props {
+	server: string;
+}
+
+const { server } = Astro.props;
+const files = import.meta.glob('../data/servers/*/spawners.json', { eager: true, import: 'default' }) as Record<string, any>;
+const data = files[`../data/servers/${server}/spawners.json`];
+if (!data) throw new Error(`SpawnerList: no spawners.json for server "${server}", run node scripts/sync-spawners.mjs`);
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const iconUrl = (name: string) => `${base}/minions/${name}.png`;
+const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 2 });
+const CURRENCY: Record<string, string> = { money: 'Tiền' };
+const currency = CURRENCY[String(data.currency).toLowerCase()] ?? data.currency;
+const amount = (drop: any) => (drop.min === drop.max ? num(drop.min) : `${num(drop.min)}–${num(drop.max)}`);
+// a level above 1, or a level 1 that gives a bonus, means upgrades are switched on for this mob
+const hasUpgrades = (mob: any) => mob.tiers.some((t: any) => t.level > 1 || t.dropBonus > 0 || t.spawnSpeed > 0);
+
+const mobs: any[] = data.mobs;
+---
+
+<div class="sl not-content">
+	<p class="sl-limit">
+		Một chồng spawner (cùng loại, đặt gần nhau) tối đa <strong>{num(data.spawnerMaxStack)}</strong> spawner.
+	</p>
+	{
+		mobs.map((mob: any) => (
+			<section class="sl-item">
+				<h3 id={mob.id.toLowerCase()}>
+					<img class="sl-icon" src={iconUrl(mob.icon)} alt="" width="32" height="32" loading="lazy" onerror="this.hidden=true" />
+					Spawner {mob.name}
+				</h3>
+				<p class="sl-meta">Mỗi chồng mob tối đa <strong>{num(mob.maxStack)}</strong> con.</p>
+
+				<h4>Đồ rơi khi giết</h4>
+				{
+					mob.drops.length === 0 ? (
+						mob.vanillaDrops ? (
+							<p class="sl-empty">Rơi đồ như trong game thường, chưa cấu hình riêng.</p>
+						) : (
+							<p class="sl-empty">—</p>
+						)
+					) : (
+						<div class="sl-scroll">
+							<table>
+								<thead>
+									<tr><th>Vật phẩm</th><th>Tỉ lệ mỗi con</th><th>Số lượng</th></tr>
+								</thead>
+								<tbody>
+									{mob.drops.map((drop: any) => (
+										<tr>
+											<td>
+												<img class="sl-icon-sm" src={iconUrl(drop.icon)} alt="" width="20" height="20" loading="lazy" onerror="this.hidden=true" />
+												{drop.item}
+											</td>
+											<td>{num(drop.chance)}%</td>
+											<td>{amount(drop)}</td>
+										</tr>
+									))}
+								</tbody>
+							</table>
+						</div>
+					)
+				}
+				{mob.drops.length > 0 && !mob.vanillaDrops && <p class="sl-empty">Mob này chỉ rơi đúng các vật phẩm trong bảng.</p>}
+
+				<h4>Nâng cấp spawner</h4>
+				{
+					hasUpgrades(mob) ? (
+						<div class="sl-scroll">
+							<table>
+								<thead>
+									<tr><th>Cấp</th><th>Thêm đồ rơi</th><th>Thêm tốc độ sinh</th><th>Phí ({currency})</th></tr>
+								</thead>
+								<tbody>
+									{mob.tiers.map((tier: any) => (
+										<tr>
+											<td>{tier.level}</td>
+											<td>{tier.dropBonus > 0 ? `+${num(tier.dropBonus)}%` : '–'}</td>
+											<td>{tier.spawnSpeed > 0 ? `+${num(tier.spawnSpeed)}%` : '–'}</td>
+											<td>{tier.cost > 0 ? num(tier.cost) : '–'}</td>
+										</tr>
+									))}
+								</tbody>
+							</table>
+						</div>
+					) : (
+						<p class="sl-empty">—</p>
+					)
+				}
+				{
+					mob.perks.length > 0 && (
+						<>
+							<h4>Đặc quyền theo cấp</h4>
+							<ul class="sl-perks">
+								{mob.perks.map((perk: any) => <li>Cấp {perk.level}: {perk.name}</li>)}
+							</ul>
+						</>
+					)
+				}
+			</section>
+		))
+	}
+</div>
+
+<style>
+	.sl {
+		margin: 1.5rem 0;
+	}
+	.sl-limit {
+		margin: 0 0 1rem;
+	}
+	.sl-item {
+		margin-bottom: 1.5rem;
+		padding: 0.25rem 1rem 0.75rem;
+		border: 1px solid var(--sl-color-hairline);
+		border-radius: 0.5rem;
+	}
+	.sl-item h3 {
+		display: flex;
+		align-items: center;
+		gap: 0.6rem;
+		margin: 0.75rem 0 0.25rem;
+		font-size: var(--sl-text-xl);
+	}
+	.sl-item h4 {
+		margin: 1rem 0 0.25rem;
+		color: var(--sl-color-gray-2);
+		font-size: var(--sl-text-base);
+	}
+	.sl-icon {
+		width: 2rem;
+		height: 2rem;
+		margin: 0;
+		image-rendering: pixelated;
+	}
+	.sl-icon-sm {
+		width: 1.25rem;
+		height: 1.25rem;
+		margin: 0 0.4rem 0 0;
+		vertical-align: middle;
+		image-rendering: pixelated;
+	}
+	.sl-meta,
+	.sl-empty {
+		margin: 0.25rem 0;
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-sm);
+	}
+	.sl-scroll {
+		overflow-x: auto;
+	}
+	.sl table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: var(--sl-text-sm);
+	}
+	.sl th,
+	.sl td {
+		padding: 0.35rem 0.6rem;
+		border-bottom: 1px solid var(--sl-color-hairline);
+		text-align: left;
+		white-space: nowrap;
+	}
+	.sl th {
+		color: var(--sl-color-gray-2);
+		font-weight: 600;
+	}
+	.sl-perks {
+		margin: 0.25rem 0;
+		padding-left: 1.25rem;
+	}
+</style>

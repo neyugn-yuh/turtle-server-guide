@@ -41,6 +41,14 @@ for (const server of readdirSync(serversDir)) {
 			for (const recipe of [...material.recipes, ...material.uses]) for (const item of [...recipe.ingredients, ...recipe.results]) if (item.icon) materials.add(item.icon);
 		}
 	}
+	// spawners: the picture of each mob and of the items it drops
+	const spawnersFile = join(serversDir, server, 'spawners.json');
+	if (existsSync(spawnersFile)) {
+		for (const mob of JSON.parse(readFileSync(spawnersFile, 'utf8')).mobs) {
+			if (mob.icon) materials.add(mob.icon);
+			for (const drop of mob.drops) if (drop.icon) materials.add(drop.icon);
+		}
+	}
 	// island upgrades: the picture of each upgrade and of the blocks a level asks for
 	const islandFile = join(serversDir, server, 'island-upgrades.json');
 	if (existsSync(islandFile)) {

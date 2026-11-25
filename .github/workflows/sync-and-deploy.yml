@@ -58,6 +58,10 @@ jobs:
         if: env.PTERO_KEY != '' && env.PTERO_URL != '' && env.PTERO_SERVER != ''
         run: node scripts/sync-materials.mjs --ptero
 
+      - name: Read the spawners from the server
+        if: env.PTERO_KEY != '' && env.PTERO_URL != '' && env.PTERO_SERVER != ''
+        run: node scripts/sync-spawners.mjs --ptero
+
       - name: Commit the changed data
         run: |
           if [ -n "$(git status --porcelain src/data/servers)" ]; then

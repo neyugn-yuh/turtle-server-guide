@@ -23,5 +23,10 @@ export const guides = [
 		title: 'Nguyên liệu',
 		description: 'Danh sách nguyên liệu: chế tạo từ gì và dùng để làm gì.',
 	},
+	{
+		slug: 'spawners',
+		title: 'Spawner',
+		description: 'Danh sách spawner: mob nào rơi gì với tỉ lệ nào, và nâng cấp spawner cần gì.',
+	},
 	// <-- add new guides here
 ];

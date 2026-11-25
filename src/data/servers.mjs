@@ -14,7 +14,7 @@ export const servers = [
 		slug: 'sky-dungeon',
 		title: 'Sky Dungeon',
 		description: 'Hướng dẫn minion trên máy chủ Sky Dungeon: đặt minion, cho nhiên liệu, nâng cấp và lấy sản phẩm.',
-		guides: ['minions', 'island-upgrades', 'materials'],
+		guides: ['minions', 'island-upgrades', 'materials', 'spawners'],
 	},
 	// <-- add new servers here
 ];

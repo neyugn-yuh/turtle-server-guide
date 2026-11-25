@@ -1,0 +1,479 @@
+{
+	"spawnerMaxStack": 5000,
+	"currency": "money",
+	"mobs": [
+		{
+			"id": "ZOMBIE",
+			"name": "Zombie",
+			"icon": "spawner",
+			"maxStack": 1000,
+			"vanillaDrops": false,
+			"drops": [
+				{
+					"item": "Rotten Flesh",
+					"icon": "rotten_flesh",
+					"chance": 67,
+					"min": 1,
+					"max": 2
+				},
+				{
+					"item": "Iron Ingot",
+					"icon": "iron_ingot",
+					"chance": 0.83,
+					"min": 1,
+					"max": 1
+				},
+				{
+					"item": "Carrot",
+					"icon": "carrot",
+					"chance": 0.83,
+					"min": 1,
+					"max": 1
+				},
+				{
+					"item": "Potato",
+					"icon": "potato",
+					"chance": 0.83,
+					"min": 1,
+					"max": 1
+				}
+			],
+			"tiers": [
+				{
+					"level": 1,
+					"dropBonus": 0,
+					"spawnSpeed": 0,
+					"cost": 0
+				}
+			],
+			"perks": []
+		},
+		{
+			"id": "SKELETON",
+			"name": "Skeleton",
+			"icon": "spawner",
+			"maxStack": 1000,
+			"vanillaDrops": false,
+			"drops": [
+				{
+					"item": "Bone",
+					"icon": "bone",
+					"chance": 67,
+					"min": 1,
+					"max": 2
+				},
+				{
+					"item": "Arrow",
+					"icon": "arrow",
+					"chance": 67,
+					"min": 1,
+					"max": 2
+				}
+			],
+			"tiers": [
+				{
+					"level": 1,
+					"dropBonus": 0,
+					"spawnSpeed": 0,
+					"cost": 0
+				}
+			],
+			"perks": []
+		},
+		{
+			"id": "SPIDER",
+			"name": "Spider",
+			"icon": "spawner",
+			"maxStack": 1000,
+			"vanillaDrops": false,
+			"drops": [
+				{
+					"item": "String",
+					"icon": "string",
+					"chance": 67,
+					"min": 1,
+					"max": 2
+				},
+				{
+					"item": "Spider Eye",
+					"icon": "spider_eye",
+					"chance": 33,
+					"min": 1,
+					"max": 1
+				}
+			],
+			"tiers": [
+				{
+					"level": 1,
+					"dropBonus": 0,
+					"spawnSpeed": 0,
+					"cost": 0
+				}
+			],
+			"perks": []
+		},
+		{
+			"id": "CAVE_SPIDER",
+			"name": "Cave Spider",
+			"icon": "spawner",
+			"maxStack": 1000,
+			"vanillaDrops": false,
+			"drops": [
+				{
+					"item": "String",
+					"icon": "string",
+					"chance": 67,
+					"min": 1,
+					"max": 2
+				},
+				{
+					"item": "Spider Eye",
+					"icon": "spider_eye",
+					"chance": 33,
+					"min": 1,
+					"max": 1
+				}
+			],
+			"tiers": [
+				{
+					"level": 1,
+					"dropBonus": 0,
+					"spawnSpeed": 0,
+					"cost": 0
+				}
+			],
+			"perks": []
+		},
+		{
+			"id": "ZOMBIFIED_PIGLIN",
+			"name": "Zombified Piglin",
+			"icon": "spawner",
+			"maxStack": 1000,
+			"vanillaDrops": false,
+			"drops": [
+				{
+					"item": "Rotten Flesh",
+					"icon": "rotten_flesh",
+					"chance": 50,
+					"min": 1,
+					"max": 1
+				},
+				{
+					"item": "Gold Nugget",
+					"icon": "gold_nugget",
+					"chance": 50,
+					"min": 1,
+					"max": 1
+				},
+				{
+					"item": "Gold Ingot",
+					"icon": "gold_ingot",
+					"chance": 2.5,
+					"min": 1,
+					"max": 1
+				}
+			],
+			"tiers": [
+				{
+					"level": 1,
+					"dropBonus": 0,
+					"spawnSpeed": 0,
+					"cost": 0
+				}
+			],
+			"perks": []
+		},
+		{
+			"id": "BLAZE",
+			"name": "Blaze",
+			"icon": "spawner",
+			"maxStack": 1000,
+			"vanillaDrops": false,
+			"drops": [
+				{
+					"item": "Blaze Rod",
+					"icon": "blaze_rod",
+					"chance": 50,
+					"min": 1,
+					"max": 1
+				}
+			],
+			"tiers": [
+				{
+					"level": 1,
+					"dropBonus": 0,
+					"spawnSpeed": 0,
+					"cost": 0
+				}
+			],
+			"perks": []
+		},
+		{
+			"id": "WITHER_SKELETON",
+			"name": "Wither Skeleton",
+			"icon": "spawner",
+			"maxStack": 500,
+			"vanillaDrops": false,
+			"drops": [
+				{
+					"item": "Coal",
+					"icon": "coal",
+					"chance": 50,
+					"min": 1,
+					"max": 1
+				},
+				{
+					"item": "Bone",
+					"icon": "bone",
+					"chance": 67,
+					"min": 1,
+					"max": 2
+				},
+				{
+					"item": "Wither Skeleton Skull",
+					"icon": "wither_skeleton_skull",
+					"chance": 2.5,
+					"min": 1,
+					"max": 1
+				}
+			],
+			"tiers": [
+				{
+					"level": 1,
+					"dropBonus": 0,
+					"spawnSpeed": 0,
+					"cost": 0
+				}
+			],
+			"perks": []
+		},
+		{
+			"id": "ENDERMAN",
+			"name": "Enderman",
+			"icon": "spawner",
+			"maxStack": 500,
+			"vanillaDrops": false,
+			"drops": [
+				{
+					"item": "Ender Pearl",
+					"icon": "ender_pearl",
+					"chance": 50,
+					"min": 1,
+					"max": 1
+				}
+			],
+			"tiers": [
+				{
+					"level": 1,
+					"dropBonus": 0,
+					"spawnSpeed": 0,
+					"cost": 0
+				}
+			],
+			"perks": []
+		},
+		{
+			"id": "IRON_GOLEM",
+			"name": "Iron Golem",
+			"icon": "spawner",
+			"maxStack": 500,
+			"vanillaDrops": false,
+			"drops": [
+				{
+					"item": "Iron Ingot",
+					"icon": "iron_ingot",
+					"chance": 100,
+					"min": 3,
+					"max": 5
+				},
+				{
+					"item": "Poppy",
+					"icon": "poppy",
+					"chance": 67,
+					"min": 1,
+					"max": 2
+				}
+			],
+			"tiers": [
+				{
+					"level": 1,
+					"dropBonus": 0,
+					"spawnSpeed": 0,
+					"cost": 0
+				}
+			],
+			"perks": []
+		},
+		{
+			"id": "COW",
+			"name": "Cow",
+			"icon": "spawner",
+			"maxStack": 200,
+			"vanillaDrops": false,
+			"drops": [
+				{
+					"item": "Leather",
+					"icon": "leather",
+					"chance": 67,
+					"min": 1,
+					"max": 2
+				},
+				{
+					"item": "Raw Beef",
+					"icon": "beef",
+					"chance": 100,
+					"min": 1,
+					"max": 3
+				}
+			],
+			"tiers": [
+				{
+					"level": 1,
+					"dropBonus": 0,
+					"spawnSpeed": 0,
+					"cost": 0
+				}
+			],
+			"perks": []
+		},
+		{
+			"id": "PIG",
+			"name": "Pig",
+			"icon": "spawner",
+			"maxStack": 200,
+			"vanillaDrops": false,
+			"drops": [
+				{
+					"item": "Raw Porkchop",
+					"icon": "porkchop",
+					"chance": 100,
+					"min": 1,
+					"max": 3
+				}
+			],
+			"tiers": [
+				{
+					"level": 1,
+					"dropBonus": 0,
+					"spawnSpeed": 0,
+					"cost": 0
+				}
+			],
+			"perks": []
+		},
+		{
+			"id": "SHEEP",
+			"name": "Sheep",
+			"icon": "spawner",
+			"maxStack": 200,
+			"vanillaDrops": false,
+			"drops": [
+				{
+					"item": "White Wool",
+					"icon": "white_wool",
+					"chance": 100,
+					"min": 1,
+					"max": 1
+				},
+				{
+					"item": "Raw Mutton",
+					"icon": "mutton",
+					"chance": 100,
+					"min": 1,
+					"max": 2
+				}
+			],
+			"tiers": [
+				{
+					"level": 1,
+					"dropBonus": 0,
+					"spawnSpeed": 0,
+					"cost": 0
+				}
+			],
+			"perks": []
+		},
+		{
+			"id": "CHICKEN",
+			"name": "Chicken",
+			"icon": "spawner",
+			"maxStack": 200,
+			"vanillaDrops": false,
+			"drops": [
+				{
+					"item": "Feather",
+					"icon": "feather",
+					"chance": 67,
+					"min": 1,
+					"max": 2
+				},
+				{
+					"item": "Raw Chicken",
+					"icon": "chicken",
+					"chance": 100,
+					"min": 1,
+					"max": 1
+				}
+			],
+			"tiers": [
+				{
+					"level": 1,
+					"dropBonus": 0,
+					"spawnSpeed": 0,
+					"cost": 0
+				}
+			],
+			"perks": []
+		},
+		{
+			"id": "SLIME",
+			"name": "Slime",
+			"icon": "spawner",
+			"maxStack": 200,
+			"vanillaDrops": false,
+			"drops": [
+				{
+					"item": "Slime Ball",
+					"icon": "slime_ball",
+					"chance": 67,
+					"min": 1,
+					"max": 2
+				}
+			],
+			"tiers": [
+				{
+					"level": 1,
+					"dropBonus": 0,
+					"spawnSpeed": 0,
+					"cost": 0
+				}
+			],
+			"perks": []
+		},
+		{
+			"id": "MAGMA_CUBE",
+			"name": "Magma Cube",
+			"icon": "spawner",
+			"maxStack": 200,
+			"vanillaDrops": false,
+			"drops": [
+				{
+					"item": "Magma Cream",
+					"icon": "magma_cream",
+					"chance": 50,
+					"min": 1,
+					"max": 1
+				}
+			],
+			"tiers": [
+				{
+					"level": 1,
+					"dropBonus": 0,
+					"spawnSpeed": 0,
+					"cost": 0
+				}
+			],
+			"perks": []
+		}
+	]
+}
