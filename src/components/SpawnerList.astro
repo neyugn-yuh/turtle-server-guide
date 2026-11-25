@@ -108,7 +108,7 @@ const mobs: any[] = data.mobs;
 						<div class="sl-scroll">
 							<table>
 								<thead>
-									<tr><th>Cấp</th><th>Thêm đồ rơi</th><th>Thêm tốc độ sinh</th><th>Mob mỗi chu kỳ</th><th>Mob mỗi phút</th><th>Phí ({currency})</th></tr>
+									<tr><th>Cấp</th><th>Thêm đồ rơi</th><th>Thêm tốc độ sinh</th><th>Mob mỗi phút</th><th>Phí ({currency})</th></tr>
 								</thead>
 								<tbody>
 									{mob.tiers.map((tier: any) => (
@@ -116,8 +116,7 @@ const mobs: any[] = data.mobs;
 											<td>{tier.level}</td>
 											<td>{tier.dropBonus > 0 ? `+${num(tier.dropBonus)}%` : '–'}</td>
 											<td>{tier.spawnSpeed > 0 ? `+${num(tier.spawnSpeed)}%` : '–'}</td>
-											<td>{num(perCycle(tier))}</td>
-											<td>{num(perMinute(tier))}</td>
+																						<td>{num(perMinute(tier))}</td>
 											<td>{tier.cost > 0 ? num(tier.cost) : '–'}</td>
 										</tr>
 									))}
