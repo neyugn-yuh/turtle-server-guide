@@ -3,8 +3,8 @@
 	"currency": "mobcoins",
 	"spawnerBase": {
 		"spawnCount": 4,
-		"minDelayTicks": 200,
-		"maxDelayTicks": 800
+		"minDelayTicks": 400,
+		"maxDelayTicks": 400
 	},
 	"mobs": [
 		{
