@@ -44,6 +44,7 @@ const ENCHANTS = {
 const LINES = [
 	// each line lists its sets from weak to strong (the tier of the pieces: Tân Thủ and Cổ Xưa 1, Huyền Thoại 2 ... Thượng Cổ 6, Thượng Long 8)
 	['Phổ thông', ['tanthu', 'coxua', 'huyenthoai', 'huyenkim', 'truyenthuyet', 'toicao', 'thuongco', 'thuonglong']],
+	['Đặc biệt', ['daibang', 'dathu', 'quaden', 'tieuyeu']],
 	['Bá vương', ['bavuong', 'bavuongcuongno']],
 	// the five elements: Kim, Mộc, Thủy, Hỏa, Thổ in each of the three grades (Tinh < Vương < Thần), one line per grade
 	['Ngũ hành · Tinh', ['kimtinh', 'moctinh', 'thuytinh', 'hoatinh', 'thotinh']],

@@ -1,14 +1,14 @@
 {
 	"lines": [
 		"Phổ thông",
+		"Đặc biệt",
 		"Bá vương",
 		"Ngũ hành · Tinh",
 		"Ngũ hành · Vương",
 		"Ngũ hành · Thần",
 		"Huyết linh",
 		"Huyết ma vương",
-		"Linh hồn",
-		"Khác"
+		"Linh hồn"
 	],
 	"sets": [
 		{
@@ -648,6 +648,134 @@
 					]
 				}
 			]
+		},
+		{
+			"id": "daibang",
+			"slug": "daibang",
+			"name": "Đại Bàng",
+			"line": "Đặc biệt",
+			"pieces": {
+				"helmet": [
+					"MU:MUDAIBANG"
+				],
+				"chestplate": [
+					"AO:AODAIBANG"
+				],
+				"leggings": [
+					"QUAN:QUANDAIBANG"
+				],
+				"boots": [
+					"GIAY:GIAYDAIBANG"
+				]
+			},
+			"weapons": [],
+			"bonuses": []
+		},
+		{
+			"id": "dathu",
+			"slug": "dathu",
+			"name": "Dã Thú",
+			"line": "Đặc biệt",
+			"pieces": {
+				"helmet": [
+					"MU:MUDATHU"
+				],
+				"chestplate": [
+					"AO:AODATHU"
+				],
+				"leggings": [
+					"QUAN:QUANDATHU"
+				],
+				"boots": [
+					"GIAY:GIAYDATHU"
+				]
+			},
+			"weapons": [
+				{
+					"items": [
+						"RIU:RIUDATHU"
+					],
+					"bonus": []
+				}
+			],
+			"bonuses": [
+				{
+					"pieces": 4,
+					"lines": [
+						"Giảm 21% sát thương nhận"
+					]
+				},
+				{
+					"pieces": 5,
+					"lines": [
+						"Tăng 12% sát thương gây ra"
+					]
+				}
+			]
+		},
+		{
+			"id": "quaden",
+			"slug": "quaden",
+			"name": "Quạ Đen",
+			"line": "Đặc biệt",
+			"pieces": {
+				"helmet": [
+					"MU:MUQUADEN"
+				],
+				"chestplate": [
+					"AO:AOQUADEN"
+				],
+				"leggings": [
+					"QUAN:QUANQUADEN"
+				],
+				"boots": [
+					"GIAY:GIAYQUADEN"
+				]
+			},
+			"weapons": [
+				{
+					"items": [
+						"SWORD:KIEMQUADEN"
+					],
+					"bonus": []
+				}
+			],
+			"bonuses": [
+				{
+					"pieces": 4,
+					"lines": [
+						"Giảm 21% sát thương nhận"
+					]
+				},
+				{
+					"pieces": 5,
+					"lines": [
+						"Tăng 10% sát thương gây ra"
+					]
+				}
+			]
+		},
+		{
+			"id": "tieuyeu",
+			"slug": "tieuyeu",
+			"name": "Tiểu Yêu",
+			"line": "Đặc biệt",
+			"pieces": {
+				"helmet": [
+					"MU:MUTIEUYEU"
+				],
+				"chestplate": [
+					"AO:AOTIEUYEU"
+				],
+				"leggings": [
+					"QUAN:QUANTIEUYEU"
+				],
+				"boots": [
+					"GIAY:GIAYTIEUYEU"
+				]
+			},
+			"weapons": [],
+			"bonuses": []
 		},
 		{
 			"id": "bavuong",
@@ -2218,134 +2346,6 @@
 					]
 				}
 			]
-		},
-		{
-			"id": "daibang",
-			"slug": "daibang",
-			"name": "Đại Bàng",
-			"line": "Khác",
-			"pieces": {
-				"helmet": [
-					"MU:MUDAIBANG"
-				],
-				"chestplate": [
-					"AO:AODAIBANG"
-				],
-				"leggings": [
-					"QUAN:QUANDAIBANG"
-				],
-				"boots": [
-					"GIAY:GIAYDAIBANG"
-				]
-			},
-			"weapons": [],
-			"bonuses": []
-		},
-		{
-			"id": "dathu",
-			"slug": "dathu",
-			"name": "Dã Thú",
-			"line": "Khác",
-			"pieces": {
-				"helmet": [
-					"MU:MUDATHU"
-				],
-				"chestplate": [
-					"AO:AODATHU"
-				],
-				"leggings": [
-					"QUAN:QUANDATHU"
-				],
-				"boots": [
-					"GIAY:GIAYDATHU"
-				]
-			},
-			"weapons": [
-				{
-					"items": [
-						"RIU:RIUDATHU"
-					],
-					"bonus": []
-				}
-			],
-			"bonuses": [
-				{
-					"pieces": 4,
-					"lines": [
-						"Giảm 21% sát thương nhận"
-					]
-				},
-				{
-					"pieces": 5,
-					"lines": [
-						"Tăng 12% sát thương gây ra"
-					]
-				}
-			]
-		},
-		{
-			"id": "quaden",
-			"slug": "quaden",
-			"name": "Quạ Đen",
-			"line": "Khác",
-			"pieces": {
-				"helmet": [
-					"MU:MUQUADEN"
-				],
-				"chestplate": [
-					"AO:AOQUADEN"
-				],
-				"leggings": [
-					"QUAN:QUANQUADEN"
-				],
-				"boots": [
-					"GIAY:GIAYQUADEN"
-				]
-			},
-			"weapons": [
-				{
-					"items": [
-						"SWORD:KIEMQUADEN"
-					],
-					"bonus": []
-				}
-			],
-			"bonuses": [
-				{
-					"pieces": 4,
-					"lines": [
-						"Giảm 21% sát thương nhận"
-					]
-				},
-				{
-					"pieces": 5,
-					"lines": [
-						"Tăng 10% sát thương gây ra"
-					]
-				}
-			]
-		},
-		{
-			"id": "tieuyeu",
-			"slug": "tieuyeu",
-			"name": "Tiểu Yêu",
-			"line": "Khác",
-			"pieces": {
-				"helmet": [
-					"MU:MUTIEUYEU"
-				],
-				"chestplate": [
-					"AO:AOTIEUYEU"
-				],
-				"leggings": [
-					"QUAN:QUANTIEUYEU"
-				],
-				"boots": [
-					"GIAY:GIAYTIEUYEU"
-				]
-			},
-			"weapons": [],
-			"bonuses": []
 		}
 	],
 	"items": [
