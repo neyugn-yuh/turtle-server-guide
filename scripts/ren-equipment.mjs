@@ -176,6 +176,12 @@ export function buildEquipment({ base, readYaml, stripCodes, pretty, round, warn
 	const stripMaterial = (needs) => needs.map(({ material, ...n }) => n);
 	function materialRecipe(recipe, file) {
 		const out = Object.values(recipe.ItemsResult ?? {}).map((r) => r.Item).filter((i) => i?.Type === 'MATERIAL' && i.Id);
+		// a spawner recipe: the result is given by a command (stacker give <player> spawner <mob> 1)
+		const spawner = (recipe.CommandSuccess ?? []).map((c) => /^stacker give <player> spawner (\w+) 1$/.exec(String(c))).find(Boolean);
+		if (!out.length && spawner) {
+			for (const e of Object.values(recipe.ItemsRequire ?? {})) if (e.Item?.Type === 'MATERIAL' && e.Item.Id) useOf(String(e.Item.Id), { kind: 'spawner', entity: spawner[1].toUpperCase() });
+			return;
+		}
 		if (out.length !== 1) return;
 		const needs = Object.values(recipe.ItemsRequire ?? {}).map((e) => ingredient(e, file));
 		if (!needs.length || needs.some((n) => !n)) return;
@@ -349,10 +355,15 @@ export function buildEquipment({ base, readYaml, stripCodes, pretty, round, warn
 			if (!info?.name) return void warn(`MATERIAL:${id} has no name (left out)`);
 			const usedBy = new Map();
 			for (const use of materialUses.get(id) ?? []) {
+				// a spawner is named later (ren-materials.mjs), from the spawner shop
+				if (use.kind === 'spawner') {
+					usedBy.set(`spawner:${use.entity}`, { kind: 'spawner', entity: use.entity });
+					continue;
+				}
 				const name = use.kind === 'item' ? byKey.get(use.key)?.name : mmoName('MATERIAL', use.id)?.name;
-				if (name && name !== info.name) usedBy.set(name, use.kind);
+				if (name && name !== info.name) usedBy.set(name, { name, kind: use.kind });
 			}
-			return { id, name: info.name, icon: info.icon, recipes: materialRecipes.get(id) ?? [], usedBy: [...usedBy].map(([name, kind]) => ({ name, kind })).sort((a, b) => a.name.localeCompare(b.name, 'vi')) };
+			return { id, name: info.name, icon: info.icon, recipes: materialRecipes.get(id) ?? [], usedBy: [...usedBy.values()] };
 		})
 		.filter(Boolean);
 	return {

@@ -12,8 +12,8 @@
  * the sync (like scripts/sync-materials.mjs does for Sky Dungeon): put it in a group below, or in HIDDEN to keep it off the wiki.
  */
 
-/** Materials left off the wiki on purpose (the Dragon Ball event gems). */
-const HIDDEN = new Set(['NGOCRONG1SAO', 'NGOCRONG2SAO', 'NGOCRONG3SAO', 'NGOCRONG4SAO', 'NGOCRONG5SAO', 'NGOCRONG6SAO', 'NGOCRONG7SAO', 'NGOCRONGHOANGKIM']);
+/** Materials left off the wiki on purpose (the Dragon Ball event gems, the Trung Thu items). */
+const HIDDEN = new Set(['NGOCRONG1SAO', 'NGOCRONG2SAO', 'NGOCRONG3SAO', 'NGOCRONG4SAO', 'NGOCRONG5SAO', 'NGOCRONG6SAO', 'NGOCRONG7SAO', 'NGOCRONGHOANGKIM', 'NGUYETHON', 'NGUYETTHACH']);
 
 /** The pages of the materials section: id (also the file name of the page), title, material ids (as in MMOItems/item/material.yml). */
 export const MATERIAL_GROUPS = [
@@ -33,10 +33,15 @@ export const MATERIAL_GROUPS = [
 			'MANHKHIENBANGGIA1280', 'MANHKHIENDIANGUC1280', 'MANHKHIENTHIENHA1280', 'MANHKHIENYEUTINH256', 'MANHKHIENPHUTHUYDEN640',
 		],
 	},
-	{ id: 'khac', title: 'Khác', ids: ['DACUONGHOA', 'DANANGCAPRIU', 'DATHANTAI', 'BUIVANGPHEP', 'KESACHMATMA', 'DAURONG', 'NGUYETHON', 'NGUYETTHACH'] },
+	{ id: 'khac', title: 'Khác', ids: ['DACUONGHOA', 'DANANGCAPRIU', 'DATHANTAI', 'BUIVANGPHEP', 'KESACHMATMA', 'DAURONG', 'TRAITIMQUAIVAT1', 'TRAITIMQUAIVAT2', 'TRAITIMQUAIVAT3'] },
 ];
 
-export function buildMaterials({ materials: all, dungeons, chests, warn, fail }) {
+/** Spawners that /ecraft makes but the spawner shop does not sell (entity -> name). */
+const CRAFT_ONLY_SPAWNERS = { HORSE: 'Lồng Ngựa', HUSK: 'Lồng Husk' };
+
+export function buildMaterials({ materials: all, dungeons, chests, spawners, warn, fail }) {
+	// spawner recipes (/ecraft): the entity the recipe gives -> the name of the spawner in the shop
+	const spawnerName = new Map([...Object.entries(CRAFT_ONLY_SPAWNERS), ...spawners.map((s) => [s.entity, s.name])]);
 	const found = all.filter((m) => !HIDDEN.has(m.id));
 	const groupOf = new Map(MATERIAL_GROUPS.flatMap((g) => g.ids.map((id) => [id, g.id])));
 	const loose = found.filter((m) => !groupOf.has(m.id));
@@ -72,11 +77,21 @@ export function buildMaterials({ materials: all, dungeons, chests, warn, fail })
 		}
 	}
 
+	const usedByOf = (m) =>
+		m.usedBy
+			.map((u) => {
+				if (u.kind !== 'spawner') return u;
+				const name = spawnerName.get(u.entity);
+				if (!name) return void warn(`materials: ${m.id} is used for a ${u.entity} spawner that the spawner shop does not sell (left out)`);
+				return { name, kind: 'spawner' };
+			})
+			.filter(Boolean)
+			.sort((a, b) => a.name.localeCompare(b.name, 'vi'));
 	const unique = (list) => [...new Map(list.map((x) => [JSON.stringify(x), x])).values()];
 	return {
 		groups: MATERIAL_GROUPS.map(({ id, title }) => ({ id, title })),
 		materials: materials
-			.map((m) => ({ ...m, drops: unique(drops.get(m.id)), chests: unique(inChests.get(m.id)) }))
+			.map((m) => ({ ...m, usedBy: usedByOf(m), drops: unique(drops.get(m.id)), chests: unique(inChests.get(m.id)) }))
 			.sort((a, b) => a.name.localeCompare(b.name, 'vi')),
 	};
 }

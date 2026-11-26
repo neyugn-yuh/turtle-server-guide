@@ -2611,88 +2611,6 @@
 			"chests": []
 		},
 		{
-			"id": "NGUYETHON",
-			"name": "Nguyệt Hồn",
-			"icon": "ghast_tear",
-			"recipes": [],
-			"usedBy": [
-				{
-					"name": "Nguyệt Quang 1",
-					"kind": "item"
-				},
-				{
-					"name": "Nguyệt Quang 10",
-					"kind": "item"
-				},
-				{
-					"name": "Nguyệt Quang 11",
-					"kind": "item"
-				},
-				{
-					"name": "Nguyệt Quang 2",
-					"kind": "item"
-				},
-				{
-					"name": "Nguyệt Quang 3",
-					"kind": "item"
-				},
-				{
-					"name": "Nguyệt Quang 4",
-					"kind": "item"
-				},
-				{
-					"name": "Nguyệt Quang 5",
-					"kind": "item"
-				},
-				{
-					"name": "Nguyệt Quang 6",
-					"kind": "item"
-				},
-				{
-					"name": "Nguyệt Quang 7",
-					"kind": "item"
-				},
-				{
-					"name": "Nguyệt Quang 8",
-					"kind": "item"
-				},
-				{
-					"name": "Nguyệt Quang 9",
-					"kind": "item"
-				}
-			],
-			"category": "khac",
-			"drops": [],
-			"chests": []
-		},
-		{
-			"id": "NGUYETTHACH",
-			"name": "Nguyệt Thạch",
-			"icon": "amethyst_shard",
-			"recipes": [],
-			"usedBy": [
-				{
-					"name": "Nguyệt Đế 2",
-					"kind": "item"
-				},
-				{
-					"name": "Nguyệt Đế 3",
-					"kind": "item"
-				},
-				{
-					"name": "Nguyệt Quang 10",
-					"kind": "item"
-				},
-				{
-					"name": "Nguyệt Quang 11",
-					"kind": "item"
-				}
-			],
-			"category": "khac",
-			"drops": [],
-			"chests": []
-		},
-		{
 			"id": "SONGSAT1",
 			"name": "Song Sắt I",
 			"icon": "iron_bars",
@@ -2712,6 +2630,30 @@
 				}
 			],
 			"usedBy": [
+				{
+					"name": "Lồng Bò",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Bộ Xương",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Creeper",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Gà",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Heo",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Thây Ma",
+					"kind": "spawner"
+				},
 				{
 					"name": "Song Sắt II",
 					"kind": "material"
@@ -2742,6 +2684,30 @@
 			],
 			"usedBy": [
 				{
+					"name": "Lồng Dân Làng",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Enderman",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Ghast",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Kẻ Chiêu Hồn",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Nhện",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Quỷ Lửa",
+					"kind": "spawner"
+				},
+				{
 					"name": "Song Sắt III",
 					"kind": "material"
 				}
@@ -2769,9 +2735,181 @@
 					]
 				}
 			],
-			"usedBy": [],
+			"usedBy": [
+				{
+					"name": "Lồng Husk",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Ngựa",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Rận Ender",
+					"kind": "spawner"
+				}
+			],
 			"category": "khoang-san",
 			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "TRAITIMQUAIVAT1",
+			"name": "Trái Tim Quái Vật I",
+			"icon": "redstone",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Lồng Bò",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Bộ Xương",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Creeper",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Gà",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Heo",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Thây Ma",
+					"kind": "spawner"
+				}
+			],
+			"category": "khac",
+			"drops": [
+				{
+					"dungeon": 1,
+					"mob": "Ma Hải Tặc",
+					"boss": true,
+					"via": "nearby",
+					"min": 1,
+					"max": 1,
+					"chance": 100
+				},
+				{
+					"dungeon": 2,
+					"mob": "Nhện Yêu Tinh",
+					"boss": true,
+					"via": "nearby",
+					"min": 1,
+					"max": 1,
+					"chance": 100
+				}
+			],
+			"chests": []
+		},
+		{
+			"id": "TRAITIMQUAIVAT2",
+			"name": "Trái Tim Quái Vật II",
+			"icon": "redstone",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Lồng Dân Làng",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Enderman",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Ghast",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Kẻ Chiêu Hồn",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Nhện",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Quỷ Lửa",
+					"kind": "spawner"
+				}
+			],
+			"category": "khac",
+			"drops": [
+				{
+					"dungeon": 3,
+					"mob": "Phù Thủy Đen",
+					"boss": true,
+					"via": "nearby",
+					"min": 1,
+					"max": 1,
+					"chance": 100
+				},
+				{
+					"dungeon": 4,
+					"mob": "Jack",
+					"boss": true,
+					"via": "nearby",
+					"min": 1,
+					"max": 1,
+					"chance": 100
+				},
+				{
+					"dungeon": 4,
+					"mob": "Jackson",
+					"boss": true,
+					"via": "nearby",
+					"min": 1,
+					"max": 1,
+					"chance": 100
+				}
+			],
+			"chests": []
+		},
+		{
+			"id": "TRAITIMQUAIVAT3",
+			"name": "Trái Tim Quái Vật III",
+			"icon": "redstone",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Lồng Husk",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Ngựa",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Rận Ender",
+					"kind": "spawner"
+				}
+			],
+			"category": "khac",
+			"drops": [
+				{
+					"dungeon": 5,
+					"mob": "Rồng Không Gian",
+					"boss": true,
+					"via": "nearby",
+					"min": 1,
+					"max": 1,
+					"chance": 100
+				},
+				{
+					"dungeon": 6,
+					"mob": "Arcturus",
+					"boss": true,
+					"via": "nearby",
+					"min": 2,
+					"max": 2,
+					"chance": 100
+				}
+			],
 			"chests": []
 		},
 		{

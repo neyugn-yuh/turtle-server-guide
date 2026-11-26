@@ -499,8 +499,8 @@ const enchantsData = {
 if (![enchantsData.baseSlots, enchantsData.maxSlots].every(Number.isFinite)) fail('SkyEnchants/config.yml: enchants.base-slots / max-slots missing');
 
 const { equipment: equipmentData, materials: recipeMaterials } = buildEquipment({ base: BASE, readYaml, stripCodes, pretty, round, warn, fail });
-const materialData = buildMaterials({ materials: recipeMaterials, dungeons, chests: chestList, warn, fail });
 const { spawnerData } = buildSpawners({ readYaml, stripCodes, pretty, warn, fail });
+const materialData = buildMaterials({ materials: recipeMaterials, dungeons, chests: chestList, spawners: spawnerData.spawners, warn, fail });
 // the island contribution race: TurtleIsland uses the same contribution.yml / gui/top.yml as SD-Island (see island-top-lib.mjs)
 const readText = (path) => {
 	const file = join(BASE, path);
