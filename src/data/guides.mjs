@@ -71,7 +71,7 @@ export const guides = [
 	},
 	{
 		slug: 'gear',
-		title: 'Trang bị & vũ khí',
+		title: 'Trang bị',
 		description: 'Các bộ giáp và hiệu ứng bộ, kiếm, rìu, cung, khiên, cúp: chỉ số và công thức chế tạo.',
 		landing: 'bo-trang-bi',
 	},
