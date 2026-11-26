@@ -9,15 +9,20 @@
  */
 import RenItemTable from './RenItemTable.astro';
 import { hasMinionIcon, resolveGearIcon } from '../lib/ren-icons';
+import { hlw2026Lines } from '../data/gear-pages.mjs';
 
 interface Props {
 	server: string;
 	view: 'sets' | 'set' | 'kind';
 	id?: string;
 	kind?: 'sword' | 'axe' | 'farm-axe' | 'bow' | 'shield' | 'pickaxe';
+	/** sets view only: show just these lines of sets */
+	only?: string[];
+	/** sets view only: leave these lines out (they have a page of their own) */
+	exclude?: string[];
 }
 
-const { server, view, id, kind } = Astro.props;
+const { server, view, id, kind, only, exclude } = Astro.props;
 const files = import.meta.glob('../data/servers/*/gear.json', { eager: true, import: 'default' }) as Record<string, any>;
 const data = files[`../data/servers/${server}/gear.json`];
 if (!data) throw new Error(`RenEquipment: no gear.json for server "${server}", run node scripts/sync-ren.mjs`);
@@ -25,6 +30,10 @@ if (!data) throw new Error(`RenEquipment: no gear.json for server "${server}", r
 const items: any[] = data.items;
 const sets: any[] = data.sets;
 const byKey = new Map(items.map((i: any) => [i.key, i]));
+
+// the lines and sets of the list page: all of them, or only / without the lines given
+const pageLines: string[] = (only ?? data.lines).filter((line: string) => !(exclude ?? []).includes(line));
+const pageSets: any[] = sets.filter((s: any) => pageLines.includes(s.line));
 
 const set = view === 'set' ? sets.find((s: any) => s.id === id) : null;
 if (view === 'set' && !set) throw new Error(`RenEquipment: no set "${id}" in gear.json`);
@@ -121,7 +130,7 @@ function bonusPreview(line: string) {
 const setCardIcons: Record<string, { chestSrc: string; helmSrc: string }> = {};
 if (view === 'sets') {
 	await Promise.all(
-		sets.map(async (s: any) => {
+		pageSets.map(async (s: any) => {
 			const chest = byKey.get(s.pieces.chestplate?.[0]);
 			const helm = byKey.get(s.pieces.helmet?.[0]);
 			const [chestSrc, helmSrc] = await Promise.all([
@@ -189,9 +198,9 @@ if (view === 'kind' && !kindItems.length) throw new Error(`RenEquipment: no item
 
 					<div class="rqs-lines" role="tablist" aria-label="Lọc theo dòng trang bị">
 						<button type="button" class="rqs-line-pill is-active" data-rqs-line="" role="tab" aria-selected="true">
-							Tất cả <span class="rqs-pill-num">{sets.length}</span>
+							Tất cả <span class="rqs-pill-num">{pageSets.length}</span>
 						</button>
-						{data.lines.map((line: string) => {
+						{pageLines.map((line: string) => {
 							const lineCount = sets.filter((s: any) => s.line === line).length;
 							return (
 								<button type="button" class="rqs-line-pill" data-rqs-line={line} role="tab" aria-selected="false">
@@ -202,11 +211,11 @@ if (view === 'kind' && !kindItems.length) throw new Error(`RenEquipment: no item
 					</div>
 
 					<p class="rqs-status" data-rqs-status>
-						Đang hiện {sets.length} bộ trang bị trong {data.lines.length} dòng
+						Đang hiện {pageSets.length} bộ trang bị trong {pageLines.length} dòng
 					</p>
 				</div>
 
-				{data.lines.map((line: string) => {
+				{pageLines.map((line: string) => {
 					const lineSets = sets.filter((s: any) => s.line === line);
 					return (
 						<section class="rqs-section" data-rqs-section={line}>
@@ -295,7 +304,7 @@ if (view === 'kind' && !kindItems.length) throw new Error(`RenEquipment: no item
 		view === 'set' && set && (
 			<div class="rqd" data-rqd-root>
 				<div class="rqd-top-bar">
-					<a class="rqd-back" href={`${base}/${server}/gear/bo-trang-bi/`}>
+					<a class="rqd-back" href={`${base}/${server}/gear/${hlw2026Lines.includes(set.line) ? 'su-kien-hlw-2026' : 'bo-trang-bi'}/`}>
 						← Danh sách bộ trang bị
 					</a>
 					<span class="rqd-line-badge">Dòng: {set.line}</span>

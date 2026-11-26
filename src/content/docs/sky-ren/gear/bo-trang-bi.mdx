@@ -1,13 +1,14 @@
 ---
 title: "Trang bị: Danh sách bộ trang bị"
-description: Các bộ giáp của Sky Rèn, từ Tân Thủ đến Huyết Ma Vương.
+description: Các bộ giáp của Sky Rèn, từ Tân Thủ đến Ngũ hành Thần.
 sidebar:
   label: Bộ trang bị
   order: 1
 ---
 
 import RenEquipment from '../../../../components/RenEquipment.astro';
+import { hlw2026Lines } from '../../../../data/gear-pages.mjs';
 
-Các bộ giáp của Sky Rèn, từ Tân Thủ đến Huyết Ma Vương. Mặc đủ 4 món cùng bộ để nhận hiệu ứng, cầm thêm vũ khí của bộ để nhận hiệu ứng mạnh hơn. Bấm vào một bộ để xem chỉ số từng món và công thức chế tạo. Gõ `/ecraft` để mở bảng chế tạo.
+Các bộ giáp của Sky Rèn, từ Tân Thủ đến Ngũ hành Thần. Các bộ của sự kiện Halloween 2026 nằm ở [trang riêng](/sky-ren/gear/su-kien-hlw-2026/). Mặc đủ 4 món cùng bộ để nhận hiệu ứng, cầm thêm vũ khí của bộ để nhận hiệu ứng mạnh hơn. Bấm vào một bộ để xem chỉ số từng món và công thức chế tạo. Gõ `/ecraft` để mở bảng chế tạo.
 
-<RenEquipment server="sky-ren" view="sets" />
+<RenEquipment server="sky-ren" view="sets" exclude={hlw2026Lines} />
