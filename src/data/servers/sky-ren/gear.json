@@ -1,10 +1,10 @@
 {
 	"lines": [
 		"Phổ thông",
+		"Bá vương",
 		"Ngũ hành · Tinh",
 		"Ngũ hành · Vương",
 		"Ngũ hành · Thần",
-		"Bá vương",
 		"Huyết linh",
 		"Huyết ma vương",
 		"Linh hồn",
@@ -645,6 +645,92 @@
 					"pieces": 5,
 					"lines": [
 						"Tăng 35% sát thương gây ra"
+					]
+				}
+			]
+		},
+		{
+			"id": "bavuong",
+			"slug": "bavuong",
+			"name": "Bá Vương",
+			"line": "Bá vương",
+			"pieces": {
+				"helmet": [
+					"MU:MUBAVUONG"
+				],
+				"chestplate": [
+					"AO:AOBAVUONG"
+				],
+				"leggings": [
+					"QUAN:QUANBAVUONG"
+				],
+				"boots": [
+					"GIAY:GIAYBAVUONG"
+				]
+			},
+			"weapons": [
+				{
+					"items": [
+						"RIU:RIUBAVUONG"
+					],
+					"bonus": []
+				}
+			],
+			"bonuses": [
+				{
+					"pieces": 4,
+					"lines": [
+						"Giảm 33% sát thương nhận",
+						"Luôn có hiệu ứng Kháng Cự I"
+					]
+				},
+				{
+					"pieces": 5,
+					"lines": [
+						"Tăng 40% sát thương gây ra"
+					]
+				}
+			]
+		},
+		{
+			"id": "bavuongcuongno",
+			"slug": "bavuongcuongno",
+			"name": "Cuồng Nộ",
+			"line": "Bá vương",
+			"pieces": {
+				"helmet": [
+					"MU:MUBAVUONGCUONGNO"
+				],
+				"chestplate": [
+					"AO:AOBAVUONGCUONGNO"
+				],
+				"leggings": [
+					"QUAN:QUANBAVUONGCUONGNO"
+				],
+				"boots": [
+					"GIAY:GIAYBAVUONGCUONGNO"
+				]
+			},
+			"weapons": [
+				{
+					"items": [
+						"RIU:RIUBAVUONGCUONGNO"
+					],
+					"bonus": []
+				}
+			],
+			"bonuses": [
+				{
+					"pieces": 4,
+					"lines": [
+						"Giảm 40% sát thương nhận",
+						"Luôn có hiệu ứng Kháng Cự I"
+					]
+				},
+				{
+					"pieces": 5,
+					"lines": [
+						"Tăng 50% sát thương gây ra"
 					]
 				}
 			]
@@ -1314,92 +1400,6 @@
 					"pieces": 5,
 					"lines": [
 						"Tăng 60% sát thương gây ra"
-					]
-				}
-			]
-		},
-		{
-			"id": "bavuong",
-			"slug": "bavuong",
-			"name": "Bá Vương",
-			"line": "Bá vương",
-			"pieces": {
-				"helmet": [
-					"MU:MUBAVUONG"
-				],
-				"chestplate": [
-					"AO:AOBAVUONG"
-				],
-				"leggings": [
-					"QUAN:QUANBAVUONG"
-				],
-				"boots": [
-					"GIAY:GIAYBAVUONG"
-				]
-			},
-			"weapons": [
-				{
-					"items": [
-						"RIU:RIUBAVUONG"
-					],
-					"bonus": []
-				}
-			],
-			"bonuses": [
-				{
-					"pieces": 4,
-					"lines": [
-						"Giảm 33% sát thương nhận",
-						"Luôn có hiệu ứng Kháng Cự I"
-					]
-				},
-				{
-					"pieces": 5,
-					"lines": [
-						"Tăng 40% sát thương gây ra"
-					]
-				}
-			]
-		},
-		{
-			"id": "bavuongcuongno",
-			"slug": "bavuongcuongno",
-			"name": "Cuồng Nộ",
-			"line": "Bá vương",
-			"pieces": {
-				"helmet": [
-					"MU:MUBAVUONGCUONGNO"
-				],
-				"chestplate": [
-					"AO:AOBAVUONGCUONGNO"
-				],
-				"leggings": [
-					"QUAN:QUANBAVUONGCUONGNO"
-				],
-				"boots": [
-					"GIAY:GIAYBAVUONGCUONGNO"
-				]
-			},
-			"weapons": [
-				{
-					"items": [
-						"RIU:RIUBAVUONGCUONGNO"
-					],
-					"bonus": []
-				}
-			],
-			"bonuses": [
-				{
-					"pieces": 4,
-					"lines": [
-						"Giảm 40% sát thương nhận",
-						"Luôn có hiệu ứng Kháng Cự I"
-					]
-				},
-				{
-					"pieces": 5,
-					"lines": [
-						"Tăng 50% sát thương gây ra"
 					]
 				}
 			]
