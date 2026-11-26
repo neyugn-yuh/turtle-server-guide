@@ -648,50 +648,6 @@
 			]
 		},
 		{
-			"id": "nguhanh",
-			"slug": "nguhanh",
-			"name": "Ngũ Hành",
-			"line": "Ngũ hành",
-			"pieces": {
-				"helmet": [
-					"MU:MUNGUHANH"
-				],
-				"chestplate": [
-					"AO:AONGUHANH"
-				],
-				"leggings": [
-					"QUAN:QUANNGUHANH"
-				],
-				"boots": [
-					"GIAY:GIAYNGUHANH"
-				]
-			},
-			"weapons": [
-				{
-					"items": [
-						"SWORD:NGUHANHCHANTHIENKIEM"
-					],
-					"bonus": []
-				}
-			],
-			"bonuses": [
-				{
-					"pieces": 4,
-					"lines": [
-						"Giảm 50% sát thương nhận (từ người chơi, quái)",
-						"Giảm 60% sát thương nhận (từ cung tên)",
-						"Luôn có hiệu ứng Kháng Cự III"
-					]
-				},
-				{
-					"pieces": 5,
-					"lines": [
-						"Tăng 40% sát thương gây ra"
-					]
-				}
-			]
-		},
-		{
 			"id": "kimtinh",
 			"slug": "kimtinh",
 			"name": "Kim Tinh",
@@ -2595,6 +2551,7 @@
 			"label": "Mũ",
 			"name": "Hỏa Thần",
 			"icon": "leather_helmet",
+			"dyeColor": "#ff3300",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -2651,6 +2608,7 @@
 			"label": "Mũ",
 			"name": "Hỏa Tinh",
 			"icon": "leather_helmet",
+			"dyeColor": "#ff3300",
 			"tier": 7,
 			"stats": {
 				"armor": 3,
@@ -2677,6 +2635,7 @@
 			"label": "Mũ",
 			"name": "Hỏa Vương",
 			"icon": "leather_helmet",
+			"dyeColor": "#ff3300",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -2833,6 +2792,7 @@
 			"label": "Mũ",
 			"name": "Giáp Huyết Linh 1",
 			"icon": "leather_helmet",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -2859,6 +2819,7 @@
 			"label": "Mũ",
 			"name": "Giáp Huyết Linh 2",
 			"icon": "leather_helmet",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -2885,6 +2846,7 @@
 			"label": "Mũ",
 			"name": "Giáp Huyết Linh 3",
 			"icon": "leather_helmet",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -2911,6 +2873,7 @@
 			"label": "Mũ",
 			"name": "Giáp Huyết Linh 4",
 			"icon": "leather_helmet",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -2937,6 +2900,7 @@
 			"label": "Mũ",
 			"name": "Giáp Huyết Linh 5",
 			"icon": "leather_helmet",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -2963,6 +2927,7 @@
 			"label": "Mũ",
 			"name": "Giáp Huyết Linh 6",
 			"icon": "leather_helmet",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -2989,6 +2954,7 @@
 			"label": "Mũ",
 			"name": "Giáp Huyết Linh 7",
 			"icon": "leather_helmet",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -3015,6 +2981,7 @@
 			"label": "Mũ",
 			"name": "Giáp Huyết Linh 8",
 			"icon": "leather_helmet",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -3041,6 +3008,7 @@
 			"label": "Mũ",
 			"name": "Giáp Huyết Linh 9",
 			"icon": "leather_helmet",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -3067,6 +3035,7 @@
 			"label": "Mũ",
 			"name": "Giáp Huyết Linh 10",
 			"icon": "leather_helmet",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -3353,6 +3322,7 @@
 			"label": "Mũ",
 			"name": "Kim Thần",
 			"icon": "leather_helmet",
+			"dyeColor": "#666666",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -3409,6 +3379,7 @@
 			"label": "Mũ",
 			"name": "Kim Tinh",
 			"icon": "leather_helmet",
+			"dyeColor": "#666666",
 			"tier": 7,
 			"stats": {
 				"armor": 3,
@@ -3435,6 +3406,7 @@
 			"label": "Mũ",
 			"name": "Kim Vương",
 			"icon": "leather_helmet",
+			"dyeColor": "#666666",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -3486,6 +3458,7 @@
 			"label": "Mũ",
 			"name": "Giáp Linh Hồn 1",
 			"icon": "leather_helmet",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 1.5,
@@ -3512,6 +3485,7 @@
 			"label": "Mũ",
 			"name": "Giáp Linh Hồn 2",
 			"icon": "leather_helmet",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 2,
@@ -3538,6 +3512,7 @@
 			"label": "Mũ",
 			"name": "Giáp Linh Hồn 3",
 			"icon": "leather_helmet",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 2,
@@ -3564,6 +3539,7 @@
 			"label": "Mũ",
 			"name": "Giáp Linh Hồn 4",
 			"icon": "leather_helmet",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 2.5,
@@ -3590,6 +3566,7 @@
 			"label": "Mũ",
 			"name": "Giáp Linh Hồn 5",
 			"icon": "leather_helmet",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 3,
@@ -3616,6 +3593,7 @@
 			"label": "Mũ",
 			"name": "Mộc Thần",
 			"icon": "leather_helmet",
+			"dyeColor": "#00cc00",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -3672,6 +3650,7 @@
 			"label": "Mũ",
 			"name": "Mộc Tinh",
 			"icon": "leather_helmet",
+			"dyeColor": "#00cc00",
 			"tier": 7,
 			"stats": {
 				"armor": 3,
@@ -3698,6 +3677,7 @@
 			"label": "Mũ",
 			"name": "Mộc Vương",
 			"icon": "leather_helmet",
+			"dyeColor": "#00cc00",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -3740,32 +3720,6 @@
 					]
 				}
 			]
-		},
-		{
-			"type": "MU",
-			"key": "MU:MUNGUHANH",
-			"id": "MUNGUHANH",
-			"kind": "helmet",
-			"label": "Mũ",
-			"name": "Ngũ Hành",
-			"icon": "player_head",
-			"tier": 8,
-			"stats": {
-				"armor": 3,
-				"defense": 8,
-				"maxHealth": 30
-			},
-			"enchants": [
-				{
-					"name": "Bảo vệ",
-					"level": 16
-				},
-				{
-					"name": "Độ bền",
-					"level": 10
-				}
-			],
-			"recipes": []
 		},
 		{
 			"type": "MU",
@@ -3830,6 +3784,7 @@
 			"label": "Mũ",
 			"name": "Thổ Thần",
 			"icon": "leather_helmet",
+			"dyeColor": "#006600",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -3886,6 +3841,7 @@
 			"label": "Mũ",
 			"name": "Thổ Tinh",
 			"icon": "leather_helmet",
+			"dyeColor": "#006600",
 			"tier": 7,
 			"stats": {
 				"armor": 3,
@@ -3912,6 +3868,7 @@
 			"label": "Mũ",
 			"name": "Thổ Vương",
 			"icon": "leather_helmet",
+			"dyeColor": "#006600",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -4077,6 +4034,7 @@
 			"label": "Mũ",
 			"name": "Thủy Thần",
 			"icon": "leather_helmet",
+			"dyeColor": "#0099ff",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -4133,6 +4091,7 @@
 			"label": "Mũ",
 			"name": "Thủy Tinh",
 			"icon": "leather_helmet",
+			"dyeColor": "#0099ff",
 			"tier": 7,
 			"stats": {
 				"armor": 3,
@@ -4159,6 +4118,7 @@
 			"label": "Mũ",
 			"name": "Thủy Vương",
 			"icon": "leather_helmet",
+			"dyeColor": "#0099ff",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -4504,6 +4464,7 @@
 			"label": "Áo",
 			"name": "Hỏa Thần",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ff3300",
 			"tier": 8,
 			"stats": {
 				"armor": 8,
@@ -4560,6 +4521,7 @@
 			"label": "Áo",
 			"name": "Hỏa Tinh",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ff3300",
 			"tier": 7,
 			"stats": {
 				"armor": 8,
@@ -4586,6 +4548,7 @@
 			"label": "Áo",
 			"name": "Hỏa Vương",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ff3300",
 			"tier": 8,
 			"stats": {
 				"armor": 8,
@@ -4742,6 +4705,7 @@
 			"label": "Áo",
 			"name": "Giáp Huyết Linh 1",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 8,
@@ -4768,6 +4732,7 @@
 			"label": "Áo",
 			"name": "Giáp Huyết Linh 2",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 8,
@@ -4794,6 +4759,7 @@
 			"label": "Áo",
 			"name": "Giáp Huyết Linh 3",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 8,
@@ -4820,6 +4786,7 @@
 			"label": "Áo",
 			"name": "Giáp Huyết Linh 4",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 8,
@@ -4846,6 +4813,7 @@
 			"label": "Áo",
 			"name": "Giáp Huyết Linh 5",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 8,
@@ -4872,6 +4840,7 @@
 			"label": "Áo",
 			"name": "Giáp Huyết Linh 6",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 8,
@@ -4898,6 +4867,7 @@
 			"label": "Áo",
 			"name": "Giáp Huyết Linh 7",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 8,
@@ -4924,6 +4894,7 @@
 			"label": "Áo",
 			"name": "Giáp Huyết Linh 8",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 8,
@@ -4950,6 +4921,7 @@
 			"label": "Áo",
 			"name": "Giáp Huyết Linh 9",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 8,
@@ -4976,6 +4948,7 @@
 			"label": "Áo",
 			"name": "Giáp Huyết Linh 10",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 8,
@@ -5262,6 +5235,7 @@
 			"label": "Áo",
 			"name": "Kim Thần",
 			"icon": "leather_chestplate",
+			"dyeColor": "#666666",
 			"tier": 8,
 			"stats": {
 				"armor": 8,
@@ -5318,6 +5292,7 @@
 			"label": "Áo",
 			"name": "Kim Tinh",
 			"icon": "leather_chestplate",
+			"dyeColor": "#666666",
 			"tier": 7,
 			"stats": {
 				"armor": 8,
@@ -5344,6 +5319,7 @@
 			"label": "Áo",
 			"name": "Kim Vương",
 			"icon": "leather_chestplate",
+			"dyeColor": "#666666",
 			"tier": 8,
 			"stats": {
 				"armor": 8,
@@ -5395,6 +5371,7 @@
 			"label": "Áo",
 			"name": "Giáp Linh Hồn 1",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 4,
@@ -5421,6 +5398,7 @@
 			"label": "Áo",
 			"name": "Giáp Linh Hồn 2",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 5,
@@ -5447,6 +5425,7 @@
 			"label": "Áo",
 			"name": "Giáp Linh Hồn 3",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 6,
@@ -5473,6 +5452,7 @@
 			"label": "Áo",
 			"name": "Giáp Linh Hồn 4",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 7,
@@ -5499,6 +5479,7 @@
 			"label": "Áo",
 			"name": "Giáp Linh Hồn 5",
 			"icon": "leather_chestplate",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 8,
@@ -5525,6 +5506,7 @@
 			"label": "Áo",
 			"name": "Mộc Thần",
 			"icon": "leather_chestplate",
+			"dyeColor": "#00cc00",
 			"tier": 8,
 			"stats": {
 				"armor": 8,
@@ -5581,6 +5563,7 @@
 			"label": "Áo",
 			"name": "Mộc Tinh",
 			"icon": "leather_chestplate",
+			"dyeColor": "#00cc00",
 			"tier": 7,
 			"stats": {
 				"armor": 8,
@@ -5607,6 +5590,7 @@
 			"label": "Áo",
 			"name": "Mộc Vương",
 			"icon": "leather_chestplate",
+			"dyeColor": "#00cc00",
 			"tier": 8,
 			"stats": {
 				"armor": 8,
@@ -5649,32 +5633,6 @@
 					]
 				}
 			]
-		},
-		{
-			"type": "AO",
-			"key": "AO:AONGUHANH",
-			"id": "AONGUHANH",
-			"kind": "chestplate",
-			"label": "Áo",
-			"name": "Ngũ Hành",
-			"icon": "leather_chestplate",
-			"tier": 8,
-			"stats": {
-				"armor": 8,
-				"defense": 8,
-				"maxHealth": 30
-			},
-			"enchants": [
-				{
-					"name": "Bảo vệ",
-					"level": 16
-				},
-				{
-					"name": "Độ bền",
-					"level": 10
-				}
-			],
-			"recipes": []
 		},
 		{
 			"type": "AO",
@@ -5743,6 +5701,7 @@
 			"label": "Áo",
 			"name": "Thổ Thần",
 			"icon": "leather_chestplate",
+			"dyeColor": "#006600",
 			"tier": 8,
 			"stats": {
 				"armor": 8,
@@ -5799,6 +5758,7 @@
 			"label": "Áo",
 			"name": "Thổ Tinh",
 			"icon": "leather_chestplate",
+			"dyeColor": "#006600",
 			"tier": 7,
 			"stats": {
 				"armor": 8,
@@ -5825,6 +5785,7 @@
 			"label": "Áo",
 			"name": "Thổ Vương",
 			"icon": "leather_chestplate",
+			"dyeColor": "#006600",
 			"tier": 8,
 			"stats": {
 				"armor": 8,
@@ -5915,6 +5876,7 @@
 			"label": "Áo",
 			"name": "Thượng Long",
 			"icon": "leather_chestplate",
+			"dyeColor": "#5500ff",
 			"tier": 8,
 			"stats": {
 				"armor": 8,
@@ -5990,6 +5952,7 @@
 			"label": "Áo",
 			"name": "Thủy Thần",
 			"icon": "leather_chestplate",
+			"dyeColor": "#0099ff",
 			"tier": 8,
 			"stats": {
 				"armor": 8,
@@ -6046,6 +6009,7 @@
 			"label": "Áo",
 			"name": "Thủy Tinh",
 			"icon": "leather_chestplate",
+			"dyeColor": "#0099ff",
 			"tier": 7,
 			"stats": {
 				"armor": 8,
@@ -6072,6 +6036,7 @@
 			"label": "Áo",
 			"name": "Thủy Vương",
 			"icon": "leather_chestplate",
+			"dyeColor": "#0099ff",
 			"tier": 8,
 			"stats": {
 				"armor": 8,
@@ -6413,6 +6378,7 @@
 			"label": "Quần",
 			"name": "Hỏa Thần",
 			"icon": "leather_leggings",
+			"dyeColor": "#cc5200",
 			"tier": 8,
 			"stats": {
 				"armor": 6,
@@ -6469,6 +6435,7 @@
 			"label": "Quần",
 			"name": "Hỏa Tinh",
 			"icon": "leather_leggings",
+			"dyeColor": "#cc5200",
 			"tier": 7,
 			"stats": {
 				"armor": 6,
@@ -6495,6 +6462,7 @@
 			"label": "Quần",
 			"name": "Hỏa Vương",
 			"icon": "leather_leggings",
+			"dyeColor": "#cc5200",
 			"tier": 8,
 			"stats": {
 				"armor": 6,
@@ -6651,6 +6619,7 @@
 			"label": "Quần",
 			"name": "Giáp Huyết Linh 1",
 			"icon": "leather_leggings",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 6,
@@ -6677,6 +6646,7 @@
 			"label": "Quần",
 			"name": "Giáp Huyết Linh 2",
 			"icon": "leather_leggings",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 6,
@@ -6703,6 +6673,7 @@
 			"label": "Quần",
 			"name": "Giáp Huyết Linh 3",
 			"icon": "leather_leggings",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 6,
@@ -6729,6 +6700,7 @@
 			"label": "Quần",
 			"name": "Giáp Huyết Linh 4",
 			"icon": "leather_leggings",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 6,
@@ -6755,6 +6727,7 @@
 			"label": "Quần",
 			"name": "Giáp Huyết Linh 5",
 			"icon": "leather_leggings",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 6,
@@ -6781,6 +6754,7 @@
 			"label": "Quần",
 			"name": "Giáp Huyết Linh 6",
 			"icon": "leather_leggings",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 6,
@@ -6807,6 +6781,7 @@
 			"label": "Quần",
 			"name": "Giáp Huyết Linh 7",
 			"icon": "leather_leggings",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 6,
@@ -6833,6 +6808,7 @@
 			"label": "Quần",
 			"name": "Giáp Huyết Linh 8",
 			"icon": "leather_leggings",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 6,
@@ -6859,6 +6835,7 @@
 			"label": "Quần",
 			"name": "Giáp Huyết Linh 9",
 			"icon": "leather_leggings",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 6,
@@ -6885,6 +6862,7 @@
 			"label": "Quần",
 			"name": "Giáp Huyết Linh 10",
 			"icon": "leather_leggings",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 6,
@@ -7171,6 +7149,7 @@
 			"label": "Quần",
 			"name": "Kim Thần",
 			"icon": "leather_leggings",
+			"dyeColor": "#808080",
 			"tier": 8,
 			"stats": {
 				"armor": 6,
@@ -7227,6 +7206,7 @@
 			"label": "Quần",
 			"name": "Kim Tinh",
 			"icon": "leather_leggings",
+			"dyeColor": "#808080",
 			"tier": 7,
 			"stats": {
 				"armor": 6,
@@ -7253,6 +7233,7 @@
 			"label": "Quần",
 			"name": "Kim Vương",
 			"icon": "leather_leggings",
+			"dyeColor": "#808080",
 			"tier": 8,
 			"stats": {
 				"armor": 6,
@@ -7304,6 +7285,7 @@
 			"label": "Quần",
 			"name": "Giáp Linh Hồn 1",
 			"icon": "leather_leggings",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 3,
@@ -7330,6 +7312,7 @@
 			"label": "Quần",
 			"name": "Giáp Linh Hồn 2",
 			"icon": "leather_leggings",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 4,
@@ -7356,6 +7339,7 @@
 			"label": "Quần",
 			"name": "Giáp Linh Hồn 3",
 			"icon": "leather_leggings",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 4.5,
@@ -7382,6 +7366,7 @@
 			"label": "Quần",
 			"name": "Giáp Linh Hồn 4",
 			"icon": "leather_leggings",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 5,
@@ -7408,6 +7393,7 @@
 			"label": "Quần",
 			"name": "Giáp Linh Hồn 5",
 			"icon": "leather_leggings",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 6,
@@ -7434,6 +7420,7 @@
 			"label": "Quần",
 			"name": "Mộc Thần",
 			"icon": "leather_leggings",
+			"dyeColor": "#00ff00",
 			"tier": 8,
 			"stats": {
 				"armor": 6,
@@ -7490,6 +7477,7 @@
 			"label": "Quần",
 			"name": "Mộc Tinh",
 			"icon": "leather_leggings",
+			"dyeColor": "#00ff00",
 			"tier": 7,
 			"stats": {
 				"armor": 6,
@@ -7516,6 +7504,7 @@
 			"label": "Quần",
 			"name": "Mộc Vương",
 			"icon": "leather_leggings",
+			"dyeColor": "#00ff00",
 			"tier": 8,
 			"stats": {
 				"armor": 6,
@@ -7558,32 +7547,6 @@
 					]
 				}
 			]
-		},
-		{
-			"type": "QUAN",
-			"key": "QUAN:QUANNGUHANH",
-			"id": "QUANNGUHANH",
-			"kind": "leggings",
-			"label": "Quần",
-			"name": "Ngũ Hành",
-			"icon": "leather_leggings",
-			"tier": 8,
-			"stats": {
-				"armor": 6,
-				"defense": 8,
-				"maxHealth": 30
-			},
-			"enchants": [
-				{
-					"name": "Bảo vệ",
-					"level": 16
-				},
-				{
-					"name": "Độ bền",
-					"level": 10
-				}
-			],
-			"recipes": []
 		},
 		{
 			"type": "QUAN",
@@ -7648,6 +7611,7 @@
 			"label": "Quần",
 			"name": "Thổ Thần",
 			"icon": "leather_leggings",
+			"dyeColor": "#009900",
 			"tier": 8,
 			"stats": {
 				"armor": 6,
@@ -7704,6 +7668,7 @@
 			"label": "Quần",
 			"name": "Thổ Tinh",
 			"icon": "leather_leggings",
+			"dyeColor": "#009900",
 			"tier": 7,
 			"stats": {
 				"armor": 6,
@@ -7730,6 +7695,7 @@
 			"label": "Quần",
 			"name": "Thổ Vương",
 			"icon": "leather_leggings",
+			"dyeColor": "#009900",
 			"tier": 8,
 			"stats": {
 				"armor": 6,
@@ -7820,6 +7786,7 @@
 			"label": "Quần",
 			"name": "Thượng Long",
 			"icon": "leather_leggings",
+			"dyeColor": "#5500ff",
 			"tier": 8,
 			"stats": {
 				"armor": 6,
@@ -7895,6 +7862,7 @@
 			"label": "Quần",
 			"name": "Thủy Thần",
 			"icon": "leather_leggings",
+			"dyeColor": "#00bfff",
 			"tier": 8,
 			"stats": {
 				"armor": 6,
@@ -7951,6 +7919,7 @@
 			"label": "Quần",
 			"name": "Thủy Tinh",
 			"icon": "leather_leggings",
+			"dyeColor": "#00bfff",
 			"tier": 7,
 			"stats": {
 				"armor": 6,
@@ -7977,6 +7946,7 @@
 			"label": "Quần",
 			"name": "Thủy Vương",
 			"icon": "leather_leggings",
+			"dyeColor": "#00bfff",
 			"tier": 8,
 			"stats": {
 				"armor": 6,
@@ -8318,6 +8288,7 @@
 			"label": "Giày",
 			"name": "Hỏa Thần",
 			"icon": "leather_boots",
+			"dyeColor": "#ff3300",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -8374,6 +8345,7 @@
 			"label": "Giày",
 			"name": "Hỏa Tinh",
 			"icon": "leather_boots",
+			"dyeColor": "#ff3300",
 			"tier": 7,
 			"stats": {
 				"armor": 3,
@@ -8400,6 +8372,7 @@
 			"label": "Giày",
 			"name": "Hỏa Vương",
 			"icon": "leather_boots",
+			"dyeColor": "#ff3300",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -8556,6 +8529,7 @@
 			"label": "Giày",
 			"name": "Giáp Huyết Linh 1",
 			"icon": "leather_boots",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -8582,6 +8556,7 @@
 			"label": "Giày",
 			"name": "Giáp Huyết Linh 2",
 			"icon": "leather_boots",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -8608,6 +8583,7 @@
 			"label": "Giày",
 			"name": "Giáp Huyết Linh 3",
 			"icon": "leather_boots",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -8634,6 +8610,7 @@
 			"label": "Giày",
 			"name": "Giáp Huyết Linh 4",
 			"icon": "leather_boots",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -8660,6 +8637,7 @@
 			"label": "Giày",
 			"name": "Giáp Huyết Linh 5",
 			"icon": "leather_boots",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -8686,6 +8664,7 @@
 			"label": "Giày",
 			"name": "Giáp Huyết Linh 6",
 			"icon": "leather_boots",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -8712,6 +8691,7 @@
 			"label": "Giày",
 			"name": "Giáp Huyết Linh 7",
 			"icon": "leather_boots",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -8738,6 +8718,7 @@
 			"label": "Giày",
 			"name": "Giáp Huyết Linh 8",
 			"icon": "leather_boots",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -8764,6 +8745,7 @@
 			"label": "Giày",
 			"name": "Giáp Huyết Linh 9",
 			"icon": "leather_boots",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -8790,6 +8772,7 @@
 			"label": "Giày",
 			"name": "Giáp Huyết Linh 10",
 			"icon": "leather_boots",
+			"dyeColor": "#ae2343",
 			"tier": 4,
 			"stats": {
 				"armor": 3,
@@ -9076,6 +9059,7 @@
 			"label": "Giày",
 			"name": "Kim Thần",
 			"icon": "leather_boots",
+			"dyeColor": "#666666",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -9132,6 +9116,7 @@
 			"label": "Giày",
 			"name": "Kim Tinh",
 			"icon": "leather_boots",
+			"dyeColor": "#666666",
 			"tier": 7,
 			"stats": {
 				"armor": 3,
@@ -9158,6 +9143,7 @@
 			"label": "Giày",
 			"name": "Kim Vương",
 			"icon": "leather_boots",
+			"dyeColor": "#666666",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -9209,6 +9195,7 @@
 			"label": "Giày",
 			"name": "Giáp Linh Hồn 1",
 			"icon": "leather_boots",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 1.5,
@@ -9235,6 +9222,7 @@
 			"label": "Giày",
 			"name": "Giáp Linh Hồn 2",
 			"icon": "leather_boots",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 2,
@@ -9261,6 +9249,7 @@
 			"label": "Giày",
 			"name": "Giáp Linh Hồn 3",
 			"icon": "leather_boots",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 2,
@@ -9287,6 +9276,7 @@
 			"label": "Giày",
 			"name": "Giáp Linh Hồn 4",
 			"icon": "leather_boots",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 2.5,
@@ -9313,6 +9303,7 @@
 			"label": "Giày",
 			"name": "Giáp Linh Hồn 5",
 			"icon": "leather_boots",
+			"dyeColor": "#ff9a3c",
 			"tier": 3,
 			"stats": {
 				"armor": 3,
@@ -9339,6 +9330,7 @@
 			"label": "Giày",
 			"name": "Mộc Thần",
 			"icon": "leather_boots",
+			"dyeColor": "#00cc00",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -9395,6 +9387,7 @@
 			"label": "Giày",
 			"name": "Mộc Tinh",
 			"icon": "leather_boots",
+			"dyeColor": "#00cc00",
 			"tier": 7,
 			"stats": {
 				"armor": 3,
@@ -9421,6 +9414,7 @@
 			"label": "Giày",
 			"name": "Mộc Vương",
 			"icon": "leather_boots",
+			"dyeColor": "#00cc00",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -9463,32 +9457,6 @@
 					]
 				}
 			]
-		},
-		{
-			"type": "GIAY",
-			"key": "GIAY:GIAYNGUHANH",
-			"id": "GIAYNGUHANH",
-			"kind": "boots",
-			"label": "Giày",
-			"name": "Ngũ Hành",
-			"icon": "leather_boots",
-			"tier": 8,
-			"stats": {
-				"armor": 3,
-				"defense": 8,
-				"maxHealth": 30
-			},
-			"enchants": [
-				{
-					"name": "Bảo vệ",
-					"level": 16
-				},
-				{
-					"name": "Độ bền",
-					"level": 10
-				}
-			],
-			"recipes": []
 		},
 		{
 			"type": "GIAY",
@@ -9553,6 +9521,7 @@
 			"label": "Giày",
 			"name": "Thổ Thần",
 			"icon": "leather_boots",
+			"dyeColor": "#006600",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -9609,6 +9578,7 @@
 			"label": "Giày",
 			"name": "Thổ Tinh",
 			"icon": "leather_boots",
+			"dyeColor": "#006600",
 			"tier": 7,
 			"stats": {
 				"armor": 3,
@@ -9635,6 +9605,7 @@
 			"label": "Giày",
 			"name": "Thổ Vương",
 			"icon": "leather_boots",
+			"dyeColor": "#006600",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -9725,6 +9696,7 @@
 			"label": "Giày",
 			"name": "Thượng Long",
 			"icon": "leather_boots",
+			"dyeColor": "#5500ff",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -9800,6 +9772,7 @@
 			"label": "Giày",
 			"name": "Thủy Thần",
 			"icon": "leather_boots",
+			"dyeColor": "#0099ff",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -9856,6 +9829,7 @@
 			"label": "Giày",
 			"name": "Thủy Tinh",
 			"icon": "leather_boots",
+			"dyeColor": "#0099ff",
 			"tier": 7,
 			"stats": {
 				"armor": 3,
@@ -9882,6 +9856,7 @@
 			"label": "Giày",
 			"name": "Thủy Vương",
 			"icon": "leather_boots",
+			"dyeColor": "#0099ff",
 			"tier": 8,
 			"stats": {
 				"armor": 3,
@@ -15088,47 +15063,6 @@
 					]
 				}
 			]
-		},
-		{
-			"type": "SWORD",
-			"key": "SWORD:NGUHANHCHANTHIENKIEM",
-			"id": "NGUHANHCHANTHIENKIEM",
-			"kind": "sword",
-			"label": "Kiếm",
-			"name": "Ngũ Hành Chấn Thiên Kiếm",
-			"icon": "iron_sword",
-			"tier": 8,
-			"stats": {
-				"attackDamage": 1,
-				"attackSpeed": 1.8
-			},
-			"enchants": [
-				{
-					"name": "Sắc bén",
-					"level": 180
-				},
-				{
-					"name": "Tiêu diệt xác sống",
-					"level": 15
-				},
-				{
-					"name": "Hủy diệt động vật chân đốt",
-					"level": 15
-				},
-				{
-					"name": "Hỏa thuật",
-					"level": 10
-				},
-				{
-					"name": "Cướp bóc",
-					"level": 10
-				},
-				{
-					"name": "Độ bền",
-					"level": 20
-				}
-			],
-			"recipes": []
 		},
 		{
 			"type": "SWORD",

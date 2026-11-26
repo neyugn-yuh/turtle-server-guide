@@ -1,115 +1,1307 @@
 ---
 /**
- * A table of equipment items of Sky Rèn (rows come from src/data/servers/<server>/equipment.json, see RenEquipment.astro):
- * the picture, the name, the stats (a column is left out when no row has the stat) and, under "Chi tiết", the vanilla
- * enchants and how the item is crafted with /ecraft. Every number comes from the data.
+ * Reusable item catalog & table for Sky Rèn gear:
+ * - Aggregates duplicate ingredients in /ecraft recipes (e.g. 5x instead of 1x repeated 5 times)
+ *   and renders visual ingredient chips with pixel-art icons, costs and success rate pills.
+ * - Surfaces vanilla enchants cleanly inline so combat-defining enchants (Sắc bén, Bảo vệ, Hiệu suất...)
+ *   are readable at a glance rather than hidden behind a "Xem" toggle.
+ * - Supports three modes:
+ *     1) Catalog mode (`catalog=true`, used on weapon/tool kind pages): search, tier & set filters,
+ *        and grouping by upgrade chain (e.g. "Kiếm Cổ Xưa (10 bậc)") vs flat compare table.
+ *     2) Unified set armor mode (`showSlot=true`): shows Mũ/Áo/Quần/Giày together in one clean table.
+ *     3) Standard flat mode: compact table with full inline details.
  */
+import { hasMinionIcon, resolveGearIcon } from '../lib/ren-icons';
+
 interface Props {
 	items: any[];
+	server?: string;
 	/** extra text shown under the name of an item, keyed by item key (a set weapon's bonus) */
 	notes?: Record<string, string[]>;
+	/** map of item key -> array of { id, slug, name } sets the item belongs to */
+	itemSets?: Record<string, { id: string; slug: string; name: string }[]>;
+	/** map of item key -> { kind, slug, name, icon, dyeColor } for clickable prerequisite ingredient links */
+	itemIndex?: Record<string, { kind: string; slug: string; name: string; icon?: string | null; dyeColor?: string | null }>;
+	/** enable search, filters, and upgrade-chain grouping (used on kind pages) */
+	catalog?: boolean;
+	/** show slot label column (Mũ, Áo, Quần, Giày) for unified set armor tables */
+	showSlot?: boolean;
 }
-const { items, notes = {} } = Astro.props;
+
+const {
+	items,
+	server = 'sky-ren',
+	notes = {},
+	itemSets = {},
+	itemIndex = {},
+	catalog = false,
+	showSlot = false,
+} = Astro.props;
+
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const iconUrl = (icon: string | null) => (icon ? `${base}/minions/${icon}.png` : '');
+const hasIcon = (icon: string | null | undefined) => hasMinionIcon(icon);
+const resolvedIcons = new Map<string, string>();
+const iconPairs: [string, string | null][] = [];
+const queueIcon = (icon: string | null | undefined, dyeColor?: string | null) => {
+	if (!hasIcon(icon)) return;
+	const k = `${icon}::${dyeColor ?? ''}`;
+	if (!resolvedIcons.has(k)) {
+		resolvedIcons.set(k, '');
+		iconPairs.push([icon!, dyeColor ?? null]);
+	}
+};
+for (const i of items) {
+	queueIcon(i.icon, i.dyeColor);
+	for (const r of i.recipes ?? []) {
+		for (const n of r.needs ?? []) {
+			const linkedDye = n.item ? itemIndex[n.item]?.dyeColor : null;
+			queueIcon(n.icon, linkedDye);
+		}
+	}
+}
+await Promise.all(
+	iconPairs.map(async ([icon, dye]) => {
+		resolvedIcons.set(`${icon}::${dye ?? ''}`, await resolveGearIcon(base, icon, dye));
+	}),
+);
+const iconUrl = (icon: string | null | undefined, dyeColor?: string | null) =>
+	hasIcon(icon) ? resolvedIcons.get(`${icon}::${dyeColor ?? ''}`) ?? '' : '';
+const KIND_EMOJI: Record<string, string> = {
+	helmet: '🪖',
+	chestplate: '🛡',
+	leggings: '🛡',
+	boots: '🛡',
+	shield: '🛡',
+	bow: '🏹',
+	pickaxe: '⛏',
+	axe: '🪓',
+	'farm-axe': '🪓',
+	sword: '⚔',
+};
+const fallbackIcon = (kind?: string) => KIND_EMOJI[kind ?? ''] ?? '⚔';
+const setUrl = (slug: string) => `${base}/${server}/gear/bo/${slug}/`;
+const KIND_SLUGS: Record<string, string> = {
+	sword: 'kiem',
+	axe: 'riu',
+	'farm-axe': 'riu-farm',
+	bow: 'cung',
+	shield: 'khien',
+	pickaxe: 'cup',
+};
+const itemAnchor = (key: string) => key.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+const ingredientHref = (n: any) => {
+	if (!n.item || !itemIndex[n.item]) return undefined;
+	const target = itemIndex[n.item];
+	const kindSlug = KIND_SLUGS[target.kind];
+	if (kindSlug) return `${base}/${server}/gear/${kindSlug}/#${itemAnchor(n.item)}`;
+	const linkedSet = itemSets[n.item]?.[0];
+	if (linkedSet) return `${base}/${server}/gear/bo/${linkedSet.slug}/#${itemAnchor(n.item)}`;
+	return undefined;
+};
+
 const num = (x: number) => x.toLocaleString('vi-VN', { maximumFractionDigits: 3 });
-const STATS: [string, string][] = [
-	['armor', 'Giáp'],
-	['defense', 'Phòng thủ'],
-	['maxHealth', 'Máu tối đa'],
-	['damageReduction', 'Giảm sát thương'],
-	['attackDamage', 'Sát thương'],
-	['attackSpeed', 'Tốc độ đánh'],
+
+const STATS: [string, string, string][] = [
+	['armor', 'Giáp', ''],
+	['defense', 'Phòng thủ', ''],
+	['maxHealth', 'Máu tối đa', ''],
+	['damageReduction', 'Giảm ST', '%'],
+	['attackDamage', 'Sát thương', ''],
+	['attackSpeed', 'Tốc đánh', ''],
 ];
-const columns = STATS.filter(([key]) => items.some((i: any) => i.stats[key] !== undefined));
-const ingredients = (r: any) => r.needs.map((n: any) => `${num(n.amount)}× ${n.name}`).join(', ');
-const cost = (r: any) =>
-	[r.money ? `${num(r.money)} tiền` : null, r.xu ? `${num(r.xu)} Xu` : null, r.chance < 100 ? `thành công ${num(r.chance)}%` : null].filter(Boolean).join(', ');
-const hasDetail = (i: any) => i.recipes.length > 0 || i.enchants.length > 0;
+const columns = STATS.filter(([key]) => items.some((i: any) => i.stats?.[key] !== undefined));
+
+// Group identical ingredients in a recipe (e.g., 5 slots of 1x Mũ Bá Vương -> 5x Mũ Bá Vương)
+function mergeNeeds(needs: any[]) {
+	const merged: any[] = [];
+	for (const n of needs) {
+		const idKey = `${n.name}::${n.icon ?? ''}::${n.item ?? ''}`;
+		const found = merged.find((m) => m._key === idKey);
+		if (found) found.amount += n.amount;
+		else merged.push({ ...n, _key: idKey });
+	}
+	return merged;
+}
+
+const PRIMARY_ENCHANTS = new Set(['Sắc bén', 'Sức mạnh', 'Bảo vệ', 'Hiệu suất', 'May mắn', 'Cướp bóc']);
+function sortedEnchants(enchants: any[]) {
+	return [...(enchants ?? [])].sort((a, b) => {
+		const pa = PRIMARY_ENCHANTS.has(a.name) ? 0 : 1;
+		const pb = PRIMARY_ENCHANTS.has(b.name) ? 0 : 1;
+		if (pa !== pb) return pa - pb;
+		return b.level - a.level;
+	});
+}
+
+function isPrimaryEnchant(name: string) {
+	return PRIMARY_ENCHANTS.has(name);
+}
+
+// Upgrade family grouping for catalog mode
+function familyName(item: any) {
+	return String(item.name)
+		.replace(/^\d+\s+/, '')
+		.replace(/\s+(?:\d+|Max)$/i, '')
+		.trim();
+}
+
+function itemStepLabel(item: any, baseName: string) {
+	const cleaned = String(item.name).replace(/^\d+\s+/, '').trim();
+	if (cleaned === baseName) return 'Gốc';
+	const suffix = cleaned.slice(baseName.length).trim();
+	return suffix ? (suffix.toLowerCase() === 'max' ? 'Max' : `+${suffix}`) : 'Gốc';
+}
+
+interface FamilyGroup {
+	id: string;
+	name: string;
+	icon: string | null;
+	dyeColor: string | null;
+	tierMin: number | null;
+	tierMax: number | null;
+	items: any[];
+	sets: { id: string; slug: string; name: string }[];
+	highlightStat: string | null;
+	hasRecipe: boolean;
+}
+
+function buildFamilies(list: any[]): FamilyGroup[] {
+	const map = new Map<string, any[]>();
+	for (const item of list) {
+		const fname = familyName(item);
+		if (!map.has(fname)) map.set(fname, []);
+		map.get(fname)!.push(item);
+	}
+	const out: FamilyGroup[] = [];
+	for (const [fname, groupItems] of map) {
+		const tiers = groupItems.map((i) => i.tier).filter((t) => Number.isFinite(t));
+		const setMap = new Map<string, { id: string; slug: string; name: string }>();
+		for (const i of groupItems) {
+			for (const s of itemSets[i.key] ?? []) setMap.set(s.id, s);
+		}
+		// Compute a quick progression summary (e.g., Sắc bén 5 -> 95 or Máu 64 -> 72)
+		const first = groupItems[0];
+		const last = groupItems[groupItems.length - 1];
+		let highlightStat: string | null = null;
+		const mainEnc = sortedEnchants(first.enchants)[0];
+		if (mainEnc && PRIMARY_ENCHANTS.has(mainEnc.name)) {
+			const lastEnc = last.enchants.find((e: any) => e.name === mainEnc.name);
+			if (groupItems.length > 1 && lastEnc && lastEnc.level !== mainEnc.level) {
+				highlightStat = `${mainEnc.name} ${num(mainEnc.level)} → ${num(lastEnc.level)}`;
+			} else {
+				highlightStat = `${mainEnc.name} ${num(mainEnc.level)}`;
+			}
+		}
+		if (first.stats?.maxHealth !== undefined) {
+			const hpA = first.stats.maxHealth;
+			const hpB = last.stats?.maxHealth;
+			const hpStr = groupItems.length > 1 && hpB !== undefined && hpB !== hpA ? `Máu ${num(hpA)} → ${num(hpB)}` : `Máu ${num(hpA)}`;
+			highlightStat = highlightStat ? `${hpStr} · ${highlightStat}` : hpStr;
+		}
+		out.push({
+			id: itemAnchor(fname),
+			name: fname,
+			icon: first.icon,
+			dyeColor: first.dyeColor ?? null,
+			tierMin: tiers.length ? Math.min(...tiers) : null,
+			tierMax: tiers.length ? Math.max(...tiers) : null,
+			items: groupItems,
+			sets: [...setMap.values()],
+			highlightStat,
+			hasRecipe: groupItems.some((i) => i.recipes?.length > 0),
+		});
+	}
+	return out;
+}
+
+const families = catalog ? buildFamilies(items) : [];
+const tiersAvailable = [...new Set(items.map((i) => i.tier).filter((t) => Number.isFinite(t)))].sort((a, b) => a - b);
+const setsAvailable = [...new Map(items.flatMap((i) => itemSets[i.key] ?? []).map((s) => [s.id, s])).values()];
+const hasAnySets = setsAvailable.length > 0;
+const hasAnyNoRecipe = items.some((i) => !i.recipes?.length);
+const showGroupingOption = catalog && families.length < items.length;
+const uid = `rit-${Math.random().toString(36).slice(2, 8)}`;
 ---
 
-<div class="ri-scroll">
-	<table class="ri">
-		<thead>
-			<tr>
-				<th>Vật phẩm</th>
-				{columns.map(([, label]) => <th>{label}</th>)}
-				<th>Chi tiết</th>
-			</tr>
-		</thead>
-		<tbody>
-			{
-				items.map((i: any) => (
+<div class="rit-wrap not-content" data-rit-root={uid} data-catalog={catalog ? '1' : '0'}>
+	{
+		catalog && (
+			<div class="rit-toolbar">
+				<div class="rit-search-box">
+					<svg class="rit-search-ico" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+						<circle cx="8.5" cy="8.5" r="5.5" stroke="currentColor" stroke-width="1.6" />
+						<path d="M13 13l4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" />
+					</svg>
+					<input
+						type="search"
+						class="rit-search"
+						placeholder="Tìm tên vật phẩm, nguyên liệu, phép hoặc bộ giáp..."
+						aria-label="Tìm trang bị"
+						data-rit-search
+					/>
+				</div>
+
+				<div class="rit-controls">
+					{tiersAvailable.length > 1 && (
+						<label class="rit-select-wrap">
+							<span class="rit-sr">Lọc theo bậc</span>
+							<select class="rit-select" data-rit-tier aria-label="Lọc theo bậc">
+								<option value="">Mọi bậc ({tiersAvailable.length})</option>
+								{tiersAvailable.map((t) => (
+									<option value={String(t)}>Bậc {t}</option>
+								))}
+							</select>
+						</label>
+					)}
+
+					{hasAnySets && (
+						<label class="rit-select-wrap">
+							<span class="rit-sr">Lọc theo bộ giáp</span>
+							<select class="rit-select" data-rit-set aria-label="Lọc theo bộ giáp">
+								<option value="">Mọi bộ / lẻ</option>
+								<option value="__in_set__">Có bộ giáp ({setsAvailable.length})</option>
+								<option value="__no_set__">Đồ lẻ (không thuộc bộ)</option>
+								{setsAvailable.map((s) => (
+									<option value={s.id}>Bộ {s.name}</option>
+								))}
+							</select>
+						</label>
+					)}
+
+					{hasAnyNoRecipe && (
+						<label class="rit-check">
+							<input type="checkbox" data-rit-craftable />
+							<span>Có công thức</span>
+						</label>
+					)}
+
+					{showGroupingOption && (
+						<div class="rit-view-toggle" role="group" aria-label="Chế độ hiển thị">
+							<button type="button" class="rit-view-btn is-active" data-rit-mode="grouped">
+								Theo chuỗi ({families.length})
+							</button>
+							<button type="button" class="rit-view-btn" data-rit-mode="flat">
+								Bảng đầy đủ ({items.length})
+							</button>
+						</div>
+					)}
+				</div>
+
+				<div class="rit-status-row">
+					<span class="rit-status" data-rit-status>
+						Đang hiện {items.length} vật phẩm{showGroupingOption ? ` trong ${families.length} dòng nâng cấp` : ''}
+					</span>
+					{showGroupingOption && (
+						<div class="rit-bulk-btns" data-rit-bulk>
+							<button type="button" class="rit-link-btn" data-rit-expand-all>Mở tất cả</button>
+							<span aria-hidden="true">·</span>
+							<button type="button" class="rit-link-btn" data-rit-collapse-all>Thu gọn</button>
+						</div>
+					)}
+				</div>
+			</div>
+		)
+	}
+
+	{/* GROUPED FAMILY VIEW (for catalog pages with upgrade chains) */}
+	{
+		showGroupingOption && (
+			<div class="rit-families" data-rit-grouped-panel>
+				{families.map((fam) => {
+					const single = fam.items.length === 1;
+					const tierText =
+						fam.tierMin === null
+							? null
+							: fam.tierMin === fam.tierMax
+								? `Bậc ${fam.tierMin}`
+								: `Bậc ${fam.tierMin}–${fam.tierMax}`;
+					const searchTokens = fam.items
+						.map((i) =>
+							[
+								i.name,
+								i.id,
+								...(itemSets[i.key] ?? []).map((s) => s.name),
+								...i.enchants.map((e: any) => `${e.name} ${e.level}`),
+								...i.recipes.flatMap((r: any) => r.needs.map((n: any) => n.name)),
+							]
+								.join(' ')
+								.toLowerCase(),
+						)
+						.join(' | ');
+					const famTiers = [...new Set(fam.items.map((i) => String(i.tier ?? '')))].join(',');
+					const famSets = fam.sets.map((s) => s.id).join(',');
+
+					return (
+						<details
+							class="rit-family"
+							open={single || families.length <= 3}
+							data-rit-family
+							data-search={searchTokens}
+							data-tiers={famTiers}
+							data-sets={famSets}
+							data-craftable={fam.hasRecipe ? '1' : '0'}
+						>
+							<summary class="rit-fam-head">
+								<span class="rit-fam-left">
+									<span class="rit-chev" aria-hidden="true">▸</span>
+									<span class="rit-icon-box">
+										{hasIcon(fam.icon) ? (
+											<img
+												src={iconUrl(fam.icon, fam.dyeColor)}
+												alt=""
+												width="28"
+												height="28"
+												loading="lazy"
+												onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex'"
+											/>
+										) : null}
+										<span class="rit-icon-fallback" style={hasIcon(fam.icon) ? 'display:none' : 'display:inline-flex'} aria-hidden="true">
+											{fallbackIcon(fam.items[0]?.kind)}
+										</span>
+									</span>
+									<span class="rit-fam-title-wrap">
+										<strong class="rit-fam-title">{fam.name}</strong>
+										<span class="rit-fam-meta">
+											{!single && <span class="rit-pill rit-pill-muted">{fam.items.length} bậc</span>}
+											{tierText && <span class="rit-pill rit-pill-tier">{tierText}</span>}
+											{fam.highlightStat && <span class="rit-pill rit-pill-stat">{fam.highlightStat}</span>}
+											{fam.sets.map((s) => (
+												<span class="rit-pill rit-pill-set">Bộ {s.name}</span>
+											))}
+										</span>
+									</span>
+								</span>
+							</summary>
+
+							<div class="rit-fam-body">
+								{fam.sets.length > 0 && (
+									<div class="rit-fam-setbar">
+										<span>Thuộc bộ trang bị:</span>
+										{fam.sets.map((s) => (
+											<a class="rit-set-link" href={setUrl(s.slug)}>
+												Xem bộ {s.name} →
+											</a>
+										))}
+									</div>
+								)}
+								<div class="rit-scroll">
+									<table class="rit-table">
+										<thead>
+											<tr>
+												<th>Vật phẩm</th>
+												{columns.map(([, label]) => (
+													<th class="rit-num-col">{label}</th>
+												))}
+												<th>Phép có sẵn</th>
+												<th>Công thức chế tạo (<code>/ecraft</code>)</th>
+											</tr>
+										</thead>
+										<tbody>
+											{fam.items.map((i) => {
+												const encs = sortedEnchants(i.enchants);
+												const itemSetsList = itemSets[i.key] ?? [];
+												const rowSearch = [
+													i.name,
+													i.id,
+													...itemSetsList.map((s) => s.name),
+													...encs.map((e: any) => `${e.name} ${e.level}`),
+													...i.recipes.flatMap((r: any) => r.needs.map((n: any) => n.name)),
+												]
+													.join(' ')
+													.toLowerCase();
+												return (
+													<tr
+														id={itemAnchor(i.key)}
+														data-rit-row
+														data-search={rowSearch}
+														data-tier={String(i.tier ?? '')}
+														data-sets={itemSetsList.map((s) => s.id).join(',')}
+														data-craftable={i.recipes.length > 0 ? '1' : '0'}
+													>
+														<td class="rit-item-cell">
+															<div class="rit-item-title">
+																<span class="rit-step-tag">{itemStepLabel(i, fam.name)}</span>
+																<strong>{i.name}</strong>
+															</div>
+															{(notes[i.key] ?? []).map((line) => (
+																<div class="rit-item-note">{line}</div>
+															))}
+														</td>
+														{columns.map(([key, , unit]) => (
+															<td class="rit-num-col">{i.stats?.[key] !== undefined ? `${num(i.stats[key])}${unit}` : '–'}</td>
+														))}
+														<td class="rit-ench-cell">
+															{encs.length > 0 ? (
+																<div class="rit-ench-list">
+																	{encs.map((e: any) => (
+																		<span class:list={['rit-ench', { 'is-primary': isPrimaryEnchant(e.name) }]}>
+																			{e.name} <b>{num(e.level)}</b>
+																		</span>
+																	))}
+																</div>
+															) : (
+																<span class="rit-dash">–</span>
+															)}
+														</td>
+														<td class="rit-recipe-cell">
+															{i.recipes.length > 0 ? (
+																<div class="rit-recipes">
+																	{i.recipes.map((r: any, idx: number) => {
+																		const needs = mergeNeeds(r.needs);
+																		return (
+																			<div class="rit-recipe-line">
+																				{i.recipes.length > 1 && <span class="rit-recipe-idx">Cách {idx + 1}:</span>}
+																				<div class="rit-chips">
+																					{needs.map((n: any) => {
+																						const href = ingredientHref(n);
+																						const Tag = href ? 'a' : 'span';
+																						return (
+																							<Tag class:list={['rit-chip', { 'is-link': Boolean(href) }]} href={href}>
+																								{hasIcon(n.icon) && (
+																									<img
+																										src={iconUrl(n.icon, n.item ? itemIndex[n.item]?.dyeColor : null)}
+																										alt=""
+																										width="16"
+																										height="16"
+																										loading="lazy"
+																										onerror="this.style.display='none'"
+																									/>
+																								)}
+																								<b>{num(n.amount)}×</b>
+																								<span>{n.name}</span>
+																							</Tag>
+																						);
+																					})}
+																				</div>
+																				{(r.money || r.xu || r.chance < 100) && (
+																					<div class="rit-costs">
+																						{r.money && <span class="rit-cost">{num(r.money)} tiền</span>}
+																						{r.xu && <span class="rit-cost">{num(r.xu)} Xu</span>}
+																						{r.chance < 100 && <span class="rit-cost is-warn">Tỉ lệ {num(r.chance)}%</span>}
+																					</div>
+																				)}
+																			</div>
+																		);
+																	})}
+																</div>
+															) : (
+																<span class="rit-no-recipe">Không chế tạo (rơi/đổi)</span>
+															)}
+														</td>
+													</tr>
+												);
+											})}
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</details>
+					);
+				})}
+			</div>
+		)
+	}
+
+	{/* FLAT TABLE VIEW (default when not grouped, or toggled in catalog mode) */}
+	<div class="rit-flat" data-rit-flat-panel style={showGroupingOption ? 'display:none' : undefined}>
+		<div class="rit-scroll">
+			<table class="rit-table">
+				<thead>
 					<tr>
-						<td>
-							<img class="ri-icon" src={iconUrl(i.icon)} alt="" width="24" height="24" loading="lazy" onerror="this.style.visibility='hidden'" />
-							{i.name}
-							{(notes[i.key] ?? []).map((line) => <small class="ri-note">{line}</small>)}
-						</td>
-						{columns.map(([key]) => <td>{i.stats[key] !== undefined ? num(i.stats[key]) : '–'}</td>)}
-						<td class="ri-wrap">
-							{hasDetail(i) ? (
-								<details>
-									<summary>Xem</summary>
-									{i.enchants.length > 0 && <p>Phép có sẵn: {i.enchants.map((e: any) => `${e.name} ${num(e.level)}`).join(', ')}.</p>}
-									{i.recipes.map((r: any, n: number) => (
-										<p>
-											{i.recipes.length > 1 ? `Công thức ${n + 1}` : 'Công thức'}: {ingredients(r)}.{cost(r) && ` (${cost(r)})`}
-										</p>
-									))}
-								</details>
-							) : (
-								'–'
-							)}
-						</td>
+						{showSlot && <th>Món</th>}
+						<th>Vật phẩm</th>
+						{columns.map(([, label]) => (
+							<th class="rit-num-col">{label}</th>
+						))}
+						<th>Phép có sẵn</th>
+						<th>Công thức chế tạo (<code>/ecraft</code>)</th>
 					</tr>
-				))
-			}
-		</tbody>
-	</table>
+				</thead>
+				<tbody>
+					{
+						items.map((i: any) => {
+							const encs = sortedEnchants(i.enchants);
+							const itemSetsList = itemSets[i.key] ?? [];
+							const rowSearch = [
+								i.name,
+								i.id,
+								i.label,
+								...itemSetsList.map((s) => s.name),
+								...encs.map((e: any) => `${e.name} ${e.level}`),
+								...i.recipes.flatMap((r: any) => r.needs.map((n: any) => n.name)),
+							]
+								.join(' ')
+								.toLowerCase();
+							return (
+								<tr
+									id={!showGroupingOption ? itemAnchor(i.key) : undefined}
+									data-rit-flat-row
+									data-search={rowSearch}
+									data-tier={String(i.tier ?? '')}
+									data-sets={itemSetsList.map((s) => s.id).join(',')}
+									data-craftable={i.recipes.length > 0 ? '1' : '0'}
+								>
+									{showSlot && (
+										<td class="rit-slot-cell">
+											<span class="rit-slot-badge">{i.label}</span>
+										</td>
+									)}
+									<td class="rit-item-cell">
+										<div class="rit-item-title">
+											<span class="rit-icon-box rit-icon-sm">
+												{hasIcon(i.icon) ? (
+													<img
+														src={iconUrl(i.icon, i.dyeColor)}
+														alt=""
+														width="22"
+														height="22"
+														loading="lazy"
+														onerror="this.style.display='none';this.nextElementSibling.style.display='inline-flex'"
+													/>
+												) : null}
+												<span class="rit-icon-fallback" style={hasIcon(i.icon) ? 'display:none' : 'display:inline-flex'} aria-hidden="true">
+													{fallbackIcon(i.kind)}
+												</span>
+											</span>
+											<div>
+												<strong>{i.name}</strong>
+												{catalog && itemSetsList.length > 0 && (
+													<div class="rit-inline-sets">
+														{itemSetsList.map((s) => (
+															<a class="rit-inline-set" href={setUrl(s.slug)}>
+																Bộ {s.name}
+															</a>
+														))}
+													</div>
+												)}
+											</div>
+										</div>
+										{(notes[i.key] ?? []).map((line) => (
+											<div class="rit-item-note">{line}</div>
+										))}
+									</td>
+									{columns.map(([key, , unit]) => (
+										<td class="rit-num-col">{i.stats?.[key] !== undefined ? `${num(i.stats[key])}${unit}` : '–'}</td>
+									))}
+									<td class="rit-ench-cell">
+										{encs.length > 0 ? (
+											<div class="rit-ench-list">
+												{encs.map((e: any) => (
+													<span class:list={['rit-ench', { 'is-primary': isPrimaryEnchant(e.name) }]}>
+														{e.name} <b>{num(e.level)}</b>
+													</span>
+												))}
+											</div>
+										) : (
+											<span class="rit-dash">–</span>
+										)}
+									</td>
+									<td class="rit-recipe-cell">
+										{i.recipes.length > 0 ? (
+											<div class="rit-recipes">
+												{i.recipes.map((r: any, idx: number) => {
+													const needs = mergeNeeds(r.needs);
+													return (
+														<div class="rit-recipe-line">
+															{i.recipes.length > 1 && <span class="rit-recipe-idx">Cách {idx + 1}:</span>}
+															<div class="rit-chips">
+																{needs.map((n: any) => {
+																	const href = ingredientHref(n);
+																	const Tag = href ? 'a' : 'span';
+																	return (
+																		<Tag class:list={['rit-chip', { 'is-link': Boolean(href) }]} href={href}>
+																			{hasIcon(n.icon) && (
+																				<img
+																					src={iconUrl(n.icon, n.item ? itemIndex[n.item]?.dyeColor : null)}
+																					alt=""
+																					width="16"
+																					height="16"
+																					loading="lazy"
+																					onerror="this.style.display='none'"
+																				/>
+																			)}
+																			<b>{num(n.amount)}×</b>
+																			<span>{n.name}</span>
+																		</Tag>
+																	);
+																})}
+															</div>
+															{(r.money || r.xu || r.chance < 100) && (
+																<div class="rit-costs">
+																	{r.money && <span class="rit-cost">{num(r.money)} tiền</span>}
+																	{r.xu && <span class="rit-cost">{num(r.xu)} Xu</span>}
+																	{r.chance < 100 && <span class="rit-cost is-warn">Tỉ lệ {num(r.chance)}%</span>}
+																</div>
+															)}
+														</div>
+													);
+												})}
+											</div>
+										) : (
+											<span class="rit-no-recipe">Không chế tạo (rơi/đổi)</span>
+										)}
+									</td>
+								</tr>
+							);
+						})
+					}
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+	{
+		catalog && (
+			<p class="rit-empty" data-rit-empty hidden>
+				Không tìm thấy vật phẩm nào khớp với bộ lọc hiện tại. <button type="button" class="rit-link-btn" data-rit-reset>Xóa bộ lọc</button>
+			</p>
+		)
+	}
 </div>
 
+<script>
+	document.querySelectorAll('[data-rit-root][data-catalog="1"]').forEach((root) => {
+		const searchEl = root.querySelector('[data-rit-search]') as HTMLInputElement | null;
+		const tierEl = root.querySelector('[data-rit-tier]') as HTMLSelectElement | null;
+		const setEl = root.querySelector('[data-rit-set]') as HTMLSelectElement | null;
+		const craftEl = root.querySelector('[data-rit-craftable]') as HTMLInputElement | null;
+		const statusEl = root.querySelector('[data-rit-status]') as HTMLElement | null;
+		const emptyEl = root.querySelector('[data-rit-empty]') as HTMLElement | null;
+		const groupedPanel = root.querySelector('[data-rit-grouped-panel]') as HTMLElement | null;
+		const flatPanel = root.querySelector('[data-rit-flat-panel]') as HTMLElement | null;
+		const bulkWrap = root.querySelector('[data-rit-bulk]') as HTMLElement | null;
+		const modeBtns = [...root.querySelectorAll('[data-rit-mode]')] as HTMLButtonElement[];
+
+		let mode: 'grouped' | 'flat' = groupedPanel ? 'grouped' : 'flat';
+
+		const families = [...root.querySelectorAll('[data-rit-family]')] as HTMLDetailsElement[];
+		const flatRows = [...root.querySelectorAll('[data-rit-flat-row]')] as HTMLTableRowElement[];
+
+		function matches(el: HTMLElement, q: string, tier: string, setVal: string, craftOnly: boolean) {
+			if (q && !(el.dataset.search ?? '').includes(q)) return false;
+			if (tier) {
+				const t = el.dataset.tier ?? el.dataset.tiers ?? '';
+				if (!t.split(',').includes(tier)) return false;
+			}
+			if (setVal) {
+				const sets = (el.dataset.sets ?? '').split(',').filter(Boolean);
+				if (setVal === '__in_set__' && sets.length === 0) return false;
+				else if (setVal === '__no_set__' && sets.length > 0) return false;
+				else if (setVal !== '__in_set__' && setVal !== '__no_set__' && !sets.includes(setVal)) return false;
+			}
+			if (craftOnly && el.dataset.craftable !== '1') return false;
+			return true;
+		}
+
+		function applyFilter() {
+			const q = (searchEl?.value ?? '').trim().toLowerCase();
+			const tier = tierEl?.value ?? '';
+			const setVal = setEl?.value ?? '';
+			const craftOnly = Boolean(craftEl?.checked);
+			const filtering = Boolean(q || tier || setVal || craftOnly);
+
+			let visibleItems = 0;
+			let visibleFamilies = 0;
+
+			if (groupedPanel) {
+				for (const fam of families) {
+					const rows = [...fam.querySelectorAll('[data-rit-row]')] as HTMLTableRowElement[];
+					let famHits = 0;
+					for (const row of rows) {
+						const ok = matches(row, q, tier, setVal, craftOnly);
+						row.hidden = !ok;
+						if (ok) famHits++;
+					}
+					fam.hidden = famHits === 0;
+					if (famHits > 0) {
+						visibleFamilies++;
+						visibleItems += famHits;
+						if (filtering && famHits <= 12) fam.open = true;
+					}
+				}
+			}
+
+			let flatHits = 0;
+			for (const row of flatRows) {
+				const ok = matches(row, q, tier, setVal, craftOnly);
+				row.hidden = !ok;
+				if (ok) flatHits++;
+			}
+			if (!groupedPanel) visibleItems = flatHits;
+
+			if (statusEl) {
+				statusEl.textContent =
+					mode === 'grouped' && groupedPanel
+						? `Đang hiện ${visibleItems} vật phẩm trong ${visibleFamilies} dòng nâng cấp`
+						: `Đang hiện ${flatHits} vật phẩm`;
+			}
+			if (emptyEl) emptyEl.hidden = visibleItems > 0;
+		}
+
+		function setMode(next: 'grouped' | 'flat') {
+			mode = next;
+			if (groupedPanel) groupedPanel.style.display = mode === 'grouped' ? '' : 'none';
+			if (flatPanel) flatPanel.style.display = mode === 'flat' ? '' : 'none';
+			if (bulkWrap) bulkWrap.style.display = mode === 'grouped' ? '' : 'none';
+			for (const btn of modeBtns) btn.classList.toggle('is-active', btn.dataset.ritMode === mode);
+			applyFilter();
+		}
+
+		searchEl?.addEventListener('input', applyFilter);
+		tierEl?.addEventListener('change', applyFilter);
+		setEl?.addEventListener('change', applyFilter);
+		craftEl?.addEventListener('change', applyFilter);
+
+		for (const btn of modeBtns) {
+			btn.addEventListener('click', () => {
+				const m = btn.dataset.ritMode === 'flat' ? 'flat' : 'grouped';
+				setMode(m);
+			});
+		}
+
+		root.querySelector('[data-rit-expand-all]')?.addEventListener('click', () => {
+			for (const fam of families) if (!fam.hidden) fam.open = true;
+		});
+		root.querySelector('[data-rit-collapse-all]')?.addEventListener('click', () => {
+			for (const fam of families) fam.open = false;
+		});
+		root.querySelector('[data-rit-reset]')?.addEventListener('click', () => {
+			if (searchEl) searchEl.value = '';
+			if (tierEl) tierEl.value = '';
+			if (setEl) setEl.value = '';
+			if (craftEl) craftEl.checked = false;
+			applyFilter();
+		});
+
+		// If URL hash points to a specific item inside a collapsed family, open that family!
+		function openHashTarget() {
+			const hash = location.hash.slice(1);
+			if (!hash) return;
+			const target = root.querySelector(`#${CSS.escape(hash)}`) as HTMLElement | null;
+			const parentDetails = target?.closest('details') as HTMLDetailsElement | null;
+			if (parentDetails) {
+				parentDetails.open = true;
+				target?.scrollIntoView({ block: 'center' });
+			}
+		}
+		openHashTarget();
+		window.addEventListener('hashchange', openHashTarget);
+	});
+</script>
+
 <style>
-	.ri-scroll {
+	.rit-wrap {
+		margin: 1rem 0 1.5rem;
+	}
+	.rit-sr {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+	}
+
+	/* Toolbar */
+	.rit-toolbar {
+		display: flex;
+		flex-direction: column;
+		gap: 0.6rem;
+		margin-bottom: 1rem;
+		padding: 0.75rem;
+		border: 1px solid var(--tw-border);
+		border-radius: 0.5rem;
+		background: var(--tw-surface);
+	}
+	.rit-search-box {
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+	.rit-search-ico {
+		position: absolute;
+		left: 0.7rem;
+		width: 1rem;
+		height: 1rem;
+		color: var(--tw-text-muted);
+		pointer-events: none;
+	}
+	.rit-search {
+		width: 100%;
+		padding: 0.45rem 0.75rem 0.45rem 2.15rem;
+		border: 1px solid var(--tw-border);
+		border-radius: 0.375rem;
+		background: var(--tw-bg);
+		color: var(--tw-text);
+		font-size: 0.875rem;
+		font-family: inherit;
+	}
+	.rit-search:focus {
+		outline: 2px solid var(--tw-green);
+		outline-offset: -1px;
+	}
+	.rit-controls {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.5rem;
+	}
+	.rit-select {
+		padding: 0.35rem 0.6rem;
+		border: 1px solid var(--tw-border);
+		border-radius: 0.375rem;
+		background: var(--tw-bg);
+		color: var(--tw-text);
+		font-size: 0.8125rem;
+		font-family: inherit;
+	}
+	.rit-check {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.35rem;
+		padding: 0.3rem 0.6rem;
+		border: 1px solid var(--tw-border);
+		border-radius: 0.375rem;
+		background: var(--tw-bg);
+		color: var(--tw-text-nav);
+		font-size: 0.8125rem;
+		cursor: pointer;
+	}
+	.rit-check input {
+		accent-color: var(--tw-green);
+	}
+	.rit-view-toggle {
+		display: inline-flex;
+		margin-left: auto;
+		padding: 0.15rem;
+		border: 1px solid var(--tw-border);
+		border-radius: 0.375rem;
+		background: var(--tw-bg);
+	}
+	.rit-view-btn {
+		padding: 0.25rem 0.6rem;
+		border: 0;
+		border-radius: 0.25rem;
+		background: transparent;
+		color: var(--tw-text-muted);
+		font-size: 0.78rem;
+		font-weight: 500;
+		font-family: inherit;
+		cursor: pointer;
+	}
+	.rit-view-btn.is-active {
+		background: var(--tw-accent-wash);
+		color: var(--tw-accent-text);
+	}
+	.rit-status-row {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.5rem;
+		font-size: 0.78rem;
+		color: var(--tw-text-muted);
+	}
+	.rit-bulk-btns {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+	}
+	.rit-link-btn {
+		padding: 0;
+		border: 0;
+		background: none;
+		color: var(--tw-accent-text);
+		font-size: inherit;
+		font-family: inherit;
+		cursor: pointer;
+	}
+	.rit-link-btn:hover {
+		text-decoration: underline;
+	}
+
+	/* Family cards */
+	.rit-families {
+		display: flex;
+		flex-direction: column;
+		gap: 0.65rem;
+	}
+	.rit-family {
+		border: 1px solid var(--tw-border);
+		border-radius: 0.5rem;
+		background: var(--tw-neutral);
+		overflow: hidden;
+	}
+	.rit-family[open] {
+		border-color: var(--tw-border);
+	}
+	.rit-fam-head {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0.65rem 0.85rem;
+		cursor: pointer;
+		list-style: none;
+		user-select: none;
+	}
+	.rit-fam-head::-webkit-details-marker {
+		display: none;
+	}
+	.rit-fam-head:hover {
+		background: var(--tw-surface);
+	}
+	.rit-fam-left {
+		display: flex;
+		align-items: center;
+		gap: 0.65rem;
+		min-width: 0;
+	}
+	.rit-chev {
+		flex: none;
+		color: var(--tw-text-muted);
+		font-size: 0.85rem;
+		transition: transform 140ms ease;
+	}
+	.rit-family[open] > .rit-fam-head .rit-chev {
+		transform: rotate(90deg);
+		color: var(--tw-accent-text);
+	}
+	.rit-icon-box {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		flex: none;
+		width: 2.125rem;
+		height: 2.125rem;
+		border: 1px solid var(--tw-border);
+		border-radius: 0.375rem;
+		background: var(--tw-surface);
+	}
+	.rit-icon-box.rit-icon-sm {
+		width: 1.75rem;
+		height: 1.75rem;
+	}
+	.rit-icon-box img {
+		image-rendering: pixelated;
+	}
+	.rit-icon-fallback {
+		align-items: center;
+		justify-content: center;
+		font-size: 0.9rem;
+		color: var(--tw-text-muted);
+	}
+	.rit-fam-title-wrap {
+		display: flex;
+		flex-direction: column;
+		gap: 0.2rem;
+		min-width: 0;
+	}
+	.rit-fam-title {
+		font-size: 0.95rem;
+		font-weight: 600;
+		color: var(--tw-text);
+	}
+	.rit-fam-meta {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.3rem;
+	}
+	.rit-pill {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.05rem 0.45rem;
+		border-radius: 999px;
+		font-size: 0.72rem;
+		font-weight: 500;
+		font-variant-numeric: tabular-nums;
+	}
+	.rit-pill-muted {
+		background: var(--tw-surface-3);
+		color: var(--tw-text-nav);
+	}
+	.rit-pill-tier {
+		border: 1px solid var(--tw-border);
+		background: var(--tw-bg);
+		color: var(--tw-text-muted);
+	}
+	.rit-pill-stat {
+		background: rgba(245, 158, 11, 0.14);
+		color: #fbbf24;
+	}
+	:root[data-theme='light'] .rit-pill-stat {
+		background: #fef3c7;
+		color: #92400e;
+	}
+	.rit-pill-set {
+		background: var(--tw-accent-wash);
+		color: var(--tw-accent-text);
+	}
+	.rit-fam-body {
+		border-top: 1px solid var(--tw-border);
+		background: var(--tw-bg);
+	}
+	.rit-fam-setbar {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0.45rem 0.85rem;
+		border-bottom: 1px solid var(--tw-border);
+		background: var(--tw-surface);
+		font-size: 0.78rem;
+		color: var(--tw-text-muted);
+	}
+	.rit-set-link {
+		color: var(--tw-accent-text);
+		font-weight: 500;
+		text-decoration: none;
+	}
+	.rit-set-link:hover {
+		text-decoration: underline;
+	}
+
+	/* Table */
+	.rit-flat {
+		border: 1px solid var(--tw-border);
+		border-radius: 0.5rem;
+		background: var(--tw-bg);
+		overflow: hidden;
+	}
+	.rit-scroll {
 		overflow-x: auto;
 	}
-	.ri {
+	.rit-table {
 		width: 100%;
 		border-collapse: collapse;
-		font-size: var(--sl-text-sm);
+		font-size: 0.8125rem;
 	}
-	.ri th,
-	.ri td {
-		padding: 0.35rem 0.6rem;
-		border-bottom: 1px solid var(--sl-color-hairline);
+	.rit-table th,
+	.rit-table td {
+		padding: 0.55rem 0.75rem;
+		border-bottom: 1px solid var(--tw-border);
 		text-align: left;
 		vertical-align: top;
+	}
+	.rit-table tbody tr:last-child td {
+		border-bottom: 0;
+	}
+	.rit-table thead th {
+		background: var(--tw-neutral);
+		color: var(--tw-text-muted);
+		font-size: 0.72rem;
+		font-weight: 600;
 		white-space: nowrap;
 	}
-	.ri th {
-		color: var(--sl-color-gray-2);
+	.rit-table thead th code {
+		font-size: 0.7rem;
+		color: var(--tw-accent-text);
+	}
+	.rit-table tbody tr:hover td {
+		background: var(--tw-surface);
+	}
+	.rit-table tbody tr:target td {
+		background: var(--tw-accent-wash);
+	}
+	.rit-num-col {
+		text-align: right !important;
+		white-space: nowrap;
+		font-variant-numeric: tabular-nums;
+	}
+	.rit-slot-cell {
+		white-space: nowrap;
+	}
+	.rit-slot-badge {
+		display: inline-block;
+		padding: 0.1rem 0.45rem;
+		border: 1px solid var(--tw-border);
+		border-radius: 0.25rem;
+		background: var(--tw-surface);
+		color: var(--tw-text-nav);
+		font-size: 0.75rem;
 		font-weight: 600;
 	}
-	.ri td.ri-wrap {
-		white-space: normal;
-		min-width: 14rem;
+	.rit-item-cell {
+		min-width: 11.5rem;
 	}
-	.ri img {
+	.rit-item-title {
+		display: flex;
+		align-items: center;
+		gap: 0.45rem;
+	}
+	.rit-step-tag {
+		display: inline-block;
+		min-width: 2.3rem;
+		padding: 0.05rem 0.35rem;
+		border-radius: 0.25rem;
+		background: var(--tw-surface-3);
+		color: var(--tw-text-muted);
+		font-size: 0.7rem;
+		font-weight: 600;
+		text-align: center;
+		font-variant-numeric: tabular-nums;
+	}
+	.rit-inline-sets {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.25rem;
+		margin-top: 0.15rem;
+	}
+	.rit-inline-set {
+		font-size: 0.72rem;
+		color: var(--tw-accent-text);
+		text-decoration: none;
+	}
+	.rit-inline-set:hover {
+		text-decoration: underline;
+	}
+	.rit-item-note {
+		margin-top: 0.25rem;
+		padding: 0.15rem 0.45rem;
+		border-left: 2px solid var(--tw-green);
+		background: var(--tw-accent-wash);
+		border-radius: 0 0.25rem 0.25rem 0;
+		color: var(--tw-text);
+		font-size: 0.75rem;
+	}
+
+	/* Enchants */
+	.rit-ench-cell {
+		min-width: 12rem;
+	}
+	.rit-ench-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.25rem;
+	}
+	.rit-ench {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.22rem;
+		padding: 0.08rem 0.4rem;
+		border: 1px solid var(--tw-border);
+		border-radius: 0.25rem;
+		background: var(--tw-surface);
+		color: var(--tw-text-nav);
+		font-size: 0.74rem;
+		white-space: nowrap;
+	}
+	.rit-ench b {
+		font-variant-numeric: tabular-nums;
+		color: var(--tw-text);
+	}
+	.rit-ench.is-primary {
+		border-color: rgba(192, 132, 252, 0.35);
+		background: rgba(192, 132, 252, 0.1);
+		color: #d8b4fe;
+	}
+	.rit-ench.is-primary b {
+		color: #f3e8ff;
+	}
+	:root[data-theme='light'] .rit-ench.is-primary {
+		border-color: rgba(126, 34, 206, 0.28);
+		background: #f3e8ff;
+		color: #6b21a8;
+	}
+	:root[data-theme='light'] .rit-ench.is-primary b {
+		color: #4c1d95;
+	}
+
+	/* Recipes */
+	.rit-recipe-cell {
+		min-width: 17rem;
+	}
+	.rit-recipes {
+		display: flex;
+		flex-direction: column;
+		gap: 0.35rem;
+	}
+	.rit-recipe-line {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+	}
+	.rit-recipe-idx {
+		font-size: 0.72rem;
+		font-weight: 600;
+		color: var(--tw-text-muted);
+	}
+	.rit-chips {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.25rem;
+	}
+	.rit-chip {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.28rem;
+		padding: 0.12rem 0.45rem;
+		border: 1px solid var(--tw-border);
+		border-radius: 0.3rem;
+		background: var(--tw-surface);
+		color: var(--tw-text);
+		font-size: 0.75rem;
+		line-height: 1.3;
+		text-decoration: none;
+	}
+	.rit-chip.is-link:hover {
+		border-color: var(--tw-green);
+		color: var(--tw-accent-text);
+	}
+	.rit-chip img {
 		image-rendering: pixelated;
-		vertical-align: middle;
-		margin-right: 0.4rem;
+		flex: none;
 	}
-	.ri-note {
-		display: block;
-		margin-left: 1.9rem;
-		color: var(--sl-color-gray-3);
-		white-space: normal;
+	.rit-chip b {
+		color: var(--tw-accent-text);
+		font-variant-numeric: tabular-nums;
 	}
-	.ri details p {
-		margin: 0.25rem 0 0;
+	.rit-costs {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.3rem;
 	}
-	.ri summary {
-		cursor: pointer;
-		color: var(--sl-color-text-accent);
+	.rit-cost {
+		padding: 0.04rem 0.4rem;
+		border-radius: 0.25rem;
+		background: var(--tw-surface-3);
+		color: var(--tw-text-nav);
+		font-size: 0.72rem;
+		font-variant-numeric: tabular-nums;
+	}
+	.rit-cost.is-warn {
+		background: rgba(245, 197, 66, 0.14);
+		color: var(--tw-warning);
+	}
+	:root[data-theme='light'] .rit-cost.is-warn {
+		background: #fef3c7;
+		color: #92400e;
+	}
+	.rit-no-recipe,
+	.rit-dash {
+		color: var(--tw-text-muted);
+		font-size: 0.78rem;
+	}
+	.rit-empty {
+		margin: 1rem 0 0;
+		padding: 1rem;
+		border: 1px dashed var(--tw-border);
+		border-radius: 0.5rem;
+		text-align: center;
+		color: var(--tw-text-muted);
+		font-size: 0.875rem;
+	}
+
+	@media (max-width: 48rem) {
+		.rit-view-toggle {
+			margin-left: 0;
+			width: 100%;
+		}
+		.rit-view-btn {
+			flex: 1;
+		}
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.rit-chev {
+			transition: none;
+		}
 	}
 </style>

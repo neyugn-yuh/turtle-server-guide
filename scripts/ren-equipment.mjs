@@ -43,7 +43,7 @@ const ENCHANTS = {
 // How the armor sets are grouped on the list page. A set that is not listed here goes to "Khác" (and is reported).
 const LINES = [
 	['Phổ thông', ['tanthu', 'coxua', 'thuongco', 'thuonglong', 'huyenthoai', 'huyenkim', 'truyenthuyet', 'toicao']],
-	['Ngũ hành', ['nguhanh', 'kimtinh', 'moctinh', 'thuytinh', 'hoatinh', 'thotinh', 'kimvuong', 'mocvuong', 'thuyvuong', 'hoavuong', 'thovuong', 'kimthan', 'mocthan', 'thuythan', 'hoathan', 'thothan']],
+	['Ngũ hành', ['kimtinh', 'moctinh', 'thuytinh', 'hoatinh', 'thotinh', 'kimvuong', 'mocvuong', 'thuyvuong', 'hoavuong', 'thovuong', 'kimthan', 'mocthan', 'thuythan', 'hoathan', 'thothan']],
 	['Bá vương', ['bavuong', 'bavuongcuongno']],
 	['Huyết linh', Array.from({ length: 10 }, (_, i) => `huyetlinh${i + 1}`)],
 	['Huyết ma vương', ['huyetmavuong', ...Array.from({ length: 10 }, (_, i) => `huyetmavuong${i + 1}`)]],
@@ -96,6 +96,12 @@ export function buildEquipment({ base, readYaml, stripCodes, pretty, round, warn
 			.filter(([key]) => ENCHANTS[key])
 			.map(([key, level]) => ({ name: ENCHANTS[key], level: Number(level) }));
 		for (const key of Object.keys(raw.enchants ?? {})) if (!ENCHANTS[key]) warn(`${type}:${id}: vanilla enchant ${key} has no name (left out)`);
+		const material = raw.material ? String(raw.material).toLowerCase() : null;
+		const dyeMatch = /^(\d+)\s+(\d+)\s+(\d+)$/.exec(String(raw['dye-color'] ?? '').trim());
+		const dyeColor =
+			dyeMatch && material?.startsWith('leather_')
+				? '#' + [dyeMatch[1], dyeMatch[2], dyeMatch[3]].map((n) => Math.max(0, Math.min(255, Number(n))).toString(16).padStart(2, '0')).join('')
+				: null;
 		return {
 			key: `${type}:${id}`,
 			type,
@@ -103,7 +109,8 @@ export function buildEquipment({ base, readYaml, stripCodes, pretty, round, warn
 			kind: TYPES[type].slot,
 			label: TYPES[type].label,
 			name: nameOf(raw.name) || `${TYPES[type].label} ${id}`,
-			icon: raw.material ? String(raw.material).toLowerCase() : null,
+			icon: material,
+			...(dyeColor ? { dyeColor } : {}),
 			tier: raw.tier !== undefined ? Number(raw.tier) || null : null,
 			stats,
 			enchants,

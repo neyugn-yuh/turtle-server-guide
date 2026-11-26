@@ -1,0 +1,92 @@
+---
+/**
+ * Quick category bar for Sky Rèn gear & weapons pages, letting players switch
+ * between Armor Sets and each weapon/tool type without digging into the sidebar.
+ */
+interface Props {
+	server: string;
+	active: 'sets' | 'sword' | 'axe' | 'farm-axe' | 'bow' | 'shield' | 'pickaxe';
+	counts: Record<string, number>;
+}
+
+const { server, active, counts } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const TABS: { id: Props['active']; label: string; slug: string }[] = [
+	{ id: 'sets', label: 'Bộ trang bị', slug: 'bo-trang-bi' },
+	{ id: 'sword', label: 'Kiếm', slug: 'kiem' },
+	{ id: 'axe', label: 'Rìu', slug: 'riu' },
+	{ id: 'farm-axe', label: 'Rìu farm', slug: 'riu-farm' },
+	{ id: 'bow', label: 'Cung', slug: 'cung' },
+	{ id: 'shield', label: 'Khiên', slug: 'khien' },
+	{ id: 'pickaxe', label: 'Cúp', slug: 'cup' },
+];
+---
+
+<nav class="rgn" aria-label="Danh mục trang bị & vũ khí">
+	{
+		TABS.map((tab) => {
+			const isActive = tab.id === active;
+			const count = counts[tab.id];
+			return (
+				<a class:list={['rgn-tab', { 'is-active': isActive }]} href={`${base}/${server}/gear/${tab.slug}/`} aria-current={isActive ? 'page' : undefined}>
+					<span class="rgn-label">{tab.label}</span>
+					{count !== undefined && <span class="rgn-count">{count}</span>}
+				</a>
+			);
+		})
+	}
+</nav>
+
+<style>
+	.rgn {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.4rem;
+		margin: 0 0 1.25rem;
+		padding: 0.4rem;
+		border: 1px solid var(--tw-border);
+		border-radius: 0.5rem;
+		background: var(--tw-neutral);
+	}
+	.rgn-tab {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.4rem;
+		padding: 0.35rem 0.7rem;
+		border: 1px solid transparent;
+		border-radius: 0.375rem;
+		color: var(--tw-text-nav);
+		font-size: 0.8125rem;
+		font-weight: 500;
+		text-decoration: none;
+		transition: background-color 120ms ease, border-color 120ms ease, color 120ms ease;
+	}
+	.rgn-tab:hover {
+		background: var(--tw-surface);
+		color: var(--tw-text);
+	}
+	.rgn-tab.is-active {
+		background: var(--tw-accent-wash);
+		border-color: var(--tw-green);
+		color: var(--tw-accent-text);
+		font-weight: 600;
+	}
+	.rgn-count {
+		padding: 0.05rem 0.38rem;
+		border-radius: 999px;
+		background: var(--tw-surface);
+		color: var(--tw-text-muted);
+		font-size: 0.72rem;
+		font-variant-numeric: tabular-nums;
+	}
+	.rgn-tab.is-active .rgn-count {
+		background: var(--tw-green);
+		color: var(--tw-btn-text);
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.rgn-tab {
+			transition: none;
+		}
+	}
+</style>
