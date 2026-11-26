@@ -1,14 +1,23 @@
 ---
 title: "Trang bị: Sự kiện Halloween 2026"
-description: Các bộ giáp của sự kiện Halloween 2026 ở Sky Rèn gồm Huyết Linh, Huyết Ma Vương và Linh Hồn.
+description: Các bộ giáp và sọ phép của sự kiện Halloween 2026 ở Sky Rèn.
 sidebar:
   label: Sự kiện Halloween 2026
   order: 2
 ---
 
 import RenEquipment from '../../../../components/RenEquipment.astro';
+import RenSkulls from '../../../../components/RenSkulls.astro';
 import { hlw2026Lines } from '../../../../data/gear-pages.mjs';
+
+## Bộ giáp
 
 Các bộ giáp của sự kiện **Halloween 2026**: Huyết Linh, Huyết Ma Vương và Linh Hồn. Mặc đủ 4 món cùng bộ để nhận hiệu ứng. Bấm vào một bộ để xem chỉ số từng món và công thức chế tạo.
 
 <RenEquipment server="sky-ren" view="sets" only={hlw2026Lines} />
+
+## Sọ phép
+
+Các sọ phép giới hạn của sự kiện. Đặt sọ lên thanh nhanh (hotbar) để kích hoạt chỉ số. Tim là số tim cộng thêm, một tim bằng 2 máu.
+
+<RenSkulls server="sky-ren" section="event" />

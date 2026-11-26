@@ -4,6 +4,7 @@
  * (written by scripts/sync-ren.mjs from ItemAbility/items.yml and the /ecraft recipes).
  * One card per family of skulls, one row per level: the four stats, the number of Lửa phép slots and how it is crafted.
  * `section` picks the regular skulls or the Halloween 2026 event skulls. Every number comes from the data.
+ * Pictures: public/skulls/<texture>.png, the head of the skull drawn from its texture (node scripts/fetch-skull-icons.mjs).
  */
 interface Props {
 	server: string;
@@ -23,6 +24,8 @@ for (const s of skulls) {
 	if (!family) families.push((family = { name: s.family, rank: s.rank, rows: [] }));
 	family.rows.push(s);
 }
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const iconUrl = (texture: string | null) => (texture ? `${base}/skulls/${texture}.png` : '');
 const num = (x: number) => x.toLocaleString('vi-VN', { maximumFractionDigits: 2 });
 // the first skull of a family that has upgrades (2 ♦, 3 ♦) is level 1
 const levelText = (s: any, rows: any[]) => {
@@ -49,6 +52,7 @@ const recipeText = (r: any) =>
 					<table>
 						<thead>
 							<tr>
+								<th class="rsk-icon" />
 								{levelCol && <th>Cấp</th>}
 								<th>Sát thương</th>
 								<th>Tốc độ đánh</th>
@@ -61,6 +65,7 @@ const recipeText = (r: any) =>
 						<tbody>
 							{f.rows.map((s: any) => (
 								<tr>
+									<td class="rsk-icon">{s.texture && <img src={iconUrl(s.texture)} alt={s.name} width="32" height="38" loading="lazy" />}</td>
 									{levelCol && <td class="rsk-left">{levelText(s, f.rows)}</td>}
 									<td>+{num(s.stats.damage)}</td>
 									<td>+{num(s.stats.attackSpeed)}%</td>
@@ -133,6 +138,18 @@ const recipeText = (r: any) =>
 	.rsk-card th.rsk-left,
 	.rsk-card td.rsk-left {
 		text-align: left;
+	}
+	.rsk-card td.rsk-icon,
+	.rsk-card th.rsk-icon {
+		width: 2.5rem;
+		padding-right: 0;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.rsk-icon img {
+		display: block;
+		margin: 0 auto;
+		image-rendering: pixelated;
 	}
 	.rsk-sub {
 		color: var(--sl-color-gray-3);

@@ -2,6 +2,7 @@
 	"skulls": [
 		{
 			"id": "thuong",
+			"texture": "ab738fa05b27f18874e57d95b0b6c9fadd1b558894f82e0261ba1544e6fbbf1d",
 			"name": "Sọ Phép Bị Vỡ",
 			"family": "Sọ Phép Bị Vỡ",
 			"level": null,
@@ -38,6 +39,7 @@
 		},
 		{
 			"id": "hiem",
+			"texture": "b617855ff1268d959bd9f239384fe0431ebd751b2624619c555e9d471e9440",
 			"name": "Sọ Phép Bị Nguyền Rủa",
 			"family": "Sọ Phép Bị Nguyền Rủa",
 			"level": null,
@@ -74,6 +76,7 @@
 		},
 		{
 			"id": "hiem2",
+			"texture": "b617855ff1268d959bd9f239384fe0431ebd751b2624619c555e9d471e9440",
 			"name": "Sọ Phép Bị Nguyền Rủa (2♦)",
 			"family": "Sọ Phép Bị Nguyền Rủa",
 			"level": 2,
@@ -91,6 +94,7 @@
 		},
 		{
 			"id": "hiem3",
+			"texture": "b617855ff1268d959bd9f239384fe0431ebd751b2624619c555e9d471e9440",
 			"name": "Sọ Phép Bị Nguyền Rủa (3♦)",
 			"family": "Sọ Phép Bị Nguyền Rủa",
 			"level": 3,
@@ -108,6 +112,7 @@
 		},
 		{
 			"id": "huyenthoai",
+			"texture": "1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5",
 			"name": "Sọ Phép Từ Chiến Binh",
 			"family": "Sọ Phép Từ Chiến Binh",
 			"level": null,
@@ -144,6 +149,7 @@
 		},
 		{
 			"id": "huyenthoai2",
+			"texture": "1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5",
 			"name": "Sọ Phép Từ Chiến Binh (2♦)",
 			"family": "Sọ Phép Từ Chiến Binh",
 			"level": 2,
@@ -161,6 +167,7 @@
 		},
 		{
 			"id": "huyenthoai3",
+			"texture": "1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5",
 			"name": "Sọ Phép Từ Chiến Binh (3♦)",
 			"family": "Sọ Phép Từ Chiến Binh",
 			"level": 3,
@@ -178,6 +185,7 @@
 		},
 		{
 			"id": "truyenthuyet",
+			"texture": "db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65",
 			"name": "Sọ Phép Từ Kiếm Sĩ",
 			"family": "Sọ Phép Từ Kiếm Sĩ",
 			"level": null,
@@ -214,6 +222,7 @@
 		},
 		{
 			"id": "truyenthuyet2",
+			"texture": "db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65",
 			"name": "Sọ Phép Từ Kiếm Sĩ (2♦)",
 			"family": "Sọ Phép Từ Kiếm Sĩ",
 			"level": 2,
@@ -231,6 +240,7 @@
 		},
 		{
 			"id": "truyenthuyet3",
+			"texture": "db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65",
 			"name": "Sọ Phép Từ Kiếm Sĩ (3♦)",
 			"family": "Sọ Phép Từ Kiếm Sĩ",
 			"level": 3,
@@ -248,6 +258,7 @@
 		},
 		{
 			"id": "toicao",
+			"texture": "bb9e4386e54ac7f6e18fbf5c09fb7031953d0a51b054c5b4d63f618eeb2634a9",
 			"name": "Sọ Phép Địa Ngục",
 			"family": "Sọ Phép Địa Ngục",
 			"level": null,
@@ -292,6 +303,7 @@
 		},
 		{
 			"id": "toicao2",
+			"texture": "bb9e4386e54ac7f6e18fbf5c09fb7031953d0a51b054c5b4d63f618eeb2634a9",
 			"name": "Sọ Phép Địa Ngục (2♦)",
 			"family": "Sọ Phép Địa Ngục",
 			"level": 2,
@@ -309,6 +321,7 @@
 		},
 		{
 			"id": "toicao3",
+			"texture": "bb9e4386e54ac7f6e18fbf5c09fb7031953d0a51b054c5b4d63f618eeb2634a9",
 			"name": "Sọ Phép Địa Ngục (3♦)",
 			"family": "Sọ Phép Địa Ngục",
 			"level": 3,
@@ -326,6 +339,7 @@
 		},
 		{
 			"id": "thuongco",
+			"texture": "27540b939e8e9726cd27740d448d118cca1fdc509f51c58876c85480b302143e",
 			"name": "Sọ Phép Từ Trùm Cướp Biển",
 			"family": "Sọ Phép Từ Trùm Cướp Biển",
 			"level": null,
@@ -357,6 +371,7 @@
 		},
 		{
 			"id": "thuongco2",
+			"texture": "27540b939e8e9726cd27740d448d118cca1fdc509f51c58876c85480b302143e",
 			"name": "Sọ Phép Từ Trùm Cướp Biển (2♦)",
 			"family": "Sọ Phép Từ Trùm Cướp Biển",
 			"level": 2,
@@ -374,6 +389,7 @@
 		},
 		{
 			"id": "thuongco3",
+			"texture": "27540b939e8e9726cd27740d448d118cca1fdc509f51c58876c85480b302143e",
 			"name": "Sọ Phép Từ Trùm Cướp Biển (3♦)",
 			"family": "Sọ Phép Từ Trùm Cướp Biển",
 			"level": 3,
@@ -391,6 +407,7 @@
 		},
 		{
 			"id": "thienha",
+			"texture": "ee8004667317ac0d19f2b6bbcf7fd9a850fe3953f972875fd3ce70eee02a1c80",
 			"name": "Sọ Phép Từ Nhạc Sỹ Thiên Hà",
 			"family": "Sọ Phép Từ Nhạc Sỹ Thiên Hà",
 			"level": null,
@@ -422,6 +439,7 @@
 		},
 		{
 			"id": "thienha2",
+			"texture": "ee8004667317ac0d19f2b6bbcf7fd9a850fe3953f972875fd3ce70eee02a1c80",
 			"name": "Sọ Phép Từ Nhạc Sỹ Thiên Hà (2♦)",
 			"family": "Sọ Phép Từ Nhạc Sỹ Thiên Hà",
 			"level": 2,
@@ -458,6 +476,7 @@
 		},
 		{
 			"id": "thienha3",
+			"texture": "ee8004667317ac0d19f2b6bbcf7fd9a850fe3953f972875fd3ce70eee02a1c80",
 			"name": "Sọ Phép Từ Nhạc Sỹ Thiên Hà (3♦)",
 			"family": "Sọ Phép Từ Nhạc Sỹ Thiên Hà",
 			"level": 3,
@@ -494,6 +513,7 @@
 		},
 		{
 			"id": "soronghoangkim",
+			"texture": "cd50210b793b7f61db0556f93cecff26b4a23e598b6268e22ddff11491c504e2",
 			"name": "Sọ Rồng Hoàng Kim",
 			"family": "Sọ Rồng Hoàng Kim",
 			"level": null,
@@ -535,6 +555,7 @@
 		},
 		{
 			"id": "soamnguyetthan",
+			"texture": "ee8004667317ac0d19f2b6bbcf7fd9a850fe3953f972875fd3ce70eee02a1c80",
 			"name": "Sọ Ám Nguyệt Thần",
 			"family": "Sọ Ám Nguyệt Thần",
 			"level": null,
@@ -552,6 +573,7 @@
 		},
 		{
 			"id": "sohuyetde",
+			"texture": "bb9e4386e54ac7f6e18fbf5c09fb7031953d0a51b054c5b4d63f618eeb2634a9",
 			"name": "Sọ Huyết Đế Chí Tôn",
 			"family": "Sọ Huyết Đế Chí Tôn",
 			"level": null,
@@ -569,6 +591,7 @@
 		},
 		{
 			"id": "solinhhon1",
+			"texture": "27540b939e8e9726cd27740d448d118cca1fdc509f51c58876c85480b302143e",
 			"name": "Sọ Linh Hồn 1",
 			"family": "Sọ Linh Hồn",
 			"level": 1,
@@ -586,6 +609,7 @@
 		},
 		{
 			"id": "solinhhon2",
+			"texture": "27540b939e8e9726cd27740d448d118cca1fdc509f51c58876c85480b302143e",
 			"name": "Sọ Linh Hồn 2",
 			"family": "Sọ Linh Hồn",
 			"level": 2,
@@ -603,6 +627,7 @@
 		},
 		{
 			"id": "solinhhon3",
+			"texture": "27540b939e8e9726cd27740d448d118cca1fdc509f51c58876c85480b302143e",
 			"name": "Sọ Linh Hồn 3",
 			"family": "Sọ Linh Hồn",
 			"level": 3,
@@ -620,6 +645,7 @@
 		},
 		{
 			"id": "solinhhon4",
+			"texture": "27540b939e8e9726cd27740d448d118cca1fdc509f51c58876c85480b302143e",
 			"name": "Sọ Linh Hồn 4",
 			"family": "Sọ Linh Hồn",
 			"level": 4,
@@ -637,6 +663,7 @@
 		},
 		{
 			"id": "solinhhon5",
+			"texture": "27540b939e8e9726cd27740d448d118cca1fdc509f51c58876c85480b302143e",
 			"name": "Sọ Linh Hồn 5",
 			"family": "Sọ Linh Hồn",
 			"level": 5,
@@ -654,6 +681,7 @@
 		},
 		{
 			"id": "sohuyetlinh1",
+			"texture": "1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5",
 			"name": "Sọ Huyết Linh 1",
 			"family": "Sọ Huyết Linh",
 			"level": 1,
@@ -671,6 +699,7 @@
 		},
 		{
 			"id": "sohuyetlinh2",
+			"texture": "1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5",
 			"name": "Sọ Huyết Linh 2",
 			"family": "Sọ Huyết Linh",
 			"level": 2,
@@ -688,6 +717,7 @@
 		},
 		{
 			"id": "sohuyetlinh3",
+			"texture": "1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5",
 			"name": "Sọ Huyết Linh 3",
 			"family": "Sọ Huyết Linh",
 			"level": 3,
@@ -705,6 +735,7 @@
 		},
 		{
 			"id": "sohuyetlinh4",
+			"texture": "1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5",
 			"name": "Sọ Huyết Linh 4",
 			"family": "Sọ Huyết Linh",
 			"level": 4,
@@ -722,6 +753,7 @@
 		},
 		{
 			"id": "sohuyetlinh5",
+			"texture": "1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5",
 			"name": "Sọ Huyết Linh 5",
 			"family": "Sọ Huyết Linh",
 			"level": 5,
@@ -739,6 +771,7 @@
 		},
 		{
 			"id": "sohuyetlinh6",
+			"texture": "1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5",
 			"name": "Sọ Huyết Linh 6",
 			"family": "Sọ Huyết Linh",
 			"level": 6,
@@ -756,6 +789,7 @@
 		},
 		{
 			"id": "sohuyetlinh7",
+			"texture": "1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5",
 			"name": "Sọ Huyết Linh 7",
 			"family": "Sọ Huyết Linh",
 			"level": 7,
@@ -773,6 +807,7 @@
 		},
 		{
 			"id": "sohuyetlinh8",
+			"texture": "1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5",
 			"name": "Sọ Huyết Linh 8",
 			"family": "Sọ Huyết Linh",
 			"level": 8,
@@ -790,6 +825,7 @@
 		},
 		{
 			"id": "sohuyetlinh9",
+			"texture": "1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5",
 			"name": "Sọ Huyết Linh 9",
 			"family": "Sọ Huyết Linh",
 			"level": 9,
@@ -807,6 +843,7 @@
 		},
 		{
 			"id": "sohuyetlinh10",
+			"texture": "1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5",
 			"name": "Sọ Huyết Linh 10",
 			"family": "Sọ Huyết Linh",
 			"level": 10,
@@ -824,6 +861,7 @@
 		},
 		{
 			"id": "sohuyetmavuong1",
+			"texture": "db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65",
 			"name": "Sọ Huyết Ma Vương 1",
 			"family": "Sọ Huyết Ma Vương",
 			"level": 1,
@@ -841,6 +879,7 @@
 		},
 		{
 			"id": "sohuyetmavuong2",
+			"texture": "db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65",
 			"name": "Sọ Huyết Ma Vương 2",
 			"family": "Sọ Huyết Ma Vương",
 			"level": 2,
@@ -858,6 +897,7 @@
 		},
 		{
 			"id": "sohuyetmavuong3",
+			"texture": "db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65",
 			"name": "Sọ Huyết Ma Vương 3",
 			"family": "Sọ Huyết Ma Vương",
 			"level": 3,
@@ -875,6 +915,7 @@
 		},
 		{
 			"id": "sohuyetmavuong4",
+			"texture": "db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65",
 			"name": "Sọ Huyết Ma Vương 4",
 			"family": "Sọ Huyết Ma Vương",
 			"level": 4,
@@ -892,6 +933,7 @@
 		},
 		{
 			"id": "sohuyetmavuong5",
+			"texture": "db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65",
 			"name": "Sọ Huyết Ma Vương 5",
 			"family": "Sọ Huyết Ma Vương",
 			"level": 5,
@@ -909,6 +951,7 @@
 		},
 		{
 			"id": "sohuyetmavuong6",
+			"texture": "db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65",
 			"name": "Sọ Huyết Ma Vương 6",
 			"family": "Sọ Huyết Ma Vương",
 			"level": 6,
@@ -926,6 +969,7 @@
 		},
 		{
 			"id": "sohuyetmavuong7",
+			"texture": "db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65",
 			"name": "Sọ Huyết Ma Vương 7",
 			"family": "Sọ Huyết Ma Vương",
 			"level": 7,
@@ -943,6 +987,7 @@
 		},
 		{
 			"id": "sohuyetmavuong8",
+			"texture": "db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65",
 			"name": "Sọ Huyết Ma Vương 8",
 			"family": "Sọ Huyết Ma Vương",
 			"level": 8,
@@ -960,6 +1005,7 @@
 		},
 		{
 			"id": "sohuyetmavuong9",
+			"texture": "db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65",
 			"name": "Sọ Huyết Ma Vương 9",
 			"family": "Sọ Huyết Ma Vương",
 			"level": 9,
@@ -977,6 +1023,7 @@
 		},
 		{
 			"id": "sohuyetmavuong10",
+			"texture": "db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65",
 			"name": "Sọ Huyết Ma Vương 10",
 			"family": "Sọ Huyết Ma Vương",
 			"level": 10,

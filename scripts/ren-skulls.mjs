@@ -5,6 +5,9 @@
  *   ItemAbility/items.yml            the skulls: name, rank line, the four stats (Abilities) and the number of Lửa phép slots (GemSlot)
  *   EpicCraftCustom/craft/sophep/*   how a skull is crafted (/ecraft), handed over by ren-equipment.mjs as `recipes` (key: upper case id)
  *
+ * The picture of a skull is its head texture (`Texture`, the base64 value of a minecraft-heads.com head): the hash of the skin it
+ * points to is kept as `texture`, and scripts/fetch-skull-icons.mjs draws the head into public/skulls/<texture>.png.
+ *
  * The stats come from the abilities the plugin really applies; the lore the players read is checked against them and any
  * difference is reported. A skull whose lore says Halloween is an event skull.
  */
@@ -14,6 +17,16 @@ const STATS = [
 	['MaxHealth', 'health'],
 	['Armor', 'armor'],
 ];
+
+/** The hash of the skin a head texture (base64 JSON with the skin url) points to, or null. */
+function skinHash(value) {
+	try {
+		const url = JSON.parse(Buffer.from(String(value), 'base64').toString('utf8'))?.textures?.SKIN?.url ?? '';
+		return /\/texture\/([0-9a-f]{16,})$/.exec(url)?.[1] ?? null;
+	} catch {
+		return null;
+	}
+}
 
 export function buildSkulls({ readYaml, stripCodes, pretty, recipes, warn, fail }) {
 	// the /ecraft category a recipe is in is named by EpicCraftCustom/craft/categories.yml
@@ -64,8 +77,11 @@ export function buildSkulls({ readYaml, stripCodes, pretty, recipes, warn, fail 
 		const event = lore.some((l) => /halloween/i.test(pretty(l)));
 		const lastStat = Math.max(...lore.map((l, i) => (/^\+[\d.]+%? (Sát Thương|Tốc Độ Đánh|Tim|Giáp)/.test(l) ? i : -1)));
 		const rank = event || lastStat < 0 ? '' : pretty((lore[lastStat + 1] ?? '').replace(/\(\s*\d+\s*♦\s*\)/g, ' '));
+		const texture = skinHash(raw.Texture);
+		if (!texture) warn(`${where}: Texture is not a head texture (no picture)`);
 		skulls.push({
 			id: id.toLowerCase(),
+			texture,
 			name: level === null ? family : diamonds ? `${family} (${level}♦)` : `${family} ${level}`,
 			family,
 			level: level === null ? null : Number(level),
