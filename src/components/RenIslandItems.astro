@@ -1,0 +1,54 @@
+---
+/**
+ * Items an island can hand in for contribution points on Sky Rèn, built from src/data/servers/<server>/island-top.json
+ * (written by scripts/sync-ren.mjs from TurtleIsland/contribution.yml): item, points each, daily limit (shared by the island).
+ */
+interface Props {
+	server: string;
+}
+
+const { server } = Astro.props;
+const files = import.meta.glob('../data/servers/*/island-top.json', { eager: true, import: 'default' }) as Record<string, any>;
+const data = files[`../data/servers/${server}/island-top.json`];
+if (!data) throw new Error(`RenIslandItems: no island-top.json for server "${server}", run node scripts/sync-ren.mjs`);
+
+const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 2 });
+const items: any[] = data.items;
+---
+
+<div class="rii">
+	<table>
+		<thead>
+			<tr>
+				<th>Vật phẩm</th>
+				<th>Điểm</th>
+				<th>Giới hạn mỗi ngày</th>
+			</tr>
+		</thead>
+		<tbody>
+			{
+				items.map((item) => (
+					<tr>
+						<td>{item.name}</td>
+						<td>{num(item.points)}</td>
+						<td>{item.dailyLimit === null ? 'Không giới hạn' : num(item.dailyLimit)}</td>
+					</tr>
+				))
+			}
+		</tbody>
+	</table>
+</div>
+
+<style>
+	.rii {
+		overflow-x: auto;
+	}
+	.rii table {
+		width: 100%;
+	}
+	.rii th:not(:first-child),
+	.rii td:not(:first-child) {
+		text-align: right;
+		font-variant-numeric: tabular-nums;
+	}
+</style>
