@@ -16,5 +16,11 @@ export const servers = [
 		description: 'Hướng dẫn minion trên máy chủ Sky Dungeon: đặt minion, cho nhiên liệu, nâng cấp và lấy sản phẩm.',
 		guides: ['minions', 'island-upgrades', 'materials', 'spawners', 'equipment', 'dungeon', 'island-top'],
 	},
+	{
+		slug: 'sky-ren',
+		title: 'Sky Rèn',
+		description: 'Hướng dẫn Dungeon trên máy chủ Sky Rèn: các dungeon, quái vật từng nơi và phần thưởng chi tiết khi hạ boss.',
+		guides: ['dungeons'],
+	},
 	// <-- add new servers here
 ];

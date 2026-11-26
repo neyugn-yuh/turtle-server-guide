@@ -1,0 +1,235 @@
+---
+/**
+ * The Dungeon system of Sky Rèn, built from src/data/servers/<server>/dungeons.json
+ * (written by scripts/sync-ren-dungeon.mjs from the server's config). Two views:
+ *   overview  one row per dungeon: difficulty, final boss, health, what the mobs give
+ *   dungeon   one dungeon (prop `n`): its mobs and, for each boss, what it gives to whoever lands the killing blow
+ *             and to the players around it
+ * Every number comes from the data, none is typed here. A column with nothing to show on a page is left out.
+ */
+interface Props {
+	server: string;
+	view: 'overview' | 'dungeon';
+	n?: number;
+}
+
+const { server, view, n } = Astro.props;
+const files = import.meta.glob('../data/servers/*/dungeons.json', { eager: true, import: 'default' }) as Record<string, any>;
+const data = files[`../data/servers/${server}/dungeons.json`];
+if (!data) throw new Error(`RenDungeon: no dungeons.json for server "${server}", run node scripts/sync-ren-dungeon.mjs`);
+const dungeons: any[] = data.dungeons;
+const dungeon = view === 'dungeon' ? dungeons.find((d: any) => d.n === n) : null;
+if (view === 'dungeon' && !dungeon) throw new Error(`RenDungeon: no dungeon ${n} in dungeons.json`);
+
+const num = (x: number) => x.toLocaleString('vi-VN', { maximumFractionDigits: 3 });
+const range = (min: number, max: number) => (min === max ? num(min) : `${num(min)}–${num(max)}`);
+const chance = (c: number) => (c >= 100 ? 'Chắc chắn' : `${num(c)}%`);
+const stars = (d: any) => '★'.repeat(d.difficulty.stars) + '☆'.repeat(d.difficulty.max - d.difficulty.stars);
+const currenciesOf = (d: any) => [...new Set(d.mobs.flatMap((m: any) => [...m.drops, ...m.killer, ...m.nearby.flatMap((g: any) => g.rewards)]).filter((r: any) => r.type === 'currency').map((r: any) => r.name))] as string[];
+const reachText = (g: any) => (g.limit ? `Tối đa ${num(g.limit)} người chơi ngẫu nhiên trong bán kính ${num(g.reach)} block quanh boss` : `Mọi người chơi trong bán kính ${num(g.reach)} block quanh boss`);
+const normal = dungeon ? dungeon.mobs.filter((m: any) => m.kind === 'normal') : [];
+const bosses = dungeon ? dungeon.mobs.filter((m: any) => m.kind === 'boss') : [];
+const hasExp = normal.some((m: any) => m.exp !== null);
+const hasMoney = normal.some((m: any) => m.money);
+---
+
+<div class="rd not-content">
+	{
+		view === 'overview' && (
+			<div class="rd-scroll">
+				<table>
+					<thead>
+						<tr>
+							<th>Dungeon</th>
+							<th>Độ khó</th>
+							<th>Boss cuối</th>
+							<th>Máu boss</th>
+							<th>Quái rơi tiền tệ</th>
+						</tr>
+					</thead>
+					<tbody>
+						{dungeons.map((d: any) => {
+							const boss = d.mobs.filter((m: any) => m.kind === 'boss');
+							return (
+								<tr>
+									<td>
+										<a href={`../dungeon-${d.n}/`}>Dungeon {d.n}</a>
+									</td>
+									<td>
+										<span class="rd-stars">{stars(d)}</span> {d.difficulty.label}
+									</td>
+									<td>{d.finalBoss}</td>
+									<td>{boss.length > 1 && new Set(boss.map((b: any) => b.health)).size === 1 ? `${num(boss[0].health)} mỗi con` : boss.map((b: any) => num(b.health)).join(' / ')}</td>
+									<td>{currenciesOf(d).join(', ') || '–'}</td>
+								</tr>
+							);
+						})}
+					</tbody>
+				</table>
+			</div>
+		)
+	}
+
+	{
+		view === 'dungeon' && (
+			<>
+				<p class="rd-meta">
+					Độ khó: <strong class="rd-stars">{stars(dungeon)}</strong> ({dungeon.difficulty.label}). Boss cuối: <strong>{dungeon.finalBoss}</strong>.
+				</p>
+
+				<h2 id="quai-thuong">Quái thường</h2>
+				<p class="rd-meta">Quái thường chỉ thưởng cho người kết liễu nó.</p>
+				<div class="rd-scroll">
+					<table>
+						<thead>
+							<tr>
+								<th>Tên</th>
+								<th>Máu</th>
+								<th>Sát thương</th>
+								{hasExp && <th>Kinh nghiệm</th>}
+								{hasMoney && <th>Tiền</th>}
+								<th>Vật phẩm rơi</th>
+							</tr>
+						</thead>
+						<tbody>
+							{normal.map((m: any) => (
+								<tr>
+									<td>{m.name}</td>
+									<td>{num(m.health)}</td>
+									<td>{m.damage ? num(m.damage) : '–'}</td>
+									{hasExp && <td>{m.exp === null ? '–' : num(m.exp)}</td>}
+									{hasMoney && <td>{m.money ? `${num(m.money.amount)} (${chance(m.money.chance)})` : '–'}</td>}
+									<td class="rd-wrap">
+										{m.drops.length === 0
+											? '–'
+											: m.drops.map((r: any, i: number) => (
+													<>
+														{i > 0 && '; '}
+														{r.type === 'currency' ? `${range(r.min, r.max)} ${r.name}` : `${r.name} ×${range(r.min, r.max)}`} ({chance(r.chance)})
+													</>
+												))}
+									</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
+				</div>
+
+				{bosses.map((boss: any) => (
+					<section class="rd-boss">
+						<h2 id={boss.id.toLowerCase()}>Boss: {boss.name}</h2>
+						<p class="rd-meta">
+							{boss.title && <>{boss.title}. </>}
+							Máu <strong>{num(boss.health)}</strong>, sát thương <strong>{boss.damage ? num(boss.damage) : '–'}</strong>
+							{boss.exp !== null && <>, kinh nghiệm {num(boss.exp)}</>}
+							{boss.money && <>, tiền {num(boss.money.amount)} ({chance(boss.money.chance)})</>}.
+						</p>
+
+						{boss.killer.length > 0 && (
+							<>
+								<h3>Người kết liễu nhận</h3>
+								<p class="rd-meta">Thưởng cho đúng một người: người tung đòn kết liễu boss.</p>
+								<div class="rd-scroll">
+									<table>
+										<thead>
+											<tr>
+												<th>Phần thưởng</th>
+												<th>Số lượng</th>
+												<th>Tỉ lệ</th>
+											</tr>
+										</thead>
+										<tbody>
+											{boss.killer.map((r: any) => (
+												<tr>
+													<td>{r.name}</td>
+													<td>{range(r.min, r.max)}</td>
+													<td>{chance(r.chance)}</td>
+												</tr>
+											))}
+										</tbody>
+									</table>
+								</div>
+							</>
+						)}
+
+						{boss.nearby.map((g: any, i: number) => (
+							<>
+								<h3>Người chơi ở gần nhận (nhóm {i + 1})</h3>
+								<p class="rd-meta">{reachText(g)}.</p>
+								<div class="rd-scroll">
+									<table>
+										<thead>
+											<tr>
+												<th>Phần thưởng</th>
+												<th>Số lượng</th>
+											</tr>
+										</thead>
+										<tbody>
+											{g.rewards.map((r: any) => (
+												<tr>
+													<td>{r.name}</td>
+													<td>{range(r.min, r.max)}</td>
+												</tr>
+											))}
+										</tbody>
+									</table>
+								</div>
+							</>
+						))}
+					</section>
+				))}
+			</>
+		)
+	}
+</div>
+
+<style>
+	.rd {
+		margin: 1.5rem 0;
+	}
+	.rd h2 {
+		margin: 1.5rem 0 0.25rem;
+		font-size: var(--sl-text-2xl);
+	}
+	.rd h3 {
+		margin: 1rem 0 0.25rem;
+		font-size: var(--sl-text-lg);
+	}
+	.rd-meta {
+		margin: 0.25rem 0 0.5rem;
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-sm);
+	}
+	.rd-boss {
+		margin-top: 1.5rem;
+		padding: 0.25rem 1rem 0.75rem;
+		border: 1px solid var(--sl-color-hairline);
+		border-radius: 0.5rem;
+	}
+	.rd-scroll {
+		overflow-x: auto;
+	}
+	.rd table {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: var(--sl-text-sm);
+	}
+	.rd th,
+	.rd td {
+		padding: 0.35rem 0.6rem;
+		border-bottom: 1px solid var(--sl-color-hairline);
+		text-align: left;
+		white-space: nowrap;
+	}
+	.rd th {
+		color: var(--sl-color-gray-2);
+		font-weight: 600;
+	}
+	.rd td.rd-wrap {
+		white-space: normal;
+		min-width: 18rem;
+	}
+	.rd-stars {
+		letter-spacing: 0.05em;
+	}
+</style>

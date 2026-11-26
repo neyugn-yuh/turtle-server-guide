@@ -1,0 +1,42 @@
+---
+title: "Dungeon: Tổng quan"
+description: Sáu dungeon của Sky Rèn từ dễ đến cực khó, cách vào, cách nhận thưởng khi hạ quái và boss.
+sidebar:
+  label: Tổng quan
+  order: 1
+---
+
+import RenDungeon from '../../../../components/RenDungeon.astro';
+
+Sky Rèn có **6 dungeon**, mỗi nơi có quái thường riêng và một boss cuối. Hạ quái để nhận vật phẩm và tiền tệ, hạ boss để nhận phần thưởng lớn. Bấm vào tên dungeon trong bảng để xem từng con quái và phần thưởng chi tiết.
+
+<RenDungeon server="sky-ren" view="overview" />
+
+## Cách vào dungeon
+
+1. Gõ `/dungeon` trong khung chat để mở menu **DUNGEON**.
+2. Bấm vào dungeon muốn vào. Bạn được dịch chuyển thẳng tới đó.
+
+Menu ghi sẵn độ khó và boss cuối của từng dungeon.
+
+## Cách nhận thưởng
+
+| Nguồn | Ai nhận |
+| --- | --- |
+| Quái thường | Người kết liễu con quái đó |
+| Boss, phần "Người kết liễu nhận" | Đúng một người: người tung đòn kết liễu boss |
+| Boss, phần "Người chơi ở gần nhận" | Người chơi đứng quanh boss lúc nó chết, trong bán kính ghi ở từng nhóm. Có nhóm giới hạn số người, khi đó chọn ngẫu nhiên |
+
+Mỗi nhóm thưởng được chọn riêng, nên một người có thể thuộc nhiều nhóm và nhận cả hai. Đứng xa boss quá bán kính thì không được tính, vì vậy hãy ở gần khi nó chết.
+
+Cột **Tỉ lệ** là xác suất rơi: "Chắc chắn" nghĩa là lần nào cũng nhận, còn lại là phần trăm mỗi lần.
+
+## Tiền tệ trong dungeon
+
+- **Đá Quý**: quái Dungeon 1 đến 5 cộng vào số dư Đá Quý của bạn mỗi khi bị hạ. Đá Quý dùng ở Cửa hàng Đá Quý, nơi có bán Chìa khóa Cầu Vồng.
+- **Băng Ngọc**: quái và boss Dungeon 6 cộng vào số dư Băng Ngọc, tách riêng với Đá Quý.
+- **Xu**: boss thưởng Xu cho người kết liễu.
+
+:::caution[Chưa rõ]
+Hướng dẫn chưa liệt kê được nội dung bên trong các rương mà boss thưởng chìa khóa (Rương Boss Dungeon, Rương Spawner, Rương Lửa Phép, rương Cầu Vồng), vì phần đó không nằm trong dữ liệu dùng để dựng trang này. Nơi dùng Băng Ngọc cũng chưa có dữ liệu. Hãy xem trực tiếp trong game.
+:::

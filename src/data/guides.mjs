@@ -51,5 +51,11 @@ export const guides = [
 		description: 'Điểm cống hiến của đảo: vật phẩm nào được bao nhiêu điểm, săn quái, boss, hạn mức mỗi ngày và phần thưởng top.',
 		landing: 'tong-quan',
 	},
+	{
+		slug: 'dungeons',
+		title: 'Dungeon',
+		description: 'Sáu dungeon từ dễ đến cực khó: quái vật từng nơi, boss và phần thưởng chi tiết.',
+		landing: 'tong-quan',
+	},
 	// <-- add new guides here
 ];

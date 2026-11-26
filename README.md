@@ -20,6 +20,7 @@ Player guide for the Turtle Minecraft servers (GitHub org MineTurtleVN), built w
 | `node scripts/sync-materials.mjs` | Rewrite the material list data (materials, their recipes and uses) from a server config (`--dir <plugins folder>` or `--ptero`) |
 | `node scripts/sync-island-upgrades.mjs` | Rewrite the island upgrade data from a server config (`--dir <plugins folder>` or `--ptero`) |
 | `node scripts/fetch-minion-icons.mjs` | Download the Minecraft item pictures the minion list shows into `public/minions/` (run after a sync adds a product) |
+| `node scripts/sync-ren-dungeon.mjs` | Rewrite the Sky Rèn dungeon data from the server repo (`--dir <plugins folder>`, `--check` to only compare; the folder is `../../servers/AutoUpdateSkyForge/plugins`) |
 | `npm run deploy`        | Build and deploy to Cloudflare Pages                                |
 
 Menu specs are read when a page is built: restart `npm run dev` after editing a spec.
@@ -36,12 +37,13 @@ src/data/gui/<system>/<menu>.json      one spec per menu picture
 src/plugins/gui-menus.mjs              Markdown plugin: turns a menu image into the interactive menu
 public/gui-viewer.js                   opens the detail box on hover, tap or focus
 src/styles/gui.css                     look of the menu and of the detail box
-src/components/                        ServerCards, MinionList, IslandUpgrades, MaterialList, SpawnerList
+src/components/                        RenDungeon, ServerCards, MinionList, IslandUpgrades, MaterialList, SpawnerList
 scripts/sync-minions.mjs               reads minion configs and writes src/data/servers/<server>/minions.json
 scripts/fetch-mob-images.mjs            draws the face of each spawner mob into public/mobs/<mob>.png (a mob needs an entry in the script)
 scripts/sync-spawners.mjs              reads TurtleStacker entities, spawner upgrades and perks and writes src/data/servers/<server>/spawners.json
 scripts/sync-materials.mjs             reads MMOItems materials and TurtleCraft recipes and writes src/data/servers/<server>/materials.json
 scripts/sync-island-upgrades.mjs       reads the island upgrade and ore generator configs and writes src/data/servers/<server>/island-upgrades.json
+scripts/sync-ren-dungeon.mjs           reads the Sky Rèn dungeons (mobs, reward skills, menu) and writes src/data/servers/sky-ren/dungeons.json (shown by RenDungeon.astro)
 scripts/fetch-minion-icons.mjs         downloads the item picture of every product into public/minions/<material>.png
 public/minions/                        Minecraft item textures (from PrismarineJS/minecraft-assets), shown in the minion list
 .github/workflows/sync-and-deploy.yml  syncs with the server and deploys on a schedule

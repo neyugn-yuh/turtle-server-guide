@@ -1,0 +1,1398 @@
+{
+	"dungeons": [
+		{
+			"n": 1,
+			"name": "Ma Hải Tặc",
+			"difficulty": {
+				"stars": 1,
+				"max": 6,
+				"label": "Dễ"
+			},
+			"finalBoss": "Ma Hải Tặc",
+			"mobs": [
+				{
+					"id": "Dun1-MaHaiTac",
+					"name": "Ma Hải Tặc",
+					"kind": "normal",
+					"title": null,
+					"health": 40,
+					"damage": 5,
+					"exp": 5,
+					"money": null,
+					"drops": [
+						{
+							"type": "item",
+							"name": "Nấm Ma Hải Tặc",
+							"min": 1,
+							"max": 1,
+							"chance": 100
+						},
+						{
+							"type": "currency",
+							"name": "Đá Quý",
+							"min": 3,
+							"max": 3,
+							"chance": 100
+						}
+					],
+					"killer": [],
+					"nearby": []
+				},
+				{
+					"id": "Dun1-BossMaHaiTac",
+					"name": "Ma Hải Tặc",
+					"kind": "boss",
+					"title": null,
+					"health": 5000,
+					"damage": 75,
+					"exp": 5,
+					"money": null,
+					"drops": [],
+					"killer": [
+						{
+							"type": "key",
+							"name": "Chìa khóa Rương Boss Dungeon 1",
+							"min": 1,
+							"max": 1,
+							"chance": 100
+						},
+						{
+							"type": "xu",
+							"name": "Xu",
+							"min": 1,
+							"max": 1,
+							"chance": 100
+						},
+						{
+							"type": "item",
+							"name": "Nấm Ma Hải Tặc",
+							"min": 128,
+							"max": 128,
+							"chance": 100
+						},
+						{
+							"type": "key",
+							"name": "Chìa khóa Cầu Vồng",
+							"min": 1,
+							"max": 1,
+							"chance": 100
+						}
+					],
+					"nearby": [
+						{
+							"reach": 32,
+							"limit": 16,
+							"rewards": [
+								{
+									"type": "item",
+									"name": "Cà Rốt Sinh Lực",
+									"min": 100,
+									"max": 100,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Nấm Ma Hải Tặc",
+									"min": 128,
+									"max": 128,
+									"chance": 100
+								},
+								{
+									"type": "exp",
+									"name": "Kinh nghiệm",
+									"min": 2500,
+									"max": 2500,
+									"chance": 100
+								},
+								{
+									"type": "key",
+									"name": "Chìa khóa Cầu Vồng",
+									"min": 1,
+									"max": 1,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Kim Cương",
+									"min": 5,
+									"max": 5,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Sắt",
+									"min": 5,
+									"max": 5,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Vàng",
+									"min": 5,
+									"max": 5,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Lapis",
+									"min": 5,
+									"max": 5,
+									"chance": 100
+								}
+							]
+						},
+						{
+							"reach": 16,
+							"limit": 8,
+							"rewards": [
+								{
+									"type": "key",
+									"name": "Chìa khóa Rương Spawner 1",
+									"min": 1,
+									"max": 1,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Nấm Ma Hải Tặc",
+									"min": 64,
+									"max": 64,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Trái Tim Quái Vật I",
+									"min": 1,
+									"max": 1,
+									"chance": 100
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"n": 2,
+			"name": "Nhện Yêu Tinh",
+			"difficulty": {
+				"stars": 2,
+				"max": 6,
+				"label": "Trung bình"
+			},
+			"finalBoss": "Nhện Yêu Tinh",
+			"mobs": [
+				{
+					"id": "Dun2-NhenYeuTinh",
+					"name": "Nhện Yêu Tinh",
+					"kind": "normal",
+					"title": null,
+					"health": 80,
+					"damage": 10,
+					"exp": 5,
+					"money": null,
+					"drops": [
+						{
+							"type": "item",
+							"name": "Mảnh Khiên Yêu Tinh",
+							"min": 1,
+							"max": 1,
+							"chance": 30
+						},
+						{
+							"type": "item",
+							"name": "Mắt Nhện Yêu Tinh",
+							"min": 1,
+							"max": 1,
+							"chance": 50
+						},
+						{
+							"type": "currency",
+							"name": "Đá Quý",
+							"min": 3,
+							"max": 3,
+							"chance": 100
+						}
+					],
+					"killer": [],
+					"nearby": []
+				},
+				{
+					"id": "Dun2-BossNhenYeuTinh",
+					"name": "Nhện Yêu Tinh",
+					"kind": "boss",
+					"title": null,
+					"health": 7000,
+					"damage": 75,
+					"exp": 5,
+					"money": null,
+					"drops": [],
+					"killer": [
+						{
+							"type": "key",
+							"name": "Chìa khóa Rương Boss Dungeon 2",
+							"min": 1,
+							"max": 1,
+							"chance": 100
+						},
+						{
+							"type": "xu",
+							"name": "Xu",
+							"min": 1,
+							"max": 1,
+							"chance": 100
+						},
+						{
+							"type": "item",
+							"name": "Xương Nhện Yêu Tinh",
+							"min": 1,
+							"max": 1,
+							"chance": 20
+						}
+					],
+					"nearby": [
+						{
+							"reach": 32,
+							"limit": null,
+							"rewards": [
+								{
+									"type": "item",
+									"name": "Cà Rốt Sinh Lực",
+									"min": 200,
+									"max": 200,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Mắt Nhện Yêu Tinh",
+									"min": 64,
+									"max": 64,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Mảnh Khiên Yêu Tinh",
+									"min": 16,
+									"max": 16,
+									"chance": 100
+								},
+								{
+									"type": "exp",
+									"name": "Kinh nghiệm",
+									"min": 5500,
+									"max": 5500,
+									"chance": 100
+								},
+								{
+									"type": "key",
+									"name": "Chìa khóa Cầu Vồng",
+									"min": 2,
+									"max": 2,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Kim Cương",
+									"min": 10,
+									"max": 10,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Sắt",
+									"min": 10,
+									"max": 10,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Vàng",
+									"min": 10,
+									"max": 10,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Ngọc Lục Bảo",
+									"min": 10,
+									"max": 10,
+									"chance": 100
+								}
+							]
+						},
+						{
+							"reach": 16,
+							"limit": 8,
+							"rewards": [
+								{
+									"type": "key",
+									"name": "Chìa khóa Rương Spawner 1",
+									"min": 2,
+									"max": 2,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Mắt Nhện Yêu Tinh",
+									"min": 64,
+									"max": 64,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Mảnh Khiên Yêu Tinh",
+									"min": 32,
+									"max": 32,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Trái Tim Quái Vật I",
+									"min": 1,
+									"max": 1,
+									"chance": 100
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"n": 3,
+			"name": "Phù Thủy Đen",
+			"difficulty": {
+				"stars": 3,
+				"max": 6,
+				"label": "Khá khó"
+			},
+			"finalBoss": "Phù Thủy Đen",
+			"mobs": [
+				{
+					"id": "Dun3-PhuThuyDen",
+					"name": "Phù Thủy Đen",
+					"kind": "normal",
+					"title": null,
+					"health": 165,
+					"damage": 15,
+					"exp": 5,
+					"money": null,
+					"drops": [
+						{
+							"type": "item",
+							"name": "Mảnh Khiên Phù Thủy",
+							"min": 1,
+							"max": 1,
+							"chance": 5
+						},
+						{
+							"type": "item",
+							"name": "Vàng Thỏi Óng Ánh",
+							"min": 1,
+							"max": 1,
+							"chance": 50
+						},
+						{
+							"type": "currency",
+							"name": "Đá Quý",
+							"min": 3,
+							"max": 3,
+							"chance": 100
+						}
+					],
+					"killer": [],
+					"nearby": []
+				},
+				{
+					"id": "Dun3-BossPhuThuyDen",
+					"name": "Phù Thủy Đen",
+					"kind": "boss",
+					"title": null,
+					"health": 10000,
+					"damage": 52.5,
+					"exp": 5,
+					"money": null,
+					"drops": [],
+					"killer": [
+						{
+							"type": "key",
+							"name": "Chìa khóa Rương Boss Dungeon 3",
+							"min": 1,
+							"max": 1,
+							"chance": 100
+						},
+						{
+							"type": "xu",
+							"name": "Xu",
+							"min": 1,
+							"max": 1,
+							"chance": 100
+						},
+						{
+							"type": "item",
+							"name": "Xương Phù Thủy Đen",
+							"min": 1,
+							"max": 1,
+							"chance": 20
+						}
+					],
+					"nearby": [
+						{
+							"reach": 32,
+							"limit": null,
+							"rewards": [
+								{
+									"type": "item",
+									"name": "Cà Rốt Sinh Lực",
+									"min": 300,
+									"max": 300,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Vàng Thỏi Óng Ánh",
+									"min": 128,
+									"max": 128,
+									"chance": 100
+								},
+								{
+									"type": "exp",
+									"name": "Kinh nghiệm",
+									"min": 10500,
+									"max": 10500,
+									"chance": 100
+								},
+								{
+									"type": "key",
+									"name": "Chìa khóa Cầu Vồng",
+									"min": 3,
+									"max": 3,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Kim Cương",
+									"min": 15,
+									"max": 15,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Sắt",
+									"min": 15,
+									"max": 15,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Vàng",
+									"min": 15,
+									"max": 15,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Ngọc Lục Bảo",
+									"min": 15,
+									"max": 15,
+									"chance": 100
+								}
+							]
+						},
+						{
+							"reach": 20,
+							"limit": 8,
+							"rewards": [
+								{
+									"type": "key",
+									"name": "Chìa khóa Rương Spawner 2",
+									"min": 1,
+									"max": 1,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Vàng Thỏi Óng Ánh",
+									"min": 64,
+									"max": 64,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Trái Tim Quái Vật II",
+									"min": 1,
+									"max": 1,
+									"chance": 100
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"n": 4,
+			"name": "Jack & Jackson",
+			"difficulty": {
+				"stars": 4,
+				"max": 6,
+				"label": "Khó"
+			},
+			"finalBoss": "Jack & Jackson",
+			"mobs": [
+				{
+					"id": "Dun4-QuanChetChoc",
+					"name": "Quân Chết Chóc",
+					"kind": "normal",
+					"title": null,
+					"health": 500,
+					"damage": 20,
+					"exp": 450,
+					"money": {
+						"amount": 20,
+						"chance": 70
+					},
+					"drops": [
+						{
+							"type": "item",
+							"name": "Mảnh Đá Nâng Cấp",
+							"min": 1,
+							"max": 1,
+							"chance": 100
+						},
+						{
+							"type": "item",
+							"name": "Mảnh Khiên Địa Ngục",
+							"min": 1,
+							"max": 1,
+							"chance": 5
+						},
+						{
+							"type": "currency",
+							"name": "Đá Quý",
+							"min": 3,
+							"max": 3,
+							"chance": 100
+						}
+					],
+					"killer": [],
+					"nearby": []
+				},
+				{
+					"id": "Dun4-BoXuongKiemSy",
+					"name": "Bộ Xương Kiếm Sỹ",
+					"kind": "normal",
+					"title": null,
+					"health": 350,
+					"damage": 25,
+					"exp": 6500,
+					"money": {
+						"amount": 20,
+						"chance": 70
+					},
+					"drops": [
+						{
+							"type": "item",
+							"name": "Mảnh Đá Nâng Cấp",
+							"min": 5,
+							"max": 5,
+							"chance": 100
+						},
+						{
+							"type": "item",
+							"name": "Hộp Sọ Địa Ngục",
+							"min": 1,
+							"max": 1,
+							"chance": 10
+						},
+						{
+							"type": "item",
+							"name": "Mảnh Khiên Địa Ngục",
+							"min": 1,
+							"max": 1,
+							"chance": 30
+						},
+						{
+							"type": "currency",
+							"name": "Đá Quý",
+							"min": 3,
+							"max": 3,
+							"chance": 100
+						}
+					],
+					"killer": [],
+					"nearby": []
+				},
+				{
+					"id": "Dun4-Jack",
+					"name": "Jack",
+					"kind": "boss",
+					"title": null,
+					"health": 10000,
+					"damage": 140,
+					"exp": 5,
+					"money": null,
+					"drops": [],
+					"killer": [
+						{
+							"type": "key",
+							"name": "Chìa khóa Rương Boss Dungeon 4",
+							"min": 1,
+							"max": 1,
+							"chance": 100
+						},
+						{
+							"type": "xu",
+							"name": "Xu",
+							"min": 1,
+							"max": 1,
+							"chance": 100
+						},
+						{
+							"type": "item",
+							"name": "Xương Địa Ngục",
+							"min": 1,
+							"max": 1,
+							"chance": 50
+						}
+					],
+					"nearby": [
+						{
+							"reach": 16,
+							"limit": null,
+							"rewards": [
+								{
+									"type": "item",
+									"name": "Cà Rốt Sinh Lực",
+									"min": 400,
+									"max": 400,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Mảnh Đá Nâng Cấp",
+									"min": 128,
+									"max": 128,
+									"chance": 100
+								},
+								{
+									"type": "exp",
+									"name": "Kinh nghiệm",
+									"min": 30500,
+									"max": 30500,
+									"chance": 100
+								},
+								{
+									"type": "key",
+									"name": "Chìa khóa Cầu Vồng",
+									"min": 9,
+									"max": 9,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Kim Cương",
+									"min": 20,
+									"max": 20,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Sắt",
+									"min": 20,
+									"max": 20,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Vàng",
+									"min": 20,
+									"max": 20,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Ngọc Lục Bảo",
+									"min": 20,
+									"max": 20,
+									"chance": 100
+								}
+							]
+						},
+						{
+							"reach": 20,
+							"limit": 2,
+							"rewards": [
+								{
+									"type": "key",
+									"name": "Chìa khóa Rương Spawner 2",
+									"min": 1,
+									"max": 1,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Trái Tim Quái Vật II",
+									"min": 1,
+									"max": 1,
+									"chance": 100
+								}
+							]
+						},
+						{
+							"reach": 20,
+							"limit": 2,
+							"rewards": [
+								{
+									"type": "key",
+									"name": "Chìa khóa Rương Lửa Phép Thường",
+									"min": 1,
+									"max": 1,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Trái Tim Quái Vật II",
+									"min": 1,
+									"max": 1,
+									"chance": 100
+								}
+							]
+						}
+					]
+				},
+				{
+					"id": "Dun4-JackSon",
+					"name": "Jackson",
+					"kind": "boss",
+					"title": null,
+					"health": 10000,
+					"damage": 140,
+					"exp": 5,
+					"money": null,
+					"drops": [],
+					"killer": [
+						{
+							"type": "key",
+							"name": "Chìa khóa Rương Boss Dungeon 4",
+							"min": 1,
+							"max": 1,
+							"chance": 100
+						},
+						{
+							"type": "xu",
+							"name": "Xu",
+							"min": 1,
+							"max": 1,
+							"chance": 100
+						},
+						{
+							"type": "item",
+							"name": "Xương Địa Ngục",
+							"min": 1,
+							"max": 1,
+							"chance": 50
+						}
+					],
+					"nearby": [
+						{
+							"reach": 16,
+							"limit": null,
+							"rewards": [
+								{
+									"type": "item",
+									"name": "Cà Rốt Sinh Lực",
+									"min": 400,
+									"max": 400,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Mảnh Đá Nâng Cấp",
+									"min": 128,
+									"max": 128,
+									"chance": 100
+								},
+								{
+									"type": "exp",
+									"name": "Kinh nghiệm",
+									"min": 30500,
+									"max": 30500,
+									"chance": 100
+								},
+								{
+									"type": "key",
+									"name": "Chìa khóa Cầu Vồng",
+									"min": 9,
+									"max": 9,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Kim Cương",
+									"min": 20,
+									"max": 20,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Sắt",
+									"min": 20,
+									"max": 20,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Vàng",
+									"min": 20,
+									"max": 20,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Ngọc Lục Bảo",
+									"min": 20,
+									"max": 20,
+									"chance": 100
+								}
+							]
+						},
+						{
+							"reach": 20,
+							"limit": 8,
+							"rewards": [
+								{
+									"type": "key",
+									"name": "Chìa khóa Rương Spawner 2",
+									"min": 1,
+									"max": 1,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Trái Tim Quái Vật II",
+									"min": 1,
+									"max": 1,
+									"chance": 100
+								}
+							]
+						},
+						{
+							"reach": 20,
+							"limit": 2,
+							"rewards": [
+								{
+									"type": "key",
+									"name": "Chìa khóa Rương Lửa Phép Thường",
+									"min": 1,
+									"max": 1,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Trái Tim Quái Vật II",
+									"min": 1,
+									"max": 1,
+									"chance": 100
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"n": 5,
+			"name": "Rồng Không Gian",
+			"difficulty": {
+				"stars": 5,
+				"max": 6,
+				"label": "Rất khó"
+			},
+			"finalBoss": "Rồng Không Gian",
+			"mobs": [
+				{
+					"id": "Dun5-EnderChua",
+					"name": "Ender Chúa",
+					"kind": "normal",
+					"title": null,
+					"health": 650,
+					"damage": 30,
+					"exp": 10000,
+					"money": {
+						"amount": 20,
+						"chance": 70
+					},
+					"drops": [
+						{
+							"type": "item",
+							"name": "Mảnh Khiên Thiên Hà",
+							"min": 1,
+							"max": 1,
+							"chance": 3
+						},
+						{
+							"type": "item",
+							"name": "Trứng Rồng (Báu Vật)",
+							"min": 1,
+							"max": 1,
+							"chance": 10
+						},
+						{
+							"type": "item",
+							"name": "Trái Tim Enderman Chúa",
+							"min": 1,
+							"max": 1,
+							"chance": 70
+						},
+						{
+							"type": "currency",
+							"name": "Đá Quý",
+							"min": 3,
+							"max": 3,
+							"chance": 100
+						}
+					],
+					"killer": [],
+					"nearby": []
+				},
+				{
+					"id": "Dun5-EnderCon",
+					"name": "Ender Con",
+					"kind": "normal",
+					"title": null,
+					"health": 550,
+					"damage": 35,
+					"exp": 5000,
+					"money": {
+						"amount": 15,
+						"chance": 70
+					},
+					"drops": [
+						{
+							"type": "item",
+							"name": "Mảnh Khiên Thiên Hà",
+							"min": 1,
+							"max": 1,
+							"chance": 5
+						},
+						{
+							"type": "item",
+							"name": "Trái Tim Enderman Con",
+							"min": 1,
+							"max": 1,
+							"chance": 70
+						},
+						{
+							"type": "currency",
+							"name": "Đá Quý",
+							"min": 3,
+							"max": 3,
+							"chance": 100
+						}
+					],
+					"killer": [],
+					"nearby": []
+				},
+				{
+					"id": "Dun5-RongKhongGian",
+					"name": "Rồng Không Gian",
+					"kind": "boss",
+					"title": null,
+					"health": 20000,
+					"damage": 175,
+					"exp": 50,
+					"money": null,
+					"drops": [],
+					"killer": [
+						{
+							"type": "key",
+							"name": "Chìa khóa Rương Boss Dungeon 5",
+							"min": 1,
+							"max": 1,
+							"chance": 100
+						},
+						{
+							"type": "xu",
+							"name": "Xu",
+							"min": 1,
+							"max": 1,
+							"chance": 100
+						},
+						{
+							"type": "item",
+							"name": "Khung Cổng End",
+							"min": 10,
+							"max": 10,
+							"chance": 100
+						},
+						{
+							"type": "item",
+							"name": "Xương Rồng Không Gian",
+							"min": 2,
+							"max": 2,
+							"chance": 50
+						}
+					],
+					"nearby": [
+						{
+							"reach": 16,
+							"limit": null,
+							"rewards": [
+								{
+									"type": "item",
+									"name": "Cà Rốt Sinh Lực",
+									"min": 500,
+									"max": 500,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Mảnh Đá Nâng Cấp",
+									"min": 192,
+									"max": 192,
+									"chance": 100
+								},
+								{
+									"type": "exp",
+									"name": "Kinh nghiệm",
+									"min": 45750,
+									"max": 45750,
+									"chance": 100
+								},
+								{
+									"type": "key",
+									"name": "Chìa khóa Cầu Vồng",
+									"min": 14,
+									"max": 14,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Kim Cương",
+									"min": 25,
+									"max": 25,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Sắt",
+									"min": 25,
+									"max": 25,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Vàng",
+									"min": 25,
+									"max": 25,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Ngọc Lục Bảo",
+									"min": 25,
+									"max": 25,
+									"chance": 100
+								}
+							]
+						},
+						{
+							"reach": 20,
+							"limit": 8,
+							"rewards": [
+								{
+									"type": "key",
+									"name": "Chìa khóa Rương Spawner 2",
+									"min": 3,
+									"max": 3,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Trái Tim Quái Vật III",
+									"min": 1,
+									"max": 1,
+									"chance": 100
+								}
+							]
+						},
+						{
+							"reach": 20,
+							"limit": 2,
+							"rewards": [
+								{
+									"type": "key",
+									"name": "Chìa khóa Rương Lửa Phép Thường",
+									"min": 2,
+									"max": 2,
+									"chance": 100
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"n": 6,
+			"name": "Arcturus",
+			"difficulty": {
+				"stars": 6,
+				"max": 6,
+				"label": "Cực khó"
+			},
+			"finalBoss": "Arcturus (Chúa Tể Vĩnh Cửu)",
+			"mobs": [
+				{
+					"id": "Dun6-ChienBinhBang",
+					"name": "Chiến Binh Băng Cổ Đại",
+					"kind": "normal",
+					"title": null,
+					"health": 1950,
+					"damage": 90,
+					"exp": 20000,
+					"money": {
+						"amount": 40,
+						"chance": 70
+					},
+					"drops": [
+						{
+							"type": "item",
+							"name": "Mảnh Khiên Băng Giá",
+							"min": 1,
+							"max": 1,
+							"chance": 3
+						},
+						{
+							"type": "currency",
+							"name": "Băng Ngọc",
+							"min": 3,
+							"max": 5,
+							"chance": 100
+						}
+					],
+					"killer": [],
+					"nearby": []
+				},
+				{
+					"id": "Dun6-GiamNguc",
+					"name": "Giám Ngục Hàn Băng",
+					"kind": "normal",
+					"title": null,
+					"health": 1650,
+					"damage": 105,
+					"exp": 10000,
+					"money": {
+						"amount": 30,
+						"chance": 70
+					},
+					"drops": [
+						{
+							"type": "item",
+							"name": "Mảnh Khiên Băng Giá",
+							"min": 1,
+							"max": 1,
+							"chance": 5
+						},
+						{
+							"type": "currency",
+							"name": "Băng Ngọc",
+							"min": 1,
+							"max": 3,
+							"chance": 100
+						}
+					],
+					"killer": [],
+					"nearby": []
+				},
+				{
+					"id": "Dun6-HoPhapBang",
+					"name": "Hộ Pháp Băng Giá",
+					"kind": "normal",
+					"title": null,
+					"health": 6000,
+					"damage": 180,
+					"exp": 30000,
+					"money": {
+						"amount": 100,
+						"chance": 80
+					},
+					"drops": [
+						{
+							"type": "item",
+							"name": "Mảnh Khiên Băng Giá",
+							"min": 1,
+							"max": 1,
+							"chance": 8
+						},
+						{
+							"type": "currency",
+							"name": "Băng Ngọc",
+							"min": 5,
+							"max": 8,
+							"chance": 100
+						}
+					],
+					"killer": [],
+					"nearby": []
+				},
+				{
+					"id": "Dun6Boss-Arcturus",
+					"name": "Arcturus",
+					"kind": "boss",
+					"title": "Chúa Tể Vĩnh Cửu",
+					"health": 600000,
+					"damage": 800,
+					"exp": 400000,
+					"money": {
+						"amount": 2500,
+						"chance": 100
+					},
+					"drops": [],
+					"killer": [
+						{
+							"type": "key",
+							"name": "Chìa khóa Rương Boss Dungeon 6",
+							"min": 1,
+							"max": 1,
+							"chance": 100
+						},
+						{
+							"type": "xu",
+							"name": "Xu",
+							"min": 2,
+							"max": 2,
+							"chance": 100
+						},
+						{
+							"type": "currency",
+							"name": "Băng Ngọc",
+							"min": 50,
+							"max": 50,
+							"chance": 100
+						},
+						{
+							"type": "item",
+							"name": "Khung Cổng End",
+							"min": 15,
+							"max": 15,
+							"chance": 100
+						},
+						{
+							"type": "item",
+							"name": "Linh Hồn Băng Giá",
+							"min": 2,
+							"max": 2,
+							"chance": 50
+						}
+					],
+					"nearby": [
+						{
+							"reach": 16,
+							"limit": null,
+							"rewards": [
+								{
+									"type": "item",
+									"name": "Cà Rốt Sinh Lực",
+									"min": 600,
+									"max": 600,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Mảnh Đá Nâng Cấp",
+									"min": 256,
+									"max": 256,
+									"chance": 100
+								},
+								{
+									"type": "exp",
+									"name": "Kinh nghiệm",
+									"min": 90000,
+									"max": 90000,
+									"chance": 100
+								},
+								{
+									"type": "key",
+									"name": "Chìa khóa Cầu Vồng",
+									"min": 18,
+									"max": 18,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Kim Cương",
+									"min": 30,
+									"max": 30,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Sắt",
+									"min": 30,
+									"max": 30,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Vàng",
+									"min": 30,
+									"max": 30,
+									"chance": 100
+								},
+								{
+									"type": "block",
+									"name": "Khối Ngọc Lục Bảo",
+									"min": 30,
+									"max": 30,
+									"chance": 100
+								},
+								{
+									"type": "currency",
+									"name": "Băng Ngọc",
+									"min": 20,
+									"max": 20,
+									"chance": 100
+								}
+							]
+						},
+						{
+							"reach": 20,
+							"limit": 8,
+							"rewards": [
+								{
+									"type": "key",
+									"name": "Chìa khóa Rương Spawner 3",
+									"min": 3,
+									"max": 3,
+									"chance": 100
+								},
+								{
+									"type": "item",
+									"name": "Trái Tim Quái Vật III",
+									"min": 2,
+									"max": 2,
+									"chance": 100
+								}
+							]
+						},
+						{
+							"reach": 20,
+							"limit": 2,
+							"rewards": [
+								{
+									"type": "key",
+									"name": "Chìa khóa Rương Lửa Phép Truyền Thuyết",
+									"min": 1,
+									"max": 1,
+									"chance": 100
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
