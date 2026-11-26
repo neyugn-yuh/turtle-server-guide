@@ -74,6 +74,14 @@ for (const server of readdirSync(serversDir)) {
 	for (const d of JSON.parse(readFileSync(dungeonsFile, 'utf8')).dungeons) {
 		for (const mob of d.mobs) for (const reward of [...mob.drops, ...mob.killer, ...mob.nearby.flatMap((g) => g.rewards)]) if (reward.icon) materials.add(reward.icon);
 	}
+	// the reward chests: the item of each chest and of each reward
+	const chestsFile = join(serversDir, server, 'chests.json');
+	if (existsSync(chestsFile)) {
+		for (const chest of JSON.parse(readFileSync(chestsFile, 'utf8')).chests) {
+			if (chest.icon) materials.add(chest.icon);
+			for (const reward of chest.rewards) if (reward.icon) materials.add(reward.icon);
+		}
+	}
 }
 
 mkdirSync(OUT, { recursive: true });

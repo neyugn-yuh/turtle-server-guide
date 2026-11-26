@@ -57,5 +57,11 @@ export const guides = [
 		description: 'Sáu dungeon từ dễ đến cực khó: quái vật từng nơi, boss và phần thưởng chi tiết.',
 		landing: 'dungeon-1',
 	},
+	{
+		slug: 'chests',
+		title: 'Rương quà',
+		description: 'Các rương quà từ boss dungeon: mở ra có quà gì, tỉ lệ bao nhiêu và cách nhận.',
+		landing: 'danh-sach',
+	},
 	// <-- add new guides here
 ];

@@ -1,0 +1,37 @@
+---
+/**
+ * One page per reward chest (/<server>/chests/item/<id>/): the page the chest list and every chest in a boss reward link to.
+ * Written from src/data/servers/<server>/chests.json, so it needs no file per chest.
+ */
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import RenChests from '../../../../components/RenChests.astro';
+
+export function getStaticPaths() {
+	const files = import.meta.glob('../../../../data/servers/*/chests.json', { eager: true, import: 'default' }) as Record<string, any>;
+	return Object.entries(files).flatMap(([path, data]) => {
+		const server = path.split('/').slice(-2)[0];
+		return data.chests.map((chest: any) => ({ params: { server, id: chest.id }, props: { chest } }));
+	});
+}
+
+const { server, id } = Astro.params;
+const { chest } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<StarlightPage frontmatter={{ title: chest.name, description: `Phần thưởng, tỉ lệ và cách nhận ${chest.name}.` }}>
+	<p class="back">
+		<a href={`${base}/${server}/chests/danh-sach/`}>← Danh sách rương quà</a>
+	</p>
+	<RenChests server={server!} view="detail" id={id} />
+</StarlightPage>
+
+<style>
+	.back a {
+		color: var(--sl-color-text-accent);
+		text-decoration: none;
+	}
+	.back a:hover {
+		text-decoration: underline;
+	}
+</style>

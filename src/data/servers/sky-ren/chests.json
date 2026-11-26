@@ -1,0 +1,944 @@
+{
+	"chests": [
+		{
+			"id": "bossdungeon1",
+			"name": "Rương Quà Boss Dungeon 1",
+			"kind": "boss",
+			"icon": "jack_o_lantern",
+			"min": 1,
+			"max": 2,
+			"total": 100,
+			"rewards": [
+				{
+					"type": "exp",
+					"name": "Kinh nghiệm",
+					"icon": "experience_bottle",
+					"min": 20000,
+					"max": 20000,
+					"chance": 17
+				},
+				{
+					"type": "currency",
+					"name": "Đá Quý",
+					"min": 100,
+					"max": 100,
+					"chance": 17
+				},
+				{
+					"type": "item",
+					"name": "Táo vàng phù phép",
+					"icon": "golden_apple",
+					"min": 6,
+					"max": 6,
+					"chance": 17
+				},
+				{
+					"type": "item",
+					"name": "Ô cường hóa",
+					"icon": "ender_eye",
+					"min": 1,
+					"max": 1,
+					"chance": 7
+				},
+				{
+					"type": "item",
+					"name": "Sách phép Huyền thoại ngẫu nhiên",
+					"icon": "book",
+					"min": 1,
+					"max": 1,
+					"chance": 12
+				},
+				{
+					"type": "item",
+					"name": "Quặng Thạch Anh Cống Hiến",
+					"icon": "nether_quartz_ore",
+					"min": 2,
+					"max": 2,
+					"chance": 15
+				},
+				{
+					"type": "item",
+					"name": "Quặng Thạch Anh Cống Hiến",
+					"icon": "nether_quartz_ore",
+					"min": 1,
+					"max": 1,
+					"chance": 15
+				}
+			],
+			"sources": [
+				{
+					"type": "boss",
+					"dungeon": 1,
+					"boss": "Ma Hải Tặc",
+					"who": "killer"
+				}
+			]
+		},
+		{
+			"id": "bossdungeon2",
+			"name": "Rương Quà Boss Dungeon 2",
+			"kind": "boss",
+			"icon": "jack_o_lantern",
+			"min": 1,
+			"max": 2,
+			"total": 100,
+			"rewards": [
+				{
+					"type": "exp",
+					"name": "Kinh nghiệm",
+					"icon": "experience_bottle",
+					"min": 40000,
+					"max": 40000,
+					"chance": 18
+				},
+				{
+					"type": "currency",
+					"name": "Đá Quý",
+					"min": 200,
+					"max": 200,
+					"chance": 17
+				},
+				{
+					"type": "item",
+					"name": "Táo vàng phù phép",
+					"icon": "golden_apple",
+					"min": 12,
+					"max": 12,
+					"chance": 17
+				},
+				{
+					"type": "item",
+					"name": "Ô cường hóa",
+					"icon": "ender_eye",
+					"min": 1,
+					"max": 1,
+					"chance": 8
+				},
+				{
+					"type": "item",
+					"name": "Sách phép Huyền thoại ngẫu nhiên",
+					"icon": "book",
+					"min": 1,
+					"max": 1,
+					"chance": 14
+				},
+				{
+					"type": "item",
+					"name": "Cục thối",
+					"icon": "rotten_flesh",
+					"min": 1,
+					"max": 1,
+					"chance": 12
+				},
+				{
+					"type": "item",
+					"name": "Quặng Thạch Anh Cống Hiến",
+					"icon": "nether_quartz_ore",
+					"min": 2,
+					"max": 2,
+					"chance": 14
+				}
+			],
+			"sources": [
+				{
+					"type": "boss",
+					"dungeon": 2,
+					"boss": "Nhện Yêu Tinh",
+					"who": "killer"
+				}
+			]
+		},
+		{
+			"id": "bossdungeon3",
+			"name": "Rương Quà Boss Dungeon 3",
+			"kind": "boss",
+			"icon": "jack_o_lantern",
+			"min": 1,
+			"max": 3,
+			"total": 100,
+			"rewards": [
+				{
+					"type": "exp",
+					"name": "Kinh nghiệm",
+					"icon": "experience_bottle",
+					"min": 60000,
+					"max": 60000,
+					"chance": 17
+				},
+				{
+					"type": "currency",
+					"name": "Đá Quý",
+					"min": 300,
+					"max": 300,
+					"chance": 18
+				},
+				{
+					"type": "item",
+					"name": "Táo vàng phù phép",
+					"icon": "golden_apple",
+					"min": 18,
+					"max": 18,
+					"chance": 18
+				},
+				{
+					"type": "item",
+					"name": "Ô cường hóa",
+					"icon": "ender_eye",
+					"min": 1,
+					"max": 1,
+					"chance": 8
+				},
+				{
+					"type": "item",
+					"name": "Sách phép Huyền thoại ngẫu nhiên",
+					"icon": "book",
+					"min": 2,
+					"max": 2,
+					"chance": 14
+				},
+				{
+					"type": "item",
+					"name": "Cục thối",
+					"icon": "rotten_flesh",
+					"min": 1,
+					"max": 1,
+					"chance": 10
+				},
+				{
+					"type": "item",
+					"name": "Sách phép Truyền thuyết ngẫu nhiên",
+					"icon": "book",
+					"min": 2,
+					"max": 2,
+					"chance": 5
+				},
+				{
+					"type": "item",
+					"name": "Quặng Thạch Anh Cống Hiến",
+					"icon": "nether_quartz_ore",
+					"min": 3,
+					"max": 3,
+					"chance": 10
+				}
+			],
+			"sources": [
+				{
+					"type": "boss",
+					"dungeon": 3,
+					"boss": "Phù Thủy Đen",
+					"who": "killer"
+				}
+			]
+		},
+		{
+			"id": "bossdungeon4",
+			"name": "Rương Quà Boss Dungeon 4",
+			"kind": "boss",
+			"icon": "jukebox",
+			"min": 2,
+			"max": 3,
+			"total": 100,
+			"rewards": [
+				{
+					"type": "item",
+					"name": "Ô cường hóa",
+					"icon": "ender_eye",
+					"min": 1,
+					"max": 1,
+					"chance": 10
+				},
+				{
+					"type": "item",
+					"name": "Sách phép Huyền thoại ngẫu nhiên",
+					"icon": "book",
+					"min": 2,
+					"max": 2,
+					"chance": 17
+				},
+				{
+					"type": "item",
+					"name": "Sách phép Truyền thuyết ngẫu nhiên",
+					"icon": "book",
+					"min": 1,
+					"max": 1,
+					"chance": 7
+				},
+				{
+					"type": "item",
+					"name": "Cục thối",
+					"icon": "rotten_flesh",
+					"min": 1,
+					"max": 1,
+					"chance": 14
+				},
+				{
+					"type": "item",
+					"name": "Spawner Iron Golem",
+					"icon": "spawner",
+					"min": 1,
+					"max": 1,
+					"chance": 7
+				},
+				{
+					"type": "item",
+					"name": "Lửa phép (+Sát Thương) III",
+					"icon": "blaze_powder",
+					"min": 1,
+					"max": 1,
+					"chance": 10
+				},
+				{
+					"type": "item",
+					"name": "Lửa phép (+Tim) III",
+					"icon": "blaze_powder",
+					"min": 1,
+					"max": 1,
+					"chance": 10
+				},
+				{
+					"type": "item",
+					"name": "Lửa phép (+Sát Thương) II",
+					"icon": "blaze_powder",
+					"min": 1,
+					"max": 1,
+					"chance": 7
+				},
+				{
+					"type": "item",
+					"name": "Lửa phép (+Tim) II",
+					"icon": "blaze_powder",
+					"min": 1,
+					"max": 1,
+					"chance": 6
+				},
+				{
+					"type": "item",
+					"name": "Bọt Biển Cống Hiến",
+					"icon": "sponge",
+					"min": 1,
+					"max": 1,
+					"chance": 6
+				},
+				{
+					"type": "item",
+					"name": "Bọt Biển Cống Hiến",
+					"icon": "sponge",
+					"min": 2,
+					"max": 2,
+					"chance": 4
+				},
+				{
+					"type": "item",
+					"name": "Bọt Biển Cống Hiến",
+					"icon": "sponge",
+					"min": 3,
+					"max": 3,
+					"chance": 2
+				}
+			],
+			"sources": [
+				{
+					"type": "boss",
+					"dungeon": 4,
+					"boss": "Jack",
+					"who": "killer"
+				},
+				{
+					"type": "boss",
+					"dungeon": 4,
+					"boss": "Jackson",
+					"who": "killer"
+				}
+			]
+		},
+		{
+			"id": "bossdungeon5",
+			"name": "Rương Quà Boss Dungeon 5",
+			"kind": "boss",
+			"icon": "end_stone",
+			"min": 3,
+			"max": 4,
+			"total": 100,
+			"rewards": [
+				{
+					"type": "item",
+					"name": "Khung Cổng End",
+					"icon": "end_portal_frame",
+					"min": 1,
+					"max": 1,
+					"chance": 7
+				},
+				{
+					"type": "item",
+					"name": "Khung Cổng End",
+					"icon": "end_portal_frame",
+					"min": 2,
+					"max": 2,
+					"chance": 5
+				},
+				{
+					"type": "item",
+					"name": "Khung Cổng End",
+					"icon": "end_portal_frame",
+					"min": 3,
+					"max": 3,
+					"chance": 3
+				},
+				{
+					"type": "item",
+					"name": "Bọt Biển Cống Hiến",
+					"icon": "sponge",
+					"min": 1,
+					"max": 1,
+					"chance": 9
+				},
+				{
+					"type": "item",
+					"name": "Ô cường hóa",
+					"icon": "ender_eye",
+					"min": 3,
+					"max": 3,
+					"chance": 9
+				},
+				{
+					"type": "item",
+					"name": "Sách phép Huyền thoại ngẫu nhiên",
+					"icon": "book",
+					"min": 3,
+					"max": 3,
+					"chance": 15
+				},
+				{
+					"type": "item",
+					"name": "Sách phép Truyền thuyết ngẫu nhiên",
+					"icon": "book",
+					"min": 2,
+					"max": 2,
+					"chance": 6
+				},
+				{
+					"type": "item",
+					"name": "Cục thối",
+					"icon": "rotten_flesh",
+					"min": 3,
+					"max": 3,
+					"chance": 12
+				},
+				{
+					"type": "item",
+					"name": "Spawner Iron Golem",
+					"icon": "spawner",
+					"min": 1,
+					"max": 1,
+					"chance": 9
+				},
+				{
+					"type": "item",
+					"name": "Spawner Iron Golem",
+					"icon": "spawner",
+					"min": 2,
+					"max": 2,
+					"chance": 6
+				},
+				{
+					"type": "item",
+					"name": "Spawner Ghast",
+					"icon": "spawner",
+					"min": 1,
+					"max": 1,
+					"chance": 9
+				},
+				{
+					"type": "item",
+					"name": "Spawner Ghast",
+					"icon": "spawner",
+					"min": 2,
+					"max": 2,
+					"chance": 5
+				},
+				{
+					"type": "chest",
+					"name": "Mở ngay Rương Lửa Phép Truyền Thuyết",
+					"icon": "end_portal_frame",
+					"chest": "luapheptruyenthuyet",
+					"opens": true,
+					"min": 1,
+					"max": 1,
+					"chance": 5
+				}
+			],
+			"sources": [
+				{
+					"type": "boss",
+					"dungeon": 5,
+					"boss": "Rồng Không Gian",
+					"who": "killer"
+				}
+			]
+		},
+		{
+			"id": "bossdungeon6",
+			"name": "Rương Quà Boss Dungeon 6",
+			"kind": "boss",
+			"icon": "blue_ice",
+			"min": 4,
+			"max": 5,
+			"total": 100,
+			"rewards": [
+				{
+					"type": "currency",
+					"name": "Băng Ngọc",
+					"min": 30,
+					"max": 30,
+					"chance": 10
+				},
+				{
+					"type": "currency",
+					"name": "Băng Ngọc",
+					"min": 60,
+					"max": 60,
+					"chance": 6
+				},
+				{
+					"type": "currency",
+					"name": "Băng Ngọc",
+					"min": 120,
+					"max": 120,
+					"chance": 2
+				},
+				{
+					"type": "item",
+					"name": "Ô cường hóa",
+					"icon": "ender_eye",
+					"min": 4,
+					"max": 4,
+					"chance": 10
+				},
+				{
+					"type": "item",
+					"name": "Sách phép Truyền thuyết ngẫu nhiên",
+					"icon": "book",
+					"min": 3,
+					"max": 3,
+					"chance": 14
+				},
+				{
+					"type": "item",
+					"name": "Sách phép Truyền thuyết ngẫu nhiên",
+					"icon": "book",
+					"min": 5,
+					"max": 5,
+					"chance": 6
+				},
+				{
+					"type": "item",
+					"name": "Cục thối",
+					"icon": "rotten_flesh",
+					"min": 4,
+					"max": 4,
+					"chance": 10
+				},
+				{
+					"type": "item",
+					"name": "Spawner Iron Golem",
+					"icon": "spawner",
+					"min": 2,
+					"max": 2,
+					"chance": 8
+				},
+				{
+					"type": "item",
+					"name": "Spawner Ghast",
+					"icon": "spawner",
+					"min": 2,
+					"max": 2,
+					"chance": 8
+				},
+				{
+					"type": "chest",
+					"name": "Mở ngay Rương Lửa Phép Tối Cao",
+					"icon": "end_portal_frame",
+					"chest": "luapheptoicao",
+					"opens": true,
+					"min": 1,
+					"max": 1,
+					"chance": 5
+				},
+				{
+					"type": "item",
+					"name": "Linh Hồn Băng Giá",
+					"icon": "heart_of_the_sea",
+					"min": 2,
+					"max": 2,
+					"chance": 8
+				},
+				{
+					"type": "item",
+					"name": "Bọt Biển Cống Hiến",
+					"icon": "sponge",
+					"min": 2,
+					"max": 2,
+					"chance": 7
+				},
+				{
+					"type": "item",
+					"name": "Bọt Biển Cống Hiến",
+					"icon": "sponge",
+					"min": 3,
+					"max": 3,
+					"chance": 6
+				}
+			],
+			"sources": [
+				{
+					"type": "boss",
+					"dungeon": 6,
+					"boss": "Arcturus",
+					"who": "killer"
+				}
+			]
+		},
+		{
+			"id": "spawner1",
+			"name": "Rương Spawner 1",
+			"kind": "spawner",
+			"icon": "spawner",
+			"min": 3,
+			"max": 3,
+			"total": 90,
+			"rewards": [
+				{
+					"type": "item",
+					"name": "Spawner Lợn",
+					"icon": "spawner",
+					"min": 1,
+					"max": 1,
+					"chance": 30
+				},
+				{
+					"type": "item",
+					"name": "Spawner Bò",
+					"icon": "spawner",
+					"min": 1,
+					"max": 1,
+					"chance": 30
+				},
+				{
+					"type": "item",
+					"name": "Spawner Gà",
+					"icon": "spawner",
+					"min": 1,
+					"max": 1,
+					"chance": 30
+				}
+			],
+			"sources": [
+				{
+					"type": "boss",
+					"dungeon": 1,
+					"boss": "Ma Hải Tặc",
+					"who": "nearby",
+					"reach": 16,
+					"limit": 8
+				},
+				{
+					"type": "boss",
+					"dungeon": 2,
+					"boss": "Nhện Yêu Tinh",
+					"who": "nearby",
+					"reach": 16,
+					"limit": 8
+				}
+			]
+		},
+		{
+			"id": "spawner2",
+			"name": "Rương Spawner 2",
+			"kind": "spawner",
+			"icon": "spawner",
+			"min": 3,
+			"max": 3,
+			"total": 90,
+			"rewards": [
+				{
+					"type": "item",
+					"name": "Spawner Zombie",
+					"icon": "spawner",
+					"min": 1,
+					"max": 1,
+					"chance": 30
+				},
+				{
+					"type": "item",
+					"name": "Spawner Skeleton",
+					"icon": "spawner",
+					"min": 1,
+					"max": 1,
+					"chance": 30
+				},
+				{
+					"type": "item",
+					"name": "Spawner Creeper",
+					"icon": "spawner",
+					"min": 1,
+					"max": 1,
+					"chance": 30
+				}
+			],
+			"sources": [
+				{
+					"type": "boss",
+					"dungeon": 3,
+					"boss": "Phù Thủy Đen",
+					"who": "nearby",
+					"reach": 20,
+					"limit": 8
+				},
+				{
+					"type": "boss",
+					"dungeon": 4,
+					"boss": "Jack",
+					"who": "nearby",
+					"reach": 20,
+					"limit": 2
+				},
+				{
+					"type": "boss",
+					"dungeon": 4,
+					"boss": "Jackson",
+					"who": "nearby",
+					"reach": 20,
+					"limit": 8
+				},
+				{
+					"type": "boss",
+					"dungeon": 5,
+					"boss": "Rồng Không Gian",
+					"who": "nearby",
+					"reach": 20,
+					"limit": 8
+				}
+			]
+		},
+		{
+			"id": "spawner3",
+			"name": "Rương Spawner 3",
+			"kind": "spawner",
+			"icon": "spawner",
+			"min": 3,
+			"max": 3,
+			"total": 90,
+			"rewards": [
+				{
+					"type": "item",
+					"name": "Spawner Nhện",
+					"icon": "spawner",
+					"min": 1,
+					"max": 1,
+					"chance": 30
+				},
+				{
+					"type": "item",
+					"name": "Spawner Enderman",
+					"icon": "spawner",
+					"min": 1,
+					"max": 1,
+					"chance": 30
+				},
+				{
+					"type": "item",
+					"name": "Spawner Quỷ lửa",
+					"icon": "spawner",
+					"min": 1,
+					"max": 1,
+					"chance": 30
+				}
+			],
+			"sources": [
+				{
+					"type": "boss",
+					"dungeon": 6,
+					"boss": "Arcturus",
+					"who": "nearby",
+					"reach": 20,
+					"limit": 8
+				}
+			]
+		},
+		{
+			"id": "luaphepthuong",
+			"name": "Rương Lửa Phép Thường",
+			"kind": "lua-phep",
+			"icon": "lava_bucket",
+			"min": 1,
+			"max": 2,
+			"total": 100,
+			"rewards": [
+				{
+					"type": "item",
+					"name": "Lửa phép (+Sát Thương) I",
+					"icon": "blaze_powder",
+					"min": 1,
+					"max": 1,
+					"chance": 35
+				},
+				{
+					"type": "item",
+					"name": "Lửa phép (+Tim) I",
+					"icon": "blaze_powder",
+					"min": 1,
+					"max": 1,
+					"chance": 35
+				},
+				{
+					"type": "item",
+					"name": "Lửa phép (+Sát Thương) II",
+					"icon": "blaze_powder",
+					"min": 1,
+					"max": 1,
+					"chance": 15
+				},
+				{
+					"type": "item",
+					"name": "Lửa phép (+Tim) II",
+					"icon": "blaze_powder",
+					"min": 1,
+					"max": 1,
+					"chance": 15
+				}
+			],
+			"sources": [
+				{
+					"type": "boss",
+					"dungeon": 4,
+					"boss": "Jack",
+					"who": "nearby",
+					"reach": 20,
+					"limit": 2
+				},
+				{
+					"type": "boss",
+					"dungeon": 4,
+					"boss": "Jackson",
+					"who": "nearby",
+					"reach": 20,
+					"limit": 2
+				},
+				{
+					"type": "boss",
+					"dungeon": 5,
+					"boss": "Rồng Không Gian",
+					"who": "nearby",
+					"reach": 20,
+					"limit": 2
+				}
+			]
+		},
+		{
+			"id": "luapheptoicao",
+			"name": "Rương Lửa Phép Tối Cao",
+			"kind": "lua-phep",
+			"icon": "end_portal_frame",
+			"min": 1,
+			"max": 1,
+			"total": 100,
+			"rewards": [
+				{
+					"type": "item",
+					"name": "Lửa phép (+Sát Thương) V",
+					"icon": "blaze_powder",
+					"min": 1,
+					"max": 1,
+					"chance": 10
+				},
+				{
+					"type": "item",
+					"name": "Lửa phép (+Tim) V",
+					"icon": "blaze_powder",
+					"min": 1,
+					"max": 1,
+					"chance": 15
+				},
+				{
+					"type": "item",
+					"name": "Lửa phép (+Tốc Đánh) V",
+					"icon": "blaze_powder",
+					"min": 1,
+					"max": 1,
+					"chance": 37.5
+				},
+				{
+					"type": "item",
+					"name": "Lửa phép (+Tốc Chạy) V",
+					"icon": "blaze_powder",
+					"min": 1,
+					"max": 1,
+					"chance": 37.5
+				}
+			],
+			"sources": [
+				{
+					"type": "chest",
+					"chest": "bossdungeon6"
+				}
+			]
+		},
+		{
+			"id": "luapheptruyenthuyet",
+			"name": "Rương Lửa Phép Truyền Thuyết",
+			"kind": "lua-phep",
+			"icon": "end_portal_frame",
+			"min": 1,
+			"max": 1,
+			"total": 100,
+			"rewards": [
+				{
+					"type": "item",
+					"name": "Lửa phép (+Sát Thương) IV",
+					"icon": "blaze_powder",
+					"min": 1,
+					"max": 1,
+					"chance": 5
+				},
+				{
+					"type": "item",
+					"name": "Lửa phép (+Tim) IV",
+					"icon": "blaze_powder",
+					"min": 1,
+					"max": 1,
+					"chance": 15
+				},
+				{
+					"type": "item",
+					"name": "Lửa phép (+Tốc Đánh) IV",
+					"icon": "blaze_powder",
+					"min": 1,
+					"max": 1,
+					"chance": 40
+				},
+				{
+					"type": "item",
+					"name": "Lửa phép (+Tốc Chạy) IV",
+					"icon": "blaze_powder",
+					"min": 1,
+					"max": 1,
+					"chance": 40
+				}
+			],
+			"sources": [
+				{
+					"type": "boss",
+					"dungeon": 6,
+					"boss": "Arcturus",
+					"who": "nearby",
+					"reach": 20,
+					"limit": 2
+				},
+				{
+					"type": "chest",
+					"chest": "bossdungeon5"
+				}
+			]
+		}
+	]
+}

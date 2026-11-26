@@ -68,7 +68,7 @@ const ids = new Set();
 for (const server of readdirSync(serversDir)) {
 	const file = join(serversDir, server, 'spawners.json');
 	if (existsSync(file)) for (const mob of JSON.parse(readFileSync(file, 'utf8')).mobs) ids.add(mob.id);
-	// the dungeons of Sky Rèn: the entity each mob looks like (see sync-ren-dungeon.mjs)
+	// the dungeons of Sky Rèn: the entity each mob looks like (see sync-ren.mjs)
 	const dungeons = join(serversDir, server, 'dungeons.json');
 	if (existsSync(dungeons)) for (const d of JSON.parse(readFileSync(dungeons, 'utf8')).dungeons) for (const mob of d.mobs) if (mob.appearance) ids.add(mob.appearance);
 }

@@ -53,8 +53,10 @@
 					"drops": [],
 					"killer": [
 						{
-							"type": "key",
-							"name": "Chìa khóa Rương Boss Dungeon 1",
+							"type": "chest",
+							"name": "Rương Quà Boss Dungeon 1",
+							"icon": "jack_o_lantern",
+							"chest": "bossdungeon1",
 							"min": 1,
 							"max": 1,
 							"chance": 100
@@ -159,8 +161,10 @@
 							"limit": 8,
 							"rewards": [
 								{
-									"type": "key",
-									"name": "Chìa khóa Rương Spawner 1",
+									"type": "chest",
+									"name": "Rương Spawner 1",
+									"icon": "spawner",
+									"chest": "spawner1",
 									"min": 1,
 									"max": 1,
 									"chance": 100
@@ -248,8 +252,10 @@
 					"drops": [],
 					"killer": [
 						{
-							"type": "key",
-							"name": "Chìa khóa Rương Boss Dungeon 2",
+							"type": "chest",
+							"name": "Rương Quà Boss Dungeon 2",
+							"icon": "jack_o_lantern",
+							"chest": "bossdungeon2",
 							"min": 1,
 							"max": 1,
 							"chance": 100
@@ -354,8 +360,10 @@
 							"limit": 8,
 							"rewards": [
 								{
-									"type": "key",
-									"name": "Chìa khóa Rương Spawner 1",
+									"type": "chest",
+									"name": "Rương Spawner 1",
+									"icon": "spawner",
+									"chest": "spawner1",
 									"min": 2,
 									"max": 2,
 									"chance": 100
@@ -451,8 +459,10 @@
 					"drops": [],
 					"killer": [
 						{
-							"type": "key",
-							"name": "Chìa khóa Rương Boss Dungeon 3",
+							"type": "chest",
+							"name": "Rương Quà Boss Dungeon 3",
+							"icon": "jack_o_lantern",
+							"chest": "bossdungeon3",
 							"min": 1,
 							"max": 1,
 							"chance": 100
@@ -549,8 +559,10 @@
 							"limit": 8,
 							"rewards": [
 								{
-									"type": "key",
-									"name": "Chìa khóa Rương Spawner 2",
+									"type": "chest",
+									"name": "Rương Spawner 2",
+									"icon": "spawner",
+									"chest": "spawner2",
 									"min": 1,
 									"max": 1,
 									"chance": 100
@@ -690,8 +702,10 @@
 					"drops": [],
 					"killer": [
 						{
-							"type": "key",
-							"name": "Chìa khóa Rương Boss Dungeon 4",
+							"type": "chest",
+							"name": "Rương Quà Boss Dungeon 4",
+							"icon": "jukebox",
+							"chest": "bossdungeon4",
 							"min": 1,
 							"max": 1,
 							"chance": 100
@@ -788,8 +802,10 @@
 							"limit": 2,
 							"rewards": [
 								{
-									"type": "key",
-									"name": "Chìa khóa Rương Spawner 2",
+									"type": "chest",
+									"name": "Rương Spawner 2",
+									"icon": "spawner",
+									"chest": "spawner2",
 									"min": 1,
 									"max": 1,
 									"chance": 100
@@ -809,8 +825,10 @@
 							"limit": 2,
 							"rewards": [
 								{
-									"type": "key",
-									"name": "Chìa khóa Rương Lửa Phép Thường",
+									"type": "chest",
+									"name": "Rương Lửa Phép Thường",
+									"icon": "lava_bucket",
+									"chest": "luaphepthuong",
 									"min": 1,
 									"max": 1,
 									"chance": 100
@@ -840,8 +858,10 @@
 					"drops": [],
 					"killer": [
 						{
-							"type": "key",
-							"name": "Chìa khóa Rương Boss Dungeon 4",
+							"type": "chest",
+							"name": "Rương Quà Boss Dungeon 4",
+							"icon": "jukebox",
+							"chest": "bossdungeon4",
 							"min": 1,
 							"max": 1,
 							"chance": 100
@@ -938,8 +958,10 @@
 							"limit": 8,
 							"rewards": [
 								{
-									"type": "key",
-									"name": "Chìa khóa Rương Spawner 2",
+									"type": "chest",
+									"name": "Rương Spawner 2",
+									"icon": "spawner",
+									"chest": "spawner2",
 									"min": 1,
 									"max": 1,
 									"chance": 100
@@ -959,8 +981,10 @@
 							"limit": 2,
 							"rewards": [
 								{
-									"type": "key",
-									"name": "Chìa khóa Rương Lửa Phép Thường",
+									"type": "chest",
+									"name": "Rương Lửa Phép Thường",
+									"icon": "lava_bucket",
+									"chest": "luaphepthuong",
 									"min": 1,
 									"max": 1,
 									"chance": 100
@@ -1092,8 +1116,10 @@
 					"drops": [],
 					"killer": [
 						{
-							"type": "key",
-							"name": "Chìa khóa Rương Boss Dungeon 5",
+							"type": "chest",
+							"name": "Rương Quà Boss Dungeon 5",
+							"icon": "end_stone",
+							"chest": "bossdungeon5",
 							"min": 1,
 							"max": 1,
 							"chance": 100
@@ -1198,8 +1224,10 @@
 							"limit": 8,
 							"rewards": [
 								{
-									"type": "key",
-									"name": "Chìa khóa Rương Spawner 2",
+									"type": "chest",
+									"name": "Rương Spawner 2",
+									"icon": "spawner",
+									"chest": "spawner2",
 									"min": 3,
 									"max": 3,
 									"chance": 100
@@ -1219,8 +1247,10 @@
 							"limit": 2,
 							"rewards": [
 								{
-									"type": "key",
-									"name": "Chìa khóa Rương Lửa Phép Thường",
+									"type": "chest",
+									"name": "Rương Lửa Phép Thường",
+									"icon": "lava_bucket",
+									"chest": "luaphepthuong",
 									"min": 2,
 									"max": 2,
 									"chance": 100
@@ -1356,8 +1386,10 @@
 					"drops": [],
 					"killer": [
 						{
-							"type": "key",
-							"name": "Chìa khóa Rương Boss Dungeon 6",
+							"type": "chest",
+							"name": "Rương Quà Boss Dungeon 6",
+							"icon": "blue_ice",
+							"chest": "bossdungeon6",
 							"min": 1,
 							"max": 1,
 							"chance": 100
@@ -1476,8 +1508,10 @@
 							"limit": 8,
 							"rewards": [
 								{
-									"type": "key",
-									"name": "Chìa khóa Rương Spawner 3",
+									"type": "chest",
+									"name": "Rương Spawner 3",
+									"icon": "spawner",
+									"chest": "spawner3",
 									"min": 3,
 									"max": 3,
 									"chance": 100
@@ -1497,8 +1531,10 @@
 							"limit": 2,
 							"rewards": [
 								{
-									"type": "key",
-									"name": "Chìa khóa Rương Lửa Phép Truyền Thuyết",
+									"type": "chest",
+									"name": "Rương Lửa Phép Truyền Thuyết",
+									"icon": "end_portal_frame",
+									"chest": "luapheptruyenthuyet",
 									"min": 1,
 									"max": 1,
 									"chance": 100

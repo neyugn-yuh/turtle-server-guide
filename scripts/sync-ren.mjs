@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
- * Reads the Dungeon system of the Sky Rèn server (6 dungeons) and writes the player-facing facts to
- * src/data/servers/sky-ren/dungeons.json, which the "Dungeon" pages of Sky Rèn are built from.
+ * Reads the Dungeon system of the Sky Rèn server (6 dungeons) and the reward chests the bosses give, and writes the
+ * player-facing facts to src/data/servers/sky-ren/dungeons.json and chests.json, which the "Dungeon" and "Rương quà"
+ * pages of Sky Rèn are built from.
  *
  * Files read (relative to the plugins folder of the server repo):
  *   DeluxeMenus/gui_menus/menuDungeon.yml         name, difficulty and final boss of each dungeon (the /dungeon menu)
@@ -9,6 +10,9 @@
  *   MythicMobs/skills/Skill Dungeon/Dungeon<N>.yml   the reward skills a boss calls on death (rewards of the players nearby)
  *   MythicMobs/skills/KillerRewards.yml           the reward of the player who lands the killing blow of a boss
  *   MMOItems/item/{material,consumable}.yml       the names of the items that are given
+ *   CrateReloaded/crates/<Crate>.yml              the chests the bosses give (item, how many rewards one opening gives, every reward and its chance)
+ *   ItemAbility/gems.yml                          the names of the gems (Lửa phép) a chest gives
+ *   SkyEnchants/groups.yml                        the names of the enchant book groups
  *
  * What counts as a reward (a command run on death, directly on the mob or inside a reward skill):
  *   mi give <TYPE> <ID> <player> <amount> ...      an MMOItems item
@@ -16,21 +20,24 @@
  *   points give <player> <n>                       Xu
  *   exp give / src exp <player> <n>                experience
  *   crazycrates give v cauvong <n> <player>        Cầu Vồng key
- *   cr give to <player> <crate> <n> [offline]      a crate key
+ *   cr give to <player> <crate> <n> [offline]      a chest (the item to right-click)
+ *   cr open <player> <crate>                       opens a chest at once (a reward of a chest)
+ *   se giveitem/giveremove/givercbook, give, itemability gem, wildstacker:stacker give   rewards of the chests
  *   mme reward <player> <block> <n>                a block reward
  * A line that cannot be shown truthfully is left out and reported on the console, never guessed.
  *
- * Usage:  node scripts/sync-ren-dungeon.mjs --dir <plugins folder> [--check]
+ * Usage:  node scripts/sync-ren.mjs --dir <plugins folder> [--check]
  * Only whitelisted facts are copied. The output has no timestamp, so a run that finds nothing new leaves the file unchanged.
  */
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
-import { join, dirname, resolve } from 'node:path';
+import { join, dirname, resolve, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'yaml';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SERVER = 'sky-ren';
 const OUT = join(ROOT, 'src/data/servers', SERVER, 'dungeons.json');
+const OUT_CHESTS = join(ROOT, 'src/data/servers', SERVER, 'chests.json');
 const COUNT = 6;
 
 const args = process.argv.slice(2);
@@ -40,7 +47,7 @@ const option = (name) => {
 	return i >= 0 ? args[i + 1] : undefined;
 };
 function fail(message) {
-	console.error(`sync-ren-dungeon: ${message}`);
+	console.error(`sync-ren: ${message}`);
 	process.exit(1);
 }
 const warnings = [];
@@ -102,17 +109,46 @@ const itemInfo = (type, id) => {
 // ---------- rewards ----------
 const CURRENCIES = { daquy: 'Đá Quý', bangngoc: 'Băng Ngọc' };
 const BLOCKS = { diamond_block: 'Khối Kim Cương', iron_block: 'Khối Sắt', gold_block: 'Khối Vàng', lapis_block: 'Khối Lapis', emerald_block: 'Khối Ngọc Lục Bảo' };
-// crate ids -> what players call them (Lửa Phép names are the ones the event menus use; the other ids give their number)
-const CRATES = {
-	LuaPhepThuong: 'Rương Lửa Phép Thường',
-	LuaPhepToiCao: 'Rương Lửa Phép Tối Cao',
-	LuaPhepTruyenThuyet: 'Rương Lửa Phép Truyền Thuyết',
-};
-function crateName(id) {
-	if (CRATES[id]) return CRATES[id];
-	const m = /^(Spawner|BossDungeon)(\d+)$/.exec(id);
-	if (m) return `${m[1] === 'Spawner' ? 'Rương Spawner' : 'Rương Boss Dungeon'} ${m[2]}`;
+// ---------- chests ----------
+const BOOK_GROUPS = Object.fromEntries(Object.entries(readYaml('SkyEnchants/groups.yml').groups ?? {}).map(([id, g]) => [id, String(g['group-name'] ?? '').trim()]));
+const GEMS = readYaml('ItemAbility/gems.yml').Items ?? {};
+const MOBS = { pig: 'Lợn', cow: 'Bò', chicken: 'Gà', zombie: 'Zombie', skeleton: 'Skeleton', creeper: 'Creeper', spider: 'Nhện', enderman: 'Enderman', blaze: 'Quỷ lửa', iron_golem: 'Iron Golem', ghast: 'Ghast' };
+const LUA_PHEP = { LuaPhepThuong: 'Thường', LuaPhepToiCao: 'Tối Cao', LuaPhepTruyenThuyet: 'Truyền Thuyết' };
+/** Name and kind of a chest from its id (what players call them: the event menus say "Rương Lửa Phép Tối Cao"). */
+function chestNaming(id) {
+	let m = /^BossDungeon(\d+)$/.exec(id);
+	if (m) return { name: `Rương Quà Boss Dungeon ${m[1]}`, kind: 'boss', order: Number(m[1]) };
+	m = /^Spawner(\d+)$/.exec(id);
+	if (m) return { name: `Rương Spawner ${m[1]}`, kind: 'spawner', order: Number(m[1]) };
+	if (LUA_PHEP[id]) return { name: `Rương Lửa Phép ${LUA_PHEP[id]}`, kind: 'lua-phep', order: Object.keys(LUA_PHEP).indexOf(id) + 1 };
 	return null;
+}
+const chests = new Map(); // id -> chest, filled while the rewards are read
+/** Registers a chest (and, through "cr open", the chests it opens) and returns it, or null when it cannot be shown. */
+function chestOf(id, where) {
+	if (chests.has(id)) return chests.get(id);
+	const naming = chestNaming(id);
+	if (!naming) return void warn(`${where}: chest ${id} has no known name (left out)`);
+	const file = `CrateReloaded/crates/${id}.yml`;
+	if (!existsSync(join(BASE, file))) return void warn(`${where}: ${file} not found (chest left out)`);
+	const crate = readYaml(file)[id];
+	if (!crate) return void warn(`${file}: no "${id}" section (chest left out)`);
+	const chest = { id: id.toLowerCase(), ...naming, icon: String(crate.item ?? '').split(/\s+/)[0].toLowerCase() || null, min: Number(crate.reward?.['minimum-rewards']), max: Number(crate.reward?.['maximum-rewards']), total: 0, rewards: [], sources: [] };
+	chests.set(id, chest);
+	for (const entry of crate.reward?.rewards ?? []) {
+		const text = String(entry);
+		const chance = Number(/chance:\(([\d.]+)\)/.exec(text)?.[1]);
+		const commands = [...text.matchAll(/cmd:\(([^)]*)\)/g)].map((c) => c[1]).filter((c) => !/^\/?tcsendmsg /.test(c)); // tcsendmsg only tells the player what they got
+		if (!Number.isFinite(chance) || commands.length !== 1) {
+			warn(`${file}: cannot read the reward "${text}" (left out)`);
+			continue;
+		}
+		chest.total = round(chest.total + chance);
+		const reward = rewardOf(commands[0].replace(/^\//, '').replace(/\{player\}/g, '<trigger.name>'), chance, file);
+		if (reward) chest.rewards.push(reward);
+	}
+	if (!chest.rewards.length || !Number.isFinite(chest.min) || !Number.isFinite(chest.max)) fail(`${file}: no rewards or no minimum/maximum-rewards`);
+	return chest;
 }
 
 /** "3" -> {min:3,max:3}; "<random.3to5>" -> {min:3,max:5}; anything else (a variable) -> null. */
@@ -153,9 +189,37 @@ function rewardOf(command, chance, where) {
 	if (m) return { type: 'key', name: 'Chìa khóa Cầu Vồng', icon: 'clay_ball', min: Number(m[1]), max: Number(m[1]), chance };
 	m = /^cr give to @P (\w+) (\d+)(?: offline)?$/.exec(text);
 	if (m) {
-		const name = crateName(m[1]);
-		if (!name) return void warn(`${where}: crate ${m[1]} has no known name (left out)`);
-		return { type: 'key', name: `Chìa khóa ${name}`, min: Number(m[2]), max: Number(m[2]), chance };
+		const chest = chestOf(m[1], where);
+		return chest && { type: 'chest', name: chest.name, icon: chest.icon, chest: chest.id, min: Number(m[2]), max: Number(m[2]), chance };
+	}
+	m = /^cr open @P (\w+)$/.exec(text);
+	if (m) {
+		const chest = chestOf(m[1], where);
+		return chest && { type: 'chest', name: `Mở ngay ${chest.name}`, icon: chest.icon, chest: chest.id, opens: true, min: 1, max: 1, chance };
+	}
+	m = /^se giveitem @P slotincreaser (\d+)$/.exec(text);
+	if (m) return { type: 'item', name: 'Ô cường hóa', icon: 'ender_eye', min: Number(m[1]), max: Number(m[1]), chance };
+	m = /^se giveremove @P (\d+)$/.exec(text);
+	if (m) return { type: 'item', name: 'Cục thối', icon: 'rotten_flesh', min: Number(m[1]), max: Number(m[1]), chance };
+	m = /^se givercbook (\w+) @P (\d+)$/.exec(text);
+	if (m) {
+		if (!BOOK_GROUPS[m[1]]) return void warn(`${where}: enchant book group ${m[1]} is not in SkyEnchants/groups.yml (left out)`);
+		return { type: 'item', name: `Sách phép ${BOOK_GROUPS[m[1]]} ngẫu nhiên`, icon: 'book', min: Number(m[2]), max: Number(m[2]), chance };
+	}
+	m = /^give @P enchanted_golden_apple (\d+)$/.exec(text);
+	if (m) return { type: 'item', name: 'Táo vàng phù phép', icon: 'golden_apple', min: Number(m[1]), max: Number(m[1]), chance };
+	m = /^itemability gem @P (\w+) (\d+)$/.exec(text);
+	if (m) {
+		const gem = GEMS[m[1]];
+		// "&7&l๖Lửa phép &7(+Sát Thương) I" -> "Lửa phép (+Sát Thương) I" (the plus of the stat stays)
+		const name = gem && stripCodes(gem.Name).replace(/[\p{Script=Thai}\p{Script=Han}]/gu, '').replace(/[^\p{L}\p{N}\s()+.-]/gu, '').replace(/\s+/g, ' ').trim();
+		if (!name) return void warn(`${where}: gem ${m[1]} is not in ItemAbility/gems.yml (left out)`);
+		return { type: 'item', name, icon: String(gem.Material ?? '').toLowerCase() || null, min: Number(m[2]), max: Number(m[2]), chance };
+	}
+	m = /^wildstacker:stacker give @P spawner (\w+) (\d+)$/.exec(text);
+	if (m) {
+		if (!MOBS[m[1]]) return void warn(`${where}: spawner of ${m[1]} has no known name (left out)`);
+		return { type: 'item', name: `Spawner ${MOBS[m[1]]}`, icon: 'spawner', min: Number(m[2]), max: Number(m[2]), chance };
 	}
 	m = /^mme reward @P (\w+) (\d+)$/.exec(text);
 	if (m) {
@@ -287,16 +351,33 @@ for (let n = 1; n <= COUNT; n++) {
 	dungeons.push({ n, ...entry, mobs: [...mobs.filter((m) => m.kind === 'normal'), ...mobs.filter((m) => m.kind === 'boss')] });
 }
 
-for (const message of [...new Set(warnings)].sort()) console.warn(`sync-ren-dungeon: warning: ${message}`);
-
-const text = JSON.stringify({ dungeons }, null, '\t') + '\n';
-const before = existsSync(OUT) ? readFileSync(OUT, 'utf8') : '';
-if (before === text) {
-	console.log('sync-ren-dungeon: no change');
-} else if (flag('--check')) {
-	fail('dungeons.json is out of date, run the sync');
-} else {
-	mkdirSync(dirname(OUT), { recursive: true });
-	writeFileSync(OUT, text, 'utf8');
-	console.log(`sync-ren-dungeon: written to ${OUT.slice(ROOT.length + 1).replace(/\\/g, '/')}`);
+// where each chest comes from: which boss gives it (and to whom), which chest opens it
+const chestBySlug = (slug) => [...chests.values()].find((c) => c.id === slug);
+for (const d of dungeons) {
+	for (const mob of d.mobs.filter((m) => m.kind === 'boss')) {
+		for (const r of mob.killer.filter((x) => x.type === 'chest')) chestBySlug(r.chest).sources.push({ type: 'boss', dungeon: d.n, boss: mob.name, who: 'killer' });
+		for (const g of mob.nearby) for (const r of g.rewards.filter((x) => x.type === 'chest')) chestBySlug(r.chest).sources.push({ type: 'boss', dungeon: d.n, boss: mob.name, who: 'nearby', reach: g.reach, limit: g.limit });
+	}
 }
+for (const parent of chests.values()) for (const r of parent.rewards.filter((x) => x.type === 'chest')) chestBySlug(r.chest).sources.push({ type: 'chest', chest: parent.id });
+const KIND_ORDER = ['boss', 'spawner', 'lua-phep'];
+const chestList = [...chests.values()].sort((a, b) => KIND_ORDER.indexOf(a.kind) - KIND_ORDER.indexOf(b.kind) || a.order - b.order).map(({ order, ...chest }) => chest);
+
+for (const message of [...new Set(warnings)].sort()) console.warn(`sync-ren: warning: ${message}`);
+
+const rel = (file) => relative(ROOT, file).split(sep).join('/');
+const outputs = [
+	[OUT, JSON.stringify({ dungeons }, null, '\t') + '\n'],
+	[OUT_CHESTS, JSON.stringify({ chests: chestList }, null, '\t') + '\n'],
+];
+let changed = false;
+for (const [file, text] of outputs) {
+	const before = existsSync(file) ? readFileSync(file, 'utf8') : '';
+	if (before === text) continue;
+	if (flag('--check')) fail(`${rel(file)} is out of date, run the sync`);
+	mkdirSync(dirname(file), { recursive: true });
+	writeFileSync(file, text, 'utf8');
+	console.log(`sync-ren: written to ${rel(file)}`);
+	changed = true;
+}
+if (!changed) console.log('sync-ren: no change');

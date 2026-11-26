@@ -1,7 +1,7 @@
 ---
 /**
  * One dungeon of Sky Rèn, built from src/data/servers/<server>/dungeons.json
- * (written by scripts/sync-ren-dungeon.mjs from the server's config): its mobs and, for each boss, what it gives
+ * (written by scripts/sync-ren.mjs from the server's config): its mobs and, for each boss, what it gives
  * to whoever lands the killing blow and to the players around it.
  *
  * Pictures: mob faces are public/mobs/<entity>.png (scripts/fetch-mob-images.mjs), item pictures are
@@ -16,12 +16,13 @@ interface Props {
 const { server, n } = Astro.props;
 const files = import.meta.glob('../data/servers/*/dungeons.json', { eager: true, import: 'default' }) as Record<string, any>;
 const data = files[`../data/servers/${server}/dungeons.json`];
-if (!data) throw new Error(`RenDungeon: no dungeons.json for server "${server}", run node scripts/sync-ren-dungeon.mjs`);
+if (!data) throw new Error(`RenDungeon: no dungeons.json for server "${server}", run node scripts/sync-ren.mjs`);
 const dungeon = data.dungeons.find((d: any) => d.n === n);
 if (!dungeon) throw new Error(`RenDungeon: no dungeon ${n} in dungeons.json`);
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const mobUrl = (appearance: string | null) => (appearance ? `${base}/mobs/${appearance.toLowerCase()}.png` : '');
+const chestUrl = (id: string) => `${base}/${server}/chests/item/${id}/`;
 const iconUrl = (icon: string | null) => (icon ? `${base}/minions/${icon}.png` : '');
 const num = (x: number) => x.toLocaleString('vi-VN', { maximumFractionDigits: 3 });
 const range = (min: number, max: number) => (min === max ? num(min) : `${num(min)}–${num(max)}`);
@@ -120,7 +121,7 @@ const hasMoney = normal.some((m: any) => m.money);
 										<tr>
 											<td>
 												{r.icon ? <img class="rd-icon" src={iconUrl(r.icon)} alt="" width="20" height="20" loading="lazy" onerror="this.style.visibility='hidden'" /> : <span class="rd-icon rd-icon-empty" />}
-												{r.name}
+												{r.type === 'chest' ? <a href={chestUrl(r.chest)}>{r.name}</a> : r.name}
 											</td>
 											<td>{range(r.min, r.max)}</td>
 											<td>{chance(r.chance)}</td>
@@ -149,7 +150,7 @@ const hasMoney = normal.some((m: any) => m.money);
 										<tr>
 											<td>
 												{r.icon ? <img class="rd-icon" src={iconUrl(r.icon)} alt="" width="20" height="20" loading="lazy" onerror="this.style.visibility='hidden'" /> : <span class="rd-icon rd-icon-empty" />}
-												{r.name}
+												{r.type === 'chest' ? <a href={chestUrl(r.chest)}>{r.name}</a> : r.name}
 											</td>
 											<td>{range(r.min, r.max)}</td>
 										</tr>
