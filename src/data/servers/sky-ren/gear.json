@@ -3,6 +3,7 @@
 		"Phổ thông",
 		"Đặc biệt",
 		"Bá vương",
+		"Thượng cổ · Thượng long",
 		"Ngũ hành · Tinh",
 		"Ngũ hành · Vương",
 		"Ngũ hành · Thần",
@@ -501,155 +502,6 @@
 			]
 		},
 		{
-			"id": "thuongco",
-			"slug": "thuongco",
-			"name": "Thượng Cổ",
-			"line": "Phổ thông",
-			"pieces": {
-				"helmet": [
-					"MU:MUTHUONGCO"
-				],
-				"chestplate": [
-					"AO:AOTHUONGCO"
-				],
-				"leggings": [
-					"QUAN:QUANTHUONGCO"
-				],
-				"boots": [
-					"GIAY:GIAYTHUONGCO"
-				]
-			},
-			"weapons": [
-				{
-					"items": [
-						"SWORD:KIEMTHUONGCO"
-					],
-					"bonus": []
-				},
-				{
-					"items": [
-						"SWORD:KIEMTHUONGCO2"
-					],
-					"bonus": [
-						"Tăng 22% sát thương gây ra"
-					]
-				},
-				{
-					"items": [
-						"SWORD:KIEMTHUONGCO3"
-					],
-					"bonus": [
-						"Tăng 24% sát thương gây ra"
-					]
-				},
-				{
-					"items": [
-						"SWORD:KIEMTHUONGCO4"
-					],
-					"bonus": [
-						"Tăng 30% sát thương gây ra"
-					]
-				},
-				{
-					"items": [
-						"RIU:RIUTHUONGCO"
-					],
-					"bonus": [
-						"Tăng 22% sát thương gây ra"
-					]
-				},
-				{
-					"items": [
-						"RIU:RIUTHUONGCO2"
-					],
-					"bonus": [
-						"Tăng 22% sát thương gây ra"
-					]
-				},
-				{
-					"items": [
-						"RIU:RIUTHUONGCO3"
-					],
-					"bonus": [
-						"Tăng 24% sát thương gây ra"
-					]
-				},
-				{
-					"items": [
-						"RIU:RIUTHUONGCO4"
-					],
-					"bonus": [
-						"Tăng 30% sát thương gây ra"
-					]
-				}
-			],
-			"bonuses": [
-				{
-					"pieces": 4,
-					"lines": [
-						"Giảm 40% sát thương nhận",
-						"Luôn có hiệu ứng Kháng Cự I"
-					]
-				},
-				{
-					"pieces": 5,
-					"lines": [
-						"Tăng 20% sát thương gây ra"
-					]
-				}
-			]
-		},
-		{
-			"id": "thuonglong",
-			"slug": "thuonglong",
-			"name": "Thượng Long",
-			"line": "Phổ thông",
-			"pieces": {
-				"helmet": [
-					"MU:MUTHUONGLONG"
-				],
-				"chestplate": [
-					"AO:AOTHUONGLONG"
-				],
-				"leggings": [
-					"QUAN:QUANTHUONGLONG"
-				],
-				"boots": [
-					"GIAY:GIAYTHUONGLONG"
-				]
-			},
-			"weapons": [
-				{
-					"items": [
-						"SWORD:KIEMTHUONGLONG"
-					],
-					"bonus": []
-				},
-				{
-					"items": [
-						"RIU:RIUTHUONGLONG"
-					],
-					"bonus": []
-				}
-			],
-			"bonuses": [
-				{
-					"pieces": 4,
-					"lines": [
-						"Giảm 47% sát thương nhận (từ người chơi, cung tên)",
-						"Giảm 55% sát thương nhận (từ quái)",
-						"Luôn có hiệu ứng Kháng Cự I"
-					]
-				},
-				{
-					"pieces": 5,
-					"lines": [
-						"Tăng 35% sát thương gây ra"
-					]
-				}
-			]
-		},
-		{
 			"id": "daibang",
 			"slug": "daibang",
 			"name": "Đại Bàng",
@@ -859,6 +711,155 @@
 					"pieces": 5,
 					"lines": [
 						"Tăng 50% sát thương gây ra"
+					]
+				}
+			]
+		},
+		{
+			"id": "thuongco",
+			"slug": "thuongco",
+			"name": "Thượng Cổ",
+			"line": "Thượng cổ · Thượng long",
+			"pieces": {
+				"helmet": [
+					"MU:MUTHUONGCO"
+				],
+				"chestplate": [
+					"AO:AOTHUONGCO"
+				],
+				"leggings": [
+					"QUAN:QUANTHUONGCO"
+				],
+				"boots": [
+					"GIAY:GIAYTHUONGCO"
+				]
+			},
+			"weapons": [
+				{
+					"items": [
+						"SWORD:KIEMTHUONGCO"
+					],
+					"bonus": []
+				},
+				{
+					"items": [
+						"SWORD:KIEMTHUONGCO2"
+					],
+					"bonus": [
+						"Tăng 22% sát thương gây ra"
+					]
+				},
+				{
+					"items": [
+						"SWORD:KIEMTHUONGCO3"
+					],
+					"bonus": [
+						"Tăng 24% sát thương gây ra"
+					]
+				},
+				{
+					"items": [
+						"SWORD:KIEMTHUONGCO4"
+					],
+					"bonus": [
+						"Tăng 30% sát thương gây ra"
+					]
+				},
+				{
+					"items": [
+						"RIU:RIUTHUONGCO"
+					],
+					"bonus": [
+						"Tăng 22% sát thương gây ra"
+					]
+				},
+				{
+					"items": [
+						"RIU:RIUTHUONGCO2"
+					],
+					"bonus": [
+						"Tăng 22% sát thương gây ra"
+					]
+				},
+				{
+					"items": [
+						"RIU:RIUTHUONGCO3"
+					],
+					"bonus": [
+						"Tăng 24% sát thương gây ra"
+					]
+				},
+				{
+					"items": [
+						"RIU:RIUTHUONGCO4"
+					],
+					"bonus": [
+						"Tăng 30% sát thương gây ra"
+					]
+				}
+			],
+			"bonuses": [
+				{
+					"pieces": 4,
+					"lines": [
+						"Giảm 40% sát thương nhận",
+						"Luôn có hiệu ứng Kháng Cự I"
+					]
+				},
+				{
+					"pieces": 5,
+					"lines": [
+						"Tăng 20% sát thương gây ra"
+					]
+				}
+			]
+		},
+		{
+			"id": "thuonglong",
+			"slug": "thuonglong",
+			"name": "Thượng Long",
+			"line": "Thượng cổ · Thượng long",
+			"pieces": {
+				"helmet": [
+					"MU:MUTHUONGLONG"
+				],
+				"chestplate": [
+					"AO:AOTHUONGLONG"
+				],
+				"leggings": [
+					"QUAN:QUANTHUONGLONG"
+				],
+				"boots": [
+					"GIAY:GIAYTHUONGLONG"
+				]
+			},
+			"weapons": [
+				{
+					"items": [
+						"SWORD:KIEMTHUONGLONG"
+					],
+					"bonus": []
+				},
+				{
+					"items": [
+						"RIU:RIUTHUONGLONG"
+					],
+					"bonus": []
+				}
+			],
+			"bonuses": [
+				{
+					"pieces": 4,
+					"lines": [
+						"Giảm 47% sát thương nhận (từ người chơi, cung tên)",
+						"Giảm 55% sát thương nhận (từ quái)",
+						"Luôn có hiệu ứng Kháng Cự I"
+					]
+				},
+				{
+					"pieces": 5,
+					"lines": [
+						"Tăng 35% sát thương gây ra"
 					]
 				}
 			]
