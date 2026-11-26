@@ -12,7 +12,9 @@
  *   MMOItems/item/{material,consumable}.yml       the names of the items that are given
  *   CrateReloaded/crates/<Crate>.yml              the chests the bosses give (item, how many rewards one opening gives, every reward and its chance)
  *   ItemAbility/gems.yml                          the names of the gems (Lửa phép) a chest gives
- *   SkyEnchants/groups.yml                        the names of the enchant book groups
+ *   SkyEnchants/groups.yml                        the names of the enchant book groups (also: dust chance, level cap of random books)
+ *   SkyEnchants/enchantments/<GROUP>.yml          every enchant book: name, description, what it goes on, per-level activation chance / cooldown / souls, requirements   -> enchants.json
+ *   SkyEnchants/gui/{enchanter,mavang,book-tools}.yml, SkyEnchants/config.yml   book prices (EXP), gilding (Mạ vàng) cost, enchant slots, shortcut commands
  *
  * What counts as a reward (a command run on death, directly on the mob or inside a reward skill):
  *   mi give <TYPE> <ID> <player> <amount> ...      an MMOItems item
@@ -33,11 +35,14 @@ import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { join, dirname, resolve, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'yaml';
+import { buildEquipment } from './ren-equipment.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SERVER = 'sky-ren';
 const OUT = join(ROOT, 'src/data/servers', SERVER, 'dungeons.json');
 const OUT_CHESTS = join(ROOT, 'src/data/servers', SERVER, 'chests.json');
+const OUT_ENCHANTS = join(ROOT, 'src/data/servers', SERVER, 'enchants.json');
+const OUT_EQUIPMENT = join(ROOT, 'src/data/servers', SERVER, 'gear.json');
 const COUNT = 6;
 
 const args = process.argv.slice(2);
@@ -182,7 +187,7 @@ function rewardOf(command, chance, where) {
 		return { type: 'currency', name: CURRENCIES[m[1]], ...amount, chance };
 	}
 	m = /^points give @P (\d+)$/.exec(text);
-	if (m) return { type: 'xu', name: 'Xu', min: Number(m[1]), max: Number(m[1]), chance };
+	if (m) return { type: 'xu', name: 'Xu', icon: 'gold_ingot', min: Number(m[1]), max: Number(m[1]), chance };
 	m = /^(?:exp give|src exp) @P (\d+)$/.exec(text);
 	if (m) return { type: 'exp', name: 'Kinh nghiệm', icon: 'experience_bottle', min: Number(m[1]), max: Number(m[1]), chance };
 	m = /^crazycrates give v cauvong (\d+) @P$/.exec(text);
@@ -363,12 +368,101 @@ for (const parent of chests.values()) for (const r of parent.rewards.filter((x) 
 const KIND_ORDER = ['boss', 'spawner', 'lua-phep'];
 const chestList = [...chests.values()].sort((a, b) => KIND_ORDER.indexOf(a.kind) - KIND_ORDER.indexOf(b.kind) || a.order - b.order).map(({ order, ...chest }) => chest);
 
+// ---------- enchant books (Sách phép) ----------
+// The groups that have a page, weakest to strongest: the order of the power table in AGENTS.md ("SkyEnchants - Phân cấp sức mạnh").
+const BOOK_TIERS = ['CU', 'HIEM', 'CO', 'SIEUCO', 'HUYENTHOAI', 'TRUYENTHUYET', 'LINHHON', 'HUYETTU', 'MAVANG', 'THACHDAU'];
+const COLOR_HEX = { 0: '#000000', 1: '#0000aa', 2: '#00aa00', 3: '#00aaaa', 4: '#aa0000', 5: '#aa00aa', 6: '#ffaa00', 7: '#aaaaaa', 8: '#555555', 9: '#5555ff', a: '#55ff55', b: '#55ffff', c: '#ff5555', d: '#ff55ff', e: '#ffff55', f: '#ffffff' };
+const sentence = (text) => (text ? text[0].toLocaleUpperCase('vi') + text.slice(1).toLocaleLowerCase('vi') : text);
+/** Keeps Latin and Vietnamese letters, digits and a few marks; drops decoration (乂 ঔ ʔʕ ✞ ︿). "£" is used for an "L" in some names. */
+const trimMarks = (text) =>
+	[...text.replace(/£/g, 'L')]
+		.map((c) => (/[A-Za-z0-9'()\-.,]/.test(c) || /\s/.test(c) || (c.codePointAt(0) >= 0xc0 && c.codePointAt(0) <= 0x24f) || (c.codePointAt(0) >= 0x1e00 && c.codePointAt(0) <= 0x1eff) ? c : ' '))
+		.join('')
+		.replace(/\s+/g, ' ')
+		.trim()
+		.replace(/^[^\p{L}\p{N}]+|[^\p{L}\p{N})]+$/gu, '')
+		.replace(/^./u, (c) => c.toLocaleUpperCase('vi'));
+const seGroups = readYaml('SkyEnchants/groups.yml').groups ?? {};
+const shop = readYaml('SkyEnchants/gui/enchanter.yml').enchanter ?? {};
+const seConfig = readYaml('SkyEnchants/config.yml');
+const gild = readYaml('SkyEnchants/gui/mavang.yml').mavang ?? {};
+const rawEnchants = {}; // id -> { group, raw }, every group (names of required / replaced enchants are looked up here)
+for (const group of Object.keys(seGroups)) for (const [id, raw] of Object.entries(readYaml(`SkyEnchants/enchantments/${group}.yml`))) rawEnchants[id] = { group, raw };
+const enchantName = (id) => trimMarks(stripCodes(String(rawEnchants[id]?.raw.display ?? '').replace('%group-color%', '')));
+const groupLabel = (id) => sentence(trimMarks(stripCodes(seGroups[id]?.['group-name'] ?? '')));
+/** A required / replaced / excluded enchant; its group is named when it is not the group of the enchant that refers to it (a gilded book has the same name as the book it comes from). */
+const enchantRef = (ref, where, ownGroup) => {
+	const [id, level] = String(ref).split(':');
+	const name = enchantName(id);
+	if (!name) return void warn(`${where}: enchant "${id}" does not exist (left out)`);
+	const group = rawEnchants[id].group;
+	const label = group !== ownGroup && BOOK_TIERS.includes(group) ? groupLabel(group) : null;
+	return { name, ...(label ? { group: label } : {}), ...(level ? { level: Number(level) } : {}) };
+};
+function enchantOf(id, raw, ownGroup) {
+	const where = `enchant ${id}`;
+	const name = enchantName(id);
+	if (!name) fail(`${where} has no name`);
+	const levels = Object.entries(raw.levels ?? {})
+		.map(([level, v]) => ({ level: Number(level), chance: round(v.chance), cooldown: round(v.cooldown ?? 0), ...(v.souls ? { souls: Number(v.souls) } : {}) }))
+		.sort((a, b) => a.level - b.level);
+	if (!levels.length) fail(`${where} has no levels`);
+	const description = String(raw.description ?? '').split('\n').map((l) => stripCodes(l).replace(/%[a-z-]+%/g, '').trim()).filter(Boolean).join(' ');
+	const settings = raw.settings ?? {};
+	const refs = (list) => (list ?? []).map((r) => enchantRef(r, where, ownGroup)).filter(Boolean);
+	return {
+		id,
+		name,
+		appliesTo: String(raw['applies-to'] ?? '').replace(/\s*\+\s*/g, ', '),
+		description,
+		passive: raw.type === 'EFFECT_STATIC',
+		requires: refs(settings['required-enchants']),
+		replaces: refs(settings['removed-enchants']),
+		excludes: refs(settings['not-applyable-with']),
+		levels,
+	};
+}
+const bookGroups = BOOK_TIERS.map((id, i) => {
+	const g = seGroups[id];
+	if (!g) fail(`SkyEnchants/groups.yml has no group ${id}`);
+	const name = sentence(trimMarks(stripCodes(g['group-name'])));
+	if (!name) fail(`group ${id} has no name`);
+	const color = /^&([0-9a-f])$/i.exec(String(g.color))?.[1];
+	const price = shop.books?.[id]?.['price-exp'];
+	return {
+		id,
+		slug: id.toLowerCase(),
+		name,
+		tier: i + 1,
+		color: color ? COLOR_HEX[color.toLowerCase()] : null,
+		priceExp: price ?? null,
+		dustChance: round(g['magic-dust']?.chance ?? 0),
+		randomLevelCap3: g['random-book-limit-level-3'] === true,
+		enchants: Object.entries(readYaml(`SkyEnchants/enchantments/${id}.yml`)).map(([eid, raw]) => enchantOf(eid, raw, id)),
+	};
+});
+const gildGroup = seGroups[gild.requirement?.group];
+const enchantsData = {
+	baseSlots: seConfig.enchants?.['base-slots'],
+	maxSlots: seConfig.enchants?.['max-slots'],
+	failureDestroysItem: shop['destroy-item-on-failure'] === true,
+	bookTools: readYaml('SkyEnchants/gui/book-tools.yml')['book-tools']?.enabled === true,
+	commands: seConfig['direct-commands'] ?? {},
+	gild: gild.enabled ? { books: gild.requirement.amount, from: sentence(trimMarks(stripCodes(gildGroup?.['group-name']))), daQuy: gild.requirement.points?.type === 'daquy' ? gild.requirement.points.amount : null } : null,
+	groups: bookGroups,
+};
+if (![enchantsData.baseSlots, enchantsData.maxSlots].every(Number.isFinite)) fail('SkyEnchants/config.yml: enchants.base-slots / max-slots missing');
+
+const equipmentData = buildEquipment({ base: BASE, readYaml, stripCodes, pretty, round, warn, fail });
+
 for (const message of [...new Set(warnings)].sort()) console.warn(`sync-ren: warning: ${message}`);
 
 const rel = (file) => relative(ROOT, file).split(sep).join('/');
 const outputs = [
 	[OUT, JSON.stringify({ dungeons }, null, '\t') + '\n'],
 	[OUT_CHESTS, JSON.stringify({ chests: chestList }, null, '\t') + '\n'],
+	[OUT_ENCHANTS, JSON.stringify(enchantsData, null, '\t') + '\n'],
+	[OUT_EQUIPMENT, JSON.stringify(equipmentData, null, '\t') + '\n'],
 ];
 let changed = false;
 for (const [file, text] of outputs) {

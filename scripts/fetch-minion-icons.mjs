@@ -82,6 +82,14 @@ for (const server of readdirSync(serversDir)) {
 			for (const reward of chest.rewards) if (reward.icon) materials.add(reward.icon);
 		}
 	}
+	// the equipment: the item of each piece and of each ingredient
+	const equipmentFile = join(serversDir, server, 'gear.json');
+	if (existsSync(equipmentFile)) {
+		for (const item of JSON.parse(readFileSync(equipmentFile, 'utf8')).items) {
+			if (item.icon) materials.add(item.icon);
+			for (const recipe of item.recipes) for (const need of recipe.needs) if (need.icon) materials.add(need.icon);
+		}
+	}
 }
 
 mkdirSync(OUT, { recursive: true });

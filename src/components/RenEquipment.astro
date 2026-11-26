@@ -1,0 +1,140 @@
+---
+/**
+ * The equipment of Sky Rèn (armor sets, swords, axes, bows, shields, pickaxes), built from src/data/servers/<server>/gear.json
+ * (written by scripts/sync-ren.mjs, scripts/ren-equipment.mjs, from the server's config). Three views:
+ *   sets   every armor set as a card, grouped by line; the cards link to the set page
+ *   set    one set (prop `id`): what its bonuses are, its four pieces and the weapons that count for it
+ *   kind   every item of one kind (prop `kind`: sword, axe, farm-axe, bow, shield, pickaxe) with its stats and recipe
+ * Every number and name comes from the data, none is typed here.
+ */
+import RenItemTable from './RenItemTable.astro';
+
+interface Props {
+	server: string;
+	view: 'sets' | 'set' | 'kind';
+	id?: string;
+	kind?: string;
+}
+
+const { server, view, id, kind } = Astro.props;
+const files = import.meta.glob('../data/servers/*/gear.json', { eager: true, import: 'default' }) as Record<string, any>;
+const data = files[`../data/servers/${server}/gear.json`];
+if (!data) throw new Error(`RenEquipment: no gear.json for server "${server}", run node scripts/sync-ren.mjs`);
+const items: any[] = data.items;
+const byKey = new Map(items.map((i: any) => [i.key, i]));
+const set = view === 'set' ? data.sets.find((s: any) => s.id === id) : null;
+if (view === 'set' && !set) throw new Error(`RenEquipment: no set "${id}" in gear.json`);
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const setUrl = (slug: string) => `${base}/${server}/gear/bo/${slug}/`;
+const SLOTS: [string, string][] = [
+	['helmet', 'Mũ'],
+	['chestplate', 'Áo'],
+	['leggings', 'Quần'],
+	['boots', 'Giày'],
+];
+const pieceText = (count: number) => (count === 4 ? 'Mặc đủ 4 món' : count === 5 ? 'Mặc đủ 4 món và cầm vũ khí của bộ' : `Đủ ${count} món`);
+const pieceItems = (slot: string) => set.pieces[slot].map((k: string) => byKey.get(k)).filter(Boolean);
+const weaponItems = set ? set.weapons.flatMap((w: any) => w.items.map((k: string) => ({ item: byKey.get(k), bonus: w.bonus }))).filter((w: any) => w.item) : [];
+const weaponNotes = Object.fromEntries(weaponItems.filter((w: any) => w.bonus.length).map((w: any) => [w.item.key, w.bonus.map((b: string) => `Khi cầm: ${b}`)]));
+const kindItems = view === 'kind' ? items.filter((i: any) => i.kind === kind) : [];
+if (view === 'kind' && !kindItems.length) throw new Error(`RenEquipment: no items of kind "${kind}" in gear.json`);
+const anchor = (text: string) => text.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd').replace(/\s+/g, '-');
+---
+
+<div class="rq not-content">
+	{
+		view === 'sets' &&
+			data.lines.map((line: string) => (
+				<section>
+					<h2 id={anchor(line)}>{line}</h2>
+					<div class="rq-grid">
+						{data.sets
+							.filter((s: any) => s.line === line)
+							.map((s: any) => (
+								<a class="rq-card" href={setUrl(s.slug)}>
+									<strong>{s.name}</strong>
+									<small>{s.bonuses.length ? s.bonuses.map((b: any) => pieceText(b.pieces)).join(' · ') : 'Không có hiệu ứng bộ'}</small>
+								</a>
+							))}
+					</div>
+				</section>
+			))
+	}
+
+	{
+		view === 'set' && (
+			<>
+				<h2 id="hieu-ung">Hiệu ứng bộ</h2>
+				{set.bonuses.length ? (
+					<ul>
+						{set.bonuses.map((b: any) => (
+							<li>
+								<strong>{pieceText(b.pieces)}:</strong>
+								<ul>
+									{b.lines.map((l: string) => (
+										<li>{l}</li>
+									))}
+								</ul>
+							</li>
+						))}
+					</ul>
+				) : (
+					<p class="rq-meta">Bộ này không có hiệu ứng riêng khi mặc đủ.</p>
+				)}
+
+				{SLOTS.map(([slot, label]) => (
+					<>
+						<h2 id={slot}>{label}</h2>
+						<RenItemTable items={pieceItems(slot)} />
+					</>
+				))}
+
+				{weaponItems.length > 0 && (
+					<>
+						<h2 id="vu-khi">Vũ khí của bộ</h2>
+						<p class="rq-meta">Cầm một trong các vũ khí này cùng đủ 4 món giáp để nhận hiệu ứng khi cầm vũ khí của bộ.</p>
+						<RenItemTable items={weaponItems.map((w: any) => w.item)} notes={weaponNotes} />
+					</>
+				)}
+			</>
+		)
+	}
+
+	{view === 'kind' && <RenItemTable items={kindItems} />}
+</div>
+
+<style>
+	.rq {
+		margin: 1.5rem 0;
+	}
+	.rq h2 {
+		margin: 1.5rem 0 0.25rem;
+		font-size: var(--sl-text-2xl);
+	}
+	.rq-meta {
+		margin: 0.25rem 0 0.5rem;
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-sm);
+	}
+	.rq-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+		gap: 0.75rem;
+	}
+	.rq-card {
+		display: block;
+		padding: 0.75rem 1rem;
+		border: 1px solid var(--sl-color-hairline);
+		border-radius: 0.5rem;
+		color: inherit;
+		text-decoration: none;
+	}
+	.rq-card:hover {
+		border-color: var(--sl-color-text-accent);
+	}
+	.rq-card small {
+		display: block;
+		color: var(--sl-color-gray-3);
+	}
+</style>

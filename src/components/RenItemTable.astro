@@ -1,0 +1,115 @@
+---
+/**
+ * A table of equipment items of Sky Rèn (rows come from src/data/servers/<server>/equipment.json, see RenEquipment.astro):
+ * the picture, the name, the stats (a column is left out when no row has the stat) and, under "Chi tiết", the vanilla
+ * enchants and how the item is crafted with /ecraft. Every number comes from the data.
+ */
+interface Props {
+	items: any[];
+	/** extra text shown under the name of an item, keyed by item key (a set weapon's bonus) */
+	notes?: Record<string, string[]>;
+}
+const { items, notes = {} } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const iconUrl = (icon: string | null) => (icon ? `${base}/minions/${icon}.png` : '');
+const num = (x: number) => x.toLocaleString('vi-VN', { maximumFractionDigits: 3 });
+const STATS: [string, string][] = [
+	['armor', 'Giáp'],
+	['defense', 'Phòng thủ'],
+	['maxHealth', 'Máu tối đa'],
+	['damageReduction', 'Giảm sát thương'],
+	['attackDamage', 'Sát thương'],
+	['attackSpeed', 'Tốc độ đánh'],
+];
+const columns = STATS.filter(([key]) => items.some((i: any) => i.stats[key] !== undefined));
+const ingredients = (r: any) => r.needs.map((n: any) => `${num(n.amount)}× ${n.name}`).join(', ');
+const cost = (r: any) =>
+	[r.money ? `${num(r.money)} tiền` : null, r.xu ? `${num(r.xu)} Xu` : null, r.chance < 100 ? `thành công ${num(r.chance)}%` : null].filter(Boolean).join(', ');
+const hasDetail = (i: any) => i.recipes.length > 0 || i.enchants.length > 0;
+---
+
+<div class="ri-scroll">
+	<table class="ri">
+		<thead>
+			<tr>
+				<th>Vật phẩm</th>
+				{columns.map(([, label]) => <th>{label}</th>)}
+				<th>Chi tiết</th>
+			</tr>
+		</thead>
+		<tbody>
+			{
+				items.map((i: any) => (
+					<tr>
+						<td>
+							<img class="ri-icon" src={iconUrl(i.icon)} alt="" width="24" height="24" loading="lazy" onerror="this.style.visibility='hidden'" />
+							{i.name}
+							{(notes[i.key] ?? []).map((line) => <small class="ri-note">{line}</small>)}
+						</td>
+						{columns.map(([key]) => <td>{i.stats[key] !== undefined ? num(i.stats[key]) : '–'}</td>)}
+						<td class="ri-wrap">
+							{hasDetail(i) ? (
+								<details>
+									<summary>Xem</summary>
+									{i.enchants.length > 0 && <p>Phép có sẵn: {i.enchants.map((e: any) => `${e.name} ${num(e.level)}`).join(', ')}.</p>}
+									{i.recipes.map((r: any, n: number) => (
+										<p>
+											{i.recipes.length > 1 ? `Công thức ${n + 1}` : 'Công thức'}: {ingredients(r)}.{cost(r) && ` (${cost(r)})`}
+										</p>
+									))}
+								</details>
+							) : (
+								'–'
+							)}
+						</td>
+					</tr>
+				))
+			}
+		</tbody>
+	</table>
+</div>
+
+<style>
+	.ri-scroll {
+		overflow-x: auto;
+	}
+	.ri {
+		width: 100%;
+		border-collapse: collapse;
+		font-size: var(--sl-text-sm);
+	}
+	.ri th,
+	.ri td {
+		padding: 0.35rem 0.6rem;
+		border-bottom: 1px solid var(--sl-color-hairline);
+		text-align: left;
+		vertical-align: top;
+		white-space: nowrap;
+	}
+	.ri th {
+		color: var(--sl-color-gray-2);
+		font-weight: 600;
+	}
+	.ri td.ri-wrap {
+		white-space: normal;
+		min-width: 14rem;
+	}
+	.ri img {
+		image-rendering: pixelated;
+		vertical-align: middle;
+		margin-right: 0.4rem;
+	}
+	.ri-note {
+		display: block;
+		margin-left: 1.9rem;
+		color: var(--sl-color-gray-3);
+		white-space: normal;
+	}
+	.ri details p {
+		margin: 0.25rem 0 0;
+	}
+	.ri summary {
+		cursor: pointer;
+		color: var(--sl-color-text-accent);
+	}
+</style>

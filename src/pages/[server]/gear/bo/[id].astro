@@ -1,0 +1,37 @@
+---
+/**
+ * One page per armor set (/<server>/gear/bo/<id>/): the page the set list links to.
+ * Written from src/data/servers/<server>/gear.json, so it needs no file per set.
+ */
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import RenEquipment from '../../../../components/RenEquipment.astro';
+
+export function getStaticPaths() {
+	const files = import.meta.glob('../../../../data/servers/*/gear.json', { eager: true, import: 'default' }) as Record<string, any>;
+	return Object.entries(files).flatMap(([path, data]) => {
+		const server = path.split('/').slice(-2)[0];
+		return data.sets.map((set: any) => ({ params: { server, id: set.slug }, props: { set } }));
+	});
+}
+
+const { server, id } = Astro.params;
+const { set } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<StarlightPage frontmatter={{ title: `Bộ ${set.name}`, description: `Hiệu ứng, chỉ số từng món và cách chế tạo bộ ${set.name}.` }}>
+	<p class="back">
+		<a href={`${base}/${server}/gear/bo-trang-bi/`}>← Danh sách bộ trang bị</a>
+	</p>
+	<RenEquipment server={server!} view="set" id={id} />
+</StarlightPage>
+
+<style>
+	.back a {
+		color: var(--sl-color-text-accent);
+		text-decoration: none;
+	}
+	.back a:hover {
+		text-decoration: underline;
+	}
+</style>

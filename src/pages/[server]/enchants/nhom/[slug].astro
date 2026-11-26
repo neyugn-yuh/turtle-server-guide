@@ -1,0 +1,37 @@
+---
+/**
+ * One page per enchant book group (/<server>/enchants/nhom/<slug>/): the page the group list links to.
+ * Written from src/data/servers/<server>/enchants.json, so it needs no file per group.
+ */
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import RenEnchants from '../../../../components/RenEnchants.astro';
+
+export function getStaticPaths() {
+	const files = import.meta.glob('../../../../data/servers/*/enchants.json', { eager: true, import: 'default' }) as Record<string, any>;
+	return Object.entries(files).flatMap(([path, data]) => {
+		const server = path.split('/').slice(-2)[0];
+		return data.groups.map((group: any) => ({ params: { server, slug: group.slug }, props: { group } }));
+	});
+}
+
+const { server, slug } = Astro.params;
+const { group } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<StarlightPage frontmatter={{ title: `Sách ${group.name}`, description: `Các sách phép loại ${group.name}: tác dụng, vật phẩm ép được và các cấp.` }}>
+	<p class="back">
+		<a href={`${base}/${server}/enchants/danh-sach/`}>← Danh sách sách phép</a>
+	</p>
+	<RenEnchants server={server!} view="group" slug={slug} />
+</StarlightPage>
+
+<style>
+	.back a {
+		color: var(--sl-color-text-accent);
+		text-decoration: none;
+	}
+	.back a:hover {
+		text-decoration: underline;
+	}
+</style>

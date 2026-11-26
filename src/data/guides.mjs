@@ -63,5 +63,17 @@ export const guides = [
 		description: 'Các rương quà từ boss dungeon: mở ra có quà gì, tỉ lệ bao nhiêu và cách nhận.',
 		landing: 'danh-sach',
 	},
+	{
+		slug: 'enchants',
+		title: 'Sách phép',
+		description: 'Lấy sách phép, ép vào trang bị, phân rã thành bụi phép và danh sách sách theo từng loại, từ Cũ đến Thách đấu.',
+		landing: 'cach-dung',
+	},
+	{
+		slug: 'gear',
+		title: 'Trang bị & vũ khí',
+		description: 'Các bộ giáp và hiệu ứng bộ, kiếm, rìu, cung, khiên, cúp: chỉ số và công thức chế tạo.',
+		landing: 'bo-trang-bi',
+	},
 	// <-- add new guides here
 ];

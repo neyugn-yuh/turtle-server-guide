@@ -1,0 +1,6395 @@
+{
+	"baseSlots": 5,
+	"maxSlots": 13,
+	"failureDestroysItem": false,
+	"bookTools": true,
+	"commands": {
+		"enchanter": [
+			"e",
+			"ce"
+		],
+		"decompose": [
+			"phanra"
+		],
+		"upgrade": [
+			"nangcap"
+		],
+		"book-preview": [
+			"celist"
+		]
+	},
+	"gild": {
+		"books": 5,
+		"from": "Truyền thuyết",
+		"daQuy": 10000
+	},
+	"groups": [
+		{
+			"id": "CU",
+			"slug": "cu",
+			"name": "Cũ",
+			"tier": 1,
+			"color": "#aaaaaa",
+			"priceExp": 750,
+			"dustChance": 8,
+			"randomLevelCap3": false,
+			"enchants": [
+				{
+					"id": "thuyquai",
+					"name": "Thủy quái",
+					"appliesTo": "Mũ",
+					"description": "Nhận vĩnh viễn hiệu ứng thở dưới nước.",
+					"passive": true,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "tunung",
+					"name": "Tự nung",
+					"appliesTo": "Cúp",
+					"description": "Khi đào có tỉ lệ tự nung quặng.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 41,
+							"cooldown": 0
+						},
+						{
+							"level": 2,
+							"chance": 62,
+							"cooldown": 0
+						},
+						{
+							"level": 3,
+							"chance": 100,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "matran",
+					"name": "Ma trận",
+					"appliesTo": "Rìu",
+					"description": "Đòn tấn công có tỉ lệ khiến kẻ địch dính hiệu ứng buồn nôn.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 13,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 19,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 24,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "quaytay",
+					"name": "Quay tay",
+					"appliesTo": "Tất cả dụng cụ",
+					"description": "Khi đào block có tỉ lệ nhận được hiệu ứng đào nhanh.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 8
+						},
+						{
+							"level": 2,
+							"chance": 100,
+							"cooldown": 8
+						},
+						{
+							"level": 3,
+							"chance": 100,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "suykiet",
+					"name": "Suy kiệt",
+					"appliesTo": "Kiếm",
+					"description": "Đòn tấn công có tỉ lệ khiến đối thủ dính hiệu ứng đi chậm, đánh chậm và buồn nuôn.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 12,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 14,
+							"cooldown": 1
+						},
+						{
+							"level": 4,
+							"chance": 16,
+							"cooldown": 1
+						},
+						{
+							"level": 5,
+							"chance": 18,
+							"cooldown": 1
+						},
+						{
+							"level": 6,
+							"chance": 20,
+							"cooldown": 1
+						},
+						{
+							"level": 7,
+							"chance": 100,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "tholan",
+					"name": "Thợ lặn",
+					"appliesTo": "Cúp",
+					"description": "Khi đào block sẽ được hồi lại oxi.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "thiennhan",
+					"name": "Thiên nhãn",
+					"appliesTo": "Mũ",
+					"description": "Nhận vĩnh viễn hiệu ứng nhìn trong bóng tối khi đeo trang bị có phù phép này.",
+					"passive": true,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 0
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "HIEM",
+			"slug": "hiem",
+			"name": "Hiếm",
+			"tier": 2,
+			"color": "#55ff55",
+			"priceExp": 2250,
+			"dustChance": 27,
+			"randomLevelCap3": false,
+			"enchants": [
+				{
+					"id": "golooting",
+					"name": "Gỗ (Looting) (Rừng xanh)",
+					"appliesTo": "Rìu",
+					"description": "Khi chặt gỗ tại /warp rungxanh có tỉ lệ nhận được nhiều gỗ hơn.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 5,
+							"cooldown": 0
+						},
+						{
+							"level": 2,
+							"chance": 10,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "cuongno",
+					"name": "Cuồng nộ",
+					"appliesTo": "Rìu",
+					"description": "Khi tấn công có tỉ lệ nhận được hiệu ứng tăng sát thương nhưng đồng thời bị giảm tốc đánh.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 20,
+							"cooldown": 1
+						},
+						{
+							"level": 4,
+							"chance": 25,
+							"cooldown": 1
+						},
+						{
+							"level": 5,
+							"chance": 30,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "phuphep",
+					"name": "Phù phép",
+					"appliesTo": "Giáp",
+					"description": "Khi còn dưới 20% máu, bị tấn công có tỉ lệ giảm tốc đánh của đối thủ đồng thời tăng sát thương và chống chịu cho bản thân.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 4
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 4
+						},
+						{
+							"level": 3,
+							"chance": 20,
+							"cooldown": 4
+						},
+						{
+							"level": 4,
+							"chance": 25,
+							"cooldown": 4
+						},
+						{
+							"level": 5,
+							"chance": 30,
+							"cooldown": 4
+						}
+					]
+				},
+				{
+					"id": "noitaian",
+					"name": "Nội tại ẩn",
+					"appliesTo": "Mũ, Giày",
+					"description": "Khi còn dưới 20% máu bị tấn công có tỉ lệ được tăng tốc chạy và được nhận máu ảo.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 16,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 20,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 25,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "chemnhanh",
+					"name": "Chém nhanh",
+					"appliesTo": "Kiếm",
+					"description": "Khi tấn công có tỉ lệ được tăng tốc đánh.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 35,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 55,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 75,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "hoisuc",
+					"name": "Hồi sức",
+					"appliesTo": "Rìu",
+					"description": "Khi tấn công có tỉ lệ được hồi lại ngẫu nhiên 1-4 thức ăn.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 15,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 20,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 25,
+							"cooldown": 1
+						},
+						{
+							"level": 4,
+							"chance": 30,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "hutexp",
+					"name": "Hút Exp",
+					"appliesTo": "Kiếm",
+					"description": "Đòn tấn công có tỉ lệ hút ngẫu nhiên một lượng exp của đối thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 15,
+							"cooldown": 3
+						},
+						{
+							"level": 2,
+							"chance": 17,
+							"cooldown": 3
+						},
+						{
+							"level": 3,
+							"chance": 19,
+							"cooldown": 3
+						},
+						{
+							"level": 4,
+							"chance": 21,
+							"cooldown": 3
+						},
+						{
+							"level": 5,
+							"chance": 23,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "virus",
+					"name": "Virus",
+					"appliesTo": "Cung",
+					"description": "Mũi tên có tỉ lệ khiến đối thủ bị khô héo và dính độc.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 12,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 16,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 20,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 24,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "suachua",
+					"name": "Sửa chữa",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công có tỉ lệ được hồi lại độ bền cho trang bị.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 25,
+							"cooldown": 4
+						},
+						{
+							"level": 2,
+							"chance": 35,
+							"cooldown": 4
+						},
+						{
+							"level": 3,
+							"chance": 45,
+							"cooldown": 4
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "CO",
+			"slug": "co",
+			"name": "Cổ",
+			"tier": 3,
+			"color": "#55ffff",
+			"priceExp": 4500,
+			"dustChance": 16,
+			"randomLevelCap3": false,
+			"enchants": [
+				{
+					"id": "choang",
+					"name": "Choáng",
+					"appliesTo": "Kiếm",
+					"description": "Đòn tấn công có tỉ lệ làm mù đối thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 17,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 25,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 33,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "xuongrong",
+					"name": "Xương rồng",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công có tỉ lệ phản lại sát thương chuẩn cho đối thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 22,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 26,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 30,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "tuhinh",
+					"name": "Tử hình",
+					"appliesTo": "Kiếm",
+					"description": "Khi đối thủ còn dưới 10% máu, có tỉ lệ tung đòn kết liễu gây ra 1000 sát thương cho đối thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 9,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 19,
+							"cooldown": 1
+						},
+						{
+							"level": 4,
+							"chance": 24,
+							"cooldown": 1
+						},
+						{
+							"level": 5,
+							"chance": 29,
+							"cooldown": 1
+						},
+						{
+							"level": 6,
+							"chance": 32,
+							"cooldown": 1
+						},
+						{
+							"level": 7,
+							"chance": 40,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "phutuyet",
+					"name": "Phủ tuyết",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công có tỉ lệ làm chậm đối thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 19,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 25,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 30,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "teliet",
+					"name": "Tê liệt",
+					"appliesTo": "Kiếm",
+					"description": "Khi tấn công có tỉ lệ giật sét đối thủ khiến đối thủ bị giảm tốc đánh và tốc chạy.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 20,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 25,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "doc",
+					"name": "Độc",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Đòn tấn công có tỉ lệ khiến đối thủ bị trúng độc.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 19,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 26,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 33,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "hoidoc",
+					"name": "Hơi độc",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công có tỉ lệ khiến cho kẻ địch bị dính độc.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 12,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 17,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 23,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 29,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "bay",
+					"name": "Bẫy",
+					"appliesTo": "Cung",
+					"description": "Mũi tên có tỉ lệ khiến cho kẻ địch bị giảm tốc đánh và tốc chạy.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 12,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 19,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 24,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 29,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "phagiap",
+					"name": "Phá giáp",
+					"appliesTo": "Kiếm",
+					"description": "Đòn tấn công có tỉ lệ khiến giáp của đối thủ mất thêm ngẫu nhiên từ 1-6 độ bền.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 12,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 17,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 25,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 32,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "baytitan",
+					"name": "Bẫy Titan",
+					"appliesTo": "Kiếm",
+					"description": "Đòn tấn công có tỉ lệ khiến đối thủ bị dính hiệu ứng làm chậm.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Bẫy Quái Vật",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Bẫy quái vật",
+							"group": "Truyền thuyết"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 16,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 21,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 27,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "docto",
+					"name": "Độc tố",
+					"appliesTo": "Cung",
+					"description": "Mũi tên có tỉ lệ hạ độc đối thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 20,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "kietsuc",
+					"name": "Kiệt sức",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công có tỉ lệ khiến kẻ địch bị suy yếu.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 9,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 20,
+							"cooldown": 1
+						},
+						{
+							"level": 4,
+							"chance": 25,
+							"cooldown": 1
+						},
+						{
+							"level": 5,
+							"chance": 30,
+							"cooldown": 1
+						},
+						{
+							"level": 6,
+							"chance": 35,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "khoheo",
+					"name": "Khô héo",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công có tỉ lệ khiến kẻ địch bị dính hiệu ứng khô héo.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 9,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 14,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 21,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 27,
+							"cooldown": 2
+						},
+						{
+							"level": 5,
+							"chance": 32,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "hoamu",
+					"name": "Hỏa mù",
+					"appliesTo": "Mũ",
+					"description": "Khi còn dưới 20% máu bị tấn công có tỉ lệ thả ra bom khói làm mù kẻ thù.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 9,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 23,
+							"cooldown": 1
+						},
+						{
+							"level": 4,
+							"chance": 30,
+							"cooldown": 1
+						},
+						{
+							"level": 5,
+							"chance": 35,
+							"cooldown": 1
+						},
+						{
+							"level": 6,
+							"chance": 44,
+							"cooldown": 1
+						},
+						{
+							"level": 7,
+							"chance": 44,
+							"cooldown": 1
+						},
+						{
+							"level": 8,
+							"chance": 44,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "chamchap",
+					"name": "Chậm chạp",
+					"appliesTo": "Rìu",
+					"description": "Đòn tấn công có tỉ lệ làm chậm kẻ thù.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 17,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 24,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 31,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "macarong",
+					"name": "Ma cà rồng",
+					"appliesTo": "Kiếm",
+					"description": "Đòn tấn công có tỉ lệ hút ngẫu nhiên từ 1-4 máu của đối thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 3
+						},
+						{
+							"level": 2,
+							"chance": 20,
+							"cooldown": 3
+						},
+						{
+							"level": 3,
+							"chance": 30,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "chat",
+					"name": "Chặt",
+					"appliesTo": "Kiếm",
+					"description": "Đòn tấn công có tỉ lệ gây thêm ngẫu nhiên 5-15 sát thương cho kẻ thù sử dụng cung.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 15,
+							"cooldown": 3
+						},
+						{
+							"level": 2,
+							"chance": 25,
+							"cooldown": 3
+						},
+						{
+							"level": 3,
+							"chance": 35,
+							"cooldown": 3
+						},
+						{
+							"level": 4,
+							"chance": 45,
+							"cooldown": 3
+						},
+						{
+							"level": 5,
+							"chance": 55,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "thoatthan",
+					"name": "Thoát thân",
+					"appliesTo": "Giày",
+					"description": "Khi còn dưới 12% máu bị tấn công có tỉ lệ phát nổ giúp bản thân bỏ trốn đến vị trí khác.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 30,
+							"cooldown": 3
+						},
+						{
+							"level": 2,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 3,
+							"chance": 70,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "mahaitac",
+					"name": "Ma hải tặc (Looting)",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Có tỉ lệ nhận được thêm vật phẩm rơi ra từ quái vật Ma Hải Tặc ở Dungeon 1",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 65,
+							"cooldown": 0
+						},
+						{
+							"level": 2,
+							"chance": 70,
+							"cooldown": 0
+						},
+						{
+							"level": 3,
+							"chance": 75,
+							"cooldown": 0
+						},
+						{
+							"level": 4,
+							"chance": 80,
+							"cooldown": 0
+						},
+						{
+							"level": 5,
+							"chance": 85,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "tho",
+					"name": "Thỏ",
+					"appliesTo": "Giày",
+					"description": "Nhận vĩnh viễn khả năng nhảy cao khi mang trang bị có cường hóa này.",
+					"passive": true,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 2,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 3,
+							"chance": 100,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "sanma",
+					"name": "Săn ma",
+					"appliesTo": "Cung",
+					"description": "Đòn tấn công của bạn có tỉ lệ gây ra 10 sát thương chuẩn cho kẻ địch đang tàng hình.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 60,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "luckyeventco",
+					"name": "Lucky Event Looting",
+					"appliesTo": "Kiếm, Rìu, Cung",
+					"description": "Tăng 10% tỉ lệ rơi ra nguyên liệu khi farm quái tại các sự kiện.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 0
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "SIEUCO",
+			"slug": "sieuco",
+			"name": "Siêu cổ",
+			"tier": 4,
+			"color": "#ffff55",
+			"priceExp": 11250,
+			"dustChance": 33,
+			"randomLevelCap3": false,
+			"enchants": [
+				{
+					"id": "thienthan",
+					"name": "Thiên thần",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công có tỉ lệ được hồi lại ngẫu nhiên 1-6 máu.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 13,
+							"cooldown": 5
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 5
+						},
+						{
+							"level": 3,
+							"chance": 17,
+							"cooldown": 4
+						},
+						{
+							"level": 4,
+							"chance": 18,
+							"cooldown": 4
+						},
+						{
+							"level": 5,
+							"chance": 22,
+							"cooldown": 4
+						}
+					]
+				},
+				{
+					"id": "sinhluc",
+					"name": "Sinh lực",
+					"appliesTo": "Cung",
+					"description": "Đòn tấn công có tỉ lệ hút ngẫu nhiên 2-8 máu của đối thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 7,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 12,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 17,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 22,
+							"cooldown": 2
+						},
+						{
+							"level": 5,
+							"chance": 27,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "amsat",
+					"name": "Ám sát",
+					"appliesTo": "Kiếm",
+					"description": "Càng ở gần đối thủ, sát thương gây ra càng cao.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Sát Thủ",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Sát thủ",
+							"group": "Truyền thuyết"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 7,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 12,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 19,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 24,
+							"cooldown": 2
+						},
+						{
+							"level": 5,
+							"chance": 29,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "baoho",
+					"name": "Bảo hộ",
+					"appliesTo": "Rìu",
+					"description": "Khi tấn công có tỉ lệ thanh tẩy tất cả các hiệu ứng xấu mà bản thân đang phải chịu.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 8,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 12,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 18,
+							"cooldown": 1
+						},
+						{
+							"level": 4,
+							"chance": 20,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "nhiemkhuan",
+					"name": "Nhiễm khuẩn",
+					"appliesTo": "Rìu",
+					"description": "Đòn tấn công có tỉ lệ khiến kẻ địch bị nhiễm khuẩn, mất ngẫu nhiên từ 2-6 máu mỗi lần. Kích hoạt 3 lần.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 8,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 10,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 12,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 16,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "bocui",
+					"name": "Bổ củi",
+					"appliesTo": "Rìu",
+					"description": "Đòn tấn công có tỉ lệ gây thêm ngẫu nhiên một lượng sát thương chuẩn cho kẻ địch.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 16,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 22,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 26,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "nhanhnhen",
+					"name": "Nhanh nhẹn",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công có tỉ lệ né đòn.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Cao Thủ",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Cao thủ",
+							"group": "Truyền thuyết"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 3,
+							"cooldown": 4
+						},
+						{
+							"level": 2,
+							"chance": 6,
+							"cooldown": 4
+						},
+						{
+							"level": 3,
+							"chance": 9,
+							"cooldown": 4
+						},
+						{
+							"level": 4,
+							"chance": 12,
+							"cooldown": 4
+						},
+						{
+							"level": 5,
+							"chance": 15,
+							"cooldown": 4
+						}
+					]
+				},
+				{
+					"id": "giandu",
+					"name": "Giận dữ",
+					"appliesTo": "Kiếm",
+					"description": "Gây thêm sát thương chuẩn khi máu của bản thân xuống thấp.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 21,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 27,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 33,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "baotuyet",
+					"name": "Bão tuyết",
+					"appliesTo": "Kiếm",
+					"description": "Đòn tấn công có tỉ lệ làm chậm đối thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 15,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 23,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 31,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "banphuoc",
+					"name": "Ban phước",
+					"appliesTo": "Mũ",
+					"description": "Mỗi 10 giây có tỉ lệ được hồi lại máu và thức ăn.",
+					"passive": true,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Hộ Mệnh",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Hộ mệnh",
+							"group": "Truyền thuyết"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 30,
+							"cooldown": 5
+						},
+						{
+							"level": 2,
+							"chance": 40,
+							"cooldown": 5
+						},
+						{
+							"level": 3,
+							"chance": 50,
+							"cooldown": 5
+						}
+					]
+				},
+				{
+					"id": "xathu",
+					"name": "Xạ thủ",
+					"appliesTo": "Cung",
+					"description": "Đòn tấn công có tỉ lệ gây ra thêm sát thương.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 26,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 38,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 50,
+							"cooldown": 1
+						},
+						{
+							"level": 4,
+							"chance": 64,
+							"cooldown": 1
+						},
+						{
+							"level": 5,
+							"chance": 74,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "khanglua",
+					"name": "Kháng lửa",
+					"appliesTo": "Giáp",
+					"description": "Nhận khả năng chống cháy vĩnh viễn.",
+					"passive": true,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "xuyenpha",
+					"name": "Xuyên phá",
+					"appliesTo": "Cung",
+					"description": "Đòn tấn công có tỉ lệ gây ra thêm sát thương cho kẻ địch.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 13,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 19,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 25,
+							"cooldown": 1
+						},
+						{
+							"level": 4,
+							"chance": 32,
+							"cooldown": 1
+						},
+						{
+							"level": 5,
+							"chance": 37,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "phahoai",
+					"name": "Phá hoại",
+					"appliesTo": "Kiếm",
+					"description": "Đòn tấn công có tỉ lệ phá giáp của đối thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 12,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 25,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 39,
+							"cooldown": 1
+						},
+						{
+							"level": 4,
+							"chance": 46,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "thongtri",
+					"name": "Thống trị",
+					"appliesTo": "Kiếm",
+					"description": "Khi bị tấn công có tỉ lệ gây suy yếu cho đối thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 15,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 22,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 28,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 35,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "khacnhiem",
+					"name": "Khắc nhiễm",
+					"appliesTo": "Giày",
+					"description": "Khi bị tấn công có tỉ lệ được thanh tẩy hiệu ứng độc và khô héo. Ở cấp độ cao có tỉ lệ được &hồi lại máu.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 20,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 25,
+							"cooldown": 2
+						},
+						{
+							"level": 5,
+							"chance": 30,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "caulua",
+					"name": "Cầu lửa",
+					"appliesTo": "Cung",
+					"description": "Có tỉ lệ biến mũi tên thành quả cầu lửa.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 20,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 25,
+							"cooldown": 2
+						},
+						{
+							"level": 5,
+							"chance": 30,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "sung",
+					"name": "Súng",
+					"appliesTo": "Cung",
+					"description": "Khi tấn công có tỉ lệ gây ra thêm sát thương cho kẻ địch sử dụng cung.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 12,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 17,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 25,
+							"cooldown": 1
+						},
+						{
+							"level": 4,
+							"chance": 33,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "khoe",
+					"name": "Khỏe",
+					"appliesTo": "Giáp",
+					"description": "Được giảm sát thương phải chịu nếu kẻ địch sử dụng rìu.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 20,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 25,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "sinhlymanh",
+					"name": "Sinh lý mạnh",
+					"appliesTo": "Giáp",
+					"description": "Được giảm sát thương phải chịu nếu kẻ địch sử dụng kiếm.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 20,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 25,
+							"cooldown": 2
+						},
+						{
+							"level": 5,
+							"chance": 30,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "giayxin",
+					"name": "Giày xịn",
+					"appliesTo": "Giày",
+					"description": "Khi bị tấn công có tỉ lệ được thanh tẩy hiệu ứng làm chậm.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 30,
+							"cooldown": 3
+						},
+						{
+							"level": 2,
+							"chance": 60,
+							"cooldown": 3
+						},
+						{
+							"level": 3,
+							"chance": 75,
+							"cooldown": 3
+						},
+						{
+							"level": 4,
+							"chance": 90,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "giapcreeper",
+					"name": "Giáp Creeper",
+					"appliesTo": "Giáp",
+					"description": "Có tỉ lệ được miễn nhiễm với sát thương nổ. Ở cấp cuối cùng, có tỉ lệ được hồi lại máu.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 15,
+							"cooldown": 5
+						},
+						{
+							"level": 2,
+							"chance": 20,
+							"cooldown": 5
+						},
+						{
+							"level": 3,
+							"chance": 25,
+							"cooldown": 5
+						}
+					]
+				},
+				{
+					"id": "khatmau",
+					"name": "Khát máu",
+					"appliesTo": "Rìu",
+					"description": "Đòn tấn công làm chậm và gây thêm sát thương chuẩn cho đối thủ 3 lần liên tiếp.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Đẫm Máu",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Đẫm máu",
+							"group": "Truyền thuyết"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 3
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 3
+						},
+						{
+							"level": 3,
+							"chance": 20,
+							"cooldown": 3
+						},
+						{
+							"level": 4,
+							"chance": 25,
+							"cooldown": 3
+						},
+						{
+							"level": 5,
+							"chance": 30,
+							"cooldown": 3
+						},
+						{
+							"level": 6,
+							"chance": 35,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "nhenyeutinh",
+					"name": "Nhện yêu tinh (Looting)",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Có tỉ lệ drop thêm vật phẩm khi tiêu diệt Nhện Yêu Tinh ở Dungeon 2.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 65,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 70,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "phuthuyden",
+					"name": "Phù thủy đen (Looting)",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Có tỉ lệ drop thêm vật phẩm khi tiêu diệt Phù Thủy Đen ở Dungeon 3.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 65,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 70,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 70,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "dianguctamtoi",
+					"name": "Địa Ngục Tăm Tối (Looting)",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Có tỉ lệ drop thêm vật phẩm khi tiêu diệt quái vật ở Dungeon 4.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 12,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 15,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "mineexpplus",
+					"name": "MineExp",
+					"appliesTo": "Cúp",
+					"description": "Nhận thêm một lượng kinh nghiệm ngẫu nhiên khi đào quặng.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 15,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 30,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 45,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 60,
+							"cooldown": 2
+						},
+						{
+							"level": 5,
+							"chance": 75,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "khangma",
+					"name": "Kháng ma",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Đòn tấn công có tỉ lệ loại bỏ hiệu ứng tàng hình của đối thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 60,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "giapchongdan",
+					"name": "Giáp chống đạn",
+					"appliesTo": "Quần",
+					"description": "Khi bị bắn có tỉ lệ được giảm sát thương phải chịu. Đồng thời vô hiệu hóa các cường hóa cung của đối thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Tường Gió",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Tường gió",
+							"group": "Truyền thuyết"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 20,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 30,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 35,
+							"cooldown": 2
+						},
+						{
+							"level": 5,
+							"chance": 40,
+							"cooldown": 2
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "HUYENTHOAI",
+			"slug": "huyenthoai",
+			"name": "Huyền thoại",
+			"tier": 5,
+			"color": "#ffaa00",
+			"priceExp": 250000,
+			"dustChance": 42,
+			"randomLevelCap3": false,
+			"enchants": [
+				{
+					"id": "latkeo",
+					"name": "Lật kèo",
+					"appliesTo": "Kiếm",
+					"description": "Khi bị tấn công có tỉ lệ được giảm sát thương phải chịu và gây ra thêm cho đối phương sát thương chuẩn trong đòn đánh tiếp theo.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Hoàng Bào",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Hoàng bào",
+							"group": "Truyền thuyết"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 16,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 22,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 30,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "manro",
+					"name": "Man rợ",
+					"appliesTo": "Rìu",
+					"description": "Đòn tấn công tăng thêm sát thương đối với kẻ địch sử dụng rìu.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Xích Lân"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 16,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 30,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 38,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 50,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "thuocnhomat",
+					"name": "Thuốc nhỏ mắt",
+					"appliesTo": "Giáp",
+					"description": "Miễn nhiễm với hiệu ứng gây mù.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Nguyệt Nhãn"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 2,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 3,
+							"chance": 100,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "chimang",
+					"name": "Chí mạng",
+					"appliesTo": "Giáp",
+					"description": "Khi tấn công có tỉ lệ được tăng thêm sát thương.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Phanh Thây",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Phanh thây",
+							"group": "Truyền thuyết"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 20,
+							"cooldown": 8
+						},
+						{
+							"level": 2,
+							"chance": 25,
+							"cooldown": 7
+						},
+						{
+							"level": 3,
+							"chance": 30,
+							"cooldown": 6
+						}
+					]
+				},
+				{
+					"id": "gapboi",
+					"name": "Gấp bội",
+					"appliesTo": "Kiếm",
+					"description": "Khi tấn công có tỉ lệ được tăng thêm sát thương.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Xích Lân Dược Động"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 9
+						},
+						{
+							"level": 2,
+							"chance": 20,
+							"cooldown": 8
+						},
+						{
+							"level": 3,
+							"chance": 30,
+							"cooldown": 7
+						}
+					]
+				},
+				{
+					"id": "tuyquyen",
+					"name": "Túy quyền",
+					"appliesTo": "Mũ",
+					"description": "Nhận vĩnh viễn hiệu ứng tăng sát thương nhưng đồng thời cũng bị giảm tốc đánh và giảm tốc chạy.",
+					"passive": true,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Túy bát tiên quyền",
+							"group": "Thách đấu"
+						},
+						{
+							"name": "Túy bát tiên quyền",
+							"group": "Thách đấu"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 2,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 3,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 4,
+							"chance": 100,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "thiensu",
+					"name": "Thiên sứ",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công có tỉ lệ được hồi lại ngẫu nhiên từ 2-6 máu.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Hạnh phúc",
+							"group": "Thách đấu"
+						},
+						{
+							"name": "Nguyệt Quang"
+						},
+						{
+							"name": "Thiên nhiên",
+							"group": "Truyền thuyết"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 29,
+							"cooldown": 3
+						},
+						{
+							"level": 2,
+							"chance": 35,
+							"cooldown": 3
+						},
+						{
+							"level": 3,
+							"chance": 40,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "tangtoc",
+					"name": "Tăng tốc",
+					"appliesTo": "Giày",
+					"description": "Tăng vĩnh viễn tốc độ chạy.",
+					"passive": true,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Thần tốc",
+							"group": "Thách đấu"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 2,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 3,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 4,
+							"chance": 100,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "noinang",
+					"name": "Nội năng",
+					"appliesTo": "Kiếm",
+					"description": "Khi bị tấn công có tỉ lệ chặn sát thương từ đòn tấn công của kẻ thù, đồng thời hồi lại ngẫu nhiên 1-5 máu cho bản thân.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 8,
+							"cooldown": 6
+						},
+						{
+							"level": 2,
+							"chance": 16,
+							"cooldown": 5
+						},
+						{
+							"level": 3,
+							"chance": 24,
+							"cooldown": 4
+						}
+					]
+				},
+				{
+					"id": "hutmau",
+					"name": "Hút máu",
+					"appliesTo": "Kiếm",
+					"description": "Đòn tấn công có tỉ lệ hút ngẫu nhiên máu của đối thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 9,
+							"cooldown": 3
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 3
+						},
+						{
+							"level": 3,
+							"chance": 20,
+							"cooldown": 3
+						},
+						{
+							"level": 4,
+							"chance": 25,
+							"cooldown": 3
+						},
+						{
+							"level": 5,
+							"chance": 30,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "trau",
+					"name": "Trâu",
+					"appliesTo": "Giáp",
+					"description": "Tăng thêm máu tối đa cho bản thân.",
+					"passive": true,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Trâu thánh"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 2,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 3,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 4,
+							"chance": 100,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "hanthu",
+					"name": "Hận thù",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Đòn tấn công sẽ gây thêm sát thương chuẩn theo số combo mà bạn gây ra cho kẻ địch.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 20,
+							"cooldown": 9
+						},
+						{
+							"level": 2,
+							"chance": 30,
+							"cooldown": 9
+						},
+						{
+							"level": 3,
+							"chance": 40,
+							"cooldown": 8
+						},
+						{
+							"level": 4,
+							"chance": 50,
+							"cooldown": 8
+						},
+						{
+							"level": 5,
+							"chance": 60,
+							"cooldown": 7
+						},
+						{
+							"level": 6,
+							"chance": 70,
+							"cooldown": 7
+						}
+					]
+				},
+				{
+					"id": "thanhtay",
+					"name": "Thanh tẩy",
+					"appliesTo": "Kiếm",
+					"description": "Đòn tấn công có tỉ lệ thanh tẩy toàn bộ hiệu ứng cường hóa của kẻ thù. Không bao gồm các cường hóa cao cấp hơn Truyền Thuyết.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Xích Lân Dược Động"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 3
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 3
+						},
+						{
+							"level": 3,
+							"chance": 20,
+							"cooldown": 3
+						},
+						{
+							"level": 4,
+							"chance": 25,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "thietgiap",
+					"name": "Thiết giáp",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công có tỉ lệ được giảm sát thương phải chịu nếu kẻ thù của bạn sử dụng kiếm.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Thánh Giáp",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Nguyệt Quang"
+						},
+						{
+							"name": "Thánh Giáp",
+							"group": "Truyền thuyết"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 5,
+							"cooldown": 5
+						},
+						{
+							"level": 2,
+							"chance": 10,
+							"cooldown": 5
+						},
+						{
+							"level": 3,
+							"chance": 15,
+							"cooldown": 4
+						},
+						{
+							"level": 4,
+							"chance": 22,
+							"cooldown": 4
+						}
+					]
+				},
+				{
+					"id": "turen",
+					"name": "Tự rèn",
+					"appliesTo": "Rìu",
+					"description": "Khi tấn công có tỉ lệ hồi lại độ bền cho trang bị. Đồng thời làm giảm 50% sát thương bản thân phải chịu.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Siêu Rèn",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Xích Lân"
+						},
+						{
+							"name": "Siêu rèn",
+							"group": "Truyền thuyết"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 9,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 23,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 31,
+							"cooldown": 2
+						},
+						{
+							"level": 5,
+							"chance": 39,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "canxe",
+					"name": "Cắn xé",
+					"appliesTo": "Rìu",
+					"description": "Đòn tấn công sẽ gây thêm sát thương liên tục cho đối thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Lân Nộ"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 15,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 20,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 25,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 30,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "kimham",
+					"name": "Kìm hãm",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công có tỉ lệ được giảm 50% sát thương phải chịu.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Thủ Phép",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Nguyệt Nhãn"
+						},
+						{
+							"name": "Thủ phép",
+							"group": "Truyền thuyết"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 8
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 8
+						},
+						{
+							"level": 3,
+							"chance": 20,
+							"cooldown": 7
+						},
+						{
+							"level": 4,
+							"chance": 25,
+							"cooldown": 7
+						},
+						{
+							"level": 5,
+							"chance": 30,
+							"cooldown": 6
+						},
+						{
+							"level": 6,
+							"chance": 35,
+							"cooldown": 6
+						}
+					]
+				},
+				{
+					"id": "tuthan",
+					"name": "Tử thần",
+					"appliesTo": "Mũ",
+					"description": "Có tỉ lệ được hồi lại máu khi xuống ngưỡng máu tử.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 22,
+							"cooldown": 3
+						},
+						{
+							"level": 2,
+							"chance": 24,
+							"cooldown": 3
+						},
+						{
+							"level": 3,
+							"chance": 29,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "dai",
+					"name": "Dại",
+					"appliesTo": "Rìu",
+					"description": "Đòn tấn công có tỉ lệ được tăng thêm sát thương nếu kẻ thù của bạn sử dụng kiếm",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Lân Nộ"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 20,
+							"cooldown": 1
+						},
+						{
+							"level": 4,
+							"chance": 25,
+							"cooldown": 1
+						},
+						{
+							"level": 5,
+							"chance": 30,
+							"cooldown": 1
+						},
+						{
+							"level": 6,
+							"chance": 35,
+							"cooldown": 1
+						},
+						{
+							"level": 7,
+							"chance": 40,
+							"cooldown": 1
+						},
+						{
+							"level": 8,
+							"chance": 45,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "nhamban",
+					"name": "Nhắm bắn",
+					"appliesTo": "Cung",
+					"description": "Đòn tấn công có tỉ lệ gây ra thêm ngẫu nhiên 10-30% sát thương nếu bắn trúng đầu.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Bắn Tỉa",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Bắn tỉa",
+							"group": "Truyền thuyết"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 30,
+							"cooldown": 0
+						},
+						{
+							"level": 2,
+							"chance": 40,
+							"cooldown": 0
+						},
+						{
+							"level": 3,
+							"chance": 50,
+							"cooldown": 0
+						},
+						{
+							"level": 4,
+							"chance": 60,
+							"cooldown": 0
+						},
+						{
+							"level": 5,
+							"chance": 70,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "trungphat",
+					"name": "Trừng Phạt",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Tăng thêm sát thương gây ra cho quái vật.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Sát Quỷ",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Sát Quỷ",
+							"group": "Truyền thuyết"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 20,
+							"cooldown": 4
+						},
+						{
+							"level": 2,
+							"chance": 40,
+							"cooldown": 4
+						},
+						{
+							"level": 3,
+							"chance": 60,
+							"cooldown": 4
+						},
+						{
+							"level": 4,
+							"chance": 80,
+							"cooldown": 4
+						},
+						{
+							"level": 5,
+							"chance": 100,
+							"cooldown": 4
+						},
+						{
+							"level": 6,
+							"chance": 100,
+							"cooldown": 4
+						}
+					]
+				},
+				{
+					"id": "tuongluc",
+					"name": "Tường lực",
+					"appliesTo": "Quần",
+					"description": "Giảm sát thương phải chịu khi bị tên bắn.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [
+						{
+							"name": "Tường Gió",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Tường gió",
+							"group": "Truyền thuyết"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 20,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 30,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 35,
+							"cooldown": 2
+						},
+						{
+							"level": 5,
+							"chance": 40,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "luckyeventhuyenthoai",
+					"name": "Lucky Event Looting",
+					"appliesTo": "Kiếm, Rìu, Cung",
+					"description": "Tăng 25% tỉ lệ rơi ra nguyên liệu khi farm quái tại các sự kiện.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Lucky Event Looting",
+							"group": "Cổ",
+							"level": 1
+						}
+					],
+					"replaces": [
+						{
+							"name": "Lucky Event Looting",
+							"group": "Cổ"
+						}
+					],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 25,
+							"cooldown": 0
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "TRUYENTHUYET",
+			"slug": "truyenthuyet",
+			"name": "Truyền thuyết",
+			"tier": 6,
+			"color": "#ff55ff",
+			"priceExp": 100000000,
+			"dustChance": 53,
+			"randomLevelCap3": false,
+			"enchants": [
+				{
+					"id": "hoangbao",
+					"name": "Hoàng bào",
+					"appliesTo": "Kiếm",
+					"description": "Khi bị tấn công có tỉ lệ chặn sát thương của đối thủ đồng thời phản lại sát thương chuẩn cho đối thủ.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Lật kèo",
+							"group": "Huyền thoại",
+							"level": 3
+						}
+					],
+					"replaces": [
+						{
+							"name": "Lật kèo",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Hoàng Bào",
+							"group": "Mạ vàng"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 5,
+							"cooldown": 7
+						},
+						{
+							"level": 2,
+							"chance": 7,
+							"cooldown": 7
+						},
+						{
+							"level": 3,
+							"chance": 8,
+							"cooldown": 7
+						},
+						{
+							"level": 4,
+							"chance": 11,
+							"cooldown": 7
+						},
+						{
+							"level": 5,
+							"chance": 13,
+							"cooldown": 7
+						},
+						{
+							"level": 6,
+							"chance": 18,
+							"cooldown": 7
+						}
+					]
+				},
+				{
+					"id": "phanhthay",
+					"name": "Phanh thây",
+					"appliesTo": "Giáp",
+					"description": "Đòn tấn công có tỉ lệ gây thêm sát thương.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Chí mạng",
+							"group": "Huyền thoại",
+							"level": 3
+						}
+					],
+					"replaces": [
+						{
+							"name": "Chí mạng",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Phanh Thây",
+							"group": "Mạ vàng"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 7
+						},
+						{
+							"level": 2,
+							"chance": 12,
+							"cooldown": 7
+						},
+						{
+							"level": 3,
+							"chance": 14,
+							"cooldown": 7
+						},
+						{
+							"level": 4,
+							"chance": 18,
+							"cooldown": 7
+						},
+						{
+							"level": 5,
+							"chance": 26,
+							"cooldown": 7
+						},
+						{
+							"level": 6,
+							"chance": 30,
+							"cooldown": 7
+						}
+					]
+				},
+				{
+					"id": "thiennhien",
+					"name": "Thiên nhiên",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công có tỉ lệ được hồi lại ngẫu nhiên một lượng máu nhất định.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Thiên sứ",
+							"group": "Huyền thoại",
+							"level": 3
+						}
+					],
+					"replaces": [
+						{
+							"name": "Thiên sứ",
+							"group": "Huyền thoại",
+							"level": 3
+						}
+					],
+					"excludes": [
+						{
+							"name": "Bất Diệt Thánh Giáp"
+						},
+						{
+							"name": "Hạnh phúc",
+							"group": "Thách đấu"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 42,
+							"cooldown": 3
+						},
+						{
+							"level": 2,
+							"chance": 48,
+							"cooldown": 3
+						},
+						{
+							"level": 3,
+							"chance": 54,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "bantia",
+					"name": "Bắn tỉa",
+					"appliesTo": "Cung",
+					"description": "Đòn tấn công chí mạng có tỉ lệ gây thêm sát thương cho kẻ thù.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Nhắm bắn",
+							"group": "Huyền thoại",
+							"level": 5
+						}
+					],
+					"replaces": [
+						{
+							"name": "Nhắm bắn",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Bắn Tỉa",
+							"group": "Mạ vàng"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 16,
+							"cooldown": 4
+						},
+						{
+							"level": 2,
+							"chance": 19,
+							"cooldown": 4
+						},
+						{
+							"level": 3,
+							"chance": 22,
+							"cooldown": 4
+						},
+						{
+							"level": 4,
+							"chance": 27,
+							"cooldown": 4
+						},
+						{
+							"level": 5,
+							"chance": 30,
+							"cooldown": 4
+						},
+						{
+							"level": 6,
+							"chance": 33,
+							"cooldown": 4
+						},
+						{
+							"level": 7,
+							"chance": 35,
+							"cooldown": 4
+						},
+						{
+							"level": 8,
+							"chance": 38,
+							"cooldown": 4
+						},
+						{
+							"level": 9,
+							"chance": 42,
+							"cooldown": 4
+						},
+						{
+							"level": 10,
+							"chance": 45,
+							"cooldown": 4
+						}
+					]
+				},
+				{
+					"id": "bayquaivat",
+					"name": "Bẫy quái vật",
+					"appliesTo": "Kiếm",
+					"description": "Đòn tấn công có tỉ lệ làm chậm đối thủ trong một khoảng thời gian dài.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Bẫy Titan",
+							"group": "Cổ",
+							"level": 3
+						}
+					],
+					"replaces": [
+						{
+							"name": "Bẫy Titan",
+							"group": "Cổ"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Bẫy Quái Vật",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Dạ Lân Đoạt Mệnh"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 7,
+							"cooldown": 5
+						},
+						{
+							"level": 2,
+							"chance": 7,
+							"cooldown": 5
+						},
+						{
+							"level": 3,
+							"chance": 10,
+							"cooldown": 5
+						},
+						{
+							"level": 4,
+							"chance": 13,
+							"cooldown": 5
+						},
+						{
+							"level": 5,
+							"chance": 17,
+							"cooldown": 5
+						},
+						{
+							"level": 6,
+							"chance": 20,
+							"cooldown": 5
+						}
+					]
+				},
+				{
+					"id": "sieuren",
+					"name": "Siêu rèn",
+					"appliesTo": "Rìu",
+					"description": "Khi tấn công có tỉ lệ hồi lại độ bền cho trang bị, đồng thời gia tăng sát thương cho đòn tấn công tiếp theo.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Tự rèn",
+							"group": "Huyền thoại",
+							"level": 5
+						}
+					],
+					"replaces": [
+						{
+							"name": "Tự rèn",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Siêu Rèn",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Xích Lân Cuồng Sát"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 15,
+							"cooldown": 6
+						},
+						{
+							"level": 2,
+							"chance": 19,
+							"cooldown": 6
+						},
+						{
+							"level": 3,
+							"chance": 22,
+							"cooldown": 6
+						},
+						{
+							"level": 4,
+							"chance": 25,
+							"cooldown": 6
+						},
+						{
+							"level": 5,
+							"chance": 28,
+							"cooldown": 6
+						},
+						{
+							"level": 6,
+							"chance": 32,
+							"cooldown": 6
+						},
+						{
+							"level": 7,
+							"chance": 36,
+							"cooldown": 6
+						},
+						{
+							"level": 8,
+							"chance": 39,
+							"cooldown": 6
+						},
+						{
+							"level": 9,
+							"chance": 42,
+							"cooldown": 6
+						},
+						{
+							"level": 10,
+							"chance": 45,
+							"cooldown": 6
+						}
+					]
+				},
+				{
+					"id": "thuphep",
+					"name": "Thủ phép",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công có tỉ lệ được giảm sát thương phải chịu, đồng thời phản lại lượng lớn sát thương chuẩn cho đối thủ.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Kìm hãm",
+							"group": "Huyền thoại",
+							"level": 6
+						}
+					],
+					"replaces": [
+						{
+							"name": "Kìm hãm",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Thủ Phép",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Bất Diệt Thánh Giáp"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 36,
+							"cooldown": 4
+						},
+						{
+							"level": 2,
+							"chance": 37,
+							"cooldown": 4
+						},
+						{
+							"level": 3,
+							"chance": 38,
+							"cooldown": 4
+						},
+						{
+							"level": 4,
+							"chance": 39,
+							"cooldown": 4
+						},
+						{
+							"level": 5,
+							"chance": 40,
+							"cooldown": 4
+						},
+						{
+							"level": 6,
+							"chance": 41,
+							"cooldown": 4
+						},
+						{
+							"level": 7,
+							"chance": 42,
+							"cooldown": 4
+						},
+						{
+							"level": 8,
+							"chance": 43,
+							"cooldown": 4
+						},
+						{
+							"level": 9,
+							"chance": 44,
+							"cooldown": 4
+						},
+						{
+							"level": 10,
+							"chance": 45,
+							"cooldown": 4
+						},
+						{
+							"level": 11,
+							"chance": 46,
+							"cooldown": 4
+						},
+						{
+							"level": 12,
+							"chance": 47,
+							"cooldown": 4
+						}
+					]
+				},
+				{
+					"id": "homenh",
+					"name": "Hộ mệnh",
+					"appliesTo": "Mũ",
+					"description": "Định kỳ có tỉ lệ được hồi lại máu và thức ăn.",
+					"passive": true,
+					"requires": [
+						{
+							"name": "Ban phước",
+							"group": "Siêu cổ",
+							"level": 3
+						}
+					],
+					"replaces": [
+						{
+							"name": "Ban phước",
+							"group": "Siêu cổ"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Hộ Mệnh",
+							"group": "Mạ vàng"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 52,
+							"cooldown": 4
+						},
+						{
+							"level": 2,
+							"chance": 56,
+							"cooldown": 4
+						},
+						{
+							"level": 3,
+							"chance": 60,
+							"cooldown": 4
+						},
+						{
+							"level": 4,
+							"chance": 64,
+							"cooldown": 3
+						},
+						{
+							"level": 5,
+							"chance": 68,
+							"cooldown": 3
+						},
+						{
+							"level": 6,
+							"chance": 72,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "caothu",
+					"name": "Cao thủ",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công có tỉ lệ né đòn và tăng mạnh tốc chạy.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Nhanh nhẹn",
+							"group": "Siêu cổ",
+							"level": 5
+						}
+					],
+					"replaces": [
+						{
+							"name": "Nhanh nhẹn",
+							"group": "Siêu cổ"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Cao Thủ",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Vô Ảnh Thánh Giáp"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 5,
+							"cooldown": 8
+						},
+						{
+							"level": 2,
+							"chance": 5,
+							"cooldown": 8
+						},
+						{
+							"level": 3,
+							"chance": 7,
+							"cooldown": 7
+						},
+						{
+							"level": 4,
+							"chance": 7,
+							"cooldown": 7
+						},
+						{
+							"level": 5,
+							"chance": 9,
+							"cooldown": 7
+						},
+						{
+							"level": 6,
+							"chance": 9,
+							"cooldown": 7
+						},
+						{
+							"level": 7,
+							"chance": 10,
+							"cooldown": 6
+						},
+						{
+							"level": 8,
+							"chance": 11,
+							"cooldown": 6
+						},
+						{
+							"level": 9,
+							"chance": 11,
+							"cooldown": 6
+						},
+						{
+							"level": 10,
+							"chance": 12,
+							"cooldown": 6
+						}
+					]
+				},
+				{
+					"id": "thanhgiap",
+					"name": "Thánh Giáp",
+					"appliesTo": "Giáp",
+					"description": "Nếu kẻ địch sử dụng kiếm khi bị tấn công có tỉ lệ được giảm sát thương phải chịu.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Thiết giáp",
+							"group": "Huyền thoại",
+							"level": 4
+						}
+					],
+					"replaces": [
+						{
+							"name": "Thiết giáp",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Thánh Giáp",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Vô Ảnh Thánh Giáp"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 26,
+							"cooldown": 4
+						},
+						{
+							"level": 2,
+							"chance": 27,
+							"cooldown": 4
+						},
+						{
+							"level": 3,
+							"chance": 28,
+							"cooldown": 4
+						},
+						{
+							"level": 4,
+							"chance": 29,
+							"cooldown": 4
+						},
+						{
+							"level": 5,
+							"chance": 29,
+							"cooldown": 3
+						},
+						{
+							"level": 6,
+							"chance": 30,
+							"cooldown": 3
+						},
+						{
+							"level": 7,
+							"chance": 31,
+							"cooldown": 3
+						},
+						{
+							"level": 8,
+							"chance": 32,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "quydu",
+					"name": "Quỷ dữ",
+					"appliesTo": "Kiếm",
+					"description": "Đòn tấn công có tỉ lệ hút ngẫu nhiên một lượng máu của đối thủ.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Hút máu",
+							"group": "Huyền thoại",
+							"level": 5
+						}
+					],
+					"replaces": [
+						{
+							"name": "Hút máu",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Quỷ dữ",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Dạ Lân Đoạt Mệnh"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 5,
+							"cooldown": 8
+						},
+						{
+							"level": 2,
+							"chance": 7,
+							"cooldown": 8
+						},
+						{
+							"level": 3,
+							"chance": 8,
+							"cooldown": 7
+						},
+						{
+							"level": 4,
+							"chance": 9,
+							"cooldown": 7
+						},
+						{
+							"level": 5,
+							"chance": 11,
+							"cooldown": 6
+						},
+						{
+							"level": 6,
+							"chance": 12,
+							"cooldown": 6
+						},
+						{
+							"level": 7,
+							"chance": 13,
+							"cooldown": 6
+						},
+						{
+							"level": 8,
+							"chance": 16,
+							"cooldown": 6
+						},
+						{
+							"level": 9,
+							"chance": 19,
+							"cooldown": 6
+						},
+						{
+							"level": 10,
+							"chance": 20,
+							"cooldown": 6
+						}
+					]
+				},
+				{
+					"id": "dammau",
+					"name": "Đẫm máu",
+					"appliesTo": "Rìu",
+					"description": "Đòn tấn công có tỉ lệ khiến đối thủ bị làm chậm đồng thời gây thêm 2 lần sát thương chuẩn cho đối thủ trong vòng 3 giây. Từ cấp 6 trở lên sẽ gây 3 lần sát thương.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Khát máu",
+							"group": "Siêu cổ",
+							"level": 6
+						}
+					],
+					"replaces": [
+						{
+							"name": "Khát máu",
+							"group": "Siêu cổ"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Đẫm Máu",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Xích Lân Cuồng Sát"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 6,
+							"cooldown": 6
+						},
+						{
+							"level": 2,
+							"chance": 10,
+							"cooldown": 6
+						},
+						{
+							"level": 3,
+							"chance": 11,
+							"cooldown": 6
+						},
+						{
+							"level": 4,
+							"chance": 13,
+							"cooldown": 6
+						},
+						{
+							"level": 5,
+							"chance": 15,
+							"cooldown": 6
+						},
+						{
+							"level": 6,
+							"chance": 16,
+							"cooldown": 6
+						},
+						{
+							"level": 7,
+							"chance": 18,
+							"cooldown": 6
+						},
+						{
+							"level": 8,
+							"chance": 19,
+							"cooldown": 6
+						},
+						{
+							"level": 9,
+							"chance": 21,
+							"cooldown": 6
+						},
+						{
+							"level": 10,
+							"chance": 23,
+							"cooldown": 6
+						},
+						{
+							"level": 11,
+							"chance": 24,
+							"cooldown": 6
+						},
+						{
+							"level": 12,
+							"chance": 25,
+							"cooldown": 6
+						}
+					]
+				},
+				{
+					"id": "satthu",
+					"name": "Sát thủ",
+					"appliesTo": "Kiếm",
+					"description": "Bạn càng ở gần kẻ thù sát thương gây ra càng cao.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Ám sát",
+							"group": "Siêu cổ",
+							"level": 5
+						}
+					],
+					"replaces": [
+						{
+							"name": "Ám sát",
+							"group": "Siêu cổ"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Sát Thủ",
+							"group": "Mạ vàng"
+						},
+						{
+							"name": "Dạ Lân Đoạt Mệnh"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 6,
+							"cooldown": 5
+						},
+						{
+							"level": 2,
+							"chance": 6,
+							"cooldown": 5
+						},
+						{
+							"level": 3,
+							"chance": 6,
+							"cooldown": 5
+						},
+						{
+							"level": 4,
+							"chance": 10,
+							"cooldown": 5
+						},
+						{
+							"level": 5,
+							"chance": 11,
+							"cooldown": 5
+						},
+						{
+							"level": 6,
+							"chance": 12,
+							"cooldown": 5
+						},
+						{
+							"level": 7,
+							"chance": 15,
+							"cooldown": 5
+						},
+						{
+							"level": 8,
+							"chance": 17,
+							"cooldown": 5
+						},
+						{
+							"level": 9,
+							"chance": 18,
+							"cooldown": 5
+						},
+						{
+							"level": 10,
+							"chance": 20,
+							"cooldown": 5
+						}
+					]
+				},
+				{
+					"id": "satquy",
+					"name": "Sát Quỷ",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Đòn tấn công của bạn sẽ gây ra nhiều sát thương hơn cho quái vật.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Trừng Phạt",
+							"group": "Huyền thoại",
+							"level": 6
+						}
+					],
+					"replaces": [
+						{
+							"name": "Trừng Phạt",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Sát Quỷ",
+							"group": "Mạ vàng"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 4
+						},
+						{
+							"level": 2,
+							"chance": 100,
+							"cooldown": 4
+						},
+						{
+							"level": 3,
+							"chance": 100,
+							"cooldown": 4
+						},
+						{
+							"level": 4,
+							"chance": 100,
+							"cooldown": 4
+						},
+						{
+							"level": 5,
+							"chance": 100,
+							"cooldown": 4
+						},
+						{
+							"level": 6,
+							"chance": 100,
+							"cooldown": 4
+						},
+						{
+							"level": 7,
+							"chance": 100,
+							"cooldown": 4
+						},
+						{
+							"level": 8,
+							"chance": 100,
+							"cooldown": 4
+						},
+						{
+							"level": 9,
+							"chance": 100,
+							"cooldown": 4
+						},
+						{
+							"level": 10,
+							"chance": 100,
+							"cooldown": 4
+						},
+						{
+							"level": 11,
+							"chance": 100,
+							"cooldown": 4
+						},
+						{
+							"level": 12,
+							"chance": 100,
+							"cooldown": 4
+						}
+					]
+				},
+				{
+					"id": "tuonggio",
+					"name": "Tường gió",
+					"appliesTo": "Quần",
+					"description": "Khi bị bắn có tỉ lệ chặn tất cả sát thương từ cung tên, kể cả các phù phép cường hóa. Đồng thời hồi lại cho bản thân một lượng máu nhất định.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Tường lực",
+							"group": "Huyền thoại",
+							"level": 5
+						},
+						{
+							"name": "Giáp chống đạn",
+							"group": "Siêu cổ",
+							"level": 5
+						}
+					],
+					"replaces": [
+						{
+							"name": "Tường lực",
+							"group": "Huyền thoại"
+						},
+						{
+							"name": "Giáp chống đạn",
+							"group": "Siêu cổ"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Tường Gió",
+							"group": "Mạ vàng"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 14,
+							"cooldown": 5
+						},
+						{
+							"level": 2,
+							"chance": 16,
+							"cooldown": 5
+						},
+						{
+							"level": 3,
+							"chance": 19,
+							"cooldown": 5
+						},
+						{
+							"level": 4,
+							"chance": 21,
+							"cooldown": 5
+						},
+						{
+							"level": 5,
+							"chance": 23,
+							"cooldown": 5
+						},
+						{
+							"level": 6,
+							"chance": 26,
+							"cooldown": 5
+						},
+						{
+							"level": 7,
+							"chance": 28,
+							"cooldown": 5
+						},
+						{
+							"level": 8,
+							"chance": 30,
+							"cooldown": 5
+						},
+						{
+							"level": 9,
+							"chance": 33,
+							"cooldown": 5
+						},
+						{
+							"level": 10,
+							"chance": 35,
+							"cooldown": 5
+						}
+					]
+				},
+				{
+					"id": "luckyeventtruyenthuyet",
+					"name": "Lucky Event Looting",
+					"appliesTo": "Kiếm, Rìu, Cung",
+					"description": "Tăng 50% tỉ lệ rơi ra nguyên liệu khi farm quái tại các sự kiện.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Lucky Event Looting",
+							"group": "Huyền thoại",
+							"level": 1
+						}
+					],
+					"replaces": [
+						{
+							"name": "Lucky Event Looting",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 50,
+							"cooldown": 0
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "LINHHON",
+			"slug": "linhhon",
+			"name": "Linh hồn",
+			"tier": 7,
+			"color": "#ff5555",
+			"priceExp": null,
+			"dustChance": 100,
+			"randomLevelCap3": true,
+			"enchants": [
+				{
+					"id": "quaibang",
+					"name": "Quái Băng",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công có tỉ lệ khiến đối thủ bị dính hiệu ứng siêu làm chậm. Đồng thời gây sát thương chuẩn cho đối thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 9,
+							"cooldown": 5,
+							"souls": 75
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 5,
+							"souls": 75
+						},
+						{
+							"level": 3,
+							"chance": 23,
+							"cooldown": 5,
+							"souls": 75
+						},
+						{
+							"level": 4,
+							"chance": 30,
+							"cooldown": 5,
+							"souls": 75
+						}
+					]
+				},
+				{
+					"id": "phuonghoang",
+					"name": "Phượng Hoàng",
+					"appliesTo": "Giáp",
+					"description": "Khi xuống một ngưỡng máu nhất định có tỉ lệ được hồi lại 20-30% máu tối đa.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 14,
+							"cooldown": 60,
+							"souls": 300
+						},
+						{
+							"level": 2,
+							"chance": 25,
+							"cooldown": 50,
+							"souls": 300
+						},
+						{
+							"level": 3,
+							"chance": 50,
+							"cooldown": 40,
+							"souls": 300
+						}
+					]
+				},
+				{
+					"id": "luathan",
+					"name": "Lửa Thần",
+					"appliesTo": "Kiếm",
+					"description": "Đòn tấn công thiêu đốt kẻ địch và gây ra lượng sát thương chuẩn lớn liên tiếp cho kẻ địch.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 5,
+							"souls": 75
+						},
+						{
+							"level": 2,
+							"chance": 15,
+							"cooldown": 5,
+							"souls": 75
+						},
+						{
+							"level": 3,
+							"chance": 20,
+							"cooldown": 4,
+							"souls": 75
+						},
+						{
+							"level": 4,
+							"chance": 25,
+							"cooldown": 4,
+							"souls": 75
+						},
+						{
+							"level": 5,
+							"chance": 30,
+							"cooldown": 3,
+							"souls": 75
+						}
+					]
+				},
+				{
+					"id": "bayhon",
+					"name": "Bẫy Hồn",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Đòn tấn công có tỉ lệ vô hiệu hóa tất cả các hiệu ứng cường hóa linh hồn của đối thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 4,
+							"souls": 2
+						},
+						{
+							"level": 2,
+							"chance": 20,
+							"cooldown": 4,
+							"souls": 2
+						},
+						{
+							"level": 3,
+							"chance": 35,
+							"cooldown": 4,
+							"souls": 2
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "HUYETTU",
+			"slug": "huyettu",
+			"name": "Huyết tử",
+			"tier": 8,
+			"color": "#aa0000",
+			"priceExp": null,
+			"dustChance": 100,
+			"randomLevelCap3": true,
+			"enchants": [
+				{
+					"id": "huyetkich",
+					"name": "Huyết Kích",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Hi sinh máu của bản thân để tăng sát thương gây ra cho kẻ địch. Yêu cầu phải còn tối thiểu 50 máu thì phù phép này mới có thể kích hoạt.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 25
+						},
+						{
+							"level": 2,
+							"chance": 100,
+							"cooldown": 22
+						},
+						{
+							"level": 3,
+							"chance": 100,
+							"cooldown": 18
+						},
+						{
+							"level": 4,
+							"chance": 100,
+							"cooldown": 15
+						},
+						{
+							"level": 5,
+							"chance": 100,
+							"cooldown": 10
+						}
+					]
+				},
+				{
+					"id": "huyettram",
+					"name": "Huyết Trảm",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Hi sinh 12% máu của bản thân. Đòn tấn công sẽ gây ra gấp đôi sát thương. Cách kích hoạt: Combo liên tiếp (Combo x5) &và lượng máu còn trên 50%",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 5
+						}
+					]
+				},
+				{
+					"id": "huyetkhibao",
+					"name": "Huyết Khí Bạo",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Đòn tấn công chí mạng sẽ hi sinh 8/16 máu của bản thân. Nhưng tăng 50/100% sát thương chí mạng gây lên kẻ thù. Yêu cầu phải có trên 100 máu để kích hoạt phù phép này.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 10
+						},
+						{
+							"level": 2,
+							"chance": 100,
+							"cooldown": 10
+						}
+					]
+				},
+				{
+					"id": "huyetphan",
+					"name": "Huyết Phản",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công, hi sinh thêm 1%/3%/5% máu tối đa để phản lại sát thương gấp 5 lần số máu hi sinh cho đối thủ Máu của bản thân phải nhiều hơn 50% thì phù phép này mới được kích hoạt.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 25,
+							"cooldown": 3
+						},
+						{
+							"level": 2,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 3,
+							"chance": 75,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "huyette",
+					"name": "Huyết Tế",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công, có tỉ lệ hi sinh 5% máu tối đa của bản thân để khiến kẻ địch phải chịu hiệu ứng chảy máu và gây ra sát thương với x2 số máu đã hi sinh trong vòng 5 giây cho kẻ địch. Điều kiện kích hoạt: Lượng máu còn lại của bản thân phải nhiều hơn 40%",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 50,
+							"cooldown": 8
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "MAVANG",
+			"slug": "mavang",
+			"name": "Mạ vàng",
+			"tier": 9,
+			"color": "#ffff55",
+			"priceExp": null,
+			"dustChance": 100,
+			"randomLevelCap3": true,
+			"enchants": [
+				{
+					"id": "quydumavang",
+					"name": "Quỷ dữ",
+					"appliesTo": "Kiếm",
+					"description": "Đòn tấn công có tỉ lệ được gia tăng sát thương cực mạnh và hút lượng lớn máu của đối thủ.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Quỷ dữ",
+							"group": "Truyền thuyết",
+							"level": 10
+						}
+					],
+					"replaces": [
+						{
+							"name": "Quỷ dữ",
+							"group": "Truyền thuyết"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Hút máu",
+							"group": "Huyền thoại"
+						},
+						{
+							"name": "Dạ Lân Đoạt Mệnh"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 30,
+							"cooldown": 4
+						},
+						{
+							"level": 2,
+							"chance": 50,
+							"cooldown": 4
+						},
+						{
+							"level": 3,
+							"chance": 70,
+							"cooldown": 4
+						},
+						{
+							"level": 4,
+							"chance": 90,
+							"cooldown": 4
+						},
+						{
+							"level": 5,
+							"chance": 100,
+							"cooldown": 4
+						},
+						{
+							"level": 6,
+							"chance": 100,
+							"cooldown": 4
+						}
+					]
+				},
+				{
+					"id": "hoangbaomavang",
+					"name": "Hoàng Bào",
+					"appliesTo": "Kiếm",
+					"description": "Khi bị tấn công có tỉ lệ chặn hoàn toàn đòn đánh của đối phương, đồng thời phản lại lượng lớn sát thương cho đối thủ.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Hoàng bào",
+							"group": "Truyền thuyết",
+							"level": 6
+						}
+					],
+					"replaces": [
+						{
+							"name": "Hoàng bào",
+							"group": "Truyền thuyết"
+						},
+						{
+							"name": "Lật kèo",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 25,
+							"cooldown": 3
+						},
+						{
+							"level": 2,
+							"chance": 28,
+							"cooldown": 3
+						},
+						{
+							"level": 3,
+							"chance": 31,
+							"cooldown": 3
+						},
+						{
+							"level": 4,
+							"chance": 34,
+							"cooldown": 3
+						},
+						{
+							"level": 5,
+							"chance": 37,
+							"cooldown": 3
+						},
+						{
+							"level": 6,
+							"chance": 40,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "bayquaivatmavang",
+					"name": "Bẫy Quái Vật",
+					"appliesTo": "Kiếm",
+					"description": "Đòn tấn công có tỉ lệ khiến đối thủ dính hiệu ứng siêu làm chậm trong thời gian dài. Đồng thời gia tăng mạnh sát thương của bản thân.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Bẫy quái vật",
+							"group": "Truyền thuyết",
+							"level": 6
+						}
+					],
+					"replaces": [
+						{
+							"name": "Bẫy quái vật",
+							"group": "Truyền thuyết"
+						},
+						{
+							"name": "Bẫy Titan",
+							"group": "Cổ"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Dạ Lân Đoạt Mệnh"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 30,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 40,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 50,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 64,
+							"cooldown": 2
+						},
+						{
+							"level": 5,
+							"chance": 72,
+							"cooldown": 2
+						},
+						{
+							"level": 6,
+							"chance": 80,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "satthumavang",
+					"name": "Sát Thủ",
+					"appliesTo": "Kiếm",
+					"description": "Bạn càng ở gần kẻ thù sát thương gây ra càng cao.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Sát thủ",
+							"group": "Truyền thuyết",
+							"level": 10
+						}
+					],
+					"replaces": [
+						{
+							"name": "Sát thủ",
+							"group": "Truyền thuyết"
+						},
+						{
+							"name": "Ám sát",
+							"group": "Siêu cổ"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Dạ Lân Đoạt Mệnh"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 35,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 42,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 49,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 57,
+							"cooldown": 2
+						},
+						{
+							"level": 5,
+							"chance": 66,
+							"cooldown": 2
+						},
+						{
+							"level": 6,
+							"chance": 72,
+							"cooldown": 2
+						},
+						{
+							"level": 7,
+							"chance": 84,
+							"cooldown": 2
+						},
+						{
+							"level": 8,
+							"chance": 92,
+							"cooldown": 2
+						},
+						{
+							"level": 9,
+							"chance": 100,
+							"cooldown": 2
+						},
+						{
+							"level": 10,
+							"chance": 100,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "satquymavang",
+					"name": "Sát Quỷ",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Gia tăng một lượng sát thương khủng khiếp khi bạn chiến đấu với quái vật. Đồng thời hồi lại cho bạn một lượng máu nhỏ.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Sát Quỷ",
+							"group": "Truyền thuyết",
+							"level": 12
+						}
+					],
+					"replaces": [
+						{
+							"name": "Sát Quỷ",
+							"group": "Truyền thuyết"
+						},
+						{
+							"name": "Trừng Phạt",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 3
+						},
+						{
+							"level": 2,
+							"chance": 100,
+							"cooldown": 3
+						},
+						{
+							"level": 3,
+							"chance": 100,
+							"cooldown": 3
+						},
+						{
+							"level": 4,
+							"chance": 100,
+							"cooldown": 3
+						},
+						{
+							"level": 5,
+							"chance": 100,
+							"cooldown": 3
+						},
+						{
+							"level": 6,
+							"chance": 100,
+							"cooldown": 3
+						},
+						{
+							"level": 7,
+							"chance": 100,
+							"cooldown": 3
+						},
+						{
+							"level": 8,
+							"chance": 100,
+							"cooldown": 3
+						},
+						{
+							"level": 9,
+							"chance": 100,
+							"cooldown": 3
+						},
+						{
+							"level": 10,
+							"chance": 100,
+							"cooldown": 3
+						},
+						{
+							"level": 11,
+							"chance": 100,
+							"cooldown": 3
+						},
+						{
+							"level": 12,
+							"chance": 100,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "sieurenmavang",
+					"name": "Siêu Rèn",
+					"appliesTo": "Rìu",
+					"description": "Khi tấn công có tỉ lệ được hồi lại độ bền cho trang bị, đồng thời gia tăng một lượng lớn sát thương cho đòn tấn công sau đó.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Siêu rèn",
+							"group": "Truyền thuyết",
+							"level": 10
+						}
+					],
+					"replaces": [
+						{
+							"name": "Siêu rèn",
+							"group": "Truyền thuyết"
+						},
+						{
+							"name": "Tự rèn",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Xích Lân Cuồng Sát"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 60,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 70,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 80,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 90,
+							"cooldown": 2
+						},
+						{
+							"level": 5,
+							"chance": 100,
+							"cooldown": 2
+						},
+						{
+							"level": 6,
+							"chance": 100,
+							"cooldown": 2
+						},
+						{
+							"level": 7,
+							"chance": 100,
+							"cooldown": 2
+						},
+						{
+							"level": 8,
+							"chance": 100,
+							"cooldown": 2
+						},
+						{
+							"level": 9,
+							"chance": 100,
+							"cooldown": 2
+						},
+						{
+							"level": 10,
+							"chance": 100,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "dammaumavang",
+					"name": "Đẫm Máu",
+					"appliesTo": "Rìu",
+					"description": "Đòn tấn công có tỉ lệ khiến đối thủ bị dính hiệu ứng siêu làm chậm. Đồng thời gây thêm 3 lần sát thương chuẩn cho đối thủ.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Đẫm máu",
+							"group": "Truyền thuyết",
+							"level": 12
+						}
+					],
+					"replaces": [
+						{
+							"name": "Đẫm máu",
+							"group": "Truyền thuyết"
+						},
+						{
+							"name": "Khát máu",
+							"group": "Siêu cổ"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Xích Lân Cuồng Sát"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 40,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 43,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 45,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 47,
+							"cooldown": 2
+						},
+						{
+							"level": 5,
+							"chance": 48,
+							"cooldown": 2
+						},
+						{
+							"level": 6,
+							"chance": 50,
+							"cooldown": 2
+						},
+						{
+							"level": 7,
+							"chance": 52,
+							"cooldown": 2
+						},
+						{
+							"level": 8,
+							"chance": 53,
+							"cooldown": 2
+						},
+						{
+							"level": 9,
+							"chance": 55,
+							"cooldown": 2
+						},
+						{
+							"level": 10,
+							"chance": 57,
+							"cooldown": 2
+						},
+						{
+							"level": 11,
+							"chance": 58,
+							"cooldown": 2
+						},
+						{
+							"level": 12,
+							"chance": 60,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "bantiamavang",
+					"name": "Bắn Tỉa",
+					"appliesTo": "Cung",
+					"description": "Đòn tấn công chí mạng có tỉ lệ gây thêm lượng sát thương cực lớn cho kẻ thù.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Bắn tỉa",
+							"group": "Truyền thuyết",
+							"level": 10
+						}
+					],
+					"replaces": [
+						{
+							"name": "Bắn tỉa",
+							"group": "Truyền thuyết"
+						},
+						{
+							"name": "Nhắm bắn",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 65,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 68,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 72,
+							"cooldown": 1
+						},
+						{
+							"level": 4,
+							"chance": 75,
+							"cooldown": 1
+						},
+						{
+							"level": 5,
+							"chance": 79,
+							"cooldown": 1
+						},
+						{
+							"level": 6,
+							"chance": 82,
+							"cooldown": 1
+						},
+						{
+							"level": 7,
+							"chance": 86,
+							"cooldown": 1
+						},
+						{
+							"level": 8,
+							"chance": 89,
+							"cooldown": 1
+						},
+						{
+							"level": 9,
+							"chance": 93,
+							"cooldown": 1
+						},
+						{
+							"level": 10,
+							"chance": 96,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "phanhthaymavang",
+					"name": "Phanh Thây",
+					"appliesTo": "Giáp",
+					"description": "Đòn tấn công có tỉ lệ được tăng thêm lượng lớn sát thương gây ra.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Phanh thây",
+							"group": "Truyền thuyết",
+							"level": 6
+						}
+					],
+					"replaces": [
+						{
+							"name": "Phanh thây",
+							"group": "Truyền thuyết"
+						},
+						{
+							"name": "Chí mạng",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 45,
+							"cooldown": 3
+						},
+						{
+							"level": 2,
+							"chance": 48,
+							"cooldown": 3
+						},
+						{
+							"level": 3,
+							"chance": 51,
+							"cooldown": 3
+						},
+						{
+							"level": 4,
+							"chance": 54,
+							"cooldown": 3
+						},
+						{
+							"level": 5,
+							"chance": 57,
+							"cooldown": 3
+						},
+						{
+							"level": 6,
+							"chance": 60,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "thuphepmavang",
+					"name": "Thủ Phép",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công có tỉ lệ được giảm sát thương phải chịu đồng thời phản lại một phần sát thương cho đối thủ.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Thủ phép",
+							"group": "Truyền thuyết",
+							"level": 12
+						}
+					],
+					"replaces": [
+						{
+							"name": "Thủ phép",
+							"group": "Truyền thuyết"
+						},
+						{
+							"name": "Kìm hãm",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Bất Diệt Thánh Giáp"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 30,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 32,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 34,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 35,
+							"cooldown": 2
+						},
+						{
+							"level": 5,
+							"chance": 37,
+							"cooldown": 2
+						},
+						{
+							"level": 6,
+							"chance": 39,
+							"cooldown": 2
+						},
+						{
+							"level": 7,
+							"chance": 41,
+							"cooldown": 2
+						},
+						{
+							"level": 8,
+							"chance": 43,
+							"cooldown": 2
+						},
+						{
+							"level": 9,
+							"chance": 45,
+							"cooldown": 2
+						},
+						{
+							"level": 10,
+							"chance": 46,
+							"cooldown": 2
+						},
+						{
+							"level": 11,
+							"chance": 48,
+							"cooldown": 2
+						},
+						{
+							"level": 12,
+							"chance": 50,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "homenhmavang",
+					"name": "Hộ Mệnh",
+					"appliesTo": "Mũ",
+					"description": "Mỗi 2 giây có tỉ lệ được hồi lại máu và thức ăn.",
+					"passive": true,
+					"requires": [
+						{
+							"name": "Hộ mệnh",
+							"group": "Truyền thuyết",
+							"level": 6
+						}
+					],
+					"replaces": [
+						{
+							"name": "Hộ mệnh",
+							"group": "Truyền thuyết"
+						},
+						{
+							"name": "Ban phước",
+							"group": "Siêu cổ"
+						}
+					],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 50,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 50,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 70,
+							"cooldown": 1
+						},
+						{
+							"level": 4,
+							"chance": 80,
+							"cooldown": 1
+						},
+						{
+							"level": 5,
+							"chance": 80,
+							"cooldown": 1
+						},
+						{
+							"level": 6,
+							"chance": 80,
+							"cooldown": 1
+						}
+					]
+				},
+				{
+					"id": "caothumavang",
+					"name": "Cao Thủ",
+					"appliesTo": "Giáp",
+					"description": "Khi bị tấn công có tỉ lệ né đòn và tăng mạnh tốc chạy.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Cao thủ",
+							"group": "Truyền thuyết",
+							"level": 10
+						}
+					],
+					"replaces": [
+						{
+							"name": "Cao thủ",
+							"group": "Truyền thuyết"
+						},
+						{
+							"name": "Nhanh nhẹn",
+							"group": "Siêu cổ"
+						}
+					],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 20,
+							"cooldown": 4
+						},
+						{
+							"level": 2,
+							"chance": 25,
+							"cooldown": 4
+						},
+						{
+							"level": 3,
+							"chance": 30,
+							"cooldown": 4
+						},
+						{
+							"level": 4,
+							"chance": 35,
+							"cooldown": 4
+						},
+						{
+							"level": 5,
+							"chance": 40,
+							"cooldown": 4
+						},
+						{
+							"level": 6,
+							"chance": 45,
+							"cooldown": 4
+						},
+						{
+							"level": 7,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 8,
+							"chance": 55,
+							"cooldown": 3
+						},
+						{
+							"level": 9,
+							"chance": 60,
+							"cooldown": 3
+						},
+						{
+							"level": 10,
+							"chance": 80,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "thanhgiapmavang",
+					"name": "Thánh Giáp",
+					"appliesTo": "Giáp",
+					"description": "Nếu kẻ địch sử dụng kiếm khi bị tấn công có tỉ lệ được giảm lượng lớn sát thương phải chịu.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Thánh Giáp",
+							"group": "Truyền thuyết",
+							"level": 8
+						}
+					],
+					"replaces": [
+						{
+							"name": "Thánh Giáp",
+							"group": "Truyền thuyết"
+						},
+						{
+							"name": "Thiết giáp",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Bất Diệt Thánh Giáp"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 25,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 28,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 31,
+							"cooldown": 2
+						},
+						{
+							"level": 4,
+							"chance": 34,
+							"cooldown": 2
+						},
+						{
+							"level": 5,
+							"chance": 36,
+							"cooldown": 2
+						},
+						{
+							"level": 6,
+							"chance": 39,
+							"cooldown": 2
+						},
+						{
+							"level": 7,
+							"chance": 42,
+							"cooldown": 2
+						},
+						{
+							"level": 8,
+							"chance": 45,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "tuonggiomavang",
+					"name": "Tường Gió",
+					"appliesTo": "Quần",
+					"description": "Khi bị bắn có tỉ lệ chặn tất cả sát thương từ cung tên, kể cả các phù phép cường hóa. Đồng thời hồi lại cho bản thân một lượng máu lớn.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Tường gió",
+							"group": "Truyền thuyết",
+							"level": 10
+						}
+					],
+					"replaces": [
+						{
+							"name": "Tường lực",
+							"group": "Huyền thoại"
+						},
+						{
+							"name": "Tường gió",
+							"group": "Truyền thuyết"
+						},
+						{
+							"name": "Giáp chống đạn",
+							"group": "Siêu cổ"
+						}
+					],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 45,
+							"cooldown": 1
+						},
+						{
+							"level": 2,
+							"chance": 46,
+							"cooldown": 1
+						},
+						{
+							"level": 3,
+							"chance": 47,
+							"cooldown": 1
+						},
+						{
+							"level": 4,
+							"chance": 48,
+							"cooldown": 1
+						},
+						{
+							"level": 5,
+							"chance": 49,
+							"cooldown": 1
+						},
+						{
+							"level": 6,
+							"chance": 51,
+							"cooldown": 1
+						},
+						{
+							"level": 7,
+							"chance": 52,
+							"cooldown": 1
+						},
+						{
+							"level": 8,
+							"chance": 53,
+							"cooldown": 1
+						},
+						{
+							"level": 9,
+							"chance": 54,
+							"cooldown": 1
+						},
+						{
+							"level": 10,
+							"chance": 55,
+							"cooldown": 1
+						}
+					]
+				}
+			]
+		},
+		{
+			"id": "THACHDAU",
+			"slug": "thachdau",
+			"name": "Thách đấu",
+			"tier": 10,
+			"color": "#ff55ff",
+			"priceExp": null,
+			"dustChance": 100,
+			"randomLevelCap3": true,
+			"enchants": [
+				{
+					"id": "tuybattienquyen",
+					"name": "Túy bát tiên quyền",
+					"appliesTo": "Mũ",
+					"description": "Say mà không loạn, loạn mà hữu ý. Một quyền nghiêng trời, tám thức phá vạn pháp. Lĩnh ngộ võ học này để vĩnh viễn gia tăng sức tấn công.",
+					"passive": true,
+					"requires": [
+						{
+							"name": "Túy quyền",
+							"group": "Huyền thoại",
+							"level": 4
+						}
+					],
+					"replaces": [
+						{
+							"name": "Túy quyền",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Túy bát tiên quyền"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 2,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 3,
+							"chance": 100,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "thantoc",
+					"name": "Thần tốc",
+					"appliesTo": "Giày",
+					"description": "Thân ảnh như gió, bước chân tựa sấm. Nhất niệm vượt ngàn bước, thoắt ẩn thoắt hiện. Lĩnh ngộ để vĩnh viễn gia tăng tốc độ di chuyển.",
+					"passive": true,
+					"requires": [
+						{
+							"name": "Tăng tốc",
+							"group": "Huyền thoại",
+							"level": 4
+						}
+					],
+					"replaces": [
+						{
+							"name": "Tăng tốc",
+							"group": "Huyền thoại"
+						}
+					],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "hanhphuc",
+					"name": "Hạnh phúc",
+					"appliesTo": "Giáp",
+					"description": "Giữa hiểm nguy, một tia ấm áp vẫn luôn tồn tại. Khi chịu sát thương, có tỉ lệ được hồi phục lại một lượng máu nhất định. Lượng máu hồi phục tăng theo cấp độ phù phép.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Thiên nhiên",
+							"group": "Truyền thuyết",
+							"level": 3
+						}
+					],
+					"replaces": [
+						{
+							"name": "Thiên nhiên",
+							"group": "Truyền thuyết"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Thiên sứ",
+							"group": "Huyền thoại"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 35,
+							"cooldown": 2
+						},
+						{
+							"level": 2,
+							"chance": 55,
+							"cooldown": 2
+						},
+						{
+							"level": 3,
+							"chance": 80,
+							"cooldown": 2
+						}
+					]
+				},
+				{
+					"id": "codoc",
+					"name": "Cô Độc",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Cắt đứt mọi hơi ấm, dập tắt hy vọng hồi sinh. Khi kích hoạt, vô hiệu khả năng hồi máu từ Hạnh Phúc trong 3 giây.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 15,
+							"cooldown": 8
+						}
+					]
+				},
+				{
+					"id": "codoc2",
+					"name": "Cô Độc",
+					"appliesTo": "Rìu",
+					"description": "Cắt đứt mọi hơi ấm, dập tắt hy vọng hồi sinh. Khi kích hoạt, vô hiệu khả năng hồi máu từ Hạnh Phúc trong 4 giây.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 25,
+							"cooldown": 6
+						}
+					]
+				},
+				{
+					"id": "sieutrongluc",
+					"name": "Siêu trọng lực",
+					"appliesTo": "Giày",
+					"description": "Bẻ cong trọng lực, giải phóng giới hạn cơ thể. Khi mang trang bị có cường hóa này, vĩnh viễn nhận khả năng nhảy cao.",
+					"passive": true,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 2,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 3,
+							"chance": 100,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "thantaicup",
+					"name": "Kim Tệ",
+					"appliesTo": "Cúp",
+					"description": "Mỗi nhát cuốc đều ẩn chứa cơ hội phát tài. Khi khai thác, có tỉ lệ nhận thêm tiền thưởng từ khoáng sản đào được.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 4,
+							"cooldown": 0
+						},
+						{
+							"level": 2,
+							"chance": 8,
+							"cooldown": 0
+						},
+						{
+							"level": 3,
+							"chance": 12,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "thantaikiem",
+					"name": "Kim Tệ",
+					"appliesTo": "Kiếm",
+					"description": "Chiến thắng không chỉ mang lại vinh quang, mà còn mở đường cho tài lộc. Khi kết liễu người chơi, có tỉ lệ nhận thêm tiền thưởng.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 50,
+							"cooldown": 0
+						},
+						{
+							"level": 2,
+							"chance": 60,
+							"cooldown": 0
+						},
+						{
+							"level": 3,
+							"chance": 70,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "tuyquyen4",
+					"name": "Túy bát tiên quyền",
+					"appliesTo": "Mũ",
+					"description": "Say trong ý, loạn trong hình, sát trong quyền. Bát tiên nhập thế, mỗi thức đều mang uy lực kinh người. Tăng vĩnh viễn sức tấn công cực lớn khi mang trang bị có phù phép này.",
+					"passive": true,
+					"requires": [
+						{
+							"name": "Túy bát tiên quyền",
+							"level": 3
+						}
+					],
+					"replaces": [
+						{
+							"name": "Túy bát tiên quyền"
+						}
+					],
+					"excludes": [
+						{
+							"name": "Túy quyền",
+							"group": "Huyền thoại"
+						}
+					],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "tram",
+					"name": "Trảm",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Một đao đoạn mệnh, chiến tích lưu danh. Khi kết liễu người chơi khác, có tỉ lệ đoạt được đầu của kẻ bại trận.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 10,
+							"cooldown": 0
+						},
+						{
+							"level": 2,
+							"chance": 20,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "masoi",
+					"name": "MA SÓI",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Khi màn đêm buông xuống, dã tính bắt đầu thức tỉnh. Tấn công đối thủ có tỉ lệ khiến bản thân hóa sói, gia tăng sát thương cực mạnh trong thời gian ngắn.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 50,
+							"cooldown": 5
+						},
+						{
+							"level": 2,
+							"chance": 70,
+							"cooldown": 5
+						},
+						{
+							"level": 3,
+							"chance": 90,
+							"cooldown": 5
+						},
+						{
+							"level": 4,
+							"chance": 100,
+							"cooldown": 5
+						}
+					]
+				},
+				{
+					"id": "bonglanh",
+					"name": "Bỏng Lạnh",
+					"appliesTo": "Kiếm, Rìu, Cung",
+					"description": "Hàn khí thấu xương, đóng băng cả sinh mệnh. Đòn tấn công có tỉ lệ khiến đối thủ mắc Bỏng Lạnh, chịu sát thương chuẩn 8 lần, mỗi lần bằng 1% máu trong vòng 5 giây. Đồng thời gây Siêu Làm Chậm và Suy Yếu.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 14,
+							"cooldown": 8
+						},
+						{
+							"level": 2,
+							"chance": 18,
+							"cooldown": 6
+						},
+						{
+							"level": 3,
+							"chance": 24,
+							"cooldown": 5
+						},
+						{
+							"level": 4,
+							"chance": 30,
+							"cooldown": 4
+						}
+					]
+				},
+				{
+					"id": "thanghoa",
+					"name": "Thăng hoa",
+					"appliesTo": "Giày",
+					"description": "Khí tức lưu chuyển, thân pháp thoát khỏi mọi trói buộc. Khi kích hoạt, tạm thời miễn nhiễm với hiệu ứng Làm Chậm trong một khoảng thời gian.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 5
+						}
+					]
+				},
+				{
+					"id": "hodau",
+					"name": "Hổ Đấu",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Chiến ý bùng cháy, càng đánh càng trở nên hung mãnh. Khi tấn công có tỉ lệ tiến vào trạng thái Cuồng Nộ, miễn nhiễm hoàn toàn 1 đòn tấn công từ đối thủ. Đồng thời xóa bỏ toàn bộ hồi máu và máu ảo của mục tiêu. Đòn đánh kế tiếp gây sát thương chuẩn, xuyên qua mọi phòng thủ.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 15,
+							"cooldown": 8
+						},
+						{
+							"level": 2,
+							"chance": 25,
+							"cooldown": 6
+						},
+						{
+							"level": 3,
+							"chance": 35,
+							"cooldown": 5
+						},
+						{
+							"level": 4,
+							"chance": 50,
+							"cooldown": 4
+						}
+					]
+				},
+				{
+					"id": "ankhang",
+					"name": "An Khang",
+					"appliesTo": "Quần",
+					"description": "Phúc khí hộ thân, tai ương khó thể chạm tới. Khi bị tấn công có tỉ lệ kích hoạt An Khang, giúp bản thân miễn nhiễm sát thương trong một khoảng thời gian nhất định.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 35,
+							"cooldown": 12
+						},
+						{
+							"level": 2,
+							"chance": 45,
+							"cooldown": 12
+						},
+						{
+							"level": 3,
+							"chance": 55,
+							"cooldown": 11
+						},
+						{
+							"level": 4,
+							"chance": 65,
+							"cooldown": 11
+						},
+						{
+							"level": 5,
+							"chance": 100,
+							"cooldown": 10
+						}
+					]
+				},
+				{
+					"id": "buayeu",
+					"name": "Bùa Yêu",
+					"appliesTo": "Kiếm, Rìu, Cung",
+					"description": "Mị lực mê hồn, khiến ý chí đối thủ hoàn toàn tan rã. Đòn tấn công có tỉ lệ khiến kẻ địch rơi vào trạng thái Mê Hoặc, bị Bất Động trong một khoảng thời gian đồng thời chịu hiệu ứng Suy Yếu cực mạnh.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 22,
+							"cooldown": 5
+						},
+						{
+							"level": 2,
+							"chance": 22,
+							"cooldown": 5
+						}
+					]
+				},
+				{
+					"id": "vuotrong",
+					"name": "Vuốt Rồng",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Long trảo giáng xuống, xé toạc mọi phòng tuyến. Mỗi đòn chí mạng sẽ bộc phát thêm uy lực, gây một lượng sát thương cực lớn lên kẻ địch.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 5
+						},
+						{
+							"level": 2,
+							"chance": 100,
+							"cooldown": 5
+						},
+						{
+							"level": 3,
+							"chance": 100,
+							"cooldown": 5
+						}
+					]
+				},
+				{
+					"id": "vayrong",
+					"name": "Vảy Rồng",
+					"appliesTo": "Giáp",
+					"description": "Lấy công làm thủ, mượn lực trả lực. Khi bị tấn công có thể phản lại đòn đánh, khiến chính đối thủ phải gánh chịu sức mạnh của mình.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 5
+						},
+						{
+							"level": 2,
+							"chance": 100,
+							"cooldown": 5
+						},
+						{
+							"level": 3,
+							"chance": 100,
+							"cooldown": 5
+						}
+					]
+				},
+				{
+					"id": "longvuong",
+					"name": "Long Vương",
+					"appliesTo": "Giáp",
+					"description": "Long uy thức tỉnh, huyết khí cuộn trào. Khi bị tấn công có tỉ lệ nhận được máu ảo, đồng thời gia tăng sát thương và tốc độ di chuyển cho bản thân trong một khoảng thời gian.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 50,
+							"cooldown": 5
+						}
+					]
+				},
+				{
+					"id": "daquy",
+					"name": "Đá Quý",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Tinh hoa từ chiến lợi phẩm ngưng tụ thành bảo thạch. Khi kết liễu quái vật, có tỉ lệ nhận thêm Đá Quý từ chiến lợi phẩm.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 2,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 3,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 4,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 5,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 6,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 7,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 8,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 9,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 10,
+							"chance": 50,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "kimte",
+					"name": "Kim Tệ",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Tài lộc theo chiến tích, vàng bạc theo bước chân. Khi kết liễu quái vật, có tỉ lệ nhận thêm Kim Tệ từ chiến lợi phẩm.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 2,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 3,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 4,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 5,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 6,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 7,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 8,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 9,
+							"chance": 50,
+							"cooldown": 3
+						},
+						{
+							"level": 10,
+							"chance": 50,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "bacthaykienthuc",
+					"name": "Bậc Thầy Kiến Thức",
+					"appliesTo": "Kiếm, Rìu",
+					"description": "Mỗi level tăng thêm 100% EXP khi farm quái. Level I nhận x2 EXP, level X nhận x11 EXP. Áp dụng cả khi nhận EXP trực tiếp qua Kho.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 2,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 3,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 4,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 5,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 6,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 7,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 8,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 9,
+							"chance": 100,
+							"cooldown": 0
+						},
+						{
+							"level": 10,
+							"chance": 100,
+							"cooldown": 0
+						}
+					]
+				},
+				{
+					"id": "longan",
+					"name": "Long Ấn",
+					"appliesTo": "Kiếm",
+					"description": "Long ấn giáng thế, thiên lôi trấn áp tứ phương. Triệu hồi sấm sét khiến mục tiêu xung quanh bất động, đồng thời gây sát thương chuẩn, làm chậm và đánh bật kẻ địch khỏi vùng ảnh hưởng.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 10
+						}
+					]
+				},
+				{
+					"id": "chinhphat",
+					"name": "Chinh Phạt",
+					"appliesTo": "Cung",
+					"description": "Thiên hỏa giáng xuống, thiêu rụi mọi kẻ chống đối. Khi tấn công có tỉ lệ triệu hồi Hỏa Cầu Chinh Phạt, liên tiếp gây 3% sát thương chuẩn trong 3 lần.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 3
+						}
+					]
+				},
+				{
+					"id": "dukich",
+					"name": "Du kích",
+					"appliesTo": "Giáp",
+					"description": "Ẩn mình trong bóng tối, chớp thời cơ kết liễu mục tiêu. Khi bị tấn công, bản thân trở nên tàng hình và tăng tốc chạy, đồng thời hồi phục máu và cường hóa đòn đánh, giúp gây ra +20% sát thương trong thời gian hiệu lực.",
+					"passive": false,
+					"requires": [],
+					"replaces": [],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 100,
+							"cooldown": 7
+						},
+						{
+							"level": 2,
+							"chance": 100,
+							"cooldown": 7
+						},
+						{
+							"level": 3,
+							"chance": 100,
+							"cooldown": 6
+						}
+					]
+				},
+				{
+					"id": "luckyeventthachdau",
+					"name": "Lucky Event Looting",
+					"appliesTo": "Kiếm, Rìu, Cung",
+					"description": "Tăng 75% tỉ lệ rơi ra nguyên liệu khi farm quái tại các sự kiện.",
+					"passive": false,
+					"requires": [
+						{
+							"name": "Lucky Event Looting",
+							"group": "Truyền thuyết",
+							"level": 1
+						}
+					],
+					"replaces": [
+						{
+							"name": "Lucky Event Looting",
+							"group": "Truyền thuyết"
+						}
+					],
+					"excludes": [],
+					"levels": [
+						{
+							"level": 1,
+							"chance": 75,
+							"cooldown": 0
+						}
+					]
+				}
+			]
+		}
+	]
+}
