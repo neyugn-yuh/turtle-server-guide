@@ -1,7 +1,9 @@
 {
 	"lines": [
 		"Phổ thông",
-		"Ngũ hành",
+		"Ngũ hành · Tinh",
+		"Ngũ hành · Vương",
+		"Ngũ hành · Thần",
 		"Bá vương",
 		"Huyết linh",
 		"Huyết ma vương",
@@ -651,7 +653,7 @@
 			"id": "kimtinh",
 			"slug": "kimtinh",
 			"name": "Kim Tinh",
-			"line": "Ngũ hành",
+			"line": "Ngũ hành · Tinh",
 			"pieces": {
 				"helmet": [
 					"MU:MUKIMTINH"
@@ -695,7 +697,7 @@
 			"id": "moctinh",
 			"slug": "moctinh",
 			"name": "Mộc Tinh",
-			"line": "Ngũ hành",
+			"line": "Ngũ hành · Tinh",
 			"pieces": {
 				"helmet": [
 					"MU:MUMOCTINH"
@@ -739,7 +741,7 @@
 			"id": "thuytinh",
 			"slug": "thuytinh",
 			"name": "Thủy Tinh",
-			"line": "Ngũ hành",
+			"line": "Ngũ hành · Tinh",
 			"pieces": {
 				"helmet": [
 					"MU:MUTHUYTINH"
@@ -784,7 +786,7 @@
 			"id": "hoatinh",
 			"slug": "hoatinh",
 			"name": "Hỏa Tinh",
-			"line": "Ngũ hành",
+			"line": "Ngũ hành · Tinh",
 			"pieces": {
 				"helmet": [
 					"MU:MUHOATINH"
@@ -830,7 +832,7 @@
 			"id": "thotinh",
 			"slug": "thotinh",
 			"name": "Thổ Tinh",
-			"line": "Ngũ hành",
+			"line": "Ngũ hành · Tinh",
 			"pieces": {
 				"helmet": [
 					"MU:MUTHOTINH"
@@ -874,7 +876,7 @@
 			"id": "kimvuong",
 			"slug": "kimvuong",
 			"name": "Kim Vương",
-			"line": "Ngũ hành",
+			"line": "Ngũ hành · Vương",
 			"pieces": {
 				"helmet": [
 					"MU:MUKIMVUONG"
@@ -918,7 +920,7 @@
 			"id": "mocvuong",
 			"slug": "mocvuong",
 			"name": "Mộc Vương",
-			"line": "Ngũ hành",
+			"line": "Ngũ hành · Vương",
 			"pieces": {
 				"helmet": [
 					"MU:MUMOCVUONG"
@@ -962,7 +964,7 @@
 			"id": "thuyvuong",
 			"slug": "thuyvuong",
 			"name": "Thủy Vương",
-			"line": "Ngũ hành",
+			"line": "Ngũ hành · Vương",
 			"pieces": {
 				"helmet": [
 					"MU:MUTHUYVUONG"
@@ -1007,7 +1009,7 @@
 			"id": "hoavuong",
 			"slug": "hoavuong",
 			"name": "Hỏa Vương",
-			"line": "Ngũ hành",
+			"line": "Ngũ hành · Vương",
 			"pieces": {
 				"helmet": [
 					"MU:MUHOAVUONG"
@@ -1053,7 +1055,7 @@
 			"id": "thovuong",
 			"slug": "thovuong",
 			"name": "Thổ Vương",
-			"line": "Ngũ hành",
+			"line": "Ngũ hành · Vương",
 			"pieces": {
 				"helmet": [
 					"MU:MUTHOVUONG"
@@ -1097,7 +1099,7 @@
 			"id": "kimthan",
 			"slug": "kimthan",
 			"name": "Kim Thần",
-			"line": "Ngũ hành",
+			"line": "Ngũ hành · Thần",
 			"pieces": {
 				"helmet": [
 					"MU:MUKIMTHAN"
@@ -1141,7 +1143,7 @@
 			"id": "mocthan",
 			"slug": "mocthan",
 			"name": "Mộc Thần",
-			"line": "Ngũ hành",
+			"line": "Ngũ hành · Thần",
 			"pieces": {
 				"helmet": [
 					"MU:MUMOCTHAN"
@@ -1185,7 +1187,7 @@
 			"id": "thuythan",
 			"slug": "thuythan",
 			"name": "Thủy Thần",
-			"line": "Ngũ hành",
+			"line": "Ngũ hành · Thần",
 			"pieces": {
 				"helmet": [
 					"MU:MUTHUYTHAN"
@@ -1230,7 +1232,7 @@
 			"id": "hoathan",
 			"slug": "hoathan",
 			"name": "Hỏa Thần",
-			"line": "Ngũ hành",
+			"line": "Ngũ hành · Thần",
 			"pieces": {
 				"helmet": [
 					"MU:MUHOATHAN"
@@ -1276,7 +1278,7 @@
 			"id": "thothan",
 			"slug": "thothan",
 			"name": "Thổ Thần",
-			"line": "Ngũ hành",
+			"line": "Ngũ hành · Thần",
 			"pieces": {
 				"helmet": [
 					"MU:MUTHOTHAN"
