@@ -1,0 +1,3338 @@
+{
+	"materials": [
+		{
+			"id": "BINGOKHONGLO",
+			"name": "Bí Khổng Lồ",
+			"icon": "pumpkin",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Bí ngô",
+							"icon": "pumpkin",
+							"amount": 64
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Lưỡi Rìu Bóng Ma 1",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 2",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 3",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 4",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 5",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 6",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 7",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 8",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 9",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 1",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 2",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 3",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 4",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 5",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 6",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 7",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 8",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 1",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 2",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 3",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 4",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 5",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 6",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 7",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 8",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "BUIVANGPHEP",
+			"name": "Bụi Vàng Phép",
+			"icon": "glowstone_dust",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Vàng Thỏi Óng Ánh",
+							"icon": "gold_nugget",
+							"amount": 640
+						}
+					]
+				},
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Vàng Thỏi Óng Ánh",
+							"icon": "gold_nugget",
+							"amount": 640
+						}
+					]
+				}
+			],
+			"usedBy": [],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "DUAHAUKHONGLO",
+			"name": "Dưa Hấu Khổng Lồ",
+			"icon": "melon",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Dưa hấu",
+							"icon": "melon",
+							"amount": 100
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Rìu Huyền Kim 1",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 2",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 3",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 4",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 5",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 6",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 7",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 8",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 1",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 2",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 3",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 4",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 5",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 6",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 7",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 8",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "DACUONGHOA",
+			"name": "Đá Cường Hóa",
+			"icon": "bedrock",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "2 Cúp Tối Cao 2",
+					"kind": "item"
+				},
+				{
+					"name": "3 Cúp Tối Cao 3",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tối Cao",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tối Cao 2",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tối Cao 3",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Tối Cao",
+					"kind": "item"
+				},
+				{
+					"name": "Giáp Tối Cao",
+					"kind": "item"
+				},
+				{
+					"name": "Giày Tối Cao",
+					"kind": "item"
+				},
+				{
+					"name": "Hỏa Thần",
+					"kind": "item"
+				},
+				{
+					"name": "Hỏa Vương",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Tối Cao",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Tối Cao 2",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Tối Cao 3",
+					"kind": "item"
+				},
+				{
+					"name": "Kim Thần",
+					"kind": "item"
+				},
+				{
+					"name": "Kim Vương",
+					"kind": "item"
+				},
+				{
+					"name": "Mộc Thần",
+					"kind": "item"
+				},
+				{
+					"name": "Mộc Vương",
+					"kind": "item"
+				},
+				{
+					"name": "Mũ Tối Cao",
+					"kind": "item"
+				},
+				{
+					"name": "Quần Tối Cao",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Tối Cao",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Tối Cao 2",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Tối Cao 3",
+					"kind": "item"
+				},
+				{
+					"name": "Thổ Thần",
+					"kind": "item"
+				},
+				{
+					"name": "Thổ Vương",
+					"kind": "item"
+				},
+				{
+					"name": "Thủy Thần",
+					"kind": "item"
+				},
+				{
+					"name": "Thủy Vương",
+					"kind": "item"
+				},
+				{
+					"name": "Thượng Cổ",
+					"kind": "item"
+				},
+				{
+					"name": "Thượng Cổ 2",
+					"kind": "item"
+				},
+				{
+					"name": "Thượng Cổ 3",
+					"kind": "item"
+				},
+				{
+					"name": "Thượng Cổ 4",
+					"kind": "item"
+				},
+				{
+					"name": "Thượng Long",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "DANANGCAP",
+			"name": "Đá Nâng Cấp",
+			"icon": "nether_brick",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Mảnh Đá Nâng Cấp",
+							"icon": "nether_brick",
+							"amount": 256
+						}
+					]
+				},
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Mảnh Đá Nâng Cấp",
+							"icon": "nether_brick",
+							"amount": 256
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Cung Huyền Kim 7",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Của Quỷ Lửa 2",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tối Cao 2",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tối Cao 3",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Huyền Kim 10",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Huyền Kim 9",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Tối Cao 2",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Tối Cao 3",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Đao Mẻ Bóng Đêm 10",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Đao Mẻ Bóng Đêm 11",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 10",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 11",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 9",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Tối Cao 2",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Tối Cao 3",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Cung 2",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Cung 3",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Kiếm 10",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Kiếm 8",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Kiếm 9",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 10",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 9",
+					"kind": "item"
+				},
+				{
+					"name": "Thần Cung 6",
+					"kind": "item"
+				},
+				{
+					"name": "Thần Cung 7",
+					"kind": "item"
+				},
+				{
+					"name": "Thần Cung 8",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "DANANGCAPRIU",
+			"name": "Đá Nâng Cấp Rìu",
+			"icon": "iron_nugget",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Rìu May Mắn 10",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 11",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 12",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 13",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 14",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 15",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 16",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 17",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 18",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 19",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 2",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 20",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 21",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 22",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 23",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 24",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 25",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 26",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 27",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 28",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 29",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 3",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 30",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 31",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 32",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 33",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 34",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 35",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 36",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 37",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 38",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 39",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 4",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 40",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 41",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 42",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 43",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 44",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 45",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 46",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 47",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 48",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 49",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 5",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 50",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 6",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 7",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 8",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 9",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "DATHANTAI",
+			"name": "Đá Thần Tài",
+			"icon": "gold_nugget",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Rìu May Mắn 16",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 17",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 18",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 19",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu May Mắn 20",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "DAURONG",
+			"name": "Đầu Rồng",
+			"icon": "dragon_head",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Thượng Long",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "GOBACHDUONGKHONGLO",
+			"name": "Gỗ Bạch Dương Khổng Lồ",
+			"icon": "oak_log",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Gỗ bạch dương",
+							"icon": "birch_log",
+							"amount": 640
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Rìu Huyền Kim 4",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 5",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 6",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 4",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 5",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 6",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 7",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 8",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "GOSOIKHONGLO",
+			"name": "Gỗ Sồi Khổng Lồ",
+			"icon": "oak_log",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Gỗ sồi",
+							"icon": "oak_log",
+							"amount": 640
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Cúp Cổ Xưa",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 1",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 2",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 3",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 1",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 2",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 3",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "GOVANSAMKHONGLO",
+			"name": "Gỗ Vân Sam Khổng Lồ",
+			"icon": "oak_log",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Gỗ vân sam",
+							"icon": "spruce_log",
+							"amount": 640
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Rìu Huyền Kim 7",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 8",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "KESACHMATMA",
+			"name": "Kệ Sách Mật Mã",
+			"icon": "bookshelf",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Kệ sách",
+							"icon": "bookshelf",
+							"amount": 100
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Thánh Rìu 2",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 3",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 4",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 5",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 6",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 7",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 8",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "KHOIKIMCUONGKHONGLO",
+			"name": "Khối Kim Cương Khổng Lồ",
+			"icon": "diamond_block",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Khối Kim Cương",
+							"icon": "diamond_block",
+							"amount": 8
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Áo Huyền Thoại",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Huyền Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Của Quỷ Lửa",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Cổ Xưa 2",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Cổ Xưa 3",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Huyền Thoại 2",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Huyền Thoại 3",
+					"kind": "item"
+				},
+				{
+					"name": "Giầy Huyền Thoại",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Cổ Xưa 1",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Huyền Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Đao Mẻ Bóng Đêm",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 1",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 2",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 3",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 4",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 5",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 6",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 7",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 8",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 9",
+					"kind": "item"
+				},
+				{
+					"name": "Mũ Huyền Thoại",
+					"kind": "item"
+				},
+				{
+					"name": "Quần Huyền Thoại",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 8",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 9",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 1",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 2",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 3",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 4",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 5",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 6",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 7",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 8",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 1",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 2",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 3",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 4",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 5",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 6",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 7",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 8",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "KHOILUCBAOKHONGLO",
+			"name": "Khối Lục Bảo Khổng Lồ",
+			"icon": "emerald_block",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Khối Ngọc Lục Bảo",
+							"icon": "emerald_block",
+							"amount": 8
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Áo Huyền Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Huyền Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Huyền Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Huyền Thoại",
+					"kind": "item"
+				},
+				{
+					"name": "Giày Huyền Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Huyền Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 1",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 2",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 3",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 4",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 5",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 6",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 7",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 8",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 9",
+					"kind": "item"
+				},
+				{
+					"name": "Mũ Huyền Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Quần Huyền Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 1",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 2",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 3",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 4",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 5",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 6",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 7",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 8",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 1",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 2",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 3",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 4",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 5",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 6",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 7",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 8",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "KHOISATKHONGLO",
+			"name": "Khối Sắt Khổng Lồ",
+			"icon": "iron_block",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Khối Sắt",
+							"icon": "iron_block",
+							"amount": 8
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Cung Tên Chiến Tranh 5",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Cổ Xưa 2",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Cổ Xưa 3",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Huyền Thoại 2",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Huyền Thoại 3",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Ma Hải Tặc 3",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Cổ Xưa 1",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 1",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 2",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 3",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 4",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 5",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 6",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 7",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 8",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 9",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 8",
+					"kind": "item"
+				},
+				{
+					"name": "Song Sắt I",
+					"kind": "material"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "KHOITHANKHONGLO",
+			"name": "Khối Than Khổng Lồ",
+			"icon": "coal_block",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Khối Than",
+							"icon": "coal_block",
+							"amount": 8
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Cung Tên Chiến Tranh 5",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Huyền Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 1",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 2",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 3",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 4",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 5",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 6",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 7",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 8",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 9",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 1",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 2",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 3",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 4",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 5",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 6",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 7",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 8",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 9",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "KHOIVANGKHONGLO",
+			"name": "Khối Vàng Khổng Lồ",
+			"icon": "gold_block",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Khối Vàng",
+							"icon": "gold_block",
+							"amount": 8
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Áo Huyền Thoại",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Chiến Tranh 1",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Chiến Tranh 5",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Của Quỷ Lửa",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Cổ Xưa 2",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Cổ Xưa 3",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Huyền Thoại 2",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Huyền Thoại 3",
+					"kind": "item"
+				},
+				{
+					"name": "Giầy Huyền Thoại",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Cổ Xưa 1",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Đao Mẻ Bóng Đêm",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 1",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 2",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 3",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 4",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 5",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 6",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 7",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 8",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 9",
+					"kind": "item"
+				},
+				{
+					"name": "Mũ Huyền Thoại",
+					"kind": "item"
+				},
+				{
+					"name": "Quần Huyền Thoại",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 1",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 2",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 3",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 4",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 5",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 6",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 7",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Cổ Xưa 9",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "KIENROMKHONGLO",
+			"name": "Kiện Rơm Khổng Lồ",
+			"icon": "hay_block",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Bó cỏ khô",
+							"icon": "hay_block",
+							"amount": 100
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Lưỡi Rìu Bóng Ma 1",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 2",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 3",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 4",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 5",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 6",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 7",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 8",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma 9",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 1",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 2",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 3",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 4",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 5",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 6",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 7",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim 8",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 1",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 2",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 3",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 4",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 5",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 6",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 7",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Rìu 8",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "KIMCUONGDUC",
+			"name": "Kim Cương Đúc",
+			"icon": "diamond",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Nấm Ma Hải Tặc",
+							"icon": "red_mushroom",
+							"amount": 32
+						},
+						{
+							"name": "Kim cương",
+							"icon": "diamond",
+							"amount": 64
+						}
+					]
+				},
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Nấm Ma Hải Tặc",
+							"icon": "red_mushroom",
+							"amount": 32
+						},
+						{
+							"name": "Kim cương",
+							"icon": "diamond",
+							"amount": 64
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Áo Huyền Thoại",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Huyền Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Huyền Kim 1",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Huyền Kim 2",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Huyền Kim 3",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Huyền Kim 4",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Huyền Kim 5",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Huyền Kim 6",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Huyền Kim 7",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Chiến Tranh 1",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Chiến Tranh 2",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Chiến Tranh 3",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Chiến Tranh 4",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Chiến Tranh 6",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Chiến Tranh 7",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Chiến Tranh 8",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Của Quỷ Lửa",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Của Quỷ Lửa 2",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Của Vua Quỷ Lửa 1",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Của Vua Quỷ Lửa 2",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Của Vua Quỷ Lửa 3",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Của Vua Quỷ Lửa 4",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Của Vua Quỷ Lửa 5",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Của Vua Quỷ Lửa 6",
+					"kind": "item"
+				},
+				{
+					"name": "Cung Tên Của Vua Quỷ Lửa 7",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Huyền Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Cúp Huyền Thoại",
+					"kind": "item"
+				},
+				{
+					"name": "Giầy Huyền Thoại",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Cổ Xưa 2",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Cổ Xưa 3",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Cổ Xưa 4",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Cổ Xưa 5",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Cổ Xưa 6",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Cổ Xưa 7",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Cổ Xưa 8",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Cổ Xưa 9",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Huyền Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Huyền Kim 1",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Huyền Kim 10",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Huyền Kim 2",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Huyền Kim 3",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Huyền Kim 4",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Huyền Kim 5",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Huyền Kim 6",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Huyền Kim 7",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Huyền Kim 8",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Huyền Kim 9",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Đao Mẻ Bóng Đêm",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Đao Mẻ Bóng Đêm 1",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Đao Mẻ Bóng Đêm 10",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Đao Mẻ Bóng Đêm 11",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Đao Mẻ Bóng Đêm 2",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Đao Mẻ Bóng Đêm 3",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Đao Mẻ Bóng Đêm 4",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Đao Mẻ Bóng Đêm 5",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Đao Mẻ Bóng Đêm 6",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Đao Mẻ Bóng Đêm 7",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Đao Mẻ Bóng Đêm 8",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Đao Mẻ Bóng Đêm 9",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Rìu Bóng Ma",
+					"kind": "item"
+				},
+				{
+					"name": "Mũ Huyền Thoại",
+					"kind": "item"
+				},
+				{
+					"name": "Quần Huyền Thoại",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Cung 2",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Cung 3",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Kiếm 1",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Kiếm 10",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Kiếm 2",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Kiếm 3",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Kiếm 4",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Kiếm 5",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Kiếm 6",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Kiếm 7",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Kiếm 8",
+					"kind": "item"
+				},
+				{
+					"name": "Thánh Kiếm 9",
+					"kind": "item"
+				},
+				{
+					"name": "Thần Cung 1",
+					"kind": "item"
+				},
+				{
+					"name": "Thần Cung 2",
+					"kind": "item"
+				},
+				{
+					"name": "Thần Cung 3",
+					"kind": "item"
+				},
+				{
+					"name": "Thần Cung 4",
+					"kind": "item"
+				},
+				{
+					"name": "Thần Cung 5",
+					"kind": "item"
+				},
+				{
+					"name": "Thần Cung 6",
+					"kind": "item"
+				},
+				{
+					"name": "Thần Cung 7",
+					"kind": "item"
+				},
+				{
+					"name": "Thần Cung 8",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "LINHHONBANGGIA",
+			"name": "Linh Hồn Băng Giá",
+			"icon": "heart_of_the_sea",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Khiên Băng Giá",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Băng Giá 2",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Băng Giá 3",
+					"kind": "item"
+				}
+			],
+			"drops": [
+				{
+					"dungeon": 6,
+					"mob": "Arcturus",
+					"boss": true,
+					"via": "killer",
+					"min": 2,
+					"max": 2,
+					"chance": 50
+				}
+			],
+			"chests": [
+				{
+					"chest": "bossdungeon6",
+					"name": "Rương Quà Boss Dungeon 6",
+					"kind": "boss",
+					"min": 2,
+					"max": 2,
+					"chance": 8
+				}
+			]
+		},
+		{
+			"id": "MANHDANANGCAP",
+			"name": "Mảnh Đá Nâng Cấp",
+			"icon": "nether_brick",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Đá Nâng Cấp",
+					"kind": "material"
+				},
+				{
+					"name": "Kiếm Cổ Xưa 9",
+					"kind": "item"
+				}
+			],
+			"drops": [
+				{
+					"dungeon": 4,
+					"mob": "Quân Chết Chóc",
+					"boss": false,
+					"via": "drop",
+					"min": 1,
+					"max": 1,
+					"chance": 100
+				},
+				{
+					"dungeon": 4,
+					"mob": "Bộ Xương Kiếm Sỹ",
+					"boss": false,
+					"via": "drop",
+					"min": 5,
+					"max": 5,
+					"chance": 100
+				},
+				{
+					"dungeon": 4,
+					"mob": "Jack",
+					"boss": true,
+					"via": "nearby",
+					"min": 128,
+					"max": 128,
+					"chance": 100
+				},
+				{
+					"dungeon": 4,
+					"mob": "Jackson",
+					"boss": true,
+					"via": "nearby",
+					"min": 128,
+					"max": 128,
+					"chance": 100
+				},
+				{
+					"dungeon": 5,
+					"mob": "Rồng Không Gian",
+					"boss": true,
+					"via": "nearby",
+					"min": 192,
+					"max": 192,
+					"chance": 100
+				},
+				{
+					"dungeon": 6,
+					"mob": "Arcturus",
+					"boss": true,
+					"via": "nearby",
+					"min": 256,
+					"max": 256,
+					"chance": 100
+				}
+			],
+			"chests": []
+		},
+		{
+			"id": "MANHKHIENBANGGIA",
+			"name": "Mảnh Khiên Băng Giá",
+			"icon": "prismarine_shard",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "X1280 Mảnh Khiên Băng Giá",
+					"kind": "material"
+				}
+			],
+			"drops": [
+				{
+					"dungeon": 6,
+					"mob": "Chiến Binh Băng Cổ Đại",
+					"boss": false,
+					"via": "drop",
+					"min": 1,
+					"max": 1,
+					"chance": 3
+				},
+				{
+					"dungeon": 6,
+					"mob": "Giám Ngục Hàn Băng",
+					"boss": false,
+					"via": "drop",
+					"min": 1,
+					"max": 1,
+					"chance": 5
+				},
+				{
+					"dungeon": 6,
+					"mob": "Hộ Pháp Băng Giá",
+					"boss": false,
+					"via": "drop",
+					"min": 1,
+					"max": 1,
+					"chance": 8
+				}
+			],
+			"chests": []
+		},
+		{
+			"id": "MANHKHIENDIANGUC",
+			"name": "Mảnh Khiên Địa Ngục",
+			"icon": "prismarine_crystals",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Khiên Địa Ngục",
+					"kind": "item"
+				},
+				{
+					"name": "X1280 Mảnh Khiên Địa Ngục",
+					"kind": "material"
+				}
+			],
+			"drops": [
+				{
+					"dungeon": 4,
+					"mob": "Quân Chết Chóc",
+					"boss": false,
+					"via": "drop",
+					"min": 1,
+					"max": 1,
+					"chance": 5
+				},
+				{
+					"dungeon": 4,
+					"mob": "Bộ Xương Kiếm Sỹ",
+					"boss": false,
+					"via": "drop",
+					"min": 1,
+					"max": 1,
+					"chance": 30
+				}
+			],
+			"chests": []
+		},
+		{
+			"id": "MANHKHIENPHUTHUYDEN",
+			"name": "Mảnh Khiên Phù Thủy",
+			"icon": "prismarine_crystals",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Khiên Phù Thủy Đen",
+					"kind": "item"
+				},
+				{
+					"name": "X640 Mảnh Khiên Phù Thủy",
+					"kind": "material"
+				}
+			],
+			"drops": [
+				{
+					"dungeon": 3,
+					"mob": "Phù Thủy Đen",
+					"boss": false,
+					"via": "drop",
+					"min": 1,
+					"max": 1,
+					"chance": 5
+				}
+			],
+			"chests": []
+		},
+		{
+			"id": "MANHKHIENTHIENHA",
+			"name": "Mảnh Khiên Thiên Hà",
+			"icon": "prismarine_crystals",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Khiên Thiên Hà",
+					"kind": "item"
+				},
+				{
+					"name": "X1280 Mảnh Khiên Thiên Hà",
+					"kind": "material"
+				}
+			],
+			"drops": [
+				{
+					"dungeon": 5,
+					"mob": "Ender Chúa",
+					"boss": false,
+					"via": "drop",
+					"min": 1,
+					"max": 1,
+					"chance": 3
+				},
+				{
+					"dungeon": 5,
+					"mob": "Ender Con",
+					"boss": false,
+					"via": "drop",
+					"min": 1,
+					"max": 1,
+					"chance": 5
+				}
+			],
+			"chests": []
+		},
+		{
+			"id": "MANHKHIENYEUTINH",
+			"name": "Mảnh Khiên Yêu Tinh",
+			"icon": "prismarine_crystals",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Khiên Nhện Yêu Tinh",
+					"kind": "item"
+				},
+				{
+					"name": "X256 Mảnh Khiên Yêu Tinh",
+					"kind": "material"
+				}
+			],
+			"drops": [
+				{
+					"dungeon": 2,
+					"mob": "Nhện Yêu Tinh",
+					"boss": false,
+					"via": "drop",
+					"min": 1,
+					"max": 1,
+					"chance": 30
+				},
+				{
+					"dungeon": 2,
+					"mob": "Nhện Yêu Tinh",
+					"boss": true,
+					"via": "nearby",
+					"min": 16,
+					"max": 16,
+					"chance": 100
+				},
+				{
+					"dungeon": 2,
+					"mob": "Nhện Yêu Tinh",
+					"boss": true,
+					"via": "nearby",
+					"min": 32,
+					"max": 32,
+					"chance": 100
+				}
+			],
+			"chests": []
+		},
+		{
+			"id": "MATNHENYEUTINH",
+			"name": "Mắt Nhện Yêu Tinh",
+			"icon": "spider_eye",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Cung Tên Của Quỷ Lửa",
+					"kind": "item"
+				},
+				{
+					"name": "Lưỡi Đao Mẻ Bóng Đêm",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim",
+					"kind": "item"
+				}
+			],
+			"drops": [
+				{
+					"dungeon": 2,
+					"mob": "Nhện Yêu Tinh",
+					"boss": false,
+					"via": "drop",
+					"min": 1,
+					"max": 1,
+					"chance": 50
+				},
+				{
+					"dungeon": 2,
+					"mob": "Nhện Yêu Tinh",
+					"boss": true,
+					"via": "nearby",
+					"min": 64,
+					"max": 64,
+					"chance": 100
+				}
+			],
+			"chests": []
+		},
+		{
+			"id": "NAMMAHAITAC",
+			"name": "Nấm Ma Hải Tặc",
+			"icon": "red_mushroom",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Cung Tên Chiến Tranh",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Ma Hải Tặc",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Cổ Xưa",
+					"kind": "item"
+				},
+				{
+					"name": "Kiếm Cổ Xưa 1",
+					"kind": "item"
+				},
+				{
+					"name": "Kim Cương Đúc",
+					"kind": "material"
+				},
+				{
+					"name": "Rìu Cổ Xưa",
+					"kind": "item"
+				},
+				{
+					"name": "X640 Nấm Ma Hải Tặc",
+					"kind": "material"
+				}
+			],
+			"drops": [
+				{
+					"dungeon": 1,
+					"mob": "Ma Hải Tặc",
+					"boss": false,
+					"via": "drop",
+					"min": 1,
+					"max": 1,
+					"chance": 100
+				},
+				{
+					"dungeon": 1,
+					"mob": "Ma Hải Tặc",
+					"boss": true,
+					"via": "killer",
+					"min": 128,
+					"max": 128,
+					"chance": 100
+				},
+				{
+					"dungeon": 1,
+					"mob": "Ma Hải Tặc",
+					"boss": true,
+					"via": "nearby",
+					"min": 128,
+					"max": 128,
+					"chance": 100
+				},
+				{
+					"dungeon": 1,
+					"mob": "Ma Hải Tặc",
+					"boss": true,
+					"via": "nearby",
+					"min": 64,
+					"max": 64,
+					"chance": 100
+				}
+			],
+			"chests": []
+		},
+		{
+			"id": "NGOCRONG1SAO",
+			"name": "Ngọc Rồng 1",
+			"icon": "player_head",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Ngọc Rồng 2",
+							"icon": "player_head",
+							"amount": 7
+						}
+					]
+				}
+			],
+			"usedBy": [],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "NGOCRONG2SAO",
+			"name": "Ngọc Rồng 2",
+			"icon": "player_head",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Ngọc Rồng 3",
+							"icon": "player_head",
+							"amount": 7
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Ngọc Rồng 1",
+					"kind": "material"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "NGOCRONG3SAO",
+			"name": "Ngọc Rồng 3",
+			"icon": "player_head",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Ngọc Rồng 4",
+							"icon": "player_head",
+							"amount": 7
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Ngọc Rồng 2",
+					"kind": "material"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "NGOCRONG4SAO",
+			"name": "Ngọc Rồng 4",
+			"icon": "player_head",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Ngọc Rồng 5",
+							"icon": "player_head",
+							"amount": 7
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Ngọc Rồng 3",
+					"kind": "material"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "NGOCRONG5SAO",
+			"name": "Ngọc Rồng 5",
+			"icon": "player_head",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Ngọc Rồng 6",
+							"icon": "player_head",
+							"amount": 7
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Ngọc Rồng 4",
+					"kind": "material"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "NGOCRONG6SAO",
+			"name": "Ngọc Rồng 6",
+			"icon": "player_head",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Ngọc Rồng 7",
+							"icon": "player_head",
+							"amount": 7
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Ngọc Rồng 5",
+					"kind": "material"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "NGOCRONG7SAO",
+			"name": "Ngọc Rồng 7",
+			"icon": "player_head",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Ngọc Rồng 6",
+					"kind": "material"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "NGOCRONGHOANGKIM",
+			"name": "Ngọc Rồng Hoàng Kim",
+			"icon": "glowstone_dust",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Khiên Rồng Hoàng Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Rồng Hoàng Kim 2",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Rồng Hoàng Kim 3",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "NGUYETHON",
+			"name": "Nguyệt Hồn",
+			"icon": "ghast_tear",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Nguyệt Quang 1",
+					"kind": "item"
+				},
+				{
+					"name": "Nguyệt Quang 10",
+					"kind": "item"
+				},
+				{
+					"name": "Nguyệt Quang 11",
+					"kind": "item"
+				},
+				{
+					"name": "Nguyệt Quang 2",
+					"kind": "item"
+				},
+				{
+					"name": "Nguyệt Quang 3",
+					"kind": "item"
+				},
+				{
+					"name": "Nguyệt Quang 4",
+					"kind": "item"
+				},
+				{
+					"name": "Nguyệt Quang 5",
+					"kind": "item"
+				},
+				{
+					"name": "Nguyệt Quang 6",
+					"kind": "item"
+				},
+				{
+					"name": "Nguyệt Quang 7",
+					"kind": "item"
+				},
+				{
+					"name": "Nguyệt Quang 8",
+					"kind": "item"
+				},
+				{
+					"name": "Nguyệt Quang 9",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "NGUYETTHACH",
+			"name": "Nguyệt Thạch",
+			"icon": "amethyst_shard",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Nguyệt Đế 2",
+					"kind": "item"
+				},
+				{
+					"name": "Nguyệt Đế 3",
+					"kind": "item"
+				},
+				{
+					"name": "Nguyệt Quang 10",
+					"kind": "item"
+				},
+				{
+					"name": "Nguyệt Quang 11",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "SONGSAT1",
+			"name": "Song Sắt I",
+			"icon": "iron_bars",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Khối Sắt Khổng Lồ",
+							"icon": "iron_block",
+							"amount": 64
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Song Sắt II",
+					"kind": "material"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "SONGSAT2",
+			"name": "Song Sắt II",
+			"icon": "iron_bars",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Song Sắt I",
+							"icon": "iron_bars",
+							"amount": 8
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Song Sắt III",
+					"kind": "material"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "SONGSAT3",
+			"name": "Song Sắt III",
+			"icon": "iron_bars",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Song Sắt II",
+							"icon": "iron_bars",
+							"amount": 8
+						}
+					]
+				}
+			],
+			"usedBy": [],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "VANGTHOIONGANH",
+			"name": "Vàng Thỏi Óng Ánh",
+			"icon": "gold_nugget",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Áo Huyền Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Bụi Vàng Phép",
+					"kind": "material"
+				},
+				{
+					"name": "Giày Huyền Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Mũ Huyền Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Quần Huyền Kim",
+					"kind": "item"
+				},
+				{
+					"name": "Rìu Huyền Kim",
+					"kind": "item"
+				}
+			],
+			"drops": [
+				{
+					"dungeon": 3,
+					"mob": "Phù Thủy Đen",
+					"boss": false,
+					"via": "drop",
+					"min": 1,
+					"max": 1,
+					"chance": 50
+				},
+				{
+					"dungeon": 3,
+					"mob": "Phù Thủy Đen",
+					"boss": true,
+					"via": "nearby",
+					"min": 128,
+					"max": 128,
+					"chance": 100
+				},
+				{
+					"dungeon": 3,
+					"mob": "Phù Thủy Đen",
+					"boss": true,
+					"via": "nearby",
+					"min": 64,
+					"max": 64,
+					"chance": 100
+				}
+			],
+			"chests": []
+		},
+		{
+			"id": "MANHKHIENBANGGIA1280",
+			"name": "x1280 Mảnh Khiên Băng Giá",
+			"icon": "prismarine_shard",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Mảnh Khiên Băng Giá",
+							"icon": "prismarine_shard",
+							"amount": 1280
+						}
+					]
+				},
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Mảnh Khiên Băng Giá",
+							"icon": "prismarine_shard",
+							"amount": 1280
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Khiên Băng Giá",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Băng Giá 2",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Băng Giá 3",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "MANHKHIENDIANGUC1280",
+			"name": "x1280 Mảnh Khiên Địa Ngục",
+			"icon": "prismarine_crystals",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Mảnh Khiên Địa Ngục",
+							"icon": "prismarine_crystals",
+							"amount": 1280
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Khiên Địa Ngục 2",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Địa Ngục 3",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "MANHKHIENTHIENHA1280",
+			"name": "x1280 Mảnh Khiên Thiên Hà",
+			"icon": "prismarine_crystals",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Mảnh Khiên Thiên Hà",
+							"icon": "prismarine_crystals",
+							"amount": 1280
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Khiên Thiên Hà 2",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Thiên Hà 3",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "MANHKHIENYEUTINH256",
+			"name": "x256 Mảnh Khiên Yêu Tinh",
+			"icon": "prismarine_crystals",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Mảnh Khiên Yêu Tinh",
+							"icon": "prismarine_crystals",
+							"amount": 256
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Khiên Nhện Yêu Tinh 2",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Nhện Yêu Tinh 3",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "MANHKHIENPHUTHUYDEN640",
+			"name": "x640 Mảnh Khiên Phù Thủy",
+			"icon": "prismarine_crystals",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Mảnh Khiên Phù Thủy",
+							"icon": "prismarine_crystals",
+							"amount": 640
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Khiên Phù Thủy Đen 2",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Phù Thủy Đen 3",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "NAMMAHAITAC640",
+			"name": "x640 Nấm Ma Hải Tặc",
+			"icon": "red_mushroom",
+			"recipes": [
+				{
+					"chance": 100,
+					"amount": 1,
+					"money": null,
+					"xu": null,
+					"needs": [
+						{
+							"name": "Nấm Ma Hải Tặc",
+							"icon": "red_mushroom",
+							"amount": 640
+						}
+					]
+				}
+			],
+			"usedBy": [
+				{
+					"name": "Khiên Ma Hải Tặc 2",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Ma Hải Tặc 3",
+					"kind": "item"
+				}
+			],
+			"drops": [],
+			"chests": []
+		},
+		{
+			"id": "XUONGDIANGUC",
+			"name": "Xương Địa Ngục",
+			"icon": "bone",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Khiên Địa Ngục",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Địa Ngục 2",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Địa Ngục 3",
+					"kind": "item"
+				}
+			],
+			"drops": [
+				{
+					"dungeon": 4,
+					"mob": "Jack",
+					"boss": true,
+					"via": "killer",
+					"min": 1,
+					"max": 1,
+					"chance": 50
+				},
+				{
+					"dungeon": 4,
+					"mob": "Jackson",
+					"boss": true,
+					"via": "killer",
+					"min": 1,
+					"max": 1,
+					"chance": 50
+				}
+			],
+			"chests": []
+		},
+		{
+			"id": "XUONGNHENYEUTINH",
+			"name": "Xương Nhện Yêu Tinh",
+			"icon": "bone",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Khiên Nhện Yêu Tinh",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Nhện Yêu Tinh 2",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Nhện Yêu Tinh 3",
+					"kind": "item"
+				}
+			],
+			"drops": [
+				{
+					"dungeon": 2,
+					"mob": "Nhện Yêu Tinh",
+					"boss": true,
+					"via": "killer",
+					"min": 1,
+					"max": 1,
+					"chance": 20
+				}
+			],
+			"chests": []
+		},
+		{
+			"id": "XUONGPHUTHUYDEN",
+			"name": "Xương Phù Thủy Đen",
+			"icon": "bone",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Khiên Nhện Yêu Tinh",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Phù Thủy Đen",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Phù Thủy Đen 2",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Phù Thủy Đen 3",
+					"kind": "item"
+				}
+			],
+			"drops": [
+				{
+					"dungeon": 3,
+					"mob": "Phù Thủy Đen",
+					"boss": true,
+					"via": "killer",
+					"min": 1,
+					"max": 1,
+					"chance": 20
+				}
+			],
+			"chests": []
+		},
+		{
+			"id": "XUONGRONGKHONGGIAN",
+			"name": "Xương Rồng Không Gian",
+			"icon": "bone",
+			"recipes": [],
+			"usedBy": [
+				{
+					"name": "Khiên Thiên Hà",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Thiên Hà 2",
+					"kind": "item"
+				},
+				{
+					"name": "Khiên Thiên Hà 3",
+					"kind": "item"
+				}
+			],
+			"drops": [
+				{
+					"dungeon": 5,
+					"mob": "Rồng Không Gian",
+					"boss": true,
+					"via": "killer",
+					"min": 2,
+					"max": 2,
+					"chance": 50
+				}
+			],
+			"chests": []
+		}
+	]
+}

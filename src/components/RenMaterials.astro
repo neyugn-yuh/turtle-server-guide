@@ -1,0 +1,172 @@
+---
+/**
+ * Crafting materials of Sky Rèn, built from src/data/servers/<server>/ren-materials.json
+ * (written by scripts/sync-ren.mjs from the /ecraft recipes, the dungeon mobs and the reward chests).
+ * One closed card per material: how to get it (craft, drops, chests) and what it is used for.
+ * A part with nothing in the config is left out, never filled in. Pictures: public/minions/<material>.png.
+ */
+interface Props {
+	server: string;
+}
+
+const { server } = Astro.props;
+const files = import.meta.glob('../data/servers/*/ren-materials.json', { eager: true, import: 'default' }) as Record<string, any>;
+const data = files[`../data/servers/${server}/ren-materials.json`];
+if (!data) throw new Error(`RenMaterials: no ren-materials.json for server "${server}", run node scripts/sync-ren.mjs`);
+
+const materials: any[] = data.materials;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const iconUrl = (icon: string | null) => (icon ? `${base}/minions/${icon}.png` : '');
+const num = (x: number) => x.toLocaleString('vi-VN', { maximumFractionDigits: 3 });
+const range = (min: number, max: number) => (min === max ? num(min) : `${num(min)}–${num(max)}`);
+const anchor = (id: string) => id.toLowerCase();
+const idByName = new Map(materials.map((m: any) => [m.name, m.id]));
+const SHOW_USES = 12;
+
+const recipeText = (r: any) => {
+	const cost = [r.money ? `${num(r.money)} Tiền` : null, r.xu ? `${num(r.xu)} Xu` : null].filter(Boolean);
+	const odds = r.chance < 100 ? `tỉ lệ thành công ${num(r.chance)}%` : null;
+	return { needs: r.needs, result: r.amount, extra: [...cost, odds].filter(Boolean).join(' · ') };
+};
+const dropText = (d: any) => {
+	const amount = range(d.min, d.max);
+	const how = d.via === 'killer' ? `thưởng ${amount} cho người kết liễu` : d.via === 'nearby' ? `thưởng ${amount} cho người đứng gần` : `rơi ${amount}`;
+	return { place: `Dungeon ${d.dungeon}`, who: `${d.mob}${d.boss ? ' (boss)' : ''}`, how, chance: num(d.chance) };
+};
+---
+
+<div class="rm not-content">
+	<p class="rm-meta">{materials.length} nguyên liệu dùng để chế tạo ở <code>/ecraft</code>. Bấm vào một nguyên liệu để xem cách nhận và công dụng.</p>
+	{
+		materials.map((m: any) => (
+			<details class="rm-card" id={anchor(m.id)}>
+				<summary>
+					<img class="rm-icon" src={iconUrl(m.icon)} alt="" width="32" height="32" loading="lazy" onerror="this.style.visibility='hidden'" />
+					<span class="rm-name">{m.name}</span>
+				</summary>
+				<div class="rm-body">
+					{m.recipes.length > 0 && (
+						<section>
+							<h4>Chế tạo</h4>
+							<ul>
+								{m.recipes.map((r: any) => {
+									const t = recipeText(r);
+									return (
+										<li>
+											{t.needs.map((n: any, i: number) => (
+												<>
+													{i > 0 && ' + '}
+													{num(n.amount)} ×{' '}
+													{idByName.has(n.name) ? <a href={`#${anchor(idByName.get(n.name) as string)}`}>{n.name}</a> : n.name}
+												</>
+											))}
+											{t.result > 1 && ` → ${num(t.result)} ${m.name}`}
+											{t.extra && <span class="rm-sub"> ({t.extra})</span>}
+										</li>
+									);
+								})}
+							</ul>
+						</section>
+					)}
+					{m.drops.length > 0 && (
+						<section>
+							<h4>Nhận từ dungeon</h4>
+							<ul>
+								{m.drops.map((d: any) => {
+									const t = dropText(d);
+									return (
+										<li>
+											<a href={`${base}/${server}/dungeons/dungeon-${d.dungeon}/`}>{t.place}</a> · {t.who}: {t.how}, tỉ lệ {t.chance}%
+										</li>
+									);
+								})}
+							</ul>
+						</section>
+					)}
+					{m.chests.length > 0 && (
+						<section>
+							<h4>Nhận từ rương</h4>
+							<ul>
+								{m.chests.map((c: any) => (
+									<li>
+										<a href={`${base}/${server}/chests/item/${c.chest}/`}>{c.name}</a>: {range(c.min, c.max)}, tỉ lệ {num(c.chance)}%
+									</li>
+								))}
+							</ul>
+						</section>
+					)}
+					{m.usedBy.length > 0 && (
+						<section>
+							<h4>Dùng để chế ({m.usedBy.length})</h4>
+							<p class="rm-uses">
+								{m.usedBy.slice(0, SHOW_USES).map((u: any) => u.name).join(', ')}
+								{m.usedBy.length > SHOW_USES && ` và ${m.usedBy.length - SHOW_USES} món khác`}
+							</p>
+							{m.usedBy.length > SHOW_USES && (
+								<details class="rm-all">
+									<summary>Xem đủ {m.usedBy.length} món</summary>
+									<p class="rm-uses">{m.usedBy.map((u: any) => u.name).join(', ')}</p>
+								</details>
+							)}
+						</section>
+					)}
+					{m.recipes.length === 0 && m.drops.length === 0 && m.chests.length === 0 && m.usedBy.length === 0 && <p class="rm-sub">Chưa có thông tin trong cấu hình.</p>}
+				</div>
+			</details>
+		))
+	}
+</div>
+
+<style>
+	.rm-meta {
+		color: var(--sl-color-gray-3);
+		font-size: 0.875rem;
+	}
+	.rm-card {
+		border: 1px solid var(--sl-color-hairline);
+		border-radius: 6px;
+		margin-top: 0.5rem;
+		background: var(--sl-color-bg-nav);
+	}
+	.rm-card > summary {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+		padding: 0.5rem 0.75rem;
+		cursor: pointer;
+		list-style-position: inside;
+	}
+	.rm-icon {
+		image-rendering: pixelated;
+	}
+	.rm-name {
+		font-weight: 600;
+	}
+	.rm-body {
+		padding: 0 0.75rem 0.75rem 3.25rem;
+		font-size: 0.875rem;
+	}
+	.rm-body h4 {
+		margin: 0.75rem 0 0.25rem;
+		font-size: 0.8125rem;
+		color: var(--sl-color-gray-3);
+		font-weight: 500;
+	}
+	.rm-body ul {
+		margin: 0;
+		padding-left: 1.1rem;
+	}
+	.rm-sub {
+		color: var(--sl-color-gray-3);
+	}
+	.rm-uses {
+		margin: 0;
+	}
+	.rm-all {
+		margin-top: 0.25rem;
+	}
+	.rm-all > summary {
+		cursor: pointer;
+		color: var(--sl-color-text-accent);
+	}
+</style>

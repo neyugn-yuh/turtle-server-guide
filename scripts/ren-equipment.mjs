@@ -153,7 +153,7 @@ export function buildEquipment({ base, readYaml, stripCodes, pretty, round, warn
 			const key = `${item.Type}:${item.Id}`;
 			const info = mmoName(item.Type, item.Id);
 			if (!info?.name) return void warn(`${where}: ingredient ${key} has no name`);
-			return { name: info.name, icon: info.icon, amount: Number(item.Amount ?? entry.Amount ?? 1), ...(TYPES[item.Type] ? { item: key } : {}) };
+			return { name: info.name, icon: info.icon, amount: Number(item.Amount ?? entry.Amount ?? 1), ...(TYPES[item.Type] ? { item: key } : {}), ...(item.Type === 'MATERIAL' ? { material: String(item.Id) } : {}) };
 		}
 		const material = String(item.id ?? item.type ?? '').replace(/^minecraft:/, '').toLowerCase();
 		if (!material) return void warn(`${where}: an ingredient has no item`);
@@ -169,11 +169,31 @@ export function buildEquipment({ base, readYaml, stripCodes, pretty, round, warn
 		if (!VANILLA[material]) return void warn(`${where}: ingredient ${material} has no name (recipe left out)`);
 		return { name: VANILLA[material], icon: material, amount };
 	}
+	// ----- materials: the recipes that make one, and what it is an ingredient of (materials.json) -----
+	const materialRecipes = new Map(); // id -> recipes that give it
+	const materialUses = new Map(); // id -> { kind: 'item', key } | { kind: 'material', id }
+	const useOf = (id, use) => materialUses.set(id, [...(materialUses.get(id) ?? []), use]);
+	const stripMaterial = (needs) => needs.map(({ material, ...n }) => n);
+	function materialRecipe(recipe, file) {
+		const out = Object.values(recipe.ItemsResult ?? {}).map((r) => r.Item).filter((i) => i?.Type === 'MATERIAL' && i.Id);
+		if (out.length !== 1) return;
+		const needs = Object.values(recipe.ItemsRequire ?? {}).map((e) => ingredient(e, file));
+		if (!needs.length || needs.some((n) => !n)) return;
+		if (recipe.CheckTurtleTop && Number(recipe.TurtleTopAmount) > 0) return void warn(`${file}: needs ${recipe.TurtleTopAmount} ${recipe.TurtleTopPoint} (recipe left out)`);
+		const id = String(out[0].Id);
+		const money = recipe.CheckVault && Number(recipe.Vault) > 0 ? Number(recipe.Vault) : null;
+		const xu = recipe.CheckPoints && Number(recipe.Points) > 0 ? Number(recipe.Points) : null;
+		materialRecipes.set(id, [...(materialRecipes.get(id) ?? []), { chance: round(recipe.CheckSuccess ? recipe.ChanceSuccess ?? 100 : 100), amount: Number(out[0].Amount ?? 1), money, xu, needs: stripMaterial(needs) }]);
+		for (const n of needs) if (n.material) useOf(n.material, { kind: 'material', id });
+	}
 	let recipeCount = 0;
 	for (const file of recipeFiles) {
 		const recipe = readYaml(file);
 		const results = Object.values(recipe.ItemsResult ?? {}).map((r) => r.Item).filter((i) => i?.Type && TYPES[i.Type]);
-		if (!results.length) continue;
+		if (!results.length) {
+			materialRecipe(recipe, file);
+			continue;
+		}
 		if (results.length > 1) {
 			warn(`${file}: more than one result (left out)`);
 			continue;
@@ -189,7 +209,8 @@ export function buildEquipment({ base, readYaml, stripCodes, pretty, round, warn
 		}
 		const item = need(`${result.Type}:${result.Id}`);
 		if (!item) continue;
-		item.recipes.push({ chance: round(recipe.CheckSuccess ? recipe.ChanceSuccess ?? 100 : 100), money, xu, needs });
+		item.recipes.push({ chance: round(recipe.CheckSuccess ? recipe.ChanceSuccess ?? 100 : 100), money, xu, needs: stripMaterial(needs) });
+		for (const n of needs) if (n.material) useOf(n.material, { kind: 'item', key: item.key });
 		recipeCount++;
 	}
 
@@ -321,5 +342,21 @@ export function buildEquipment({ base, readYaml, stripCodes, pretty, round, warn
 	for (const set of sets) delete set.order;
 	if (!sets.length) fail('no armor sets found in SkyEnchants/armorsets');
 	console.log(`sync-ren: equipment: ${sets.length} sets, ${itemList.length} items, ${recipeCount} recipes`);
-	return { lines: LINES.map(([name]) => name).concat(sets.some((s) => s.line === 'Khác') ? ['Khác'] : []), sets, items: itemList.map(({ type, ...item }) => ({ type, ...item })) };
+	// materials of the recipes: those that a recipe makes or uses
+	const materials = [...new Set([...materialRecipes.keys(), ...materialUses.keys()])]
+		.map((id) => {
+			const info = mmoName('MATERIAL', id);
+			if (!info?.name) return void warn(`MATERIAL:${id} has no name (left out)`);
+			const usedBy = new Map();
+			for (const use of materialUses.get(id) ?? []) {
+				const name = use.kind === 'item' ? byKey.get(use.key)?.name : mmoName('MATERIAL', use.id)?.name;
+				if (name && name !== info.name) usedBy.set(name, use.kind);
+			}
+			return { id, name: info.name, icon: info.icon, recipes: materialRecipes.get(id) ?? [], usedBy: [...usedBy].map(([name, kind]) => ({ name, kind })).sort((a, b) => a.name.localeCompare(b.name, 'vi')) };
+		})
+		.filter(Boolean);
+	return {
+		equipment: { lines: LINES.map(([name]) => name).concat(sets.some((s) => s.line === 'Khác') ? ['Khác'] : []), sets, items: itemList.map(({ type, ...item }) => ({ type, ...item })) },
+		materials,
+	};
 }
