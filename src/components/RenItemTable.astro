@@ -220,6 +220,13 @@ const setsAvailable = [...new Map(items.flatMap((i) => itemSets[i.key] ?? []).ma
 const hasAnySets = setsAvailable.length > 0;
 const hasAnyNoRecipe = items.some((i) => !i.recipes?.length);
 const showGroupingOption = catalog && families.length < items.length;
+/** A note under an item name, "Khi cầm: Tăng 22% sát thương gây ra", split so the number stands out: { tag: 'Khi cầm', value: '+22%', text: 'sát thương gây ra' }. */
+const parseNote = (line: string) => {
+	const held = /^Khi cầm:\s*(.+)$/.exec(line);
+	const body = held ? held[1] : line;
+	const boost = /^Tăng\s+([\d.,]+%)\s+(.+)$/.exec(body);
+	return { tag: held ? 'Khi cầm' : null, value: boost ? `+${boost[1]}` : null, text: boost ? boost[2] : body };
+};
 const uid = `rit-${Math.random().toString(36).slice(2, 8)}`;
 ---
 
@@ -423,9 +430,16 @@ const uid = `rit-${Math.random().toString(36).slice(2, 8)}`;
 																<span class="rit-step-tag">{itemStepLabel(i, fam.name)}</span>
 																<strong>{i.name}</strong>
 															</div>
-															{(notes[i.key] ?? []).map((line) => (
-																<div class="rit-item-note">{line}</div>
-															))}
+															{(notes[i.key] ?? []).map((line) => {
+																const n = parseNote(line);
+																return (
+																	<div class="rit-held">
+																		{n.tag && <span class="rit-held-tag">{n.tag}</span>}
+																		{n.value && <strong class="rit-held-val">{n.value}</strong>}
+																		<span class="rit-held-text">{n.text}</span>
+																	</div>
+																);
+															})}
 														</td>
 														{columns.map(([key, , unit]) => (
 															<td class="rit-num-col">{i.stats?.[key] !== undefined ? `${num(i.stats[key])}${unit}` : '–'}</td>
@@ -576,9 +590,16 @@ const uid = `rit-${Math.random().toString(36).slice(2, 8)}`;
 												)}
 											</div>
 										</div>
-										{(notes[i.key] ?? []).map((line) => (
-											<div class="rit-item-note">{line}</div>
-										))}
+										{(notes[i.key] ?? []).map((line) => {
+											const n = parseNote(line);
+											return (
+												<div class="rit-held">
+													{n.tag && <span class="rit-held-tag">{n.tag}</span>}
+													{n.value && <strong class="rit-held-val">{n.value}</strong>}
+													<span class="rit-held-text">{n.text}</span>
+												</div>
+											);
+										})}
 									</td>
 									{columns.map(([key, , unit]) => (
 										<td class="rit-num-col">{i.stats?.[key] !== undefined ? `${num(i.stats[key])}${unit}` : '–'}</td>
@@ -1153,14 +1174,32 @@ const uid = `rit-${Math.random().toString(36).slice(2, 8)}`;
 	.rit-inline-set:hover {
 		text-decoration: underline;
 	}
-	.rit-item-note {
-		margin-top: 0.25rem;
-		padding: 0.15rem 0.45rem;
-		border-left: 2px solid var(--tw-green);
-		background: var(--tw-accent-wash);
-		border-radius: 0 0.25rem 0.25rem 0;
-		color: var(--tw-text);
+	/* The bonus of a set weapon, under its name: a small tag, the number first, then what it does */
+	.rit-held {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		gap: 0.3rem 0.4rem;
+		margin-top: 0.35rem;
 		font-size: 0.75rem;
+		line-height: 1.4;
+	}
+	.rit-held-tag {
+		padding: 0.05rem 0.4rem;
+		border: 1px solid color-mix(in srgb, var(--tw-warning) 45%, transparent);
+		border-radius: 0.25rem;
+		background: color-mix(in srgb, var(--tw-warning) 14%, transparent);
+		color: var(--tw-warning);
+		font-weight: 600;
+		white-space: nowrap;
+	}
+	.rit-held-val {
+		color: var(--tw-green);
+		font-size: 0.875rem;
+		font-variant-numeric: tabular-nums;
+	}
+	.rit-held-text {
+		color: var(--tw-text-muted);
 	}
 
 	/* Enchants */
