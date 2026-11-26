@@ -100,12 +100,47 @@ for (const server of readdirSync(serversDir)) {
 	}
 }
 
+// Items that have no flat texture in the Minecraft assets (a head is drawn in 3D): a 16x16 picture drawn here, row by row.
+// K outline, D dark scales, L snout, E eyes, T teeth, . transparent.
+const DRAWN = {
+	dragon_head: [
+		'................',
+		'................',
+		'..KK........KK..',
+		'..KKK......KKK..',
+		'...KKKKKKKKKK...',
+		'..KDDDDDDDDDDK..',
+		'.KDDDDDDDDDDDDK.',
+		'.KDDEEDDDDEEDDK.',
+		'.KDDEEDDDDEEDDK.',
+		'.KDDDDDDDDDDDDK.',
+		'..KDLLLLLLLLDK..',
+		'..KDLLKLLKLLDK..',
+		'..KDLLLLLLLLDK..',
+		'...KLTLTLTLTLK..',
+		'...KKKKKKKKKK...',
+		'................',
+	],
+};
+const PALETTE = { K: [11, 11, 15, 255], D: [38, 38, 46, 255], L: [58, 58, 69, 255], E: [224, 82, 224, 255], T: [216, 216, 216, 255], '.': [0, 0, 0, 0] };
+async function draw(name, rows) {
+	if (rows.length !== 16 || rows.some((row) => row.length !== 16)) throw new Error(`drawn picture ${name} is not 16x16`);
+	const raw = Buffer.from(rows.flatMap((row) => [...row].flatMap((c) => PALETTE[c])));
+	const { default: sharp } = await import('sharp');
+	return sharp(raw, { raw: { width: 16, height: 16, channels: 4 } }).png().toBuffer();
+}
+
 mkdirSync(OUT, { recursive: true });
 const missing = [];
 for (const name of [...materials].sort()) {
 	const target = join(OUT, `${name}.png`);
 	if (!force && existsSync(target)) continue;
 	let saved = false;
+	if (DRAWN[name]) {
+		writeFileSync(target, await draw(name, DRAWN[name]));
+		console.log(`${name} <- drawn`);
+		continue;
+	}
 	for (const path of candidates(name)) {
 		const response = await fetch(`${BASE}/${path}.png`);
 		if (!response.ok) continue;
