@@ -1,4 +1,22 @@
 {
+	"groups": [
+		{
+			"id": "nong-san",
+			"title": "Nông sản"
+		},
+		{
+			"id": "khoang-san",
+			"title": "Khoáng sản"
+		},
+		{
+			"id": "dungeon",
+			"title": "Dungeon"
+		},
+		{
+			"id": "khac",
+			"title": "Khác"
+		}
+	],
 	"materials": [
 		{
 			"id": "BINGOKHONGLO",
@@ -121,6 +139,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "nong-san",
 			"drops": [],
 			"chests": []
 		},
@@ -157,6 +176,7 @@
 				}
 			],
 			"usedBy": [],
+			"category": "khac",
 			"drops": [],
 			"chests": []
 		},
@@ -245,6 +265,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "nong-san",
 			"drops": [],
 			"chests": []
 		},
@@ -379,6 +400,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "khac",
 			"drops": [],
 			"chests": []
 		},
@@ -516,6 +538,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "dungeon",
 			"drops": [],
 			"chests": []
 		},
@@ -722,6 +745,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "khac",
 			"drops": [],
 			"chests": []
 		},
@@ -752,6 +776,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "khac",
 			"drops": [],
 			"chests": []
 		},
@@ -766,6 +791,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "khac",
 			"drops": [],
 			"chests": []
 		},
@@ -822,6 +848,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "nong-san",
 			"drops": [],
 			"chests": []
 		},
@@ -874,6 +901,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "nong-san",
 			"drops": [],
 			"chests": []
 		},
@@ -906,6 +934,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "nong-san",
 			"drops": [],
 			"chests": []
 		},
@@ -958,6 +987,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "khac",
 			"drops": [],
 			"chests": []
 		},
@@ -1142,6 +1172,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "khoang-san",
 			"drops": [],
 			"chests": []
 		},
@@ -1298,6 +1329,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "khoang-san",
 			"drops": [],
 			"chests": []
 		},
@@ -1394,6 +1426,7 @@
 					"kind": "material"
 				}
 			],
+			"category": "khoang-san",
 			"drops": [],
 			"chests": []
 		},
@@ -1498,6 +1531,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "khoang-san",
 			"drops": [],
 			"chests": []
 		},
@@ -1642,6 +1676,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "khoang-san",
 			"drops": [],
 			"chests": []
 		},
@@ -1766,6 +1801,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "nong-san",
 			"drops": [],
 			"chests": []
 		},
@@ -2141,6 +2177,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "khoang-san",
 			"drops": [],
 			"chests": []
 		},
@@ -2163,6 +2200,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "dungeon",
 			"drops": [
 				{
 					"dungeon": 6,
@@ -2200,6 +2238,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "dungeon",
 			"drops": [
 				{
 					"dungeon": 4,
@@ -2269,6 +2308,7 @@
 					"kind": "material"
 				}
 			],
+			"category": "dungeon",
 			"drops": [
 				{
 					"dungeon": 6,
@@ -2315,6 +2355,7 @@
 					"kind": "material"
 				}
 			],
+			"category": "dungeon",
 			"drops": [
 				{
 					"dungeon": 4,
@@ -2352,6 +2393,7 @@
 					"kind": "material"
 				}
 			],
+			"category": "dungeon",
 			"drops": [
 				{
 					"dungeon": 3,
@@ -2380,6 +2422,7 @@
 					"kind": "material"
 				}
 			],
+			"category": "dungeon",
 			"drops": [
 				{
 					"dungeon": 5,
@@ -2417,6 +2460,7 @@
 					"kind": "material"
 				}
 			],
+			"category": "dungeon",
 			"drops": [
 				{
 					"dungeon": 2,
@@ -2467,6 +2511,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "dungeon",
 			"drops": [
 				{
 					"dungeon": 2,
@@ -2524,6 +2569,7 @@
 					"kind": "material"
 				}
 			],
+			"category": "dungeon",
 			"drops": [
 				{
 					"dungeon": 1,
@@ -2562,205 +2608,6 @@
 					"chance": 100
 				}
 			],
-			"chests": []
-		},
-		{
-			"id": "NGOCRONG1SAO",
-			"name": "Ngọc Rồng 1",
-			"icon": "player_head",
-			"recipes": [
-				{
-					"chance": 100,
-					"amount": 1,
-					"money": null,
-					"xu": null,
-					"needs": [
-						{
-							"name": "Ngọc Rồng 2",
-							"icon": "player_head",
-							"amount": 7
-						}
-					]
-				}
-			],
-			"usedBy": [],
-			"drops": [],
-			"chests": []
-		},
-		{
-			"id": "NGOCRONG2SAO",
-			"name": "Ngọc Rồng 2",
-			"icon": "player_head",
-			"recipes": [
-				{
-					"chance": 100,
-					"amount": 1,
-					"money": null,
-					"xu": null,
-					"needs": [
-						{
-							"name": "Ngọc Rồng 3",
-							"icon": "player_head",
-							"amount": 7
-						}
-					]
-				}
-			],
-			"usedBy": [
-				{
-					"name": "Ngọc Rồng 1",
-					"kind": "material"
-				}
-			],
-			"drops": [],
-			"chests": []
-		},
-		{
-			"id": "NGOCRONG3SAO",
-			"name": "Ngọc Rồng 3",
-			"icon": "player_head",
-			"recipes": [
-				{
-					"chance": 100,
-					"amount": 1,
-					"money": null,
-					"xu": null,
-					"needs": [
-						{
-							"name": "Ngọc Rồng 4",
-							"icon": "player_head",
-							"amount": 7
-						}
-					]
-				}
-			],
-			"usedBy": [
-				{
-					"name": "Ngọc Rồng 2",
-					"kind": "material"
-				}
-			],
-			"drops": [],
-			"chests": []
-		},
-		{
-			"id": "NGOCRONG4SAO",
-			"name": "Ngọc Rồng 4",
-			"icon": "player_head",
-			"recipes": [
-				{
-					"chance": 100,
-					"amount": 1,
-					"money": null,
-					"xu": null,
-					"needs": [
-						{
-							"name": "Ngọc Rồng 5",
-							"icon": "player_head",
-							"amount": 7
-						}
-					]
-				}
-			],
-			"usedBy": [
-				{
-					"name": "Ngọc Rồng 3",
-					"kind": "material"
-				}
-			],
-			"drops": [],
-			"chests": []
-		},
-		{
-			"id": "NGOCRONG5SAO",
-			"name": "Ngọc Rồng 5",
-			"icon": "player_head",
-			"recipes": [
-				{
-					"chance": 100,
-					"amount": 1,
-					"money": null,
-					"xu": null,
-					"needs": [
-						{
-							"name": "Ngọc Rồng 6",
-							"icon": "player_head",
-							"amount": 7
-						}
-					]
-				}
-			],
-			"usedBy": [
-				{
-					"name": "Ngọc Rồng 4",
-					"kind": "material"
-				}
-			],
-			"drops": [],
-			"chests": []
-		},
-		{
-			"id": "NGOCRONG6SAO",
-			"name": "Ngọc Rồng 6",
-			"icon": "player_head",
-			"recipes": [
-				{
-					"chance": 100,
-					"amount": 1,
-					"money": null,
-					"xu": null,
-					"needs": [
-						{
-							"name": "Ngọc Rồng 7",
-							"icon": "player_head",
-							"amount": 7
-						}
-					]
-				}
-			],
-			"usedBy": [
-				{
-					"name": "Ngọc Rồng 5",
-					"kind": "material"
-				}
-			],
-			"drops": [],
-			"chests": []
-		},
-		{
-			"id": "NGOCRONG7SAO",
-			"name": "Ngọc Rồng 7",
-			"icon": "player_head",
-			"recipes": [],
-			"usedBy": [
-				{
-					"name": "Ngọc Rồng 6",
-					"kind": "material"
-				}
-			],
-			"drops": [],
-			"chests": []
-		},
-		{
-			"id": "NGOCRONGHOANGKIM",
-			"name": "Ngọc Rồng Hoàng Kim",
-			"icon": "glowstone_dust",
-			"recipes": [],
-			"usedBy": [
-				{
-					"name": "Khiên Rồng Hoàng Kim",
-					"kind": "item"
-				},
-				{
-					"name": "Khiên Rồng Hoàng Kim 2",
-					"kind": "item"
-				},
-				{
-					"name": "Khiên Rồng Hoàng Kim 3",
-					"kind": "item"
-				}
-			],
-			"drops": [],
 			"chests": []
 		},
 		{
@@ -2814,6 +2661,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "khac",
 			"drops": [],
 			"chests": []
 		},
@@ -2840,6 +2688,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "khac",
 			"drops": [],
 			"chests": []
 		},
@@ -2868,6 +2717,7 @@
 					"kind": "material"
 				}
 			],
+			"category": "khoang-san",
 			"drops": [],
 			"chests": []
 		},
@@ -2896,6 +2746,7 @@
 					"kind": "material"
 				}
 			],
+			"category": "khoang-san",
 			"drops": [],
 			"chests": []
 		},
@@ -2919,6 +2770,7 @@
 				}
 			],
 			"usedBy": [],
+			"category": "khoang-san",
 			"drops": [],
 			"chests": []
 		},
@@ -2953,6 +2805,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "khoang-san",
 			"drops": [
 				{
 					"dungeon": 3,
@@ -3030,6 +2883,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "dungeon",
 			"drops": [],
 			"chests": []
 		},
@@ -3062,6 +2916,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "dungeon",
 			"drops": [],
 			"chests": []
 		},
@@ -3094,6 +2949,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "dungeon",
 			"drops": [],
 			"chests": []
 		},
@@ -3126,6 +2982,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "dungeon",
 			"drops": [],
 			"chests": []
 		},
@@ -3158,6 +3015,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "dungeon",
 			"drops": [],
 			"chests": []
 		},
@@ -3190,6 +3048,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "dungeon",
 			"drops": [],
 			"chests": []
 		},
@@ -3212,6 +3071,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "dungeon",
 			"drops": [
 				{
 					"dungeon": 4,
@@ -3253,6 +3113,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "dungeon",
 			"drops": [
 				{
 					"dungeon": 2,
@@ -3289,6 +3150,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "dungeon",
 			"drops": [
 				{
 					"dungeon": 3,
@@ -3321,6 +3183,7 @@
 					"kind": "item"
 				}
 			],
+			"category": "dungeon",
 			"drops": [
 				{
 					"dungeon": 5,

@@ -2,25 +2,30 @@
 /**
  * Crafting materials of Sky Rèn, built from src/data/servers/<server>/ren-materials.json
  * (written by scripts/sync-ren.mjs from the /ecraft recipes, the dungeon mobs and the reward chests).
- * One closed card per material: how to get it (craft, drops, chests) and what it is used for.
+ * One page per group (prop `category`, see MATERIAL_GROUPS in scripts/ren-materials.mjs). One closed card per material: how to get it (craft, drops, chests) and what it is used for.
  * A part with nothing in the config is left out, never filled in. Pictures: public/minions/<material>.png.
  */
 interface Props {
 	server: string;
+	category: string;
 }
 
-const { server } = Astro.props;
+const { server, category } = Astro.props;
 const files = import.meta.glob('../data/servers/*/ren-materials.json', { eager: true, import: 'default' }) as Record<string, any>;
 const data = files[`../data/servers/${server}/ren-materials.json`];
 if (!data) throw new Error(`RenMaterials: no ren-materials.json for server "${server}", run node scripts/sync-ren.mjs`);
 
-const materials: any[] = data.materials;
+const everything: any[] = data.materials;
+const group = data.groups.find((g: any) => g.id === category);
+if (!group) throw new Error(`RenMaterials: no group "${category}" in ren-materials.json`);
+const materials: any[] = everything.filter((m: any) => m.category === category);
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const iconUrl = (icon: string | null) => (icon ? `${base}/minions/${icon}.png` : '');
 const num = (x: number) => x.toLocaleString('vi-VN', { maximumFractionDigits: 3 });
 const range = (min: number, max: number) => (min === max ? num(min) : `${num(min)}–${num(max)}`);
 const anchor = (id: string) => id.toLowerCase();
-const idByName = new Map(materials.map((m: any) => [m.name, m.id]));
+// a material that is an ingredient links to its card, on whichever page it is
+const linkByName = new Map(everything.map((m: any) => [m.name, `${base}/${server}/materials/${m.category}/#${anchor(m.id)}`]));
 const SHOW_USES = 12;
 
 const recipeText = (r: any) => {
@@ -36,7 +41,7 @@ const dropText = (d: any) => {
 ---
 
 <div class="rm not-content">
-	<p class="rm-meta">{materials.length} nguyên liệu dùng để chế tạo ở <code>/ecraft</code>. Bấm vào một nguyên liệu để xem cách nhận và công dụng.</p>
+	<p class="rm-meta">{materials.length} nguyên liệu {group.title.toLowerCase()} dùng để chế tạo ở <code>/ecraft</code>. Bấm vào một nguyên liệu để xem cách nhận và công dụng.</p>
 	{
 		materials.map((m: any) => (
 			<details class="rm-card" id={anchor(m.id)}>
@@ -57,7 +62,7 @@ const dropText = (d: any) => {
 												<>
 													{i > 0 && ' + '}
 													{num(n.amount)} ×{' '}
-													{idByName.has(n.name) ? <a href={`#${anchor(idByName.get(n.name) as string)}`}>{n.name}</a> : n.name}
+													{linkByName.has(n.name) ? <a href={linkByName.get(n.name)}>{n.name}</a> : n.name}
 												</>
 											))}
 											{t.result > 1 && ` → ${num(t.result)} ${m.name}`}

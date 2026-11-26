@@ -7,10 +7,42 @@
  *   drops   a dungeon mob drops it, or its killer / the players nearby get it
  *   chests  a reward chest gives it
  * A material that no recipe makes or uses is not a crafting material and is not listed.
+ *
+ * The config does not say which kind a material is, so the groups of the pages are kept here. A material that is in no group stops
+ * the sync (like scripts/sync-materials.mjs does for Sky Dungeon): put it in a group below, or in HIDDEN to keep it off the wiki.
  */
-export function buildMaterials({ materials: found, dungeons, chests, warn }) {
+
+/** Materials left off the wiki on purpose (the Dragon Ball event gems). */
+const HIDDEN = new Set(['NGOCRONG1SAO', 'NGOCRONG2SAO', 'NGOCRONG3SAO', 'NGOCRONG4SAO', 'NGOCRONG5SAO', 'NGOCRONG6SAO', 'NGOCRONG7SAO', 'NGOCRONGHOANGKIM']);
+
+/** The pages of the materials section: id (also the file name of the page), title, material ids (as in MMOItems/item/material.yml). */
+export const MATERIAL_GROUPS = [
+	{ id: 'nong-san', title: 'Nông sản', ids: ['BINGOKHONGLO', 'DUAHAUKHONGLO', 'KIENROMKHONGLO', 'GOSOIKHONGLO', 'GOBACHDUONGKHONGLO', 'GOVANSAMKHONGLO'] },
+	{
+		id: 'khoang-san',
+		title: 'Khoáng sản',
+		ids: ['KHOITHANKHONGLO', 'KHOISATKHONGLO', 'KHOIVANGKHONGLO', 'KHOIKIMCUONGKHONGLO', 'KHOILUCBAOKHONGLO', 'KIMCUONGDUC', 'VANGTHOIONGANH', 'SONGSAT1', 'SONGSAT2', 'SONGSAT3'],
+	},
+	{
+		id: 'dungeon',
+		title: 'Dungeon',
+		ids: [
+			'DANANGCAP', 'MANHDANANGCAP', 'LINHHONBANGGIA', 'MATNHENYEUTINH', 'NAMMAHAITAC', 'NAMMAHAITAC640',
+			'XUONGDIANGUC', 'XUONGNHENYEUTINH', 'XUONGPHUTHUYDEN', 'XUONGRONGKHONGGIAN',
+			'MANHKHIENBANGGIA', 'MANHKHIENDIANGUC', 'MANHKHIENPHUTHUYDEN', 'MANHKHIENTHIENHA', 'MANHKHIENYEUTINH',
+			'MANHKHIENBANGGIA1280', 'MANHKHIENDIANGUC1280', 'MANHKHIENTHIENHA1280', 'MANHKHIENYEUTINH256', 'MANHKHIENPHUTHUYDEN640',
+		],
+	},
+	{ id: 'khac', title: 'Khác', ids: ['DACUONGHOA', 'DANANGCAPRIU', 'DATHANTAI', 'BUIVANGPHEP', 'KESACHMATMA', 'DAURONG', 'NGUYETHON', 'NGUYETTHACH'] },
+];
+
+export function buildMaterials({ materials: all, dungeons, chests, warn, fail }) {
+	const found = all.filter((m) => !HIDDEN.has(m.id));
+	const groupOf = new Map(MATERIAL_GROUPS.flatMap((g) => g.ids.map((id) => [id, g.id])));
+	const loose = found.filter((m) => !groupOf.has(m.id));
+	if (loose.length) fail(`materials: ${loose.map((m) => `${m.id} (${m.name})`).join(', ')} not in a group of scripts/ren-materials.mjs (MATERIAL_GROUPS), add it to a group or to HIDDEN`);
 	// "X640 Nấm" is a stack of 640: written as the config does, with a lower case x
-	const materials = found.map((m) => ({ ...m, name: m.name.replace(/^X(\d+)\s/, 'x$1 ') }));
+	const materials = found.map((m) => ({ ...m, category: groupOf.get(m.id), name: m.name.replace(/^X(\d+)\s/, 'x$1 ') }));
 	const byName = new Map();
 	for (const m of materials) {
 		if (byName.has(m.name)) warn(`materials: two materials are called "${m.name}" (drops and chests are matched to the first)`);
@@ -42,6 +74,7 @@ export function buildMaterials({ materials: found, dungeons, chests, warn }) {
 
 	const unique = (list) => [...new Map(list.map((x) => [JSON.stringify(x), x])).values()];
 	return {
+		groups: MATERIAL_GROUPS.map(({ id, title }) => ({ id, title })),
 		materials: materials
 			.map((m) => ({ ...m, drops: unique(drops.get(m.id)), chests: unique(inChests.get(m.id)) }))
 			.sort((a, b) => a.name.localeCompare(b.name, 'vi')),
