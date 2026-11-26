@@ -7,7 +7,6 @@
  *   kind   searchable, upgrade-grouped weapon/tool catalog (prop `kind`: sword, axe, farm-axe, bow, shield, pickaxe)
  * Every number and name comes from the data, none is typed here.
  */
-import RenGearNav from './RenGearNav.astro';
 import RenItemTable from './RenItemTable.astro';
 import { hasMinionIcon, resolveGearIcon } from '../lib/ren-icons';
 
@@ -42,11 +41,6 @@ const SLOTS: [string, string][] = [
 	['boots', 'Giày'],
 ];
 
-// Counts for quick category nav
-const navCounts: Record<string, number> = { sets: sets.length };
-for (const k of ['sword', 'axe', 'farm-axe', 'bow', 'shield', 'pickaxe']) {
-	navCounts[k] = items.filter((i: any) => i.kind === k).length;
-}
 
 // Lookup maps for cross-linking items <-> armor sets
 const itemSets: Record<string, { id: string; slug: string; name: string }[]> = {};
@@ -168,8 +162,6 @@ if (view === 'kind' && !kindItems.length) throw new Error(`RenEquipment: no item
 ---
 
 <div class="rq not-content">
-	{view !== 'set' && <RenGearNav server={server} active={view === 'sets' ? 'sets' : kind!} counts={navCounts} />}
-
 	{/* ===================== VIEW: ARMOR SETS CATALOG ===================== */}
 	{
 		view === 'sets' && (
