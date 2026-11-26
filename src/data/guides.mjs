@@ -75,5 +75,11 @@ export const guides = [
 		description: 'Các bộ giáp và hiệu ứng bộ, kiếm, rìu, cung, khiên, cúp: chỉ số và công thức chế tạo.',
 		landing: 'bo-trang-bi',
 	},
+	{
+		slug: 'skulls',
+		title: 'Sọ phép',
+		description: 'Các sọ phép: chỉ số, số ô Lửa phép và cách chế tạo.',
+		landing: 'danh-sach',
+	},
 	// <-- add new guides here
 ];

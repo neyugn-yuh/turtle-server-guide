@@ -39,6 +39,7 @@ import { buildEquipment } from './ren-equipment.mjs';
 import { targetsForEnchant } from '../src/data/enchant-targets.mjs';
 import { buildSpawners } from './ren-spawners.mjs';
 import { buildMaterials } from './ren-materials.mjs';
+import { buildSkulls } from './ren-skulls.mjs';
 import { buildIslandTop } from './island-top-lib.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -47,6 +48,7 @@ const OUT = join(ROOT, 'src/data/servers', SERVER, 'dungeons.json');
 const OUT_CHESTS = join(ROOT, 'src/data/servers', SERVER, 'chests.json');
 const OUT_ENCHANTS = join(ROOT, 'src/data/servers', SERVER, 'enchants.json');
 const OUT_EQUIPMENT = join(ROOT, 'src/data/servers', SERVER, 'gear.json');
+const OUT_SKULLS = join(ROOT, 'src/data/servers', SERVER, 'skulls.json');
 const OUT_MATERIALS = join(ROOT, 'src/data/servers', SERVER, 'ren-materials.json');
 const OUT_SPAWNERS = join(ROOT, 'src/data/servers', SERVER, 'spawners.json');
 const OUT_ISLAND_TOP = join(ROOT, 'src/data/servers', SERVER, 'island-top.json');
@@ -498,8 +500,9 @@ const enchantsData = {
 };
 if (![enchantsData.baseSlots, enchantsData.maxSlots].every(Number.isFinite)) fail('SkyEnchants/config.yml: enchants.base-slots / max-slots missing');
 
-const { equipment: equipmentData, materials: recipeMaterials } = buildEquipment({ base: BASE, readYaml, stripCodes, pretty, round, warn, fail });
+const { equipment: equipmentData, materials: recipeMaterials, skullRecipes } = buildEquipment({ base: BASE, readYaml, stripCodes, pretty, round, warn, fail });
 const { spawnerData } = buildSpawners({ readYaml, stripCodes, pretty, warn, fail });
+const skullData = buildSkulls({ readYaml, stripCodes, pretty, recipes: skullRecipes, warn, fail });
 const materialData = buildMaterials({ materials: recipeMaterials, dungeons, chests: chestList, spawners: spawnerData.spawners, warn, fail });
 // the island contribution race: TurtleIsland uses the same contribution.yml / gui/top.yml as SD-Island (see island-top-lib.mjs)
 const readText = (path) => {
@@ -522,6 +525,7 @@ const outputs = [
 	[OUT_CHESTS, JSON.stringify({ chests: chestList }, null, '\t') + '\n'],
 	[OUT_ENCHANTS, JSON.stringify(enchantsData, null, '\t') + '\n'],
 	[OUT_EQUIPMENT, JSON.stringify(equipmentData, null, '\t') + '\n'],
+	[OUT_SKULLS, JSON.stringify(skullData, null, '\t') + '\n'],
 	[OUT_MATERIALS, JSON.stringify(materialData, null, '\t') + '\n'],
 	[OUT_SPAWNERS, JSON.stringify(spawnerData, null, '\t') + '\n'],
 	[OUT_ISLAND_TOP, JSON.stringify(topData, null, '\t') + '\n'],

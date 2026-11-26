@@ -180,7 +180,18 @@ export function buildEquipment({ base, readYaml, stripCodes, pretty, round, warn
 	const materialUses = new Map(); // id -> { kind: 'item', key } | { kind: 'material', id }
 	const useOf = (id, use) => materialUses.set(id, [...(materialUses.get(id) ?? []), use]);
 	const stripMaterial = (needs) => needs.map(({ material, ...n }) => n);
+	const skullRecipes = new Map(); // SOPHEP id -> recipes that give the magic skull (skulls.json)
 	function materialRecipe(recipe, file) {
+		const skull = Object.values(recipe.ItemsResult ?? {}).map((r) => r.Item).filter((i) => i?.Type === 'SOPHEP' && i.Id);
+		if (skull.length === 1) {
+			const needs = Object.values(recipe.ItemsRequire ?? {}).map((e) => ingredient(e, file));
+			if (!needs.length || needs.some((n) => !n)) return;
+			const money = recipe.CheckVault && Number(recipe.Vault) > 0 ? Number(recipe.Vault) : null;
+			const xu = recipe.CheckPoints && Number(recipe.Points) > 0 ? Number(recipe.Points) : null;
+			const id = String(skull[0].Id).toUpperCase();
+			skullRecipes.set(id, [...(skullRecipes.get(id) ?? []), { category: file.split('/')[2], chance: round(recipe.CheckSuccess ? recipe.ChanceSuccess ?? 100 : 100), money, xu, needs: stripMaterial(needs) }]);
+			return;
+		}
 		const out = Object.values(recipe.ItemsResult ?? {}).map((r) => r.Item).filter((i) => i?.Type === 'MATERIAL' && i.Id);
 		// a spawner recipe: the result is given by a command (stacker give <player> spawner <mob> 1)
 		const spawner = (recipe.CommandSuccess ?? []).map((c) => /^stacker give <player> spawner (\w+) 1$/.exec(String(c))).find(Boolean);
@@ -375,5 +386,6 @@ export function buildEquipment({ base, readYaml, stripCodes, pretty, round, warn
 	return {
 		equipment: { lines: LINES.map(([name]) => name).concat(sets.some((s) => s.line === 'Khác') ? ['Khác'] : []), sets, items: itemList.map(({ type, ...item }) => ({ type, ...item })) },
 		materials,
+		skullRecipes: Object.fromEntries(skullRecipes),
 	};
 }

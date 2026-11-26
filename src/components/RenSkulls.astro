@@ -1,0 +1,140 @@
+---
+/**
+ * Magic skulls (sọ phép) of Sky Rèn, built from src/data/servers/<server>/skulls.json
+ * (written by scripts/sync-ren.mjs from ItemAbility/items.yml and the /ecraft recipes).
+ * One card per family of skulls, one row per level: the four stats, the number of Lửa phép slots and how it is crafted.
+ * `section` picks the regular skulls or the Halloween 2026 event skulls. Every number comes from the data.
+ */
+interface Props {
+	server: string;
+	section: 'regular' | 'event';
+}
+
+const { server, section } = Astro.props;
+const files = import.meta.glob('../data/servers/*/skulls.json', { eager: true, import: 'default' }) as Record<string, any>;
+const data = files[`../data/servers/${server}/skulls.json`];
+if (!data) throw new Error(`RenSkulls: no skulls.json for server "${server}", run node scripts/sync-ren.mjs`);
+
+const skulls: any[] = data.skulls.filter((s: any) => s.event === (section === 'event'));
+// the families in the order of the config, each with its levels
+const families: { name: string; rank: string; rows: any[] }[] = [];
+for (const s of skulls) {
+	let family = families.find((f) => f.name === s.family);
+	if (!family) families.push((family = { name: s.family, rank: s.rank, rows: [] }));
+	family.rows.push(s);
+}
+const num = (x: number) => x.toLocaleString('vi-VN', { maximumFractionDigits: 2 });
+// the first skull of a family that has upgrades (2 ♦, 3 ♦) is level 1
+const levelText = (s: any, rows: any[]) => {
+	if (s.level === null) return rows.length > 1 ? (rows.some((r) => r.diamonds) ? '1 ♦' : 'Cấp 1') : '';
+	return s.diamonds ? `${s.level} ♦` : `Cấp ${s.level}`;
+};
+const levelCol = families.some((f) => f.rows.some((r) => r.level !== null));
+const withRecipes = (rows: any[]) => rows.some((r) => r.recipes.length > 0);
+const recipeText = (r: any) =>
+	[r.needs.map((n: any) => `${num(n.amount)} × ${n.name}`).join(' + '), r.money ? `${num(r.money)} Tiền` : null, r.xu ? `${num(r.xu)} Xu` : null, r.chance < 100 ? `thành công ${num(r.chance)}%` : null]
+		.filter(Boolean)
+		.join(' · ');
+---
+
+<div class="rsk not-content">
+	{
+		families.map((f) => (
+			<section class="rsk-card">
+				<header>
+					<h3>{f.name}</h3>
+					{f.rank && <span class="rsk-rank">{f.rank}</span>}
+				</header>
+				<div class="rsk-scroll">
+					<table>
+						<thead>
+							<tr>
+								{levelCol && <th>Cấp</th>}
+								<th>Sát thương</th>
+								<th>Tốc độ đánh</th>
+								<th>Tim</th>
+								<th>Giáp</th>
+								<th>Ô Lửa phép</th>
+								{withRecipes(f.rows) && <th class="rsk-left">Công thức chế tạo (<code>/ecraft</code>)</th>}
+							</tr>
+						</thead>
+						<tbody>
+							{f.rows.map((s: any) => (
+								<tr>
+									{levelCol && <td class="rsk-left">{levelText(s, f.rows)}</td>}
+									<td>+{num(s.stats.damage)}</td>
+									<td>+{num(s.stats.attackSpeed)}%</td>
+									<td>+{num(s.stats.health)}</td>
+									<td>+{num(s.stats.armor)}</td>
+									<td>{s.gemSlots === null ? '–' : s.gemSlots}</td>
+									{withRecipes(f.rows) && (
+										<td class="rsk-left">
+											{s.recipes.length === 0
+												? '–'
+												: s.recipes.map((r: any) => (
+														<div class="rsk-recipe">
+															{recipeText(r)}
+															{s.recipes.length > 1 && <span class="rsk-sub"> ({r.category})</span>}
+														</div>
+													))}
+										</td>
+									)}
+								</tr>
+							))}
+						</tbody>
+					</table>
+				</div>
+			</section>
+		))
+	}
+</div>
+
+<style>
+	.rsk-card {
+		margin-top: 1rem;
+		border: 1px solid var(--sl-color-hairline);
+		border-radius: 8px;
+		background: var(--sl-color-bg-nav);
+		padding: 0.75rem 1rem 0.5rem;
+	}
+	.rsk-card header {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.5rem;
+	}
+	.rsk-card h3 {
+		margin: 0;
+		font-size: 1.05rem;
+	}
+	.rsk-rank {
+		padding: 0.05rem 0.5rem;
+		border: 1px solid var(--sl-color-hairline);
+		border-radius: 999px;
+		color: var(--sl-color-gray-2);
+		font-size: 0.75rem;
+	}
+	.rsk-scroll {
+		overflow-x: auto;
+	}
+	.rsk-card table {
+		display: table;
+		width: 100%;
+		margin-top: 0.5rem;
+		font-size: 0.8125rem;
+		font-variant-numeric: tabular-nums;
+	}
+	.rsk-card th,
+	.rsk-card td {
+		padding: 0.3rem 0.6rem;
+		text-align: right;
+		vertical-align: top;
+	}
+	.rsk-card th.rsk-left,
+	.rsk-card td.rsk-left {
+		text-align: left;
+	}
+	.rsk-sub {
+		color: var(--sl-color-gray-3);
+	}
+</style>
