@@ -50,7 +50,15 @@
 						{
 							"level": 1,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Hô hấp dưới nước",
+									"level": 1,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -100,17 +108,41 @@
 						{
 							"level": 1,
 							"chance": 13,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Buồn nôn",
+									"level": 1,
+									"seconds": 2,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 19,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Buồn nôn",
+									"level": 1,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 24,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Buồn nôn",
+									"level": 1,
+									"seconds": 6,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -132,17 +164,41 @@
 						{
 							"level": 1,
 							"chance": 100,
-							"cooldown": 8
+							"cooldown": 8,
+							"potions": [
+								{
+									"effect": "Đào nhanh",
+									"level": 1,
+									"seconds": 10,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 100,
-							"cooldown": 8
+							"cooldown": 8,
+							"potions": [
+								{
+									"effect": "Đào nhanh",
+									"level": 2,
+									"seconds": 10,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 100,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Đào nhanh",
+									"level": 3,
+									"seconds": 10,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -163,37 +219,177 @@
 						{
 							"level": 1,
 							"chance": 10,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 1,
+									"seconds": 2,
+									"target": "enemy"
+								},
+								{
+									"effect": "Buồn nôn",
+									"level": 1,
+									"seconds": 2,
+									"target": "enemy"
+								},
+								{
+									"effect": "Mệt mỏi",
+									"level": 1,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 12,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 1,
+									"seconds": 4,
+									"target": "enemy"
+								},
+								{
+									"effect": "Buồn nôn",
+									"level": 1,
+									"seconds": 4,
+									"target": "enemy"
+								},
+								{
+									"effect": "Mệt mỏi",
+									"level": 1,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 14,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 5,
+									"target": "enemy"
+								},
+								{
+									"effect": "Buồn nôn",
+									"level": 2,
+									"seconds": 5,
+									"target": "enemy"
+								},
+								{
+									"effect": "Mệt mỏi",
+									"level": 2,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 16,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 6,
+									"target": "enemy"
+								},
+								{
+									"effect": "Buồn nôn",
+									"level": 2,
+									"seconds": 6,
+									"target": "enemy"
+								},
+								{
+									"effect": "Mệt mỏi",
+									"level": 2,
+									"seconds": 6,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 5,
 							"chance": 18,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 7,
+									"target": "enemy"
+								},
+								{
+									"effect": "Buồn nôn",
+									"level": 2,
+									"seconds": 7,
+									"target": "enemy"
+								},
+								{
+									"effect": "Mệt mỏi",
+									"level": 2,
+									"seconds": 7,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 6,
 							"chance": 20,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 9,
+									"target": "enemy"
+								},
+								{
+									"effect": "Buồn nôn",
+									"level": 2,
+									"seconds": 9,
+									"target": "enemy"
+								},
+								{
+									"effect": "Mệt mỏi",
+									"level": 2,
+									"seconds": 9,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 7,
 							"chance": 100,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 10,
+									"target": "enemy"
+								},
+								{
+									"effect": "Buồn nôn",
+									"level": 2,
+									"seconds": 10,
+									"target": "enemy"
+								},
+								{
+									"effect": "Mệt mỏi",
+									"level": 2,
+									"seconds": 10,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -233,7 +429,15 @@
 						{
 							"level": 1,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Nhìn trong đêm",
+									"level": 1,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						}
 					]
 				}
@@ -290,27 +494,97 @@
 						{
 							"level": 1,
 							"chance": 10,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Mệt mỏi",
+									"level": 1,
+									"seconds": 3,
+									"target": "self"
+								},
+								{
+									"effect": "Sức mạnh",
+									"level": 1,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 15,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Mệt mỏi",
+									"level": 1,
+									"seconds": 4,
+									"target": "self"
+								},
+								{
+									"effect": "Sức mạnh",
+									"level": 1,
+									"seconds": 4,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 20,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Mệt mỏi",
+									"level": 1,
+									"seconds": 5,
+									"target": "self"
+								},
+								{
+									"effect": "Sức mạnh",
+									"level": 1,
+									"seconds": 5,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 25,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Mệt mỏi",
+									"level": 2,
+									"seconds": 5,
+									"target": "self"
+								},
+								{
+									"effect": "Sức mạnh",
+									"level": 1,
+									"seconds": 6,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 5,
 							"chance": 30,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Mệt mỏi",
+									"level": 2,
+									"seconds": 5,
+									"target": "self"
+								},
+								{
+									"effect": "Sức mạnh",
+									"level": 1,
+									"seconds": 7,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -330,27 +604,127 @@
 						{
 							"level": 1,
 							"chance": 10,
-							"cooldown": 4
+							"cooldown": 4,
+							"potions": [
+								{
+									"effect": "Mệt mỏi",
+									"level": 1,
+									"seconds": 2,
+									"target": "enemy"
+								},
+								{
+									"effect": "Sức mạnh",
+									"level": 1,
+									"seconds": 2,
+									"target": "self"
+								},
+								{
+									"effect": "Kháng cự",
+									"level": 1,
+									"seconds": 2,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 15,
-							"cooldown": 4
+							"cooldown": 4,
+							"potions": [
+								{
+									"effect": "Mệt mỏi",
+									"level": 1,
+									"seconds": 3,
+									"target": "enemy"
+								},
+								{
+									"effect": "Sức mạnh",
+									"level": 1,
+									"seconds": 3,
+									"target": "self"
+								},
+								{
+									"effect": "Kháng cự",
+									"level": 1,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 20,
-							"cooldown": 4
+							"cooldown": 4,
+							"potions": [
+								{
+									"effect": "Mệt mỏi",
+									"level": 1,
+									"seconds": 4,
+									"target": "enemy"
+								},
+								{
+									"effect": "Sức mạnh",
+									"level": 1,
+									"seconds": 4,
+									"target": "self"
+								},
+								{
+									"effect": "Kháng cự",
+									"level": 1,
+									"seconds": 4,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 25,
-							"cooldown": 4
+							"cooldown": 4,
+							"potions": [
+								{
+									"effect": "Mệt mỏi",
+									"level": 1,
+									"seconds": 5,
+									"target": "enemy"
+								},
+								{
+									"effect": "Sức mạnh",
+									"level": 1,
+									"seconds": 5,
+									"target": "self"
+								},
+								{
+									"effect": "Kháng cự",
+									"level": 1,
+									"seconds": 5,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 5,
 							"chance": 30,
-							"cooldown": 4
+							"cooldown": 4,
+							"potions": [
+								{
+									"effect": "Mệt mỏi",
+									"level": 1,
+									"seconds": 6,
+									"target": "enemy"
+								},
+								{
+									"effect": "Sức mạnh",
+									"level": 1,
+									"seconds": 6,
+									"target": "self"
+								},
+								{
+									"effect": "Kháng cự",
+									"level": 1,
+									"seconds": 6,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -371,17 +745,59 @@
 						{
 							"level": 1,
 							"chance": 16,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 2,
+									"seconds": 4,
+									"target": "self"
+								},
+								{
+									"effect": "Hấp thụ",
+									"level": 1,
+									"seconds": 4,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 20,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 2,
+									"seconds": 5,
+									"target": "self"
+								},
+								{
+									"effect": "Hấp thụ",
+									"level": 2,
+									"seconds": 5,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 25,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 2,
+									"seconds": 6,
+									"target": "self"
+								},
+								{
+									"effect": "Hấp thụ",
+									"level": 3,
+									"seconds": 6,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -402,17 +818,41 @@
 						{
 							"level": 1,
 							"chance": 35,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Đào nhanh",
+									"level": 1,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 55,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Đào nhanh",
+									"level": 2,
+									"seconds": 4,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 75,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Đào nhanh",
+									"level": 3,
+									"seconds": 5,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -508,22 +948,78 @@
 						{
 							"level": 1,
 							"chance": 12,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Khô héo",
+									"level": 3,
+									"seconds": 3,
+									"target": "enemy"
+								},
+								{
+									"effect": "Độc",
+									"level": 3,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 16,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Khô héo",
+									"level": 3,
+									"seconds": 4,
+									"target": "enemy"
+								},
+								{
+									"effect": "Độc",
+									"level": 3,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 20,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Khô héo",
+									"level": 3,
+									"seconds": 5,
+									"target": "enemy"
+								},
+								{
+									"effect": "Độc",
+									"level": 3,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 24,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Khô héo",
+									"level": 3,
+									"seconds": 6,
+									"target": "enemy"
+								},
+								{
+									"effect": "Độc",
+									"level": 3,
+									"seconds": 6,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -589,17 +1085,41 @@
 						{
 							"level": 1,
 							"chance": 17,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Mù",
+									"level": 1,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 25,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Mù",
+									"level": 2,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 33,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Mù",
+									"level": 3,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -706,17 +1226,41 @@
 						{
 							"level": 1,
 							"chance": 19,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 1,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 25,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 6,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 30,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 7,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -737,22 +1281,78 @@
 						{
 							"level": 1,
 							"chance": 10,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 1,
+									"seconds": 3,
+									"target": "enemy"
+								},
+								{
+									"effect": "Mệt mỏi",
+									"level": 1,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 15,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 1,
+									"seconds": 4,
+									"target": "enemy"
+								},
+								{
+									"effect": "Mệt mỏi",
+									"level": 1,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 20,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 5,
+									"target": "enemy"
+								},
+								{
+									"effect": "Mệt mỏi",
+									"level": 2,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 25,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 6,
+									"target": "enemy"
+								},
+								{
+									"effect": "Mệt mỏi",
+									"level": 2,
+									"seconds": 6,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -774,17 +1374,41 @@
 						{
 							"level": 1,
 							"chance": 19,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Độc",
+									"level": 1,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 26,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Độc",
+									"level": 2,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 33,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Độc",
+									"level": 3,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -807,22 +1431,54 @@
 						{
 							"level": 1,
 							"chance": 12,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Độc",
+									"level": 1,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 17,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Độc",
+									"level": 1,
+									"seconds": 6,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 23,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Độc",
+									"level": 2,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 29,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Độc",
+									"level": 2,
+									"seconds": 6,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -842,22 +1498,78 @@
 						{
 							"level": 1,
 							"chance": 12,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 1,
+									"seconds": 3,
+									"target": "enemy"
+								},
+								{
+									"effect": "Mệt mỏi",
+									"level": 1,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 19,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 1,
+									"seconds": 4,
+									"target": "enemy"
+								},
+								{
+									"effect": "Mệt mỏi",
+									"level": 1,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 24,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 5,
+									"target": "enemy"
+								},
+								{
+									"effect": "Mệt mỏi",
+									"level": 2,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 29,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 6,
+									"target": "enemy"
+								},
+								{
+									"effect": "Mệt mỏi",
+									"level": 2,
+									"seconds": 6,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -923,17 +1635,41 @@
 						{
 							"level": 1,
 							"chance": 16,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 3,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 21,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 3,
+									"seconds": 6,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 27,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 3,
+									"seconds": 9,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -953,17 +1689,41 @@
 						{
 							"level": 1,
 							"chance": 10,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Độc",
+									"level": 2,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 15,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Độc",
+									"level": 2,
+									"seconds": 6,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 20,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Độc",
+									"level": 3,
+									"seconds": 9,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -986,32 +1746,80 @@
 						{
 							"level": 1,
 							"chance": 9,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Suy yếu",
+									"level": 1,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 15,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Suy yếu",
+									"level": 1,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 20,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Suy yếu",
+									"level": 1,
+									"seconds": 7,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 25,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Suy yếu",
+									"level": 2,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 5,
 							"chance": 30,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Suy yếu",
+									"level": 2,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 6,
 							"chance": 35,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Suy yếu",
+									"level": 2,
+									"seconds": 7,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -1034,27 +1842,67 @@
 						{
 							"level": 1,
 							"chance": 9,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Khô héo",
+									"level": 2,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 14,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Khô héo",
+									"level": 2,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 21,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Khô héo",
+									"level": 2,
+									"seconds": 7,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 27,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Khô héo",
+									"level": 3,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 5,
 							"chance": 32,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Khô héo",
+									"level": 3,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -1074,42 +1922,106 @@
 						{
 							"level": 1,
 							"chance": 9,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Mù",
+									"level": 1,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 15,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Mù",
+									"level": 1,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 23,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Mù",
+									"level": 1,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 30,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Mù",
+									"level": 1,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 5,
 							"chance": 35,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Mù",
+									"level": 2,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 6,
 							"chance": 44,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Mù",
+									"level": 2,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 7,
 							"chance": 44,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Mù",
+									"level": 2,
+									"seconds": 7,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 8,
 							"chance": 44,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Mù",
+									"level": 3,
+									"seconds": 6,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -1129,17 +2041,41 @@
 						{
 							"level": 1,
 							"chance": 17,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 1,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 24,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 31,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 3,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -1303,17 +2239,41 @@
 						{
 							"level": 1,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Nhảy cao",
+									"level": 1,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Nhảy cao",
+									"level": 2,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Nhảy cao",
+									"level": 3,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -1710,17 +2670,41 @@
 						{
 							"level": 1,
 							"chance": 15,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 23,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 6,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 31,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 7,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -1822,7 +2806,15 @@
 						{
 							"level": 1,
 							"chance": 100,
-							"cooldown": 1
+							"cooldown": 1,
+							"potions": [
+								{
+									"effect": "Kháng lửa",
+									"level": 1,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -1919,22 +2911,54 @@
 						{
 							"level": 1,
 							"chance": 15,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Suy yếu",
+									"level": 1,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 22,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Suy yếu",
+									"level": 2,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 28,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Suy yếu",
+									"level": 2,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 35,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Suy yếu",
+									"level": 3,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -2227,32 +3251,80 @@
 						{
 							"level": 1,
 							"chance": 10,
-							"cooldown": 3
+							"cooldown": 3,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 1,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 15,
-							"cooldown": 3
+							"cooldown": 3,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 1,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 20,
-							"cooldown": 3
+							"cooldown": 3,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 1,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 25,
-							"cooldown": 3
+							"cooldown": 3,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 1,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 5,
 							"chance": 30,
-							"cooldown": 3
+							"cooldown": 3,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 1,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 6,
 							"chance": 35,
-							"cooldown": 3
+							"cooldown": 3,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 1,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -2688,22 +3760,102 @@
 						{
 							"level": 1,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Mệt mỏi",
+									"level": 3,
+									"seconds": 3,
+									"target": "self"
+								},
+								{
+									"effect": "Sức mạnh",
+									"level": 2,
+									"seconds": 3,
+									"target": "self"
+								},
+								{
+									"effect": "Chậm chạp",
+									"level": 3,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Mệt mỏi",
+									"level": 2,
+									"seconds": 3,
+									"target": "self"
+								},
+								{
+									"effect": "Sức mạnh",
+									"level": 3,
+									"seconds": 3,
+									"target": "self"
+								},
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Mệt mỏi",
+									"level": 2,
+									"seconds": 3,
+									"target": "self"
+								},
+								{
+									"effect": "Sức mạnh",
+									"level": 4,
+									"seconds": 3,
+									"target": "self"
+								},
+								{
+									"effect": "Chậm chạp",
+									"level": 1,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Mệt mỏi",
+									"level": 1,
+									"seconds": 3,
+									"target": "self"
+								},
+								{
+									"effect": "Sức mạnh",
+									"level": 5,
+									"seconds": 3,
+									"target": "self"
+								},
+								{
+									"effect": "Chậm chạp",
+									"level": 1,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -2773,22 +3925,54 @@
 						{
 							"level": 1,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 1,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 2,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 2,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 3,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -2887,22 +4071,54 @@
 						{
 							"level": 1,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Tăng sinh lực",
+									"level": 1,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Tăng sinh lực",
+									"level": 2,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Tăng sinh lực",
+									"level": 3,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Tăng sinh lực",
+									"level": 4,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -3779,32 +4995,80 @@
 						{
 							"level": 1,
 							"chance": 7,
-							"cooldown": 5
+							"cooldown": 5,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 2.75,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 7,
-							"cooldown": 5
+							"cooldown": 5,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 3.2,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 10,
-							"cooldown": 5
+							"cooldown": 5,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 3.65,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 13,
-							"cooldown": 5
+							"cooldown": 5,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 4.1,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 5,
 							"chance": 17,
-							"cooldown": 5
+							"cooldown": 5,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 4.55,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 6,
 							"chance": 20,
-							"cooldown": 5
+							"cooldown": 5,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -4085,52 +5349,132 @@
 						{
 							"level": 1,
 							"chance": 5,
-							"cooldown": 8
+							"cooldown": 8,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 1,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 5,
-							"cooldown": 8
+							"cooldown": 8,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 1,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 7,
-							"cooldown": 7
+							"cooldown": 7,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 1,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 7,
-							"cooldown": 7
+							"cooldown": 7,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 2,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 5,
 							"chance": 9,
-							"cooldown": 7
+							"cooldown": 7,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 2,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 6,
 							"chance": 9,
-							"cooldown": 7
+							"cooldown": 7,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 2,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 7,
 							"chance": 10,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 8,
 							"chance": 11,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 9,
 							"chance": 11,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 10,
 							"chance": 12,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 4,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -4331,62 +5675,158 @@
 						{
 							"level": 1,
 							"chance": 6,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 10,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 11,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 2,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 13,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 3,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 5,
 							"chance": 15,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 3,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 6,
 							"chance": 16,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 3,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 7,
 							"chance": 18,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 4,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 8,
 							"chance": 19,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 4,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 9,
 							"chance": 21,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 4,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 10,
 							"chance": 23,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 11,
 							"chance": 24,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 12,
 							"chance": 25,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -4724,25 +6164,57 @@
 							"level": 1,
 							"chance": 9,
 							"cooldown": 5,
-							"souls": 75
+							"souls": 75,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 8,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 15,
 							"cooldown": 5,
-							"souls": 75
+							"souls": 75,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 8,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 23,
 							"cooldown": 5,
-							"souls": 75
+							"souls": 75,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 8,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 30,
 							"cooldown": 5,
-							"souls": 75
+							"souls": 75,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 8,
+									"seconds": 3,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -5196,32 +6668,80 @@
 						{
 							"level": 1,
 							"chance": 30,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 11,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 40,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 11.8,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 50,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 12.6,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 64,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 13.4,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 5,
 							"chance": 72,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 14.2,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 6,
 							"chance": 80,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 15,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -5521,62 +7041,158 @@
 						{
 							"level": 1,
 							"chance": 40,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 43,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 5,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 45,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 6,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 47,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 6,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 5,
 							"chance": 48,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 7,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 6,
 							"chance": 50,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 7,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 7,
 							"chance": 52,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 8,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 8,
 							"chance": 53,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 8,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 9,
 							"chance": 55,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 9,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 10,
 							"chance": 57,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 9,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 11,
 							"chance": 58,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 10,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 12,
 							"chance": 60,
-							"cooldown": 2
+							"cooldown": 2,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 5,
+									"seconds": 10,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -5911,52 +7527,132 @@
 						{
 							"level": 1,
 							"chance": 20,
-							"cooldown": 4
+							"cooldown": 4,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 5,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 25,
-							"cooldown": 4
+							"cooldown": 4,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 5,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 30,
-							"cooldown": 4
+							"cooldown": 4,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 6,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 35,
-							"cooldown": 4
+							"cooldown": 4,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 6,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 5,
 							"chance": 40,
-							"cooldown": 4
+							"cooldown": 4,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 6,
+									"seconds": 7,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 6,
 							"chance": 45,
-							"cooldown": 4
+							"cooldown": 4,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 7,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 7,
 							"chance": 50,
-							"cooldown": 3
+							"cooldown": 3,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 8,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 8,
 							"chance": 55,
-							"cooldown": 3
+							"cooldown": 3,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 8,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 9,
 							"chance": 60,
-							"cooldown": 3
+							"cooldown": 3,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 9,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 10,
 							"chance": 80,
-							"cooldown": 3
+							"cooldown": 3,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 6,
+									"seconds": 9,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -6164,17 +7860,41 @@
 						{
 							"level": 1,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Sức mạnh",
+									"level": 6,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Sức mạnh",
+									"level": 7,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Sức mạnh",
+									"level": 8,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -6205,7 +7925,15 @@
 						{
 							"level": 1,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 4,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -6316,17 +8044,41 @@
 						{
 							"level": 1,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Nhảy cao",
+									"level": 3,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Nhảy cao",
+									"level": 4,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Nhảy cao",
+									"level": 5,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -6421,7 +8173,15 @@
 						{
 							"level": 1,
 							"chance": 100,
-							"cooldown": 0
+							"cooldown": 0,
+							"potions": [
+								{
+									"effect": "Sức mạnh",
+									"level": 9,
+									"seconds": 3,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -6508,22 +8268,78 @@
 						{
 							"level": 1,
 							"chance": 14,
-							"cooldown": 8
+							"cooldown": 8,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 11,
+									"seconds": 1,
+									"target": "enemy"
+								},
+								{
+									"effect": "Suy yếu",
+									"level": 1,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 18,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 11,
+									"seconds": 2,
+									"target": "enemy"
+								},
+								{
+									"effect": "Suy yếu",
+									"level": 2,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 24,
-							"cooldown": 5
+							"cooldown": 5,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 11,
+									"seconds": 3,
+									"target": "enemy"
+								},
+								{
+									"effect": "Suy yếu",
+									"level": 3,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 4,
 							"chance": 30,
-							"cooldown": 4
+							"cooldown": 4,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 11,
+									"seconds": 4,
+									"target": "enemy"
+								},
+								{
+									"effect": "Suy yếu",
+									"level": 4,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -6643,12 +8459,64 @@
 						{
 							"level": 1,
 							"chance": 22,
-							"cooldown": 5
+							"cooldown": 5,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 9,
+									"seconds": 4,
+									"target": "enemy"
+								},
+								{
+									"effect": "Mù",
+									"level": 3,
+									"seconds": 4,
+									"target": "enemy"
+								},
+								{
+									"effect": "Suy yếu",
+									"level": 201,
+									"seconds": 4,
+									"target": "enemy"
+								},
+								{
+									"effect": "Buồn nôn",
+									"level": 2,
+									"seconds": 4,
+									"target": "enemy"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 22,
-							"cooldown": 5
+							"cooldown": 5,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 9,
+									"seconds": 8,
+									"target": "enemy"
+								},
+								{
+									"effect": "Mù",
+									"level": 3,
+									"seconds": 8,
+									"target": "enemy"
+								},
+								{
+									"effect": "Suy yếu",
+									"level": 201,
+									"seconds": 8,
+									"target": "enemy"
+								},
+								{
+									"effect": "Buồn nôn",
+									"level": 2,
+									"seconds": 8,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -6736,7 +8604,27 @@
 						{
 							"level": 1,
 							"chance": 50,
-							"cooldown": 5
+							"cooldown": 5,
+							"potions": [
+								{
+									"effect": "Tốc độ",
+									"level": 11,
+									"seconds": 10,
+									"target": "self"
+								},
+								{
+									"effect": "Hấp thụ",
+									"level": 5,
+									"seconds": 5,
+									"target": "self"
+								},
+								{
+									"effect": "Sức mạnh",
+									"level": 11,
+									"seconds": 5,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},
@@ -6959,7 +8847,16 @@
 						{
 							"level": 1,
 							"chance": 100,
-							"cooldown": 10
+							"cooldown": 10,
+							"potions": [
+								{
+									"effect": "Chậm chạp",
+									"level": 6,
+									"seconds": 5,
+									"target": "around",
+									"radius": 5
+								}
+							]
 						}
 					]
 				},
@@ -6979,7 +8876,21 @@
 						{
 							"level": 1,
 							"chance": 100,
-							"cooldown": 3
+							"cooldown": 3,
+							"potions": [
+								{
+									"effect": "Phát sáng",
+									"level": 1,
+									"seconds": 3,
+									"target": "enemy"
+								},
+								{
+									"effect": "Buồn nôn",
+									"level": 11,
+									"seconds": 30,
+									"target": "enemy"
+								}
+							]
 						}
 					]
 				},
@@ -6999,17 +8910,59 @@
 						{
 							"level": 1,
 							"chance": 100,
-							"cooldown": 7
+							"cooldown": 7,
+							"potions": [
+								{
+									"effect": "Hồi máu",
+									"level": 2,
+									"seconds": 2,
+									"target": "self"
+								},
+								{
+									"effect": "Tốc độ",
+									"level": 4,
+									"seconds": 2,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 2,
 							"chance": 100,
-							"cooldown": 7
+							"cooldown": 7,
+							"potions": [
+								{
+									"effect": "Hồi máu",
+									"level": 3,
+									"seconds": 4,
+									"target": "self"
+								},
+								{
+									"effect": "Tốc độ",
+									"level": 5,
+									"seconds": 4,
+									"target": "self"
+								}
+							]
 						},
 						{
 							"level": 3,
 							"chance": 100,
-							"cooldown": 6
+							"cooldown": 6,
+							"potions": [
+								{
+									"effect": "Hồi máu",
+									"level": 3,
+									"seconds": 6,
+									"target": "self"
+								},
+								{
+									"effect": "Tốc độ",
+									"level": 6,
+									"seconds": 6,
+									"target": "self"
+								}
+							]
 						}
 					]
 				},

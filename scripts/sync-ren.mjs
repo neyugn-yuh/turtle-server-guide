@@ -404,12 +404,49 @@ const enchantRef = (ref, where, ownGroup) => {
 	const label = group !== ownGroup && BOOK_TIERS.includes(group) ? groupLabel(group) : null;
 	return { name, ...(label ? { group: label } : {}), ...(level ? { level: Number(level) } : {}) };
 };
+// Potion effects of a book level: POTION:<TYPE>:<amplifier>:<ticks> [@target] (SkyEnchants Effects.Potion). The amplifier is the Bukkit one,
+// 0-based, so the effect level is amplifier + 1; the duration is in ticks (20 = 1 second); a missing duration is a passive effect kept up
+// while the gear is worn. @Attacker / @Victim are the roles in the hit, so who gets the effect depends on whether the book is on the
+// defender (DEFENSE, SHIELD_BLOCK) or the attacker (ATTACK, SHOOT).
+const POTION_ALIASES = { DAMAGE_RESISTANCE: 'RESISTANCE', INCREASE_DAMAGE: 'STRENGTH', SLOW: 'SLOWNESS', SLOW_DIGGING: 'MINING_FATIGUE', FAST_DIGGING: 'HASTE', JUMP: 'JUMP_BOOST', CONFUSION: 'NAUSEA' };
+const POTION_NAMES = Object.fromEntries(
+	Object.entries(readYaml('SkyEnchants/messages.yml').messages?.['book-lore']?.['effect-formats']?.POTION?.names ?? {}).map(([k, v]) => [k, sentence(trimMarks(stripCodes(v)))]),
+);
+function eventRole(type) {
+	const events = String(type ?? '').split(';');
+	if (events.every((e) => e.startsWith('DEFENSE') || e === 'SHIELD_BLOCK')) return 'defense';
+	if (events.every((e) => e.startsWith('ATTACK') || e.startsWith('SHOOT'))) return 'offense';
+	return 'other';
+}
+function potionOf(effect, type, where) {
+	const m = /^POTION:([A-Z_]+):(\d+)(?::(\d+))?(?:\s+@(.+))?$/.exec(String(effect));
+	if (!m) return void warn(`${where}: potion effect "${effect}" is not known (left out)`);
+	const name = POTION_NAMES[POTION_ALIASES[m[1]] ?? m[1]];
+	if (!name) return void warn(`${where}: potion "${m[1]}" has no name in messages.yml (left out)`);
+	const role = eventRole(type);
+	const raw = m[4];
+	let target;
+	let radius;
+	if (raw === undefined || raw === 'Holder' || raw === 'Self') target = 'self';
+	else if ((raw === 'Victim' || raw === 'Attacker') && role !== 'other') target = (raw === 'Victim') === (role === 'offense') ? 'enemy' : 'self';
+	else if (/^Aoe\{/.test(raw)) {
+		target = 'around';
+		radius = Number(/radius=(\d+)/.exec(raw)?.[1]);
+		if (!Number.isFinite(radius)) return void warn(`${where}: potion "${effect}" has no radius (left out)`);
+	} else return void warn(`${where}: potion target "@${raw}" on ${type} is not known (left out)`);
+	return { effect: name, level: Number(m[2]) + 1, seconds: m[3] === undefined ? null : round(Number(m[3]) / 20), target, ...(radius ? { radius } : {}) };
+}
+/** { potions: [...] } for a book level, or nothing when it has no potion effect. */
+function potionList(level, type, where) {
+	const potions = (level.effects ?? []).filter((e) => String(e).startsWith('POTION:')).map((e) => potionOf(e, type, where)).filter(Boolean);
+	return potions.length ? { potions } : {};
+}
 function enchantOf(id, raw, ownGroup) {
 	const where = `enchant ${id}`;
 	const name = enchantName(id);
 	if (!name) fail(`${where} has no name`);
 	const levels = Object.entries(raw.levels ?? {})
-		.map(([level, v]) => ({ level: Number(level), chance: round(v.chance), cooldown: round(v.cooldown ?? 0), ...(v.souls ? { souls: Number(v.souls) } : {}) }))
+		.map(([level, v]) => ({ level: Number(level), chance: round(v.chance), cooldown: round(v.cooldown ?? 0), ...(v.souls ? { souls: Number(v.souls) } : {}), ...potionList(v, raw.type, `${where} level ${level}`) }))
 		.sort((a, b) => a.level - b.level);
 	if (!levels.length) fail(`${where} has no levels`);
 	const description = String(raw.description ?? '').split('\n').map((l) => stripCodes(l).replace(/%[a-z-]+%/g, '').trim()).filter(Boolean).join(' ');

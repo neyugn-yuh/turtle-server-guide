@@ -31,15 +31,44 @@ const lines = (e: any) => [
 	e.replaces.length ? `Thay thế: ${e.replaces.map(ref).join(', ')}` : null,
 	e.excludes.length ? `Không ép cùng: ${e.excludes.map(ref).join(', ')}` : null,
 ].filter(Boolean) as string[];
+// Potion effects of each level: which effect, at what level, for how long, and on whom.
+const TARGETS: Record<string, string> = { enemy: 'kẻ địch', self: 'bạn' };
+const targetText = (p: any) => (p.target === 'around' ? `xung quanh ${p.radius} block` : TARGETS[p.target]);
+// a passive book keeps its effect up as long as the gear is worn (the plugin renews it), so its duration is not a number of seconds
+const durationText = (p: any, passive: boolean) => (passive || p.seconds === null ? 'Liên tục khi mang' : `${num(p.seconds)} giây`);
+const effectRows = (e: any) => {
+	const rows: { label: string; values: string[] }[] = [];
+	const slots = Math.max(0, ...e.levels.map((l: any) => (l.potions ?? []).length));
+	for (let i = 0; i < slots; i++) {
+		const cells = e.levels.map((l: any) => l.potions?.[i] ?? null);
+		const first = cells.find(Boolean);
+		// the same effect on the same target at every level: one row for its level, one for its duration
+		const same = cells.every((c: any) => c && c.effect === first.effect && c.target === first.target && c.radius === first.radius);
+		if (same) {
+			const label = `${first.effect} (${targetText(first)})`;
+			rows.push({ label: `${label} · cấp hiệu ứng`, values: cells.map((c: any) => roman(c.level)) });
+			rows.push({ label: `${label} · thời gian duy trì`, values: cells.map((c: any) => durationText(c, e.passive)) });
+		} else {
+			rows.push({
+				label: slots > 1 ? `Hiệu ứng ${i + 1}` : 'Hiệu ứng',
+				values: cells.map((c: any) => (c ? `${c.effect} ${roman(c.level)}, ${durationText(c, e.passive)}, ${targetText(c)}` : '–')),
+			});
+		}
+	}
+	return rows;
+};
 // Show shared values once; only values that change need a row across the levels.
-const stats = (e: any) => e.passive ? [] : [
-	{ label: 'Tỉ lệ kích hoạt', values: e.levels.map((l: any) => `${num(l.chance)}%`) },
-	...(e.levels.some((l: any) => l.cooldown > 0)
-		? [{ label: 'Hồi chiêu', values: e.levels.map((l: any) => l.cooldown > 0 ? `${num(l.cooldown)} giây` : '–') }]
-		: []),
-	...(e.levels.some((l: any) => l.souls)
-		? [{ label: 'Linh hồn mỗi lần', values: e.levels.map((l: any) => l.souls ? num(l.souls) : '–') }]
-		: []),
+const stats = (e: any) => [
+	...(e.passive ? [] : [
+		{ label: 'Tỉ lệ kích hoạt', values: e.levels.map((l: any) => `${num(l.chance)}%`) },
+		...(e.levels.some((l: any) => l.cooldown > 0)
+			? [{ label: 'Hồi chiêu', values: e.levels.map((l: any) => l.cooldown > 0 ? `${num(l.cooldown)} giây` : '–') }]
+			: []),
+		...(e.levels.some((l: any) => l.souls)
+			? [{ label: 'Linh hồn mỗi lần', values: e.levels.map((l: any) => l.souls ? num(l.souls) : '–') }]
+			: []),
+	]),
+	...effectRows(e),
 ].map((stat) => ({ ...stat, shared: stat.values.every((value: string) => value === stat.values[0]) }));
 ---
 
