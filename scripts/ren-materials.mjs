@@ -37,7 +37,7 @@ export const MATERIAL_GROUPS = [
 ];
 
 /** Spawners that /ecraft makes but the spawner shop does not sell (entity -> name). */
-const CRAFT_ONLY_SPAWNERS = { HORSE: 'Lồng Ngựa', HUSK: 'Lồng Husk' };
+const CRAFT_ONLY_SPAWNERS = { HORSE: 'Lồng Ngựa', HUSK: 'Lồng Husk', ZOMBIFIED_PIGLIN: 'Lồng Heo Zombie' };
 
 export function buildMaterials({ materials: all, dungeons, chests, spawners, warn, fail }) {
 	// spawner recipes (/ecraft): the entity the recipe gives -> the name of the spawner in the shop

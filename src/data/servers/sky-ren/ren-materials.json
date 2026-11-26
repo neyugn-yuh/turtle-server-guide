@@ -2737,11 +2737,23 @@
 			],
 			"usedBy": [
 				{
+					"name": "Lồng Heo Zombie",
+					"kind": "spawner"
+				},
+				{
 					"name": "Lồng Husk",
 					"kind": "spawner"
 				},
 				{
+					"name": "Lồng Lạc Đà",
+					"kind": "spawner"
+				},
+				{
 					"name": "Lồng Ngựa",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Người Sắt",
 					"kind": "spawner"
 				},
 				{
@@ -2877,11 +2889,23 @@
 			"recipes": [],
 			"usedBy": [
 				{
+					"name": "Lồng Heo Zombie",
+					"kind": "spawner"
+				},
+				{
 					"name": "Lồng Husk",
 					"kind": "spawner"
 				},
 				{
+					"name": "Lồng Lạc Đà",
+					"kind": "spawner"
+				},
+				{
 					"name": "Lồng Ngựa",
+					"kind": "spawner"
+				},
+				{
+					"name": "Lồng Người Sắt",
 					"kind": "spawner"
 				},
 				{
