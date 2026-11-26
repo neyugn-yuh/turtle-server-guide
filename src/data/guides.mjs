@@ -55,7 +55,7 @@ export const guides = [
 		slug: 'dungeons',
 		title: 'Dungeon',
 		description: 'Sáu dungeon từ dễ đến cực khó: quái vật từng nơi, boss và phần thưởng chi tiết.',
-		landing: 'tong-quan',
+		landing: 'dungeon-1',
 	},
 	// <-- add new guides here
 ];

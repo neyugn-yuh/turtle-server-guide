@@ -91,11 +91,12 @@ const round = (n) => Math.round(Number(n) * 1000) / 1000;
 
 // ---------- item names ----------
 const itemFiles = {};
-const itemName = (type, id) => {
+const itemInfo = (type, id) => {
 	const key = type.toLowerCase();
 	itemFiles[key] ??= existsSync(join(BASE, `MMOItems/item/${key}.yml`)) ? readYaml(`MMOItems/item/${key}.yml`) : {};
 	const item = itemFiles[key][id.toUpperCase()];
-	return item ? pretty(item.base?.name, { keepBrackets: true }) || null : null;
+	const name = item ? pretty(item.base?.name, { keepBrackets: true }) : '';
+	return name ? { name, icon: item.base?.material ? String(item.base.material).toLowerCase() : null } : null;
 };
 
 // ---------- rewards ----------
@@ -133,9 +134,9 @@ function rewardOf(command, chance, where) {
 	const text = command.replace(/<(?:trigger|target)\.name>/g, '@P');
 	let m = /^mi give (\w+) (\w+) @P (\d+)(?: \d+ \d+ \d+ silent)?$/.exec(text) ?? /^mi give (\w+) (\w+) @P (\d+)\b/.exec(text);
 	if (m) {
-		const name = itemName(m[1], m[2]);
-		if (!name) return void warn(`${where}: drops ${m[1]}:${m[2]}, which is not in MMOItems (left out)`);
-		return { type: 'item', name, min: Number(m[3]), max: Number(m[3]), chance };
+		const info = itemInfo(m[1], m[2]);
+		if (!info) return void warn(`${where}: drops ${m[1]}:${m[2]}, which is not in MMOItems (left out)`);
+		return { type: 'item', name: info.name, icon: info.icon, min: Number(m[3]), max: Number(m[3]), chance };
 	}
 	m = /^tt add @P (\w+) (\S+)$/.exec(text);
 	if (m) {
@@ -147,9 +148,9 @@ function rewardOf(command, chance, where) {
 	m = /^points give @P (\d+)$/.exec(text);
 	if (m) return { type: 'xu', name: 'Xu', min: Number(m[1]), max: Number(m[1]), chance };
 	m = /^(?:exp give|src exp) @P (\d+)$/.exec(text);
-	if (m) return { type: 'exp', name: 'Kinh nghiệm', min: Number(m[1]), max: Number(m[1]), chance };
+	if (m) return { type: 'exp', name: 'Kinh nghiệm', icon: 'experience_bottle', min: Number(m[1]), max: Number(m[1]), chance };
 	m = /^crazycrates give v cauvong (\d+) @P$/.exec(text);
-	if (m) return { type: 'key', name: 'Chìa khóa Cầu Vồng', min: Number(m[1]), max: Number(m[1]), chance };
+	if (m) return { type: 'key', name: 'Chìa khóa Cầu Vồng', icon: 'clay_ball', min: Number(m[1]), max: Number(m[1]), chance };
 	m = /^cr give to @P (\w+) (\d+)(?: offline)?$/.exec(text);
 	if (m) {
 		const name = crateName(m[1]);
@@ -159,7 +160,7 @@ function rewardOf(command, chance, where) {
 	m = /^mme reward @P (\w+) (\d+)$/.exec(text);
 	if (m) {
 		if (!BLOCKS[m[1]]) return void warn(`${where}: mme reward ${m[1]} is not a known block (left out)`);
-		return { type: 'block', name: BLOCKS[m[1]], min: Number(m[2]), max: Number(m[2]), chance };
+		return { type: 'block', name: BLOCKS[m[1]], icon: m[1], min: Number(m[2]), max: Number(m[2]), chance };
 	}
 	if (/^bc /.test(text)) return null; // an announcement
 	warn(`${where}: unknown command "${command}" (left out)`);
@@ -214,6 +215,14 @@ function menuEntry(n) {
 }
 
 // ---------- the mobs ----------
+// What the mob looks like in the game: the entity of its disguise (a disguise "player" has a custom skin we do not have, so it is
+// the entity the mob is), else its type. A giant is drawn as a zombie.
+function appearanceOf(mob) {
+	const disguise = /^(\w+)/.exec(String(mob.Disguise ?? ''))?.[1];
+	const entity = disguise && disguise.toLowerCase() !== 'player' ? disguise : (mob.Type ?? mob.Mobtype ?? '');
+	const id = String(entity).toUpperCase();
+	return id === 'GIANT' ? 'ZOMBIE' : id || null;
+}
 function mobOf(id, mob, n) {
 	const display = String(mob.Display ?? '');
 	const clean = stripCodes(display);
@@ -221,7 +230,7 @@ function mobOf(id, mob, n) {
 	const killer = (mob.Skills ?? []).find((l) => /skill\{s=KillerReward-[^}]+\}\s*@trigger/.test(l));
 	const isBoss = Boolean(killer);
 	const name = pretty(clean.replace(/\([^)]*\)/g, ' '));
-	const out = { id, name, kind: isBoss ? 'boss' : 'normal', title: isBoss && title && !/^boss$/i.test(title) ? title : null, health: Number(mob.Health), damage: mob.Damage === undefined ? null : Number(mob.Damage), exp: null, money: null, drops: [], killer: [], nearby: [] };
+	const out = { id, name, appearance: appearanceOf(mob), kind: isBoss ? 'boss' : 'normal', title: isBoss && title && !/^boss$/i.test(title) ? title : null, health: Number(mob.Health), damage: mob.Damage === undefined ? null : Number(mob.Damage), exp: null, money: null, drops: [], killer: [], nearby: [] };
 	for (const d of mob.Drops ?? []) {
 		const text = String(d).trim();
 		let m = /^exp (\d+)$/i.exec(text);

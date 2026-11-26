@@ -13,6 +13,7 @@
 				{
 					"id": "Dun1-MaHaiTac",
 					"name": "Ma Hải Tặc",
+					"appearance": "PIG_ZOMBIE",
 					"kind": "normal",
 					"title": null,
 					"health": 40,
@@ -23,6 +24,7 @@
 						{
 							"type": "item",
 							"name": "Nấm Ma Hải Tặc",
+							"icon": "red_mushroom",
 							"min": 1,
 							"max": 1,
 							"chance": 100
@@ -41,6 +43,7 @@
 				{
 					"id": "Dun1-BossMaHaiTac",
 					"name": "Ma Hải Tặc",
+					"appearance": "ZOMBIE",
 					"kind": "boss",
 					"title": null,
 					"health": 5000,
@@ -66,6 +69,7 @@
 						{
 							"type": "item",
 							"name": "Nấm Ma Hải Tặc",
+							"icon": "red_mushroom",
 							"min": 128,
 							"max": 128,
 							"chance": 100
@@ -73,6 +77,7 @@
 						{
 							"type": "key",
 							"name": "Chìa khóa Cầu Vồng",
+							"icon": "clay_ball",
 							"min": 1,
 							"max": 1,
 							"chance": 100
@@ -86,6 +91,7 @@
 								{
 									"type": "item",
 									"name": "Cà Rốt Sinh Lực",
+									"icon": "carrot",
 									"min": 100,
 									"max": 100,
 									"chance": 100
@@ -93,6 +99,7 @@
 								{
 									"type": "item",
 									"name": "Nấm Ma Hải Tặc",
+									"icon": "red_mushroom",
 									"min": 128,
 									"max": 128,
 									"chance": 100
@@ -100,6 +107,7 @@
 								{
 									"type": "exp",
 									"name": "Kinh nghiệm",
+									"icon": "experience_bottle",
 									"min": 2500,
 									"max": 2500,
 									"chance": 100
@@ -107,6 +115,7 @@
 								{
 									"type": "key",
 									"name": "Chìa khóa Cầu Vồng",
+									"icon": "clay_ball",
 									"min": 1,
 									"max": 1,
 									"chance": 100
@@ -114,6 +123,7 @@
 								{
 									"type": "block",
 									"name": "Khối Kim Cương",
+									"icon": "diamond_block",
 									"min": 5,
 									"max": 5,
 									"chance": 100
@@ -121,6 +131,7 @@
 								{
 									"type": "block",
 									"name": "Khối Sắt",
+									"icon": "iron_block",
 									"min": 5,
 									"max": 5,
 									"chance": 100
@@ -128,6 +139,7 @@
 								{
 									"type": "block",
 									"name": "Khối Vàng",
+									"icon": "gold_block",
 									"min": 5,
 									"max": 5,
 									"chance": 100
@@ -135,6 +147,7 @@
 								{
 									"type": "block",
 									"name": "Khối Lapis",
+									"icon": "lapis_block",
 									"min": 5,
 									"max": 5,
 									"chance": 100
@@ -155,6 +168,7 @@
 								{
 									"type": "item",
 									"name": "Nấm Ma Hải Tặc",
+									"icon": "red_mushroom",
 									"min": 64,
 									"max": 64,
 									"chance": 100
@@ -162,6 +176,7 @@
 								{
 									"type": "item",
 									"name": "Trái Tim Quái Vật I",
+									"icon": "redstone",
 									"min": 1,
 									"max": 1,
 									"chance": 100
@@ -185,6 +200,7 @@
 				{
 					"id": "Dun2-NhenYeuTinh",
 					"name": "Nhện Yêu Tinh",
+					"appearance": "CAVE_SPIDER",
 					"kind": "normal",
 					"title": null,
 					"health": 80,
@@ -195,6 +211,7 @@
 						{
 							"type": "item",
 							"name": "Mảnh Khiên Yêu Tinh",
+							"icon": "prismarine_crystals",
 							"min": 1,
 							"max": 1,
 							"chance": 30
@@ -202,6 +219,7 @@
 						{
 							"type": "item",
 							"name": "Mắt Nhện Yêu Tinh",
+							"icon": "spider_eye",
 							"min": 1,
 							"max": 1,
 							"chance": 50
@@ -220,6 +238,7 @@
 				{
 					"id": "Dun2-BossNhenYeuTinh",
 					"name": "Nhện Yêu Tinh",
+					"appearance": "SPIDER",
 					"kind": "boss",
 					"title": null,
 					"health": 7000,
@@ -245,6 +264,7 @@
 						{
 							"type": "item",
 							"name": "Xương Nhện Yêu Tinh",
+							"icon": "bone",
 							"min": 1,
 							"max": 1,
 							"chance": 20
@@ -258,6 +278,7 @@
 								{
 									"type": "item",
 									"name": "Cà Rốt Sinh Lực",
+									"icon": "carrot",
 									"min": 200,
 									"max": 200,
 									"chance": 100
@@ -265,6 +286,7 @@
 								{
 									"type": "item",
 									"name": "Mắt Nhện Yêu Tinh",
+									"icon": "spider_eye",
 									"min": 64,
 									"max": 64,
 									"chance": 100
@@ -272,6 +294,7 @@
 								{
 									"type": "item",
 									"name": "Mảnh Khiên Yêu Tinh",
+									"icon": "prismarine_crystals",
 									"min": 16,
 									"max": 16,
 									"chance": 100
@@ -279,6 +302,7 @@
 								{
 									"type": "exp",
 									"name": "Kinh nghiệm",
+									"icon": "experience_bottle",
 									"min": 5500,
 									"max": 5500,
 									"chance": 100
@@ -286,6 +310,7 @@
 								{
 									"type": "key",
 									"name": "Chìa khóa Cầu Vồng",
+									"icon": "clay_ball",
 									"min": 2,
 									"max": 2,
 									"chance": 100
@@ -293,6 +318,7 @@
 								{
 									"type": "block",
 									"name": "Khối Kim Cương",
+									"icon": "diamond_block",
 									"min": 10,
 									"max": 10,
 									"chance": 100
@@ -300,6 +326,7 @@
 								{
 									"type": "block",
 									"name": "Khối Sắt",
+									"icon": "iron_block",
 									"min": 10,
 									"max": 10,
 									"chance": 100
@@ -307,6 +334,7 @@
 								{
 									"type": "block",
 									"name": "Khối Vàng",
+									"icon": "gold_block",
 									"min": 10,
 									"max": 10,
 									"chance": 100
@@ -314,6 +342,7 @@
 								{
 									"type": "block",
 									"name": "Khối Ngọc Lục Bảo",
+									"icon": "emerald_block",
 									"min": 10,
 									"max": 10,
 									"chance": 100
@@ -334,6 +363,7 @@
 								{
 									"type": "item",
 									"name": "Mắt Nhện Yêu Tinh",
+									"icon": "spider_eye",
 									"min": 64,
 									"max": 64,
 									"chance": 100
@@ -341,6 +371,7 @@
 								{
 									"type": "item",
 									"name": "Mảnh Khiên Yêu Tinh",
+									"icon": "prismarine_crystals",
 									"min": 32,
 									"max": 32,
 									"chance": 100
@@ -348,6 +379,7 @@
 								{
 									"type": "item",
 									"name": "Trái Tim Quái Vật I",
+									"icon": "redstone",
 									"min": 1,
 									"max": 1,
 									"chance": 100
@@ -371,6 +403,7 @@
 				{
 					"id": "Dun3-PhuThuyDen",
 					"name": "Phù Thủy Đen",
+					"appearance": "WITCH",
 					"kind": "normal",
 					"title": null,
 					"health": 165,
@@ -381,6 +414,7 @@
 						{
 							"type": "item",
 							"name": "Mảnh Khiên Phù Thủy",
+							"icon": "prismarine_crystals",
 							"min": 1,
 							"max": 1,
 							"chance": 5
@@ -388,6 +422,7 @@
 						{
 							"type": "item",
 							"name": "Vàng Thỏi Óng Ánh",
+							"icon": "gold_nugget",
 							"min": 1,
 							"max": 1,
 							"chance": 50
@@ -406,6 +441,7 @@
 				{
 					"id": "Dun3-BossPhuThuyDen",
 					"name": "Phù Thủy Đen",
+					"appearance": "WITCH",
 					"kind": "boss",
 					"title": null,
 					"health": 10000,
@@ -431,6 +467,7 @@
 						{
 							"type": "item",
 							"name": "Xương Phù Thủy Đen",
+							"icon": "bone",
 							"min": 1,
 							"max": 1,
 							"chance": 20
@@ -444,6 +481,7 @@
 								{
 									"type": "item",
 									"name": "Cà Rốt Sinh Lực",
+									"icon": "carrot",
 									"min": 300,
 									"max": 300,
 									"chance": 100
@@ -451,6 +489,7 @@
 								{
 									"type": "item",
 									"name": "Vàng Thỏi Óng Ánh",
+									"icon": "gold_nugget",
 									"min": 128,
 									"max": 128,
 									"chance": 100
@@ -458,6 +497,7 @@
 								{
 									"type": "exp",
 									"name": "Kinh nghiệm",
+									"icon": "experience_bottle",
 									"min": 10500,
 									"max": 10500,
 									"chance": 100
@@ -465,6 +505,7 @@
 								{
 									"type": "key",
 									"name": "Chìa khóa Cầu Vồng",
+									"icon": "clay_ball",
 									"min": 3,
 									"max": 3,
 									"chance": 100
@@ -472,6 +513,7 @@
 								{
 									"type": "block",
 									"name": "Khối Kim Cương",
+									"icon": "diamond_block",
 									"min": 15,
 									"max": 15,
 									"chance": 100
@@ -479,6 +521,7 @@
 								{
 									"type": "block",
 									"name": "Khối Sắt",
+									"icon": "iron_block",
 									"min": 15,
 									"max": 15,
 									"chance": 100
@@ -486,6 +529,7 @@
 								{
 									"type": "block",
 									"name": "Khối Vàng",
+									"icon": "gold_block",
 									"min": 15,
 									"max": 15,
 									"chance": 100
@@ -493,6 +537,7 @@
 								{
 									"type": "block",
 									"name": "Khối Ngọc Lục Bảo",
+									"icon": "emerald_block",
 									"min": 15,
 									"max": 15,
 									"chance": 100
@@ -513,6 +558,7 @@
 								{
 									"type": "item",
 									"name": "Vàng Thỏi Óng Ánh",
+									"icon": "gold_nugget",
 									"min": 64,
 									"max": 64,
 									"chance": 100
@@ -520,6 +566,7 @@
 								{
 									"type": "item",
 									"name": "Trái Tim Quái Vật II",
+									"icon": "redstone",
 									"min": 1,
 									"max": 1,
 									"chance": 100
@@ -543,6 +590,7 @@
 				{
 					"id": "Dun4-QuanChetChoc",
 					"name": "Quân Chết Chóc",
+					"appearance": "WITHER_SKELETON",
 					"kind": "normal",
 					"title": null,
 					"health": 500,
@@ -556,6 +604,7 @@
 						{
 							"type": "item",
 							"name": "Mảnh Đá Nâng Cấp",
+							"icon": "nether_brick",
 							"min": 1,
 							"max": 1,
 							"chance": 100
@@ -563,6 +612,7 @@
 						{
 							"type": "item",
 							"name": "Mảnh Khiên Địa Ngục",
+							"icon": "prismarine_crystals",
 							"min": 1,
 							"max": 1,
 							"chance": 5
@@ -581,6 +631,7 @@
 				{
 					"id": "Dun4-BoXuongKiemSy",
 					"name": "Bộ Xương Kiếm Sỹ",
+					"appearance": "STRAY",
 					"kind": "normal",
 					"title": null,
 					"health": 350,
@@ -594,6 +645,7 @@
 						{
 							"type": "item",
 							"name": "Mảnh Đá Nâng Cấp",
+							"icon": "nether_brick",
 							"min": 5,
 							"max": 5,
 							"chance": 100
@@ -601,6 +653,7 @@
 						{
 							"type": "item",
 							"name": "Hộp Sọ Địa Ngục",
+							"icon": "player_head",
 							"min": 1,
 							"max": 1,
 							"chance": 10
@@ -608,6 +661,7 @@
 						{
 							"type": "item",
 							"name": "Mảnh Khiên Địa Ngục",
+							"icon": "prismarine_crystals",
 							"min": 1,
 							"max": 1,
 							"chance": 30
@@ -626,6 +680,7 @@
 				{
 					"id": "Dun4-Jack",
 					"name": "Jack",
+					"appearance": "WITHER_SKELETON",
 					"kind": "boss",
 					"title": null,
 					"health": 10000,
@@ -651,6 +706,7 @@
 						{
 							"type": "item",
 							"name": "Xương Địa Ngục",
+							"icon": "bone",
 							"min": 1,
 							"max": 1,
 							"chance": 50
@@ -664,6 +720,7 @@
 								{
 									"type": "item",
 									"name": "Cà Rốt Sinh Lực",
+									"icon": "carrot",
 									"min": 400,
 									"max": 400,
 									"chance": 100
@@ -671,6 +728,7 @@
 								{
 									"type": "item",
 									"name": "Mảnh Đá Nâng Cấp",
+									"icon": "nether_brick",
 									"min": 128,
 									"max": 128,
 									"chance": 100
@@ -678,6 +736,7 @@
 								{
 									"type": "exp",
 									"name": "Kinh nghiệm",
+									"icon": "experience_bottle",
 									"min": 30500,
 									"max": 30500,
 									"chance": 100
@@ -685,6 +744,7 @@
 								{
 									"type": "key",
 									"name": "Chìa khóa Cầu Vồng",
+									"icon": "clay_ball",
 									"min": 9,
 									"max": 9,
 									"chance": 100
@@ -692,6 +752,7 @@
 								{
 									"type": "block",
 									"name": "Khối Kim Cương",
+									"icon": "diamond_block",
 									"min": 20,
 									"max": 20,
 									"chance": 100
@@ -699,6 +760,7 @@
 								{
 									"type": "block",
 									"name": "Khối Sắt",
+									"icon": "iron_block",
 									"min": 20,
 									"max": 20,
 									"chance": 100
@@ -706,6 +768,7 @@
 								{
 									"type": "block",
 									"name": "Khối Vàng",
+									"icon": "gold_block",
 									"min": 20,
 									"max": 20,
 									"chance": 100
@@ -713,6 +776,7 @@
 								{
 									"type": "block",
 									"name": "Khối Ngọc Lục Bảo",
+									"icon": "emerald_block",
 									"min": 20,
 									"max": 20,
 									"chance": 100
@@ -733,6 +797,7 @@
 								{
 									"type": "item",
 									"name": "Trái Tim Quái Vật II",
+									"icon": "redstone",
 									"min": 1,
 									"max": 1,
 									"chance": 100
@@ -753,6 +818,7 @@
 								{
 									"type": "item",
 									"name": "Trái Tim Quái Vật II",
+									"icon": "redstone",
 									"min": 1,
 									"max": 1,
 									"chance": 100
@@ -764,6 +830,7 @@
 				{
 					"id": "Dun4-JackSon",
 					"name": "Jackson",
+					"appearance": "WITHER_SKELETON",
 					"kind": "boss",
 					"title": null,
 					"health": 10000,
@@ -789,6 +856,7 @@
 						{
 							"type": "item",
 							"name": "Xương Địa Ngục",
+							"icon": "bone",
 							"min": 1,
 							"max": 1,
 							"chance": 50
@@ -802,6 +870,7 @@
 								{
 									"type": "item",
 									"name": "Cà Rốt Sinh Lực",
+									"icon": "carrot",
 									"min": 400,
 									"max": 400,
 									"chance": 100
@@ -809,6 +878,7 @@
 								{
 									"type": "item",
 									"name": "Mảnh Đá Nâng Cấp",
+									"icon": "nether_brick",
 									"min": 128,
 									"max": 128,
 									"chance": 100
@@ -816,6 +886,7 @@
 								{
 									"type": "exp",
 									"name": "Kinh nghiệm",
+									"icon": "experience_bottle",
 									"min": 30500,
 									"max": 30500,
 									"chance": 100
@@ -823,6 +894,7 @@
 								{
 									"type": "key",
 									"name": "Chìa khóa Cầu Vồng",
+									"icon": "clay_ball",
 									"min": 9,
 									"max": 9,
 									"chance": 100
@@ -830,6 +902,7 @@
 								{
 									"type": "block",
 									"name": "Khối Kim Cương",
+									"icon": "diamond_block",
 									"min": 20,
 									"max": 20,
 									"chance": 100
@@ -837,6 +910,7 @@
 								{
 									"type": "block",
 									"name": "Khối Sắt",
+									"icon": "iron_block",
 									"min": 20,
 									"max": 20,
 									"chance": 100
@@ -844,6 +918,7 @@
 								{
 									"type": "block",
 									"name": "Khối Vàng",
+									"icon": "gold_block",
 									"min": 20,
 									"max": 20,
 									"chance": 100
@@ -851,6 +926,7 @@
 								{
 									"type": "block",
 									"name": "Khối Ngọc Lục Bảo",
+									"icon": "emerald_block",
 									"min": 20,
 									"max": 20,
 									"chance": 100
@@ -871,6 +947,7 @@
 								{
 									"type": "item",
 									"name": "Trái Tim Quái Vật II",
+									"icon": "redstone",
 									"min": 1,
 									"max": 1,
 									"chance": 100
@@ -891,6 +968,7 @@
 								{
 									"type": "item",
 									"name": "Trái Tim Quái Vật II",
+									"icon": "redstone",
 									"min": 1,
 									"max": 1,
 									"chance": 100
@@ -914,6 +992,7 @@
 				{
 					"id": "Dun5-EnderChua",
 					"name": "Ender Chúa",
+					"appearance": "ENDERMAN",
 					"kind": "normal",
 					"title": null,
 					"health": 650,
@@ -927,6 +1006,7 @@
 						{
 							"type": "item",
 							"name": "Mảnh Khiên Thiên Hà",
+							"icon": "prismarine_crystals",
 							"min": 1,
 							"max": 1,
 							"chance": 3
@@ -934,6 +1014,7 @@
 						{
 							"type": "item",
 							"name": "Trứng Rồng (Báu Vật)",
+							"icon": "dragon_egg",
 							"min": 1,
 							"max": 1,
 							"chance": 10
@@ -941,6 +1022,7 @@
 						{
 							"type": "item",
 							"name": "Trái Tim Enderman Chúa",
+							"icon": "chorus_flower",
 							"min": 1,
 							"max": 1,
 							"chance": 70
@@ -959,6 +1041,7 @@
 				{
 					"id": "Dun5-EnderCon",
 					"name": "Ender Con",
+					"appearance": "ENDERMITE",
 					"kind": "normal",
 					"title": null,
 					"health": 550,
@@ -972,6 +1055,7 @@
 						{
 							"type": "item",
 							"name": "Mảnh Khiên Thiên Hà",
+							"icon": "prismarine_crystals",
 							"min": 1,
 							"max": 1,
 							"chance": 5
@@ -979,6 +1063,7 @@
 						{
 							"type": "item",
 							"name": "Trái Tim Enderman Con",
+							"icon": "chorus_plant",
 							"min": 1,
 							"max": 1,
 							"chance": 70
@@ -997,6 +1082,7 @@
 				{
 					"id": "Dun5-RongKhongGian",
 					"name": "Rồng Không Gian",
+					"appearance": "WITHER",
 					"kind": "boss",
 					"title": null,
 					"health": 20000,
@@ -1022,6 +1108,7 @@
 						{
 							"type": "item",
 							"name": "Khung Cổng End",
+							"icon": "end_portal_frame",
 							"min": 10,
 							"max": 10,
 							"chance": 100
@@ -1029,6 +1116,7 @@
 						{
 							"type": "item",
 							"name": "Xương Rồng Không Gian",
+							"icon": "bone",
 							"min": 2,
 							"max": 2,
 							"chance": 50
@@ -1042,6 +1130,7 @@
 								{
 									"type": "item",
 									"name": "Cà Rốt Sinh Lực",
+									"icon": "carrot",
 									"min": 500,
 									"max": 500,
 									"chance": 100
@@ -1049,6 +1138,7 @@
 								{
 									"type": "item",
 									"name": "Mảnh Đá Nâng Cấp",
+									"icon": "nether_brick",
 									"min": 192,
 									"max": 192,
 									"chance": 100
@@ -1056,6 +1146,7 @@
 								{
 									"type": "exp",
 									"name": "Kinh nghiệm",
+									"icon": "experience_bottle",
 									"min": 45750,
 									"max": 45750,
 									"chance": 100
@@ -1063,6 +1154,7 @@
 								{
 									"type": "key",
 									"name": "Chìa khóa Cầu Vồng",
+									"icon": "clay_ball",
 									"min": 14,
 									"max": 14,
 									"chance": 100
@@ -1070,6 +1162,7 @@
 								{
 									"type": "block",
 									"name": "Khối Kim Cương",
+									"icon": "diamond_block",
 									"min": 25,
 									"max": 25,
 									"chance": 100
@@ -1077,6 +1170,7 @@
 								{
 									"type": "block",
 									"name": "Khối Sắt",
+									"icon": "iron_block",
 									"min": 25,
 									"max": 25,
 									"chance": 100
@@ -1084,6 +1178,7 @@
 								{
 									"type": "block",
 									"name": "Khối Vàng",
+									"icon": "gold_block",
 									"min": 25,
 									"max": 25,
 									"chance": 100
@@ -1091,6 +1186,7 @@
 								{
 									"type": "block",
 									"name": "Khối Ngọc Lục Bảo",
+									"icon": "emerald_block",
 									"min": 25,
 									"max": 25,
 									"chance": 100
@@ -1111,6 +1207,7 @@
 								{
 									"type": "item",
 									"name": "Trái Tim Quái Vật III",
+									"icon": "redstone",
 									"min": 1,
 									"max": 1,
 									"chance": 100
@@ -1147,6 +1244,7 @@
 				{
 					"id": "Dun6-ChienBinhBang",
 					"name": "Chiến Binh Băng Cổ Đại",
+					"appearance": "WITHER_SKELETON",
 					"kind": "normal",
 					"title": null,
 					"health": 1950,
@@ -1160,6 +1258,7 @@
 						{
 							"type": "item",
 							"name": "Mảnh Khiên Băng Giá",
+							"icon": "prismarine_shard",
 							"min": 1,
 							"max": 1,
 							"chance": 3
@@ -1178,6 +1277,7 @@
 				{
 					"id": "Dun6-GiamNguc",
 					"name": "Giám Ngục Hàn Băng",
+					"appearance": "STRAY",
 					"kind": "normal",
 					"title": null,
 					"health": 1650,
@@ -1191,6 +1291,7 @@
 						{
 							"type": "item",
 							"name": "Mảnh Khiên Băng Giá",
+							"icon": "prismarine_shard",
 							"min": 1,
 							"max": 1,
 							"chance": 5
@@ -1209,6 +1310,7 @@
 				{
 					"id": "Dun6-HoPhapBang",
 					"name": "Hộ Pháp Băng Giá",
+					"appearance": "WITHER_SKELETON",
 					"kind": "normal",
 					"title": null,
 					"health": 6000,
@@ -1222,6 +1324,7 @@
 						{
 							"type": "item",
 							"name": "Mảnh Khiên Băng Giá",
+							"icon": "prismarine_shard",
 							"min": 1,
 							"max": 1,
 							"chance": 8
@@ -1240,6 +1343,7 @@
 				{
 					"id": "Dun6Boss-Arcturus",
 					"name": "Arcturus",
+					"appearance": "WITHER_SKELETON",
 					"kind": "boss",
 					"title": "Chúa Tể Vĩnh Cửu",
 					"health": 600000,
@@ -1275,6 +1379,7 @@
 						{
 							"type": "item",
 							"name": "Khung Cổng End",
+							"icon": "end_portal_frame",
 							"min": 15,
 							"max": 15,
 							"chance": 100
@@ -1282,6 +1387,7 @@
 						{
 							"type": "item",
 							"name": "Linh Hồn Băng Giá",
+							"icon": "heart_of_the_sea",
 							"min": 2,
 							"max": 2,
 							"chance": 50
@@ -1295,6 +1401,7 @@
 								{
 									"type": "item",
 									"name": "Cà Rốt Sinh Lực",
+									"icon": "carrot",
 									"min": 600,
 									"max": 600,
 									"chance": 100
@@ -1302,6 +1409,7 @@
 								{
 									"type": "item",
 									"name": "Mảnh Đá Nâng Cấp",
+									"icon": "nether_brick",
 									"min": 256,
 									"max": 256,
 									"chance": 100
@@ -1309,6 +1417,7 @@
 								{
 									"type": "exp",
 									"name": "Kinh nghiệm",
+									"icon": "experience_bottle",
 									"min": 90000,
 									"max": 90000,
 									"chance": 100
@@ -1316,6 +1425,7 @@
 								{
 									"type": "key",
 									"name": "Chìa khóa Cầu Vồng",
+									"icon": "clay_ball",
 									"min": 18,
 									"max": 18,
 									"chance": 100
@@ -1323,6 +1433,7 @@
 								{
 									"type": "block",
 									"name": "Khối Kim Cương",
+									"icon": "diamond_block",
 									"min": 30,
 									"max": 30,
 									"chance": 100
@@ -1330,6 +1441,7 @@
 								{
 									"type": "block",
 									"name": "Khối Sắt",
+									"icon": "iron_block",
 									"min": 30,
 									"max": 30,
 									"chance": 100
@@ -1337,6 +1449,7 @@
 								{
 									"type": "block",
 									"name": "Khối Vàng",
+									"icon": "gold_block",
 									"min": 30,
 									"max": 30,
 									"chance": 100
@@ -1344,6 +1457,7 @@
 								{
 									"type": "block",
 									"name": "Khối Ngọc Lục Bảo",
+									"icon": "emerald_block",
 									"min": 30,
 									"max": 30,
 									"chance": 100
@@ -1371,6 +1485,7 @@
 								{
 									"type": "item",
 									"name": "Trái Tim Quái Vật III",
+									"icon": "redstone",
 									"min": 2,
 									"max": 2,
 									"chance": 100

@@ -2,7 +2,7 @@
 /**
  * Draws the face of every mob of the spawner list into public/mobs/<mob>.png.
  *
- * Reads the mob ids from src/data/servers/<server>/spawners.json (run sync-spawners first), downloads the mob's texture from
+ * Reads the mob ids from src/data/servers/<server>/spawners.json (run sync-spawners first) and the entities of src/data/servers/<server>/dungeons.json, downloads the mob's texture from
  * PrismarineJS/minecraft-assets (the textures of Minecraft Java) and cuts the front of its head out of it, enlarged without
  * smoothing. Parts that sit on their own spot of the texture (a snout, a beak, slime eyes) are pasted onto the face.
  * Pictures that already exist are skipped; a mob with no entry below is reported and keeps no picture.
@@ -37,6 +37,15 @@ const MOBS = {
 	PIG: { texture: 'pig/pig.png', face: [8, 8, 8, 8], parts: [{ from: [17, 17, 4, 3], to: [2, 4] }] },
 	SHEEP: { texture: 'sheep/sheep.png', face: [8, 8, 6, 6] },
 	CHICKEN: { texture: 'chicken.png', face: [3, 3, 4, 6], parts: [{ from: [16, 2, 4, 2], to: [0, 2] }, { from: [16, 6, 2, 2], to: [1, 4] }] },
+	// mobs of the Sky Rèn dungeons
+	PIG_ZOMBIE: { texture: 'piglin/zombified_piglin.png', face: [8, 8, 10, 8], parts: [{ from: [32, 2, 8, 4], to: [1, 3] }] },
+	CAVE_SPIDER: { texture: 'spider/cave_spider.png', face: [40, 12, 8, 8] },
+	WITHER_SKELETON: { texture: 'skeleton/wither_skeleton.png', face: [8, 8, 8, 8] },
+	STRAY: { texture: 'skeleton/stray.png', face: [8, 8, 8, 8] },
+	ENDERMAN: { texture: 'enderman/enderman.png', face: [8, 8, 8, 8] },
+	ENDERMITE: { texture: 'endermite.png', face: [2, 2, 4, 3] },
+	HUSK: { texture: 'zombie/husk.png', face: [8, 8, 8, 8] },
+	WITHER: { texture: 'wither/wither.png', face: [8, 8, 8, 8] },
 	// the front of a rabbit's head is plain, so its ears go on top
 	RABBIT: { texture: 'rabbit/brown.png', face: [37, 5, 5, 4], size: [5, 9], faceAt: [0, 5], parts: [{ from: [53, 1, 2, 5], to: [0, 0] }, { from: [59, 1, 2, 5], to: [3, 0] }, { from: [33, 10, 1, 1], to: [2, 7] }] },
 	// the body of a slime is an inner cube with a face and a see-through shell around it
@@ -59,6 +68,9 @@ const ids = new Set();
 for (const server of readdirSync(serversDir)) {
 	const file = join(serversDir, server, 'spawners.json');
 	if (existsSync(file)) for (const mob of JSON.parse(readFileSync(file, 'utf8')).mobs) ids.add(mob.id);
+	// the dungeons of Sky Rèn: the entity each mob looks like (see sync-ren-dungeon.mjs)
+	const dungeons = join(serversDir, server, 'dungeons.json');
+	if (existsSync(dungeons)) for (const d of JSON.parse(readFileSync(dungeons, 'utf8')).dungeons) for (const mob of d.mobs) if (mob.appearance) ids.add(mob.appearance);
 }
 
 async function download(path) {

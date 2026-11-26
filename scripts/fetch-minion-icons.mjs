@@ -67,6 +67,15 @@ for (const server of readdirSync(serversDir)) {
 	}
 }
 
+// Sky Rèn dungeons: the picture of every reward (items, blocks, keys, experience). A server without minions.json is not in the loop above.
+for (const server of readdirSync(serversDir)) {
+	const dungeonsFile = join(serversDir, server, 'dungeons.json');
+	if (!existsSync(dungeonsFile)) continue;
+	for (const d of JSON.parse(readFileSync(dungeonsFile, 'utf8')).dungeons) {
+		for (const mob of d.mobs) for (const reward of [...mob.drops, ...mob.killer, ...mob.nearby.flatMap((g) => g.rewards)]) if (reward.icon) materials.add(reward.icon);
+	}
+}
+
 mkdirSync(OUT, { recursive: true });
 const missing = [];
 for (const name of [...materials].sort()) {
