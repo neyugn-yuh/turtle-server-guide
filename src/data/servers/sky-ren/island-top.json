@@ -270,6 +270,12 @@
 			"dailyLimit": 100000
 		},
 		{
+			"name": "Arcturus",
+			"group": "D6",
+			"points": 8000,
+			"dailyLimit": 100000
+		},
+		{
 			"name": "Rồng Hoàng Kim",
 			"group": "WorldBoss",
 			"points": 0,

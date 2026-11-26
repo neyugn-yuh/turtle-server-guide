@@ -4,10 +4,11 @@
  * (written by scripts/sync-ren.mjs from TurtleIsland/contribution.yml). One table per `section`:
  *   items    what an island hands in: points each and the daily limit (shared by the island)
  *   bosses   Dungeon bosses that give points when killed (a boss with 0 points gives none and is not listed)
+ *   hunting  ordinary mobs killed on the island, natural or from a spawner
  */
 interface Props {
 	server: string;
-	section: 'items' | 'bosses';
+	section: 'items' | 'bosses' | 'hunting';
 }
 
 const { server, section } = Astro.props;
@@ -18,6 +19,7 @@ if (!data) throw new Error(`RenIslandItems: no island-top.json for server "${ser
 const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 2 });
 const items: any[] = data.items;
 const bosses: any[] = data.bosses.filter((boss: any) => boss.points > 0);
+const hunting: any[] = data.hunting.filter((mob: any) => mob.points > 0);
 const limitText = (limit: number | null) => (limit === null ? 'Không giới hạn' : num(limit));
 // "D4" -> "Dungeon 4"; anything else (a world boss) is shown as written
 const place = (group: string) => (/^D\d+$/.test(group) ? `Dungeon ${group.slice(1)}` : group);
@@ -67,6 +69,31 @@ const place = (group: string) => (/^D\d+$/.test(group) ? `Dungeon ${group.slice(
 							<td>{place(boss.group)}</td>
 							<td>{num(boss.points)}</td>
 							<td>{limitText(boss.dailyLimit)}</td>
+						</tr>
+					))}
+				</tbody>
+			</table>
+		</div>
+	)
+}
+
+{
+	section === 'hunting' && (
+		<div class="rii">
+			<table>
+				<thead>
+					<tr>
+						<th>Quái</th>
+						<th>Điểm mỗi con</th>
+						<th>Giới hạn mỗi ngày</th>
+					</tr>
+				</thead>
+				<tbody>
+					{hunting.map((mob) => (
+						<tr>
+							<td>{mob.name}</td>
+							<td>{num(mob.points)}</td>
+							<td>{limitText(mob.dailyLimit)}</td>
 						</tr>
 					))}
 				</tbody>
