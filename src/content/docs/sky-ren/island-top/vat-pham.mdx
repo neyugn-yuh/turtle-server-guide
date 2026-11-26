@@ -1,11 +1,17 @@
 ---
 title: "Đua top đảo"
-description: "Vật phẩm cống hiến cho đảo: mỗi vật phẩm được bao nhiêu điểm và giới hạn bao nhiêu mỗi ngày."
+description: "Điểm cống hiến của đảo: nộp vật phẩm nào được bao nhiêu điểm, hạ boss nào được bao nhiêu điểm, và giới hạn mỗi ngày."
 sidebar:
-  label: Vật phẩm cống hiến
+  label: Điểm cống hiến
   order: 1
 ---
 
 import RenIslandItems from '../../../../components/RenIslandItems.astro';
 
-<RenIslandItems server="sky-ren" />
+## Nộp vật phẩm
+
+<RenIslandItems server="sky-ren" section="items" />
+
+## Hạ boss
+
+<RenIslandItems server="sky-ren" section="bosses" />

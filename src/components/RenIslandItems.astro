@@ -1,49 +1,87 @@
 ---
 /**
- * Items an island can hand in for contribution points on Sky Rèn, built from src/data/servers/<server>/island-top.json
- * (written by scripts/sync-ren.mjs from TurtleIsland/contribution.yml): item, points each, daily limit (shared by the island).
+ * Island contribution points of Sky Rèn, built from src/data/servers/<server>/island-top.json
+ * (written by scripts/sync-ren.mjs from TurtleIsland/contribution.yml). One table per `section`:
+ *   items    what an island hands in: points each and the daily limit (shared by the island)
+ *   bosses   Dungeon bosses that give points when killed (a boss with 0 points gives none and is not listed)
  */
 interface Props {
 	server: string;
+	section: 'items' | 'bosses';
 }
 
-const { server } = Astro.props;
+const { server, section } = Astro.props;
 const files = import.meta.glob('../data/servers/*/island-top.json', { eager: true, import: 'default' }) as Record<string, any>;
 const data = files[`../data/servers/${server}/island-top.json`];
 if (!data) throw new Error(`RenIslandItems: no island-top.json for server "${server}", run node scripts/sync-ren.mjs`);
 
 const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 2 });
 const items: any[] = data.items;
+const bosses: any[] = data.bosses.filter((boss: any) => boss.points > 0);
+const limitText = (limit: number | null) => (limit === null ? 'Không giới hạn' : num(limit));
+// "D4" -> "Dungeon 4"; anything else (a world boss) is shown as written
+const place = (group: string) => (/^D\d+$/.test(group) ? `Dungeon ${group.slice(1)}` : group);
 ---
 
-<div class="rii">
-	<table>
-		<thead>
-			<tr>
-				<th>Vật phẩm</th>
-				<th>Điểm</th>
-				<th>Giới hạn mỗi ngày</th>
-			</tr>
-		</thead>
-		<tbody>
-			{
-				items.map((item) => (
+{
+	section === 'items' && (
+		<div class="rii">
+			<table>
+				<thead>
 					<tr>
-						<td>{item.name}</td>
-						<td>{num(item.points)}</td>
-						<td>{item.dailyLimit === null ? 'Không giới hạn' : num(item.dailyLimit)}</td>
+						<th>Vật phẩm</th>
+						<th>Điểm</th>
+						<th>Giới hạn mỗi ngày</th>
 					</tr>
-				))
-			}
-		</tbody>
-	</table>
-</div>
+				</thead>
+				<tbody>
+					{items.map((item) => (
+						<tr>
+							<td>{item.name}</td>
+							<td>{num(item.points)}</td>
+							<td>{limitText(item.dailyLimit)}</td>
+						</tr>
+					))}
+				</tbody>
+			</table>
+		</div>
+	)
+}
+
+{
+	section === 'bosses' && (
+		<div class="rii">
+			<table>
+				<thead>
+					<tr>
+						<th>Boss</th>
+						<th>Nơi</th>
+						<th>Điểm mỗi lần hạ</th>
+						<th>Giới hạn mỗi ngày</th>
+					</tr>
+				</thead>
+				<tbody>
+					{bosses.map((boss) => (
+						<tr>
+							<td>{boss.name}</td>
+							<td>{place(boss.group)}</td>
+							<td>{num(boss.points)}</td>
+							<td>{limitText(boss.dailyLimit)}</td>
+						</tr>
+					))}
+				</tbody>
+			</table>
+		</div>
+	)
+}
 
 <style>
 	.rii {
 		overflow-x: auto;
 	}
 	.rii table {
+		/* Starlight makes a table display:block, which shrinks it to its content */
+		display: table;
 		width: 100%;
 	}
 	.rii th:not(:first-child),
