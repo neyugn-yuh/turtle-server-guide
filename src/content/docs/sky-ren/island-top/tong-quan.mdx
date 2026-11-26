@@ -1,0 +1,57 @@
+---
+title: "Đua top đảo: Tổng quan"
+description: "Điểm cống hiến của đảo đến từ đâu, cách nộp vật phẩm, hạn mức mỗi ngày và phần thưởng top hàng tháng."
+sidebar:
+  label: Tổng quan
+  order: 1
+---
+
+import IslandTop from '../../../../components/IslandTop.astro';
+
+Mỗi đảo có một **điểm cống hiến**. Đảo nào nhiều điểm nhất ở bảng xếp hạng sẽ đứng đầu. Điểm của cả đảo là tổng điểm mọi thành viên góp vào; điểm cá nhân của từng người vẫn được ghi riêng để biết ai đã góp bao nhiêu.
+
+## Điểm đến từ đâu?
+
+| Nguồn | Cách có điểm | Xem bảng điểm |
+| --- | --- | --- |
+| Cống hiến vật phẩm | Nộp vật phẩm trong menu cống hiến của đảo | [Vật phẩm cống hiến](/sky-ren/island-top/vat-pham/) |
+| Săn quái tại đảo | Hạ quái trong thế giới đảo, gồm quái tự nhiên và quái từ spawner | [Săn quái và boss](/sky-ren/island-top/san-quai/) |
+| Boss Dungeon | Hạ boss của Dungeon 1 đến 5 | [Săn quái và boss](/sky-ren/island-top/san-quai/) |
+
+Điểm chỉ đến từ ba nguồn trên.
+
+## Mở menu cống hiến
+
+- Gõ `/conghien` hoặc `/ti` để mở menu đảo, trong đó có Cống hiến, Nâng cấp, Bảng xếp hạng, Đóng góp của tôi và Nhật ký cống hiến.
+- Hoặc bấm **chuột phải vào beacon cống hiến** của đảo. Bấm **chuột trái** vào beacon để chuyển các trang hologram: tổng quan, hạn mức vật phẩm và hạn mức lồng quái.
+- Chủ đảo đặt hoặc dời beacon bằng `/conghien set`: nhìn vào một block trong tầm 6 block rồi gõ lệnh.
+
+## Cách nộp vật phẩm
+
+1. Bấm nút **Cống hiến** trong menu, hoặc gõ `/ti items`. Plugin tự quét 36 ô túi đồ của bạn và mở thẳng màn **Xác nhận cống hiến**.
+2. Chỉ vật phẩm hợp lệ mới có trong danh sách xem trước. Kho ảo `/kho`, giáp và tay phụ không được quét.
+3. Bấm **Xác nhận**, lúc đó vật phẩm mới bị thu. Đóng menu trước đó thì không mất gì.
+
+Vật phẩm nhặt thêm sau khi mở màn xác nhận sẽ không tự thêm vào lượt đó. Chỉ vật phẩm nguyên bản mới được nhận, còn đồ đã đổi tên hoặc gắn dữ liệu riêng thì không tính. Lồng spawner tính điểm theo loại mob, không phân biệt cấp. Một lồng đã gộp thì tính theo số lồng thực trong đó.
+
+Điểm đảo và lịch sử người góp vẫn được giữ khi một thành viên rời đảo. Đảo bị giải tán thì không còn hiện trên bảng xếp hạng.
+
+## Giới hạn mỗi ngày
+
+- Mọi giới hạn ngày **dùng chung cho cả đảo**, không tính riêng từng người. Ví dụ khung cổng End giới hạn 10 thì tổng tất cả thành viên chỉ nộp được 10 khung mỗi ngày.
+- Giới hạn tính riêng từng loại vật phẩm, từng loại quái và từng boss, không gộp chung.
+- Loại không ghi giới hạn thì không bị giới hạn.
+- Nộp vượt hạn mức còn lại thì cả lượt nộp bị từ chối và túi giữ nguyên, không cắt một phần stack. Hãy bớt số lượng rồi nộp lại.
+- Quái săn thì điểm chỉ cộng cho phần còn lại của hạn mức: nếu hạn mức chỉ còn đủ cho vài con thì chỉ vài con đó được tính điểm.
+- Rời đảo không xóa lượt mà đảo đã dùng trong ngày. Ngày mới bắt đầu theo giờ máy chủ.
+- Cột **Điểm tối đa mỗi ngày** trong bảng là điểm một đảo thu được nếu dùng hết hạn mức của loại đó, bằng điểm mỗi vật phẩm nhân giới hạn.
+
+## Xem bảng xếp hạng
+
+Gõ `/istop`, `/topdao` hoặc `/ti top`. Bạn không cần có đảo để xem. Bảng hiện 10 đảo đứng đầu: tên đảo, chủ đảo, điểm cống hiến và tối đa 10 người góp nhiều nhất cho đảo đó.
+
+## Phần thưởng top
+
+Phần thưởng của 10 hạng đầu như bảng dưới.
+
+<IslandTop server="sky-ren" section="ranking" />

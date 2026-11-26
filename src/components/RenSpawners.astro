@@ -1,0 +1,61 @@
+---
+/**
+ * Spawners sold in the spawner shop (/spawner) of Sky Rèn, built from src/data/servers/<server>/spawners.json
+ * (written by scripts/sync-ren.mjs from the shop menu and the island contribution config).
+ * One table: what the spawner drops, EXP, price of x1 and x10, and the contribution points it gives when handed in.
+ */
+interface Props {
+	server: string;
+}
+
+const { server } = Astro.props;
+const files = import.meta.glob('../data/servers/*/spawners.json', { eager: true, import: 'default' }) as Record<string, any>;
+const data = files[`../data/servers/${server}/spawners.json`];
+if (!data) throw new Error(`RenSpawners: no spawners.json for server "${server}", run node scripts/sync-ren.mjs`);
+
+const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 2 });
+const spawners: any[] = data.spawners;
+---
+
+<div class="rsp">
+	<table>
+		<thead>
+			<tr>
+				<th>Lồng</th>
+				<th>Đồ rơi</th>
+				<th>EXP mỗi quái</th>
+				<th>Giá mua x1</th>
+				<th>Giá mua x10</th>
+				<th>Điểm cống hiến đảo</th>
+			</tr>
+		</thead>
+		<tbody>
+			{
+				spawners.map((s) => (
+					<tr>
+						<td>{s.name}</td>
+						<td>{s.drops ?? '—'}</td>
+						<td>
+							{s.exp === null ? '—' : num(s.exp)}
+							{s.expLooting !== null && <span class="rsp-sub">Rìu vàng Looting 50: {num(s.expLooting)}</span>}
+						</td>
+						<td>{num(s.price)} Tiền 💲</td>
+						<td>{num(s.price10)} Tiền 💲</td>
+						<td>{s.islandPoints === null ? '—' : num(s.islandPoints)}</td>
+					</tr>
+				))
+			}
+		</tbody>
+	</table>
+</div>
+
+<style>
+	.rsp {
+		overflow-x: auto;
+	}
+	.rsp-sub {
+		display: block;
+		font-size: 0.8125rem;
+		color: var(--sl-color-gray-3);
+	}
+</style>

@@ -36,6 +36,9 @@ import { join, dirname, resolve, relative, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { parse } from 'yaml';
 import { buildEquipment } from './ren-equipment.mjs';
+import { targetsForEnchant } from '../src/data/enchant-targets.mjs';
+import { buildSpawners } from './ren-spawners.mjs';
+import { buildIslandTop } from './island-top-lib.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const SERVER = 'sky-ren';
@@ -43,6 +46,8 @@ const OUT = join(ROOT, 'src/data/servers', SERVER, 'dungeons.json');
 const OUT_CHESTS = join(ROOT, 'src/data/servers', SERVER, 'chests.json');
 const OUT_ENCHANTS = join(ROOT, 'src/data/servers', SERVER, 'enchants.json');
 const OUT_EQUIPMENT = join(ROOT, 'src/data/servers', SERVER, 'gear.json');
+const OUT_SPAWNERS = join(ROOT, 'src/data/servers', SERVER, 'spawners.json');
+const OUT_ISLAND_TOP = join(ROOT, 'src/data/servers', SERVER, 'island-top.json');
 const COUNT = 6;
 
 const args = process.argv.slice(2);
@@ -414,6 +419,7 @@ function enchantOf(id, raw, ownGroup) {
 		id,
 		name,
 		appliesTo: String(raw['applies-to'] ?? '').replace(/\s*\+\s*/g, ', '),
+		targets: targetsForEnchant(raw.applies),
 		description,
 		passive: raw.type === 'EFFECT_STATIC',
 		requires: refs(settings['required-enchants']),
@@ -454,6 +460,19 @@ const enchantsData = {
 if (![enchantsData.baseSlots, enchantsData.maxSlots].every(Number.isFinite)) fail('SkyEnchants/config.yml: enchants.base-slots / max-slots missing');
 
 const equipmentData = buildEquipment({ base: BASE, readYaml, stripCodes, pretty, round, warn, fail });
+const { spawnerData } = buildSpawners({ readYaml, stripCodes, pretty, warn, fail });
+// the island contribution race: TurtleIsland uses the same contribution.yml / gui/top.yml as SD-Island (see island-top-lib.mjs)
+const readText = (path) => {
+	const file = join(BASE, path);
+	if (!existsSync(file)) fail(`${path} not found in ${BASE}`);
+	return readFileSync(file, 'utf8');
+};
+let topData;
+try {
+	topData = buildIslandTop({ contribution: readText('TurtleIsland/contribution.yml'), top: readText('TurtleIsland/gui/top.yml') });
+} catch (error) {
+	fail(error.message);
+}
 
 for (const message of [...new Set(warnings)].sort()) console.warn(`sync-ren: warning: ${message}`);
 
@@ -463,6 +482,8 @@ const outputs = [
 	[OUT_CHESTS, JSON.stringify({ chests: chestList }, null, '\t') + '\n'],
 	[OUT_ENCHANTS, JSON.stringify(enchantsData, null, '\t') + '\n'],
 	[OUT_EQUIPMENT, JSON.stringify(equipmentData, null, '\t') + '\n'],
+	[OUT_SPAWNERS, JSON.stringify(spawnerData, null, '\t') + '\n'],
+	[OUT_ISLAND_TOP, JSON.stringify(topData, null, '\t') + '\n'],
 ];
 let changed = false;
 for (const [file, text] of outputs) {

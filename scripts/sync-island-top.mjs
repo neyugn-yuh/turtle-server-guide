@@ -20,7 +20,7 @@
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { join, dirname, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
-import { parse } from 'yaml';
+import { buildIslandTop } from './island-top-lib.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -73,95 +73,6 @@ async function fromPterodactyl() {
 	return out;
 }
 
-// ---------- names ----------
-// Vanilla blocks players hand in. A new block needs a name here (the page never shows an English id).
-const VANILLA_NAMES = {
-	DIAMOND_BLOCK: 'Khối Kim Cương',
-	EMERALD_BLOCK: 'Khối Lục Bảo',
-	GOLD_BLOCK: 'Khối Vàng',
-	IRON_BLOCK: 'Khối Sắt',
-};
-// MMOItems contribution items (TYPE:ID). They are not in MMOItems/item/material.yml of the repo, so the names live here.
-const MMOITEM_NAMES = {
-	'MATERIAL:TRUNGRONGCONGHIEN': 'Trứng Rồng Cống Hiến',
-	'MATERIAL:KHUNGCONGEND': 'Khung Cổng End Cống Hiến',
-	'MATERIAL:BOTBIENCONGHIEN': 'Bọt Biển Cống Hiến',
-	'MATERIAL:QUANGTHACHANHCONGHIEN': 'Quặng Thạch Anh Cống Hiến',
-};
-
-// ---------- reading ----------
-function count(value, where, { allowZero = true } = {}) {
-	const n = Number(value);
-	if (!Number.isInteger(n) || n < 0 || (!allowZero && n === 0)) throw new Error(`${where} must be a whole number${allowZero ? '' : ' above 0'}: ${value}`);
-	return n;
-}
-
-/** daily-limit: a whole number, 0 or missing means no limit (null). */
-function limitOf(entry, where) {
-	if (entry['daily-limit'] === undefined || entry['daily-limit'] === null) return null;
-	const n = count(entry['daily-limit'], `${where}.daily-limit`);
-	return n === 0 ? null : n;
-}
-
-function readItem(entry, spawnerNames, index) {
-	const where = `items[${index}]`;
-	const id = String(entry.id ?? '');
-	const colon = id.indexOf(':');
-	if (colon < 0) throw new Error(`${where}.id is not KIND:ID: ${id}`);
-	const kind = id.slice(0, colon);
-	const key = id.slice(colon + 1);
-	let name;
-	let group;
-	if (kind === 'VANILLA') {
-		name = VANILLA_NAMES[key];
-		group = 'block';
-	} else if (kind === 'MMOITEMS') {
-		name = MMOITEM_NAMES[key];
-		group = 'special';
-	} else if (kind === 'SPAWNER') {
-		const mob = spawnerNames[key];
-		name = mob ? `Lồng ${mob}` : undefined;
-		group = 'spawner';
-	} else throw new Error(`${where}.id has an unknown kind: ${id}`);
-	if (!name) throw new Error(`${where}: no player-facing name for ${id}, add it to sync-island-top.mjs${kind === 'SPAWNER' ? ' or to spawner-mobs in contribution.yml' : ''}`);
-	return { name, group, points: count(entry.points, `${where}.points`, { allowZero: false }), dailyLimit: limitOf(entry, where) };
-}
-
-function readMobs(map, where) {
-	return Object.entries(map ?? {}).map(([id, m]) => ({
-		name: String(m.name ?? id),
-		group: String(m.group ?? ''),
-		points: count(m.points ?? 0, `${where}.${id}.points`),
-		dailyLimit: limitOf(m, `${where}.${id}`),
-	}));
-}
-
-function build(files) {
-	const contribution = parse(files.contribution) ?? {};
-	const top = parse(files.top) ?? {};
-
-	const spawnerNames = Object.fromEntries(Object.entries(contribution['spawner-mobs'] ?? {}).map(([type, m]) => [type, String(m.name ?? '')]));
-	const items = (contribution.items ?? []).map((entry, i) => readItem(entry, spawnerNames, i));
-	if (!items.length) throw new Error('contribution.yml has no items');
-	items.sort((a, b) => b.points - a.points || a.name.localeCompare(b.name, 'vi'));
-
-	const bosses = readMobs(contribution.mobs, 'mobs');
-	const hunting = readMobs(contribution['spawner-mobs'], 'spawner-mobs');
-	for (const m of hunting) if (!m.name) throw new Error('a spawner-mobs entry has no name');
-
-	const ranking = top['contribution-ranking'] ?? {};
-	const rewards = (ranking.rewards ?? []).map((r, i) => count(r, `contribution-ranking.rewards[${i}]`, { allowZero: false }));
-	const limits = contribution.limits ?? {};
-
-	return {
-		dailyLimitEnabled: limits['daily-limit-enabled'] !== false,
-		items,
-		hunting: hunting.sort((a, b) => b.points - a.points || a.name.localeCompare(b.name, 'vi')),
-		bosses,
-		ranking: { closingNote: String(ranking['closing-note'] ?? ''), rewards },
-	};
-}
-
 // ---------- main ----------
 const dir = option('--dir');
 if (!dir && !flag('--ptero')) fail('give a source: --dir <plugins folder> or --ptero');
@@ -169,7 +80,7 @@ const files = dir ? fromDir(dir) : await fromPterodactyl();
 
 let data;
 try {
-	data = build(files);
+	data = buildIslandTop(files);
 } catch (error) {
 	fail(error.message);
 }

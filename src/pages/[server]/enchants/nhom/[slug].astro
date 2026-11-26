@@ -1,10 +1,8 @@
 ---
 /**
- * One page per enchant book group (/<server>/enchants/nhom/<slug>/): the page the group list links to.
- * Written from src/data/servers/<server>/enchants.json, so it needs no file per group.
+ * Legacy group URLs forward to the single catalog with the group selected.
+ * The client redirect preserves equipment filters and saved book anchors.
  */
-import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
-import RenEnchants from '../../../../components/RenEnchants.astro';
 
 export function getStaticPaths() {
 	const files = import.meta.glob('../../../../data/servers/*/enchants.json', { eager: true, import: 'default' }) as Record<string, any>;
@@ -14,10 +12,29 @@ export function getStaticPaths() {
 	});
 }
 
-const { server, slug } = Astro.params;
+const { server } = Astro.params;
 const { group } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const catalogPath = `${base}/${server}/enchants/danh-sach/`;
+const destination = `${catalogPath}?nhom=${encodeURIComponent(group.slug)}`;
 ---
 
-<StarlightPage frontmatter={{ title: `Sách ${group.name}`, description: `Các sách phép loại ${group.name}: tác dụng, vật phẩm ép được và các cấp.` }}>
-	<RenEnchants server={server!} view="group" slug={slug} />
-</StarlightPage>
+<!doctype html>
+<html lang="vi">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="robots" content="noindex" />
+		<link rel="canonical" href={new URL(catalogPath, Astro.site).href} />
+		<title>Đang mở sách {group.name}</title>
+		<script is:inline define:vars={{ catalogPath, groupSlug: group.slug }}>
+			const destination = new URL(window.location.href);
+			destination.pathname = catalogPath;
+			destination.searchParams.set('nhom', groupSlug);
+			window.location.replace(destination.href);
+		</script>
+		<meta http-equiv="refresh" content={`0;url=${destination}`} />
+	</head>
+	<body>
+		<p><a href={destination}>Xem sách {group.name} trong danh sách sách phép.</a></p>
+	</body>
+</html>

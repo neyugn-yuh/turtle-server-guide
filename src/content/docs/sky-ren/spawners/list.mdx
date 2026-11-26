@@ -1,0 +1,18 @@
+---
+title: "Spawner: Danh sách"
+description: Các lồng spawner bán trong cửa hàng /spawner của Sky Rèn, mỗi loại rơi gì, cho bao nhiêu EXP và giá mua.
+sidebar:
+  label: Danh sách spawner
+  order: 1
+---
+
+import RenSpawners from '../../../../components/RenSpawners.astro';
+
+Đây là các lồng spawner bán trong cửa hàng spawner của **Sky Rèn**. Gõ `/spawner` (hoặc `/shopspawner`, `/sp`) để mở cửa hàng.
+
+- Chuột trái mua **1 lồng**, chuột phải mua **10 lồng**. Giá x10 luôn gấp mười lần giá x1.
+- Trả bằng **Tiền** 💲. Túi đồ đầy hoặc không đủ tiền thì không mua được. Mua x10 cần ít nhất 10 ô trống.
+- **EXP mỗi quái** là kinh nghiệm một quái cho khi bị giết: số đầu là EXP cơ bản, dòng nhỏ là EXP khi dùng rìu vàng Looting 50.
+- Cột **Điểm cống hiến đảo** là điểm đảo nhận khi nộp một lồng loại đó. Xem thêm ở [Đua top đảo](/sky-ren/island-top/tong-quan/).
+
+<RenSpawners server="sky-ren" />

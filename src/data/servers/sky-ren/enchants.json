@@ -38,6 +38,9 @@
 					"id": "thuyquai",
 					"name": "Thủy quái",
 					"appliesTo": "Mũ",
+					"targets": [
+						"helmet"
+					],
 					"description": "Nhận vĩnh viễn hiệu ứng thở dưới nước.",
 					"passive": true,
 					"requires": [],
@@ -55,6 +58,9 @@
 					"id": "tunung",
 					"name": "Tự nung",
 					"appliesTo": "Cúp",
+					"targets": [
+						"pickaxe"
+					],
 					"description": "Khi đào có tỉ lệ tự nung quặng.",
 					"passive": false,
 					"requires": [],
@@ -82,6 +88,9 @@
 					"id": "matran",
 					"name": "Ma trận",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Đòn tấn công có tỉ lệ khiến kẻ địch dính hiệu ứng buồn nôn.",
 					"passive": false,
 					"requires": [],
@@ -109,6 +118,11 @@
 					"id": "quaytay",
 					"name": "Quay tay",
 					"appliesTo": "Tất cả dụng cụ",
+					"targets": [
+						"axe",
+						"pickaxe",
+						"shovel"
+					],
 					"description": "Khi đào block có tỉ lệ nhận được hiệu ứng đào nhanh.",
 					"passive": false,
 					"requires": [],
@@ -136,6 +150,10 @@
 					"id": "suykiet",
 					"name": "Suy kiệt",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ khiến đối thủ dính hiệu ứng đi chậm, đánh chậm và buồn nuôn.",
 					"passive": false,
 					"requires": [],
@@ -183,6 +201,9 @@
 					"id": "tholan",
 					"name": "Thợ lặn",
 					"appliesTo": "Cúp",
+					"targets": [
+						"pickaxe"
+					],
 					"description": "Khi đào block sẽ được hồi lại oxi.",
 					"passive": false,
 					"requires": [],
@@ -200,6 +221,9 @@
 					"id": "thiennhan",
 					"name": "Thiên nhãn",
 					"appliesTo": "Mũ",
+					"targets": [
+						"helmet"
+					],
 					"description": "Nhận vĩnh viễn hiệu ứng nhìn trong bóng tối khi đeo trang bị có phù phép này.",
 					"passive": true,
 					"requires": [],
@@ -229,6 +253,9 @@
 					"id": "golooting",
 					"name": "Gỗ (Looting) (Rừng xanh)",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Khi chặt gỗ tại /warp rungxanh có tỉ lệ nhận được nhiều gỗ hơn.",
 					"passive": false,
 					"requires": [],
@@ -251,6 +278,9 @@
 					"id": "cuongno",
 					"name": "Cuồng nộ",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Khi tấn công có tỉ lệ nhận được hiệu ứng tăng sát thương nhưng đồng thời bị giảm tốc đánh.",
 					"passive": false,
 					"requires": [],
@@ -288,6 +318,9 @@
 					"id": "phuphep",
 					"name": "Phù phép",
 					"appliesTo": "Giáp",
+					"targets": [
+						"chestplate"
+					],
 					"description": "Khi còn dưới 20% máu, bị tấn công có tỉ lệ giảm tốc đánh của đối thủ đồng thời tăng sát thương và chống chịu cho bản thân.",
 					"passive": false,
 					"requires": [],
@@ -325,6 +358,10 @@
 					"id": "noitaian",
 					"name": "Nội tại ẩn",
 					"appliesTo": "Mũ, Giày",
+					"targets": [
+						"helmet",
+						"boots"
+					],
 					"description": "Khi còn dưới 20% máu bị tấn công có tỉ lệ được tăng tốc chạy và được nhận máu ảo.",
 					"passive": false,
 					"requires": [],
@@ -352,6 +389,10 @@
 					"id": "chemnhanh",
 					"name": "Chém nhanh",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Khi tấn công có tỉ lệ được tăng tốc đánh.",
 					"passive": false,
 					"requires": [],
@@ -379,6 +420,9 @@
 					"id": "hoisuc",
 					"name": "Hồi sức",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Khi tấn công có tỉ lệ được hồi lại ngẫu nhiên 1-4 thức ăn.",
 					"passive": false,
 					"requires": [],
@@ -411,6 +455,10 @@
 					"id": "hutexp",
 					"name": "Hút Exp",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ hút ngẫu nhiên một lượng exp của đối thủ.",
 					"passive": false,
 					"requires": [],
@@ -448,6 +496,9 @@
 					"id": "virus",
 					"name": "Virus",
 					"appliesTo": "Cung",
+					"targets": [
+						"bow"
+					],
 					"description": "Mũi tên có tỉ lệ khiến đối thủ bị khô héo và dính độc.",
 					"passive": false,
 					"requires": [],
@@ -480,6 +531,12 @@
 					"id": "suachua",
 					"name": "Sửa chữa",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi bị tấn công có tỉ lệ được hồi lại độ bền cho trang bị.",
 					"passive": false,
 					"requires": [],
@@ -519,6 +576,10 @@
 					"id": "choang",
 					"name": "Choáng",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ làm mù đối thủ.",
 					"passive": false,
 					"requires": [],
@@ -546,6 +607,12 @@
 					"id": "xuongrong",
 					"name": "Xương rồng",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi bị tấn công có tỉ lệ phản lại sát thương chuẩn cho đối thủ.",
 					"passive": false,
 					"requires": [],
@@ -573,6 +640,10 @@
 					"id": "tuhinh",
 					"name": "Tử hình",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Khi đối thủ còn dưới 10% máu, có tỉ lệ tung đòn kết liễu gây ra 1000 sát thương cho đối thủ.",
 					"passive": false,
 					"requires": [],
@@ -620,6 +691,12 @@
 					"id": "phutuyet",
 					"name": "Phủ tuyết",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi bị tấn công có tỉ lệ làm chậm đối thủ.",
 					"passive": false,
 					"requires": [],
@@ -647,6 +724,10 @@
 					"id": "teliet",
 					"name": "Tê liệt",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Khi tấn công có tỉ lệ giật sét đối thủ khiến đối thủ bị giảm tốc đánh và tốc chạy.",
 					"passive": false,
 					"requires": [],
@@ -679,6 +760,11 @@
 					"id": "doc",
 					"name": "Độc",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ khiến đối thủ bị trúng độc.",
 					"passive": false,
 					"requires": [],
@@ -706,6 +792,12 @@
 					"id": "hoidoc",
 					"name": "Hơi độc",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi bị tấn công có tỉ lệ khiến cho kẻ địch bị dính độc.",
 					"passive": false,
 					"requires": [],
@@ -738,6 +830,9 @@
 					"id": "bay",
 					"name": "Bẫy",
 					"appliesTo": "Cung",
+					"targets": [
+						"bow"
+					],
 					"description": "Mũi tên có tỉ lệ khiến cho kẻ địch bị giảm tốc đánh và tốc chạy.",
 					"passive": false,
 					"requires": [],
@@ -770,6 +865,10 @@
 					"id": "phagiap",
 					"name": "Phá giáp",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ khiến giáp của đối thủ mất thêm ngẫu nhiên từ 1-6 độ bền.",
 					"passive": false,
 					"requires": [],
@@ -802,6 +901,10 @@
 					"id": "baytitan",
 					"name": "Bẫy Titan",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ khiến đối thủ bị dính hiệu ứng làm chậm.",
 					"passive": false,
 					"requires": [],
@@ -838,6 +941,9 @@
 					"id": "docto",
 					"name": "Độc tố",
 					"appliesTo": "Cung",
+					"targets": [
+						"bow"
+					],
 					"description": "Mũi tên có tỉ lệ hạ độc đối thủ.",
 					"passive": false,
 					"requires": [],
@@ -865,6 +971,12 @@
 					"id": "kietsuc",
 					"name": "Kiệt sức",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi bị tấn công có tỉ lệ khiến kẻ địch bị suy yếu.",
 					"passive": false,
 					"requires": [],
@@ -907,6 +1019,12 @@
 					"id": "khoheo",
 					"name": "Khô héo",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi bị tấn công có tỉ lệ khiến kẻ địch bị dính hiệu ứng khô héo.",
 					"passive": false,
 					"requires": [],
@@ -944,6 +1062,9 @@
 					"id": "hoamu",
 					"name": "Hỏa mù",
 					"appliesTo": "Mũ",
+					"targets": [
+						"helmet"
+					],
 					"description": "Khi còn dưới 20% máu bị tấn công có tỉ lệ thả ra bom khói làm mù kẻ thù.",
 					"passive": false,
 					"requires": [],
@@ -996,6 +1117,9 @@
 					"id": "chamchap",
 					"name": "Chậm chạp",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Đòn tấn công có tỉ lệ làm chậm kẻ thù.",
 					"passive": false,
 					"requires": [],
@@ -1023,6 +1147,10 @@
 					"id": "macarong",
 					"name": "Ma cà rồng",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ hút ngẫu nhiên từ 1-4 máu của đối thủ.",
 					"passive": false,
 					"requires": [],
@@ -1050,6 +1178,10 @@
 					"id": "chat",
 					"name": "Chặt",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ gây thêm ngẫu nhiên 5-15 sát thương cho kẻ thù sử dụng cung.",
 					"passive": false,
 					"requires": [],
@@ -1087,6 +1219,9 @@
 					"id": "thoatthan",
 					"name": "Thoát thân",
 					"appliesTo": "Giày",
+					"targets": [
+						"boots"
+					],
 					"description": "Khi còn dưới 12% máu bị tấn công có tỉ lệ phát nổ giúp bản thân bỏ trốn đến vị trí khác.",
 					"passive": false,
 					"requires": [],
@@ -1114,6 +1249,11 @@
 					"id": "mahaitac",
 					"name": "Ma hải tặc (Looting)",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Có tỉ lệ nhận được thêm vật phẩm rơi ra từ quái vật Ma Hải Tặc ở Dungeon 1",
 					"passive": false,
 					"requires": [],
@@ -1151,6 +1291,9 @@
 					"id": "tho",
 					"name": "Thỏ",
 					"appliesTo": "Giày",
+					"targets": [
+						"boots"
+					],
 					"description": "Nhận vĩnh viễn khả năng nhảy cao khi mang trang bị có cường hóa này.",
 					"passive": true,
 					"requires": [],
@@ -1178,6 +1321,9 @@
 					"id": "sanma",
 					"name": "Săn ma",
 					"appliesTo": "Cung",
+					"targets": [
+						"bow"
+					],
 					"description": "Đòn tấn công của bạn có tỉ lệ gây ra 10 sát thương chuẩn cho kẻ địch đang tàng hình.",
 					"passive": false,
 					"requires": [],
@@ -1195,6 +1341,12 @@
 					"id": "luckyeventco",
 					"name": "Lucky Event Looting",
 					"appliesTo": "Kiếm, Rìu, Cung",
+					"targets": [
+						"sword",
+						"axe",
+						"bow",
+						"hoe"
+					],
 					"description": "Tăng 10% tỉ lệ rơi ra nguyên liệu khi farm quái tại các sự kiện.",
 					"passive": false,
 					"requires": [],
@@ -1224,6 +1376,12 @@
 					"id": "thienthan",
 					"name": "Thiên thần",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi bị tấn công có tỉ lệ được hồi lại ngẫu nhiên 1-6 máu.",
 					"passive": false,
 					"requires": [],
@@ -1261,6 +1419,9 @@
 					"id": "sinhluc",
 					"name": "Sinh lực",
 					"appliesTo": "Cung",
+					"targets": [
+						"bow"
+					],
 					"description": "Đòn tấn công có tỉ lệ hút ngẫu nhiên 2-8 máu của đối thủ.",
 					"passive": false,
 					"requires": [],
@@ -1298,6 +1459,10 @@
 					"id": "amsat",
 					"name": "Ám sát",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Càng ở gần đối thủ, sát thương gây ra càng cao.",
 					"passive": false,
 					"requires": [],
@@ -1344,6 +1509,9 @@
 					"id": "baoho",
 					"name": "Bảo hộ",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Khi tấn công có tỉ lệ thanh tẩy tất cả các hiệu ứng xấu mà bản thân đang phải chịu.",
 					"passive": false,
 					"requires": [],
@@ -1376,6 +1544,9 @@
 					"id": "nhiemkhuan",
 					"name": "Nhiễm khuẩn",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Đòn tấn công có tỉ lệ khiến kẻ địch bị nhiễm khuẩn, mất ngẫu nhiên từ 2-6 máu mỗi lần. Kích hoạt 3 lần.",
 					"passive": false,
 					"requires": [],
@@ -1408,6 +1579,9 @@
 					"id": "bocui",
 					"name": "Bổ củi",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Đòn tấn công có tỉ lệ gây thêm ngẫu nhiên một lượng sát thương chuẩn cho kẻ địch.",
 					"passive": false,
 					"requires": [],
@@ -1440,6 +1614,12 @@
 					"id": "nhanhnhen",
 					"name": "Nhanh nhẹn",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi bị tấn công có tỉ lệ né đòn.",
 					"passive": false,
 					"requires": [],
@@ -1486,6 +1666,10 @@
 					"id": "giandu",
 					"name": "Giận dữ",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Gây thêm sát thương chuẩn khi máu của bản thân xuống thấp.",
 					"passive": false,
 					"requires": [],
@@ -1513,6 +1697,10 @@
 					"id": "baotuyet",
 					"name": "Bão tuyết",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ làm chậm đối thủ.",
 					"passive": false,
 					"requires": [],
@@ -1540,6 +1728,9 @@
 					"id": "banphuoc",
 					"name": "Ban phước",
 					"appliesTo": "Mũ",
+					"targets": [
+						"helmet"
+					],
 					"description": "Mỗi 10 giây có tỉ lệ được hồi lại máu và thức ăn.",
 					"passive": true,
 					"requires": [],
@@ -1576,6 +1767,9 @@
 					"id": "xathu",
 					"name": "Xạ thủ",
 					"appliesTo": "Cung",
+					"targets": [
+						"bow"
+					],
 					"description": "Đòn tấn công có tỉ lệ gây ra thêm sát thương.",
 					"passive": false,
 					"requires": [],
@@ -1613,6 +1807,12 @@
 					"id": "khanglua",
 					"name": "Kháng lửa",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Nhận khả năng chống cháy vĩnh viễn.",
 					"passive": true,
 					"requires": [],
@@ -1630,6 +1830,9 @@
 					"id": "xuyenpha",
 					"name": "Xuyên phá",
 					"appliesTo": "Cung",
+					"targets": [
+						"bow"
+					],
 					"description": "Đòn tấn công có tỉ lệ gây ra thêm sát thương cho kẻ địch.",
 					"passive": false,
 					"requires": [],
@@ -1667,6 +1870,10 @@
 					"id": "phahoai",
 					"name": "Phá hoại",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ phá giáp của đối thủ.",
 					"passive": false,
 					"requires": [],
@@ -1699,6 +1906,10 @@
 					"id": "thongtri",
 					"name": "Thống trị",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Khi bị tấn công có tỉ lệ gây suy yếu cho đối thủ.",
 					"passive": false,
 					"requires": [],
@@ -1731,6 +1942,9 @@
 					"id": "khacnhiem",
 					"name": "Khắc nhiễm",
 					"appliesTo": "Giày",
+					"targets": [
+						"boots"
+					],
 					"description": "Khi bị tấn công có tỉ lệ được thanh tẩy hiệu ứng độc và khô héo. Ở cấp độ cao có tỉ lệ được &hồi lại máu.",
 					"passive": false,
 					"requires": [],
@@ -1768,6 +1982,9 @@
 					"id": "caulua",
 					"name": "Cầu lửa",
 					"appliesTo": "Cung",
+					"targets": [
+						"bow"
+					],
 					"description": "Có tỉ lệ biến mũi tên thành quả cầu lửa.",
 					"passive": false,
 					"requires": [],
@@ -1805,6 +2022,9 @@
 					"id": "sung",
 					"name": "Súng",
 					"appliesTo": "Cung",
+					"targets": [
+						"bow"
+					],
 					"description": "Khi tấn công có tỉ lệ gây ra thêm sát thương cho kẻ địch sử dụng cung.",
 					"passive": false,
 					"requires": [],
@@ -1837,6 +2057,12 @@
 					"id": "khoe",
 					"name": "Khỏe",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Được giảm sát thương phải chịu nếu kẻ địch sử dụng rìu.",
 					"passive": false,
 					"requires": [],
@@ -1869,6 +2095,12 @@
 					"id": "sinhlymanh",
 					"name": "Sinh lý mạnh",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Được giảm sát thương phải chịu nếu kẻ địch sử dụng kiếm.",
 					"passive": false,
 					"requires": [],
@@ -1906,6 +2138,9 @@
 					"id": "giayxin",
 					"name": "Giày xịn",
 					"appliesTo": "Giày",
+					"targets": [
+						"boots"
+					],
 					"description": "Khi bị tấn công có tỉ lệ được thanh tẩy hiệu ứng làm chậm.",
 					"passive": false,
 					"requires": [],
@@ -1938,6 +2173,12 @@
 					"id": "giapcreeper",
 					"name": "Giáp Creeper",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Có tỉ lệ được miễn nhiễm với sát thương nổ. Ở cấp cuối cùng, có tỉ lệ được hồi lại máu.",
 					"passive": false,
 					"requires": [],
@@ -1965,6 +2206,9 @@
 					"id": "khatmau",
 					"name": "Khát máu",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Đòn tấn công làm chậm và gây thêm sát thương chuẩn cho đối thủ 3 lần liên tiếp.",
 					"passive": false,
 					"requires": [],
@@ -2016,6 +2260,11 @@
 					"id": "nhenyeutinh",
 					"name": "Nhện yêu tinh (Looting)",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Có tỉ lệ drop thêm vật phẩm khi tiêu diệt Nhện Yêu Tinh ở Dungeon 2.",
 					"passive": false,
 					"requires": [],
@@ -2038,6 +2287,11 @@
 					"id": "phuthuyden",
 					"name": "Phù thủy đen (Looting)",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Có tỉ lệ drop thêm vật phẩm khi tiêu diệt Phù Thủy Đen ở Dungeon 3.",
 					"passive": false,
 					"requires": [],
@@ -2065,6 +2319,11 @@
 					"id": "dianguctamtoi",
 					"name": "Địa Ngục Tăm Tối (Looting)",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Có tỉ lệ drop thêm vật phẩm khi tiêu diệt quái vật ở Dungeon 4.",
 					"passive": false,
 					"requires": [],
@@ -2092,6 +2351,9 @@
 					"id": "mineexpplus",
 					"name": "MineExp",
 					"appliesTo": "Cúp",
+					"targets": [
+						"pickaxe"
+					],
 					"description": "Nhận thêm một lượng kinh nghiệm ngẫu nhiên khi đào quặng.",
 					"passive": false,
 					"requires": [],
@@ -2129,6 +2391,11 @@
 					"id": "khangma",
 					"name": "Kháng ma",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ loại bỏ hiệu ứng tàng hình của đối thủ.",
 					"passive": false,
 					"requires": [],
@@ -2146,6 +2413,9 @@
 					"id": "giapchongdan",
 					"name": "Giáp chống đạn",
 					"appliesTo": "Quần",
+					"targets": [
+						"leggings"
+					],
 					"description": "Khi bị bắn có tỉ lệ được giảm sát thương phải chịu. Đồng thời vô hiệu hóa các cường hóa cung của đối thủ.",
 					"passive": false,
 					"requires": [],
@@ -2204,6 +2474,10 @@
 					"id": "latkeo",
 					"name": "Lật kèo",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Khi bị tấn công có tỉ lệ được giảm sát thương phải chịu và gây ra thêm cho đối phương sát thương chuẩn trong đòn đánh tiếp theo.",
 					"passive": false,
 					"requires": [],
@@ -2240,6 +2514,9 @@
 					"id": "manro",
 					"name": "Man rợ",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Đòn tấn công tăng thêm sát thương đối với kẻ địch sử dụng rìu.",
 					"passive": false,
 					"requires": [],
@@ -2276,6 +2553,12 @@
 					"id": "thuocnhomat",
 					"name": "Thuốc nhỏ mắt",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Miễn nhiễm với hiệu ứng gây mù.",
 					"passive": false,
 					"requires": [],
@@ -2307,6 +2590,12 @@
 					"id": "chimang",
 					"name": "Chí mạng",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi tấn công có tỉ lệ được tăng thêm sát thương.",
 					"passive": false,
 					"requires": [],
@@ -2343,6 +2632,10 @@
 					"id": "gapboi",
 					"name": "Gấp bội",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Khi tấn công có tỉ lệ được tăng thêm sát thương.",
 					"passive": false,
 					"requires": [],
@@ -2374,6 +2667,9 @@
 					"id": "tuyquyen",
 					"name": "Túy quyền",
 					"appliesTo": "Mũ",
+					"targets": [
+						"helmet"
+					],
 					"description": "Nhận vĩnh viễn hiệu ứng tăng sát thương nhưng đồng thời cũng bị giảm tốc đánh và giảm tốc chạy.",
 					"passive": true,
 					"requires": [],
@@ -2415,6 +2711,12 @@
 					"id": "thiensu",
 					"name": "Thiên sứ",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi bị tấn công có tỉ lệ được hồi lại ngẫu nhiên từ 2-6 máu.",
 					"passive": false,
 					"requires": [],
@@ -2454,6 +2756,9 @@
 					"id": "tangtoc",
 					"name": "Tăng tốc",
 					"appliesTo": "Giày",
+					"targets": [
+						"boots"
+					],
 					"description": "Tăng vĩnh viễn tốc độ chạy.",
 					"passive": true,
 					"requires": [],
@@ -2491,6 +2796,10 @@
 					"id": "noinang",
 					"name": "Nội năng",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Khi bị tấn công có tỉ lệ chặn sát thương từ đòn tấn công của kẻ thù, đồng thời hồi lại ngẫu nhiên 1-5 máu cho bản thân.",
 					"passive": false,
 					"requires": [],
@@ -2518,6 +2827,10 @@
 					"id": "hutmau",
 					"name": "Hút máu",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ hút ngẫu nhiên máu của đối thủ.",
 					"passive": false,
 					"requires": [],
@@ -2555,6 +2868,12 @@
 					"id": "trau",
 					"name": "Trâu",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Tăng thêm máu tối đa cho bản thân.",
 					"passive": true,
 					"requires": [],
@@ -2591,6 +2910,11 @@
 					"id": "hanthu",
 					"name": "Hận thù",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Đòn tấn công sẽ gây thêm sát thương chuẩn theo số combo mà bạn gây ra cho kẻ địch.",
 					"passive": false,
 					"requires": [],
@@ -2633,6 +2957,10 @@
 					"id": "thanhtay",
 					"name": "Thanh tẩy",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ thanh tẩy toàn bộ hiệu ứng cường hóa của kẻ thù. Không bao gồm các cường hóa cao cấp hơn Truyền Thuyết.",
 					"passive": false,
 					"requires": [],
@@ -2669,6 +2997,12 @@
 					"id": "thietgiap",
 					"name": "Thiết giáp",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi bị tấn công có tỉ lệ được giảm sát thương phải chịu nếu kẻ thù của bạn sử dụng kiếm.",
 					"passive": false,
 					"requires": [],
@@ -2713,6 +3047,9 @@
 					"id": "turen",
 					"name": "Tự rèn",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Khi tấn công có tỉ lệ hồi lại độ bền cho trang bị. Đồng thời làm giảm 50% sát thương bản thân phải chịu.",
 					"passive": false,
 					"requires": [],
@@ -2762,6 +3099,9 @@
 					"id": "canxe",
 					"name": "Cắn xé",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Đòn tấn công sẽ gây thêm sát thương liên tục cho đối thủ.",
 					"passive": false,
 					"requires": [],
@@ -2798,6 +3138,12 @@
 					"id": "kimham",
 					"name": "Kìm hãm",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi bị tấn công có tỉ lệ được giảm 50% sát thương phải chịu.",
 					"passive": false,
 					"requires": [],
@@ -2852,6 +3198,9 @@
 					"id": "tuthan",
 					"name": "Tử thần",
 					"appliesTo": "Mũ",
+					"targets": [
+						"helmet"
+					],
 					"description": "Có tỉ lệ được hồi lại máu khi xuống ngưỡng máu tử.",
 					"passive": false,
 					"requires": [],
@@ -2879,6 +3228,9 @@
 					"id": "dai",
 					"name": "Dại",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Đòn tấn công có tỉ lệ được tăng thêm sát thương nếu kẻ thù của bạn sử dụng kiếm",
 					"passive": false,
 					"requires": [],
@@ -2935,6 +3287,9 @@
 					"id": "nhamban",
 					"name": "Nhắm bắn",
 					"appliesTo": "Cung",
+					"targets": [
+						"bow"
+					],
 					"description": "Đòn tấn công có tỉ lệ gây ra thêm ngẫu nhiên 10-30% sát thương nếu bắn trúng đầu.",
 					"passive": false,
 					"requires": [],
@@ -2981,6 +3336,11 @@
 					"id": "trungphat",
 					"name": "Trừng Phạt",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Tăng thêm sát thương gây ra cho quái vật.",
 					"passive": false,
 					"requires": [],
@@ -3032,6 +3392,9 @@
 					"id": "tuongluc",
 					"name": "Tường lực",
 					"appliesTo": "Quần",
+					"targets": [
+						"leggings"
+					],
 					"description": "Giảm sát thương phải chịu khi bị tên bắn.",
 					"passive": false,
 					"requires": [],
@@ -3078,6 +3441,12 @@
 					"id": "luckyeventhuyenthoai",
 					"name": "Lucky Event Looting",
 					"appliesTo": "Kiếm, Rìu, Cung",
+					"targets": [
+						"sword",
+						"axe",
+						"bow",
+						"hoe"
+					],
 					"description": "Tăng 25% tỉ lệ rơi ra nguyên liệu khi farm quái tại các sự kiện.",
 					"passive": false,
 					"requires": [
@@ -3118,6 +3487,10 @@
 					"id": "hoangbao",
 					"name": "Hoàng bào",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Khi bị tấn công có tỉ lệ chặn sát thương của đối thủ đồng thời phản lại sát thương chuẩn cho đối thủ.",
 					"passive": false,
 					"requires": [
@@ -3176,6 +3549,12 @@
 					"id": "phanhthay",
 					"name": "Phanh thây",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Đòn tấn công có tỉ lệ gây thêm sát thương.",
 					"passive": false,
 					"requires": [
@@ -3234,6 +3613,12 @@
 					"id": "thiennhien",
 					"name": "Thiên nhiên",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi bị tấn công có tỉ lệ được hồi lại ngẫu nhiên một lượng máu nhất định.",
 					"passive": false,
 					"requires": [
@@ -3281,6 +3666,9 @@
 					"id": "bantia",
 					"name": "Bắn tỉa",
 					"appliesTo": "Cung",
+					"targets": [
+						"bow"
+					],
 					"description": "Đòn tấn công chí mạng có tỉ lệ gây thêm sát thương cho kẻ thù.",
 					"passive": false,
 					"requires": [
@@ -3359,6 +3747,10 @@
 					"id": "bayquaivat",
 					"name": "Bẫy quái vật",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ làm chậm đối thủ trong một khoảng thời gian dài.",
 					"passive": false,
 					"requires": [
@@ -3420,6 +3812,9 @@
 					"id": "sieuren",
 					"name": "Siêu rèn",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Khi tấn công có tỉ lệ hồi lại độ bền cho trang bị, đồng thời gia tăng sát thương cho đòn tấn công tiếp theo.",
 					"passive": false,
 					"requires": [
@@ -3501,6 +3896,9 @@
 					"id": "thuphep",
 					"name": "Thủ phép",
 					"appliesTo": "Giáp",
+					"targets": [
+						"chestplate"
+					],
 					"description": "Khi bị tấn công có tỉ lệ được giảm sát thương phải chịu, đồng thời phản lại lượng lớn sát thương chuẩn cho đối thủ.",
 					"passive": false,
 					"requires": [
@@ -3592,6 +3990,9 @@
 					"id": "homenh",
 					"name": "Hộ mệnh",
 					"appliesTo": "Mũ",
+					"targets": [
+						"helmet"
+					],
 					"description": "Định kỳ có tỉ lệ được hồi lại máu và thức ăn.",
 					"passive": true,
 					"requires": [
@@ -3650,6 +4051,12 @@
 					"id": "caothu",
 					"name": "Cao thủ",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi bị tấn công có tỉ lệ né đòn và tăng mạnh tốc chạy.",
 					"passive": false,
 					"requires": [
@@ -3731,6 +4138,12 @@
 					"id": "thanhgiap",
 					"name": "Thánh Giáp",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Nếu kẻ địch sử dụng kiếm khi bị tấn công có tỉ lệ được giảm sát thương phải chịu.",
 					"passive": false,
 					"requires": [
@@ -3802,6 +4215,10 @@
 					"id": "quydu",
 					"name": "Quỷ dữ",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ hút ngẫu nhiên một lượng máu của đối thủ.",
 					"passive": false,
 					"requires": [
@@ -3883,6 +4300,9 @@
 					"id": "dammau",
 					"name": "Đẫm máu",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Đòn tấn công có tỉ lệ khiến đối thủ bị làm chậm đồng thời gây thêm 2 lần sát thương chuẩn cho đối thủ trong vòng 3 giây. Từ cấp 6 trở lên sẽ gây 3 lần sát thương.",
 					"passive": false,
 					"requires": [
@@ -3974,6 +4394,10 @@
 					"id": "satthu",
 					"name": "Sát thủ",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Bạn càng ở gần kẻ thù sát thương gây ra càng cao.",
 					"passive": false,
 					"requires": [
@@ -4055,6 +4479,11 @@
 					"id": "satquy",
 					"name": "Sát Quỷ",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Đòn tấn công của bạn sẽ gây ra nhiều sát thương hơn cho quái vật.",
 					"passive": false,
 					"requires": [
@@ -4143,6 +4572,9 @@
 					"id": "tuonggio",
 					"name": "Tường gió",
 					"appliesTo": "Quần",
+					"targets": [
+						"leggings"
+					],
 					"description": "Khi bị bắn có tỉ lệ chặn tất cả sát thương từ cung tên, kể cả các phù phép cường hóa. Đồng thời hồi lại cho bản thân một lượng máu nhất định.",
 					"passive": false,
 					"requires": [
@@ -4230,6 +4662,12 @@
 					"id": "luckyeventtruyenthuyet",
 					"name": "Lucky Event Looting",
 					"appliesTo": "Kiếm, Rìu, Cung",
+					"targets": [
+						"sword",
+						"axe",
+						"bow",
+						"hoe"
+					],
 					"description": "Tăng 50% tỉ lệ rơi ra nguyên liệu khi farm quái tại các sự kiện.",
 					"passive": false,
 					"requires": [
@@ -4270,6 +4708,12 @@
 					"id": "quaibang",
 					"name": "Quái Băng",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi bị tấn công có tỉ lệ khiến đối thủ bị dính hiệu ứng siêu làm chậm. Đồng thời gây sát thương chuẩn cho đối thủ.",
 					"passive": false,
 					"requires": [],
@@ -4306,6 +4750,12 @@
 					"id": "phuonghoang",
 					"name": "Phượng Hoàng",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi xuống một ngưỡng máu nhất định có tỉ lệ được hồi lại 20-30% máu tối đa.",
 					"passive": false,
 					"requires": [],
@@ -4336,6 +4786,10 @@
 					"id": "luathan",
 					"name": "Lửa Thần",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Đòn tấn công thiêu đốt kẻ địch và gây ra lượng sát thương chuẩn lớn liên tiếp cho kẻ địch.",
 					"passive": false,
 					"requires": [],
@@ -4378,6 +4832,11 @@
 					"id": "bayhon",
 					"name": "Bẫy Hồn",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ vô hiệu hóa tất cả các hiệu ứng cường hóa linh hồn của đối thủ.",
 					"passive": false,
 					"requires": [],
@@ -4420,6 +4879,11 @@
 					"id": "huyetkich",
 					"name": "Huyết Kích",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Hi sinh máu của bản thân để tăng sát thương gây ra cho kẻ địch. Yêu cầu phải còn tối thiểu 50 máu thì phù phép này mới có thể kích hoạt.",
 					"passive": false,
 					"requires": [],
@@ -4457,6 +4921,11 @@
 					"id": "huyettram",
 					"name": "Huyết Trảm",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Hi sinh 12% máu của bản thân. Đòn tấn công sẽ gây ra gấp đôi sát thương. Cách kích hoạt: Combo liên tiếp (Combo x5) &và lượng máu còn trên 50%",
 					"passive": false,
 					"requires": [],
@@ -4474,6 +4943,11 @@
 					"id": "huyetkhibao",
 					"name": "Huyết Khí Bạo",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Đòn tấn công chí mạng sẽ hi sinh 8/16 máu của bản thân. Nhưng tăng 50/100% sát thương chí mạng gây lên kẻ thù. Yêu cầu phải có trên 100 máu để kích hoạt phù phép này.",
 					"passive": false,
 					"requires": [],
@@ -4496,6 +4970,12 @@
 					"id": "huyetphan",
 					"name": "Huyết Phản",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi bị tấn công, hi sinh thêm 1%/3%/5% máu tối đa để phản lại sát thương gấp 5 lần số máu hi sinh cho đối thủ Máu của bản thân phải nhiều hơn 50% thì phù phép này mới được kích hoạt.",
 					"passive": false,
 					"requires": [],
@@ -4523,6 +5003,12 @@
 					"id": "huyette",
 					"name": "Huyết Tế",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi bị tấn công, có tỉ lệ hi sinh 5% máu tối đa của bản thân để khiến kẻ địch phải chịu hiệu ứng chảy máu và gây ra sát thương với x2 số máu đã hi sinh trong vòng 5 giây cho kẻ địch. Điều kiện kích hoạt: Lượng máu còn lại của bản thân phải nhiều hơn 40%",
 					"passive": false,
 					"requires": [],
@@ -4552,6 +5038,10 @@
 					"id": "quydumavang",
 					"name": "Quỷ dữ",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ được gia tăng sát thương cực mạnh và hút lượng lớn máu của đối thủ.",
 					"passive": false,
 					"requires": [
@@ -4613,6 +5103,10 @@
 					"id": "hoangbaomavang",
 					"name": "Hoàng Bào",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Khi bị tấn công có tỉ lệ chặn hoàn toàn đòn đánh của đối phương, đồng thời phản lại lượng lớn sát thương cho đối thủ.",
 					"passive": false,
 					"requires": [
@@ -4670,6 +5164,10 @@
 					"id": "bayquaivatmavang",
 					"name": "Bẫy Quái Vật",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Đòn tấn công có tỉ lệ khiến đối thủ dính hiệu ứng siêu làm chậm trong thời gian dài. Đồng thời gia tăng mạnh sát thương của bản thân.",
 					"passive": false,
 					"requires": [
@@ -4731,6 +5229,10 @@
 					"id": "satthumavang",
 					"name": "Sát Thủ",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Bạn càng ở gần kẻ thù sát thương gây ra càng cao.",
 					"passive": false,
 					"requires": [
@@ -4812,6 +5314,11 @@
 					"id": "satquymavang",
 					"name": "Sát Quỷ",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Gia tăng một lượng sát thương khủng khiếp khi bạn chiến đấu với quái vật. Đồng thời hồi lại cho bạn một lượng máu nhỏ.",
 					"passive": false,
 					"requires": [
@@ -4899,6 +5406,9 @@
 					"id": "sieurenmavang",
 					"name": "Siêu Rèn",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Khi tấn công có tỉ lệ được hồi lại độ bền cho trang bị, đồng thời gia tăng một lượng lớn sát thương cho đòn tấn công sau đó.",
 					"passive": false,
 					"requires": [
@@ -4980,6 +5490,9 @@
 					"id": "dammaumavang",
 					"name": "Đẫm Máu",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Đòn tấn công có tỉ lệ khiến đối thủ bị dính hiệu ứng siêu làm chậm. Đồng thời gây thêm 3 lần sát thương chuẩn cho đối thủ.",
 					"passive": false,
 					"requires": [
@@ -5071,6 +5584,9 @@
 					"id": "bantiamavang",
 					"name": "Bắn Tỉa",
 					"appliesTo": "Cung",
+					"targets": [
+						"bow"
+					],
 					"description": "Đòn tấn công chí mạng có tỉ lệ gây thêm lượng sát thương cực lớn cho kẻ thù.",
 					"passive": false,
 					"requires": [
@@ -5148,6 +5664,12 @@
 					"id": "phanhthaymavang",
 					"name": "Phanh Thây",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Đòn tấn công có tỉ lệ được tăng thêm lượng lớn sát thương gây ra.",
 					"passive": false,
 					"requires": [
@@ -5205,6 +5727,9 @@
 					"id": "thuphepmavang",
 					"name": "Thủ Phép",
 					"appliesTo": "Giáp",
+					"targets": [
+						"chestplate"
+					],
 					"description": "Khi bị tấn công có tỉ lệ được giảm sát thương phải chịu đồng thời phản lại một phần sát thương cho đối thủ.",
 					"passive": false,
 					"requires": [
@@ -5296,6 +5821,9 @@
 					"id": "homenhmavang",
 					"name": "Hộ Mệnh",
 					"appliesTo": "Mũ",
+					"targets": [
+						"helmet"
+					],
 					"description": "Mỗi 2 giây có tỉ lệ được hồi lại máu và thức ăn.",
 					"passive": true,
 					"requires": [
@@ -5353,6 +5881,12 @@
 					"id": "caothumavang",
 					"name": "Cao Thủ",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Khi bị tấn công có tỉ lệ né đòn và tăng mạnh tốc chạy.",
 					"passive": false,
 					"requires": [
@@ -5430,6 +5964,12 @@
 					"id": "thanhgiapmavang",
 					"name": "Thánh Giáp",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Nếu kẻ địch sử dụng kiếm khi bị tấn công có tỉ lệ được giảm lượng lớn sát thương phải chịu.",
 					"passive": false,
 					"requires": [
@@ -5501,6 +6041,9 @@
 					"id": "tuonggiomavang",
 					"name": "Tường Gió",
 					"appliesTo": "Quần",
+					"targets": [
+						"leggings"
+					],
 					"description": "Khi bị bắn có tỉ lệ chặn tất cả sát thương từ cung tên, kể cả các phù phép cường hóa. Đồng thời hồi lại cho bản thân một lượng máu lớn.",
 					"passive": false,
 					"requires": [
@@ -5594,6 +6137,9 @@
 					"id": "tuybattienquyen",
 					"name": "Túy bát tiên quyền",
 					"appliesTo": "Mũ",
+					"targets": [
+						"helmet"
+					],
 					"description": "Say mà không loạn, loạn mà hữu ý. Một quyền nghiêng trời, tám thức phá vạn pháp. Lĩnh ngộ võ học này để vĩnh viễn gia tăng sức tấn công.",
 					"passive": true,
 					"requires": [
@@ -5636,6 +6182,9 @@
 					"id": "thantoc",
 					"name": "Thần tốc",
 					"appliesTo": "Giày",
+					"targets": [
+						"boots"
+					],
 					"description": "Thân ảnh như gió, bước chân tựa sấm. Nhất niệm vượt ngàn bước, thoắt ẩn thoắt hiện. Lĩnh ngộ để vĩnh viễn gia tăng tốc độ di chuyển.",
 					"passive": true,
 					"requires": [
@@ -5664,6 +6213,12 @@
 					"id": "hanhphuc",
 					"name": "Hạnh phúc",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Giữa hiểm nguy, một tia ấm áp vẫn luôn tồn tại. Khi chịu sát thương, có tỉ lệ được hồi phục lại một lượng máu nhất định. Lượng máu hồi phục tăng theo cấp độ phù phép.",
 					"passive": false,
 					"requires": [
@@ -5707,6 +6262,11 @@
 					"id": "codoc",
 					"name": "Cô Độc",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Cắt đứt mọi hơi ấm, dập tắt hy vọng hồi sinh. Khi kích hoạt, vô hiệu khả năng hồi máu từ Hạnh Phúc trong 3 giây.",
 					"passive": false,
 					"requires": [],
@@ -5724,6 +6284,9 @@
 					"id": "codoc2",
 					"name": "Cô Độc",
 					"appliesTo": "Rìu",
+					"targets": [
+						"axe"
+					],
 					"description": "Cắt đứt mọi hơi ấm, dập tắt hy vọng hồi sinh. Khi kích hoạt, vô hiệu khả năng hồi máu từ Hạnh Phúc trong 4 giây.",
 					"passive": false,
 					"requires": [],
@@ -5741,6 +6304,9 @@
 					"id": "sieutrongluc",
 					"name": "Siêu trọng lực",
 					"appliesTo": "Giày",
+					"targets": [
+						"boots"
+					],
 					"description": "Bẻ cong trọng lực, giải phóng giới hạn cơ thể. Khi mang trang bị có cường hóa này, vĩnh viễn nhận khả năng nhảy cao.",
 					"passive": true,
 					"requires": [],
@@ -5768,6 +6334,9 @@
 					"id": "thantaicup",
 					"name": "Kim Tệ",
 					"appliesTo": "Cúp",
+					"targets": [
+						"pickaxe"
+					],
 					"description": "Mỗi nhát cuốc đều ẩn chứa cơ hội phát tài. Khi khai thác, có tỉ lệ nhận thêm tiền thưởng từ khoáng sản đào được.",
 					"passive": false,
 					"requires": [],
@@ -5795,6 +6364,10 @@
 					"id": "thantaikiem",
 					"name": "Kim Tệ",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"hoe"
+					],
 					"description": "Chiến thắng không chỉ mang lại vinh quang, mà còn mở đường cho tài lộc. Khi kết liễu người chơi, có tỉ lệ nhận thêm tiền thưởng.",
 					"passive": false,
 					"requires": [],
@@ -5822,6 +6395,9 @@
 					"id": "tuyquyen4",
 					"name": "Túy bát tiên quyền",
 					"appliesTo": "Mũ",
+					"targets": [
+						"helmet"
+					],
 					"description": "Say trong ý, loạn trong hình, sát trong quyền. Bát tiên nhập thế, mỗi thức đều mang uy lực kinh người. Tăng vĩnh viễn sức tấn công cực lớn khi mang trang bị có phù phép này.",
 					"passive": true,
 					"requires": [
@@ -5853,6 +6429,11 @@
 					"id": "tram",
 					"name": "Trảm",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Một đao đoạn mệnh, chiến tích lưu danh. Khi kết liễu người chơi khác, có tỉ lệ đoạt được đầu của kẻ bại trận.",
 					"passive": false,
 					"requires": [],
@@ -5875,6 +6456,11 @@
 					"id": "masoi",
 					"name": "MA SÓI",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Khi màn đêm buông xuống, dã tính bắt đầu thức tỉnh. Tấn công đối thủ có tỉ lệ khiến bản thân hóa sói, gia tăng sát thương cực mạnh trong thời gian ngắn.",
 					"passive": false,
 					"requires": [],
@@ -5907,6 +6493,12 @@
 					"id": "bonglanh",
 					"name": "Bỏng Lạnh",
 					"appliesTo": "Kiếm, Rìu, Cung",
+					"targets": [
+						"sword",
+						"axe",
+						"bow",
+						"hoe"
+					],
 					"description": "Hàn khí thấu xương, đóng băng cả sinh mệnh. Đòn tấn công có tỉ lệ khiến đối thủ mắc Bỏng Lạnh, chịu sát thương chuẩn 8 lần, mỗi lần bằng 1% máu trong vòng 5 giây. Đồng thời gây Siêu Làm Chậm và Suy Yếu.",
 					"passive": false,
 					"requires": [],
@@ -5939,6 +6531,9 @@
 					"id": "thanghoa",
 					"name": "Thăng hoa",
 					"appliesTo": "Giày",
+					"targets": [
+						"boots"
+					],
 					"description": "Khí tức lưu chuyển, thân pháp thoát khỏi mọi trói buộc. Khi kích hoạt, tạm thời miễn nhiễm với hiệu ứng Làm Chậm trong một khoảng thời gian.",
 					"passive": false,
 					"requires": [],
@@ -5956,6 +6551,11 @@
 					"id": "hodau",
 					"name": "Hổ Đấu",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Chiến ý bùng cháy, càng đánh càng trở nên hung mãnh. Khi tấn công có tỉ lệ tiến vào trạng thái Cuồng Nộ, miễn nhiễm hoàn toàn 1 đòn tấn công từ đối thủ. Đồng thời xóa bỏ toàn bộ hồi máu và máu ảo của mục tiêu. Đòn đánh kế tiếp gây sát thương chuẩn, xuyên qua mọi phòng thủ.",
 					"passive": false,
 					"requires": [],
@@ -5988,6 +6588,9 @@
 					"id": "ankhang",
 					"name": "An Khang",
 					"appliesTo": "Quần",
+					"targets": [
+						"leggings"
+					],
 					"description": "Phúc khí hộ thân, tai ương khó thể chạm tới. Khi bị tấn công có tỉ lệ kích hoạt An Khang, giúp bản thân miễn nhiễm sát thương trong một khoảng thời gian nhất định.",
 					"passive": false,
 					"requires": [],
@@ -6025,6 +6628,12 @@
 					"id": "buayeu",
 					"name": "Bùa Yêu",
 					"appliesTo": "Kiếm, Rìu, Cung",
+					"targets": [
+						"sword",
+						"axe",
+						"bow",
+						"hoe"
+					],
 					"description": "Mị lực mê hồn, khiến ý chí đối thủ hoàn toàn tan rã. Đòn tấn công có tỉ lệ khiến kẻ địch rơi vào trạng thái Mê Hoặc, bị Bất Động trong một khoảng thời gian đồng thời chịu hiệu ứng Suy Yếu cực mạnh.",
 					"passive": false,
 					"requires": [],
@@ -6047,6 +6656,11 @@
 					"id": "vuotrong",
 					"name": "Vuốt Rồng",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Long trảo giáng xuống, xé toạc mọi phòng tuyến. Mỗi đòn chí mạng sẽ bộc phát thêm uy lực, gây một lượng sát thương cực lớn lên kẻ địch.",
 					"passive": false,
 					"requires": [],
@@ -6074,6 +6688,12 @@
 					"id": "vayrong",
 					"name": "Vảy Rồng",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Lấy công làm thủ, mượn lực trả lực. Khi bị tấn công có thể phản lại đòn đánh, khiến chính đối thủ phải gánh chịu sức mạnh của mình.",
 					"passive": false,
 					"requires": [],
@@ -6101,6 +6721,12 @@
 					"id": "longvuong",
 					"name": "Long Vương",
 					"appliesTo": "Giáp",
+					"targets": [
+						"helmet",
+						"chestplate",
+						"leggings",
+						"boots"
+					],
 					"description": "Long uy thức tỉnh, huyết khí cuộn trào. Khi bị tấn công có tỉ lệ nhận được máu ảo, đồng thời gia tăng sát thương và tốc độ di chuyển cho bản thân trong một khoảng thời gian.",
 					"passive": false,
 					"requires": [],
@@ -6118,6 +6744,11 @@
 					"id": "daquy",
 					"name": "Đá Quý",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Tinh hoa từ chiến lợi phẩm ngưng tụ thành bảo thạch. Khi kết liễu quái vật, có tỉ lệ nhận thêm Đá Quý từ chiến lợi phẩm.",
 					"passive": false,
 					"requires": [],
@@ -6180,6 +6811,11 @@
 					"id": "kimte",
 					"name": "Kim Tệ",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Tài lộc theo chiến tích, vàng bạc theo bước chân. Khi kết liễu quái vật, có tỉ lệ nhận thêm Kim Tệ từ chiến lợi phẩm.",
 					"passive": false,
 					"requires": [],
@@ -6242,6 +6878,11 @@
 					"id": "bacthaykienthuc",
 					"name": "Bậc Thầy Kiến Thức",
 					"appliesTo": "Kiếm, Rìu",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Mỗi level tăng thêm 100% EXP khi farm quái. Level I nhận x2 EXP, level X nhận x11 EXP. Áp dụng cả khi nhận EXP trực tiếp qua Kho.",
 					"passive": false,
 					"requires": [],
@@ -6304,6 +6945,11 @@
 					"id": "longan",
 					"name": "Long Ấn",
 					"appliesTo": "Kiếm",
+					"targets": [
+						"sword",
+						"axe",
+						"hoe"
+					],
 					"description": "Long ấn giáng thế, thiên lôi trấn áp tứ phương. Triệu hồi sấm sét khiến mục tiêu xung quanh bất động, đồng thời gây sát thương chuẩn, làm chậm và đánh bật kẻ địch khỏi vùng ảnh hưởng.",
 					"passive": false,
 					"requires": [],
@@ -6321,6 +6967,9 @@
 					"id": "chinhphat",
 					"name": "Chinh Phạt",
 					"appliesTo": "Cung",
+					"targets": [
+						"bow"
+					],
 					"description": "Thiên hỏa giáng xuống, thiêu rụi mọi kẻ chống đối. Khi tấn công có tỉ lệ triệu hồi Hỏa Cầu Chinh Phạt, liên tiếp gây 3% sát thương chuẩn trong 3 lần.",
 					"passive": false,
 					"requires": [],
@@ -6338,6 +6987,9 @@
 					"id": "dukich",
 					"name": "Du kích",
 					"appliesTo": "Giáp",
+					"targets": [
+						"chestplate"
+					],
 					"description": "Ẩn mình trong bóng tối, chớp thời cơ kết liễu mục tiêu. Khi bị tấn công, bản thân trở nên tàng hình và tăng tốc chạy, đồng thời hồi phục máu và cường hóa đòn đánh, giúp gây ra +20% sát thương trong thời gian hiệu lực.",
 					"passive": false,
 					"requires": [],
@@ -6365,6 +7017,12 @@
 					"id": "luckyeventthachdau",
 					"name": "Lucky Event Looting",
 					"appliesTo": "Kiếm, Rìu, Cung",
+					"targets": [
+						"sword",
+						"axe",
+						"bow",
+						"hoe"
+					],
 					"description": "Tăng 75% tỉ lệ rơi ra nguyên liệu khi farm quái tại các sự kiện.",
 					"passive": false,
 					"requires": [

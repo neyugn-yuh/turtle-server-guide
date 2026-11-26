@@ -1,30 +1,26 @@
 ---
 /**
  * The enchant books (Sách phép) of Sky Rèn, built from src/data/servers/<server>/enchants.json
- * (written by scripts/sync-ren.mjs from the server's config). Two views:
- *   groups  every book group, weakest to strongest, with counts and prices
- *   group   one group (prop `slug`): each book with what it does, what it goes on and its levels
+ * (written by scripts/sync-ren.mjs from the server's config).
+ * One catalog contains every group, with combined group and equipment filters.
  * Book details, counts and prices come from the generated data.
  */
-import RenEnchantNav from './RenEnchantNav.astro';
+import { enchantTargets } from '../data/enchant-targets.mjs';
 
 interface Props {
 	server: string;
-	view: 'groups' | 'group';
-	/** group only: slug of the group, lower case */
-	slug?: string;
 }
 
-const { server, view, slug } = Astro.props;
+const { server } = Astro.props;
 const files = import.meta.glob('../data/servers/*/enchants.json', { eager: true, import: 'default' }) as Record<string, any>;
 const data = files[`../data/servers/${server}/enchants.json`];
 if (!data) throw new Error(`RenEnchants: no enchants.json for server "${server}", run node scripts/sync-ren.mjs`);
 const groups: any[] = data.groups;
-const group = view === 'group' ? groups.find((g: any) => g.slug === slug) : null;
-if (view === 'group' && !group) throw new Error(`RenEnchants: no group "${slug}" in enchants.json`);
+const books: any[] = groups.flatMap((group: any) => group.enchants);
+const counts = Object.fromEntries(enchantTargets.map((target) => [target.id, books.filter((e: any) => e.targets.includes(target.id)).length]));
+const targetGroups = [...new Set(enchantTargets.map((target) => target.group))];
+const targetNames = (e: any) => enchantTargets.filter((target) => e.targets.includes(target.id)).map((target) => target.label).join(', ');
 
-const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const groupUrl = (s: string) => `${base}/${server}/enchants/nhom/${s}/`;
 const num = (x: number) => x.toLocaleString('vi-VN', { maximumFractionDigits: 3 });
 const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
 const roman = (n: number) => ROMAN[n] ?? String(n);
@@ -35,96 +31,103 @@ const lines = (e: any) => [
 	e.replaces.length ? `Thay thế: ${e.replaces.map(ref).join(', ')}` : null,
 	e.excludes.length ? `Không ép cùng: ${e.excludes.map(ref).join(', ')}` : null,
 ].filter(Boolean) as string[];
-const columns = (e: any) => ({
-	chance: !e.passive,
-	cooldown: !e.passive && e.levels.some((l: any) => l.cooldown > 0),
-	souls: e.levels.some((l: any) => l.souls),
-});
+// Show shared values once; only values that change need a row across the levels.
+const stats = (e: any) => e.passive ? [] : [
+	{ label: 'Tỉ lệ kích hoạt', values: e.levels.map((l: any) => `${num(l.chance)}%`) },
+	...(e.levels.some((l: any) => l.cooldown > 0)
+		? [{ label: 'Hồi chiêu', values: e.levels.map((l: any) => l.cooldown > 0 ? `${num(l.cooldown)} giây` : '–') }]
+		: []),
+	...(e.levels.some((l: any) => l.souls)
+		? [{ label: 'Linh hồn mỗi lần', values: e.levels.map((l: any) => l.souls ? num(l.souls) : '–') }]
+		: []),
+].map((stat) => ({ ...stat, shared: stat.values.every((value: string) => value === stat.values[0]) }));
 ---
 
-<div class="re not-content">
-	<RenEnchantNav server={server} groups={groups} active={group?.slug} />
-
-	{
-		view === 'groups' && (
-			<>
-				<p>Chọn nhóm sách để xem tác dụng, trang bị phù hợp và chỉ số từng cấp.</p>
-				<p class="re-meta">Xếp từ yếu đến mạnh. Huyết tử và Mạ vàng ngang cấp.</p>
-				<div class="re-scroll">
-					<table>
-						<thead>
-							<tr>
-								<th scope="col">Nhóm sách</th>
-								<th scope="col">Số sách phép</th>
-								<th scope="col">Giá tại bảng Sách phép (EXP)</th>
-							</tr>
-						</thead>
-						<tbody>
-							{groups.map((g: any) => (
-								<tr>
-									<th scope="row">
-										<span class="re-dot" style={g.color ? `background:${g.color}` : ''} aria-hidden="true" />
-										<a href={groupUrl(g.slug)}>{g.name}</a>
-									</th>
-									<td>{num(g.enchants.length)}</td>
-									<td>{g.priceExp !== null ? num(g.priceExp) : 'Không bán tại bảng này'}</td>
-								</tr>
-							))}
-						</tbody>
-					</table>
-				</div>
-			</>
-		)
-	}
-
-	{
-		view === 'group' && (
-			<>
-				<p class="re-meta">
-					{num(group.enchants.length)} sách phép loại {group.name}.
-					{group.priceExp !== null && ` Mua ở bảng Sách phép với giá ${num(group.priceExp)} EXP mỗi lần.`}
-					{group.randomLevelCap3 && ' Sách nhận ngẫu nhiên chỉ ra cấp 1–3.'}
-				</p>
-				<nav class="re-book-nav" aria-label={`Sách phép trong nhóm ${group.name}`}>
-					<p class="re-nav-title">Sách trong nhóm</p>
-					<ul class="re-index">
-						{group.enchants.map((e: any) => (
-							<li>
-								<a href={`#${e.id}`}>{e.name}</a>
-							</li>
+<div class="re not-content" data-re-root data-re-total={books.length}>
+	<div class="re-filter" data-re-controls hidden>
+		<div class="re-filter-field">
+			<label for={`re-group-${server}`}>Nhóm sách</label>
+			<select id={`re-group-${server}`} data-re-group-select>
+				<option value="" data-re-label="Tất cả nhóm">Tất cả nhóm ({books.length})</option>
+				{groups.map((group: any) => (
+					<option value={group.slug} data-re-label={group.name}>{group.name} ({group.enchants.length})</option>
+				))}
+			</select>
+		</div>
+		<div class="re-filter-field">
+			<label for={`re-target-${server}`}>Gắn lên</label>
+			<select id={`re-target-${server}`} data-re-target-select>
+				<option value="" data-re-label="Tất cả trang bị">Tất cả trang bị ({books.length})</option>
+				{targetGroups.map((category) => (
+					<optgroup label={category}>
+						{enchantTargets.filter((target) => target.group === category).map((target) => (
+							<option value={target.id} data-re-label={target.label}>{target.label} ({counts[target.id]})</option>
 						))}
-					</ul>
-				</nav>
+					</optgroup>
+				))}
+			</select>
+		</div>
+		<button class="re-reset" type="button" data-re-reset hidden>Bỏ bộ lọc</button>
+		<p class="re-meta" data-re-status role="status">Hiện {books.length} / {books.length} sách</p>
+	</div>
+	<p class="re-empty" data-re-empty hidden>
+		Không có sách phù hợp. Đổi nhóm sách, loại trang bị hoặc bấm “Bỏ bộ lọc”.
+	</p>
+	<p class="re-meta">Nhóm sách xếp từ yếu đến mạnh; Huyết tử và Mạ vàng ngang cấp.</p>
+	{groups.map((group: any) => (
+		<section class="re-group" data-re-section data-re-group-id={group.slug}>
+			<header class="re-group-heading">
+				<h2 id={`nhom-${group.slug}`}>
+					<span class="re-dot" style={group.color ? `background:${group.color}` : ''} aria-hidden="true" />
+					{group.name}
+				</h2>
+				<p class="re-meta">
+					<span data-re-section-count>{group.enchants.length}</span> sách
+					{group.priceExp !== null && ` · ${num(group.priceExp)} EXP/sách`}
+					{group.randomLevelCap3 && ' · Sách ngẫu nhiên cấp 1–3'}
+				</p>
+			</header>
 				{group.enchants.map((e: any) => {
-					const col = columns(e);
+					const bookStats = stats(e);
+					const sharedStats = bookStats.filter((stat) => stat.shared);
+					const levelStats = bookStats.filter((stat) => !stat.shared);
 					return (
-						<section class="re-book" id={e.id}>
-							<h2>{e.name}</h2>
-							<p class="re-meta">
-								Ép lên: <strong>{e.appliesTo}</strong> · {e.passive ? `Thường trực khi mang trang bị, ${levelText(e)}` : levelText(e)}
-							</p>
-							<p>{e.description}</p>
+						<section class="re-book" id={e.id} data-re-book data-re-group={group.slug} data-re-targets={e.targets.join(' ')}>
+							<header class="re-book-heading">
+								<h3>{e.name}</h3>
+								<p class="re-meta">
+									Ép lên: <strong>{targetNames(e)}</strong> · {levelText(e)}
+									{e.passive && ' · Thường trực khi mang trang bị'}
+								</p>
+							</header>
+							<p class="re-description">{e.description}</p>
 							{lines(e).map((text) => (
 								<p class="re-meta">{text}</p>
 							))}
-							{!e.passive && (
-								<div class="re-scroll">
-									<table>
+							{sharedStats.length > 0 && (
+								<dl class="re-shared-stats">
+									{sharedStats.map((stat) => (
+										<div>
+											<dt>{stat.label}:</dt>
+											<dd>{stat.values[0]}</dd>
+										</div>
+									))}
+								</dl>
+							)}
+							{levelStats.length > 0 && (
+								<div class="re-scroll re-level-scroll" role="region" aria-label={`Chỉ số từng cấp của ${e.name}`} tabindex="0">
+									<table class="re-levels" aria-label={`Chỉ số từng cấp của ${e.name}`}>
 										<thead>
 											<tr>
-												<th>Cấp</th>
-												{col.chance && <th>Tỉ lệ kích hoạt</th>}
-												{col.cooldown && <th>Hồi chiêu</th>}
-												{col.souls && <th>Linh hồn mỗi lần</th>}
+												<th scope="col">Cấp</th>
+												{e.levels.map((l: any) => <th scope="col">{roman(l.level)}</th>)}
 											</tr>
 										</thead>
 										<tbody>
-											{e.levels.map((l: any) => (
+											{levelStats.map((stat) => (
 												<tr>
-													<td>{roman(l.level)}</td>
-													{col.chance && <td>{num(l.chance)}%</td>}
-													{col.cooldown && <td>{l.cooldown > 0 ? `${num(l.cooldown)} giây` : '–'}</td>}
-													{col.souls && <td>{l.souls ? num(l.souls) : '–'}</td>}
+													<th scope="row">{stat.label}</th>
+													{stat.values.map((value: string) => <td>{value}</td>)}
 												</tr>
 											))}
 										</tbody>
@@ -134,23 +137,74 @@ const columns = (e: any) => ({
 						</section>
 					);
 				})}
-			</>
-		)
-	}
+		</section>
+	))}
 </div>
+
+<script>
+	import { initEnchantFilters } from '../scripts/enchant-filters.mjs';
+	initEnchantFilters();
+</script>
 
 <style>
 	.re {
 		margin: 1.5rem 0;
 	}
-	.re h2 {
-		margin: 1.5rem 0 0.25rem;
-		font-size: var(--sl-text-2xl);
-	}
 	.re-meta {
 		margin: 0.25rem 0 0.5rem;
 		color: var(--sl-color-gray-3);
 		font-size: var(--sl-text-sm);
+	}
+	.re [hidden] {
+		display: none !important;
+	}
+	.re-filter {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: end;
+		gap: 0.75rem 1rem;
+		margin-bottom: 0.75rem;
+		font-size: var(--sl-text-sm);
+	}
+	.re-filter label {
+		font-weight: 600;
+	}
+	.re-filter-field {
+		display: grid;
+		flex: 1 1 12rem;
+		max-width: 20rem;
+		gap: 0.25rem;
+	}
+	.re-filter select {
+		max-width: 100%;
+		padding: 0.4rem 0.65rem;
+		border: 1px solid var(--tw-border);
+		border-radius: 0.25rem;
+		background: var(--tw-surface);
+		color: var(--tw-text);
+		font: inherit;
+	}
+	.re-filter select:focus-visible,
+	.re-reset:focus-visible {
+		outline: 2px solid var(--tw-accent-text);
+		outline-offset: 2px;
+	}
+	.re-filter .re-meta {
+		margin: 0;
+		padding: 0.4rem 0;
+	}
+	.re-empty {
+		color: var(--sl-color-gray-3);
+		font-size: var(--sl-text-sm);
+	}
+	.re-reset {
+		padding: 0.4rem 0;
+		border: 0;
+		background: transparent;
+		color: var(--tw-accent-text);
+		font: inherit;
+		text-decoration: underline;
+		cursor: pointer;
 	}
 	.re-dot {
 		display: inline-block;
@@ -160,54 +214,69 @@ const columns = (e: any) => ({
 		border-radius: 50%;
 		background: var(--sl-color-gray-4);
 	}
-	.re-index {
+	.re-group {
+		margin-top: 1.5rem;
+	}
+	.re-group-heading {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 0.4rem;
-		margin: 0.5rem 0 0;
-		padding: 0;
-		list-style: none;
-		font-size: var(--sl-text-sm);
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 0.25rem 1rem;
 	}
-	.re-book-nav {
-		margin-top: 1rem;
-		padding: 0.85rem 1rem;
-		border: 1px solid var(--tw-border);
-		border-radius: 0.5rem;
-		background: var(--tw-neutral);
-	}
-	.re-nav-title {
+	.re-group-heading h2 {
 		margin: 0;
-		font-size: var(--sl-text-sm);
-		font-weight: 600;
+		font-size: 1.125rem;
 	}
-	.re-index a {
-		display: block;
-		padding: 0.4rem 0.65rem;
-		border: 1px solid var(--tw-border);
-		border-radius: 0.25rem;
-		color: var(--tw-text-nav);
-		text-decoration: none;
-	}
-	.re-index a:hover {
-		background: var(--tw-surface);
-		color: var(--tw-accent-text);
-	}
-	.re-index a:focus-visible {
-		outline: 2px solid var(--tw-accent-text);
-		outline-offset: 2px;
+	.re-group-heading .re-meta {
+		margin: 0;
 	}
 	.re-book {
-		margin-top: 1.25rem;
-		padding: 0.25rem 1rem 0.75rem;
+		margin-top: 0.75rem;
+		padding: 0.75rem 1rem;
 		border: 1px solid var(--sl-color-hairline);
 		border-radius: 0.5rem;
 	}
 	.re-book:target {
 		border-color: var(--tw-green);
 	}
-	.re-book h2 {
-		font-size: var(--sl-text-xl);
+	.re-book h3 {
+		margin: 0;
+		font-size: 1rem;
+		line-height: 1.5;
+	}
+	.re-book-heading {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		justify-content: space-between;
+		gap: 0.15rem 1rem;
+	}
+	.re-book-heading .re-meta {
+		margin: 0;
+	}
+	.re-description {
+		max-width: 78ch;
+		margin: 0.35rem 0 0;
+	}
+	.re-shared-stats {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.25rem 1.25rem;
+		margin: 0.5rem 0 0;
+		font-size: var(--sl-text-sm);
+	}
+	.re-shared-stats div {
+		display: flex;
+		gap: 0.35rem;
+	}
+	.re-shared-stats dt {
+		color: var(--sl-color-gray-3);
+	}
+	.re-shared-stats dd {
+		margin: 0;
+		font-weight: 500;
+		font-variant-numeric: tabular-nums;
 	}
 	.re-scroll {
 		overflow-x: auto;
@@ -228,5 +297,35 @@ const columns = (e: any) => ({
 	.re th {
 		color: var(--sl-color-gray-2);
 		font-weight: 600;
+	}
+	.re-level-scroll {
+		margin-top: 0.5rem;
+	}
+	.re-level-scroll:focus-visible {
+		outline: 2px solid var(--tw-accent-text);
+		outline-offset: 2px;
+	}
+	.re .re-levels {
+		width: max-content;
+		min-width: min(100%, 28rem);
+		font-size: 0.8125rem;
+		font-variant-numeric: tabular-nums;
+	}
+	.re-levels th,
+	.re-levels td {
+		padding: 0.25rem 0.5rem;
+	}
+	.re-levels th:first-child {
+		padding-left: 0;
+		font-weight: 500;
+	}
+	.re-levels th:not(:first-child),
+	.re-levels td {
+		min-width: 2.75rem;
+		text-align: center;
+	}
+	.re-levels thead th {
+		color: var(--sl-color-gray-3);
+		font-weight: 500;
 	}
 </style>

@@ -19,8 +19,8 @@ export const servers = [
 	{
 		slug: 'sky-ren',
 		title: 'Sky Rèn',
-		description: 'Hướng dẫn Sky Rèn: Dungeon (quái vật, phần thưởng khi hạ boss), các rương quà, sách phép và trang bị.',
-		guides: ['dungeons', 'chests', 'enchants', 'gear'],
+		description: 'Hướng dẫn Sky Rèn: Dungeon (quái vật, phần thưởng khi hạ boss), các rương quà, spawner, sách phép, trang bị và đua top đảo.',
+		guides: ['dungeons', 'chests', 'spawners', 'enchants', 'gear', 'island-top'],
 	},
 	// <-- add new servers here
 ];

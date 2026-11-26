@@ -1,6 +1,5 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import { readFileSync } from 'node:fs';
 import starlight from '@astrojs/starlight';
 import starlightLinksValidator from 'starlight-links-validator';
 
@@ -10,8 +9,8 @@ import { guides } from './src/data/guides.mjs';
 import { servers } from './src/data/servers.mjs';
 
 // One sidebar group per server (src/data/servers.mjs). Inside it: one group per system (a server has no page of its own).
-// Most pages are discovered from `src/content/docs/<server>/<system>/`.
-// Enchant groups have generated routes, so expose each one explicitly in the sidebar.
+// Systems with several pages are discovered from `src/content/docs/<server>/<system>/`.
+// Enchant books share one catalog with group and equipment filters.
 const serverGroups = servers.map((server) => ({
 	label: server.title,
 	collapsed: true,
@@ -19,19 +18,11 @@ const serverGroups = servers.map((server) => ({
 		...server.guides.map((slug) => {
 			const guide = guides.find((g) => g.slug === slug);
 			if (!guide) throw new Error(`Server "${server.slug}" lists unknown system "${slug}"`);
-			const items = slug === 'enchants'
-				? [
-					{ label: 'Tất cả sách phép', link: `/${server.slug}/enchants/danh-sach/` },
-					...JSON.parse(readFileSync(new URL(`./src/data/servers/${server.slug}/enchants.json`, import.meta.url), 'utf8')).groups.map((group) => ({
-						label: group.name,
-						link: `/${server.slug}/enchants/nhom/${group.slug}/`,
-					})),
-				]
-				: [{ autogenerate: { directory: `${server.slug}/${slug}` } }];
+			if (slug === 'enchants') return { label: guide.title, link: `/${server.slug}/enchants/danh-sach/` };
 			return {
 				label: guide.title,
 				collapsed: true,
-				items,
+				items: [{ autogenerate: { directory: `${server.slug}/${slug}` } }],
 			};
 		}),
 	],
