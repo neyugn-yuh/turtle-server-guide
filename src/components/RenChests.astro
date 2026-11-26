@@ -22,6 +22,8 @@ const chests: any[] = data.chests;
 const chest = view === 'detail' ? chests.find((c: any) => c.id === id) : null;
 if (view === 'detail' && !chest) throw new Error(`RenChests: no chest "${id}" in chests.json`);
 
+// the chance of each gem in a Lửa Phép chest is not shown to players
+const showChance = chest ? chest.kind !== 'lua-phep' : true;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const iconUrl = (icon: string | null) => (icon ? `${base}/minions/${icon}.png` : '');
 const chestUrl = (slug: string) => `${base}/${server}/chests/item/${slug}/`;
@@ -73,7 +75,7 @@ const sourceText = (s: any) => {
 				<p class="rc-head">
 					<img class="rc-icon rc-icon-lg" src={iconUrl(chest.icon)} alt="" width="48" height="48" onerror="this.style.visibility='hidden'" />
 					<span>
-						Mỗi lần mở rương nhận <strong>{chest.min === chest.max ? `đúng ${num(chest.min)}` : `từ ${num(chest.min)} đến ${num(chest.max)}`}</strong> phần thưởng, chọn ngẫu nhiên trong bảng dưới. Cột Tỉ lệ là xác suất của từng phần thưởng.
+						Mỗi lần mở rương nhận <strong>{chest.min === chest.max ? `đúng ${num(chest.min)}` : `từ ${num(chest.min)} đến ${num(chest.max)}`}</strong> phần thưởng, chọn ngẫu nhiên trong bảng dưới.{showChance && ' Cột Tỉ lệ là xác suất của từng phần thưởng.'}
 					</span>
 				</p>
 
@@ -84,7 +86,7 @@ const sourceText = (s: any) => {
 							<tr>
 								<th>Phần thưởng</th>
 								<th>Số lượng</th>
-								<th>Tỉ lệ</th>
+								{showChance && <th>Tỉ lệ</th>}
 							</tr>
 						</thead>
 						<tbody>
@@ -95,20 +97,20 @@ const sourceText = (s: any) => {
 										{r.type === 'chest' ? <a href={chestUrl(r.chest)}>{r.name}</a> : r.name}
 									</td>
 									<td>{range(r.min, r.max)}</td>
-									<td>{num(r.chance)}%</td>
+									{showChance && <td>{num(r.chance)}%</td>}
 								</tr>
 							))}
 						</tbody>
 					</table>
 				</div>
-				{chest.total !== 100 && <p class="rc-meta">Tổng các tỉ lệ ghi trong cấu hình của rương này là {num(chest.total)}.</p>}
+				{showChance && chest.total !== 100 && <p class="rc-meta">Tổng các tỉ lệ ghi trong cấu hình của rương này là {num(chest.total)}.</p>}
 
 				<h2 id="cach-nhan">Cách nhận</h2>
 				<ul class="rc-sources">
 					{chest.sources.map((s: any) =>
 						s.type === 'chest' ? (
 							<li>
-								Mở ra từ <a href={chestUrl(s.chest)}>{byId(s.chest).name}</a> (tỉ lệ {num(byId(s.chest).rewards.find((r: any) => r.chest === chest.id).chance)}%).
+								Mở ra từ <a href={chestUrl(s.chest)}>{byId(s.chest).name}</a>{showChance ? ` (tỉ lệ ${num(byId(s.chest).rewards.find((r: any) => r.chest === chest.id).chance)}%).` : '.'}
 							</li>
 						) : (
 							<li>

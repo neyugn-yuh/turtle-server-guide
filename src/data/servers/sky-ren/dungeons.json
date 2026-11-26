@@ -64,6 +64,7 @@
 						{
 							"type": "xu",
 							"name": "Xu",
+							"icon": "gold_ingot",
 							"min": 1,
 							"max": 1,
 							"chance": 100
@@ -263,6 +264,7 @@
 						{
 							"type": "xu",
 							"name": "Xu",
+							"icon": "gold_ingot",
 							"min": 1,
 							"max": 1,
 							"chance": 100
@@ -470,6 +472,7 @@
 						{
 							"type": "xu",
 							"name": "Xu",
+							"icon": "gold_ingot",
 							"min": 1,
 							"max": 1,
 							"chance": 100
@@ -713,6 +716,7 @@
 						{
 							"type": "xu",
 							"name": "Xu",
+							"icon": "gold_ingot",
 							"min": 1,
 							"max": 1,
 							"chance": 100
@@ -869,6 +873,7 @@
 						{
 							"type": "xu",
 							"name": "Xu",
+							"icon": "gold_ingot",
 							"min": 1,
 							"max": 1,
 							"chance": 100
@@ -1127,6 +1132,7 @@
 						{
 							"type": "xu",
 							"name": "Xu",
+							"icon": "gold_ingot",
 							"min": 1,
 							"max": 1,
 							"chance": 100
@@ -1397,6 +1403,7 @@
 						{
 							"type": "xu",
 							"name": "Xu",
+							"icon": "gold_ingot",
 							"min": 2,
 							"max": 2,
 							"chance": 100
