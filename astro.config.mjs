@@ -1,5 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
+import { readFileSync } from 'node:fs';
 import starlight from '@astrojs/starlight';
 import starlightLinksValidator from 'starlight-links-validator';
 
@@ -9,7 +10,8 @@ import { guides } from './src/data/guides.mjs';
 import { servers } from './src/data/servers.mjs';
 
 // One sidebar group per server (src/data/servers.mjs). Inside it: one group per system (a server has no page of its own).
-// The pages of a system are discovered from `src/content/docs/<server>/<system>/`.
+// Most pages are discovered from `src/content/docs/<server>/<system>/`.
+// Enchant groups have generated routes, so expose each one explicitly in the sidebar.
 const serverGroups = servers.map((server) => ({
 	label: server.title,
 	collapsed: true,
@@ -17,10 +19,19 @@ const serverGroups = servers.map((server) => ({
 		...server.guides.map((slug) => {
 			const guide = guides.find((g) => g.slug === slug);
 			if (!guide) throw new Error(`Server "${server.slug}" lists unknown system "${slug}"`);
+			const items = slug === 'enchants'
+				? [
+					{ label: 'Tất cả sách phép', link: `/${server.slug}/enchants/danh-sach/` },
+					...JSON.parse(readFileSync(new URL(`./src/data/servers/${server.slug}/enchants.json`, import.meta.url), 'utf8')).groups.map((group) => ({
+						label: group.name,
+						link: `/${server.slug}/enchants/nhom/${group.slug}/`,
+					})),
+				]
+				: [{ autogenerate: { directory: `${server.slug}/${slug}` } }];
 			return {
 				label: guide.title,
 				collapsed: true,
-				items: [{ autogenerate: { directory: `${server.slug}/${slug}` } }],
+				items,
 			};
 		}),
 	],
@@ -28,6 +39,9 @@ const serverGroups = servers.map((server) => ({
 
 // https://astro.build/config
 export default defineConfig({
+	redirects: {
+		'/sky-ren/enchants/cach-dung': '/sky-ren/enchants/danh-sach/',
+	},
 	// Turns `![..](/gui/<system>/<menu>)` into an interactive menu (see src/plugins/gui-menus.mjs).
 	markdown: { processor: satteri({ mdastPlugins: [guiMenus] }) },
 	// Public address, used for the sitemap and absolute URLs.
@@ -81,10 +95,6 @@ export default defineConfig({
 				},
 			},
 			sidebar: [
-				{
-					label: 'Bắt đầu',
-					items: [{ autogenerate: { directory: 'getting-started' } }],
-				},
 				{
 					label: 'Máy chủ',
 					items: serverGroups,

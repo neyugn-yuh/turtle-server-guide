@@ -31,7 +31,6 @@ Menu specs are read when a page is built: restart `npm run dev` after editing a 
 src/data/servers.mjs                   the servers and which systems each one has (drives the sidebar and the home cards)
 src/data/guides.mjs                    catalog of the systems: player-facing name and one-line description
 src/data/servers/<server>/*.json       data generated from the server config (minions.json), do not edit by hand
-src/content/docs/getting-started/      pages that apply to every server
 src/content/docs/<server>/<system>/    one folder per system: menus, commands, tips (+ list pages)
 src/data/gui/<system>/<menu>.json      one spec per menu picture
 src/plugins/gui-menus.mjs              Markdown plugin: turns a menu image into the interactive menu

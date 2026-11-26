@@ -66,8 +66,8 @@ export const guides = [
 	{
 		slug: 'enchants',
 		title: 'Sách phép',
-		description: 'Lấy sách phép, ép vào trang bị, phân rã thành bụi phép và danh sách sách theo từng loại, từ Cũ đến Thách đấu.',
-		landing: 'cach-dung',
+		description: 'Tra cứu sách phép theo nhóm, từ Cũ đến Thách đấu: tác dụng, trang bị phù hợp và chỉ số từng cấp.',
+		landing: 'danh-sach',
 	},
 	{
 		slug: 'gear',

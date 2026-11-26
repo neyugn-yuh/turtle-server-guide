@@ -1,15 +1,16 @@
 ---
 /**
  * The enchant books (Sách phép) of Sky Rèn, built from src/data/servers/<server>/enchants.json
- * (written by scripts/sync-ren.mjs from the server's config). Three views:
- *   guide   how to get, apply, decompose and upgrade books (the numbers: prices, dust chances, slots, gilding cost)
- *   groups  every book group as a card, weakest to strongest; the cards link to the group page
+ * (written by scripts/sync-ren.mjs from the server's config). Two views:
+ *   groups  every book group, weakest to strongest, with counts and prices
  *   group   one group (prop `slug`): each book with what it does, what it goes on and its levels
- * Every number and name comes from the data, none is typed here.
+ * Book details, counts and prices come from the generated data.
  */
+import RenEnchantNav from './RenEnchantNav.astro';
+
 interface Props {
 	server: string;
-	view: 'guide' | 'groups' | 'group';
+	view: 'groups' | 'group';
 	/** group only: slug of the group, lower case */
 	slug?: string;
 }
@@ -28,8 +29,6 @@ const num = (x: number) => x.toLocaleString('vi-VN', { maximumFractionDigits: 3 
 const ROMAN = ['', 'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
 const roman = (n: number) => ROMAN[n] ?? String(n);
 const levelText = (e: any) => (e.levels.length === 1 ? 'Cấp I' : `Cấp I–${roman(e.levels.length)}`);
-const command = (list: string[] | undefined) => (list ?? []).map((c) => `/${c}`).join(' hoặc ');
-const sold = groups.filter((g: any) => g.priceExp !== null);
 const ref = (r: any) => `${r.name}${r.level ? ` ${roman(r.level)}` : ''}${r.group ? ` (${r.group})` : ''}`;
 const lines = (e: any) => [
 	e.requires.length ? `Cần trên vật phẩm: ${e.requires.map(ref).join(', ')}` : null,
@@ -44,111 +43,35 @@ const columns = (e: any) => ({
 ---
 
 <div class="re not-content">
-	{
-		view === 'guide' && (
-			<>
-				<h2 id="lay-sach">Lấy sách phép</h2>
-				<p>
-					Gõ <strong>{command(data.commands.enchanter)}</strong> để mở bảng Sách phép. Chuột trái vào loại sách muốn mua, xác nhận và trả EXP, bạn nhận một sách phép <strong>ngẫu nhiên</strong> thuộc loại đó. Bảng giá:
-				</p>
-				<div class="re-scroll">
-					<table>
-						<thead>
-							<tr>
-								<th>Loại sách</th>
-								<th>Giá (EXP)</th>
-							</tr>
-						</thead>
-						<tbody>
-							{sold.map((g: any) => (
-								<tr>
-									<td>
-										<span class="re-dot" style={g.color ? `background:${g.color}` : ''} />
-										<a href={groupUrl(g.slug)}>{g.name}</a>
-									</td>
-									<td>{num(g.priceExp)}</td>
-								</tr>
-							))}
-						</tbody>
-					</table>
-				</div>
-				<p>
-					Các loại còn lại ({groups.filter((g: any) => g.priceExp === null).map((g: any) => g.name).join(', ')}) không bán ở bảng này.
-					{data.gild && (
-						<>
-							{' '}
-							Sách <strong>Mạ vàng</strong> đổi bằng cách nộp <strong>{num(data.gild.books)}</strong> sách {data.gild.from} bất kỳ{data.gild.daQuy ? ` và ${num(data.gild.daQuy)} Đá Quý` : ''} ở bảng Mạ vàng phù phép.
-						</>
-					)}
-				</p>
-
-				<h2 id="ep-sach">Ép sách vào vật phẩm</h2>
-				<p>
-					Cầm sách bằng chuột rồi thả lên vật phẩm muốn cường hóa. Trên sách ghi sẵn <strong>tỉ lệ thành công</strong> và tỉ lệ thất bại.
-					{!data.failureDestroysItem && ' Ép thất bại chỉ mất sách, vật phẩm của bạn luôn an toàn.'}
-				</p>
-				<ul>
-					<li>
-						Mỗi vật phẩm có <strong>{num(data.baseSlots)}</strong> ô cường hóa, mở rộng tối đa <strong>{num(data.maxSlots)}</strong> ô bằng vật phẩm tăng ô. Mỗi sách ép vào chiếm một ô.
-					</li>
-					<li>Mỗi sách chỉ ép được lên loại vật phẩm ghi ở dòng "Ép lên" (mũ, giáp, kiếm, rìu, cung...).</li>
-					<li>Một số sách cần vật phẩm đã có sẵn sách khác ở cấp nhất định, và sẽ thay thế sách đó khi ép. Điều kiện ghi ở từng sách trong danh sách.</li>
-				</ul>
-
-				{data.bookTools && (
-					<>
-						<h2 id="phan-ra">Phân rã và nâng cấp sách</h2>
-						<ul>
-							<li>
-								<strong>{command(data.commands.decompose)}</strong>: phân rã sách bạn không cần thành <strong>bụi phép</strong>. Mỗi sách phân rã có tỉ lệ nhận một bụi phép, tỉ lệ tùy loại sách (bảng dưới). Bấm chuột phải vào bụi phép để nhận ngẫu nhiên <strong>bụi tiên</strong> (thả vào sách để tăng tỉ lệ thành công) hoặc bụi rác (vô dụng).
-							</li>
-							<li>
-								<strong>{command(data.commands.upgrade)}</strong>: ghép hai sách cùng loại (và bụi phép) để nâng cấp, tốn EXP.
-							</li>
-							<li>
-								<strong>{command(data.commands['book-preview'])}</strong>: xem danh sách sách phép trong game.
-							</li>
-						</ul>
-						<div class="re-scroll">
-							<table>
-								<thead>
-									<tr>
-										<th>Loại sách</th>
-										<th>Tỉ lệ nhận bụi phép khi phân rã</th>
-										<th>Sách ngẫu nhiên</th>
-									</tr>
-								</thead>
-								<tbody>
-									{groups.map((g: any) => (
-										<tr>
-											<td>
-												<span class="re-dot" style={g.color ? `background:${g.color}` : ''} />
-												<a href={groupUrl(g.slug)}>{g.name}</a>
-											</td>
-											<td>{num(g.dustChance)}%</td>
-											<td>{g.randomLevelCap3 ? 'Chỉ ra cấp 1–3' : 'Mọi cấp'}</td>
-										</tr>
-									))}
-								</tbody>
-							</table>
-						</div>
-					</>
-				)}
-			</>
-		)
-	}
+	<RenEnchantNav server={server} groups={groups} active={group?.slug} />
 
 	{
 		view === 'groups' && (
 			<>
-				<p class="re-meta">Xếp từ yếu đến mạnh. Bấm vào một loại để xem từng sách phép, tác dụng và các cấp.</p>
-				<div class="re-grid">
-					{groups.map((g: any) => (
-						<a class="re-card" href={groupUrl(g.slug)} style={g.color ? `--tier:${g.color}` : ''}>
-							<strong>{g.name}</strong>
-							<small>{num(g.enchants.length)} sách phép</small>
-						</a>
-					))}
+				<p>Chọn nhóm sách để xem tác dụng, trang bị phù hợp và chỉ số từng cấp.</p>
+				<p class="re-meta">Xếp từ yếu đến mạnh. Huyết tử và Mạ vàng ngang cấp.</p>
+				<div class="re-scroll">
+					<table>
+						<thead>
+							<tr>
+								<th scope="col">Nhóm sách</th>
+								<th scope="col">Số sách phép</th>
+								<th scope="col">Giá tại bảng Sách phép (EXP)</th>
+							</tr>
+						</thead>
+						<tbody>
+							{groups.map((g: any) => (
+								<tr>
+									<th scope="row">
+										<span class="re-dot" style={g.color ? `background:${g.color}` : ''} aria-hidden="true" />
+										<a href={groupUrl(g.slug)}>{g.name}</a>
+									</th>
+									<td>{num(g.enchants.length)}</td>
+									<td>{g.priceExp !== null ? num(g.priceExp) : 'Không bán tại bảng này'}</td>
+								</tr>
+							))}
+						</tbody>
+					</table>
 				</div>
 			</>
 		)
@@ -162,13 +85,16 @@ const columns = (e: any) => ({
 					{group.priceExp !== null && ` Mua ở bảng Sách phép với giá ${num(group.priceExp)} EXP mỗi lần.`}
 					{group.randomLevelCap3 && ' Sách nhận ngẫu nhiên chỉ ra cấp 1–3.'}
 				</p>
-				<ul class="re-index">
-					{group.enchants.map((e: any) => (
-						<li>
-							<a href={`#${e.id}`}>{e.name}</a>
-						</li>
-					))}
-				</ul>
+				<nav class="re-book-nav" aria-label={`Sách phép trong nhóm ${group.name}`}>
+					<p class="re-nav-title">Sách trong nhóm</p>
+					<ul class="re-index">
+						{group.enchants.map((e: any) => (
+							<li>
+								<a href={`#${e.id}`}>{e.name}</a>
+							</li>
+						))}
+					</ul>
+				</nav>
 				{group.enchants.map((e: any) => {
 					const col = columns(e);
 					return (
@@ -226,28 +152,6 @@ const columns = (e: any) => ({
 		color: var(--sl-color-gray-3);
 		font-size: var(--sl-text-sm);
 	}
-	.re-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
-		gap: 0.75rem;
-	}
-	.re-card {
-		display: block;
-		padding: 0.75rem 1rem;
-		border: 1px solid var(--sl-color-hairline);
-		border-left: 4px solid var(--tier, var(--sl-color-hairline));
-		border-radius: 0.5rem;
-		color: inherit;
-		text-decoration: none;
-	}
-	.re-card:hover {
-		border-color: var(--sl-color-text-accent);
-		border-left-color: var(--tier, var(--sl-color-text-accent));
-	}
-	.re-card small {
-		display: block;
-		color: var(--sl-color-gray-3);
-	}
 	.re-dot {
 		display: inline-block;
 		width: 0.7rem;
@@ -259,17 +163,48 @@ const columns = (e: any) => ({
 	.re-index {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 0.25rem 1rem;
-		margin: 0.5rem 0 1rem;
+		gap: 0.4rem;
+		margin: 0.5rem 0 0;
 		padding: 0;
 		list-style: none;
 		font-size: var(--sl-text-sm);
+	}
+	.re-book-nav {
+		margin-top: 1rem;
+		padding: 0.85rem 1rem;
+		border: 1px solid var(--tw-border);
+		border-radius: 0.5rem;
+		background: var(--tw-neutral);
+	}
+	.re-nav-title {
+		margin: 0;
+		font-size: var(--sl-text-sm);
+		font-weight: 600;
+	}
+	.re-index a {
+		display: block;
+		padding: 0.4rem 0.65rem;
+		border: 1px solid var(--tw-border);
+		border-radius: 0.25rem;
+		color: var(--tw-text-nav);
+		text-decoration: none;
+	}
+	.re-index a:hover {
+		background: var(--tw-surface);
+		color: var(--tw-accent-text);
+	}
+	.re-index a:focus-visible {
+		outline: 2px solid var(--tw-accent-text);
+		outline-offset: 2px;
 	}
 	.re-book {
 		margin-top: 1.25rem;
 		padding: 0.25rem 1rem 0.75rem;
 		border: 1px solid var(--sl-color-hairline);
 		border-radius: 0.5rem;
+	}
+	.re-book:target {
+		border-color: var(--tw-green);
 	}
 	.re-book h2 {
 		font-size: var(--sl-text-xl);
