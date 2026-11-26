@@ -82,6 +82,14 @@ for (const server of readdirSync(serversDir)) {
 			for (const reward of chest.rewards) if (reward.icon) materials.add(reward.icon);
 		}
 	}
+	// the crafting materials: the item of each material and of each ingredient of its recipes
+	const renMaterialsFile = join(serversDir, server, 'ren-materials.json');
+	if (existsSync(renMaterialsFile)) {
+		for (const material of JSON.parse(readFileSync(renMaterialsFile, 'utf8')).materials) {
+			if (material.icon) materials.add(material.icon);
+			for (const recipe of material.recipes) for (const need of recipe.needs) if (need.icon) materials.add(need.icon);
+		}
+	}
 	// the equipment: the item of each piece and of each ingredient
 	const equipmentFile = join(serversDir, server, 'gear.json');
 	if (existsSync(equipmentFile)) {
