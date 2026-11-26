@@ -42,7 +42,8 @@ const ENCHANTS = {
 };
 // How the armor sets are grouped on the list page. A set that is not listed here goes to "Khác" (and is reported).
 const LINES = [
-	['Phổ thông', ['tanthu', 'coxua', 'thuongco', 'thuonglong', 'huyenthoai', 'huyenkim', 'truyenthuyet', 'toicao']],
+	// each line lists its sets from weak to strong (the tier of the pieces: Tân Thủ and Cổ Xưa 1, Huyền Thoại 2 ... Thượng Cổ 6, Thượng Long 8)
+	['Phổ thông', ['tanthu', 'coxua', 'huyenthoai', 'huyenkim', 'truyenthuyet', 'toicao', 'thuongco', 'thuonglong']],
 	['Ngũ hành', ['kimtinh', 'moctinh', 'thuytinh', 'hoatinh', 'thotinh', 'kimvuong', 'mocvuong', 'thuyvuong', 'hoavuong', 'thovuong', 'kimthan', 'mocthan', 'thuythan', 'hoathan', 'thothan']],
 	['Bá vương', ['bavuong', 'bavuongcuongno']],
 	['Huyết linh', Array.from({ length: 10 }, (_, i) => `huyetlinh${i + 1}`)],
