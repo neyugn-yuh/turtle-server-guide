@@ -1,0 +1,2653 @@
+{
+	"chests": [
+		{
+			"id": "phuthuy",
+			"name": "Hòm Phù Thủy",
+			"icon": "ender_chest",
+			"tiers": [
+				{
+					"id": "Basic",
+					"name": "♦"
+				},
+				{
+					"id": "UnCommon",
+					"name": "♦♦"
+				},
+				{
+					"id": "Rare",
+					"name": "♦♦♦"
+				}
+			],
+			"xuixeo": {
+				"currency": "xuixeophuthuy",
+				"points": 1,
+				"except": [
+					"Kiếm Tối Cao"
+				]
+			},
+			"prizes": [
+				{
+					"key": "1",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Lợn",
+							"amount": 10
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "2",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Bò",
+							"amount": 8
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "3",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Ghast",
+							"amount": 2
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "4",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Skeleton",
+							"amount": 2
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "5",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Creeper",
+							"amount": 3
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "6",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Quỷ lửa",
+							"amount": 3
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "7",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Iron Golem",
+							"amount": 2
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "8",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Động Vật (Ngẫu Nhiên X3)",
+							"amount": 1
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "9",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Quái (Ngẫu Nhiên X3)",
+							"amount": 1
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "11",
+					"counted": true,
+					"items": [
+						{
+							"name": "250.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "paper"
+				},
+				{
+					"key": "12",
+					"counted": true,
+					"items": [
+						{
+							"name": "500.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "paper"
+				},
+				{
+					"key": "13",
+					"counted": true,
+					"items": [
+						{
+							"name": "750.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "paper"
+				},
+				{
+					"key": "14",
+					"counted": true,
+					"items": [
+						{
+							"name": "1.000.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "paper"
+				},
+				{
+					"key": "19",
+					"counted": true,
+					"items": [
+						{
+							"name": "Mảnh Rank Trùm",
+							"amount": 1
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "20",
+					"counted": true,
+					"items": [
+						{
+							"name": "Mảnh Rank Vua",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "21",
+					"counted": true,
+					"items": [
+						{
+							"name": "Mảnh Rank Quỷ",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "22",
+					"counted": true,
+					"items": [
+						{
+							"name": "Mảnh Rank Tiên",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "23",
+					"counted": true,
+					"items": [
+						{
+							"name": "Mảnh Rank Thần",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "24",
+					"counted": true,
+					"items": [
+						{
+							"name": "Hòm Vật Phẩm Truyền Thuyết (Ngẫu Nhiên)",
+							"amount": 1
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "end_portal_frame"
+				},
+				{
+					"key": "26",
+					"counted": true,
+					"items": [
+						{
+							"name": "Sách Cường Hóa (Ngẫu Nhiên X4)",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "book"
+				},
+				{
+					"key": "28",
+					"counted": true,
+					"items": [
+						{
+							"name": "Mũ Tối Cao",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "diamond_helmet"
+				},
+				{
+					"key": "29",
+					"counted": true,
+					"items": [
+						{
+							"name": "Giáp Tối Cao",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "diamond_chestplate"
+				},
+				{
+					"key": "30",
+					"counted": true,
+					"items": [
+						{
+							"name": "Quần Tối Cao",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "diamond_leggings"
+				},
+				{
+					"key": "31",
+					"counted": true,
+					"items": [
+						{
+							"name": "Giày Tối Cao",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "diamond_boots"
+				},
+				{
+					"key": "32",
+					"counted": false,
+					"items": [
+						{
+							"name": "Kiếm Tối Cao",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "diamond_sword"
+				},
+				{
+					"key": "33",
+					"counted": true,
+					"items": [
+						{
+							"name": "Rìu Tối Cao",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "diamond_axe"
+				},
+				{
+					"key": "34",
+					"counted": true,
+					"items": [
+						{
+							"name": "Cung Tối Cao",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "bow"
+				},
+				{
+					"key": "36",
+					"counted": true,
+					"items": [
+						{
+							"name": "Bụi phép",
+							"amount": 20
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "fire_charge"
+				},
+				{
+					"key": "37",
+					"counted": true,
+					"items": [
+						{
+							"name": "100.000 EXP",
+							"amount": 1
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "experience_bottle"
+				},
+				{
+					"key": "38",
+					"counted": true,
+					"items": [
+						{
+							"name": "500.000 EXP",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "experience_bottle"
+				},
+				{
+					"key": "41",
+					"counted": true,
+					"items": [
+						{
+							"name": "Hòm Trang Bị (Ngẫu Nhiên)",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "ender_chest"
+				},
+				{
+					"key": "42",
+					"counted": true,
+					"items": [
+						{
+							"name": "Hòm Vũ Khí Bá Vương",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "ender_chest"
+				},
+				{
+					"key": "46",
+					"counted": true,
+					"items": [
+						{
+							"name": "Cánh cứng (Elytra)",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "elytra"
+				},
+				{
+					"key": "111",
+					"counted": true,
+					"items": [
+						{
+							"name": "Hòm Rìu May Mắn (Ngẫu Nhiên )",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "acacia_log"
+				},
+				{
+					"key": "cup1",
+					"counted": true,
+					"items": [
+						{
+							"name": "Cúp Tối Cao",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "diamond_pickaxe"
+				},
+				{
+					"key": "cup2",
+					"counted": true,
+					"items": [
+						{
+							"name": "Cúp Tối Cao (2♦)",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "diamond_pickaxe"
+				},
+				{
+					"key": "cup3",
+					"counted": true,
+					"items": [
+						{
+							"name": "Cúp Tối Cao (3♦)",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "diamond_pickaxe"
+				},
+				{
+					"key": "sotoicao",
+					"counted": true,
+					"items": [
+						{
+							"name": "Sọ Phép Địa Ngục",
+							"amount": 1,
+							"texture": "bb9e4386e54ac7f6e18fbf5c09fb7031953d0a51b054c5b4d63f618eeb2634a9"
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"texture": "bb9e4386e54ac7f6e18fbf5c09fb7031953d0a51b054c5b4d63f618eeb2634a9"
+				}
+			]
+		},
+		{
+			"id": "thuongco",
+			"name": "Hòm Thượng Cổ",
+			"icon": "ender_chest",
+			"tiers": [
+				{
+					"id": "Basic",
+					"name": "Thường"
+				},
+				{
+					"id": "UnCommon",
+					"name": "Hiếm"
+				},
+				{
+					"id": "Rare",
+					"name": "Thượng Cổ"
+				}
+			],
+			"xuixeo": {
+				"currency": "xuixeothuongco",
+				"points": 1,
+				"except": []
+			},
+			"prizes": [
+				{
+					"key": "3",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Ghast",
+							"amount": 3
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "4",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Skeleton",
+							"amount": 4
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "5",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Creeper",
+							"amount": 4
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "6",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Quỷ lửa",
+							"amount": 4
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "7",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Iron Golem",
+							"amount": 3
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "12",
+					"counted": true,
+					"items": [
+						{
+							"name": "500.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "paper"
+				},
+				{
+					"key": "13",
+					"counted": true,
+					"items": [
+						{
+							"name": "1.000.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "paper"
+				},
+				{
+					"key": "14",
+					"counted": true,
+					"items": [
+						{
+							"name": "2.500.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "paper"
+				},
+				{
+					"key": "21",
+					"counted": true,
+					"items": [
+						{
+							"name": "Mảnh Rank Quỷ",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "22",
+					"counted": true,
+					"items": [
+						{
+							"name": "Mảnh Rank Tiên",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "23",
+					"counted": true,
+					"items": [
+						{
+							"name": "Mảnh Rank Thần",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "24",
+					"counted": true,
+					"items": [
+						{
+							"name": "Thượng Cổ (Mũ)",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "golden_helmet"
+				},
+				{
+					"key": "25",
+					"counted": true,
+					"items": [
+						{
+							"name": "Thượng Cổ (Áo)",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "golden_chestplate"
+				},
+				{
+					"key": "26",
+					"counted": true,
+					"items": [
+						{
+							"name": "Thượng Cổ (Quần)",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "golden_leggings"
+				},
+				{
+					"key": "27",
+					"counted": true,
+					"items": [
+						{
+							"name": "Thượng Cổ (Giày)",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "golden_boots"
+				},
+				{
+					"key": "28",
+					"counted": true,
+					"items": [
+						{
+							"name": "Thượng Cổ (Kiếm)",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "stone_sword"
+				},
+				{
+					"key": "29",
+					"counted": true,
+					"items": [
+						{
+							"name": "Thượng Cổ (Kiếm) (2♦)",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "stone_sword"
+				},
+				{
+					"key": "30",
+					"counted": true,
+					"items": [
+						{
+							"name": "Thượng Cổ (Kiếm) (3♦)",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "stone_sword"
+				},
+				{
+					"key": "32",
+					"counted": true,
+					"items": [
+						{
+							"name": "Túy Bát Tiên Quyền IV",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "book"
+				},
+				{
+					"key": "33",
+					"counted": true,
+					"items": [
+						{
+							"name": "Sách phép Truyền Thuyết ngẫu nhiên",
+							"amount": 3
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "book"
+				},
+				{
+					"key": "34",
+					"counted": true,
+					"items": [
+						{
+							"name": "Cánh Cứng",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "elytra"
+				},
+				{
+					"key": "35",
+					"counted": true,
+					"items": [
+						{
+							"name": "Sách phép Huyết Tử ngẫu nhiên",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "enchanted_book"
+				},
+				{
+					"key": "99",
+					"counted": true,
+					"items": [
+						{
+							"name": "Hòm Rìu May Mắn (Ngẫu Nhiên )",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "ender_chest"
+				},
+				{
+					"key": "333",
+					"counted": true,
+					"items": [
+						{
+							"name": "Sách phép Linh Hồn ngẫu nhiên",
+							"amount": 3
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "book"
+				},
+				{
+					"key": "423",
+					"counted": true,
+					"items": [
+						{
+							"name": "Hòm Vũ Khí Bá Vương",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "ender_chest"
+				},
+				{
+					"key": "cup1",
+					"counted": true,
+					"items": [
+						{
+							"name": "Thượng Cổ (Cúp)",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "diamond_pickaxe"
+				},
+				{
+					"key": "cup2",
+					"counted": true,
+					"items": [
+						{
+							"name": "Thượng Cổ (Cúp) (2♦)",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "diamond_pickaxe"
+				},
+				{
+					"key": "cup3",
+					"counted": true,
+					"items": [
+						{
+							"name": "Thượng Cổ (Cúp) (3♦)",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "diamond_pickaxe"
+				},
+				{
+					"key": "sothuongco",
+					"counted": true,
+					"items": [
+						{
+							"name": "Sọ Phép Từ Trùm Cướp Biển",
+							"amount": 1,
+							"texture": "27540b939e8e9726cd27740d448d118cca1fdc509f51c58876c85480b302143e"
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"texture": "27540b939e8e9726cd27740d448d118cca1fdc509f51c58876c85480b302143e"
+				}
+			]
+		},
+		{
+			"id": "cauvong",
+			"name": "Kho Báu Cầu Vồng",
+			"icon": "clay_ball",
+			"tiers": [],
+			"xuixeo": {
+				"currency": "xuixeocauvong",
+				"points": 1,
+				"except": []
+			},
+			"prizes": [
+				{
+					"key": "1",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Lợn",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "2",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Bò",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "3",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Gà",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "4",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Skeleton",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "5",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Creeper",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "6",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Enderman",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "7",
+					"counted": true,
+					"items": [
+						{
+							"name": "Spawner Ghast",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "9",
+					"counted": true,
+					"items": [
+						{
+							"name": "10.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "paper"
+				},
+				{
+					"key": "10",
+					"counted": true,
+					"items": [
+						{
+							"name": "20.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "paper"
+				},
+				{
+					"key": "11",
+					"counted": true,
+					"items": [
+						{
+							"name": "50.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "paper"
+				},
+				{
+					"key": "12",
+					"counted": true,
+					"items": [
+						{
+							"name": "100.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "paper"
+				},
+				{
+					"key": "13",
+					"counted": true,
+					"items": [
+						{
+							"name": "Táo vàng",
+							"amount": 20
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "golden_apple"
+				},
+				{
+					"key": "14",
+					"counted": true,
+					"items": [
+						{
+							"name": "Táo vàng phù phép",
+							"amount": 5
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "enchanted_golden_apple"
+				},
+				{
+					"key": "18",
+					"counted": true,
+					"items": [
+						{
+							"name": "Vật Phẩm Huyền Thoại (Ngẫu Nhiên X2)",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "chest"
+				},
+				{
+					"key": "20",
+					"counted": true,
+					"items": [
+						{
+							"name": "Bình kinh nghiệm",
+							"amount": 64
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "experience_bottle"
+				},
+				{
+					"key": "211",
+					"counted": true,
+					"items": [
+						{
+							"name": "Beacon",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "beacon"
+				},
+				{
+					"key": "3123",
+					"counted": true,
+					"items": [
+						{
+							"name": "Mảnh Rank Trùm",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "paper"
+				},
+				{
+					"key": "3222",
+					"counted": true,
+					"items": [
+						{
+							"name": "Ngọc lục bảo",
+							"amount": 64
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "emerald"
+				},
+				{
+					"key": "32222",
+					"counted": true,
+					"items": [
+						{
+							"name": "Kim cương",
+							"amount": 64
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "diamond"
+				},
+				{
+					"key": "1511111",
+					"counted": true,
+					"items": [
+						{
+							"name": "Hòm Vật Phẩm Truyền Thuyết (Ngẫu Nhiên)",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "end_portal_frame"
+				},
+				{
+					"key": "sothuong",
+					"counted": true,
+					"items": [
+						{
+							"name": "Sọ Phép Bị Vỡ",
+							"amount": 1,
+							"texture": "ab738fa05b27f18874e57d95b0b6c9fadd1b558894f82e0261ba1544e6fbbf1d"
+						}
+					],
+					"tier": null,
+					"big": false,
+					"texture": "ab738fa05b27f18874e57d95b0b6c9fadd1b558894f82e0261ba1544e6fbbf1d"
+				},
+				{
+					"key": "sohiem",
+					"counted": true,
+					"items": [
+						{
+							"name": "Sọ Phép Bị Nguyền Rủa",
+							"amount": 1,
+							"texture": "b617855ff1268d959bd9f239384fe0431ebd751b2624619c555e9d471e9440"
+						}
+					],
+					"tier": null,
+					"big": false,
+					"texture": "b617855ff1268d959bd9f239384fe0431ebd751b2624619c555e9d471e9440"
+				},
+				{
+					"key": "sohuyenthoai",
+					"counted": true,
+					"items": [
+						{
+							"name": "Sọ Phép Từ Chiến Binh",
+							"amount": 1,
+							"texture": "1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5"
+						}
+					],
+					"tier": null,
+					"big": false,
+					"texture": "1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5"
+				},
+				{
+					"key": "sotruyenthuyet",
+					"counted": true,
+					"items": [
+						{
+							"name": "Sọ Phép Từ Kiếm Sĩ",
+							"amount": 1,
+							"texture": "db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65"
+						}
+					],
+					"tier": null,
+					"big": false,
+					"texture": "db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65"
+				},
+				{
+					"key": "elytra",
+					"counted": true,
+					"items": [
+						{
+							"name": "Cánh cứng (Elytra)",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "elytra"
+				},
+				{
+					"key": "carot100",
+					"counted": true,
+					"items": [
+						{
+							"name": "Cà Rốt Sinh Lực",
+							"amount": 100
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "carrot"
+				},
+				{
+					"key": "carot200",
+					"counted": true,
+					"items": [
+						{
+							"name": "Cà Rốt Sinh Lực",
+							"amount": 200
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "carrot"
+				}
+			]
+		},
+		{
+			"id": "ruongafk",
+			"name": "Rương AFK",
+			"icon": "ender_chest",
+			"tiers": [],
+			"xuixeo": null,
+			"prizes": [
+				{
+					"key": "1",
+					"counted": false,
+					"items": [
+						{
+							"name": "25.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "gold_ingot"
+				},
+				{
+					"key": "2",
+					"counted": false,
+					"items": [
+						{
+							"name": "50.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "gold_ingot"
+				},
+				{
+					"key": "3",
+					"counted": false,
+					"items": [
+						{
+							"name": "100.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "gold_ingot"
+				},
+				{
+					"key": "4",
+					"counted": false,
+					"items": [
+						{
+							"name": "25.000 EXP",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "experience_bottle"
+				},
+				{
+					"key": "5",
+					"counted": false,
+					"items": [
+						{
+							"name": "50.000 EXP",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "experience_bottle"
+				},
+				{
+					"key": "6",
+					"counted": false,
+					"items": [
+						{
+							"name": "100.000 EXP",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "experience_bottle"
+				},
+				{
+					"key": "7",
+					"counted": false,
+					"items": [
+						{
+							"name": "Mảnh treo máy 5 phút",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "8",
+					"counted": false,
+					"items": [
+						{
+							"name": "Mảnh treo máy 15 phút",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "9",
+					"counted": false,
+					"items": [
+						{
+							"name": "Mảnh treo máy 30 phút",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "10",
+					"counted": false,
+					"items": [
+						{
+							"name": "Mảnh treo máy 60 phút",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "11",
+					"counted": false,
+					"items": [
+						{
+							"name": "Spawner Ngẫu Nhiên Lv.1",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "12",
+					"counted": false,
+					"items": [
+						{
+							"name": "Spawner Ngẫu Nhiên Lv.2",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "13",
+					"counted": false,
+					"items": [
+						{
+							"name": "500.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": true,
+					"icon": "gold_block"
+				},
+				{
+					"key": "14",
+					"counted": false,
+					"items": [
+						{
+							"name": "1.000.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": true,
+					"icon": "gold_block"
+				},
+				{
+					"key": "15",
+					"counted": false,
+					"items": [
+						{
+							"name": "500.000 EXP",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": true,
+					"icon": "experience_bottle"
+				},
+				{
+					"key": "16",
+					"counted": false,
+					"items": [
+						{
+							"name": "1.000.000 EXP",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": true,
+					"icon": "experience_bottle"
+				},
+				{
+					"key": "17",
+					"counted": false,
+					"items": [
+						{
+							"name": "10.000.000 EXP",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": true,
+					"icon": "experience_bottle"
+				},
+				{
+					"key": "18",
+					"counted": false,
+					"items": [
+						{
+							"name": "100.000.000 EXP",
+							"amount": 1
+						}
+					],
+					"tier": null,
+					"big": true,
+					"icon": "experience_bottle"
+				}
+			]
+		},
+		{
+			"id": "homacmong",
+			"name": "Hòm Ác Mộng",
+			"icon": "ender_chest",
+			"tiers": [
+				{
+					"id": "Basic",
+					"name": "Thường"
+				},
+				{
+					"id": "UnCommon",
+					"name": "Hiếm"
+				},
+				{
+					"id": "Rare",
+					"name": "Ác Mộng"
+				}
+			],
+			"xuixeo": null,
+			"prizes": [
+				{
+					"key": "money_500k",
+					"counted": false,
+					"items": [
+						{
+							"name": "500.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "sunflower"
+				},
+				{
+					"key": "exp_250k",
+					"counted": false,
+					"items": [
+						{
+							"name": "250.000 EXP",
+							"amount": 1
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "experience_bottle"
+				},
+				{
+					"key": "keo_ngo_100",
+					"counted": false,
+					"items": [
+						{
+							"name": "Kẹo Ngô Ma Quái",
+							"amount": 100
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "sweet_berries"
+				},
+				{
+					"key": "keo_linh_hon_15",
+					"counted": false,
+					"items": [
+						{
+							"name": "Kẹo Linh Hồn",
+							"amount": 15
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "amethyst_shard"
+				},
+				{
+					"key": "spawner2_x2",
+					"counted": false,
+					"items": [
+						{
+							"name": "Lồng Spawner Level 2",
+							"amount": 2
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "spawner3_x1",
+					"counted": false,
+					"items": [
+						{
+							"name": "Lồng Spawner Level 3",
+							"amount": 1
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "spawner4_x1",
+					"counted": false,
+					"items": [
+						{
+							"name": "Lồng Spawner Level 4",
+							"amount": 1
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "hom_bavuong",
+					"counted": false,
+					"items": [
+						{
+							"name": "Hòm Vũ Khí Bá Vương",
+							"amount": 1
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "ender_chest"
+				},
+				{
+					"key": "riu_mayman",
+					"counted": false,
+					"items": [
+						{
+							"name": "Hòm Rìu May Mắn",
+							"amount": 1
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "chest"
+				},
+				{
+					"key": "tc_1",
+					"counted": false,
+					"items": [
+						{
+							"name": "Tinh Chất Ác Mộng",
+							"amount": 1
+						}
+					],
+					"tier": "Basic",
+					"big": false,
+					"icon": "echo_shard"
+				},
+				{
+					"key": "money_2m",
+					"counted": false,
+					"items": [
+						{
+							"name": "2.000.000 Tiền",
+							"amount": 1
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "sunflower"
+				},
+				{
+					"key": "keo_linh_hon_50",
+					"counted": false,
+					"items": [
+						{
+							"name": "Kẹo Linh Hồn",
+							"amount": 50
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "amethyst_shard"
+				},
+				{
+					"key": "tc_3",
+					"counted": false,
+					"items": [
+						{
+							"name": "Tinh Chất Ác Mộng",
+							"amount": 3
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "echo_shard"
+				},
+				{
+					"key": "da_bao_ho",
+					"counted": false,
+					"items": [
+						{
+							"name": "Đá Bảo Hộ Linh Hồn",
+							"amount": 1
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "prismarine_crystals"
+				},
+				{
+					"key": "spawner4_x2",
+					"counted": false,
+					"items": [
+						{
+							"name": "Lồng Spawner Level 4",
+							"amount": 2
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "spawner5_x1",
+					"counted": false,
+					"items": [
+						{
+							"name": "Lồng Spawner Level 5",
+							"amount": 1
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "spawner6_x1",
+					"counted": false,
+					"items": [
+						{
+							"name": "Lồng Spawner Level 6",
+							"amount": 1
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "spawner"
+				},
+				{
+					"key": "an_huyet_nguyet_24h",
+					"counted": false,
+					"items": [
+						{
+							"name": "Ấn Huyết Nguyệt (Vé Tầng 3 - 24 Giờ)",
+							"amount": 1
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "nether_star"
+				},
+				{
+					"key": "sach_mv_1",
+					"counted": false,
+					"items": [
+						{
+							"name": "Sách phép Mạ Vàng ngẫu nhiên",
+							"amount": 1
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "enchanted_book"
+				},
+				{
+					"key": "sach_mv_2",
+					"counted": false,
+					"items": [
+						{
+							"name": "Sách phép Mạ Vàng ngẫu nhiên",
+							"amount": 1
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "enchanted_book"
+				},
+				{
+					"key": "lua_truyen_thuyet",
+					"counted": false,
+					"items": [
+						{
+							"name": "Rương Lửa Phép Truyền Thuyết Ngẫu Nhiên",
+							"amount": 1
+						}
+					],
+					"tier": "UnCommon",
+					"big": false,
+					"icon": "end_portal_frame"
+				},
+				{
+					"key": "tc_10",
+					"counted": false,
+					"items": [
+						{
+							"name": "Tinh Chất Ác Mộng",
+							"amount": 10
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "echo_shard"
+				},
+				{
+					"key": "da_bao_ho_x3",
+					"counted": false,
+					"items": [
+						{
+							"name": "Đá Bảo Hộ Linh Hồn",
+							"amount": 3
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "prismarine_crystals"
+				},
+				{
+					"key": "linh_hon_chua_te",
+					"counted": false,
+					"items": [
+						{
+							"name": "Linh Hồn Chúa Tể",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "nether_star"
+				},
+				{
+					"key": "ken_goi_hon",
+					"counted": false,
+					"items": [
+						{
+							"name": "Kèn Gọi Hồn Huyết Nguyệt",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "goat_horn"
+				},
+				{
+					"key": "sach_mv_3",
+					"counted": false,
+					"items": [
+						{
+							"name": "Sách phép Mạ Vàng ngẫu nhiên",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "enchanted_book"
+				},
+				{
+					"key": "hoan_key_2",
+					"counted": false,
+					"items": [
+						{
+							"name": "Chìa khóa Hòm Ác Mộng",
+							"amount": 2
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "tripwire_hook"
+				},
+				{
+					"key": "lua_toi_cao",
+					"counted": false,
+					"items": [
+						{
+							"name": "Rương Lửa Phép Tối Cao Ngẫu Nhiên",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "end_portal_frame"
+				},
+				{
+					"key": "tc_35",
+					"counted": false,
+					"items": [
+						{
+							"name": "Tinh Chất Ác Mộng",
+							"amount": 35
+						}
+					],
+					"tier": "Rare",
+					"big": true,
+					"icon": "echo_shard"
+				},
+				{
+					"key": "ruong_kim",
+					"counted": false,
+					"items": [
+						{
+							"name": "Rương Giáp Kim Tinh Ngẫu Nhiên",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "iron_block"
+				},
+				{
+					"key": "ruong_moc",
+					"counted": false,
+					"items": [
+						{
+							"name": "Rương Giáp Mộc Tinh Ngẫu Nhiên",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "emerald_block"
+				},
+				{
+					"key": "ruong_thuy",
+					"counted": false,
+					"items": [
+						{
+							"name": "Rương Giáp Thủy Tinh Ngẫu Nhiên",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "lapis_block"
+				},
+				{
+					"key": "ruong_hoa",
+					"counted": false,
+					"items": [
+						{
+							"name": "Rương Giáp Hỏa Tinh Ngẫu Nhiên",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "redstone_block"
+				},
+				{
+					"key": "ruong_tho",
+					"counted": false,
+					"items": [
+						{
+							"name": "Rương Giáp Thổ Tinh Ngẫu Nhiên",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "moss_block"
+				},
+				{
+					"key": "ruong_giap_he",
+					"counted": false,
+					"items": [
+						{
+							"name": "Rương Giáp Hệ Ngẫu Nhiên",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "diamond_chestplate"
+				},
+				{
+					"key": "ruong_kiem_he",
+					"counted": false,
+					"items": [
+						{
+							"name": "Rương Kiếm Hệ Ngẫu Nhiên",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "diamond_sword"
+				},
+				{
+					"key": "sach_mv_an1",
+					"counted": false,
+					"items": [
+						{
+							"name": "Sách phép Mạ Vàng ngẫu nhiên",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "enchanted_book"
+				},
+				{
+					"key": "sach_mv_an2",
+					"counted": false,
+					"items": [
+						{
+							"name": "Sách phép Mạ Vàng ngẫu nhiên",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "enchanted_book"
+				},
+				{
+					"key": "sach_mv_an3",
+					"counted": false,
+					"items": [
+						{
+							"name": "Sách phép Mạ Vàng ngẫu nhiên",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "enchanted_book"
+				},
+				{
+					"key": "lua_toi_cao_x10",
+					"counted": false,
+					"items": [
+						{
+							"name": "Rương Lửa Phép Tối Cao",
+							"amount": 10
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "end_portal_frame"
+				},
+				{
+					"key": "lua_toi_cao_x30",
+					"counted": false,
+					"items": [
+						{
+							"name": "Rương Lửa Phép Tối Cao",
+							"amount": 30
+						}
+					],
+					"tier": "Rare",
+					"big": true,
+					"icon": "end_portal_frame"
+				},
+				{
+					"key": "than_binh",
+					"counted": false,
+					"items": [
+						{
+							"name": "Ám Thần (Kiếm)",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "netherite_sword"
+				},
+				{
+					"key": "toi_thuong",
+					"counted": false,
+					"items": [
+						{
+							"name": "Huyết Đế (Thần Binh)",
+							"amount": 1
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"icon": "netherite_hoe"
+				},
+				{
+					"key": "so_linh_hon_1",
+					"counted": false,
+					"items": [
+						{
+							"name": "Sọ Linh Hồn 1",
+							"amount": 1,
+							"texture": "27540b939e8e9726cd27740d448d118cca1fdc509f51c58876c85480b302143e"
+						}
+					],
+					"tier": "Rare",
+					"big": false,
+					"texture": "27540b939e8e9726cd27740d448d118cca1fdc509f51c58876c85480b302143e"
+				}
+			]
+		}
+	],
+	"shops": [
+		{
+			"id": "cauVong",
+			"name": "Xui Xẻo Cầu Vồng",
+			"currency": "xuixeocauvong",
+			"items": [
+				{
+					"key": "SoVo",
+					"price": 40,
+					"items": [
+						{
+							"name": "Sọ Phép Bị Vỡ",
+							"amount": 1,
+							"texture": "ab738fa05b27f18874e57d95b0b6c9fadd1b558894f82e0261ba1544e6fbbf1d"
+						}
+					],
+					"texture": "ab738fa05b27f18874e57d95b0b6c9fadd1b558894f82e0261ba1544e6fbbf1d"
+				},
+				{
+					"key": "SoHiem",
+					"price": 80,
+					"items": [
+						{
+							"name": "Sọ Phép Bị Nguyền Rủa",
+							"amount": 1,
+							"texture": "b617855ff1268d959bd9f239384fe0431ebd751b2624619c555e9d471e9440"
+						}
+					],
+					"texture": "b617855ff1268d959bd9f239384fe0431ebd751b2624619c555e9d471e9440"
+				},
+				{
+					"key": "SoHuyenThoai",
+					"price": 120,
+					"items": [
+						{
+							"name": "Sọ Phép Từ Chiến Binh",
+							"amount": 1,
+							"texture": "1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5"
+						}
+					],
+					"texture": "1368b776200054f7c3720616524d550ddf9243f4896cd71e4a692fddd72c71e5"
+				},
+				{
+					"key": "SoTruyenThuyet",
+					"price": 160,
+					"items": [
+						{
+							"name": "Sọ Phép Từ Kiếm Sĩ",
+							"amount": 1,
+							"texture": "db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65"
+						}
+					],
+					"texture": "db1e9c71bfd51b60ea606e797d0b2c1fd776cac0a0573fd960021155cb40d65"
+				},
+				{
+					"key": "HomTruyenThuyet",
+					"price": 40,
+					"items": [
+						{
+							"name": "Hòm Vật Phẩm Truyền Thuyết (Ngẫu Nhiên)",
+							"amount": 1
+						}
+					],
+					"icon": "end_portal_frame"
+				},
+				{
+					"key": "RankTrum",
+					"price": 60,
+					"items": [
+						{
+							"name": "Mảnh Rank Trùm",
+							"amount": 1
+						}
+					],
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "CanhCung",
+					"price": 40,
+					"items": [
+						{
+							"name": "Cánh cứng (Elytra)",
+							"amount": 1
+						}
+					],
+					"icon": "elytra"
+				}
+			],
+			"chest": "cauvong"
+		},
+		{
+			"id": "phuThuy",
+			"name": "Xui Xẻo Phù Thủy",
+			"currency": "xuixeophuthuy",
+			"items": [
+				{
+					"key": "RankVua",
+					"price": 100,
+					"items": [
+						{
+							"name": "Mảnh Rank Vua",
+							"amount": 1
+						}
+					],
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "RankQuy",
+					"price": 180,
+					"items": [
+						{
+							"name": "Mảnh Rank Quỷ",
+							"amount": 1
+						}
+					],
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "RankTien",
+					"price": 1200,
+					"items": [
+						{
+							"name": "Mảnh Rank Tiên",
+							"amount": 1
+						}
+					],
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "RankThan",
+					"price": 4500,
+					"items": [
+						{
+							"name": "Mảnh Rank Thần",
+							"amount": 1
+						}
+					],
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "MuToiCao",
+					"price": 100,
+					"items": [
+						{
+							"name": "Mũ Tối Cao",
+							"amount": 1
+						}
+					],
+					"icon": "diamond_helmet"
+				},
+				{
+					"key": "AoToiCao",
+					"price": 100,
+					"items": [
+						{
+							"name": "Giáp Tối Cao",
+							"amount": 1
+						}
+					],
+					"icon": "diamond_chestplate"
+				},
+				{
+					"key": "QuanToiCao",
+					"price": 100,
+					"items": [
+						{
+							"name": "Quần Tối Cao",
+							"amount": 1
+						}
+					],
+					"icon": "diamond_leggings"
+				},
+				{
+					"key": "GiayToiCao",
+					"price": 100,
+					"items": [
+						{
+							"name": "Giày Tối Cao",
+							"amount": 1
+						}
+					],
+					"icon": "diamond_boots"
+				},
+				{
+					"key": "KiemToiCao",
+					"price": 100,
+					"items": [
+						{
+							"name": "Kiếm Tối Cao",
+							"amount": 1
+						}
+					],
+					"icon": "diamond_sword"
+				},
+				{
+					"key": "RiuToiCao",
+					"price": 100,
+					"items": [
+						{
+							"name": "Rìu Tối Cao",
+							"amount": 1
+						}
+					],
+					"icon": "diamond_axe"
+				},
+				{
+					"key": "CungToiCao",
+					"price": 100,
+					"items": [
+						{
+							"name": "Cung Tối Cao",
+							"amount": 1
+						}
+					],
+					"icon": "bow"
+				},
+				{
+					"key": "cup1",
+					"price": 50,
+					"items": [
+						{
+							"name": "Cúp Tối Cao",
+							"amount": 1
+						}
+					],
+					"icon": "diamond_pickaxe"
+				},
+				{
+					"key": "cup2",
+					"price": 70,
+					"items": [
+						{
+							"name": "Cúp Tối Cao (2♦)",
+							"amount": 1
+						}
+					],
+					"icon": "diamond_pickaxe"
+				},
+				{
+					"key": "cup3",
+					"price": 90,
+					"items": [
+						{
+							"name": "Cúp Tối Cao (3♦)",
+							"amount": 1
+						}
+					],
+					"icon": "diamond_pickaxe"
+				},
+				{
+					"key": "sotoicao",
+					"price": 180,
+					"items": [
+						{
+							"name": "Sọ Phép Địa Ngục",
+							"amount": 1,
+							"texture": "bb9e4386e54ac7f6e18fbf5c09fb7031953d0a51b054c5b4d63f618eeb2634a9"
+						}
+					],
+					"texture": "bb9e4386e54ac7f6e18fbf5c09fb7031953d0a51b054c5b4d63f618eeb2634a9"
+				},
+				{
+					"key": "hombavuong",
+					"price": 200,
+					"items": [
+						{
+							"name": "Hòm Vũ Khí Bá Vương",
+							"amount": 1
+						}
+					],
+					"icon": "ender_chest"
+				}
+			],
+			"chest": "phuthuy"
+		},
+		{
+			"id": "thuongCo",
+			"name": "Xui Xẻo Thượng Cổ",
+			"currency": "xuixeothuongco",
+			"items": [
+				{
+					"key": "RankQuy",
+					"price": 80,
+					"items": [
+						{
+							"name": "Mảnh Rank Quỷ",
+							"amount": 1
+						}
+					],
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "RankTien",
+					"price": 125,
+					"items": [
+						{
+							"name": "Mảnh Rank Tiên",
+							"amount": 1
+						}
+					],
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "RankThan",
+					"price": 900,
+					"items": [
+						{
+							"name": "Mảnh Rank Thần",
+							"amount": 1
+						}
+					],
+					"icon": "prismarine_shard"
+				},
+				{
+					"key": "muthuongco",
+					"price": 100,
+					"items": [
+						{
+							"name": "Thượng Cổ (Mũ)",
+							"amount": 1
+						}
+					],
+					"icon": "golden_helmet"
+				},
+				{
+					"key": "giapthuongco",
+					"price": 100,
+					"items": [
+						{
+							"name": "Thượng Cổ (Áo)",
+							"amount": 1
+						}
+					],
+					"icon": "golden_chestplate"
+				},
+				{
+					"key": "quanthuongco",
+					"price": 100,
+					"items": [
+						{
+							"name": "Thượng Cổ (Quần)",
+							"amount": 1
+						}
+					],
+					"icon": "golden_leggings"
+				},
+				{
+					"key": "giaythuongco",
+					"price": 100,
+					"items": [
+						{
+							"name": "Thượng Cổ (Giày)",
+							"amount": 1
+						}
+					],
+					"icon": "golden_boots"
+				},
+				{
+					"key": "kiem1",
+					"price": 90,
+					"items": [
+						{
+							"name": "Thượng Cổ (Kiếm)",
+							"amount": 1
+						}
+					],
+					"icon": "stone_sword"
+				},
+				{
+					"key": "kiem2",
+					"price": 120,
+					"items": [
+						{
+							"name": "Thượng Cổ (Kiếm) (2♦)",
+							"amount": 1
+						}
+					],
+					"icon": "stone_sword"
+				},
+				{
+					"key": "kiem3",
+					"price": 150,
+					"items": [
+						{
+							"name": "Thượng Cổ (Kiếm) (3♦)",
+							"amount": 1
+						}
+					],
+					"icon": "stone_sword"
+				},
+				{
+					"key": "cup1",
+					"price": 100,
+					"items": [
+						{
+							"name": "Thượng Cổ (Cúp)",
+							"amount": 1
+						}
+					],
+					"icon": "diamond_pickaxe"
+				},
+				{
+					"key": "cup2",
+					"price": 120,
+					"items": [
+						{
+							"name": "Thượng Cổ (Cúp) (2♦)",
+							"amount": 1
+						}
+					],
+					"icon": "diamond_pickaxe"
+				},
+				{
+					"key": "cup3",
+					"price": 140,
+					"items": [
+						{
+							"name": "Thượng Cổ (Cúp) (3♦)",
+							"amount": 1
+						}
+					],
+					"icon": "diamond_pickaxe"
+				},
+				{
+					"key": "sothuongco",
+					"price": 180,
+					"items": [
+						{
+							"name": "Sọ Phép Từ Trùm Cướp Biển",
+							"amount": 1,
+							"texture": "27540b939e8e9726cd27740d448d118cca1fdc509f51c58876c85480b302143e"
+						}
+					],
+					"texture": "27540b939e8e9726cd27740d448d118cca1fdc509f51c58876c85480b302143e"
+				},
+				{
+					"key": "tuy_bat_thien_quyen",
+					"price": 100,
+					"items": [
+						{
+							"name": "Túy Bát Tiên Quyền IV",
+							"amount": 1
+						}
+					],
+					"icon": "book"
+				},
+				{
+					"key": "sach_truyen_thuyet",
+					"price": 100,
+					"items": [
+						{
+							"name": "Sách phép Truyền Thuyết ngẫu nhiên",
+							"amount": 3
+						}
+					],
+					"icon": "book"
+				},
+				{
+					"key": "sach_linh_hon",
+					"price": 140,
+					"items": [
+						{
+							"name": "Sách phép Linh Hồn ngẫu nhiên",
+							"amount": 3
+						}
+					],
+					"icon": "book"
+				},
+				{
+					"key": "muBaVuong",
+					"price": 20,
+					"items": [
+						{
+							"name": "Bá Vương (Mũ)",
+							"amount": 1
+						}
+					],
+					"icon": "chainmail_helmet"
+				},
+				{
+					"key": "aoBaVuong",
+					"price": 20,
+					"items": [
+						{
+							"name": "Bá Vương (Áo)",
+							"amount": 1
+						}
+					],
+					"icon": "chainmail_chestplate"
+				},
+				{
+					"key": "quanBaVuong",
+					"price": 20,
+					"items": [
+						{
+							"name": "Bá Vương (Quần)",
+							"amount": 1
+						}
+					],
+					"icon": "chainmail_leggings"
+				},
+				{
+					"key": "giayBaVuong",
+					"price": 20,
+					"items": [
+						{
+							"name": "Bá Vương (Giày)",
+							"amount": 1
+						}
+					],
+					"icon": "chainmail_boots"
+				}
+			],
+			"chest": "thuongco"
+		}
+	]
+}

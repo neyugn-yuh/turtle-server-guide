@@ -90,6 +90,16 @@ for (const server of readdirSync(serversDir)) {
 			for (const recipe of material.recipes) for (const need of recipe.needs) if (need.icon) materials.add(need.icon);
 		}
 	}
+	// the treasure chests: the item of each chest, of each prize and of each Xui Xẻo shop item (heads are drawn by fetch-skull-icons.mjs)
+	const treasuresFile = join(serversDir, server, 'treasures.json');
+	if (existsSync(treasuresFile)) {
+		const treasures = JSON.parse(readFileSync(treasuresFile, 'utf8'));
+		for (const chest of treasures.chests) {
+			if (chest.icon) materials.add(chest.icon);
+			for (const prize of chest.prizes) if (prize.icon) materials.add(prize.icon);
+		}
+		for (const shop of treasures.shops) for (const item of shop.items) if (item.icon) materials.add(item.icon);
+	}
 	// the equipment: the item of each piece and of each ingredient
 	const equipmentFile = join(serversDir, server, 'gear.json');
 	if (existsSync(equipmentFile)) {
@@ -100,9 +110,45 @@ for (const server of readdirSync(serversDir)) {
 	}
 }
 
-// Items that have no flat texture in the Minecraft assets (a head is drawn in 3D): a 16x16 picture drawn here, row by row.
+// Items that have no flat texture in the Minecraft assets (a head or a chest is drawn in 3D in the game): a 16x16 picture drawn here, row by row.
 // K outline, D dark scales, L snout, E eyes, T teeth, . transparent.
 const DRAWN = {
+	chest: [
+		'................',
+		'................',
+		'..KKKKKKKKKKKK..',
+		'.KWWWWWWWWWWWWK.',
+		'.KWDDDDDDDDDDWK.',
+		'.KWWWWWWWWWWWWK.',
+		'.KWWWWWGGWWWWWK.',
+		'.KKKKKKGGKKKKKK.',
+		'.KWWWWWGGWWWWWK.',
+		'.KWWWWWWWWWWWWK.',
+		'.KWDDDDDDDDDDWK.',
+		'.KWWWWWWWWWWWWK.',
+		'.KWWWWWWWWWWWWK.',
+		'.KKKKKKKKKKKKKK.',
+		'................',
+		'................',
+	],
+	ender_chest: [
+		'................',
+		'................',
+		'..KKKKKKKKKKKK..',
+		'.KTTTTTTTTTTTTK.',
+		'.KTUUUUUUUUUUTK.',
+		'.KTTTTTTTTTTTTK.',
+		'.KTTTTTNNTTTTTK.',
+		'.KKKKKKNNKKKKKK.',
+		'.KTTTTTNNTTTTTK.',
+		'.KTTTTTTTTTTTTK.',
+		'.KTUUUUUUUUUUTK.',
+		'.KTTTTTTTTTTTTK.',
+		'.KTTTTTTTTTTTTK.',
+		'.KKKKKKKKKKKKKK.',
+		'................',
+		'................',
+	],
 	dragon_head: [
 		'................',
 		'................',
@@ -122,7 +168,7 @@ const DRAWN = {
 		'................',
 	],
 };
-const PALETTE = { K: [11, 11, 15, 255], D: [38, 38, 46, 255], L: [58, 58, 69, 255], E: [224, 82, 224, 255], T: [216, 216, 216, 255], '.': [0, 0, 0, 0] };
+const PALETTE = { K: [11, 11, 15, 255], D: [38, 38, 46, 255], L: [58, 58, 69, 255], E: [224, 82, 224, 255], N: [62, 224, 176, 255], W: [143, 101, 52, 255], D: [102, 70, 33, 255], G: [232, 196, 64, 255], T: [24, 54, 56, 255], U: [14, 33, 36, 255], T: [216, 216, 216, 255], '.': [0, 0, 0, 0] };
 async function draw(name, rows) {
 	if (rows.length !== 16 || rows.some((row) => row.length !== 16)) throw new Error(`drawn picture ${name} is not 16x16`);
 	const raw = Buffer.from(rows.flatMap((row) => [...row].flatMap((c) => PALETTE[c])));
@@ -152,6 +198,16 @@ for (const name of [...materials].sort()) {
 		break;
 	}
 	// the texture set of 1.21.4 has no copper tools or armor: tint the iron one copper-orange
+	// the enchanted golden apple is the golden apple with the enchantment glint
+	if (!saved && name === 'enchanted_golden_apple') {
+		const response = await fetch(`${BASE}/items/golden_apple.png`);
+		if (response.ok) {
+			const { default: sharp } = await import('sharp');
+			writeFileSync(target, await sharp(Buffer.from(await response.arrayBuffer())).tint('#C9A0FF').png().toBuffer());
+			console.log(`${name} <- items/golden_apple (tinted)`);
+			saved = true;
+		}
+	}
 	const copper = /^copper_(sword|axe|chestplate)$/.exec(name);
 	if (!saved && copper) {
 		const response = await fetch(`${BASE}/items/iron_${copper[1]}.png`);

@@ -75,5 +75,11 @@ export const guides = [
 		description: 'Các bộ giáp và hiệu ứng bộ, sọ phép, kiếm, rìu, cung, khiên, cúp: chỉ số và công thức chế tạo.',
 		landing: 'bo-trang-bi',
 	},
+	{
+		slug: 'treasures',
+		title: 'Rương báu',
+		description: 'Các rương báu: phần thưởng và bậc của từng món, cùng cửa hàng đổi điểm Xui Xẻo.',
+		landing: 'hom-phu-thuy',
+	},
 	// <-- add new guides here
 ];

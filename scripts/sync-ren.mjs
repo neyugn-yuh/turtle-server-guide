@@ -40,6 +40,7 @@ import { targetsForEnchant } from '../src/data/enchant-targets.mjs';
 import { buildSpawners } from './ren-spawners.mjs';
 import { buildMaterials } from './ren-materials.mjs';
 import { buildSkulls } from './ren-skulls.mjs';
+import { buildTreasures } from './ren-treasures.mjs';
 import { buildIslandTop } from './island-top-lib.mjs';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
@@ -51,6 +52,7 @@ const OUT_EQUIPMENT = join(ROOT, 'src/data/servers', SERVER, 'gear.json');
 const OUT_SKULLS = join(ROOT, 'src/data/servers', SERVER, 'skulls.json');
 const OUT_MATERIALS = join(ROOT, 'src/data/servers', SERVER, 'ren-materials.json');
 const OUT_SPAWNERS = join(ROOT, 'src/data/servers', SERVER, 'spawners.json');
+const OUT_TREASURES = join(ROOT, 'src/data/servers', SERVER, 'treasures.json');
 const OUT_ISLAND_TOP = join(ROOT, 'src/data/servers', SERVER, 'island-top.json');
 const COUNT = 6;
 
@@ -117,7 +119,7 @@ const itemInfo = (type, id) => {
 	itemFiles[key] ??= existsSync(join(BASE, `MMOItems/item/${key}.yml`)) ? readYaml(`MMOItems/item/${key}.yml`) : {};
 	const item = itemFiles[key][id.toUpperCase()];
 	const name = item ? pretty(item.base?.name, { keepBrackets: true }) : '';
-	return name ? { name, icon: item.base?.material ? String(item.base.material).toLowerCase() : null } : null;
+	return name ? { name, rawName: item.base?.name, icon: item.base?.material ? String(item.base.material).toLowerCase() : null } : null;
 };
 
 // ---------- rewards ----------
@@ -503,6 +505,7 @@ if (![enchantsData.baseSlots, enchantsData.maxSlots].every(Number.isFinite)) fai
 const { equipment: equipmentData, materials: recipeMaterials, skullRecipes } = buildEquipment({ base: BASE, readYaml, stripCodes, pretty, round, warn, fail });
 const { spawnerData } = buildSpawners({ readYaml, stripCodes, pretty, warn, fail });
 const skullData = buildSkulls({ readYaml, stripCodes, pretty, recipes: skullRecipes, warn, fail });
+const treasureData = buildTreasures({ base: BASE, readYaml, stripCodes, pretty, itemInfo, bookGroups: BOOK_GROUPS, mobs: MOBS, skulls: skullData.skulls, warn, fail });
 const materialData = buildMaterials({ materials: recipeMaterials, dungeons, chests: chestList, spawners: spawnerData.spawners, warn, fail });
 // the island contribution race: TurtleIsland uses the same contribution.yml / gui/top.yml as SD-Island (see island-top-lib.mjs)
 const readText = (path) => {
@@ -528,6 +531,7 @@ const outputs = [
 	[OUT_SKULLS, JSON.stringify(skullData, null, '\t') + '\n'],
 	[OUT_MATERIALS, JSON.stringify(materialData, null, '\t') + '\n'],
 	[OUT_SPAWNERS, JSON.stringify(spawnerData, null, '\t') + '\n'],
+	[OUT_TREASURES, JSON.stringify(treasureData, null, '\t') + '\n'],
 	[OUT_ISLAND_TOP, JSON.stringify(topData, null, '\t') + '\n'],
 ];
 let changed = false;

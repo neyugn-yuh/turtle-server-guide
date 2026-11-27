@@ -1,0 +1,191 @@
+---
+/**
+ * Treasure chests (rương báu) and the Xui Xẻo point shops of Sky Rèn, built from src/data/servers/<server>/treasures.json
+ * (written by scripts/sync-ren.mjs from CrazyCrates/crates and DeluxeMenus/gui_menus/xuixeo).
+ *   view="chest" id="<chest id>"   the prizes of one chest grouped by tier (no odds: the wiki shows what is inside and its tier)
+ *   view="shop" id="<shop id>"     one Xui Xẻo shop: what each item gives and its price in points
+ * Pictures: public/minions/<item>.png (items) and public/skulls/<texture>.png (heads of the magic skulls).
+ */
+interface Props {
+	server: string;
+	view: 'chest' | 'shop';
+	id: string;
+}
+
+const { server, view, id } = Astro.props;
+const files = import.meta.glob('../data/servers/*/treasures.json', { eager: true, import: 'default' }) as Record<string, any>;
+const data = files[`../data/servers/${server}/treasures.json`];
+if (!data) throw new Error(`RenTreasures: no treasures.json for server "${server}", run node scripts/sync-ren.mjs`);
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const pic = (x: { icon?: string | null; texture?: string | null }) => (x.texture ? `${base}/skulls/${x.texture}.png` : x.icon ? `${base}/minions/${x.icon}.png` : '');
+const isHead = (x: { texture?: string | null }) => Boolean(x.texture);
+const num = (n: number) => n.toLocaleString('vi-VN');
+const label = (items: any[]) => items.map((i: any) => i.name + (i.amount > 1 ? ` ×${num(i.amount)}` : '')).join(' + ');
+
+const chest = view === 'chest' ? data.chests.find((c: any) => c.id === id) : null;
+const shop = view === 'shop' ? data.shops.find((s: any) => s.id === id) : null;
+if (view === 'chest' && !chest) throw new Error(`RenTreasures: no chest "${id}"`);
+if (view === 'shop' && !shop) throw new Error(`RenTreasures: no shop "${id}"`);
+
+// the prizes of a chest by tier; a chest without tiers is one list
+const groups: { name: string | null; prizes: any[] }[] = chest
+	? chest.tiers.length
+		? chest.tiers.map((t: any) => ({ name: t.name, prizes: chest.prizes.filter((p: any) => p.tier === t.id) })).filter((g: any) => g.prizes.length)
+		: [{ name: null, prizes: chest.prizes }]
+	: [];
+const shopChest = shop?.chest ? data.chests.find((c: any) => c.id === shop.chest) : null;
+const pointShop = chest?.xuixeo ? data.shops.find((s: any) => s.currency === chest.xuixeo.currency) : null;
+---
+
+<div class="rtr not-content">
+	{
+		chest && (
+			<>
+				{chest.xuixeo && (
+					<p class="rtr-note">
+						Mỗi phần thưởng nhận được tặng thêm <strong>{num(chest.xuixeo.points)} điểm {pointShop?.name ?? 'Xui Xẻo'}</strong>
+						{chest.xuixeo.except.length > 0 && <> (trừ {chest.xuixeo.except.join(', ')})</>}.
+					</p>
+				)}
+				{groups.map((g) => (
+					<section class="rtr-card">
+						{g.name && (
+							<header>
+								<h3>{g.name}</h3>
+								<span class="rtr-count">{g.prizes.length} phần thưởng</span>
+							</header>
+						)}
+						<ul class="rtr-list">
+							{g.prizes.map((p: any) => (
+								<li>
+									{pic(p) ? <img class:list={['rtr-pic', { head: isHead(p) }]} src={pic(p)} alt="" width="32" height="32" loading="lazy" /> : <span class="rtr-pic" />}
+									<span class="rtr-name">{label(p.items)}</span>
+									{p.big && <span class="rtr-big">Đại hũ</span>}
+								</li>
+							))}
+						</ul>
+					</section>
+				))}
+			</>
+		)
+	}
+	{
+		shop && (
+			<>
+				<p class="rtr-note">
+					Đổi bằng <strong>{shop.name}</strong>
+					{shopChest ? <> (nhận khi mở {shopChest.name})</> : null}. Gõ <code>/xuixeo</code> để mở menu đổi điểm.
+				</p>
+				<table class="rtr-shop">
+					<thead>
+						<tr>
+							<th>Vật phẩm</th>
+							<th>Giá (điểm)</th>
+						</tr>
+					</thead>
+					<tbody>
+						{shop.items.map((it: any) => (
+							<tr>
+								<td>
+									<span class="rtr-cell">
+										{pic(it) ? <img class:list={['rtr-pic', { head: isHead(it) }]} src={pic(it)} alt="" width="28" height="28" loading="lazy" /> : <span class="rtr-pic" />}
+										{label(it.items)}
+									</span>
+								</td>
+								<td class="rtr-price">{num(it.price)}</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			</>
+		)
+	}
+</div>
+
+<style>
+	.rtr-note {
+		margin: 0.5rem 0 0;
+		color: var(--sl-color-gray-2);
+		font-size: 0.875rem;
+	}
+	.rtr-card {
+		margin-top: 1rem;
+		border: 1px solid var(--sl-color-hairline);
+		border-radius: 8px;
+		background: var(--sl-color-bg-nav);
+		padding: 0.75rem 1rem 0.5rem;
+	}
+	.rtr-card header {
+		display: flex;
+		align-items: center;
+		gap: 0.6rem;
+	}
+	.rtr-card h3 {
+		margin: 0;
+		font-size: 1.05rem;
+	}
+	.rtr-count {
+		color: var(--sl-color-gray-3);
+		font-size: 0.75rem;
+	}
+	.rtr-list {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr));
+		gap: 0.25rem 1rem;
+		margin: 0.6rem 0 0.25rem;
+		padding: 0;
+		list-style: none;
+	}
+	.rtr-list li {
+		display: flex;
+		align-items: center;
+		gap: 0.55rem;
+		margin: 0;
+		padding: 0.2rem 0;
+		font-size: 0.875rem;
+	}
+	.rtr-pic {
+		flex: none;
+		width: 32px;
+		height: 32px;
+		object-fit: contain;
+		image-rendering: pixelated;
+	}
+	.rtr-pic.head {
+		image-rendering: auto;
+	}
+	.rtr-big {
+		margin-left: auto;
+		padding: 0.05rem 0.5rem;
+		border: 1px solid var(--sl-color-orange);
+		border-radius: 999px;
+		color: var(--sl-color-orange-high);
+		font-size: 0.7rem;
+		white-space: nowrap;
+	}
+	.rtr-shop {
+		/* Starlight makes a table display:block, which shrinks it to its content */
+		display: table;
+		width: 100%;
+		margin-top: 0.75rem;
+		font-size: 0.875rem;
+	}
+	.rtr-shop th:last-child,
+	.rtr-shop td:last-child {
+		text-align: right;
+	}
+	.rtr-cell {
+		display: flex;
+		align-items: center;
+		gap: 0.55rem;
+	}
+	.rtr-cell .rtr-pic {
+		width: 28px;
+		height: 28px;
+	}
+	.rtr-price {
+		font-variant-numeric: tabular-nums;
+		white-space: nowrap;
+	}
+</style>

@@ -2,7 +2,7 @@
 /**
  * Draws the head of every magic skull into public/skulls/<texture>.png.
  *
- * Reads the skulls from src/data/servers/<server>/skulls.json (run sync-ren first). `texture` is the hash of the skin the
+ * Reads the skulls from src/data/servers/<server>/skulls.json and the heads in treasures.json (run sync-ren first). `texture` is the hash of the skin the
  * skull's head texture (ItemAbility/items.yml `Texture`) points to. The skin is downloaded from textures.minecraft.net
  * and the head (with its hat layer) is drawn as a small 3D cube, the way the game shows it in the inventory.
  * Pictures that already exist are skipped.
@@ -22,8 +22,14 @@ const serversDir = join(ROOT, 'src/data/servers');
 const textures = new Set();
 for (const server of readdirSync(serversDir)) {
 	const file = join(serversDir, server, 'skulls.json');
-	if (!existsSync(file)) continue;
-	for (const skull of JSON.parse(readFileSync(file, 'utf8')).skulls) if (skull.texture) textures.add(skull.texture);
+	if (existsSync(file)) for (const skull of JSON.parse(readFileSync(file, 'utf8')).skulls) if (skull.texture) textures.add(skull.texture);
+	// heads in the treasure chests and the Xui Xẻo shops
+	const treasures = join(serversDir, server, 'treasures.json');
+	if (existsSync(treasures)) {
+		const data = JSON.parse(readFileSync(treasures, 'utf8'));
+		for (const prize of data.chests.flatMap((c) => c.prizes)) if (prize.texture) textures.add(prize.texture);
+		for (const item of data.shops.flatMap((s) => s.items)) if (item.texture) textures.add(item.texture);
+	}
 }
 
 const FACE = 64; // each face is drawn 64x64 (the skin has 8x8)

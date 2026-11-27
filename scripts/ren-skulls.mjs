@@ -19,7 +19,7 @@ const STATS = [
 ];
 
 /** The hash of the skin a head texture (base64 JSON with the skin url) points to, or null. */
-function skinHash(value) {
+export function skinHash(value) {
 	try {
 		const url = JSON.parse(Buffer.from(String(value), 'base64').toString('utf8'))?.textures?.SKIN?.url ?? '';
 		return /\/texture\/([0-9a-f]{16,})$/.exec(url)?.[1] ?? null;
