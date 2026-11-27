@@ -515,7 +515,11 @@ const readText = (path) => {
 };
 let topData;
 try {
-	topData = buildIslandTop({ contribution: readText('TurtleIsland/contribution.yml'), top: readText('TurtleIsland/gui/top.yml') });
+	topData = buildIslandTop({ contribution: readText('TurtleIsland/contribution.yml'), top: readText('TurtleIsland/gui/top.yml') }, { visuals: true });
+	// a boss looks like the entity of its dungeon mob; a hunted mob is the entity that is its config key
+	const appearance = new Map(dungeons.flatMap((d) => d.mobs).map((m) => [m.id, m.appearance]));
+	topData.bosses = topData.bosses.map(({ id, ...boss }) => ({ ...boss, ...(appearance.get(id) ? { entity: appearance.get(id) } : {}) }));
+	topData.hunting = topData.hunting.map(({ id, ...mob }) => ({ ...mob, entity: id }));
 } catch (error) {
 	fail(error.message);
 }

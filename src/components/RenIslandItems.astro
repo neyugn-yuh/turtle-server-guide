@@ -5,6 +5,7 @@
  *   items    what an island hands in: points each and the daily limit (shared by the island)
  *   bosses   Dungeon bosses that give points when killed (a boss with 0 points gives none and is not listed)
  *   hunting  ordinary mobs killed on the island, natural or from a spawner
+ * Pictures: public/minions/<item>.png for blocks and items, public/mobs/<entity>.png for mobs and lồng (a lồng shows its mob).
  */
 interface Props {
 	server: string;
@@ -16,6 +17,8 @@ const files = import.meta.glob('../data/servers/*/island-top.json', { eager: tru
 const data = files[`../data/servers/${server}/island-top.json`];
 if (!data) throw new Error(`RenIslandItems: no island-top.json for server "${server}", run node scripts/sync-ren.mjs`);
 
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const pic = (x: { icon?: string; entity?: string }) => (x.entity ? `${base}/mobs/${x.entity.toLowerCase()}.png` : x.icon ? `${base}/minions/${x.icon}.png` : '');
 const num = (n: number) => n.toLocaleString('vi-VN', { maximumFractionDigits: 2 });
 const items: any[] = data.items;
 const bosses: any[] = data.bosses.filter((boss: any) => boss.points > 0);
@@ -39,7 +42,12 @@ const place = (group: string) => (/^D\d+$/.test(group) ? `Dungeon ${group.slice(
 				<tbody>
 					{items.map((item) => (
 						<tr>
-							<td>{item.name}</td>
+							<td>
+								<span class="rii-cell">
+									{pic(item) ? <img class="rii-pic" src={pic(item)} alt="" width="28" height="28" loading="lazy" onerror="this.style.visibility='hidden'" /> : <span class="rii-pic" />}
+									{item.name}
+								</span>
+							</td>
 							<td>{num(item.points)}</td>
 							<td>{limitText(item.dailyLimit)}</td>
 						</tr>
@@ -65,7 +73,12 @@ const place = (group: string) => (/^D\d+$/.test(group) ? `Dungeon ${group.slice(
 				<tbody>
 					{bosses.map((boss) => (
 						<tr>
-							<td>{boss.name}</td>
+							<td>
+								<span class="rii-cell">
+									{pic(boss) ? <img class="rii-pic" src={pic(boss)} alt="" width="28" height="28" loading="lazy" onerror="this.style.visibility='hidden'" /> : <span class="rii-pic" />}
+									{boss.name}
+								</span>
+							</td>
 							<td>{place(boss.group)}</td>
 							<td>{num(boss.points)}</td>
 							<td>{limitText(boss.dailyLimit)}</td>
@@ -91,7 +104,12 @@ const place = (group: string) => (/^D\d+$/.test(group) ? `Dungeon ${group.slice(
 				<tbody>
 					{hunting.map((mob) => (
 						<tr>
-							<td>{mob.name}</td>
+							<td>
+							<span class="rii-cell">
+								{pic(mob) ? <img class="rii-pic" src={pic(mob)} alt="" width="28" height="28" loading="lazy" onerror="this.style.visibility='hidden'" /> : <span class="rii-pic" />}
+								{mob.name}
+							</span>
+						</td>
 							<td>{num(mob.points)}</td>
 							<td>{limitText(mob.dailyLimit)}</td>
 						</tr>
@@ -110,6 +128,18 @@ const place = (group: string) => (/^D\d+$/.test(group) ? `Dungeon ${group.slice(
 		/* Starlight makes a table display:block, which shrinks it to its content */
 		display: table;
 		width: 100%;
+	}
+	.rii-cell {
+		display: flex;
+		align-items: center;
+		gap: 0.6rem;
+	}
+	.rii-pic {
+		flex: none;
+		width: 28px;
+		height: 28px;
+		object-fit: contain;
+		image-rendering: pixelated;
 	}
 	.rii th:not(:first-child),
 	.rii td:not(:first-child) {

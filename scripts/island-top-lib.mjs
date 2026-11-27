@@ -35,7 +35,7 @@ function limitOf(entry, where) {
 	return n === 0 ? null : n;
 }
 
-function readItem(entry, spawnerNames, index) {
+function readItem(entry, spawnerNames, index, visuals) {
 	const where = `items[${index}]`;
 	const id = String(entry.id ?? '');
 	const colon = id.indexOf(':');
@@ -56,11 +56,21 @@ function readItem(entry, spawnerNames, index) {
 		group = 'spawner';
 	} else throw new Error(`${where}.id has an unknown kind: ${id}`);
 	if (!name) throw new Error(`${where}: no player-facing name for ${id}, add it to sync-island-top.mjs${kind === 'SPAWNER' ? ' or to spawner-mobs in contribution.yml' : ''}`);
-	return { name, group, points: count(entry.points, `${where}.points`, { allowZero: false }), dailyLimit: limitOf(entry, where) };
+	const item = { name, group, points: count(entry.points, `${where}.points`, { allowZero: false }), dailyLimit: limitOf(entry, where) };
+	if (visuals) {
+		// what the picture shows: a lồng shows its mob; a vanilla block its item; an MMOItems item the vanilla item of its quota-id (VANILLA:DRAGON_EGG)
+		if (kind === 'SPAWNER') item.entity = key;
+		else {
+			const vanilla = kind === 'VANILLA' ? key : /^VANILLA:(\w+)$/.exec(String(entry['quota-id'] ?? ''))?.[1];
+			if (vanilla) item.icon = vanilla.toLowerCase();
+		}
+	}
+	return item;
 }
 
-function readMobs(map, where) {
+function readMobs(map, where, visuals) {
 	return Object.entries(map ?? {}).map(([id, m]) => ({
+		...(visuals ? { id } : {}),
 		name: String(m.name ?? id),
 		group: String(m.group ?? ''),
 		points: count(m.points ?? 0, `${where}.${id}.points`),
@@ -68,17 +78,18 @@ function readMobs(map, where) {
 	}));
 }
 
-export function buildIslandTop(files) {
+/** `visuals`: also give each item an `icon` / `entity` and each mob its config id, for the pictures of the page (Sky Rèn). */
+export function buildIslandTop(files, { visuals = false } = {}) {
 	const contribution = parse(files.contribution) ?? {};
 	const top = parse(files.top) ?? {};
 
 	const spawnerNames = Object.fromEntries(Object.entries(contribution['spawner-mobs'] ?? {}).map(([type, m]) => [type, String(m.name ?? '')]));
-	const items = (contribution.items ?? []).map((entry, i) => readItem(entry, spawnerNames, i));
+	const items = (contribution.items ?? []).map((entry, i) => readItem(entry, spawnerNames, i, visuals));
 	if (!items.length) throw new Error('contribution.yml has no items');
 	items.sort((a, b) => b.points - a.points || a.name.localeCompare(b.name, 'vi'));
 
-	const bosses = readMobs(contribution.mobs, 'mobs');
-	const hunting = readMobs(contribution['spawner-mobs'], 'spawner-mobs');
+	const bosses = readMobs(contribution.mobs, 'mobs', visuals);
+	const hunting = readMobs(contribution['spawner-mobs'], 'spawner-mobs', visuals);
 	for (const m of hunting) if (!m.name) throw new Error('a spawner-mobs entry has no name');
 
 	const ranking = top['contribution-ranking'] ?? {};

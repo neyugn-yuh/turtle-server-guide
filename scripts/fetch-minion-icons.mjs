@@ -90,6 +90,9 @@ for (const server of readdirSync(serversDir)) {
 			for (const recipe of material.recipes) for (const need of recipe.needs) if (need.icon) materials.add(need.icon);
 		}
 	}
+	// the island race: the item of each block and special item handed in
+	const islandTopFile = join(serversDir, server, 'island-top.json');
+	if (existsSync(islandTopFile)) for (const item of JSON.parse(readFileSync(islandTopFile, 'utf8')).items) if (item.icon) materials.add(item.icon);
 	// the treasure chests: the item of each chest, of each prize and of each Xui Xẻo shop item (heads are drawn by fetch-skull-icons.mjs)
 	const treasuresFile = join(serversDir, server, 'treasures.json');
 	if (existsSync(treasuresFile)) {

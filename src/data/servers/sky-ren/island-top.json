@@ -5,139 +5,162 @@
 			"name": "Trứng Rồng Cống Hiến",
 			"group": "special",
 			"points": 10000000,
-			"dailyLimit": 1
+			"dailyLimit": 1,
+			"icon": "dragon_egg"
 		},
 		{
 			"name": "Khung Cổng End Cống Hiến",
 			"group": "special",
 			"points": 1000000,
-			"dailyLimit": 10
+			"dailyLimit": 10,
+			"icon": "end_portal_frame"
 		},
 		{
 			"name": "Lồng Bọ Ender",
 			"group": "spawner",
 			"points": 150000,
-			"dailyLimit": 10
+			"dailyLimit": 10,
+			"entity": "ENDERMITE"
 		},
 		{
 			"name": "Lồng Lạc đà không bướu",
 			"group": "spawner",
 			"points": 150000,
-			"dailyLimit": 10
+			"dailyLimit": 10,
+			"entity": "LLAMA"
 		},
 		{
 			"name": "Lồng Người sắt",
 			"group": "spawner",
 			"points": 150000,
-			"dailyLimit": 10
+			"dailyLimit": 10,
+			"entity": "IRON_GOLEM"
 		},
 		{
 			"name": "Bọt Biển Cống Hiến",
 			"group": "special",
 			"points": 100000,
-			"dailyLimit": 100
+			"dailyLimit": 100,
+			"icon": "sponge"
 		},
 		{
 			"name": "Lồng Dân làng",
 			"group": "spawner",
 			"points": 100000,
-			"dailyLimit": 10
+			"dailyLimit": 10,
+			"entity": "VILLAGER"
 		},
 		{
 			"name": "Lồng Ghast",
 			"group": "spawner",
 			"points": 100000,
-			"dailyLimit": 10
+			"dailyLimit": 10,
+			"entity": "GHAST"
 		},
 		{
 			"name": "Lồng Kẻ triệu hồi",
 			"group": "spawner",
 			"points": 100000,
-			"dailyLimit": 10
+			"dailyLimit": 10,
+			"entity": "EVOKER"
 		},
 		{
 			"name": "Lồng Enderman",
 			"group": "spawner",
 			"points": 60000,
-			"dailyLimit": 10
+			"dailyLimit": 10,
+			"entity": "ENDERMAN"
 		},
 		{
 			"name": "Lồng Nhện",
 			"group": "spawner",
 			"points": 60000,
-			"dailyLimit": 10
+			"dailyLimit": 10,
+			"entity": "SPIDER"
 		},
 		{
 			"name": "Lồng Quỷ lửa",
 			"group": "spawner",
 			"points": 60000,
-			"dailyLimit": 10
+			"dailyLimit": 10,
+			"entity": "BLAZE"
 		},
 		{
 			"name": "Quặng Thạch Anh Cống Hiến",
 			"group": "special",
 			"points": 50000,
-			"dailyLimit": 1000
+			"dailyLimit": 1000,
+			"icon": "nether_quartz_ore"
 		},
 		{
 			"name": "Lồng Bộ xương",
 			"group": "spawner",
 			"points": 30000,
-			"dailyLimit": 10
+			"dailyLimit": 10,
+			"entity": "SKELETON"
 		},
 		{
 			"name": "Lồng Creeper",
 			"group": "spawner",
 			"points": 30000,
-			"dailyLimit": 10
+			"dailyLimit": 10,
+			"entity": "CREEPER"
 		},
 		{
 			"name": "Lồng Xác sống",
 			"group": "spawner",
 			"points": 30000,
-			"dailyLimit": 10
+			"dailyLimit": 10,
+			"entity": "ZOMBIE"
 		},
 		{
 			"name": "Lồng Bò",
 			"group": "spawner",
 			"points": 10000,
-			"dailyLimit": 10
+			"dailyLimit": 10,
+			"entity": "COW"
 		},
 		{
 			"name": "Lồng Gà",
 			"group": "spawner",
 			"points": 10000,
-			"dailyLimit": 10
+			"dailyLimit": 10,
+			"entity": "CHICKEN"
 		},
 		{
 			"name": "Lồng Heo",
 			"group": "spawner",
 			"points": 10000,
-			"dailyLimit": 10
+			"dailyLimit": 10,
+			"entity": "PIG"
 		},
 		{
 			"name": "Khối Kim Cương",
 			"group": "block",
 			"points": 320,
-			"dailyLimit": 1000
+			"dailyLimit": 1000,
+			"icon": "diamond_block"
 		},
 		{
 			"name": "Khối Lục Bảo",
 			"group": "block",
 			"points": 180,
-			"dailyLimit": 1000
+			"dailyLimit": 1000,
+			"icon": "emerald_block"
 		},
 		{
 			"name": "Khối Vàng",
 			"group": "block",
 			"points": 100,
-			"dailyLimit": 10000
+			"dailyLimit": 10000,
+			"icon": "gold_block"
 		},
 		{
 			"name": "Khối Sắt",
 			"group": "block",
 			"points": 40,
-			"dailyLimit": 10000
+			"dailyLimit": 10000,
+			"icon": "iron_block"
 		}
 	],
 	"hunting": [
@@ -145,91 +168,106 @@
 			"name": "Ghast",
 			"group": "Quái đảo",
 			"points": 5,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "GHAST"
 		},
 		{
 			"name": "Kẻ triệu hồi",
 			"group": "Quái đảo",
 			"points": 5,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "EVOKER"
 		},
 		{
 			"name": "Người sắt",
 			"group": "Quái đảo",
 			"points": 5,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "IRON_GOLEM"
 		},
 		{
 			"name": "Quỷ lửa",
 			"group": "Quái đảo",
 			"points": 5,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "BLAZE"
 		},
 		{
 			"name": "Enderman",
 			"group": "Quái đảo",
 			"points": 4,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "ENDERMAN"
 		},
 		{
 			"name": "Creeper",
 			"group": "Quái đảo",
 			"points": 3,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "CREEPER"
 		},
 		{
 			"name": "Bộ xương",
 			"group": "Quái đảo",
 			"points": 2,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "SKELETON"
 		},
 		{
 			"name": "Dân làng",
 			"group": "Quái đảo",
 			"points": 2,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "VILLAGER"
 		},
 		{
 			"name": "Nhện",
 			"group": "Quái đảo",
 			"points": 2,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "SPIDER"
 		},
 		{
 			"name": "Xác sống",
 			"group": "Quái đảo",
 			"points": 2,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "ZOMBIE"
 		},
 		{
 			"name": "Bò",
 			"group": "Quái đảo",
 			"points": 1,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "COW"
 		},
 		{
 			"name": "Bọ Ender",
 			"group": "Quái đảo",
 			"points": 1,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "ENDERMITE"
 		},
 		{
 			"name": "Gà",
 			"group": "Quái đảo",
 			"points": 1,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "CHICKEN"
 		},
 		{
 			"name": "Heo",
 			"group": "Quái đảo",
 			"points": 1,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "PIG"
 		},
 		{
 			"name": "Lạc đà không bướu",
 			"group": "Quái đảo",
 			"points": 1,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "LLAMA"
 		}
 	],
 	"bosses": [
@@ -237,43 +275,50 @@
 			"name": "Ma Hải Tặc",
 			"group": "D1",
 			"points": 1000,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "ZOMBIE"
 		},
 		{
 			"name": "Nhện Yêu Tinh",
 			"group": "D2",
 			"points": 1500,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "SPIDER"
 		},
 		{
 			"name": "Phù Thủy Đen",
 			"group": "D3",
 			"points": 2000,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "WITCH"
 		},
 		{
 			"name": "Jack",
 			"group": "D4",
 			"points": 3000,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "WITHER_SKELETON"
 		},
 		{
 			"name": "Jackson",
 			"group": "D4",
 			"points": 3000,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "WITHER_SKELETON"
 		},
 		{
 			"name": "Rồng Không Gian",
 			"group": "D5",
 			"points": 5000,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "WITHER"
 		},
 		{
 			"name": "Arcturus",
 			"group": "D6",
 			"points": 8000,
-			"dailyLimit": 100000
+			"dailyLimit": 100000,
+			"entity": "WITHER_SKELETON"
 		},
 		{
 			"name": "Rồng Hoàng Kim",

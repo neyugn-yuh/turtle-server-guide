@@ -37,6 +37,13 @@ const MOBS = {
 	PIG: { texture: 'pig/pig.png', face: [8, 8, 8, 8], parts: [{ from: [17, 17, 4, 3], to: [2, 4] }] },
 	SHEEP: { texture: 'sheep/sheep.png', face: [8, 8, 6, 6] },
 	CHICKEN: { texture: 'chicken.png', face: [3, 3, 4, 6], parts: [{ from: [16, 2, 4, 2], to: [0, 2] }, { from: [16, 6, 2, 2], to: [1, 4] }] },
+	// mobs of the island race of Sky Rèn (the nose of a villager or an illager is pasted on the face)
+	GHAST: { texture: 'ghast/ghast.png', face: [16, 16, 16, 16] },
+	BLAZE: { texture: 'blaze.png', face: [8, 8, 8, 8] },
+	VILLAGER: { texture: 'villager/villager.png', face: [8, 8, 8, 10], parts: [{ from: [26, 2, 2, 4], to: [3, 4] }] },
+	EVOKER: { texture: 'illager/evoker.png', face: [8, 8, 8, 10], parts: [{ from: [26, 2, 2, 4], to: [3, 4] }] },
+	IRON_GOLEM: { texture: 'iron_golem/iron_golem.png', face: [8, 8, 8, 10], parts: [{ from: [26, 2, 2, 4], to: [3, 5] }] },
+	LLAMA: { texture: 'llama/creamy.png', face: [9, 9, 4, 4] },
 	// mobs of the Sky Rèn dungeons
 	PIG_ZOMBIE: { texture: 'piglin/zombified_piglin.png', face: [8, 8, 10, 8], parts: [{ from: [32, 2, 8, 4], to: [1, 3] }] },
 	CAVE_SPIDER: { texture: 'spider/cave_spider.png', face: [40, 12, 8, 8] },
@@ -67,7 +74,18 @@ const serversDir = join(ROOT, 'src/data/servers');
 const ids = new Set();
 for (const server of readdirSync(serversDir)) {
 	const file = join(serversDir, server, 'spawners.json');
-	if (existsSync(file)) for (const mob of JSON.parse(readFileSync(file, 'utf8')).mobs) ids.add(mob.id);
+	// Sky Dungeon lists `mobs` (id), Sky Rèn lists `spawners` (entity)
+	if (existsSync(file)) {
+		const data = JSON.parse(readFileSync(file, 'utf8'));
+		for (const mob of data.mobs ?? []) ids.add(mob.id);
+		for (const spawner of data.spawners ?? []) if (spawner.entity) ids.add(spawner.entity);
+	}
+	// the island race: the entity of each lồng and of each hunted mob or boss
+	const island = join(serversDir, server, 'island-top.json');
+	if (existsSync(island)) {
+		const top = JSON.parse(readFileSync(island, 'utf8'));
+		for (const e of [...top.items, ...top.hunting, ...top.bosses]) if (e.entity) ids.add(e.entity);
+	}
 	// the dungeons of Sky Rèn: the entity each mob looks like (see sync-ren.mjs)
 	const dungeons = join(serversDir, server, 'dungeons.json');
 	if (existsSync(dungeons)) for (const d of JSON.parse(readFileSync(dungeons, 'utf8')).dungeons) for (const mob of d.mobs) if (mob.appearance) ids.add(mob.appearance);
