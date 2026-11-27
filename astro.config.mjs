@@ -32,6 +32,9 @@ const serverGroups = servers.map((server) => ({
 export default defineConfig({
 	redirects: {
 		'/sky-ren/enchants/cach-dung': '/sky-ren/enchants/danh-sach/',
+		// the magic skulls moved into the gear section
+		'/sky-ren/skulls/danh-sach': '/sky-ren/gear/so-phep/',
+		'/sky-ren/skulls/su-kien-hlw-2026': '/sky-ren/gear/su-kien-hlw-2026/',
 	},
 	// Turns `![..](/gui/<system>/<menu>)` into an interactive menu (see src/plugins/gui-menus.mjs).
 	markdown: { processor: satteri({ mdastPlugins: [guiMenus] }) },
