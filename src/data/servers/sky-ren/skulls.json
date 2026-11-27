@@ -554,24 +554,6 @@
 			]
 		},
 		{
-			"id": "soamnguyetthan",
-			"texture": "ee8004667317ac0d19f2b6bbcf7fd9a850fe3953f972875fd3ce70eee02a1c80",
-			"name": "Sọ Ám Nguyệt Thần",
-			"family": "Sọ Ám Nguyệt Thần",
-			"level": null,
-			"diamonds": false,
-			"rank": "",
-			"event": true,
-			"gemSlots": 7,
-			"stats": {
-				"damage": 45,
-				"attackSpeed": 40,
-				"health": 40,
-				"armor": 40
-			},
-			"recipes": []
-		},
-		{
 			"id": "sohuyetde",
 			"texture": "bb9e4386e54ac7f6e18fbf5c09fb7031953d0a51b054c5b4d63f618eeb2634a9",
 			"name": "Sọ Huyết Đế Chí Tôn",
